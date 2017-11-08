@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="{{ htmlClass }} ie6" lang="en-GB"> <![endif]-->
+<!--[if IE 7 ]>    <html class="{{ htmlClass }} ie7" lang="en-GB"> <![endif]-->
+<!--[if IE 8 ]>    <html class="{{ htmlClass }} ie8" lang="en-GB"> <![endif]-->
+<!--[if IE 9 ]>    <html class="{{ htmlClass }} ie9" lang="en-GB"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="{{ htmlClass }} no-js" lang="en-GB">
+<!--<![endif]-->
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?{{ cacheBuster }}" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,900|Open+Sans:300,400,600,700" rel="stylesheet">
+    <!--<script src="https://use.typekit.net/qpt7kgw.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>-->
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    {{{ patternLabHead }}}
+    <!-- End Pattern Lab -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/modernizr.js"></script>
+    <!--<script type="text/javascript" src="/js/browser.detect.js"></script>-->
+
+
+
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="/js/selectivizr.js"></script>
+      <script type="text/javascript" src="/js/html5shiv.js"></script>
+      <script type="text/javascript" src="/js/respond.js"></script>
+    <!--<![endif]-->
+
+  </head>
+  <body class="{{ bodyClass }}">

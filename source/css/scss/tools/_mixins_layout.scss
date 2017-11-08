@@ -1,0 +1,28 @@
+// media query mixin
+
+
+// Usage:
+// @include make_a_column(1, 12, (sm,lg));
+@mixin make_a_column($col-number, $col-amount, $break-at: null) {
+   @each $key-1, $value-1 in $break-at{
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, $key-1))) {
+      width: percentage($col-number/$col-amount);
+    }
+  }
+}
+// loop over the breakpoints
+// @include make_a_grid($make_grid: true);
+@mixin make_a_grid($make_grid: false) {
+   @if $make_grid != false{
+    @each $key, $value in $occlss-layout-breakpoints {
+       @for $i from 1 through $occlss-layout-columns {
+        .u-col-#{$key}-#{$i} {
+          width: 100%;
+          @include breakpoint(min-width (map-get($occlss-layout-breakpoints, $key))) {
+            width: #{$i / $occlss-layout-columns * 100%};
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.occlss-category-pane {
+    &:after {
+        content:"";
+        display: block;
+        border-bottom: rem(5px solid $occlss-brand-color-aqua-deep);
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        height: 41px;
+    }
+    overflow: hidden;
+}
+
+.occlss-category-pane__heading {
+    width: 100%;
+    background: $occlss-brand-color-aqua-deep;
+    color: #ffffff;
+    padding: rem(5px 14px);
+    margin-bottom: rem(26px);
+
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+       cursor: pointer;
+       position: relative;
+       &:after {
+        content: "";
+        width: rem(20px);
+        height: rem(13px);
+        background-image: url('#{$occlss-global-image-path}/icon-angle-arrow-down-white.png');
+        background-image: url('#{$occlss-global-image-path}/icon-angle-arrow-down-white.svg');
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 14px;
+      }
+    }
+}
+
+.occlss-category-pane__content {
+    padding-bottom: rem(26px);
+
+}
+
+.occlss-category-pane.is-active {
+    height: 100%;
+    height: inherit;
+}
+
+.is-active  .occlss-category-pane__heading {
+    &:after {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

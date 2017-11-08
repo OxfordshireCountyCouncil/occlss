@@ -1,0 +1,17 @@
+// Typecsset
+// Space elements by an amount based on your magic number. Pass in the property
+// to be indented as a paramater, e.g.:
+//
+// pre {
+//     @include space(padding-left);
+// }
+//
+@mixin space($property) {
+    #{$property}: 2 * $magic-number;
+    #{$property}: 2 * $magic-ratio + rem;
+}
+
+// A small, internally-used function to remove the units from a given value.
+@function strip-units($number) {
+    @return $number / ($number * 0 + 1);
+}

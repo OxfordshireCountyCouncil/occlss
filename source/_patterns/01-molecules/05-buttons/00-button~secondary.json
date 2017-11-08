@@ -1,0 +1,18 @@
+{
+  "buttons":{
+    "button": [
+      {
+        "occlss-button-text": "Secondary",
+        "occlss-button-modifire-class": "occlss-button--secondary",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      },
+      {
+        "occlss-button-text": "Secondary disabled",
+        "occlss-button-modifire-class": "occlss-button--secondary is-disabled",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "category-pane-heading": "Roads and parking",
+    "category-pane-mode-class": "",
+    "category-pane-view-more-link-name": "View all options",
+    "category-pane-view-more-link-url": "javascript:void(0);",
+    "summaryList":{
+        "list-mod-class": "",
+        "listItem": [
+        {
+            "listItem-link-name": "Current vacancies",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Teaching vacancies",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Childcare job",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Social care careers",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        }
+        ]
+    }
+      
+}

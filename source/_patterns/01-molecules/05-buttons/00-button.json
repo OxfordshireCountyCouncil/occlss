@@ -1,0 +1,18 @@
+{
+  "buttons":{
+    "button": [
+      {
+        "occlss-button-text": "Primary",
+        "occlss-button-modifire-class": "occlss-button--primary",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      },
+      {
+        "occlss-button-text": "Primary disabled",
+        "occlss-button-modifire-class": "occlss-button--primary is-disabled",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      }
+    ]
+  }
+}

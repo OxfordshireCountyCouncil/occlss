@@ -1,0 +1,55 @@
+/*
+Scope Namespaces: s-
+Format:
+.s-scope-name {}
+.s-cms-content {}
+
+<section class="s-cms-content">
+
+  <h1>...</h1>
+
+  <p>...</p>
+
+  <p>...</p>
+
+  <ul>
+    ...
+  </ul>
+
+  <p>...</p>
+
+</section>
+
+*/
+
+.s-cms-content-footer {
+  font-weight: $occlss-cms-footer-text-font-weight;
+  h2,h3,h4,h5 {
+    color: #ffffff;
+    font-weight: $occlss-cms-footer-heading-font-weight;
+    margin: rem(0 0 10px 0);
+  }
+
+  .icon-list {
+    @extend %reset_list_style;
+    @extend %clearfix;
+    margin-bottom: rem(20px);
+    li {
+      float: left;
+      margin-right: rem(12px);
+    }
+  }
+  
+  p {
+    margin: rem(0 0 15px 0);
+    &:last-child {
+      margin: 0;
+    }
+  }
+  a {
+    @include link-colors(#ffffff, $occlss-cms-footer-link-font-color);
+    &:focus {
+      @include tab-focus;
+    }
+  }
+}

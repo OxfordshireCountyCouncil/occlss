@@ -1,0 +1,10 @@
+{
+    "featuredPanelDefault" : {
+        "featured-panel-mod-class": "occlss-featured-panel--givry",
+        "featured-panel-heading-text": "On-street parking",
+        "featured-panel-summary-text": "",
+        "featured-panel-intro-text": "",
+        "featured-panel-view-more-link-text": "Apply for resident and visitor parking permits",
+        "featured-panel-view-more-link-url": "javascript:void(0);"
+    }
+}

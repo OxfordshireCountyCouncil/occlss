@@ -1,0 +1,4 @@
+// Convert to ems
+@function em($pixels, $context: $occlss-page-font-size-primary) {
+  @return ($pixels / $context) * 1em;
+}

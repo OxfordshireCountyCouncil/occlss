@@ -1,0 +1,21 @@
+.occlss-card {
+    margin-bottom: rem(24px);
+}
+.occlss-card__image-container {
+    width: 100%;
+    margin-bottom: rem(23px);
+}
+.occlss-card__image {
+    width: 100%;
+}
+.occlss-card__header {
+    margin: 0;
+}
+.occlss-card__title {
+    font-size: rem($occlss-card-font-size-title);
+    margin: 0;
+}
+.occlss-card__main {
+    margin-bottom: rem(26px);
+    line-height: 1;
+}

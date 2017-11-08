@@ -1,0 +1,45 @@
+<form method="post" class="occlss-form occlss-form--border">
+  <div class="occlss-layout">
+    <!--START layout block-->
+    <div class="occlss-layout__col occlss-layout__col--12">
+      <!--START layout elemnt -->
+      <fieldset class="occlss-form__group">
+        <legend class="occlss-form__group-title occlss-form__group-title--large">Log in to your account</legend>
+        <span class="occlss-form__group-desc">
+          If you already have an account, sign in below.
+        </span>
+        <div class="occlss-form__input-group">
+          <label class="occlss-form__label" for="sign-in-username">Username or email address</label>
+          <input class="occlss-form__input" id="sign-in-username" name="username" type="text" autocapitalize="off" autocorrect="off">
+        </div>
+        <div class="js-occlss-group-password occlss-form__input-group occlss-form__input-group--password">
+          <label class="occlss-form__label" for="sign-in-password">Password</label>
+          <input class="occlss-form__input" id="sign-in-password" name="password" type="password">
+
+            <a class="js-occlss-hide-show occlss-form__hide-show">
+        
+              <span class="occlss-icon occlss-icon--visible" aria-hidden="true">
+                <svg aria-hidden="true" class="occlss-icon__container">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#visible" class="icon__source icon__source--svg"></use>
+                </svg>
+              </span>
+
+            </span>
+            
+        </div>
+        <div class="occlss-layout occlss-layout--bleed">
+          <div class="occlss-layout__col occlss-layout__col--8">
+            <p>
+              <a title="Forgot password" href="javascript:void(0);" aria-controls="sign-in-password">
+                I forgot my password
+              </a>
+            </p>
+          </div>
+          <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--4">
+            <button type="submit" class="occlss-button occlss-button--primary occlss-form__submit">Sign in</button>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</form>

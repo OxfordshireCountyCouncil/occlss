@@ -1,0 +1,59 @@
+/*
+
+Placeholders are kind of a weird thing. They are classes that aren’t output when your
+SCSS is compiled. So then you might think “What’s the point?”. Actually the point would
+be minimal if it wasn’t for the @extend directive. But first things first. This is how
+you write a placeholder:
+
+%reset_list_style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.occlss-site-nav__list {
+  @extend %reset_list_style;
+}
+
+*/
+
+// This class will reset list style
+
+%reset_list_style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+
+// Clearfix class
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+%clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Screen reader only helper
+%sr-only {
+  position: fixed;
+  left: -9999em;
+  outline: none;
+}
+

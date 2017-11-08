@@ -1,0 +1,42 @@
+// Accessibility select borders on focus
+input:focus,
+textarea:focus,
+keygen:focus,
+select:focus,
+.button:focus,
+.form-element__label:focus,
+label.is-active,
+a:focus {
+    outline: 2px solid $occlss-form-border-color-base-input-focus;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  outline: none;
+}
+
+
+
+// Grid system old browsers hack
+
+.ie6, 
+.ie7, 
+.ie8,
+.ie9 {
+    .occlss-layout {
+        @extend %clearfix;
+    }
+    .occlss-layout__col {
+        float: left;
+        display: block;
+    }
+}
+
+.ie6, 
+.ie7, 
+.ie8 {
+    .occlss-layout__col {
+        width: 100%;
+    }
+
+}

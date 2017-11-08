@@ -1,0 +1,97 @@
+{
+  "TabWidget": {
+    "tabs1content": {
+        "summaryList":{
+            "list-mod-class": "occlss-summary-list--tab-widget",
+            "listItem": [
+            {
+                "listItem-link-name": "Park and Ride",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            },
+            {
+                "listItem-link-name": "Teaching vacancies",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            },
+            {
+                "listItem-link-name": "Childcare job",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            },
+            {
+                "listItem-link-name": "Social care careers",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            }
+            ]
+        }
+    },
+    "tabs2content": {
+        "summaryList":{
+            "list-mod-class": "occlss-summary-list--tab-widget",
+            "listItem": [
+            {
+                "listItem-link-name": "Parking tickets",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            },
+            {
+                "listItem-link-name": "Bath, death or marriage certificates",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            },
+            {
+                "listItem-link-name": "Ceremonies",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            },
+            {
+                "listItem-link-name": "Council Tax",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            }
+            ]
+        }
+    },    
+    "tabs3content": {
+        "summaryList":{
+            "list-mod-class": "occlss-summary-list--tab-widget",
+            "listItem": [
+            {
+                "listItem-link-name": "Find a library",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            },
+            {
+                "listItem-link-name": "Teaching vacancies",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            },
+            {
+                "listItem-link-name": "Childcare job",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            },
+            {
+                "listItem-link-name": "Social care careers",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+            }
+            ]
+        }
+    }
+  }
+}

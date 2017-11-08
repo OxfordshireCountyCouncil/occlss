@@ -1,0 +1,40 @@
+.occlss-breadcrumb {
+  display: block;
+  line-height: $occlss-breadcrumb-line-height;
+  padding: rem($occlss-breadcrumb-padding);
+}
+
+.occlss-breadcrumb__wraper {
+  background: $occlss-breadcrumb-background-primary;
+}
+
+.occlss-breadcrumb--primary {
+  padding-bottom: 0;
+}
+
+
+.occlss-breadcrumb__conteiner {
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.occlss-breadcrumb__item {
+  display: inline-block;
+  padding-right: 0.3em;
+  position: relative;
+  font-size: em($occlss-breadcrumb-font-size-primary);
+  &:after {
+    content: ">";
+    margin-left: 0.3em;
+  }
+  &:before {
+    content: "";
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}

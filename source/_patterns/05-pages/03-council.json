@@ -1,0 +1,52 @@
+{
+	"title" : "Council page",
+	"bodyClass": "council",
+    "emergency" : false,
+    "selectedCategoryClass":"occlss-page-head__wraper--council",
+    "category_nav": {
+        "nav_link": [
+            {
+                "name": "Residents",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state": "",
+                "linkURL": "link.pages-residents"
+            },
+            {
+                "name":"Business",
+                "modeClass": "occlss-category-nav__item--business",
+                "state": "",
+                "linkURL": "link.pages-business"
+            },
+            {
+                "name":"Council",
+                "modeClass": "occlss-category-nav__item--council",
+                "state": "active",
+                "linkURL": "link.pages-council"
+            }
+        ]
+    },
+    "sidebarItemSection":{
+        "section-title": "Parking",
+        "section-modclass": "occlss-sidebar-item-section--council",
+        "listItem": [
+        {
+            "listItem-link-name": "Controlled parking zones",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Blue badge",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Bicester resident's parking",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        }
+        ]
+    }
+}

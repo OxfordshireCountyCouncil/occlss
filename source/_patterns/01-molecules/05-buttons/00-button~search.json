@@ -1,0 +1,18 @@
+{
+  "buttons":{
+    "button": [
+      {
+        "occlss-button-text": "Search",
+        "occlss-button-modifire-class": "occlss-button--search",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      },
+      {
+        "occlss-button-text": "Search",
+        "occlss-button-modifire-class": "occlss-button--search is-disabled",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      }
+    ]
+  }
+}

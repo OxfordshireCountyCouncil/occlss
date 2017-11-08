@@ -1,0 +1,10 @@
+// Global classes Like headings, intro text etc.
+
+
+.occlss-g-summary-text {
+    font-size: $occlss-summary-text-font-size-primary;
+    font-weight: $occlss-summary-text-font-weight-primary;
+    color: $occlss-summary-text-font-color-primary;
+    line-height: $occlss-summary-text-line-height-primary;
+    margin: rem($occlss-summary-text-font-margin-primary);
+}

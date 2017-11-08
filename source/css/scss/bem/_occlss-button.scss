@@ -1,0 +1,291 @@
+// Buttons
+
+// Primary
+.occlss-button--primary {
+
+  @include button-variant(
+    $occlss-button-primary-font-color,
+    $occlss-button-primary-background,
+    $occlss-button-primary-border-color,
+    $occlss-button-primary-font-color-hover,
+    $occlss-button-primary-background-hover,
+    $occlss-button-primary-border-color
+  );
+
+  @if variable-exists(occlss-button-primary-border-bottom) {
+    border-bottom: rem($occlss-button-primary-border-bottom);
+    background-size: rem(1px 200px);
+    &:hover{
+      border-bottom: rem($occlss-button-primary-border-hover-bottom);
+      background-color: $occlss-button-primary-background-hover;
+      border-bottom: rem($occlss-button-primary-border-hover-bottom);      
+    }
+    &:active,
+    &:focus {
+      border-bottom: rem($occlss-button-primary-border-bottom);
+      background-color: $occlss-button-primary-background;
+      box-shadow: rem($occlss-button-primary-shadow);
+    }
+  }
+
+  &.is-disabled,
+  &:disabled {
+    opacity: 1;
+    color: $occlss-button-primary-font-color-disable;
+    background: $occlss-button-primary-background-disable;
+    border-bottom: rem($occlss-button-primary-border-bottom-disable);
+    box-shadow: none;
+  }
+}
+
+// Secondary
+.occlss-button--secondary {
+  
+    @include button-variant(
+      $occlss-button-secondary-font-color,
+      $occlss-button-secondary-background,
+      $occlss-button-secondary-border-color,
+      $occlss-button-secondary-font-color-hover,
+      $occlss-button-secondary-background-hover,
+      $occlss-button-secondary-border-color
+    );
+  
+    @if variable-exists(occlss-button-secondary-border-bottom) {
+      border-bottom: rem($occlss-button-secondary-border-bottom);
+      background-size: rem(1px 200px);
+      &:hover{
+        border-bottom: rem($occlss-button-secondary-border-hover-bottom);
+        background-color: $occlss-button-secondary-background-hover;
+        border-bottom: rem($occlss-button-secondary-border-hover-bottom);      
+      }
+      &:active,
+      &:focus {
+        border-bottom: rem($occlss-button-secondary-border-bottom);
+        background-color: $occlss-button-secondary-background;
+        box-shadow: rem($occlss-button-secondary-shadow);
+      }
+    }
+  
+    &.is-disabled,
+    &:disabled {
+      opacity: 1;
+      color: $occlss-button-secondary-font-color-disable;
+      background: $occlss-button-secondary-background-disable;
+      border-bottom: rem($occlss-button-secondary-border-bottom-disable);
+      box-shadow: none;
+    }
+}
+
+
+// Residents
+.occlss-button--residents {
+  
+    @include button-variant(
+      $occlss-button-residents-font-color,
+      $occlss-button-residents-background,
+      $occlss-button-residents-border-color,
+      $occlss-button-residents-font-color-hover,
+      $occlss-button-residents-background-hover,
+      $occlss-button-residents-border-color
+    );
+  
+    @if variable-exists(occlss-button-residents-border-bottom) {
+      border-bottom: rem($occlss-button-residents-border-bottom);
+      background-size: rem(1px 200px);
+      &:hover{
+        border-bottom: rem($occlss-button-residents-border-hover-bottom);
+        background-color: $occlss-button-residents-background-hover;
+        border-bottom: rem($occlss-button-residents-border-hover-bottom);      
+      }
+      &:active,
+      &:focus {
+        border-bottom: rem($occlss-button-residents-border-bottom);
+        background-color: $occlss-button-residents-background;
+        box-shadow: rem($occlss-button-residents-shadow);
+      }
+    }
+  
+    &.is-disabled,
+    &:disabled {
+      opacity: 1;
+      color: $occlss-button-residents-font-color-disable;
+      background: $occlss-button-residents-background-disable;
+      border-bottom: rem($occlss-button-residents-border-bottom-disable);
+      box-shadow: none;
+    }
+}
+
+// Business
+.occlss-button--business {
+  
+    @include button-variant(
+      $occlss-button-business-font-color,
+      $occlss-button-business-background,
+      $occlss-button-business-border-color,
+      $occlss-button-business-font-color-hover,
+      $occlss-button-business-background-hover,
+      $occlss-button-business-border-color
+    );
+  
+    @if variable-exists(occlss-button-business-border-bottom) {
+      border-bottom: rem($occlss-button-business-border-bottom);
+      background-size: rem(1px 200px);
+      &:hover{
+        border-bottom: rem($occlss-button-business-border-hover-bottom);
+        background-color: $occlss-button-business-background-hover;
+        border-bottom: rem($occlss-button-business-border-hover-bottom);      
+      }
+      &:active,
+      &:focus {
+        border-bottom: rem($occlss-button-business-border-bottom);
+        background-color: $occlss-button-business-background;
+        box-shadow: rem($occlss-button-business-shadow);
+      }
+    }
+  
+    &.is-disabled,
+    &:disabled {
+      opacity: 1;
+      color: $occlss-button-business-font-color-disable;
+      background: $occlss-button-business-background-disable;
+      border-bottom: rem($occlss-button-business-border-bottom-disable);
+      box-shadow: none;
+    }
+}
+
+
+
+
+// Council
+.occlss-button--council {
+  
+    @include button-variant(
+      $occlss-button-council-font-color,
+      $occlss-button-council-background,
+      $occlss-button-council-border-color,
+      $occlss-button-council-font-color-hover,
+      $occlss-button-council-background-hover,
+      $occlss-button-council-border-color
+    );
+  
+    @if variable-exists(occlss-button-council-border-bottom) {
+      border-bottom: rem($occlss-button-council-border-bottom);
+      background-size: rem(1px 200px);
+      &:hover{
+        border-bottom: rem($occlss-button-council-border-hover-bottom);
+        background-color: $occlss-button-council-background-hover;
+        border-bottom: rem($occlss-button-council-border-hover-bottom);      
+      }
+      &:active,
+      &:focus {
+        border-bottom: rem($occlss-button-council-border-bottom);
+        background-color: $occlss-button-council-background;
+        box-shadow: rem($occlss-button-council-shadow);
+      }
+    }
+  
+    &.is-disabled,
+    &:disabled {
+      opacity: 1;
+      color: $occlss-button-council-font-color-disable;
+      background: $occlss-button-council-background-disable;
+      border-bottom: rem($occlss-button-council-border-bottom-disable);
+      box-shadow: none;
+    }
+}
+
+
+
+// negative
+.occlss-button--negative {
+  @include button-variant(
+    $occlss-button-negative-font-color,
+    $occlss-button-negative-background,
+    $occlss-button-negative-border-color,
+    $occlss-button-negative-font-color-hover,
+    $occlss-button-negative-background-hover,
+    $occlss-button-negative-border-color-hover
+  );
+
+  box-shadow: rem($occlss-button-negative-shadow);
+  &:hover{
+    box-shadow: rem($occlss-button-negative-shadow);
+  }
+  &:active,
+  &:focus {
+    color:  $occlss-button-negative-font-color-hover;
+    background-color: $occlss-button-negative-background-hover;
+    box-shadow: rem($occlss-button-negative-shadow-hover);
+  }
+
+  &.is-disabled,
+  &:disabled {
+    color: mix($occlss-button-negative-font-color-disable, #ffffff, 80%);
+    background: #ffffff;
+    box-shadow: none;
+  }
+}
+
+
+// neutral
+.occlss-button--neutral {
+  @include button-variant(
+    $occlss-button-neutral-font-color,
+    $occlss-button-neutral-background,
+    $occlss-button-neutral-border-color,
+    $occlss-button-neutral-font-color-hover,
+    $occlss-button-neutral-background-hover,
+    $occlss-button-neutral-border-color-hover
+  );
+
+  box-shadow: rem($occlss-button-neutral-shadow);
+
+  &:hover{
+    box-shadow: rem($occlss-button-neutral-shadow);
+  }
+  &:active,
+  &:focus {
+    color:  $occlss-button-neutral-font-color-hover;
+    background-color: $occlss-button-neutral-background-hover;
+    box-shadow: rem($occlss-button-neutral-shadow-hover);
+  }
+
+  &.is-disabled,
+  &:disabled {
+    color: mix($occlss-button-neutral-font-color-disable, #ffffff, 80%);
+    background: #ffffff;
+    box-shadow: none;
+  }
+}
+
+
+
+// search button
+
+.occlss-button--search {
+  @include button-variant(
+    $occlss-button-search-font-color,
+    $occlss-button-search-background,
+    $occlss-button-search-border-color-primary,
+    $occlss-button-search-font-color-hover,
+    $occlss-button-search-background-hover,
+    $occlss-button-search-border-color-hover
+  );
+
+  box-shadow: rem($occlss-button-search-shadow-primary);
+  border-radius: rem($occlss-button-search-border-radius);
+  
+  &:active,
+  &:focus {
+      color: $occlss-button-search-font-color-hover;
+      background-color: $occlss-button-search-background-active 
+  }
+
+  &.is-disabled,
+  &:disabled {
+    color: $occlss-button-search-font-color-disable;
+    background: $occlss-button-search-background-disable;
+    box-shadow: none;
+  }
+}
+  

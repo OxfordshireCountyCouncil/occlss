@@ -1,0 +1,26 @@
+{
+  "colors":{
+    "color": [
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-wedgewood",
+        "occlss-color-name": "#417B90",
+        "occlss-color-sass-var-name": "#417B90"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-casal",
+        "occlss-color-name": "#336071",
+        "occlss-color-sass-var-name": "#336071"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-hippie-blue",
+        "occlss-color-name": "#599BB5",
+        "occlss-color-sass-var-name": "#599BB5"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-ziggurat",
+        "occlss-color-name": "#AECEDB",
+        "occlss-color-sass-var-name": "#AECEDB"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{{#featuredPanelGridSection}}
+<section>
+    <div class="occlss-wrapper"><!--START wrapper block-->
+      <div class="occlss-layout occlss-layout--gutter-s"><!--START layout block-->
+
+        {{#featuredPanels}}
+        <div class="occlss-layout__col occlss-layout__col--flex {{ panel-size }}">
+          {{> organisms-featured-panel }}
+        </div>
+        {{/featuredPanels}}
+      
+
+      </div><!--End layout elemnt -->
+    </div>
+     
+</section>
+{{/featuredPanelGridSection}}

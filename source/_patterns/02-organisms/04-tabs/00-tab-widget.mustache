@@ -1,0 +1,102 @@
+{{#TabWidget}}
+<div class="occlss-tab-widget js-occlss-tab-widget">
+
+  <ul class="occlss-tab-widget__list">
+    <li class="occlss-tab-widget__item">
+      <a href="#tab-panel-1" class="occlss-tab-widget__link">Apply</a>
+    </li>
+    <li class="occlss-tab-widget__item">
+      <a href="#tab-panel-2" class="occlss-tab-widget__link">Pay</a>
+    </li>
+    <li class="occlss-tab-widget__item">
+      <a href="#tab-panel-3" class="occlss-tab-widget__link">Report</a>
+    </li>
+  </ul>
+
+  
+  <a href="#tab-panel-1" class="occlss-tab-widget__link occlss-tab-widget__link--mobile js-occlss-mob-tab">
+    Apply
+    <span class="occlss-icon occlss-icon--angle-arrow-down" aria-hidden="true">
+      <svg aria-hidden="true" class="occlss-icon__container occlss-tab-widget__mobile-link-icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#angle-arrow-down" class="icon__source icon__source--svg"></use>
+      </svg>
+    </span>
+  </a>
+
+  <div class="occlss-tab-widget__tabs">
+    <div class="occlss-tab-widget__tab-content">
+      <!--<h2 id="tab-panel-1" tabindex="-1">Apply</h2>-->
+      {{#tabs1content}}
+        {{> atoms-summary-list }}
+        <a href="javascript:void(0);" class="occlss-tab-widget__see-more-link">
+          View all options
+
+          <span class="occlss-icon occlss-icon--arrow-right-long-secondary" aria-hidden="true">
+            <svg aria-hidden="true" class="occlss-icon__container occlss-tab-widget__see-more-link-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#arrow-right-long-right-secondary" class="icon__source icon__source--svg"></use>
+            </svg>
+          </span>
+
+        </a>
+      {{/tabs1content}}
+    </div>
+    
+
+    <a href="#tab-panel-2" class="occlss-tab-widget__link occlss-tab-widget__link--mobile js-occlss-mob-tab">
+      Pay
+      <span class="occlss-icon occlss-icon--angle-arrow-down" aria-hidden="true">
+        <svg aria-hidden="true" class="occlss-icon__container occlss-tab-widget__mobile-link-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#angle-arrow-down" class="icon__source icon__source--svg"></use>
+        </svg>
+      </span>
+    </a>
+
+    <div class="occlss-tab-widget__tab-content">
+      <!--<h2 id="tab-panel-2" tabindex="-1">Play</h2>-->
+      {{#tabs2content}}
+        {{> atoms-summary-list }}
+        <a href="javascript:void(0);" class="occlss-tab-widget__see-more-link">
+          View all options
+
+          <span class="occlss-icon occlss-icon--arrow-right-long-secondary" aria-hidden="true">
+            <svg aria-hidden="true" class="occlss-icon__container occlss-tab-widget__see-more-link-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#arrow-right-long-right-secondary" class="icon__source icon__source--svg"></use>
+            </svg>
+          </span>
+
+        </a>
+      {{/tabs2content}}
+    </div>
+
+
+    <a href="#tab-panel-3" class="occlss-tab-widget__link occlss-tab-widget__link--mobile js-occlss-mob-tab">
+      Report
+      <span class="occlss-icon occlss-icon--angle-arrow-down" aria-hidden="true">
+        <svg aria-hidden="true" class="occlss-icon__container occlss-tab-widget__mobile-link-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#angle-arrow-down" class="icon__source icon__source--svg"></use>
+        </svg>
+      </span>
+    </a>
+    
+    <div class="occlss-tab-widget__tab-content">
+      <!--<h2 id="tab-panel-3" tabindex="-1">Report</h2>-->
+      {{#tabs3content}}
+
+        {{> atoms-summary-list }}
+
+        <a href="javascript:void(0);" class="occlss-tab-widget__see-more-link">
+          View all options
+
+          <span class="occlss-icon occlss-icon--arrow-right-long-secondary" aria-hidden="true">
+            <svg aria-hidden="true" class="occlss-icon__container occlss-tab-widget__see-more-link-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#arrow-right-long-right-secondary" class="icon__source icon__source--svg"></use>
+            </svg>
+          </span>
+
+        </a>
+      {{/tabs3content}}
+    </div>
+    
+  </div>
+</div>
+{{/TabWidget}}

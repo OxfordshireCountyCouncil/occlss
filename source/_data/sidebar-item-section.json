@@ -1,0 +1,26 @@
+{
+    "sidebarItemSection":{
+      "section-title": "Parking",
+      "section-modclass":"",
+      "listItem": [
+        {
+          "listItem-link-name": "Controlled parking zones",
+          "listItem-mod-class": "",
+          "listItem-link-mod-class": "",
+          "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Blue badge",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Bicester resident's parking",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        }
+      ]
+    }
+  }

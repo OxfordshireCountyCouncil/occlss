@@ -1,0 +1,18 @@
+<svg width="62" height="49" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+ <title>success-green-large-icon</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="Page-1">
+   <g fill="#50B948" id="success-green-large-icon">
+    <path id="Combined-Shape" d="m32.838619,39.75936l28.566973,-28.566972c0.781048,-0.781048 0.781048,-2.047378 0,-2.828427l-7.778175,-7.778175l0,0c-0.781049,-0.781048 -2.047378,-0.781048 -2.828427,0l0,0l-27.692388,27.692389l-11.914214,-11.914214c-0.781048,-0.781049 -2.047378,-0.781049 -2.828427,0l-7.778175,7.778175l0,0c-0.781048,0.781048 -0.781048,2.047378 0,2.828427l0,0l21.213204,21.213203c0.781049,0.781049 2.047378,0.781049 2.828427,0l7.778175,-7.778174c0.191098,-0.191099 0.335441,-0.411248 0.433027,-0.646232z"/>
+   </g>
+  </g>
+ </g>
+</svg>

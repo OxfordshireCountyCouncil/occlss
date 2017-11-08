@@ -1,0 +1,38 @@
+{
+    "pageGuide":{
+      "column": [ 
+        {
+            "listItems": [
+              {
+                "listItem-link-name": "Overview",
+                "listItem-link-url":  ""
+              },
+              {
+                  "listItem-link-name": "Before you appeal",
+                  "listItem-link-url":  "javascript:void(0);"
+              },
+              {
+                  "listItem-link-name": "Appeal to the tribunal",
+                  "listItem-link-url":  "javascript:void(0);"
+              }
+            ]
+          },
+          {
+            "listItems": [
+              {
+                  "listItem-link-name": "What happens at the hearing",
+                  "listItem-link-url":  "javascript:void(0);"
+              },
+              {
+                "listItem-link-name": "The tribunal's decision",
+                "listItem-link-url":  "javascript:void(0);"
+              },
+              {
+                "listItem-link-name": "Legislation",
+                "listItem-link-url":  "javascript:void(0);"
+              }
+            ]
+          }
+      ]
+    }
+}

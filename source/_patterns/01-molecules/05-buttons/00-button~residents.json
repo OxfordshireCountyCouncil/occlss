@@ -1,0 +1,18 @@
+{
+  "buttons":{
+    "button": [
+      {
+        "occlss-button-text": "Residents button",
+        "occlss-button-modifire-class": "occlss-button--residents",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      },
+      {
+        "occlss-button-text": "Residents button disabled",
+        "occlss-button-modifire-class": "occlss-button--residents is-disabled",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      }
+    ]
+  }
+}

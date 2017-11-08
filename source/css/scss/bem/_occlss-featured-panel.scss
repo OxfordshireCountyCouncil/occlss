@@ -1,0 +1,116 @@
+.occlss-featured-panel {
+    width: 100%;
+    height: 100%;
+    height: inherit;
+    
+    padding: 20px;
+
+    position: relative;
+    display: block;
+    -ms-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+    text-decoration: none;
+    background: $occlss-featured-panel-background-color;
+    color: $occlss-featured-panel-font-color;
+    border-radius: rem(10px);
+    &:hover {
+        color: $occlss-featured-panel-font-color;
+    }
+}
+
+.occlss-featured-panel--alpha {
+    color: #ffffff;
+}
+
+.occlss-featured-panel__heading {
+    font-size: rem($occlss-featured-panel-font-size-heading);
+    font-weight: $occlss-featured-panel-font-weight-heading;
+    line-height: 0.9;
+    margin-bottom: rem($occlss-featured-panel-margin-bottom-heading);
+}
+
+.occlss-featured-panel__short-summary {
+    font-size: rem($occlss-featured-panel-font-size-short-summary);
+    margin-bottom: rem(20px);
+    line-height: 1.4;
+}
+
+.occlss-featured-panel__intro {
+    font-size: rem($occlss-featured-panel-font-size-intro-text);
+    line-height: 1.2;
+    margin-bottom: rem(44px);
+}
+
+.occlss-featured-panel__view-more-link {
+    font-size: $occlss-featured-panel-font-size-more-link;
+    text-decoration: none;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;
+    padding-right: rem(35px);
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url('#{$occlss-global-image-path}/icon-arrow-right-link-long-white.png');
+        background-image: url('#{$occlss-global-image-path}/icon-arrow-right-link-long-white.svg');
+        background-size: cover;
+        width: rem(25px);
+        height: rem(22px);
+        bottom: 0;
+        right: 2px;
+    }
+}
+
+// Mods
+
+.occlss-featured-panel--aqua-dee {
+    background: $occlss-featured-panel-background-color-aqua-deep;
+}
+
+.occlss-featured-panel--givry {
+    background: $occlss-featured-panel-background-color-givry;
+    color: $occlss-featured-panel-font-color-givry;
+
+    .occlss-featured-panel__view-more-link {
+        &:after {
+            background-image: url('#{$occlss-global-image-path}/icon-arrow-right-link-long-dark.png');
+            background-image: url('#{$occlss-global-image-path}/icon-arrow-right-link-long-dark.svg');
+        }
+    }
+
+    &:hover {
+        color: $occlss-featured-panel-font-color-givry;
+    }
+}
+
+.occlss-featured-panel--ghost {
+    background: $occlss-featured-panel-background-color-ghost;
+    color: $occlss-featured-panel-font-color-ghost;
+    
+        .occlss-featured-panel__view-more-link {
+            &:after {
+                background-image: url('#{$occlss-global-image-path}/icon-arrow-right-link-long-dark.png');
+                background-image: url('#{$occlss-global-image-path}/icon-arrow-right-link-long-dark.svg');
+            }
+        }
+    
+        &:hover {
+            color: $occlss-featured-panel-font-color-ghost;
+        }
+}
+
+.occlss-featured-panel--como {
+    background: $occlss-featured-panel-background-color-como;
+}
+
+.occlss-featured-panel--ronchi {
+    background: $occlss-featured-panel-background-color-ronchi;
+    color: #000000;
+    &:hover {
+        color: #000000;;
+    }
+}
+

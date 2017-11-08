@@ -1,0 +1,10 @@
+{
+    "featuredPanelDefault" : {
+        "featured-panel-mod-class": "occlss-featured-panel--como",
+        "featured-panel-heading-text": "School applications",
+        "featured-panel-summary-text": "",
+        "featured-panel-intro-text": "",
+        "featured-panel-view-more-link-text": "Apply for a school place, or transfer to a diffrent school",
+        "featured-panel-view-more-link-url": "javascript:void(0);"
+    }
+}

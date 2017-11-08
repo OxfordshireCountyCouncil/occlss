@@ -1,0 +1,13 @@
+{
+    "alet-type-warning": true,
+    "alet-type": "warning",
+    "mod-class": "occlss-alert--warning",
+    "icon": {
+        "icon-class-name":"occlss-icon--warning-sign occlss-alert__sign",
+        "aria-hidden":"true"
+    },
+    "heading": "Sorry, we are having some problems",
+    "text": [
+        {"paragraph":"We are experiencing some technical issues with our website. We apollogise for any inconvenience."}
+    ]
+}

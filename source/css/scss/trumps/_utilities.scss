@@ -1,0 +1,63 @@
+//
+//Prefix to denote utilities, overrides, and helper classes. Classes beginning with .u-
+//should never be redefined, bound onto, or modified. These classes appear in the Trumps
+//layer and usually carry !important.
+//
+
+// Create grid utility classes
+
+@include make_a_grid($make_grid: true);
+
+
+
+
+
+// This class will highlight selected object
+.occlss-u-focus {
+    //outline: solid 3px $highlited-color;
+}
+
+
+
+
+// This class will hide object from display
+.occlss-u-hidden {
+  display: none;
+}
+
+
+// This class will hide object from display but it will be visable for screen readers
+.occlss-u-visuallyhidden {
+    @extend %sr-only;
+}
+
+// View all link
+.occlss-u-more-link {
+    &:hover,
+    &:active,
+    &:focus {
+        .occlss-u-more-link__icon {
+            fill: $occlss-link-color-primary-hover;
+        }
+    }
+}
+
+.occlss-u-more-link__icon {
+    width: rem(19px);
+    height: rem(19px);
+    margin-left: rem(10px);
+    fill: $occlss-link-color-primary;
+}
+
+.occlss-u-more-link--dark {
+    color: $occlss-utilities-font-color-more-link-tab-widget;
+    .occlss-u-more-link__icon {
+        fill: $occlss-utilities-font-color-more-link-tab-widget;
+    }
+}
+
+// Unstiled list
+
+.occlss-u-unstyled-list {
+    @extend %reset_list_style;
+}

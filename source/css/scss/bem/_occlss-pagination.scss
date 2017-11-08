@@ -1,0 +1,48 @@
+.occlss-pagination {
+    margin: rem(30px) 0;
+}
+
+.occlss-pagination__item {
+    float: left;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.occlss-pagination__link {
+    display: block;
+    padding: rem(15px);
+    text-decoration: underline;
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        .occlss-pagination__icon {
+            fill: $occlss-link-color-primary-hover;
+        }
+    }
+}
+
+.occlss-pagination__link-title {
+    display: block;
+}
+
+.occlss-pagination__item--previous {
+    float: left;
+    text-align: left;
+    .occlss-pagination__icon {
+        margin-left: 0;
+        margin-right: rem(10px);
+    }
+}
+
+.occlss-pagination__icon {
+    fill: $occlss-link-color-primary;
+    width: rem(22px);
+    height: rem(22px);
+    margin-left: rem(10px);
+}
+
+

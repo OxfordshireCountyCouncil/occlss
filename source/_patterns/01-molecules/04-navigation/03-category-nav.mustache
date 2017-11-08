@@ -1,0 +1,16 @@
+
+{{#category_nav}}
+    <nav class="occlss-category-nav">
+    <ul class="occlss-layout occlss-layout--align-self-end occlss-category-nav__list">
+        {{#nav_link}}
+                {{#state }}
+                    <li class="occlss-layout__col occlss-layout__col--auto occlss-category-nav__item {{ modeClass }} is-active">{{ name }}</li>
+                {{/state}}
+                {{^state}}
+                    <li class="occlss-layout__col occlss-layout__col--auto occlss-category-nav__item {{ modeClass }}"><a href="{{ linkURL }}" class="occlss-category-nav__link">{{ name }}</a></li>
+                {{/state}}
+        {{/nav_link}}
+        </ul>
+    </nav>
+{{/category_nav}}
+

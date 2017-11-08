@@ -1,0 +1,56 @@
+{
+  "colors":{
+    "color": [
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-emperor",
+        "occlss-color-name": "#525252",
+        "occlss-color-sass-var-name": "#525252"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-cod-gray",
+        "occlss-color-name": "#1a1a1a",
+        "occlss-color-sass-var-name": "#1a1a1a"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-mine-shaft",
+        "occlss-color-name": "#333333",
+        "occlss-color-sass-var-name": "#333333"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-alabaster",
+        "occlss-color-name": "#fcfcfc",
+        "occlss-color-sass-var-name": "#fcfcfc"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-venice-blue",
+        "occlss-color-name": "#0a549d",
+        "occlss-color-sass-var-name": "#3b7fc4"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-denim",
+        "occlss-color-name": "#0e73d8",
+        "occlss-color-sass-var-name": "#0e73d8"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-selago",
+        "occlss-color-name": "#e5effb",
+        "occlss-color-sass-var-name": "#e5effb"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-ronchi",
+        "occlss-color-name": "#edc856",
+        "occlss-color-sass-var-name": "#edc856"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-pizza",
+        "occlss-color-name": "#d0a116",
+        "occlss-color-sass-var-name": "#d0a116"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-maize",
+        "occlss-color-name": "#f5de98",
+        "occlss-color-sass-var-name": "#f5de98"
+      }
+    ]
+  }
+}

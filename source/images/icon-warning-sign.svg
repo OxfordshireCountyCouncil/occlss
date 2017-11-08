@@ -1,0 +1,18 @@
+<svg width="65" height="65" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+ <title>triangle-icon</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="Page-1">
+   <g stroke-width="12" stroke="#F3830B" id="triangle-icon">
+    <path id="Triangle" d="m33.40933,6.697043l25.442871,50.885742l0,0c0.246989,0.493979 0.046765,1.094652 -0.447214,1.341641c-0.138855,0.069428 -0.291968,0.105573 -0.447213,0.105573l-50.885743,0l0,0c-0.552284,0 -1,-0.447715 -1,-1c0,-0.155245 0.036146,-0.308358 0.105573,-0.447214l25.442871,-50.885742l0,0c0.24699,-0.493979 0.847663,-0.694203 1.341641,-0.447214c0.193528,0.096764 0.35045,0.253686 0.447214,0.447214z"/>
+   </g>
+  </g>
+ </g>
+</svg>

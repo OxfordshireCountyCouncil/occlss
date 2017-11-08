@@ -1,0 +1,185 @@
+UID        PID  PPID  C STIME TTY      STAT   TIME CMD
+root         1     0  0 08:55 ?        Ss     0:02 /sbin/init
+root         2     0  0 08:55 ?        S      0:00 [kthreadd]
+root         3     2  0 08:55 ?        S      0:02 [ksoftirqd/0]
+root         5     2  0 08:55 ?        S<     0:00 [kworker/0:0H]
+root         7     2  0 08:55 ?        S      0:05 [rcu_sched]
+root         8     2  0 08:55 ?        S      0:00 [rcu_bh]
+root         9     2  0 08:55 ?        S      0:00 [migration/0]
+root        10     2  0 08:55 ?        S      0:00 [watchdog/0]
+root        11     2  0 08:55 ?        S      0:00 [kdevtmpfs]
+root        12     2  0 08:55 ?        S<     0:00 [netns]
+root        13     2  0 08:55 ?        S<     0:00 [perf]
+root        14     2  0 08:55 ?        S      0:00 [khungtaskd]
+root        15     2  0 08:55 ?        S<     0:00 [writeback]
+root        16     2  0 08:55 ?        SN     0:00 [ksmd]
+root        17     2  0 08:55 ?        SN     0:00 [khugepaged]
+root        18     2  0 08:55 ?        S<     0:00 [crypto]
+root        19     2  0 08:55 ?        S<     0:00 [kintegrityd]
+root        20     2  0 08:55 ?        S<     0:00 [bioset]
+root        21     2  0 08:55 ?        S<     0:00 [kblockd]
+root        22     2  0 08:55 ?        S<     0:00 [ata_sff]
+root        23     2  0 08:55 ?        S<     0:00 [md]
+root        24     2  0 08:55 ?        S<     0:00 [devfreq_wq]
+root        28     2  0 08:55 ?        S      0:02 [kswapd0]
+root        29     2  0 08:55 ?        S<     0:00 [vmstat]
+root        30     2  0 08:55 ?        S      0:00 [fsnotify_mark]
+root        31     2  0 08:55 ?        S      0:00 [ecryptfs-kthrea]
+root        47     2  0 08:55 ?        S<     0:00 [kthrotld]
+root        48     2  0 08:55 ?        S<     0:00 [acpi_thermal_pm]
+root        49     2  0 08:55 ?        S<     0:00 [bioset]
+root        50     2  0 08:55 ?        S<     0:00 [bioset]
+root        51     2  0 08:55 ?        S<     0:00 [bioset]
+root        52     2  0 08:55 ?        S<     0:00 [bioset]
+root        53     2  0 08:55 ?        S<     0:00 [bioset]
+root        54     2  0 08:55 ?        S<     0:00 [bioset]
+root        55     2  0 08:55 ?        S<     0:00 [bioset]
+root        56     2  0 08:55 ?        S<     0:00 [bioset]
+root        57     2  0 08:55 ?        S      0:00 [scsi_eh_0]
+root        58     2  0 08:55 ?        S<     0:00 [scsi_tmf_0]
+root        59     2  0 08:55 ?        S      0:00 [scsi_eh_1]
+root        60     2  0 08:55 ?        S<     0:00 [scsi_tmf_1]
+root        66     2  0 08:55 ?        S<     0:00 [ipv6_addrconf]
+root        80     2  0 08:55 ?        S<     0:00 [deferwq]
+root        81     2  0 08:55 ?        S<     0:00 [charger_manager]
+root        82     2  0 08:55 ?        S<     0:00 [bioset]
+root       128     2  0 08:55 ?        S<     0:00 [kpsmoused]
+root       200     2  0 08:55 ?        S<     0:00 [kdmflush]
+root       201     2  0 08:55 ?        S<     0:00 [bioset]
+root       211     2  0 08:55 ?        S<     0:00 [kdmflush]
+root       212     2  0 08:55 ?        S<     0:00 [bioset]
+root       240     2  0 08:55 ?        S      0:03 [jbd2/dm-0-8]
+root       241     2  0 08:55 ?        S<     0:00 [ext4-rsv-conver]
+root       301     2  0 08:55 ?        S<     0:00 [rpciod]
+root       306     1  0 08:55 ?        Ss     0:01 /lib/systemd/systemd-journald
+root       310     2  0 08:55 ?        S      0:00 [kauditd]
+root       341     1  0 08:55 ?        Ss     0:00 /sbin/lvmetad -f
+root       358     1  0 08:55 ?        Ss     0:00 /lib/systemd/systemd-udevd
+root       367     2  0 08:55 ?        S<     0:00 [kworker/0:1H]
+root       396     2  0 08:55 ?        S<     0:00 [iprt-VBoxWQueue]
+root       439     2  0 08:55 ?        S<     0:00 [ttm_swap]
+root       581     2  0 08:55 ?        S<     0:00 [ext4-rsv-conver]
+root       666     1  0 08:55 ?        Ss     0:00 /usr/sbin/rpc.idmapd
+root       801     1  0 08:55 ?        Ss     0:00 /lib/systemd/systemd-logind
+avahi      824     1  0 08:55 ?        Ss     0:00 avahi-daemon: running [drupalvm.local]
+root       831     1  0 08:55 ?        Ssl    0:00 /usr/lib/accountsservice/accounts-daemon
+avahi      835   824  0 08:55 ?        S      0:00 avahi-daemon: chroot helper
+syslog     854     1  0 08:55 ?        Ssl    0:00 /usr/sbin/rsyslogd -n
+root       857     1  0 08:55 ?        Ss     0:00 /usr/sbin/cron -f
+root       874     1  0 08:55 ?        Ssl    0:00 /usr/sbin/ModemManager
+root       909     1  0 08:55 ?        Ss     0:00 /usr/sbin/acpid
+message+   913     1  0 08:55 ?        Ss     0:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+root       935     1  0 08:55 ?        Ssl    0:00 /usr/sbin/cups-browsed
+root       938     1  0 08:55 ?        Ssl    0:00 /usr/sbin/NetworkManager --no-daemon
+root       942     1  0 08:55 ?        Ssl    0:00 /usr/lib/snapd/snapd
+root      1026     1  0 08:55 ?        Ss     0:00 /sbin/dhclient -1 -v -pf /run/dhclient.enp0s3.pid -lf /var/lib/dhcp/dhclient.enp0s3.leases -I -df /var/lib/dhcp/dhclient6.enp0s3.leases enp0s3
+root      1051     1  0 08:55 ?        Ssl    0:00 /usr/lib/policykit-1/polkitd --no-debug
+root      1154     1  0 08:55 ?        Ss     0:01 php-fpm: master process (/etc/php/7.0/fpm/php-fpm.conf)
+whoopsie  1168     1  0 08:55 ?        Ssl    0:00 /usr/bin/whoopsie -f
+root      1178     1  0 08:55 ?        Ss     0:00 /usr/sbin/sshd -D
+root      1184     1  0 08:55 ?        Ssl    0:00 /opt/mailhog/mailhog
+mysql     1191     1  0 08:55 ?        Ssl    0:24 /usr/sbin/mysqld
+varnish   1216     1  0 08:55 ?        Ss     0:01 /usr/sbin/varnishd -a :81 -T 127.0.0.1:6082 -P /run/varnishd.pid -f /etc/varnish/default.vcl -S /etc/varnish/secret -s file,/var/lib/varnish/varnish_storage.bin,256M
+vcache    1217  1216  0 08:55 ?        Sl     0:04 /usr/sbin/varnishd -a :81 -T 127.0.0.1:6082 -P /run/varnishd.pid -f /etc/varnish/default.vcl -S /etc/varnish/secret -s file,/var/lib/varnish/varnish_storage.bin,256M
+varnish+  1230     1  0 08:55 ?        Ss     0:43 /usr/bin/varnishlog -a -w /var/log/varnish/varnish.log
+varnish+  1248     1  0 08:55 ?        Ss     0:43 /usr/bin/varnishncsa -a -w /var/log/varnish/varnishncsa.log
+root      1261     1  0 08:55 ?        Ss     0:00 /sbin/rpcbind -f -w
+root      1302     1  0 08:55 ?        Ss     0:00 /usr/sbin/rpc.mountd --manage-gids
+root      1313     2  0 08:55 ?        S<     0:00 [nfsd4_callbacks]
+root      1314     2  0 08:55 ?        S      0:00 [lockd]
+root      1319     2  0 08:55 ?        S      0:00 [nfsd]
+root      1320     2  0 08:55 ?        S      0:00 [nfsd]
+root      1321     2  0 08:55 ?        S      0:00 [nfsd]
+root      1322     2  0 08:55 ?        S      0:00 [nfsd]
+root      1323     2  0 08:55 ?        S      0:00 [nfsd]
+root      1324     2  0 08:55 ?        S      0:00 [nfsd]
+root      1325     2  0 08:55 ?        S      0:00 [nfsd]
+root      1326     2  0 08:55 ?        S      0:00 [nfsd]
+ntp       1386     1  0 08:55 ?        Ssl    0:01 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 116:123
+solr      1636     1  0 08:55 ?        Ss     0:00 /lib/systemd/systemd --user
+solr      1638  1636  0 08:55 ?        S      0:00 (sd-pam)
+root      1664     1  0 08:55 tty1     Ss+    0:00 /sbin/agetty --noclear tty1 linux
+root      1693     1  0 08:55 ?        Ss     0:00 /usr/sbin/apache2 -k start
+www-data  1704  1693  0 08:55 ?        Sl     0:05 /usr/sbin/apache2 -k start
+www-data  1705  1693  0 08:55 ?        Sl     0:05 /usr/sbin/apache2 -k start
+root      1986     1  0 08:55 ?        Ssl    0:00 /usr/sbin/lightdm
+solr      1990     1  6 08:55 ?        Sl    20:07 java -server -Xms64M -Xmx128M -XX:NewRatio=3 -XX:SurvivorRatio=4 -XX:TargetSurvivorRatio=90 -XX:MaxTenuringThreshold=8 -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:ConcGCThreads=4 -XX:ParallelGCThreads=4 -XX:+CMSScavengeBeforeRemark -XX:PretenureSizeThreshold=64m -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=50 -XX:CMSMaxAbortablePrecleanTime=6000 -XX:+CMSParallelRemarkEnabled -XX:+ParallelRefProcEnabled -verbose:gc -XX:+PrintHeapAtGC -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -XX:+PrintGCApplicationStoppedTime -Xloggc:/var/solr/logs/solr_gc.log -Djetty.port=8983 -DSTOP.PORT=7983 -DSTOP.KEY=solrrocks -Duser.timezone=UTC -Djetty.home=/opt/solr/server -Dsolr.solr.home=/var/solr/data -Dsolr.install.dir=/opt/solr -Dlog4j.configuration=file:/var/solr/log4j.properties -Xss256k -XX:OnOutOfMemoryError=/opt/solr/bin/oom_solr.sh 8983 /var/solr/logs -jar start.jar --module=http
+root      2013     1  0 08:55 ?        Sl     0:03 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+root      2031  1986  0 08:55 tty7     Ss+    1:54 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root      2189     1  0 08:55 ?        Ss     0:00 /usr/lib/postfix/sbin/master
+postfix   2191  2189  0 08:55 ?        S      0:00 qmgr -l -t unix -u
+rtkit     2439     1  0 08:55 ?        SNsl   0:00 /usr/lib/rtkit/rtkit-daemon
+root      2930  1986  0 08:55 ?        Sl     0:00 lightdm --session-child 12 21
+vagrant   2939     1  0 08:55 ?        Ss     0:00 /lib/systemd/systemd --user
+vagrant   2940  2939  0 08:55 ?        S      0:00 (sd-pam)
+vagrant   2946     1  0 08:55 ?        SLl    0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+vagrant   2948  2930  0 08:55 ?        Ss     0:00 /sbin/upstart --user
+vagrant   2963     1  0 08:55 ?        S      0:00 /usr/bin/VBoxClient --clipboard
+vagrant   2964  2963  0 08:55 ?        Sl     0:00 /usr/bin/VBoxClient --clipboard
+vagrant   2974     1  0 08:55 ?        S      0:00 /usr/bin/VBoxClient --display
+vagrant   2975  2974  0 08:55 ?        S      0:00 /usr/bin/VBoxClient --display
+vagrant   2985     1  0 08:55 ?        S      0:00 /usr/bin/VBoxClient --seamless
+vagrant   2986  2985  0 08:55 ?        Sl     0:00 /usr/bin/VBoxClient --seamless
+vagrant   2991     1  0 08:55 ?        S      0:00 /usr/bin/VBoxClient --draganddrop
+vagrant   2992  2991  0 08:55 ?        Sl     0:30 /usr/bin/VBoxClient --draganddrop
+vagrant   3071  2948  0 08:55 ?        S      0:00 upstart-udev-bridge --daemon --user
+vagrant   3074  2948  0 08:55 ?        Ss     0:00 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-RrfUNfzEi7
+vagrant   3128  2948  0 08:55 ?        S      0:00 upstart-dbus-bridge --daemon --session --user --bus-name session
+vagrant   3130  2948  0 08:55 ?        S      0:00 upstart-dbus-bridge --daemon --system --user --bus-name system
+vagrant   3132  2948  0 08:55 ?        S      0:00 upstart-file-bridge --daemon --user
+vagrant   3137  2948  0 08:55 ?        Ss     0:00 gpg-agent --homedir /home/vagrant/.gnupg --use-standard-socket --daemon
+vagrant   3146  2948  0 08:55 ?        Ssl    0:00 /usr/bin/lxsession -s Lubuntu -e LXDE
+vagrant   3151  2948  0 08:55 ?        Sl     0:00 /usr/lib/gvfs/gvfsd
+vagrant   3156  2948  0 08:55 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/900/gvfs -f -o big_writes
+vagrant   3167  3146  0 08:55 ?        Sl     0:02 openbox --config-file /home/vagrant/.config/openbox/lubuntu-rc.xml
+vagrant   3170  3146  0 08:55 ?        Sl     0:06 lxpanel --profile Lubuntu
+vagrant   3173  3146  0 08:55 ?        Sl     0:15 pcmanfm --desktop --profile lubuntu
+vagrant   3176  2948  0 08:55 ?        Ssl    0:00 xfce4-power-manager
+vagrant   3179  2948  0 08:55 ?        Ss     0:00 /usr/bin/ssh-agent -s
+vagrant   3183  2948  0 08:55 ?        S      0:00 /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+vagrant   3184  2948  0 08:55 ?        Sl     0:00 update-notifier
+vagrant   3190  2948  0 08:55 ?        Sl     0:00 nm-applet
+root      3196     1  0 08:55 ?        Ssl    0:00 /usr/lib/upower/upowerd
+vagrant   3198  2948  0 08:55 ?        Sl     0:00 light-locker
+vagrant   3237  2948  0 08:55 ?        S<l    0:00 /usr/bin/pulseaudio --start --log-target=syslog
+vagrant   3239  2948  0 08:55 ?        Sl     0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+vagrant   3246  3239  0 08:55 ?        S      0:00 /usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+vagrant   3251  2948  0 08:55 ?        Sl     0:00 /usr/lib/dconf/dconf-service
+vagrant   3257  2948  0 08:55 ?        Sl     0:01 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+vagrant   3267  2948  0 08:55 ?        Ssl    0:00 /usr/lib/menu-cache/menu-cached /tmp/.menu-cached-:0-vagrant
+vagrant   3284  2948  0 08:55 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/indicator-application-service
+vagrant   3292  2948  0 08:55 ?        Sl     0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+root      3295     1  0 08:55 ?        Ssl    0:00 /usr/lib/udisks2/udisksd --no-debug
+vagrant   3304  2948  0 08:55 ?        Sl     0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+vagrant   3309  2948  0 08:55 ?        Sl     0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+vagrant   3314  2948  0 08:55 ?        Sl     0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+vagrant   3320  2948  0 08:55 ?        Sl     0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+vagrant   3328  2948  0 08:55 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.4 /org/gtk/gvfs/exec_spaw/0
+vagrant   3723  2948  0 08:57 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-metadata
+www-data  8732  1154  0 10:24 ?        S      0:00 php-fpm: pool www
+www-data  8733  1154  0 10:25 ?        S      0:00 php-fpm: pool www
+www-data  8739  1154  0 10:25 ?        S      0:01 php-fpm: pool www
+www-data  8740  1154  0 10:25 ?        S      0:00 php-fpm: pool www
+www-data  8756  1154  0 10:25 ?        S      0:00 php-fpm: pool www
+vagrant  15180  3170  0 12:04 ?        Sl     0:44 lxterminal
+vagrant  15181 15180  0 12:04 ?        S      0:00 gnome-pty-helper
+vagrant  15182 15180  0 12:04 pts/1    Ss     0:00 /bin/bash
+vagrant  15436 15180  0 12:13 pts/2    Ss     0:00 /bin/bash
+vagrant  16002  3173  1 12:39 ?        Sl     0:57 /opt/atom/atom /var/www/sites_guest/occlss/test
+vagrant  16004 16002  0 12:39 ?        S      0:00 /opt/atom/atom --type=zygote --no-sandbox
+vagrant  16033 16004  0 12:39 ?        Sl     0:45 /opt/atom/atom --type=renderer --enable-experimental-web-platform-features --no-sandbox --primordial-pipe-token=E8902FB83883ECCF9FDE0C896542714B --lang=en-US --app-path=/opt/atom/resources/app --node-integration=true --disable-blink-features=Auxclick --hidden-page --enable-pinch --num-raster-threads=1 --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --service-request-channel-token=E8902FB83883ECCF9FDE0C896542714B --renderer-client-id=3 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+vagrant  16067 16033  0 12:39 ?        Sl     0:00 /opt/atom/atom /opt/atom/resources/app/src/task-bootstrap.js /home/vagrant/.atom/compile-cache /opt/atom/resources/app/node_modules/spell-check/lib/spell-check-handler.js
+vagrant  16090 16004  0 12:39 ?        Sl     0:00 /opt/atom/atom --type=renderer --enable-experimental-web-platform-features --no-sandbox --primordial-pipe-token=CCC43C62D7F4A27085D8CE00B4BDA74F --lang=en-US --app-path=/opt/atom/resources/app --node-integration=true --hidden-page --enable-pinch --num-raster-threads=1 --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --service-request-channel-token=CCC43C62D7F4A27085D8CE00B4BDA74F --renderer-client-id=5 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+vagrant  16591  2948  0 12:54 ?        S      0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+root     17843     2  0 13:01 ?        S      0:00 [kworker/u2:1]
+root     18386     2  0 13:07 ?        S      0:00 [kworker/u2:2]
+root     18452     2  0 13:09 ?        S      0:02 [kworker/0:0]
+vagrant  19006 16004  2 13:32 ?        SLl    0:38 /opt/atom/atom --type=renderer --enable-experimental-web-platform-features --no-sandbox --primordial-pipe-token=4EAF939F36B9AE2C7128F8A6C23ABA9C --lang=en-US --app-path=/opt/atom/resources/app --node-integration=true --disable-blink-features=Auxclick --hidden-page --enable-pinch --num-raster-threads=1 --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --service-request-channel-token=4EAF939F36B9AE2C7128F8A6C23ABA9C --renderer-client-id=7 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+vagrant  19040 19006  0 13:32 ?        Sl     0:01 /opt/atom/atom /opt/atom/resources/app/src/task-bootstrap.js /home/vagrant/.atom/compile-cache /opt/atom/resources/app/node_modules/spell-check/lib/spell-check-handler.js
+vagrant  19066 16004  0 13:32 ?        Sl     0:00 /opt/atom/atom --type=renderer --enable-experimental-web-platform-features --no-sandbox --primordial-pipe-token=F12B214CB859D757D78DA700730A73EA --lang=en-US --app-path=/opt/atom/resources/app --node-integration=true --hidden-page --enable-pinch --num-raster-threads=1 --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --disable-accelerated-video-decode --disable-webrtc-hw-encoding --disable-gpu-compositing --service-request-channel-token=F12B214CB859D757D78DA700730A73EA --renderer-client-id=9 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+root     19252     2  0 13:39 ?        S      0:00 [kworker/0:1]
+postfix  19423  2189  0 13:54 ?        S      0:00 pickup -l -t unix -u -c
+root     19449 15182  0 13:56 pts/1    S+     0:00 sudo npm install
+root     19450 19449  4 13:56 pts/1    Sl+    0:09 npm
+vagrant  19460 19450  0 13:56 pts/1    S+     0:00 /usr/bin/git ls-remote -h -t git://github.com/fourkitchens/emulsify-gulp.git
+vagrant  19511 15436  0 13:59 pts/2    R+     0:00 ps -ef 19450

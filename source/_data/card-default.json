@@ -1,0 +1,14 @@
+{
+  "cardDefault": {
+      "card-image-url": "../../images/demo-Image-1.png",
+      "card-image-alt-text": "image 1",
+      "card-title-text": "Other story",
+      "card-text": [
+        {
+          "paragraph": "A brif summary of what this story is about."
+        }
+    ],
+    "card-link-title": "Read this story",
+    "card-link-url": "javascript:void(0);"
+  }
+}

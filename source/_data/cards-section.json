@@ -1,0 +1,126 @@
+{
+  "cardsSection": {
+        "cards": [
+        {
+            "panel-size": "occlss-layout__col--sm-4",
+            "cardDefault": {
+                "card-image-url": "../../images/demo-Image-1.png",
+                "card-image-alt-text": "image 1",
+                "card-title-text": "Other story",
+                "card-text": [
+                  {
+                    "paragraph": "A brif summary of what this story is about."
+                  }
+              ],
+              "card-link-title": "Read this story",
+              "card-link-url": "javascript:void(0);"
+            }
+        },
+        {
+            "panel-size": "occlss-layout__col--sm-4",
+            "cardDefault": {
+                "card-image-url": "../../images/demo-Image-2.png",
+                "card-image-alt-text": "image 2",
+                "card-title-text": "Other story",
+                "card-text": [
+                  {
+                    "paragraph": "A brif summary of what this story is about."
+                  }
+              ],
+              "card-link-title": "Read this story",
+              "card-link-url": "javascript:void(0);"
+            }
+        },
+        {
+            "panel-size": "occlss-layout__col--sm-4",
+            "cardDefault": {
+                "card-image-url": "../../images/demo-Image-3.png",
+                "card-image-alt-text": "image 3",
+                "card-title-text": "Other story",
+                "card-text": [
+                  {
+                    "paragraph": "A brif summary of what this story is about."
+                  }
+              ],
+              "card-link-title": "Read this story",
+              "card-link-url": "javascript:void(0);"
+            }
+        },
+        {
+            "panel-size": "occlss-layout__col--sm-4",
+            "cardDefault": {
+                "card-image-url": "../../images/demo-Image-4.png",
+                "card-image-alt-text": "image 4",
+                "card-title-text": "Other story",
+                "card-text": [
+                  {
+                    "paragraph": "A brif summary of what this story is about."
+                  }
+              ],
+              "card-link-title": "Read this story",
+              "card-link-url": "javascript:void(0);"
+            }
+        },
+        {
+            "panel-size": "occlss-layout__col--sm-4",
+            "cardDefault": {
+                "card-image-url": "../../images/demo-Image-5.png",
+                "card-image-alt-text": "image 5",
+                "card-title-text": "Other story",
+                "card-text": [
+                  {
+                    "paragraph": "A brif summary of what this story is about."
+                  }
+              ],
+              "card-link-title": "Read this story",
+              "card-link-url": "javascript:void(0);"
+            }
+        },
+        {
+            "panel-size": "occlss-layout__col--sm-4",
+            "cardDefault": {
+                "card-image-url": "../../images/demo-Image-6.png",
+                "card-image-alt-text": "image 6",
+                "card-title-text": "Other story",
+                "card-text": [
+                  {
+                    "paragraph": "A brif summary of what this story is about."
+                  }
+              ],
+              "card-link-title": "Read this story",
+              "card-link-url": "javascript:void(0);"
+            }
+        },
+        {
+            "panel-size": "occlss-layout__col--sm-4",
+            "cardDefault": {
+                "card-image-url": "../../images/demo-Image-7.png",
+                "card-image-alt-text": "image 7",
+                "card-title-text": "Other story",
+                "card-text": [
+                  {
+                    "paragraph": "A brif summary of what this story is about."
+                  }
+              ],
+              "card-link-title": "Read this story",
+              "card-link-url": "javascript:void(0);"
+            }
+        },
+        {
+            "panel-size": "occlss-layout__col--sm-4",
+            "cardDefault": {
+                "card-image-url": "../../images/demo-Image-8.png",
+                "card-image-alt-text": "image 8",
+                "card-title-text": "Other story",
+                "card-text": [
+                  {
+                    "paragraph": "A brif summary of what this story is about."
+                  }
+              ],
+              "card-link-title": "Read this story",
+              "card-link-url": "javascript:void(0);"
+            }
+        }
+    ]
+    }
+}

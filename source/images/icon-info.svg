@@ -1,0 +1,20 @@
+<svg width="29" height="65" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+ <title>info-icon</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="Page-1">
+   <g fill="#0E73D8" id="info-icon">
+    <g id="Icon-/-info">
+     <path id="Info-icon" d="m21.668905,31.556989c0.052777,-0.179343 0.081095,-0.36916 0.081095,-0.565591l0,-8.909678c0,-1.104569 -0.89543,-2 -2,-2l-17.75,0l0,0c-1.104569,0 -2,0.895431 -2,2l0,8.909678c0,1.104569 0.895431,2 2,2l5.25,0l0,18.647312l-5.25,0l0,0c-1.104569,0 -2,0.89543 -2,2l0,8.909677c0,1.10457 0.895431,2 2,2l25,0c1.10457,0 2,-0.89543 2,-2l0,-8.909677c0,-1.10457 -0.89543,-2 -2,-2l-5.25,0l0,-20.081721l-0.081095,0zm-13.868905,-31.556989l10.5,0c1.10457,0 2,0.895431 2,2l0,8.909677c0,1.10457 -0.89543,2 -2,2l-10.5,0c-1.104569,0 -2,-0.89543 -2,-2l0,-8.909677l0,0c0,-1.104569 0.895431,-2 2,-2z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

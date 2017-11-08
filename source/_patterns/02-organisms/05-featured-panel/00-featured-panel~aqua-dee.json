@@ -1,0 +1,10 @@
+{
+    "featuredPanelDefault" : {
+        "featured-panel-mod-class": "occlss-featured-panel--aqua-dee",
+        "featured-panel-heading-text": "Teachers vacancies",
+        "featured-panel-summary-text": "",
+        "featured-panel-intro-text": "",
+        "featured-panel-view-more-link-text": "Job for teachers and school support staff",
+        "featured-panel-view-more-link-url": "javascript:void(0);"
+    }
+}

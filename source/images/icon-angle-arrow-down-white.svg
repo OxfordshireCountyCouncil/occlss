@@ -1,0 +1,18 @@
+<svg width="20" height="13" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+ <title>angle-arrow-down-white</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="Page-1">
+   <g fill="#FFFFFF" fill-rule="nonzero" id="angle-arrow-down-white">
+    <path id="Shape" d="m18.79823,0.59026c-0.13351,-0.13765 -0.2873,-0.20626 -0.46117,-0.20626c-0.17338,0 -0.3271,0.06861 -0.46068,0.20626l-7.87634,8.10288l-7.87579,-8.10288c-0.13358,-0.13758 -0.2873,-0.20619 -0.46096,-0.20619c-0.17373,0 -0.32745,0.06861 -0.46096,0.20626l-1.00186,1.03091c-0.13379,0.13729 -0.20047,0.29545 -0.20047,0.47419c0,0.17859 0.06689,0.33675 0.20047,0.47411l9.33875,9.60835c0.13337,0.13743 0.28723,0.20611 0.46089,0.20611c0.17365,0 0.32709,-0.06861 0.4606,-0.20611l9.33945,-9.60835c0.13351,-0.13743 0.19984,-0.29559 0.19984,-0.47411c0,-0.17874 -0.0664,-0.3369 -0.19991,-0.47448l-1.00186,-1.03069z"/>
+   </g>
+  </g>
+ </g>
+</svg>

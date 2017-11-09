@@ -311,18 +311,18 @@ gulp.task('patternlab:connect', gulp.series(function(done) {
 
 gulp.task('genNodeModule', function (done) {
   // get Sass files
-  gulp.src(['./source/css/scss/**']).pipe(gulp.dest('../nodejs.module/scss'));
+  gulp.src(['./source/css/scss/**']).pipe(gulp.dest('./nodejs.module/scss'));
 
   // get JavaScript files
-  gulp.src(['./source/js/**']).pipe(gulp.dest('../nodejs.module/js'));
+  gulp.src(['./source/js/**']).pipe(gulp.dest('./nodejs.module/js'));
 
   // get Images files
-  gulp.src(['./source/images/**']).pipe(gulp.dest('../nodejs.module/images'));
+  gulp.src(['./source/images/**', '!./source/images/demo']).pipe(gulp.dest('./nodejs.module/images'));
   done();
 });
 
 gulp.task('genCSSframework', function (done) {
-  gulp.src(['./source/css/**', '!./source/css/pattern-scaffolding.css']).pipe(gulp.dest('../CSSframework'));
+  gulp.src(['./source/css/**', '!./source/css/pattern-scaffolding.css']).pipe(gulp.dest('./CSSframework'));
   done();
 });
 

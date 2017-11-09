@@ -1,123 +1,232 @@
-# Pattern Lab Node - Gulp Edition
+# Oxfordshire County Council live style system
 
-The Gulp wrapper around [Pattern Lab Node Core](https://github.com/pattern-lab/patternlab-node) providing tasks to interact with the core library and move supporting frontend assets.
 
-## Packaged Components
+The OCCLSS includes the resources to create user interfaces consistent with the Oxfordshire County Council principles, design language, and best practices.
 
-The Gulp Edition comes with the following components:
+* Based on Pattern Lab 2 Gulp and Mustache version
+* Tailored for building Oxfordshire County Council apps: Using the Oxfordshire County Council mark-up and CSS framework results in UIs that reflect the Oxfordshire County Council look and feel.
 
-* `patternlab-node`: [GitHub](https://github.com/pattern-lab/patternlab-node), [npm](https://www.npmjs.com/package/patternlab-node)
-* `patternengine-node-mustache`: [GitHub](https://github.com/pattern-lab/patternengine-node-mustache), [npm](https://www.npmjs.com/package/patternengine-node-mustache)
-* `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-assets-default)
-* `pattern-lab/styleguidekit-mustache-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-mustache-default)
 
-## Prerequisites
 
-The Pattern Lab Node - Gulp Edition uses [Node](https://nodejs.org) for core processing, [npm](https://www.npmjs.com/) to manage project dependencies, and [gulp.js](http://gulpjs.com/) to run tasks and interface with the core library. Node version 4 or higher suffices. You can follow the directions for [installing Node](https://nodejs.org/en/download/) on the Node website if you haven't done so already. Installation of Node will include npm.
+## Quick start
 
-It's also highly recommended that you [install gulp](hhttps://github.com/gulpjs/gulp/blob/4.0/docs/getting-started.md) globally.
+1. Clone the project with `git clone https://github.com/OxfordshireCountyCouncil/occlss.git`
+2. Run `npm install` or `yarn` in the root OCCLSS folder.
+3. To watch for changes, re-generate the front-end, and server it via a BrowserSync server,  type gulp patternlab:serve or yarn gulp patternlab:serve  to launch the development environment.
+4. BrowserSync should open http://localhost:3000 in your browser.
 
-> Note: The Gulp Edition of Pattern Lab uses Gulp 4, which may require a new global install of the Gulp command line interface. Follow the [gulp upgrade instructions](https://github.com/pattern-lab/edition-node-gulp/wiki/Updating-to-Gulp-4) if you already have gulp installed and need to upgrade. Gulp 4 is in alpha, but brings many benefits to the table and is relatively stable.
-
-## Installing
-
-There are two methods for downloading and installing the Gulp Edition:
-
-* [Download a pre-built package](#download-a-pre-built-package)
-* [Use npm](#use-npm)
-
-### Download a pre-built package
-
-The fastest way to get started with the Gulp Edition is to [download the pre-built version](https://github.com/pattern-lab/edition-node-gulp/releases) from the [releases page](https://github.com/pattern-lab/edition-node-gulp/releases). The pre-built project comes with the [Base Starterkit for Mustache](https://github.com/pattern-lab/starterkit-mustache-base) installed by default.
-
-**Please note:** Pattern Lab Node uses [npm](https://www.npmjs.com/) to manage project dependencies. To upgrade the Gulp Edition or to install plug-ins you'll need to be familiar with npm.
-
-### Use npm
-
-`npm` is a dependency management and package system which can pull in all of the Gulp Edition's dependencies for you. To accomplish this:
-
-* download or `git clone` this repository to an install location.
-
-* run the following
-
-    ```
-    cd install/location
-    npm install
-    ```
-
-Running `npm install` from a directory containing a `package.json` file will download all dependencies defined within.
-
-#### Install the Gulp Edition of Pattern Lab Node as a Dependency
-
-Most people want to run Pattern Lab Node standalone and not as a dependency. If you wish to install as a dependency you can do the following:
-
-Use npm's [`install` command](https://docs.npmjs.com/cli/install) with an argument to install the Gulp Edition into a location of your choosing. In Terminal type:
-
-    cd install/location/
-    npm install edition-node-gulp
-
-This will install the Gulp Edition into a directory called `node_modules` in `install/location/`.
-
-## Updating Pattern Lab
-
-To update Pattern Lab please refer to each component's GitHub repository, and the [master instructions for core](https://github.com/pattern-lab/patternlab-node/wiki/Upgrading). The components are listed at the top of the README.
 
 ## Helpful Commands
 
 These are some helpful commands you can use on the command line for working with Pattern Lab.
 
+
 ### List all of the available commands
 
 To list all available commands type:
 
-    gulp patternlab:help
+**npm:**
+
+```
+$ gulp patternlab:help
+```
+
+**yarn:**
+
+```
+$ yarn gulp patternlab:help
+```
+
 
 ### Generate Pattern Lab
 
 To generate the front-end for Pattern Lab type:
 
-    gulp patternlab:build
+**npm:**
 
-### Watch for changes and re-generate Pattern Lab
+```
+$ gulp patternlab:build
+```
 
-To watch for changes, re-generate the front-end, and server it via a BrowserSync server,  type:
+**yarn:**
 
-    gulp patternlab:serve
-
-BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Install a StarterKit
-
-To install a specific StarterKit from GitHub type:
-
-    npm install [starterkit-vendor/starterkit-name]
-
-    gulp patternlab:loadstarterkit --kit=[starterkit-name]
+```
+$ yarn patternlab:build
+```
     
-### Deploy using Heroku
 
-[occlss.herokuapp.com](https://occlss.herokuapp.com/)
+### Generate CSS framework
 
-Install the Heroku CLI
+To generate the SCSS framework out of the Pattern Lab
 
-Download and install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line).
+**npm:**
 
-If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+```
+$ gulp genCSSframework 
+```
 
-    $ heroku login
+**yarn:**
 
-Clone the repository
+```
+$ yarn genCSSframework
+```
 
-Use Git to clone occlss's source code to your local machine.
 
-    $ heroku git:clone -a occlss
-    $ cd occlss
-    
-Deploy your changes
+## SASS framework
 
-Make some changes to the code you just cloned and deploy them to Heroku using Git.
+You don’t need to copy all the Pattern Lab to your project, you can Install via npm our SCSS files, images, and Javascript and grab the HTML mark-up from https://occlss.herokuapp.com/
 
-    $ git add .
-    $ git commit -am "make it better"
-    $ git push heroku master
+### Installation
 
+You can use OCCLSS CSS framework in your project by installing it using a package manager (recommended):
+
+**npm:**
+
+```
+$ npm install occlss --save-dev
+```
+
+**yarn:**
+
+```
+$ yarn add occlss
+```
+
+### Getting Started
+
+Once you have got OCCLSS CSS framework into your project using the method outlined above, there are a handful of things we need to do before we’re ready to go.
+
+Firstly, we need to synchronise OCCLSS images and JavaScript files with your app, if you using gulp in your project you can grab the code below
+
+
+```js
+gulp.task('copy-occlss-parts', function () {
+  // Images
+    gulp.src('./node_modules/occlss/images/*.*')
+    .pipe(gulp.dest('./images/occlss/'));
+
+  // Javascript
+  gulp.src('./node_modules/occlss/js/*.*')
+  .pipe(gulp.dest('./js/occlss'));
+  console.log("OCCLSS files copied!");
+});
+```
+
+Secondly you will need to import SCSS in to your project.
+
+### CSS directory structure
+
+OCCLSS CSS follows ITCSS architecture and help to separates CSS into seven different initial types of rule:
+
+* `/settings`: Global variables, site-wide settings, config switches, etc.
+* `/tools`: Site-wide mixins and functions.
+* `/generic`: Low-specificity, far-reaching rulesets (e.g. resets).
+* `/base`: Unclassed HTML elements (e.g. `a {}`, `blockquote {}`, `address {}`).
+* `/objects`: Objects, abstractions, and design patterns (e.g. `.occlss-wrapper {}`).
+* `/bem`: Discrete, complete chunks of UI (e.g. `.occlss-buttons {}`). This is the one layer that inuitcss doesn’t provide code for, as this is completely your terrain.
+* `/utilities`: High-specificity, very explicit selectors. Overrides and helper classes (e.g. `.occlss-u-hidden {}`).
+
+
+Following this structure allows you to intersperse OCCLSS code with your own, so that your main.scss file might look something like this:
+
+```scss
+// SETTINGS
+
+// Images path
+$occlss-global-image-path:  '../../images/occlss';
+
+@import " node_modules/occlss/settings/global-variables";
+
+
+// TOOLS
+@import "node_modules/occlss/tools/breakpoint-sass/stylesheets/breakpoint";
+@import "node_modules/occlss/tools/functions";
+@import "node_modules/occlss/tools/hacks";
+@import "node_modules/occlss/tools/mixins_rem";
+@import "node_modules/occlss/tools/mixin_link-colors";
+@import "node_modules/occlss/tools/placeholder-classes";
+@import "node_modules/occlss/tools/mixin_box_sizing";
+@import "node_modules/occlss/tools/mixin_box-shadow";
+@import "node_modules/occlss/tools/mixin_button-variant";
+@import "node_modules/occlss/tools/mixin_hover";
+@import "node_modules/occlss/tools/mixin_opacity";
+@import "node_modules/occlss/tools/mixin_border-radius";
+@import "node_modules/occlss/tools/mixin_tab-focus";
+@import "node_modules/occlss/tools/mixin_user-select";
+@import "node_modules/occlss/tools/mixins_layout";
+@import "node_modules/occlss/tools/mixin_transition";
+@import "node_modules/occlss/tools/mixin_button_sizes";
+@import "node_modules/occlss/tools/reflex/reflex-index";
+
+
+// GENERIC
+@import "node_modules/occlss/generic/box-sizing";
+@import "node_modules/occlss/generic/normalize";
+@import "node_modules/occlss/generic/shared";
+@import "node_modules/occlss/generic/reset";
+
+
+// BASE
+@import "node_modules/occlss/base/page";
+@import "node_modules/occlss/base/headings";
+@import "node_modules/occlss/base/links";
+
+
+// OBJECTS
+@import "node_modules/occlss/objects/wrapper";
+@import "node_modules/occlss/objects/occlss-button";
+
+
+/// BEM (components)
+@import "node_modules/occlss/bem/occlss-icon";
+@import "node_modules/occlss/bem/occlss-button";
+@import "node_modules/occlss/bem/occlss-page-head";
+@import "node_modules/occlss/bem/occlss-page-footer";
+@import "node_modules/occlss/bem/occlss-site-nav";
+@import "node_modules/occlss/bem/occlss-head-logo";
+@import "node_modules/occlss/bem/occlss-form";
+@import "node_modules/occlss/bem/occlss-breadcrumb";
+@import "node_modules/occlss/bem/occlss-category-nav";
+@import "node_modules/occlss/bem/occlss-short-search-form";
+@import "node_modules/occlss/bem/occlss-alert";
+@import "node_modules/occlss/bem/occlss-summary-list";
+@import "node_modules/occlss/bem/occlss-category-pane";
+@import "node_modules/occlss/bem/occlss-intro-pane";
+@import "node_modules/occlss/bem/occlss-featured-panel";
+@import "node_modules/occlss/bem/occlss-tab-widget";
+@import "node_modules/occlss/bem/occlss-card.scss";
+@import "node_modules/occlss/bem/occlss-sign-up-form";
+@import "node_modules/occlss/bem/occlss-page-guide";
+@import "node_modules/occlss/bem/occlss-sidebar-item-section";
+@import "node_modules/occlss/bem/occlss-version-bar";
+@import "node_modules/occlss/bem/occlss-pagination";
+
+// UTILITIES
+// scope
+@import "node_modules/occlss/scopes/cms-content-footer";
+
+// trumps
+@import "node_modules/occlss/trumps/globals";
+@import "node_modules/occlss/trumps/utilities";
+@import "node_modules/occlss/trumps/owl-carousel";
+@import "node_modules/occlss/trumps/owl-carousel-theme";
+@import "node_modules/occlss/trumps/shame";
+```
+
+Or you can add in your main.scss just the following
+
+```scss
+// Images path
+$occlss-global-image-path:  '../../images/occlss';
+@import "node_modules/occlss/scss/style.scss";
+```
+
+But this is not recommended and you will have less control over the elements you will use in your app.
+
+### OCCLSS font 
+
+To use our font face you will need to implement the following line in the head of you project.
+
+```html
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,900|Open+Sans:300,400,600,700" rel="stylesheet">
+```

@@ -309,6 +309,8 @@ gulp.task('patternlab:connect', gulp.series(function(done) {
   done();
 }));
 
+
+// Generate files for NPM package
 gulp.task('genNodeModule', function (done) {
   // get Sass files
   gulp.src(['./source/css/scss/**']).pipe(gulp.dest('./nodejs.module/scss'));
@@ -321,6 +323,8 @@ gulp.task('genNodeModule', function (done) {
   done();
 });
 
+
+// Generate CSS framework files
 gulp.task('genCSSframework', function (done) {
   gulp.src(['./source/css/**', '!./source/css/pattern-scaffolding.css']).pipe(gulp.dest('./CSSframework'));
   done();

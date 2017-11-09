@@ -72,7 +72,7 @@ $ yarn genCSSframework
 ```
 
 
-## SASS framework
+## SCSS framework
 
 You don’t need to copy all the Pattern Lab to your project, you can Install via npm our SCSS files, images, and Javascript and grab the HTML mark-up from https://occlss.herokuapp.com/
 

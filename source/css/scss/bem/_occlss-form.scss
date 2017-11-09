@@ -201,8 +201,6 @@
 
 
 .occlss-form__radiobutton:checked + .occlss-form__label::before {
-  //box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0071bc;
-  background-image: url('#{$occlss-global-image-path}/icon-circle.png');
   background-image: url('#{$occlss-global-image-path}/icon-circle.svg');
   background-position: 50%;
   background-size: rem(17px 17px);
@@ -211,7 +209,6 @@
 
 .occlss-form__checkbox:checked + .occlss-form__label::before,
 .occlss-form__checkbox:checked:disabled + .occlss-form__label::before {
-  background-image: url('#{$occlss-global-image-path}/icon-check.png');
   background-image: url('#{$occlss-global-image-path}/icon-check.svg');
   background-position: 50%;
   background-size: rem(21px 15px);

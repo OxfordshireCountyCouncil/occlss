@@ -31,7 +31,6 @@
         content: "";
         position: absolute;
         display: block;
-        background-image: url('#{$occlss-global-image-path}/icon-arrow-right-white.png');
         background-image: url('#{$occlss-global-image-path}/icon-arrow-right-white.svg');
         background-repeat: no-repeat;
         width: rem(30px);
@@ -44,11 +43,11 @@
 .occlss-owl-theme .owl-nav button.owl-prev {
     float: left;
     &:after {
-        -ms-transform: rotate(180deg); /* IE 9 */
-        -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-        transform: rotate(180deg);
+        background-image: url('#{$occlss-global-image-path}/icon-arrow-left-white.svg');
         top: rem(11px);
         left: rem(20px);
+        top: rem(15px);
+        left: rem(24px);
     }
 }
 

@@ -319,7 +319,7 @@ gulp.task('genNodeModule', function (done) {
   gulp.src(['./source/js/**']).pipe(gulp.dest('./nodejs.module/js'));
 
   // get Images files
-  gulp.src(['./source/images/**', '!./source/images/demo']).pipe(gulp.dest('./nodejs.module/images'));
+  gulp.src(['./source/images/**', '!./source/images/demo', '!./source/images/demo/**']).pipe(gulp.dest('./nodejs.module/images'));
   done();
 });
 

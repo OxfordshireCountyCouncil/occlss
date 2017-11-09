@@ -223,7 +223,7 @@ $occlss-global-image-path:  '../../images/occlss';
 
 But this is not recommended and you will have less control over the elements you will use in your app.
 
-### OCCLSS font 
+### OCCLSS fonts
 
 To use our font face you will need to implement the following line in the head of you project.
 

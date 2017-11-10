@@ -2,4 +2,4 @@
 title: Button
 ---
 
-[Insert description here]
+This is default button, see more: molecules --> buttons

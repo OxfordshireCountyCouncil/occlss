@@ -4,6 +4,10 @@
  * These styles will not be your production CSS.
  */
 
+ .sg-tabs-panel {
+  min-height: 20em;
+}
+
 #sg-patterns {
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
@@ -185,4 +189,89 @@ code {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* OCCLSS Typography style */
+
+.occlss-Fira-Sans-light {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+
+.occlss-Fira-Sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+}
+
+.occlss-Fira-Sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+}
+
+.occlss-Fira-Sans-semi-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+}
+
+.occlss-Fira-Sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+}
+
+.occlss-Fira-Sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+}
+
+
+
+.occlss-Open-Sans-light {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.occlss-Open-Sans-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.occlss-Open-Sans-semi-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.occlss-Open-Sans-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* OCCLSS font sizes */
+
+.occlss-font-size-xxxxx-large {
+  font-size: 42px;
+}
+.occlss-font-size-xxxx-large {
+  font-size: 36px;
+}
+.occlss-font-size-xxx-large {
+  font-size: 30px;
+}
+.occlss-font-size-xx-large {
+  font-size: 26px;
+}
+
+.occlss-font-size-x-large {
+  font-size: 24px;
+}
+.occlss-font-size-large {
+  font-size: 22px;
+}
+.occlss-font-size-medium {
+  font-size: 20px;
+}
+.occlss-font-size-regular {
+  font-size: 16px;
+}
+.occlss-font-size-small {
+  font-size: 14px;
 }

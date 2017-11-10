@@ -1,0 +1,29 @@
+.occlss-skip-to-content__skip-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.occlss-skip-to-content__item {
+  margin-left: 111px;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+}
+
+.occlss-skip-to-content__skip-menu-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.occlss-skip-to-content__skip-menu-link:active,
+.occlss-skip-to-content__skip-menu-link:focus {
+  display: block;
+  position: static;
+  left: 0;
+  padding: .25em 1em;
+  background: $occlss-skip-to-content-background;
+  text-shadow: none;
+  color: $occlss-skip-to-content-cont-color;
+}

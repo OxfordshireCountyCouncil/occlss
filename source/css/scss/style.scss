@@ -119,7 +119,7 @@ Button default (somthing like a mixing etc)
 /* BEM (components)     Discrete, complete chunks of UI (e.g. .c-carousel {}).
 // ==========           =============================
 */
-//@import "bem/occlss-icon-gen";
+
 @import "bem/occlss-icon";
 @import "bem/occlss-button";
 @import "bem/occlss-page-head";
@@ -142,6 +142,7 @@ Button default (somthing like a mixing etc)
 @import "bem/occlss-sidebar-item-section";
 @import "bem/occlss-version-bar";
 @import "bem/occlss-pagination";
+@import "bem/occlss-skip-to-content";
 
 
 

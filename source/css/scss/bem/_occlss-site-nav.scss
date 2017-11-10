@@ -23,17 +23,57 @@
     display: none;
 }
 
+.occlss-site-nav__toggler {
+  color: #ffffff;
+  border: rem(1px solid #fff);
+  border-radius: rem(5px);
+  padding: rem(8px);
+  margin-top: rem(10px);
+  margin-right: rem(10px);
+  float: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: rem(12px);
+
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    display: inline-block;
+    margin-top: rem(16px);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.is-active {
+    color: $occlss-site-nav-toggle-link-color-hover;
+    border-color: $occlss-site-nav-toggle-link-color-hover;
+  }
+
+}
+
 //
 
 .occlss-site-nav__list {
   @extend %reset_list_style;
   float: right;
+
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    display: none;
+    float: none;
+  }
+}
+
+.is-active.occlss-site-nav__list {
+  display: block;
 }
 
 .occlss-site-nav__item {
   float: left;
   margin: 0;
-  
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    display: block;
+    width: 100%;
+  }
 }
 
 
@@ -48,6 +88,12 @@
   line-height: 2.8;
   color: #fff;
   display: block;
-  padding: 12px;
+  padding: rem(12px);
   text-decoration: none;
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+     width: 100%;
+     padding: rem(12px);
+     text-align: center;
+     border-top: 1px solid #ffffff;
+  }
 }

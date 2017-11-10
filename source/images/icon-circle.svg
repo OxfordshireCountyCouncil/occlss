@@ -8,9 +8,8 @@
   <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
  </g>
  <g>
-  <title>Layer 1</title>
   <g fill-rule="evenodd" fill="none" id="Page-1">
-   <g fill="#222222" fill-rule="nonzero" stroke="#525252" id="radio-focus-icon">
+   <g fill="#525252" fill-rule="nonzero" stroke="#525252" id="radio-focus-icon">
     <circle r="7.5" cy="8.5" cx="8.5" id="Oval"/>
    </g>
   </g>

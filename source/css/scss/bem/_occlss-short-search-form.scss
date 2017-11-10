@@ -5,6 +5,9 @@
 
 .occlss-short-search-form__submit {
     padding: rem($occlss-short-search-form-padding-submit);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding: rem(9px 13px);
+    }
 }
 
 .occlss-short-search-form__input-text {
@@ -33,7 +36,7 @@
     pointer-events:none;
     .occlss-icon__container {
         fill: $occlss-short-search-form-icon-color;
-    }  
+    }
 }
 
 .occlss-short-search-form__controls {

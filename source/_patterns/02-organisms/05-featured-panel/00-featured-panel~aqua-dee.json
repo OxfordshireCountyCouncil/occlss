@@ -2,9 +2,17 @@
     "featuredPanelDefault" : {
         "featured-panel-mod-class": "occlss-featured-panel--aqua-dee",
         "featured-panel-heading-text": "Teachers vacancies",
+        "featured-panel-heading-size-class": "occlss-featured-panel__heading--mega",
+        "featured-panel-heading-arrow": false,
         "featured-panel-summary-text": "",
         "featured-panel-intro-text": "",
-        "featured-panel-view-more-link-text": "Job for teachers and school support staff",
-        "featured-panel-view-more-link-url": "javascript:void(0);"
+        "featured-panel-view-more-links": [
+            {
+                "featured-panel-view-more-link-text": "Job for teachers and school support staff",
+                "featured-panel-view-more-link-url": "javascript:void(0);",
+                "featured-panel-view-more-link-size-class": "occlss-featured-panel__view-more-link--large",
+                "featured-panel-view-more-link-arrow": true
+            }
+        ]
     }
 }

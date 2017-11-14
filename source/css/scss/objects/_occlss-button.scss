@@ -1,15 +1,10 @@
 .occlss-button {
-
-  //display: inline-block;
   display: block;
   margin-bottom: rem(12px);
   font-weight: $occlss-button-font-weight-default;
   line-height: $occlss-button-line-height-default;
   text-align: center;
-  //white-space: nowrap;
 
-  //word-break: break-all;
-  //word-wrap: break-word;
   white-space: normal;
   text-decoration: none;
 
@@ -29,26 +24,19 @@
   @include hover-focus {
     text-decoration: none;
   }
-  /*&:focus,
-  &.focus {
-    outline: 0;
-    box-shadow: $occlss-button-focus-box-shadow-default;
-  }*/
 
   // Disabled comes first so active can properly restyle
   &.is-disabled,
   &:disabled {
     cursor: $occlss-button-cursor-disabled-default;
-    //opacity: .65;
     outline: 0;
     @include box-shadow(none);
   }
 
-  /*&:active,
-  &.is-active {
-    background-image: none;
-    @include box-shadow($occlss-button-default-focus-box-shadow, $occlss-button-active-box-shadow--default);
-  }*/
+  &:focus,
+  &:active {
+    outline: none;
+  }
 
 }
 

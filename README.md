@@ -191,7 +191,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/bem/occlss-alert";
 @import "node_modules/occlss/bem/occlss-summary-list";
 @import "node_modules/occlss/bem/occlss-category-pane";
-@import "node_modules/occlss/bem/occlss-intro-pane";
+@import "node_modules/occlss/bem/occlss-top-tasks-pane";
 @import "node_modules/occlss/bem/occlss-featured-panel";
 @import "node_modules/occlss/bem/occlss-tab-widget";
 @import "node_modules/occlss/bem/occlss-card.scss";

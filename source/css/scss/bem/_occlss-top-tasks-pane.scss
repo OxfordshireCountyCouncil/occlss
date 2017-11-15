@@ -1,0 +1,32 @@
+.occlss-top-tasks-pane {
+    background: $occlss-top-tasks-pane-background;
+    border-top: rem($occlss-top-tasks-pane-border-top);
+    padding: rem(40px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        padding: 0;
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        padding: rem(10px);
+    }
+}
+
+.occlss-top-tasks-pane--residents {
+    border-top-color: $occlss-top-tasks-pane-border-top-color-residents;
+}
+
+.occlss-top-tasks-pane--business {
+    border-top-color: $occlss-top-tasks-pane-border-top-color-business;
+}
+
+.occlss-top-tasks-pane--council {
+    border-top-color: $occlss-top-tasks-pane-border-top-color-council;
+}
+
+
+.occlss-top-tasks-pane__heading {
+    font-family: $occlss-top-tasks-pane-font-family-heading;
+    font-weight: $occlss-top-tasks-pane-font-weight-heading;
+    font-size: rem($occlss-top-tasks-pane-font-size-heading);
+    line-height: $occlss-top-tasks-pane-line-height-heading;
+    color: $occlss-top-tasks-pane-font-color-heading;
+}

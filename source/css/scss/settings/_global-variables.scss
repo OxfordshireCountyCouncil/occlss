@@ -658,14 +658,17 @@ $occlss-site-nav-toggle-link-color-hover:      $occlss-link-color-primary-hover 
 
 
 // Pane
-// Intro pane _occlss-intro-pane.scss
-$occlss-intro-pane-border-top:           4px solid $occlss-brand-color-tacao !default;
-$occlss-intro-pane-background:           $occlss-brand-color-givry !default;
-$occlss-intro-pane-font-family-heading:  $occlss-global-font-family-secondary !default;
-$occlss-intro-pane-font-size-heading:    56px !default;
-$occlss-intro-pane-font-weight-heading:  $occlss-global-font-weight-black !default;
-$occlss-intro-pane-font-color-heading:   $occlss-brand-color-mine-shaft !default;
-$occlss-intro-pane-line-height-heading:  1.1 !default;
+// Top tasks pane _occlss-top-tasks-pane.scss
+$occlss-top-tasks-pane-border-top:                    4px solid $occlss-brand-color-tacao !default;
+$occlss-top-tasks-pane-border-top-color-residents:    $occlss-brand-color-dingley !default;
+$occlss-top-tasks-pane-border-top-color-business:     $occlss-brand-color-wedgewood !default;
+$occlss-top-tasks-pane-border-top-color-council:      $occlss-brand-color-peru-tan !default;
+$occlss-top-tasks-pane-background:                    $occlss-brand-color-givry !default;
+$occlss-top-tasks-pane-font-family-heading:           $occlss-global-font-family-secondary !default;
+$occlss-top-tasks-pane-font-size-heading:             56px !default;
+$occlss-top-tasks-pane-font-weight-heading:           $occlss-global-font-weight-black !default;
+$occlss-top-tasks-pane-font-color-heading:            $occlss-brand-color-mine-shaft !default;
+$occlss-top-tasks-pane-line-height-heading:           1.1 !default;
 
 
 

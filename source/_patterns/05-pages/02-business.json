@@ -9,13 +9,13 @@
                 "name": "Residents",
                 "modeClass": "occlss-category-nav__item--residents",
                 "state": "",
-                "linkURL": "link.pages-residents"
+                "linkURL": "link.pages-homepage"
             },
             {
                 "name":"Business",
                 "modeClass": "occlss-category-nav__item--business",
                 "state":"active",
-                "linkURL": "link.pages-residents"
+                "linkURL": "link.pages-homepage"
             },
             {
                 "name":"Council",

@@ -3,12 +3,11 @@
     background-color: $occlss-site-nav-background-color;
   }
   padding: rem($occlss-site-nav-padding);
+  @extend %clearfix;
 
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
     padding: rem(0 6px);
   }
-
-  @extend %clearfix;
 }
 
 .occlss-site-nav__logo-link {
@@ -18,27 +17,18 @@
 
 //
 
-.occlss-site-nav__toggler,
-.occlss-site-nav__item--close {
+.occlss-site-nav__toggler {
     display: none;
 }
 
 .occlss-site-nav__toggler {
   color: #ffffff;
-  border: rem(1px solid #fff);
   border-radius: rem(5px);
   padding: rem(8px);
   margin-top: rem(10px);
   margin-right: rem(10px);
-  float: right;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: rem(12px);
 
-  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
-    display: inline-block;
-    margin-top: rem(16px);
-  }
+  float: right;
 
   &:focus {
     outline: 0;
@@ -56,24 +46,11 @@
 .occlss-site-nav__list {
   @extend %reset_list_style;
   float: right;
-
-  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
-    display: none;
-    float: none;
-  }
-}
-
-.is-active.occlss-site-nav__list {
-  display: block;
 }
 
 .occlss-site-nav__item {
   float: left;
   margin: 0;
-  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
-    display: block;
-    width: 100%;
-  }
 }
 
 
@@ -90,10 +67,51 @@
   display: block;
   padding: rem(12px);
   text-decoration: none;
-  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
-     width: 100%;
-     padding: rem(12px);
-     text-align: center;
-     border-top: 1px solid #ffffff;
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    padding: rem(12px 5px);
   }
+}
+
+// Mobile style
+
+.occlss-site-nav--mobile {
+
+  .occlss-site-nav__toggler {  
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+      display: inline-block;
+      margin-top: rem(16px);
+    }
+  }
+
+
+  .occlss-site-nav__list {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+      display: none;
+      float: none;
+    }
+  }
+  
+  
+  .occlss-site-nav__item {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .occlss-site-nav__link {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+       width: 100%;
+       padding: rem(12px);
+       text-align: center;
+       border-top: 1px solid #ffffff;
+    }
+  }
+
+}
+
+
+//
+.is-active.occlss-site-nav__list {
+  display: block;
 }

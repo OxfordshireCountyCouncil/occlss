@@ -542,10 +542,6 @@ $occlss-head-logo-color: #ffffff !default;
 // Breadcrumb _occlss-breadcrumb.scss
 $occlss-breadcrumb-font-size-primary:    $occlss-global-font-size-regular !default;
 $occlss-breadcrumb-line-height:          normal !default;
-$occlss-breadcrumb-padding:              0 0 0 0 !default;
-$occlss-breadcrumb-background-primary:   $occlss-brand-color-ronchi !default;
-
-
 
 
 // Page Footer _occlss-page-footer.scss
@@ -658,7 +654,6 @@ $occlss-category-nav-font-size-nav-item-selected:  $occlss-global-font-size-xxxx
 $occlss-site-nav-background-color:             $occlss-brand-color-aqua-deep !default;
 $occlss-site-nav-padding:                      0 24px !default;
 $occlss-site-nav-toggle-link-color-hover:      $occlss-link-color-primary-hover !default;
-
 
 
 
@@ -784,7 +779,7 @@ $occlss-sidebar-item-section-background-color-council:     $occlss-brand-color-p
 // Version bar
 $occlss-version-bar-background:                          $occlss-brand-color-cod-gray;
 $occlss-version-bar-badge-font-weight:                   $occlss-global-font-weight-black;
-$occlss-version-bar-padding:                             10px 32px;
+$occlss-version-bar-padding:                             5px 32px;
 
 
 

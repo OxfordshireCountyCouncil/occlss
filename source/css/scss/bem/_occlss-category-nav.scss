@@ -42,6 +42,10 @@
             height: rem($occlss-category-nav-underline-active-height);
         }
     }
+    &:focus {
+        @extend %highlight-outline-on-focus;
+    }
+    
 }
 
 .occlss-category-nav__item--residents {

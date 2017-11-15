@@ -48,8 +48,5 @@ Format:
   }
   a {
     @include link-colors(#ffffff, $occlss-cms-footer-link-font-color);
-    &:focus {
-      @include tab-focus;
-    }
   }
 }

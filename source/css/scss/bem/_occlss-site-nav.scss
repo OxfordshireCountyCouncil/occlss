@@ -13,6 +13,9 @@
 .occlss-site-nav__logo-link {
   display: block;
   float: left;
+  &:focus {
+    @extend %highlight-outline-on-focus;
+  }
 }
 
 //
@@ -69,6 +72,9 @@
   text-decoration: none;
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
     padding: rem(12px 5px);
+  }
+  &:focus {
+    @extend %highlight-outline-on-focus;
   }
 }
 

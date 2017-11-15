@@ -23,6 +23,9 @@
             fill: $occlss-link-color-primary-hover;
         }
     }
+    &:focus {
+        @extend %highlight-outline-on-focus;
+    }
 }
 
 .occlss-pagination__link-title {

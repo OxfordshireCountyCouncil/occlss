@@ -13,6 +13,9 @@
 .occlss-summary-list__link {
     text-decoration: none;
     display: block;
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
 }
 
 .occlss-summary-list--tab-widget {

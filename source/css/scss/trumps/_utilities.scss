@@ -40,6 +40,9 @@
             fill: $occlss-link-color-primary-hover;
         }
     }
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
 }
 
 .occlss-u-more-link__icon {

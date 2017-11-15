@@ -33,7 +33,10 @@
     @include box-shadow(none);
   }
 
-  &:focus,
+  &:focus {
+    @extend %highlight-bg-on-focus;
+  }
+  
   &:active {
     outline: none;
   }

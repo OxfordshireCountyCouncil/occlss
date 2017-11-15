@@ -15,6 +15,11 @@
     &:hover {
         color: $occlss-featured-panel-font-color;
     }
+
+    &:focus {
+        @extend %highlight-outline-on-focus;
+    }
+    
 }
 
 .occlss-featured-panel__link-icon {
@@ -57,7 +62,7 @@
     line-height: 1.2;
     position: relative;
     display: block;
-    
+
     .occlss-featured-panel__link-icon {
         margin-left: rem(10px);
         width: rem(22px);

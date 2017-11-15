@@ -1,13 +1,18 @@
 // Accessibility select borders on focus
+a:not([class]):focus {
+    @extend %highlight-bg-on-focus;
+}
+
+.occlss-site-nav__logo-link:focus {
+    @extend %highlight-outline-on-focus;
+}
+
 input:focus,
 textarea:focus,
 keygen:focus,
 select:focus,
-.button:focus,
-.form-element__label:focus,
-label.is-active,
-a:focus {
-    outline: 2px solid $occlss-form-border-color-base-input-focus;
+.occlss-button:focus {
+    @extend %highlight-outline-on-focus;
 }
 
 input[type=checkbox],

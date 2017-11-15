@@ -57,3 +57,13 @@ you write a placeholder:
   outline: none;
 }
 
+// Heighlite on focus outline only
+%highlight-outline-on-focus {
+    outline: 3px solid $occlss-form-border-color-base-input-focus;
+}
+
+// outline and background
+%highlight-bg-on-focus {
+  background-color: $occlss-form-border-color-base-input-focus;
+  outline: 3px solid $occlss-form-border-color-base-input-focus;
+}

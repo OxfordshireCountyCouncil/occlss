@@ -27,6 +27,10 @@
     font-size: rem($occlss-tab-widget-font-size-tabs);
     color: $occlss-tab-widget-font-color-tabs;
     padding-right: rem(50px);
+
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
 }
 
 .occlss-tab-widget__link--mobile {
@@ -91,6 +95,9 @@
         .occlss-tab-widget__see-more-link-icon {
             fill: $occlss-summary-list-font-color-tab-widget-hover;
         }
+    }
+    &:focus {
+        @extend %highlight-bg-on-focus;
     }
 }
 

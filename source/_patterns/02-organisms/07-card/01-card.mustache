@@ -1,20 +1,16 @@
 {{#cardDefault}}
     <article class="occlss-card">
-
         <figure class="occlss-card__image-container">
             <img src="{{ card-image-url }}" class="occlss-card__image" alt="{{ card-image-alt-tex }}">
         </figure>
-
         <header class="occlss-card__header">
             <h4 class="occlss-card__title">{{ card-title-text }}</h4>
         </header>
-
         <div class="occlss-card__main">
         {{#card-text}}
             <p>{{paragraph}}</p>
         {{/card-text}}
         </div>
-
         <footer class="occlss-card__footer">
             <a href="{{ card-link-url }}" class="occlss-u-more-link occlss-u-more-link--dark">
                 {{card-link-title}}
@@ -25,6 +21,5 @@
                 </span>
             </a>
         </footer>
-
     </article>
 {{/cardDefault}}

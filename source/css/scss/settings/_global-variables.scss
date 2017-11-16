@@ -780,14 +780,22 @@ $occlss-sidebar-item-section-background-color-council:     $occlss-brand-color-p
 
 
 // Version bar
-$occlss-version-bar-background:                          $occlss-brand-color-cod-gray;
-$occlss-version-bar-badge-font-weight:                   $occlss-global-font-weight-black;
-$occlss-version-bar-padding:                             5px 32px;
+$occlss-version-bar-background:                          $occlss-brand-color-cod-gray !default;
+$occlss-version-bar-badge-font-weight:                   $occlss-global-font-weight-black !default;
+$occlss-version-bar-padding:                             5px 32px !default;
 
 
 
 
 // Skip to content menu
-$occlss-skip-to-content-background:                      $occlss-brand-color-ronchi;
-$occlss-skip-to-content-cont-color:                      $occlss-brand-color-mine-shaft;
+$occlss-skip-to-content-background:                      $occlss-brand-color-ronchi !default;
+$occlss-skip-to-content-cont-color:                      $occlss-brand-color-mine-shaft !default;
 
+
+
+
+// A to Z nav
+$occlss-a-to-z-background:                               #000 !default;
+$occlss-a-to-z-letter-font-size:                           $occlss-global-font-size-x-large !default;
+$occlss-a-to-z-letter-font-weight:                         $occlss-global-font-weight-regular !default;
+$occlss-a-to-z-letter-color-off:                           $occlss-brand-color-emperor !default;

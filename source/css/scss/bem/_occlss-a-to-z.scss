@@ -1,0 +1,36 @@
+.occlss-a-to-z {
+    &__wraper {
+        background-color: $occlss-a-to-z-background;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        padding: rem(19px 12px);
+
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+            text-align: left;
+        }
+    }
+}
+
+
+.occlss-a-to-z__item {
+    display: inline-block;
+    border-right: 1px solid #fff;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        border-right: 0;
+    }
+    &:last-child {
+        border: none;
+    }
+}
+
+.occlss-a-to-z__letter {
+    font-size: $occlss-a-to-z-letter-font-size;
+    text-transform: uppercase;
+    color: #fff;
+    padding: rem(2px 11px 2px 7px);
+    font-weight: $occlss-a-to-z-letter-font-weight;
+}
+
+.occlss-a-to-z__letter--off {
+    color: $occlss-a-to-z-letter-color-off;
+}

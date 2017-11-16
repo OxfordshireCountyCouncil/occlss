@@ -3,13 +3,13 @@
         "featured-panel-mod-class": "occlss-featured-panel--ronchi",
         "featured-panel-heading-text": "Other ways we can help you",
         "featured-panel-heading-size-class": "occlss-featured-panel__heading--mega",
+        "featured-panel-url": "javascript:void(0);",
         "featured-panel-heading-arrow": true,
         "featured-panel-summary-text": "",
         "featured-panel-intro-text": "",
         "featured-panel-view-more-links": [
             {
                 "featured-panel-view-more-link-text": "",
-                "featured-panel-view-more-link-url": "",
                 "featured-panel-view-more-link-size-class": "",
                 "featured-panel-view-more-link-arrow": false
             }

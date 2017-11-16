@@ -7,13 +7,13 @@
               "featured-panel-mod-class": "",
               "featured-panel-heading-text": "School term dates",
               "featured-panel-heading-size-class": "",
+              "featured-panel-url": "https://www.oxfordshire.gov.uk/cms/content/school-term-dates-and-holidays",
               "featured-panel-heading-arrow": false,
               "featured-panel-summary-text": "",
               "featured-panel-intro-text": "",
               "featured-panel-view-more-links": [
                   {
                       "featured-panel-view-more-link-text": "There is a huge range of opportunities in social care. Find out how to get started There is a huge range of opportunities in social care. Find out how to get started There is a huge range of opportunities in social care. Find out how to get started",
-                      "featured-panel-view-more-link-url": "javascript:void(0);",
                       "featured-panel-view-more-link-size-class": "occlss-featured-panel__view-more-link--large",
                       "featured-panel-view-more-link-arrow": true
                   }
@@ -26,13 +26,13 @@
               "featured-panel-mod-class": "occlss-featured-panel--ronchi",
               "featured-panel-heading-text": "Other ways we can help you",
               "featured-panel-heading-size-class": "occlss-featured-panel__heading--mega",
+              "featured-panel-url": "javascript:void(0);",
               "featured-panel-heading-arrow": true,
               "featured-panel-summary-text": "",
               "featured-panel-intro-text": "",
               "featured-panel-view-more-links": [
                     {
                         "featured-panel-view-more-link-text": "",
-                        "featured-panel-view-more-link-url": "",
                         "featured-panel-view-more-link-size-class": "",
                         "featured-panel-view-more-link-arrow": true
                     }

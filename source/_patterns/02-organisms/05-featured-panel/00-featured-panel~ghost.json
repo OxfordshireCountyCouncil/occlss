@@ -3,13 +3,13 @@
         "featured-panel-mod-class": "occlss-featured-panel--ghost",
         "featured-panel-heading-text": "Looking for a career in social care?",
         "featured-panel-heading-size-class": "",
+        "featured-panel-url": "javascript:void(0);",
         "featured-panel-heading-arrow": false,
         "featured-panel-summary-text": "",
         "featured-panel-intro-text": "",
         "featured-panel-view-more-links": [
             {
                 "featured-panel-view-more-link-text": "there are huge range of opportunities in social care. Find out how to get started",
-                "featured-panel-view-more-link-url": "javascript:void(0);",
                 "featured-panel-view-more-link-size-class": "occlss-featured-panel__view-more-link--large",
                 "featured-panel-view-more-link-arrow": true
             }

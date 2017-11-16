@@ -3,13 +3,13 @@
       "featured-panel-mod-class": "",
       "featured-panel-heading-text": "Short term dates",
       "featured-panel-heading-size-class": "",
+      "featured-panel-url": "javascript:void(0);",
       "featured-panel-heading-arrow": false,
       "featured-panel-summary-text": "The school year has now ended.",
       "featured-panel-intro-text": "The next term date status Tuesday 5 September (Monday 4 September in an inset day).",
       "featured-panel-view-more-links": [
         {
             "featured-panel-view-more-link-text": "View all school term and holiday dates",
-            "featured-panel-view-more-link-url": "javascript:void(0);",
             "featured-panel-view-more-link-size-class": "",
             "featured-panel-view-more-link-arrow": true
         }

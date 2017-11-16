@@ -1,4 +1,4 @@
-.occlss-category-pane {
+.occlss-popular-content-pane {
     &:after {
         content:"";
         display: block;
@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.occlss-category-pane__heading {
+.occlss-popular-content-pane__heading {
     width: 100%;
     background: $occlss-brand-color-aqua-deep;
     color: #ffffff;
@@ -24,7 +24,6 @@
         content: "";
         width: rem(20px);
         height: rem(13px);
-        background-image: url('#{$occlss-global-image-path}/icon-angle-arrow-down-white.png');
         background-image: url('#{$occlss-global-image-path}/icon-angle-arrow-down-white.svg');
         display: block;
         position: absolute;
@@ -34,17 +33,17 @@
     }
 }
 
-.occlss-category-pane__content {
+.occlss-popular-content-pane__content {
     padding-bottom: rem(26px);
 
 }
 
-.occlss-category-pane.is-active {
+.occlss-popular-content-pane.is-active {
     height: 100%;
     height: inherit;
 }
 
-.is-active  .occlss-category-pane__heading {
+.is-active  .occlss-popular-content-pane__heading {
     &:after {
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);

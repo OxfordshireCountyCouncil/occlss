@@ -190,7 +190,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/bem/occlss-short-search-form";
 @import "node_modules/occlss/bem/occlss-alert";
 @import "node_modules/occlss/bem/occlss-summary-list";
-@import "node_modules/occlss/bem/occlss-category-pane";
+@import "node_modules/occlss/bem/occlss-popular-content-pane";
 @import "node_modules/occlss/bem/occlss-top-tasks-pane";
 @import "node_modules/occlss/bem/occlss-featured-panel";
 @import "node_modules/occlss/bem/occlss-tab-widget";

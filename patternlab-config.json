@@ -80,7 +80,7 @@
   "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternStates": {
   },
-  "patternExportPatternPartials": ["capita-payment-confirm-payment-details"],
+  "patternExportPatternPartials": ["pages-homepage"],
   "patternExportDirectory": "./pattern_exports/",
   "cacheBust": true,
   "starterkitSubDir": "dist"

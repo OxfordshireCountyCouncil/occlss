@@ -28,8 +28,13 @@
     color: $occlss-tab-widget-font-color-tabs;
     padding-right: rem(50px);
 
-    &:focus {
-        @extend %highlight-bg-on-focus;
+    &:focus { 
+        @extend %highlight-outline-on-focus;
+        outline-width: 2px;
+    }
+
+    &:hover {
+       color: $occlss-tab-widget-font-color-tabs-hover;
     }
 }
 
@@ -55,6 +60,7 @@
 .is-active {
     &.occlss-tab-widget__link {
         font-size: rem($occlss-tab-widget-font-size-tabs-active);
+        color: $occlss-tab-widget-font-color-tabs-active;
         &:after {
             content: "";
             background: $occlss-tab-widget-border-color-tabs;

@@ -214,12 +214,11 @@ $occlss-page-margin-paragraph-unit:      0 0 30px 0 !default;
 
 
 
-
 // Page link
-$occlss-link-color-primary:       $occlss-brand-color-venice-blue !default;
-$occlss-link-color-primary-hover: $occlss-brand-color-clementine !default;
-$occlss-link-font-size:           $occlss-global-font-size-medium !default;
-
+$occlss-link-color-primary:         $occlss-brand-color-venice-blue !default;
+$occlss-link-color-primary-hover:   $occlss-brand-color-ronchi !default;
+$occlss-link-font-size:             $occlss-global-font-size-medium !default;
+$occlss-link-color-hover-focus:     $occlss-brand-color-cod-gray !default;
 
 
 
@@ -440,7 +439,7 @@ $occlss-button-cursor-disabled-default:    not-allowed !default;
 $occlss-button-link-font-weight:            $occlss-global-font-weight-semibold !default;
 $occlss-button-link-font-color:             $occlss-link-color-primary !default;
 $occlss-button-link-font-color-hover:       $occlss-link-color-primary-hover !default;
-$occlss-button-link-font-color-disabled:    #333 !default;
+$occlss-button-link-font-color-disabled:    $occlss-brand-color-mine-shaft !default;
 $occlss-button-link-font-decoration-hover:  underline !default;
 
 
@@ -678,15 +677,17 @@ $occlss-tab-widget-font-family-tab:                      $occlss-global-font-fam
 $occlss-tab-widget-font-weight-tab:                      $occlss-global-font-weight-semibold !default;
 $occlss-tab-widget-font-size-tabs:                       $occlss-global-font-size-xxx-large !default;
 $occlss-tab-widget-font-size-tabs-active:                $occlss-global-font-size-xxxx-large !default;
-$occlss-tab-widget-font-color-tabs:                      $occlss-brand-color-mine-shaft !default;
-$occlss-tab-widget-border-color-tabs:                    $occlss-brand-color-tacao !default;
+$occlss-tab-widget-font-color-tabs:                      $occlss-brand-color-rose-of-sharon !default;
+$occlss-tab-widget-font-color-tabs-hover:                $occlss-brand-color-rose-of-sharon !default;
+$occlss-tab-widget-font-color-tabs-active:               $occlss-brand-color-cod-gray !default;
+$occlss-tab-widget-border-color-tabs:                    $occlss-brand-color-rose-of-sharon !default;
 
 
 
 
 // Summary list _occlss-summary-list.scss
 $occlss-summary-list-border-color-item:                $occlss-brand-color-coriander !default;
-$occlss-summary-list-border-color-item-tab-widget:     $occlss-brand-color-tacao !default;
+$occlss-summary-list-border-color-item-tab-widget:     $occlss-brand-color-rose-of-sharon !default;
 $occlss-summary-list-font-color-tab-widget:            $occlss-brand-color-mine-shaft !default;
 $occlss-summary-list-font-color-tab-widget-hover:      $occlss-brand-color-clementine !default;
 

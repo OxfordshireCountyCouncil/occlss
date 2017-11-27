@@ -59,7 +59,7 @@
             color: $occlss-category-nav-color-underline-residents;
         }
     }
-    &.is-active {
+    .occlss-category-nav__title {
         color: $occlss-category-nav-color-underline-residents;
     }
 }
@@ -74,7 +74,7 @@
             color: $occlss-category-nav-color-underline-business;
         }
     }
-    &.is-active {
+    .occlss-category-nav__title {
         color: $occlss-category-nav-color-underline-business;
     }
 }
@@ -89,7 +89,7 @@
             color: $occlss-category-nav-color-underline-council;
         }
     }
-    &.is-active {
+    .occlss-category-nav__title {
         color: $occlss-category-nav-color-underline-council;
     }
 }
@@ -98,11 +98,17 @@
     &.occlss-category-nav__item {
         padding-top: rem(20px);
         line-height: 0.9;
-        @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-            font-size: rem($occlss-category-nav-font-size-nav-item-selected);
-        }
-        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-            //padding-top: 0;
-        }
+    }
+}
+
+.occlss-category-nav__title {
+    margin: 0;
+    padding: 0;
+    font-family: $occlss-category-nav-font-family-nav-item-selected;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        font-size: rem($occlss-category-nav-font-size-nav-item-selected);
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        font-size: rem($occlss-category-nav-font-size - 5px);
     }
 }

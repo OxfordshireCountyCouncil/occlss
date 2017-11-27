@@ -4,7 +4,7 @@
         <ul class="occlss-layout occlss-layout--align-self-end occlss-category-nav__list">
             {{#nav_link}}
                     {{#state }}
-                        <li class="occlss-layout__col occlss-layout__col--auto occlss-category-nav__item {{ modeClass }} is-active">{{ name }}</li>
+                        <li class="occlss-layout__col occlss-layout__col--auto occlss-category-nav__item {{ modeClass }} is-active"><h1 class="occlss-category-nav__title">{{ name }}</h1></li>
                     {{/state}}
                     {{^state}}
                         <li class="occlss-layout__col occlss-layout__col--auto occlss-category-nav__item {{ modeClass }}"><a href="{{ linkURL }}" class="occlss-category-nav__link">{{ name }}</a></li>

@@ -399,8 +399,9 @@ $occlss-main-title-line-height: 1.1 !default;
 
 
 // Summary text
+$occlss-summary-text-font-family:         $occlss-global-font-family-primary !default;
 $occlss-summary-text-font-size-primary:   $occlss-global-font-size-x-large !default;
-$occlss-summary-text-font-weight-primary: $occlss-global-font-weight-semibold !default;
+$occlss-summary-text-font-weight-primary: $occlss-global-font-weight-medium !default;
 $occlss-summary-text-font-color-primary:  $occlss-brand-color-emperor !default;
 $occlss-summary-text-line-height-primary: 1.4 !default;
 $occlss-summary-text-font-margin-primary: 0 0 90px 0 !default;

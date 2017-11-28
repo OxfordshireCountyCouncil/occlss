@@ -1,6 +1,12 @@
 .occlss-site-nav {
   @if variable-exists(occlss-site-nav-background-color) {
     background-color: $occlss-site-nav-background-color;
+    background-image: url('#{$occlss-global-image-path}/occ-badge-nav-bg.png');
+    background-repeat: no-repeat;
+    background-position: 125% 31%;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+      background-image: none;
+    }
   }
   padding: rem($occlss-site-nav-padding);
   @extend %clearfix;

@@ -23,6 +23,7 @@ Format:
 */
 
 .s-cms-content-footer {
+
   font-weight: $occlss-cms-footer-text-font-weight;
   h2,h3,h4,h5 {
     color: #ffffff;
@@ -41,12 +42,29 @@ Format:
   }
   
   p {
-    margin: rem(0 0 15px 0);
+    margin: rem(0 0 5px 0);
     &:last-child {
       margin: 0;
     }
   }
   a {
     @include link-colors(#ffffff, $occlss-cms-footer-link-font-color);
+    font-weight: $occlss-cms-footer-link-weight;
+    text-decoration: none;
+    &:focus {
+      .occlss-u-more-link__icon {
+        fill: #000000;
+      }
+    }
+  }
+
+  .occlss-u-more-link__icon {
+    fill: #ffffff;
+  }
+  .icon-list {
+    margin-top: rem(20px);
+  }
+  .occlss-u-more-link {
+    font-weight: $occlss-cms-footer-u-more-link-weight;
   }
 }

@@ -1,0 +1,16 @@
+.occlss-hero-pane {
+    background-repeat: no-repeat;
+}
+
+.occlss-hero-pane__heading {
+    display: inline-block;
+    font-weight: $occlss-hero-pane-heading-font-weight;
+    padding: rem(10px 50px 10px 30px);
+    font-size: rem(46px);
+    margin-top: rem(54px);
+    background-image: url('#{$occlss-global-image-path}/hero-heading-bg.png');    
+    font-family: $occlss-hero-pane-heading-font-family;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        line-height: 1;
+    }
+}

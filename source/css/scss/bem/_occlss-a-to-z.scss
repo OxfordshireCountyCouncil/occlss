@@ -2,7 +2,7 @@
     &__wraper {
         background-color: $occlss-a-to-z-background;
         text-align: center;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #ffffff;
         padding: rem(19px 12px);
 
         @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
@@ -14,7 +14,7 @@
 
 .occlss-a-to-z__item {
     display: inline-block;
-    border-right: 1px solid #fff;
+    border-right: 2px solid #fff;
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         border-right: 0;
     }
@@ -24,11 +24,17 @@
 }
 
 .occlss-a-to-z__letter {
-    font-size: $occlss-a-to-z-letter-font-size;
+    font-size: rem($occlss-a-to-z-letter-font-size);
     text-transform: uppercase;
     color: #fff;
-    padding: rem(2px 11px 2px 7px);
+    padding: rem(0px 11px 0px 7px);
     font-weight: $occlss-a-to-z-letter-font-weight;
+    text-decoration: none;
+    line-height: 0.6;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        padding: rem(2px 11px 2px 7px);
+        line-height: 1;
+    }
 }
 
 .occlss-a-to-z__letter--off {

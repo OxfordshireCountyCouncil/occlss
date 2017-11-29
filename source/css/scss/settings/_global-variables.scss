@@ -42,69 +42,86 @@
 
 
 // Typography colors
-$occlss-brand-color-emperor:       #525252 !default;
-$occlss-brand-color-cod-gray:      #1a1a1a !default;
-$occlss-brand-color-mine-shaft:    #333333 !default;
-$occlss-brand-color-alabaster:     #fcfcfc !default;
-$occlss-brand-color-venice-blue:   #0a549d !default;
-$occlss-brand-color-catalina-blue: #073d73 !default;
-$occlss-brand-color-denim:         #0e73d8 !default;
-$occlss-brand-color-selago:        #e5effb !default;
-$occlss-brand-color-ronchi:        #edc856 !default;
-$occlss-brand-color-pizza:         #d0a116 !default;
-$occlss-brand-color-maize:         #f5de98 !default;
+$occlss-brand-color-black:         #000000;
+$occlss-brand-color-emperor:       #525252;
+$occlss-brand-color-cod-gray:      #1a1a1a;
+$occlss-brand-color-mine-shaft:    #333333;
+$occlss-brand-color-alabaster:     #fcfcfc;
 
 
 
 
-// Homepage color
-$occlss-brand-color-aqua-deep: #00483a !default;
-$occlss-brand-color-como:      #567b6c !default;
-$occlss-brand-color-tacao:     #ecc486 !default;
-$occlss-brand-color-givry:     #f7e7b5 !default;
-$occlss-brand-color-lynch:     #617799 !default;
-$occlss-brand-color-ghost:     #c9cfd9 !default;
+// Link
+$occlss-brand-color-venice-blue:   #0a549d;
+$occlss-brand-color-catalina-blue: #073d73;
+$occlss-brand-color-denim:         #0e73d8;
+$occlss-brand-color-selago:        #e5effb;
 
+
+
+
+// Search button
+$occlss-brand-color-ronchi:        #edc856;
+$occlss-brand-color-pizza:         #d0a116;
+$occlss-brand-color-sahara:        #B48C13;
+$occlss-brand-color-maize:         #f5de98;
+
+
+
+
+// Generic
+$occlss-brand-color-aqua-deep:      #00483a;
+$occlss-brand-color-como:           #567b6c;
+$occlss-brand-color-cascade:        #8DB0A3;
+$occlss-brand-color-hawaiian-tan:   #8D5E16;
+$occlss-brand-color-tacao:          #ecc486;
+$occlss-brand-color-givry:          #f7e7b5;
+$occlss-brand-color-lynch:          #617799;
+$occlss-brand-color-ghost:          #c9cfd9;
+$occlss-brand-color-athens-gray:    #f0f2f4;
 
 
 
 // Wayfinding colors
 // Residents
-$occlss-brand-color-dingley:     #687a48 !default;
-$occlss-brand-color-verdigris:   #4f5d37 !default;
-$occlss-brand-color-green-smoke: #97ac71 !default;
-$occlss-brand-color-coriander:   #c2ceab !default;
+$occlss-brand-color-dingley:     #687a48;
+$occlss-brand-color-verdigris:   #4f5d37;
+$occlss-brand-color-green-smoke: #97ac71;
+$occlss-brand-color-coriander:   #c2ceab;
 
 
 
 
 // Business
-$occlss-brand-color-wedgewood:   #417B90 !default;
-$occlss-brand-color-casal:       #336071 !default;
-$occlss-brand-color-hippie-blue: #599BB5 !default;
-$occlss-brand-color-ziggurat:    #AECEDB !default;
+$occlss-brand-color-wedgewood:   #417B90;
+$occlss-brand-color-casal:       #336071;
+$occlss-brand-color-hippie-blue: #599BB5;
+$occlss-brand-color-ziggurat:    #AECEDB;
 
 
 
 
 // Council
-$occlss-brand-color-rose-of-sharon:  #b75301 !default;
-$occlss-brand-color-peru-tan:        #893e01 !default;
-$occlss-brand-color-clementine:      #e76701 !default;
-$occlss-brand-color-atomic-tangerine:#fea862 !default;
+$occlss-brand-color-rose-of-sharon:  #b75301;
+$occlss-brand-color-peru-tan:        #893e01;
+$occlss-brand-color-clementine:      #e76701;
+$occlss-brand-color-atomic-tangerine:#fea862;
 
 
 
 
 // Web page messages
-$occlss-brand-color-milano-red:  #ad0505 !default;
-$occlss-brand-color-bridesmaid:  #fee6e6 !default;
-$occlss-brand-color-denim:       #0e73d8 !default;
-$occlss-brand-color-solitude:    #ecf5fe !default;
-$occlss-brand-color-apple:       #50b948 !default;
-$occlss-brand-color-zanah:       #d8efd7 !default;
-$occlss-brand-color-tahiti-gold: #f3830b !default;
-$occlss-brand-color-bleach-white:#feebd8 !default;
+$occlss-brand-color-milano-red:  #ad0505;
+$occlss-brand-color-bridesmaid:  #fee6e6;
+
+$occlss-brand-color-denim:       #0e73d8;
+$occlss-brand-color-solitude:    #ecf5fe;
+
+$occlss-brand-color-apple:       #50b948;
+$occlss-brand-color-zanah:       #d8efd7;
+
+$occlss-brand-color-tahiti-gold: #f3830b;
+$occlss-brand-color-bleach-white:#feebd8;
 
 
 
@@ -215,10 +232,11 @@ $occlss-page-margin-paragraph-unit:      0 0 30px 0 !default;
 
 
 // Page link
-$occlss-link-color-primary:         $occlss-brand-color-venice-blue !default;
-$occlss-link-color-primary-hover:   $occlss-brand-color-ronchi !default;
-$occlss-link-font-size:             $occlss-global-font-size-medium !default;
-$occlss-link-color-hover-focus:     $occlss-brand-color-cod-gray !default;
+$occlss-link-color-primary:            $occlss-brand-color-venice-blue !default;
+$occlss-link-color-primary-hover:      $occlss-brand-color-ronchi !default;
+$occlss-link-bg-color-primary-hover:   $occlss-brand-color-ronchi !default;
+$occlss-link-font-size:                $occlss-global-font-size-medium !default;
+$occlss-link-color-hover-focus:        $occlss-brand-color-cod-gray !default;
 
 
 
@@ -429,7 +447,7 @@ $occlss-button-padding-x-default:          20px !default;
 $occlss-button-line-height-default:        1.25 !default;
 $occlss-button-transition-default:         $occlss-global-transition-parameters !default;
 $occlss-button-box-shadow-default:         none !default;
-$occlss-button-active-box-shadow-default:  inset 0 3px 5px rgba(#000,.125) !default;
+$occlss-button-active-box-shadow-default:  inset 0 3px 5px rgba($occlss-brand-color-black,.125) !default;
 $occlss-button-focus-box-shadow-default:   0 0 0 2px rgba($occlss-brand-color-tahiti-gold , .25) !default;
 $occlss-button-cursor-disabled-default:    not-allowed !default;
 
@@ -545,7 +563,7 @@ $occlss-breadcrumb-line-height:          normal !default;
 
 
 // Page Footer _occlss-page-footer.scss
-$occlss-page-footer-background:          #000000 !default;
+$occlss-page-footer-background:          $occlss-brand-color-black !default;
 
 
 
@@ -797,7 +815,7 @@ $occlss-skip-to-content-cont-color:                      $occlss-brand-color-min
 
 
 // A to Z nav
-$occlss-a-to-z-background:                               #000 !default;
+$occlss-a-to-z-background:                                 $occlss-brand-color-black !default;
 $occlss-a-to-z-letter-font-size:                           $occlss-global-font-size-x-large !default;
 $occlss-a-to-z-letter-font-weight:                         $occlss-global-font-weight-regular !default;
 $occlss-a-to-z-letter-color-off:                           $occlss-brand-color-emperor !default;

@@ -12,11 +12,6 @@
         "occlss-color-sass-var-name": "#fee6e6"
       },
       {
-        "occlss-color-variable-name": "$occlss-brand-color-denim",
-        "occlss-color-name": "#0e73d8",
-        "occlss-color-sass-var-name": "#0e73d8"
-      },
-      {
         "occlss-color-variable-name": "$occlss-brand-color-solitude",
         "occlss-color-name": "#ecf5fe",
         "occlss-color-sass-var-name": "#ecf5fe"

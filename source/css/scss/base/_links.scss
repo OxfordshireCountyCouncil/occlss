@@ -3,6 +3,4 @@
 
 a {
   @include link-colors($occlss-link-color-primary, $occlss-link-color-primary-hover);
-  //font-size: rem($occlss-link-font-size);
-  text-decoration: none;
 }

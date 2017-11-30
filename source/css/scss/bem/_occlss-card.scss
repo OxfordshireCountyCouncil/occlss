@@ -1,21 +1,43 @@
 .occlss-card {
     margin-bottom: rem(24px);
 }
+
 .occlss-card__image-container {
     width: 100%;
     margin-bottom: rem(23px);
 }
+
 .occlss-card__image {
     width: 100%;
 }
+
 .occlss-card__header {
     margin: 0;
 }
+
 .occlss-card__title {
-    font-size: rem($occlss-card-font-size-title);
+    font-size: rem($occlss-card-title-font-size);
+    color: $occlss-card-title-font-color;
     margin: 0;
 }
+
 .occlss-card__main {
     margin-bottom: rem(26px);
     line-height: 1;
+}
+
+.occlss-card__link {
+
+    text-decoration: none;
+    color: $occlss-card-link-font-color;
+    display: inline-block;
+
+    &:hover {
+        color: $occlss-card-link-font-color;
+        text-decoration: underline;
+    }
+    &:focus {
+        @extend %highlight-bg-on-focus;
+        text-decoration: underline;     
+    }
 }

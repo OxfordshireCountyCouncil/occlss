@@ -1,0 +1,18 @@
+{
+    "featuredPanelDefault" : {
+        "featured-panel-mod-class": "",
+        "featured-panel-url": "javascript:void(0);",
+        "featured-panel-textlines": [
+            {
+                "featured-panel-textline-mode-class": "",
+                "featured-panel-textline-text": "Text default size",
+                "featured-panel-textline-arrow": false
+            },
+            {
+                "featured-panel-textline-mode-class": "",
+                "featured-panel-textline-text": "Text default size show arrow",
+                "featured-panel-textline-arrow": true
+            }
+        ]
+    }
+}

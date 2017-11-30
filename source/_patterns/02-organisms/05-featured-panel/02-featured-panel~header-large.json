@@ -1,0 +1,18 @@
+{
+    "featuredPanelDefault" : {
+        "featured-panel-mod-class": "",
+        "featured-panel-url": "javascript:void(0);",
+        "featured-panel-textlines": [
+            {
+                "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-large",
+                "featured-panel-textline-text": "Header large",
+                "featured-panel-textline-arrow": false
+            },
+            {
+                "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-large",
+                "featured-panel-textline-text": "Header large show arrow",
+                "featured-panel-textline-arrow": true
+            }
+        ]
+    }
+}

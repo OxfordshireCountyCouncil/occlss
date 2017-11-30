@@ -4,6 +4,40 @@
         {
             "panel-size": "occlss-layout__col--lg-8 occlss-layout__col--md-6",
             "featuredPanelDefault" : {
+                "featured-panel-mod-class": " ",
+                "featured-panel-url": "javascript:void(0);",
+                "featured-panel-textlines": [
+                    {
+                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-large",
+                        "featured-panel-textline-text": "School term dates",
+                        "featured-panel-textline-arrow": false
+                    },
+                    {
+                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
+                        "featured-panel-textline-text": "This term ends:",
+                        "featured-panel-textline-arrow": false
+                    },
+                    {
+                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-mega",
+                        "featured-panel-textline-text": "Friday 20 October",
+                        "featured-panel-textline-arrow": false
+                    },
+                    {
+                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
+                        "featured-panel-textline-text": "The next term starts Monday 30 October",
+                        "featured-panel-textline-arrow": false
+                    },
+                    {
+                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
+                        "featured-panel-textline-text": "View all school term and holiday dates",
+                        "featured-panel-textline-arrow": true
+                    }
+                ]
+            }
+        },
+        {
+            "panel-size": "occlss-layout__col--lg-8 occlss-layout__col--md-6",
+            "featuredPanelDefault" : {
               "featured-panel-mod-class": "",
               "featured-panel-heading-text": "School term dates",
               "featured-panel-heading-size-class": "",
@@ -25,7 +59,7 @@
             "featuredPanelDefault" : {
               "featured-panel-mod-class": "occlss-featured-panel--ronchi",
               "featured-panel-heading-text": "Other ways we can help you",
-              "featured-panel-heading-size-class": "occlss-featured-panel__heading--mega",
+              "featured-panel-heading-size-class": "occlss-featured-panel__heading--mega occlss-featured-panel__heading--oneline",
               "featured-panel-url": "javascript:void(0);",
               "featured-panel-heading-arrow": true,
               "featured-panel-summary-text": "",
@@ -38,7 +72,64 @@
                     }
                 ]
               }
-          }
+          },
+          {
+            "panel-size": "occlss-layout__col--lg-4 occlss-layout__col--md-6",
+            "featuredPanelDefault" : {
+              "featured-panel-mod-class": "occlss-featured-panel--ronchi",
+              "featured-panel-heading-text": "What's on",
+              "featured-panel-heading-size-class": "occlss-featured-panel__heading--large",
+              "featured-panel-url": "javascript:void(0);",
+              "featured-panel-heading-arrow": false,
+              "featured-panel-summary-text": "Find council evedents around the county",
+              "featured-panel-intro-text": "",
+              "featured-panel-view-more-links": [
+                    {
+                        "featured-panel-view-more-link-text": "",
+                        "featured-panel-view-more-link-size-class": "",
+                        "featured-panel-view-more-link-arrow": true
+                    }
+                ]
+              }
+           },
+           {
+            "panel-size": "occlss-layout__col--lg-8 occlss-layout__col--md-6",
+            "featuredPanelDefault" : {
+              "featured-panel-mod-class": "occlss-featured-panel--como",
+              "featured-panel-heading-text": "Consultations",
+              "featured-panel-heading-size-class": "occlss-featured-panel__heading--large",
+              "featured-panel-url": "javascript:void(0);",
+              "featured-panel-heading-arrow": false,
+              "featured-panel-summary-text": "Have your say about the policies that affect you.",
+              "featured-panel-intro-text": "",
+              "featured-panel-view-more-links": [
+                    {
+                        "featured-panel-view-more-link-text": "",
+                        "featured-panel-view-more-link-size-class": "",
+                        "featured-panel-view-more-link-arrow": true
+                    }
+                ]
+              }
+           },
+           {
+              "panel-size": "occlss-layout__col--12",
+              "featuredPanelDefault" : {
+                "featured-panel-mod-class": "occlss-featured-panel--aqua-dee",
+                "featured-panel-heading-text": "All the news from your county council",
+                "featured-panel-heading-size-class": "occlss-featured-panel__heading--large occlss-featured-panel__heading--oneline",
+                "featured-panel-url": "javascript:void(0);",
+                "featured-panel-heading-arrow": true,
+                "featured-panel-summary-text": "",
+                "featured-panel-intro-text": "",
+                "featured-panel-view-more-links": [
+                      {
+                          "featured-panel-view-more-link-text": "",
+                          "featured-panel-view-more-link-size-class": "",
+                          "featured-panel-view-more-link-arrow": true
+                      }
+                  ]
+                }
+            }
     ]
   }
 }

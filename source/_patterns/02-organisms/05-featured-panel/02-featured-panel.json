@@ -1,0 +1,33 @@
+{
+    "featuredPanelDefault" : {
+        "featured-panel-mod-class": " ",
+        "featured-panel-url": "javascript:void(0);",
+        "featured-panel-textlines": [
+            {
+                "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-large",
+                "featured-panel-textline-text": "School term dates",
+                "featured-panel-textline-arrow": false
+            },
+            {
+                "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
+                "featured-panel-textline-text": "This term ends:",
+                "featured-panel-textline-arrow": false
+            },
+            {
+                "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-mega",
+                "featured-panel-textline-text": "Friday 20 October",
+                "featured-panel-textline-arrow": false
+            },
+            {
+                "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
+                "featured-panel-textline-text": "The next term starts Monday 30 October",
+                "featured-panel-textline-arrow": false
+            },
+            {
+                "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
+                "featured-panel-textline-text": "View all school term and holiday dates",
+                "featured-panel-textline-arrow": true
+            }
+        ]
+    }
+}

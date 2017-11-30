@@ -821,5 +821,13 @@ $occlss-a-to-z-letter-color-off:                           $occlss-brand-color-e
 
 
 // Hero pane
-$occlss-hero-pane-heading-font-family:                     $occlss-global-font-family-secondary;                
-$occlss-hero-pane-heading-font-weight:                     $occlss-global-font-weight-black;                
+$occlss-hero-pane-heading-font-family:                     $occlss-global-font-family-secondary !default;                
+$occlss-hero-pane-heading-font-weight:                     $occlss-global-font-weight-black !default;               
+
+
+// Popular content panel
+
+$occlss-popular-content-color-primary:                     $occlss-brand-color-dingley !default;
+$occlss-popular-content-heading-color:                     #ffffff !default;
+$occlss-popular-content-heading-font-size:                 $occlss-global-font-size-large !default;
+$occlss-popular-content-heading-font-weight:               $occlss-global-font-weight-semibold !default;

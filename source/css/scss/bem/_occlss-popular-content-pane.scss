@@ -2,7 +2,7 @@
     &:after {
         content:"";
         display: block;
-        border-bottom: rem(5px solid $occlss-brand-color-aqua-deep);
+        border-bottom: rem(5px solid $occlss-popular-content-color-primary);
     }
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         height: 41px;
@@ -12,10 +12,11 @@
 
 .occlss-popular-content-pane__heading {
     width: 100%;
-    background: $occlss-brand-color-aqua-deep;
-    color: #ffffff;
+    background: $occlss-popular-content-color-primary;
+    color: $occlss-popular-content-heading-color;
+    font-size: rem($occlss-popular-content-heading-font-size);
     padding: rem(5px 14px);
-    margin-bottom: rem(26px);
+    margin-bottom: rem(15px);
 
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
        cursor: pointer;
@@ -27,14 +28,14 @@
         background-image: url('#{$occlss-global-image-path}/icon-angle-arrow-down-white.svg');
         display: block;
         position: absolute;
-        right: 15px;
-        top: 14px;
+        right: rem(15px);
+        top: rem(14px);
       }
     }
 }
 
 .occlss-popular-content-pane__content {
-    padding-bottom: rem(26px);
+    padding-bottom: rem(5px);
 
 }
 

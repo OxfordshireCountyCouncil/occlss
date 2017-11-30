@@ -34,3 +34,20 @@
         }
     }
 }
+
+.occlss-summary-list--popular-content-pane {
+    padding: rem(0 15px);
+    .occlss-summary-list__item {
+        margin-bottom: rem(10px);
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    .occlss-summary-list__link {
+        color: $occlss-summary-list-font-color-tab-widget;
+        &:hover {
+            color: #000000;
+        }
+    }
+}

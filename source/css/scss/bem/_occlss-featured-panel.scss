@@ -29,6 +29,8 @@
     font-size: rem($occlss-featured-panel-text-line-font-size-header-mega);
     font-weight: $occlss-featured-panel-text-line-font-weight-header-mega;
     font-family: $occlss-featured-panel-text-line-font-family-header-mega;
+    line-height: 0.9;
+    margin-bottom: rem(20px);
     .occlss-icon__container {
         width: rem($occlss-featured-panel-text-line-font-size-header-mega);
         height: rem($occlss-featured-panel-text-line-font-size-header-mega);
@@ -77,7 +79,38 @@
     }
 }
 
+.occlss-featured-panel__text-line--text-large {
+    font-size: rem($occlss-featured-panel-text-line-font-size-text-large);
+    margin-bottom: rem(20px);
+    .occlss-icon__container {
+        width: rem($occlss-featured-panel-text-line-font-size-text-large);
+        height: rem($occlss-featured-panel-text-line-font-size-text-large);
+    }
+}
 
+
+.occlss-featured-panel__text-line--header-mega,
+.occlss-featured-panel__text-line--header-xlarge,
+.occlss-featured-panel__text-line--header-large,
+.occlss-featured-panel__text-line--header-small,
+.occlss-featured-panel__text-line--text-medium,
+.occlss-featured-panel__text-line--text-large {
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+
+.occlss-featured-panel--nogaps {
+    .occlss-featured-panel__text-line--header-mega,
+    .occlss-featured-panel__text-line--header-xlarge,
+    .occlss-featured-panel__text-line--header-large,
+    .occlss-featured-panel__text-line--header-small,
+    .occlss-featured-panel__text-line--text-medium,
+    .occlss-featured-panel__text-line--text-large {
+        margin-bottom: 0;
+    }
+}
 
 
 
@@ -109,9 +142,6 @@
     font-size: rem(28px);
 }
 
-.occlss-featured-panel__heading--oneline {
-    margin: 0;
-}
 
 .occlss-featured-panel__heading--micra {
     font-size: rem(26px);

@@ -113,72 +113,8 @@
 }
 
 
-
-
-
-
-
-
 .occlss-featured-panel__link-icon {
     fill: #ffffff;
-}
-
-.occlss-featured-panel--alpha {
-    color: #ffffff;
-}
-
-.occlss-featured-panel__heading {
-    font-size: rem($occlss-featured-panel-font-size-heading);
-    font-weight: $occlss-featured-panel-font-weight-heading;
-    line-height: 0.9;
-    margin-bottom: rem($occlss-featured-panel-margin-bottom-heading);
-}
-
-.occlss-featured-panel__heading--mega {
-    font-size: rem(56px);
-}
-
-.occlss-featured-panel__heading--large {
-    font-size: rem(28px);
-}
-
-
-.occlss-featured-panel__heading--micra {
-    font-size: rem(26px);
-}
-
-.occlss-featured-panel__short-summary {
-    font-size: rem($occlss-featured-panel-font-size-short-summary);
-    margin-bottom: rem(20px);
-    line-height: 1.4;
-}
-
-.occlss-featured-panel__intro {
-    font-size: rem($occlss-featured-panel-font-size-intro-text);
-    line-height: 1.2;
-    margin-bottom: rem(44px);
-}
-
-.occlss-featured-panel__view-more-link {
-    text-decoration: none;
-    line-height: 1.2;
-    position: relative;
-    display: block;
-
-    .occlss-featured-panel__link-icon {
-        margin-left: rem(10px);
-        width: rem(22px);
-        height: rem(22px);
-    }
-}
-
-.occlss-featured-panel__view-more-link--large {
-    font-size: rem($occlss-featured-panel-font-size-more-link);
-    .occlss-featured-panel__link-icon {
-        margin-left: rem(10px);
-        width: rem(26px);
-        height: rem(26px);
-    }
 }
 
 // Mods

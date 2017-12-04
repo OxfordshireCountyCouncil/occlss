@@ -8,6 +8,9 @@
         height: rem(38px);
     }
     overflow: hidden;
+    &:focus {
+        outline: 0;
+    }
 }
 
 .occlss-popular-content-pane__heading {

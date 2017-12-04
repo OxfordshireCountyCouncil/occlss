@@ -5,7 +5,7 @@
         border-bottom: rem(5px solid $occlss-popular-content-color-primary);
     }
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
-        height: 41px;
+        height: rem(38px);
     }
     overflow: hidden;
 }
@@ -26,10 +26,11 @@
         width: rem(20px);
         height: rem(13px);
         background-image: url('#{$occlss-global-image-path}/icon-angle-arrow-down-white.svg');
+        background-size: cover;
         display: block;
         position: absolute;
         right: rem(15px);
-        top: rem(14px);
+        top: rem(13px);
       }
     }
 }

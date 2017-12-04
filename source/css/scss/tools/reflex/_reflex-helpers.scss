@@ -83,16 +83,8 @@
     }
 }
 
-/*.occlss-layout--head-search {
-    padding-left: rem(34px);
-    padding-right: rem(34px);
-    
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
-        padding-bottom: rem(40px);
-    }
-}*/
 
-.occlss-layout--categories-grid {
+.occlss-layout--popular-content-grid {
     padding:  rem(16px 0);
 }
 

@@ -3,17 +3,18 @@
  * EDITION-NODE-GULP
  * The gulp wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.
 ******************************************************/
-var gulp = require('gulp'),
-    path = require('path'),
-    browserSync = require('browser-sync').create(),
-    svgSprite = require('gulp-svg-sprite'),
-    argv = require('minimist')(process.argv.slice(2)),
-    sass = require('gulp-sass'),
-    plumber = require('gulp-plumber'),
-    sourcemaps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer'),
-    htmlsplit = require('gulp-htmlsplit'),
-    del = require('del');
+var gulp          = require('gulp'),
+    path          = require('path'),
+    browserSync   = require('browser-sync').create(),
+    svgSprite     = require('gulp-svg-sprite'),
+    argv          = require('minimist')(process.argv.slice(2)),
+    sass          = require('gulp-sass'),
+    plumber       = require('gulp-plumber'),
+    sourcemaps    = require('gulp-sourcemaps'),
+    autoprefixer  = require('gulp-autoprefixer'),
+    htmlsplit     = require('gulp-htmlsplit'),
+    sassdoc       = require('sassdoc'),
+    del           = require('del');
 
   // SVG
   var $ = {
@@ -34,12 +35,16 @@ gulp.task('sass', function(){
       //outputStyle: 'expanded'
       outputStyle: argv.production ? 'compressed' : 'nested',
     }))
-    .pipe(autoprefixer('last 2 versions'))
+    .pipe(autoprefixer({
+			browsers: ['last 2 versions', 'iOS 7'],
+			cascade: true
+		}))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('public/css'))
     .pipe(browserSync.reload({
     stream: true
     }))
+    //.pipe(sassdoc())
 })
 
 

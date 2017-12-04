@@ -28,6 +28,7 @@ var cleanCSS    = require('gulp-clean-css');
 
 gulp.task('sass', function(){
     return gulp.src('source/css/scss/style.scss')
+    //.pipe(sassdoc())
     .pipe(plumber('Error Running Sass'))
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -44,7 +45,6 @@ gulp.task('sass', function(){
     .pipe(browserSync.reload({
     stream: true
     }))
-    //.pipe(sassdoc())
 })
 
 

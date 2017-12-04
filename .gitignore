@@ -10,3 +10,4 @@ pattern_exports/
 CSSframework/
 nodejs.module/
 .yarn.lock
+/source/_patterns/styleguide/

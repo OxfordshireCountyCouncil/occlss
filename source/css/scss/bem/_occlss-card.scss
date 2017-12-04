@@ -1,5 +1,8 @@
 .occlss-card {
     margin-bottom: rem(24px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        margin-bottom: 0;
+    }
 }
 
 .occlss-card__image-container {

@@ -1,14 +1,48 @@
-<div class="occlss-search-place-form" role="search">
-  <form class="occlss-search-place-form__content occlss-layout">
+<div class="occlss-wrapper">
+  <div class="occlss-search-place-form" role="search">
 
-		<div class="occlss-search-place-form__group occlss-layout__col occlss-layout__col--sm-12 occlss-layout__col--md-7 occlss-layout__col--bleed">
-      <label class="occlss-search-place-form__group-title">Email address</label>
-      <div class="occlss-search-place-form__input-cont">
-        <input type="text" class="occlss-search-place-form__input-text" />
+    <div class="occlss-layout occlss-layout--gutter-s">
+
+      <div class="occlss-layout__col occlss-layout__col--md-5">
+        <div class="occlss-layout occlss-search-place-form__search-form-cont occlss-search-place-form__search-form-cont--postcode">
+
+          <div class="occlss-layout__col occlss-layout__col--md-8">
+            <div class="occlss-form__input-group occlss-search-place-form__input-group">
+              <label class="occlss-form__label occlss-search-place-form__label" for="input-type-text">Find my nearest ...</label>
+              <span>Enter a postcode</span>
+              <input class="occlss-form__input" id="input-type-text" name="input-type-text" type="text">
+            </div>
+          </div>
+
+          <div class="occlss-layout__col occlss-layout__col--md-4 occlss-layout__col--align-self-end occlss-search-place-form__input-group">
+            <button type="submit" class="occlss-button occlss-button--primary occlss-button--fullwidth occlss-search-place-form__submit">Search</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="occlss-layout__col occlss-layout__col--md-4 occlss-layout__col--align-self-end">
+        <div class="occlss-form__input-group occlss-search-place-form__input-group">
+          <label class="occlss-form__label occlss-search-place-form__label" for="options">Or select a place</label>
+          <select class="occlss-form__select" name="options" id="options">
+            <option value="value1"></option>
+            <option value="value2">Abingdon</option>
+            <option value="value3">Adderbury</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="occlss-layout__col occlss-layout__col--md-3 occlss-layout__col--align-self-end occlss-search-place-form__find-my-location-cont">
+
+        <span class="occlss-icon occlss-icon--pin" aria-hidden="true">
+          <svg aria-hidden="true" class="occlss-icon__container occlss-search-place-form__icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#pin" class="icon__source icon__source--svg"></use>
+          </svg>
+        </span>
+
+        <a href="javascript:void(0);" class="occlss-search-place-form__link">Or find my location</a>
+
       </div>
     </div>
-    <div class="occlss-layout__col occlss-layout__col--sm-12 occlss-layout__col--md-5 occlss-layout__col--bleed occlss-search-place-form__controls">
-      <button type="submit" class="occlss-button occlss-button--primary occlss-button--fullwidth occlss-search-place-form__submit">Sign up</button>
-    </div>
-  </form>
+  </div>
 </div>

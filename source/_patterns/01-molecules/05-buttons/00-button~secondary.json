@@ -8,6 +8,18 @@
         "occlss-button-link": ""
       },
       {
+        "occlss-button-text": "Secondary hover",
+        "occlss-button-modifire-class": "occlss-button--secondary is-hover",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      },
+      {
+        "occlss-button-text": "Secondary focus",
+        "occlss-button-modifire-class": "occlss-button--secondary is-focus",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      },
+      {
         "occlss-button-text": "Secondary disabled",
         "occlss-button-modifire-class": "occlss-button--secondary is-disabled",
         "occlss-button-tag": "button",

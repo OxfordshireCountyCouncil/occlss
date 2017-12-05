@@ -9,17 +9,6 @@
 @include make_a_grid($make_grid: true);
 
 
-
-
-
-// This class will highlight selected object
-.occlss-u-focus {
-    //outline: solid 3px $highlited-color;
-}
-
-
-
-
 // This class will hide object from display
 .occlss-u-hidden {
   display: none;

@@ -249,15 +249,23 @@
 
 // Dates
 
-.occlss-form__input-group-day,
-.occlss-form__input-group-month,
-.occlss-form__input-group-year {
+.occlss-form__input-group--day,
+.occlss-form__input-group--month,
+.occlss-form__input-group--year {
   clear: none;
   float: left;
-  margin-right: 1.5rem;
-  width: rem(80px);
+  margin-right: rem(10px);
+  margin-bottom: rem(10px);
+  width: rem(53px);
 }
 
-.occlss-form__input-group-year {
-  width: rem(112px);
+.occlss-form__input-group--year {
+  width: rem(70px);
+}
+
+
+// Inline fields container
+
+.occlss-form__inline-fields {
+  @extend %clearfix;
 }

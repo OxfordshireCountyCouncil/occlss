@@ -34,6 +34,9 @@
         color: $occlss-search-place-form-link-color-hover;
         text-decoration: none;
     }
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
 }
 
 .occlss-search-place-form__find-my-location-cont {

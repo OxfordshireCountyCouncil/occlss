@@ -200,6 +200,10 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/bem/occlss-sidebar-item-section";
 @import "node_modules/occlss/bem/occlss-version-bar";
 @import "node_modules/occlss/bem/occlss-pagination";
+@import "node_modules/occlss/bem/occlss-skip-to-content";
+@import "node_modules/occlss/bem/occlss-a-to-z";
+@import "node_modules/occlss/bem/occlss-hero-pane";
+@import "node_modules/occlss/bem/occlss-search-place-form";
 
 // UTILITIES
 // scope

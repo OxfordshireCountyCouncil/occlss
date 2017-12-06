@@ -2,6 +2,15 @@
     background: $occlss-top-tasks-pane-background;
 }
 
+.occlss-top-tasks-pane__layout {
+    padding-left: rem(16px);
+    padding-right: rem(16px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .occlss-top-tasks-pane__heading {
     padding-bottom: rem(10px);
     margin-bottom: rem(15px);

@@ -1,12 +1,11 @@
 // Buttons
-
 // Primary
 .occlss-button--primary {
   color: $occlss-button-primary-font-color;
   background-color: $occlss-button-primary-background;
   border-color: transparent;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px 0 rgba(26,26,26,0.20);
+  border-radius: rem(6px);
+  box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));
 
   @if variable-exists(occlss-button-primary-border-bottom) {
     border-bottom: rem($occlss-button-primary-border-bottom);
@@ -18,12 +17,12 @@
       color: #ffffff;
       background-color: $occlss-button-primary-background-hover;
       border-bottom: 4px solid transparent;
-      box-shadow: 0 2px 4px 0 rgba(26,26,26,0.20);      
+      box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));      
     }
     &:active {
       background-color: $occlss-button-primary-background;
       border-bottom: rem($occlss-button-primary-border-bottom);
-      box-shadow: 0 4px 6px 1px rgba(26,26,26,0.35);
+      box-shadow: rem(0 4px 6px 1px rgba(26,26,26,0.35));
     }
   }
   &.is-disabled,
@@ -36,16 +35,13 @@
   }
 }
 
-
-
-
 // Secondary
 .occlss-button--secondary {
   color: $occlss-button-secondary-font-color;
   background-color: $occlss-button-secondary-background;
   border-color: transparent;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px 0 rgba(26,26,26,0.20);
+  border-radius: rem(6px);
+  box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));
 
   @if variable-exists(occlss-button-secondary-border-bottom) {
     border-bottom: rem($occlss-button-secondary-border-bottom);
@@ -55,13 +51,13 @@
     &:focus,
     &:hover{
       background-color: $occlss-button-secondary-background-hover;
-      border-bottom: 4px solid transparent;
-      box-shadow: 0 2px 4px 0 rgba(26,26,26,0.20);      
+      border-bottom: rem(4px solid transparent);
+      box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));      
     }
     &:active {
       background-color: $occlss-button-secondary-background;
       border-bottom: rem($occlss-button-secondary-border-bottom);
-      box-shadow: 0 4px 6px 1px rgba(26,26,26,0.35);
+      box-shadow: rem(0 4px 6px 1px rgba(26,26,26,0.35));
     }
   }
   &.is-disabled,
@@ -73,11 +69,6 @@
     box-shadow: none;
   }
 }
-
-
-
-
-
 
 // negative
 .occlss-button--negative {
@@ -108,7 +99,6 @@
     box-shadow: none;
   }
 }
-
 
 // neutral
 .occlss-button--neutral {
@@ -141,43 +131,12 @@
   }
 }
 
-
-
-
-// search button
-/*.occlss-button--search {
-  @include button-variant(
-    $occlss-button-search-font-color,
-    $occlss-button-search-background,
-    $occlss-button-search-border-color-primary,
-    $occlss-button-search-font-color-hover,
-    $occlss-button-search-background-hover,
-    $occlss-button-search-border-color-hover
-  );
-
-  box-shadow: rem($occlss-button-search-shadow-primary);
-  border-radius: rem($occlss-button-search-border-radius);
-  
-  &:active,
-  &:focus {
-      color: $occlss-button-search-font-color-hover;
-      background-color: $occlss-button-search-background-active 
-  }
-
-  &.is-disabled,
-  &:disabled {
-    color: $occlss-button-search-font-color-disable;
-    background: $occlss-button-search-background-disable;
-    box-shadow: none;
-  }
-}*/
-
 .occlss-button--search {
   color: $occlss-button-search-font-color;
   background-color: $occlss-button-search-background;
   border-color: transparent;
   border-radius: rem($occlss-button-search-border-radius);
-  box-shadow: 0 2px 4px 0 rgba(26,26,26,0.20);
+  box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));
 
   &.is-hover,
   &.is-focus,
@@ -185,12 +144,12 @@
   &:hover{
     color: $occlss-button-search-font-color-hover;
     background-color: $occlss-button-search-background-hover;
-    box-shadow: 0 2px 4px 0 rgba(26,26,26,0.20);      
+    box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));      
   }
   &:active {
     color: $occlss-button-search-font-color-hover;
     background-color: $occlss-button-search-background-active;
-    box-shadow: 0 4px 6px 1px rgba(26,26,26,0.35);
+    box-shadow: rem(0 4px 6px 1px rgba(26,26,26,0.35));
   }
   
   &.is-disabled,

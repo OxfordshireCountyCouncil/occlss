@@ -39,8 +39,7 @@ $occlss-p-enable-shadows:     true !default;
       background-color: $active-background;
       border-color: $active-border;
     }
-
-    &.focus,
+    &.is-focus,
     &:focus {
       // Avoid using mixin so we can pass custom focus shadow properly
       @if $occlss-p-enable-shadows {

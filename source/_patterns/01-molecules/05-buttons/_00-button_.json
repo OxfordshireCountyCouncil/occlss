@@ -8,6 +8,12 @@
         "occlss-button-link": ""
       },
       {
+        "occlss-button-text": "Primary active",
+        "occlss-button-modifire-class": "occlss-button--primary is-active",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      },
+      {
         "occlss-button-text": "Primary hover",
         "occlss-button-modifire-class": "occlss-button--primary is-hover",
         "occlss-button-tag": "button",

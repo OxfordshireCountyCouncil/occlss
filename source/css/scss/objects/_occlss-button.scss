@@ -1,6 +1,7 @@
 .occlss-button {
   display: block;
   margin-bottom: rem(12px);
+  font-family: $occlss-button-font-family-default;
   font-weight: $occlss-button-font-weight-default;
   line-height: $occlss-button-line-height-default;
   text-align: center;
@@ -31,10 +32,6 @@
     cursor: $occlss-button-cursor-disabled-default;
     outline: 0;
     @include box-shadow(none);
-  }
-
-  &:focus {
-    @extend %highlight-bg-on-focus;
   }
   
   &:active {

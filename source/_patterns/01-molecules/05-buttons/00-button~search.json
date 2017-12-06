@@ -8,7 +8,19 @@
         "occlss-button-link": ""
       },
       {
-        "occlss-button-text": "Search",
+        "occlss-button-text": "Search hover",
+        "occlss-button-modifire-class": "occlss-button--search is-hover",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      },
+      {
+        "occlss-button-text": "Search focus",
+        "occlss-button-modifire-class": "occlss-button--search is-focus",
+        "occlss-button-tag": "button",
+        "occlss-button-link": ""
+      },
+      {
+        "occlss-button-text": "Search disabled",
         "occlss-button-modifire-class": "occlss-button--search is-disabled",
         "occlss-button-tag": "button",
         "occlss-button-link": ""

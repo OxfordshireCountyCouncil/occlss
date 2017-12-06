@@ -440,6 +440,7 @@ $occlss-label-line-height: 1.4 !default;
 // default _occlss-button.scss
 $occlss-button-font-size-default:          $occlss-global-font-size-medium !default;
 $occlss-button-font-weight-default:        $occlss-global-font-weight-semibold !default;
+$occlss-button-font-family-default:        $occlss-global-font-family-primary !default;
 $occlss-button-border-size-default:        1px !default;
 $occlss-button-radius-default:             .30rem !default;
 $occlss-button-padding-y-default:          10px !default;
@@ -482,11 +483,11 @@ $occlss-button-primary-shadow:                4px 5px 6px lighten($occlss-brand-
 
 
 // primary secondary _occlss-button.scss
-$occlss-button-secondary-font-color:          $occlss-brand-color-cod-gray !default;
-$occlss-button-secondary-font-color-hover:    #ffffff !default;
+$occlss-button-secondary-font-color:            $occlss-brand-color-cod-gray !default;
+$occlss-button-secondary-font-color-hover:      $occlss-brand-color-cod-gray !default;
 $occlss-button-secondary-font-color-disable:    $occlss-brand-color-pizza !default;
 $occlss-button-secondary-background:            $occlss-brand-color-ronchi !default;
-$occlss-button-secondary-background-hover:      $occlss-brand-color-denim !default;
+$occlss-button-secondary-background-hover:      $occlss-brand-color-pizza !default;
 $occlss-button-secondary-background-disable:    $occlss-brand-color-maize !default;
 $occlss-button-secondary-border-color:          transparent !default;
 $occlss-button-secondary-border-color-hover:    transparent !default;

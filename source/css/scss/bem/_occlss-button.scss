@@ -1,46 +1,6 @@
 // Buttons
 
 // Primary
-/*.occlss-button--primary {
-
-  @include button-variant(
-    $occlss-button-primary-font-color,
-    $occlss-button-primary-background,
-    $occlss-button-primary-border-color,
-    $occlss-button-primary-font-color-hover,
-    $occlss-button-primary-background-hover,
-    $occlss-button-primary-border-color
-  );
-
-  box-shadow: 1px 3px 4px #b7b7b7;
-
-  @if variable-exists(occlss-button-primary-border-bottom) {
-    border-bottom: rem($occlss-button-primary-border-bottom);
-    background-size: rem(1px 200px);
-    &:hover{
-      border-bottom: rem($occlss-button-primary-border-hover-bottom);
-      background-color: $occlss-button-primary-background-hover;
-      border-bottom: rem($occlss-button-primary-border-hover-bottom);      
-    }
-
-    &.is-active,
-    &:active,
-    &:focus {
-      border-bottom: rem($occlss-button-primary-border-bottom);
-      background-color: $occlss-button-primary-background;
-    }
-  }
-
-  &.is-disabled,
-  &:disabled {
-    opacity: 1;
-    color: $occlss-button-primary-font-color-disable;
-    background: $occlss-button-primary-background-disable;
-    border-bottom: rem($occlss-button-primary-border-bottom-disable);
-    box-shadow: none;
-  }
-}*/
-
 .occlss-button--primary {
   color: $occlss-button-primary-font-color;
   background-color: $occlss-button-primary-background;
@@ -76,6 +36,9 @@
   }
 }
 
+
+
+
 // Secondary
 .occlss-button--secondary {
   color: $occlss-button-secondary-font-color;
@@ -110,45 +73,6 @@
     box-shadow: none;
   }
 }
-
-/*
-.occlss-button--secondary {
-  
-    @include button-variant(
-      $occlss-button-secondary-font-color,
-      $occlss-button-secondary-background,
-      $occlss-button-secondary-border-color,
-      $occlss-button-secondary-font-color-hover,
-      $occlss-button-secondary-background-hover,
-      $occlss-button-secondary-border-color
-    );
-  
-    @if variable-exists(occlss-button-secondary-border-bottom) {
-      border-bottom: rem($occlss-button-secondary-border-bottom);
-      background-size: rem(1px 200px);
-      &:hover{
-        border-bottom: rem($occlss-button-secondary-border-hover-bottom);
-        background-color: $occlss-button-secondary-background-hover;
-        border-bottom: rem($occlss-button-secondary-border-hover-bottom);      
-      }
-      &:active,
-      &:focus {
-        border-bottom: rem($occlss-button-secondary-border-bottom);
-        background-color: $occlss-button-secondary-background;
-        box-shadow: rem($occlss-button-secondary-shadow);
-      }
-    }
-  
-    &.is-disabled,
-    &:disabled {
-      opacity: 1;
-      color: $occlss-button-secondary-font-color-disable;
-      background: $occlss-button-secondary-background-disable;
-      border-bottom: rem($occlss-button-secondary-border-bottom-disable);
-      box-shadow: none;
-    }
-}
-*/
 
 
 
@@ -219,9 +143,9 @@
 
 
 
-// search button
 
-.occlss-button--search {
+// search button
+/*.occlss-button--search {
   @include button-variant(
     $occlss-button-search-font-color,
     $occlss-button-search-background,
@@ -246,5 +170,33 @@
     background: $occlss-button-search-background-disable;
     box-shadow: none;
   }
-}
+}*/
+
+.occlss-button--search {
+  color: $occlss-button-search-font-color;
+  background-color: $occlss-button-search-background;
+  border-color: transparent;
+  border-radius: rem($occlss-button-search-border-radius);
+  box-shadow: 0 2px 4px 0 rgba(26,26,26,0.20);
+
+  &.is-hover,
+  &.is-focus,
+  &:focus,
+  &:hover{
+    color: $occlss-button-search-font-color-hover;
+    background-color: $occlss-button-search-background-hover;
+    box-shadow: 0 2px 4px 0 rgba(26,26,26,0.20);      
+  }
+  &:active {
+    color: $occlss-button-search-font-color-hover;
+    background-color: $occlss-button-search-background-active;
+    box-shadow: 0 4px 6px 1px rgba(26,26,26,0.35);
+  }
   
+  &.is-disabled,
+  &:disabled {
+    color: $occlss-button-search-font-color-disable;
+    background: $occlss-button-search-background-disable;
+    box-shadow: none;
+  }
+}

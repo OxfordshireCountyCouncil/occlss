@@ -1,4 +1,5 @@
 @mixin hover {
+  &.is-hover,
   &:hover { @content }
 }
 

@@ -51,6 +51,7 @@
 .occlss-category-nav__item--residents {
 
     .occlss-category-nav__link {
+        color: $occlss-category-nav-color-underline-residents;
         &:after {
             background: $occlss-category-nav-color-underline-residents;
         }
@@ -59,13 +60,14 @@
             color: $occlss-category-nav-color-underline-residents;
         }
     }
-    .occlss-category-nav__title {
+    /*.occlss-category-nav__title {
         color: $occlss-category-nav-color-underline-residents;
-    }
+    }*/
 }
 
 .occlss-category-nav__item--business {
     .occlss-category-nav__link {
+        color: $occlss-category-nav-color-underline-business;
         &:after {
             background: $occlss-category-nav-color-underline-business;
         }
@@ -74,13 +76,14 @@
             color: $occlss-category-nav-color-underline-business;
         }
     }
-    .occlss-category-nav__title {
+    /*.occlss-category-nav__title {
         color: $occlss-category-nav-color-underline-business;
-    }
+    }*/
 }
 
 .occlss-category-nav__item--council {
     .occlss-category-nav__link {
+        color: $occlss-category-nav-color-underline-council;
         &:after {
             background: $occlss-category-nav-color-underline-council;
         }
@@ -89,9 +92,9 @@
             color: $occlss-category-nav-color-underline-council;
         }
     }
-    .occlss-category-nav__title {
+    /*.occlss-category-nav__title {
         color: $occlss-category-nav-color-underline-council;
-    }
+    }*/
 }
 
 .is-active {
@@ -99,16 +102,20 @@
         padding-top: rem(20px);
         line-height: 0.9;
     }
-}
-
-.occlss-category-nav__title {
-    margin: 0;
-    padding: 0;
-    font-family: $occlss-category-nav-font-family-nav-item-selected;
-    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-        font-size: rem($occlss-category-nav-font-size-nav-item-selected);
-    }
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-        font-size: rem($occlss-category-nav-font-size - 5px);
+    .occlss-category-nav__link {
+        margin: 0;
+        padding: 0;
+        pointer-events: none;
+        cursor: default;
+        font-family: $occlss-category-nav-font-family-nav-item-selected;
+        @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            font-size: rem($occlss-category-nav-font-size-nav-item-selected);
+        }
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            font-size: rem($occlss-category-nav-font-size - 5px);
+        }
+        &:after {
+            display: none;
+        }
     }
 }

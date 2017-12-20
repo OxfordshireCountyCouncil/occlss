@@ -15,7 +15,7 @@ $(document).ready(function () {
     }
   });
 	
-	$('form button[type="submit"]').on('click', function(event){
+	$('#js-occlss-form-password-show-hide button[type="submit"]').on('click', function(event){
     var getImage = $(this).children().children('svg').children().attr("xlink:href");
     var imgInVisible = getImage.replace("visible", "invisible");
     $('.js-occlss-hide-show').children().children('svg').children().attr("xlink:href",imgVisible);

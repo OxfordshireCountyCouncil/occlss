@@ -32,30 +32,34 @@
       flex-wrap: wrap;
   list-style: none !important;
   padding: 0 !important;
-  margin: 0 !important;
+  margin: 1rem 0 0 0 !important;
 }
 
 .sg-colors__cont {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-
-  max-width: 300px;
-  padding: 0.3em;
+  width: 100%;
   margin: 0 0.5em 0.5em 0;
   border: 1px solid #ddd;
+
+  -webkit-box-shadow: 0 2px 5px 0 #dedede;
+  box-shadow: 0 2px 5px 0 #dedede;
 }
 
 
 .sg-swatch {
-  display: block;
-  height: 2em;
-  margin-bottom: 0.3em;
+  display: inline-block;
+  vertical-align: middle;
+  height: 4rem;
+  width: 4rem;
+  margin: 0.5rem;
 }
 
 .sg-label {
-  font-size: 90%;
   line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #atoms-logo-reversed .sg-pattern-example {
@@ -274,4 +278,119 @@ code {
 }
 .occlss-font-size-small {
   font-size: 14px;
+}
+
+
+/* Content */
+
+.stlgd-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  background: #ffffff;
+}
+
+.stlgd-left-side-cont {
+  background: #00483a;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+
+.stlgd-right-side-cont {
+  margin-left: 15.125rem;
+  min-height: calc(100vh - 8rem);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.stlgd-footer {
+  margin-left: 15rem;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.16);
+}
+
+.stlgd-footer p {
+  margin: 0 0 0 0.5rem;
+}
+
+.stlgd-lisit {
+  padding: 0 0 0 1.2rem;
+}
+
+
+/* Style guide elements */
+
+.stlgd-section-heading {
+  /*background-color: #F4F6F9;*/
+}
+
+.stlgd-section-heading__cont {
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.25;
+  padding: 1rem 1.5rem 0 1.5rem;
+  margin-bottom: 0;
+}
+
+.stlgd-section-content {
+  padding: 1rem 1.5rem;
+}
+
+.stlgd-section-content__content--med {
+  max-width: 800px;
+}
+
+.stlgd-section-content__intro-text {
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.stlgd-section-content__heading {
+
+}
+
+.stlgd-section-content__heading--large {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* Nav */
+
+.stlgd-menu {
+  padding: 0 1rem;
+}
+
+.stlgd-menu__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.3rem 0;
+  display: block;
+}
+
+/* Code */
+
+.stlgd-code-example {
+
+}
+
+.stlgd-code-example__per {
+  border: 1px solid #d0d0d0;
+  display: block;
+  font-size: 1rem;
+}
+
+.stlgd-code-example__code {
+  background: none;
+  padding: 0;
+  margin: 0;
 }

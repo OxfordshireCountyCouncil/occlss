@@ -359,10 +359,18 @@ code {
 
 .stlgd-section-content__heading--large {
   margin-top: 3rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   font-weight: 600;
   line-height: 1.25;
 }
+
+.stlgd-section-content__heading--medium {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
 
 /* Nav */
 

@@ -385,6 +385,10 @@ code {
   display: block;
 }
 
+.stlgd-menu__link--active {
+  color: #edc856;
+}
+
 /* Code */
 
 .stlgd-code-example {

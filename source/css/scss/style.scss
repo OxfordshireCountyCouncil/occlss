@@ -22,7 +22,6 @@ from writing the media query itself, to handling cross-browser compatibility iss
 break, in this case just don't include the following line - @import "tools/breakpoint-sass/stylesheets/breakpoint";
 
 Functions................Globally-available helper functions.
-Hacks....................CSS Hacks Mixins for Sass
 rem......................Sass function and mixin to use rem units with optional pixel fallback.
 Link colors........This is help to set up link colors.
 Placeholder classes......They are classes that don't output when your SCSS is compiled
@@ -44,7 +43,6 @@ Reflex..................Flex box grid sysem
 
 @import "tools/breakpoint-sass/stylesheets/breakpoint";
 @import "tools/functions";
-@import "tools/hacks";
 @import "tools/mixins_rem";
 @import "tools/mixin_link-colors";
 @import "tools/placeholder-classes";
@@ -167,6 +165,7 @@ Widths...............Simple width helper classes.
 Widths-responsive....Polyfill for responsive width classes.
 Type.................Utility classes for typography.
 Shame................If you unsure where to put CSS please use this file
+Hacks....................CSS Hacks Mixins for Sass
 */
 
 @import "trumps/globals";
@@ -174,3 +173,4 @@ Shame................If you unsure where to put CSS please use this file
 @import "trumps/owl-carousel";
 @import "trumps/owl-carousel-theme";
 @import "trumps/shame";
+@import "trumps/hacks";

@@ -4,7 +4,7 @@
 
 
     // bind change event to select
-    $('#js-occlss-search-place-form-select').on('change', function () {
+    $('.js-occlss-search-place-form-select').on('change', function () {
         var url = $(this).val(); // get selected value
         if (url != 'none') { // require a URL
             window.location = url; // redirect

@@ -53,3 +53,8 @@
 .occlss-u-unstyled-list {
     @extend %reset_list_style;
 }
+
+// Forms
+.u-unFieldset {
+    border: none;
+}

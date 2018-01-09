@@ -30,6 +30,18 @@
     width: 100%;
 }
 
+.occlss-form__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.occlss-form__select::-ms-expand {
+  display: none;
+}
+
+
 .occlss-form__textarea {
   height: rem($occlss-form-height-textarea);
   display: inline-block;

@@ -141,7 +141,6 @@ $occlss-global-image-path:  '../../images/occlss';
 // TOOLS
 @import "node_modules/occlss/tools/breakpoint-sass/stylesheets/breakpoint";
 @import "node_modules/occlss/tools/functions";
-@import "node_modules/occlss/tools/hacks";
 @import "node_modules/occlss/tools/mixins_rem";
 @import "node_modules/occlss/tools/mixin_link-colors";
 @import "node_modules/occlss/tools/placeholder-classes";
@@ -215,6 +214,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/trumps/owl-carousel";
 @import "node_modules/occlss/trumps/owl-carousel-theme";
 @import "node_modules/occlss/trumps/shame";
+@import "node_modules/occlss/trumps/hacks";
 ```
 
 Or you can add in your main.scss just the following

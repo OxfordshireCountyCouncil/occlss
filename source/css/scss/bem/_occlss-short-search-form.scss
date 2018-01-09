@@ -27,6 +27,10 @@
 
 .occlss-short-search-form__group {
     padding: rem($occlss-short-search-form-padding-form-group);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding: 0;
+        margin-bottom: rem(16px);
+    }
 }
 
 .occlss-short-search-form__icon {

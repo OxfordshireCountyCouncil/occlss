@@ -1,5 +1,7 @@
 .occlss-top-tasks-pane {
-    background: $occlss-top-tasks-pane-background;
+    &__wrapper {
+        background: $occlss-top-tasks-pane-background;
+    }
 }
 
 .occlss-top-tasks-pane__layout {

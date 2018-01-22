@@ -3,6 +3,12 @@
   padding: rem(10px);
 }
 
+.occlss-form--green-border {
+  border: 1px solid $occlss-form-border-color-green;
+  border-top-width: rem(20px);
+  margin-bottom: rem(73px);
+}
+
 // Reset fieldset style
 .occlss-form__group {
   border: none;
@@ -129,31 +135,44 @@
 
 
 
-.occlss-form__label,
+// Form group title
 .occlss-form__group-title {
   font-weight: $occlss-form-font-weight-group-title;
   font-family: $occlss-form-font-family-group-title;
+  font-size: rem($occlss-form-label-font-size);
   margin: rem($occlss-form-margin-group-title);
 }
 
 .occlss-form__group-title--large {
   font-size: rem($occlss-form-title-font-size-large);
+}
+
+// Form lable
+.occlss-form__label {
+  @extend .occlss-form__group-title;
+  margin-top: 0;
+  display: block;
+}
+
+.occlss-form__label--small {
+  font-size: rem($occlss-form-label-font-size-small);
+}
+
+
+
+// Adding bottom border
+.occlss-form__group-title--bordered {
   border-bottom: rem(1px solid $occlss-form-title-underline-color);
   padding-bottom: rem(10px);
   margin-bottom: rem(22px);
   width: 100%;
 }
 
+// Form description text
 .occlss-form__group-desc {
   margin-bottom: rem(25px);
   display: inline-block;
 }
-
-.occlss-form__label {
-  margin-top: 0;
-  display: block;
-}
-
 
 
 // Custom checkboxes
@@ -181,7 +200,7 @@
 .occlss-form__radiobutton + .occlss-form__label {
   cursor: pointer;
   font-weight: 400;
-  margin-bottom: 0.65em;
+  margin-bottom: rem(25px);
 }
 
 
@@ -258,6 +277,10 @@
   margin-bottom: 0;
 }
 
+.occlss-form__hint-text--spaced {
+  display: inline-block;
+  margin-bottom: rem(10px);
+}
 
 // Dates
 
@@ -280,4 +303,21 @@
 
 .occlss-form__inline-fields {
   @extend %clearfix;
+}
+
+
+// Form controls
+.occlss-form__controls {
+  margin-top: rem(24px);
+}
+
+.occlss-form__controls-list-item {
+  display: inline-block;
+}
+
+.occlss-form__controls-list-item--spaced {
+  margin-right: rem(100px);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    margin-right: rem(50px);
+  }
 }

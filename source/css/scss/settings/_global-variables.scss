@@ -572,7 +572,10 @@ $occlss-page-footer-background:          $occlss-brand-color-black !default;
 // Forms _occlss-form.scss
 $occlss-form-font-size-base:          1rem !default; // Base font size
 $occlss-form-border-color-primary:    $occlss-brand-color-lynch !default;
+$occlss-form-border-color-green:      $occlss-brand-color-aqua-deep !default;
 $occlss-form-title-font-size-large:   $occlss-global-font-size-xx-large !default;
+$occlss-form-label-font-size:         $occlss-global-font-size-medium !default;
+$occlss-form-label-font-size-small:   18px !default;
 $occlss-form-title-underline-color:   $occlss-brand-color-mine-shaft !default;
 
 $occlss-form-padding-base-vertical:   0.85rem !default; // Using rem instead of px so function uses same units

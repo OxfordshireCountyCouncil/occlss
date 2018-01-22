@@ -5,7 +5,6 @@
 //
 
 // Create grid utility classes
-
 @include make_a_grid($make_grid: true);
 
 
@@ -54,7 +53,38 @@
     @extend %reset_list_style;
 }
 
-// Forms
+// Removing fildset dafault style
 .occlss-u-unFieldset {
     border: none;
+}
+
+// Reset margin
+
+.occlss-u-rm-top {
+    margin-top: 0;
+}
+
+.occlss-u-rm-bottom {
+    margin-bottom: 0;
+}
+
+.occlss-u-rm-left {
+    margin-left: 0;
+}
+
+.occlss-u-rm-right {
+    margin-right: 0;
+}
+
+// bottom space
+
+$margin-toplist:(
+  xs: 6,
+  large: 50
+);
+
+@each $key,$val in $margin-toplist {
+    .occlss-u-tspace-#{$key} {
+        margin-top: ($val / 16) * 1rem;
+    }
 }

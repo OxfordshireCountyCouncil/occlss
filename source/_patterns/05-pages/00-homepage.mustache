@@ -1,1 +1,17 @@
-{{> templates-homepage }}
+{{> organisms-page-head-with-form}}
+<div id="occlss-main-content">
+
+  <section>
+    <div class="occlss-wrapper">
+      {{> organisms-hero-pane }} 
+      {{> organisms-top-tasks-pane }}
+    </div>
+  </section>
+
+  {{> sections-categories-grid-section }} 
+  {{> sections-promoted-content-panel-grid-section }}
+  {{> sections-recent-news-section }}
+</div>
+
+{{> organisms-search-place-form }}
+{{> organisms-page-footer }}

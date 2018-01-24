@@ -1,0 +1,162 @@
+.occlss-promoted-content-panel {
+    width: 100%;
+    height: 100%;
+    height: inherit;
+    padding: rem(20px);
+    position: relative;
+    display: block;
+    -ms-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-decoration: none;
+    background: $occlss-promoted-content-panel-background-color;
+    color: $occlss-promoted-content-panel-font-color;
+    &:hover {
+        color: $occlss-promoted-content-panel-font-color;
+        text-decoration: underline;
+    }
+
+    &:focus {
+        @extend %highlight-outline-on-focus;
+    }
+    
+}
+
+
+// Text line sizes
+
+.occlss-promoted-content-panel__text-line--header-mega {
+    font-size: rem($occlss-promoted-content-panel-text-line-font-size-header-mega);
+    font-weight: $occlss-promoted-content-panel-text-line-font-weight-header-mega;
+    font-family: $occlss-promoted-content-panel-text-line-font-family-header-mega;
+    line-height: 0.9;
+    margin-bottom: rem(20px);
+    .occlss-icon__container {
+        width: rem($occlss-promoted-content-panel-text-line-font-size-header-mega);
+        height: rem($occlss-promoted-content-panel-text-line-font-size-header-mega);
+    }
+}
+
+.occlss-promoted-content-panel__text-line--header-xlarge {
+    font-size: rem($occlss-promoted-content-panel-text-line-font-size-header-xlarge);
+    font-weight: $occlss-promoted-content-panel-text-line-font-weight-header-xlarge;
+    font-family: $occlss-promoted-content-panel-text-line-font-family-header-xlarge;
+    margin-bottom: rem(18px);
+    .occlss-icon__container {
+        width: rem($occlss-promoted-content-panel-text-line-font-size-header-xlarge);
+        height: rem($occlss-promoted-content-panel-text-line-font-size-header-xlarge);
+    }
+}
+
+.occlss-promoted-content-panel__text-line--header-large {
+    font-size: rem($occlss-promoted-content-panel-text-line-font-size-header-large);
+    font-weight: $occlss-promoted-content-panel-text-line-font-weight-header-large;
+    font-family: $occlss-promoted-content-panel-text-line-font-family-header-large;
+    margin-bottom: rem(18px);
+    .occlss-icon__container {
+        width: rem($occlss-promoted-content-panel-text-line-font-size-header-large);
+        height: rem($occlss-promoted-content-panel-text-line-font-size-header-large);
+    }
+}
+
+.occlss-promoted-content-panel__text-line--header-small {
+    font-size: rem($occlss-promoted-content-panel-text-line-font-size-header-small);
+    font-weight: $occlss-promoted-content-panel-text-line-font-weight-header-small;
+    font-family: $occlss-promoted-content-panel-text-line-font-family-header-small;
+    margin-bottom: rem(10px);
+    .occlss-icon__container {
+        width: rem($occlss-promoted-content-panel-text-line-font-size-header-small);
+        height: rem($occlss-promoted-content-panel-text-line-font-size-header-small);
+    }
+}
+
+.occlss-promoted-content-panel__text-line--text-medium {
+    font-size: rem($occlss-promoted-content-panel-text-line-font-size-text-medium);
+    margin-bottom: rem(20px);
+    .occlss-icon__container {
+        width: rem($occlss-promoted-content-panel-text-line-font-size-text-medium);
+        height: rem($occlss-promoted-content-panel-text-line-font-size-text-medium);
+    }
+}
+
+.occlss-promoted-content-panel__text-line--text-large {
+    font-size: rem($occlss-promoted-content-panel-text-line-font-size-text-large);
+    margin-bottom: rem(20px);
+    .occlss-icon__container {
+        width: rem($occlss-promoted-content-panel-text-line-font-size-text-large);
+        height: rem($occlss-promoted-content-panel-text-line-font-size-text-large);
+    }
+}
+
+
+.occlss-promoted-content-panel__text-line--header-mega,
+.occlss-promoted-content-panel__text-line--header-xlarge,
+.occlss-promoted-content-panel__text-line--header-large,
+.occlss-promoted-content-panel__text-line--header-small,
+.occlss-promoted-content-panel__text-line--text-medium,
+.occlss-promoted-content-panel__text-line--text-large {
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+
+.occlss-promoted-content-panel--nogaps {
+    .occlss-promoted-content-panel__text-line--header-mega,
+    .occlss-promoted-content-panel__text-line--header-xlarge,
+    .occlss-promoted-content-panel__text-line--header-large,
+    .occlss-promoted-content-panel__text-line--header-small,
+    .occlss-promoted-content-panel__text-line--text-medium,
+    .occlss-promoted-content-panel__text-line--text-large {
+        margin-bottom: 0;
+    }
+}
+
+
+.occlss-promoted-content-panel__link-icon {
+    fill: #ffffff;
+}
+
+// Mods
+
+.occlss-promoted-content-panel--aqua-dee {
+    background: $occlss-promoted-content-panel-background-color-aqua-deep;
+}
+
+.occlss-promoted-content-panel--givry {
+    background: $occlss-promoted-content-panel-background-color-givry;
+    color: $occlss-promoted-content-panel-font-color-givry;
+    .occlss-promoted-content-panel__link-icon {
+        fill: $occlss-promoted-content-panel-font-color-givry;
+    }
+    &:hover {
+        color: $occlss-promoted-content-panel-font-color-givry;
+    }
+}
+
+.occlss-promoted-content-panel--ghost {
+    background: $occlss-promoted-content-panel-background-color-ghost;
+    color: $occlss-promoted-content-panel-font-color-ghost;
+    .occlss-promoted-content-panel__link-icon {
+        fill: $occlss-promoted-content-panel-font-color-ghost;
+    }
+    &:hover {
+        color: $occlss-promoted-content-panel-font-color-ghost;
+    }
+}
+
+.occlss-promoted-content-panel--como {
+    background: $occlss-promoted-content-panel-background-color-como;
+}
+
+.occlss-promoted-content-panel--ronchi {
+    background: $occlss-promoted-content-panel-background-color-ronchi;
+    color: $occlss-promoted-content-panel-font-color-ronchi;
+    .occlss-promoted-content-panel__link-icon {
+        fill: $occlss-promoted-content-panel-font-color-ronchi;
+    }
+    &:hover {
+        color: $occlss-promoted-content-panel-font-color-ronchi;
+    }
+}
+

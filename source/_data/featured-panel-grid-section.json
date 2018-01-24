@@ -4,33 +4,33 @@
         {
             "panel-size": "occlss-layout__col--lg-8 occlss-layout__col--md-6",
             "featuredPanelDefault" : {
-                "featured-panel-mod-class": " ",
-                "featured-panel-url": "javascript:void(0);",
-                "featured-panel-textlines": [
+                "promoted-content-panel-mod-class": " ",
+                "promoted-content-panel-url": "javascript:void(0);",
+                "promoted-content-panel-textlines": [
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-large",
-                        "featured-panel-textline-text": "School term dates",
-                        "featured-panel-textline-arrow": false
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-large",
+                        "promoted-content-panel-textline-text": "School term dates",
+                        "promoted-content-panel-textline-arrow": false
                     },
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
-                        "featured-panel-textline-text": "This term ends:",
-                        "featured-panel-textline-arrow": false
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
+                        "promoted-content-panel-textline-text": "This term ends:",
+                        "promoted-content-panel-textline-arrow": false
                     },
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-mega",
-                        "featured-panel-textline-text": "Friday 20 October",
-                        "featured-panel-textline-arrow": false
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-mega",
+                        "promoted-content-panel-textline-text": "Friday 20 October",
+                        "promoted-content-panel-textline-arrow": false
                     },
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
-                        "featured-panel-textline-text": "The next term starts Monday 30 October",
-                        "featured-panel-textline-arrow": false
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
+                        "promoted-content-panel-textline-text": "The next term starts Monday 30 October",
+                        "promoted-content-panel-textline-arrow": false
                     },
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
-                        "featured-panel-textline-text": "View all school term and holiday dates",
-                        "featured-panel-textline-arrow": true
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
+                        "promoted-content-panel-textline-text": "View all school term and holiday dates",
+                        "promoted-content-panel-textline-arrow": true
                     }
                 ]
             }
@@ -38,13 +38,13 @@
         {
             "panel-size": "occlss-layout__col--lg-4 occlss-layout__col--md-6",
             "featuredPanelDefault" : {
-                "featured-panel-mod-class": "occlss-featured-panel--ronchi",
-                "featured-panel-url": "javascript:void(0);",
-                "featured-panel-textlines": [
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--ronchi",
+                "promoted-content-panel-url": "javascript:void(0);",
+                "promoted-content-panel-textlines": [
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-mega",
-                        "featured-panel-textline-text": "Other ways we can help you",
-                        "featured-panel-textline-arrow": true
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-mega",
+                        "promoted-content-panel-textline-text": "Other ways we can help you",
+                        "promoted-content-panel-textline-arrow": true
                     }
                 ]
             }
@@ -52,18 +52,18 @@
         {
             "panel-size": "occlss-layout__col--md-6",
             "featuredPanelDefault" : {
-                "featured-panel-mod-class": "occlss-featured-panel--ronchi",
-                "featured-panel-url": "javascript:void(0);",
-                "featured-panel-textlines": [
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--ronchi",
+                "promoted-content-panel-url": "javascript:void(0);",
+                "promoted-content-panel-textlines": [
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-small",
-                        "featured-panel-textline-text": "What's on",
-                        "featured-panel-textline-arrow": false
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-small",
+                        "promoted-content-panel-textline-text": "What's on",
+                        "promoted-content-panel-textline-arrow": false
                     },
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
-                        "featured-panel-textline-text": "Find council evedents around the county",
-                        "featured-panel-textline-arrow": true
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
+                        "promoted-content-panel-textline-text": "Find council evedents around the county",
+                        "promoted-content-panel-textline-arrow": true
                     }
                 ]
             }
@@ -71,18 +71,18 @@
         {
             "panel-size": "occlss-layout__col--md-6",
             "featuredPanelDefault" : {
-                "featured-panel-mod-class": "occlss-featured-panel--como",
-                "featured-panel-url": "javascript:void(0);",
-                "featured-panel-textlines": [
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--como",
+                "promoted-content-panel-url": "javascript:void(0);",
+                "promoted-content-panel-textlines": [
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-small",
-                        "featured-panel-textline-text": "Consultations",
-                        "featured-panel-textline-arrow": false
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-small",
+                        "promoted-content-panel-textline-text": "Consultations",
+                        "promoted-content-panel-textline-arrow": false
                     },
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--text-medium",
-                        "featured-panel-textline-text": "Have your say about the policies that affect you.",
-                        "featured-panel-textline-arrow": true
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
+                        "promoted-content-panel-textline-text": "Have your say about the policies that affect you.",
+                        "promoted-content-panel-textline-arrow": true
                     }
                 ]
             }
@@ -90,13 +90,13 @@
         {
             "panel-size": "occlss-layout__col--12",
             "featuredPanelDefault" : {
-                "featured-panel-mod-class": "occlss-featured-panel--aqua-dee occlss-featured-panel--nogaps",
-                "featured-panel-url": "javascript:void(0);",
-                "featured-panel-textlines": [
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--aqua-dee occlss-promoted-content-panel--nogaps",
+                "promoted-content-panel-url": "javascript:void(0);",
+                "promoted-content-panel-textlines": [
                     {
-                        "featured-panel-textline-mode-class": "occlss-featured-panel__text-line--header-small",
-                        "featured-panel-textline-text": "All the news from your county council",
-                        "featured-panel-textline-arrow": true
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-small",
+                        "promoted-content-panel-textline-text": "All the news from your county council",
+                        "promoted-content-panel-textline-arrow": true
                     }
                 ]
             }

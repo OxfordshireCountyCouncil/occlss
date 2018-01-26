@@ -31,6 +31,10 @@ Format:
     margin: rem(0 0 10px 0);
   }
 
+  ul {
+    @extend %reset_list_style;
+  }
+
   .icon-list {
     @extend %reset_list_style;
     @extend %clearfix;
@@ -40,7 +44,7 @@ Format:
       margin-right: rem(12px);
     }
   }
-  
+  li,
   p {
     margin: rem(0 0 5px 0);
     &:last-child {

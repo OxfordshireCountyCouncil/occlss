@@ -1,0 +1,22 @@
+html,
+body,
+.occlss-wrapper {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+        background-color:red!important;
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        background-color:blue!important;
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        background-color:purple!important;
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        background-color:green!important;
+    }
+}
+
+// News image sizes
+// xlg(1600px) to lg(1200px) image 358px width;, 
+// md(992) image size 288px width; 
+// sm(768px) image size 720px width, 
+// xs(480px) image size 437px width;

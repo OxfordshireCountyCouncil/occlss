@@ -76,15 +76,32 @@
     margin-right: 0;
 }
 
-// bottom space
+// top space
 
 $margin-toplist:(
   xs: 6,
+  md: 25,
   large: 50
 );
 
 @each $key,$val in $margin-toplist {
     .occlss-u-tspace-#{$key} {
         margin-top: ($val / 16) * 1rem;
+    }
+}
+
+
+// bottom space
+
+$margin-toplist:(
+  xs: 6,
+  sm: 12,
+  md: 25,
+  large: 50
+);
+
+@each $key,$val in $margin-toplist {
+    .occlss-u-bspace-#{$key} {
+        margin-bottom: ($val / 16) * 1rem;
     }
 }

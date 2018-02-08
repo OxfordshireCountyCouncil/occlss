@@ -1,15 +1,22 @@
 .occlss-breadcrumb {
   display: block;
   line-height: $occlss-breadcrumb-line-height;
+  margin-bottom: rem(90px);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    margin-bottom: rem(60px);
+  }
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    margin-bottom: 0;
+  }
 }
 
 .occlss-breadcrumb__wrapper {
-  padding: rem(0 0 90px 0);
+  padding: 0;
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
-    padding: rem(0 0 60px 0);
+    padding: 0;
   }
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-    padding: rem(0 0 0 0);
+    padding: 0;
   }
 }
 
@@ -37,4 +44,9 @@
       display: none;
     }
   }
+}
+
+
+.occlss-breadcrumb--no-space {
+    margin-bottom: 0;
 }

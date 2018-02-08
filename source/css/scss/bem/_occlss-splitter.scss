@@ -1,0 +1,9 @@
+.occlss-splitter {
+    &::after {
+        content: "";
+        width: 100%;
+        height: rem(1px);
+        background-color: $occlss-splitter-color;
+        display: block;
+    }
+}

@@ -114,7 +114,7 @@
 
 @mixin reflex-loop-layout--order-helpers($index, $breakpoint: null) {
     @if $index >= 0 {
-        .#{$reflex-prefix}layout--order-#{$index}#{$breakpoint} {
+        .#{$reflex-prefix}layout__col--order-#{$index}#{$breakpoint} {
             @include reflex-order($index);
         }
         // next iteration

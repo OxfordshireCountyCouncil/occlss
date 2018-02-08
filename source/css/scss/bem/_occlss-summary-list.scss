@@ -3,21 +3,32 @@
     margin-bottom: rem(10px);
 }
 
+.occlss-summary-list--indented {
+    padding-left: 24px;
+}
+
 .occlss-summary-list__item {
-    border-bottom: rem(1px solid $occlss-summary-list-border-color-item);
     padding-bottom: rem(4px);
-    margin-bottom: rem(7px);
+    margin-bottom: 0;
     margin-left: 0;
 }
 
-.occlss-summary-list__link {
-    text-decoration: none;
-    display: block;
-    &:focus {
-        @extend %highlight-bg-on-focus;
-    }
+.occlss-summary-list__item--underlined {
+    margin-bottom: rem(7px);
+    border-bottom: rem(1px solid $occlss-summary-list-border-color-item);
 }
 
+
+.occlss-summary-list--tasks-pane,
+.occlss-summary-list--popular-content-pane {
+    .occlss-summary-list__link {
+        text-decoration: none;
+        display: block;
+        &:focus {
+            @extend %highlight-bg-on-focus;
+        }
+    }
+}
 
 .occlss-summary-list--tasks-pane {
     

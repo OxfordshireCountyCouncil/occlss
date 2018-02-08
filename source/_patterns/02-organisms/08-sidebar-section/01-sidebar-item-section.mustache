@@ -4,11 +4,8 @@
         {{section-title}}
     </h2>
     <nav class="occlss-sidebar-item-section__navbar" role="navigation">
-        <ul class="occlss-u-unstyled-list">
-            {{#listItem}}
-                <li><a href="{{listItem-link-url}}">{{listItem-link-name}}</a></li>
-            {{/listItem}}
-        </ul>
+        {{> molecules-summary-list }}
     </nav>
 </aside>
 {{/sidebarItemSection}}
+

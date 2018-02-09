@@ -1,0 +1,23 @@
+{
+    "form-cntrs-tag": "div",
+    "form-cntrs-name": "input-type-text-error",
+    "form-cntrs-class": "",
+    "form-cntrs-label-text": "Text input error",
+    "form-cntrs-label-class": "",
+    "form-cntrs-select-class": "",
+    "form-cntrs-select-options": [
+        {
+            "form-cntrs-select-options-name": "Option A",
+            "form-cntrs-select-options-value": "opt1"
+        },
+        {
+            "form-cntrs-select-options-name": "Option B",
+            "form-cntrs-select-options-value": "opt2"
+        },
+        {
+            "form-cntrs-select-options-name": "Option C",
+            "form-cntrs-select-options-value": "opt3"
+        }
+    ],
+    "form-cntrs-error-text": ""
+}

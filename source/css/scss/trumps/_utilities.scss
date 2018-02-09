@@ -92,7 +92,6 @@ $margin-toplist:(
 
 
 // bottom space
-
 $margin-toplist:(
   xs: 6,
   sm: 12,
@@ -103,5 +102,22 @@ $margin-toplist:(
 @each $key,$val in $margin-toplist {
     .occlss-u-bspace-#{$key} {
         margin-bottom: ($val / 16) * 1rem;
+    }
+}
+
+// Max width
+$trim-width:(
+  one-quarter: 25%,
+  one-third: 33.333%,
+  one-half: 50%,
+  two-thirds: 66.666%,
+  three-quarters: 75%,
+);
+
+@each $key,$val in $trim-width {
+    .occlss-u-max-width-#{$key} {
+        @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            max-width: $val;
+        }
     }
 }

@@ -571,8 +571,6 @@ $occlss-page-footer-background:          $occlss-brand-color-black !default;
 
 // Forms _occlss-form.scss
 $occlss-form-font-size-base:          1rem !default; // Base font size
-$occlss-form-border-color-primary:    $occlss-brand-color-lynch !default;
-$occlss-form-border-color-green:      $occlss-brand-color-aqua-deep !default;
 $occlss-form-title-font-size-large:   $occlss-global-font-size-xx-large !default;
 $occlss-form-label-font-size:         $occlss-global-font-size-medium !default;
 $occlss-form-label-font-size-small:   18px !default;
@@ -626,7 +624,7 @@ $occlss-form-font-color-hint-text:              $occlss-brand-color-emperor !def
 
 
 
-// Short search form _occlss-short-search-form.scss
+// Short search form _occlss-form.scss
 $occlss-short-search-form-font-size-input-short-search:    $occlss-form-font-size-input-general !default;
 $occlss-short-search-form-padding-input:                   11px 20px 11px 50px !default;
 $occlss-short-search-form-border-radius-input:             $occlss-button-search-border-radius !default;
@@ -639,7 +637,7 @@ $occlss-short-search-form-icon-color:                      $occlss-brand-color-m
 
 
 
-// Sign up form _occlss-sign-up-form.scss
+// Short search form _occlss-form.scsss
 $occlss-sign-up-form-font-size-input:           $occlss-form-font-size-input-general !default;
 $occlss-sign-up-form-font-color-input:          $occlss-brand-color-cod-gray !default;
 $occlss-sign-up-form-padding-input:             12px 20px 11px 20px !default;
@@ -869,5 +867,9 @@ $occlss-popular-content-heading-font-weight:               $occlss-global-font-w
 
 
 // Splitter
-
 $occlss-splitter-color:                                    $occlss-brand-color-cascade !default;
+
+
+// Trim
+$occlss-trim-border-color-primary:    $occlss-brand-color-lynch !default;
+$occlss-trim-border-color-green:      $occlss-brand-color-aqua-deep !default;

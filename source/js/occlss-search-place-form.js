@@ -17,7 +17,7 @@
 
     // By postcode
     $("#js-occlss-search-place-form-postcode").submit(function (event) {
-        var url = $(this).find('.occlss-form__input').val();
+        var url = $(this).find('.occlss-form-cntrs__input').val();
         if (url) {
             window.location.href = 'https://www.oxfordshire.gov.uk/cms/near-me/454244/204579/' + url;
         }

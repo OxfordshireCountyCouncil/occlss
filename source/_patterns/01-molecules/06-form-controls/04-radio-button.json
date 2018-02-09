@@ -1,0 +1,12 @@
+{
+    "form-cntrs-tag": "div",
+    "form-cntrs-name": "input-type-radio-1",
+    "form-cntrs-class": "occlss-form-cntrs--listitem",
+    "form-cntrs-label-text": "Radio button",
+    "form-cntrs-label-class": "",
+    "form-cntrs-input-type": "radio",
+    "form-cntrs-input-value": "opt-1",
+    "form-cntrs-input-class": "",
+    "form-cntrs-input-status": "",
+    "form-cntrs-input-group-name": "radio-1"
+}

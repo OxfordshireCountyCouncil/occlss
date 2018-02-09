@@ -59,14 +59,14 @@ you write a placeholder:
 
 // Heighlite on focus outline only
 %highlight-outline-on-focus {
-    outline: 3px solid $occlss-form-border-color-base-input-focus;
+    outline: 2px solid $occlss-form-border-color-base-input-focus;
 }
 
 // outline and background
 %highlight-bg-on-focus {
   color: $occlss-link-color-hover-focus;
   background-color: $occlss-form-border-color-base-input-focus;
-  outline: 3px solid $occlss-form-border-color-base-input-focus;
+  outline: 2px solid $occlss-form-border-color-base-input-focus;
   &:hover {
     color: $occlss-link-color-hover-focus;
   }

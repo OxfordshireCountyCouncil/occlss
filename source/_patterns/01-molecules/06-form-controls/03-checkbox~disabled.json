@@ -1,0 +1,11 @@
+{
+    "form-cntrs-tag": "div",
+    "form-cntrs-name": "input-type-checkbox-disabled",
+    "form-cntrs-class": "occlss-form-cntrs--listitem",
+    "form-cntrs-label-text": "Checkbox disabled",
+    "form-cntrs-label-class": "",
+    "form-cntrs-input-type": "checkbox",
+    "form-cntrs-input-value": "checkbox-3",
+    "form-cntrs-input-class": "",
+    "form-cntrs-input-status": "disabled"
+}

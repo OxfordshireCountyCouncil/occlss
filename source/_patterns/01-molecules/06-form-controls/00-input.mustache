@@ -1,0 +1,12 @@
+<{{form-cntrs-tag}} class="occlss-form-cntrs {{form-cntrs-class}} {{#form-cntrs-error-text}}occlss-form-cntrs--error{{/form-cntrs-error-text}}">
+    <label class="occlss-form-cntrs__label {{form-cntrs-label-class}} {{#form-cntrs-error-text}}occlss-form-cntrs__label--error{{/form-cntrs-error-text}}" for="inpt-{{form-cntrs-name}}">{{form-cntrs-label-text}}</label>
+    <input class="occlss-form-cntrs__input {{form-cntrs-input-class}}" id="inpt-{{form-cntrs-name}}" name="inpt-{{form-cntrs-name}}" type="{{form-cntrs-input-type}}" {{#form-cntrs-error-text}}aria-describedby="inpt-errr-desckid-{{form-cntrs-name}}"{{/form-cntrs-error-text}}>
+    {{#form-cntrs-error-text}}
+    <span class="occlss-icon occlss-icon--exclamation-mark occlss-icon--error" aria-hidden="true">
+        <svg aria-hidden="true" class="occlss-icon__container">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#exclamation-mark" class="icon__source icon__source--svg"></use>
+        </svg>
+    </span>
+    <span class="occlss-form__error-message" id="inpt-errr-desckid-{{form-cntrs-name}}" role="alert">{{form-cntrs-error-text}}</span>
+    {{/form-cntrs-error-text}}
+</{{form-cntrs-tag}}>

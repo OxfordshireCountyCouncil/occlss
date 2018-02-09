@@ -5,7 +5,7 @@
  */
 
  .sg-tabs-panel {
-  min-height: 20em;
+  min-height: 20em!important;
 }
 
 #sg-patterns {

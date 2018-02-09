@@ -1,78 +1,69 @@
-.occlss-form--border {
-  border: 1px solid $occlss-form-border-color-primary;
-  padding: rem(10px);
+.occlss-form {
+  // Reset fieldset style
+  &__group {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.occlss-form--green-border {
-  border: 1px solid $occlss-form-border-color-green;
-  border-top-width: rem(20px);
-  margin-bottom: rem(73px);
+
+// Short search
+.occlss-form__short-search-submit {
+  padding: rem($occlss-short-search-form-padding-submit);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+      padding: rem(9px 13px);
+  }
 }
 
-// Reset fieldset style
-.occlss-form__group {
-  border: none;
+.occlss-form__short-search-controls {
+  position: relative;
+}
+
+
+.occlss-form__short-search-icon {
+  position: absolute;
+  top: rem(9px);
+  left: rem(10px);
+  pointer-events:none;
+  .occlss-icon__container {
+      fill: $occlss-short-search-form-icon-color;
+  }
+}
+
+// Sign up form
+.occlss-form--sign-up {
   margin: 0;
   padding: 0;
 }
 
-
-.occlss-form__checkbox,
-.occlss-form__radiobutton,
-.occlss-form__textarea,
-.occlss-form__input,
-.occlss-form__select {
-    appearance: none;
-    border: $occlss-form-border-width-base-input solid $occlss-form-border-color-base-input;
-    border-radius: 0;
-    box-sizing: border-box;
-    color: $occlss-form-font-color-base-input; // standardize on firefox
-    display: inline-block;
-    font-size: $occlss-form-font-size-base;
-    height: $occlss-form-input-height-truncated;
-    line-height: $occlss-form-line-height-base-input;
-    margin: 0.2rem 0 0 0;
-    padding: $occlss-form-padding-base-vertical 0.7rem;
-    width: 100%;
-}
-
-.occlss-form__select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: '';
-}
-
-.occlss-form__select::-ms-expand {
-  display: none;
+.occlss-form__sign-up-group {
+  padding: rem($occlss-sign-up-form-padding-group);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+      padding-right: 0;
+      margin-bottom: rem(16px);
+  }
 }
 
 
-.occlss-form__textarea {
-  height: rem($occlss-form-height-textarea);
-  display: inline-block;
-  vertical-align: middle;
+.occlss-form__sign-up-form-controls {
+  display: flex;
+  justify-content: flex-end;
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+      padding-right: rem(20px);
+  }
 }
 
-.occlss-form__input:focus, 
-.occlss-form__input--focus, 
-.occlss-form__textarea:focus, 
-.occlss-form__textarea--focus, 
-.occlss-form__select:focus, 
-.occlss-form__select--focus {
-  //box-shadow: 0 0 3px $occlss-form-border-color-base-input-focus, 0 0 7px $occlss-border-color--form-base-input-focus;
-  border-color: $occlss-form-border-color-base-input-focus;
+.occlss-form__sign-up-form-submit {
+  padding: rem($occlss-sign-up-form-padding-submit);
+  margin-bottom: 0;
+  &:focus,
+  &:active {
+      box-shadow: none;
+  }
 }
 
-.occlss-form__input-group {
-  margin: rem(0 0 30px 0);
-  
-}
-
-.occlss-form__input-group--password {
-  position: relative;
-}
-
+// Password container
 .occlss-form__hide-show {
   position: absolute;
   right: rem(10px);
@@ -80,33 +71,7 @@
   cursor: pointer;
 }
 
-.occlss-form__input-group--password .occlss-form__input {
-  padding-right: rem(50px);
-}
 
-.occlss-form__input-group--error {
-
-    .occlss-form__input,
-    .occlss-form__textarea,
-    .occlss-form__select {
-      width: calc(100% - 40px);
-      border: 2px solid $occlss-form-color-base-error;
-      background-color: $occlss-form-background-color-base-error;
-    }
-    
-    .occlss-form__label {
-      margin-top: 0;
-    }
-}
-
-
-
-
-
-.occlss-form__label--error {
-  display: inline-block;
-}
-  
 .occlss-form__error-message {
   color: $occlss-form-color-base-error;
   display: block;
@@ -114,26 +79,13 @@
   padding-top: 3px;
 }
 
-.occlss-form__group--list {
-  .occlss-form__input-group {
-    margin: 0;
+.occlss-form__short-search-group {
+  padding: rem($occlss-short-search-form-padding-form-group);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+      padding: 0;
+      margin-bottom: rem(16px);
   }
 }
-
-
-
-.occlss-form__select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #ffffff;
-    background-image: url('#{$occlss-global-image-path}/arrow-down-bold.svg');
-    background-position: right 1.3rem center;
-    background-repeat: no-repeat;
-    background-size: 1.3rem;
-}
-
-
 
 // Form group title
 .occlss-form__group-title {
@@ -147,19 +99,6 @@
   font-size: rem($occlss-form-title-font-size-large);
 }
 
-// Form lable
-.occlss-form__label {
-  @extend .occlss-form__group-title;
-  margin-top: 0;
-  display: block;
-}
-
-.occlss-form__label--small {
-  font-size: rem($occlss-form-label-font-size-small);
-}
-
-
-
 // Adding bottom border
 .occlss-form__group-title--bordered {
   border-bottom: rem(1px solid $occlss-form-title-underline-color);
@@ -169,109 +108,12 @@
 }
 
 // Form description text
-.occlss-form__group-desc {
+.occlss-form__desc-text {
   margin-bottom: rem(25px);
   display: inline-block;
 }
-
-
-// Custom checkboxes
-
-.occlss-form__checkbox,
-.occlss-form__radiobutton {
-// The actual input element is only visible to screen readers, because
-// all visual styling is done via the label.
-
-
-  @extend %sr-only;
-
-  .lt-ie9 & {
-    border: 0;
-    float: left;
-    margin: 0.4em 0.4em 0 0;
-    position: static;
-    width: auto;
-  }
-
-}
-
-
-.occlss-form__checkbox + .occlss-form__label,
-.occlss-form__radiobutton + .occlss-form__label {
-  cursor: pointer;
-  font-weight: 400;
-  margin-bottom: rem(25px);
-}
-
-
-
-
-.occlss-form__checkbox + .occlss-form__label::before,
-.occlss-form__radiobutton + .occlss-form__label::before {
-  background: #ffffff;
-  box-shadow: 0 0 0 1px $occlss-form-border-color-checkboxes;
-  content: '\a0';
-  display: inline-block;
-  height: rem($occlss-form-spacing-checkboxes);
-  line-height: rem($occlss-form-spacing-checkboxes);
-  margin-right: 0.6em;
-  text-indent: 0.15em;
-  vertical-align: middle\0; // Target IE 11 and below to vertically center inputs
-  width: rem($occlss-form-spacing-checkboxes);
-}
-
-
-.occlss-form__radiobutton + .occlss-form__label::before {
-  border-radius: 100%;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px $occlss-form-border-color-checkboxes;
-  height: rem($occlss-form-spacing-checkboxes); // Size overrides to account for shape + checked styling
-  line-height: rem($occlss-form-spacing-checkboxes);
-  margin-right: 0.75em;
-  width: rem($occlss-form-spacing-checkboxes);
-}
-
-
-.occlss-form__radiobutton:checked + .occlss-form__label::before {
-  background-image: url('#{$occlss-global-image-path}/icon-circle.svg');
-  background-position: 50%;
-  background-size: rem(17px 17px);
-  background-repeat: no-repeat;
-}
-
-.occlss-form__checkbox:checked + .occlss-form__label::before,
-.occlss-form__checkbox:checked:disabled + .occlss-form__label::before {
-  background-image: url('#{$occlss-global-image-path}/icon-check.svg');
-  background-position: 50%;
-  background-size: rem(21px 15px);
-  background-repeat: no-repeat;
-}
-
-.occlss-form__radiobutton:focus + .occlss-form__label::before {
-  box-shadow: rem(0 0 0 2px #ffffff, 0 0 0 4px $occlss-form-border-color-checkboxes-focus);
-  //outline: 2px dotted $occlss-form-border-color-checkboxes-disabled;
-  outline-offset: rem(5px);
-}
-
-.occlss-form__checkbox:disabled + .occlss-form__label {
-  color: #d6d7d9;
-}
-
-.occlss-form__checkbox:focus + .occlss-form__label::before {
-  box-shadow: rem(0 0 0 0px #ffffff, 0 0 0 2px $occlss-form-border-color-checkboxes-focus);
-  //outline: 2px dotted $occlss-form-border-color-checkboxes-disabled;
-  outline-offset: rem(3px);
-}
-
-.occlss-form__checkbox:disabled + .occlss-form__label::before,
-.occlss-form__radiobutton:disabled + .occlss-form__label::before {
-  background: #f1f1f1;
-  box-shadow: rem(0 0 0 1px $occlss-form-border-color-checkboxes-disabled);
-  cursor: not-allowed;
-}
-
 
 // Hint text
-
 .occlss-form__hint-text {
   color: $occlss-form-font-color-hint-text;
   margin-bottom: 0;
@@ -282,29 +124,10 @@
   margin-bottom: rem(10px);
 }
 
-// Dates
-
-.occlss-form__input-group--day,
-.occlss-form__input-group--month,
-.occlss-form__input-group--year {
-  clear: none;
-  float: left;
-  margin-right: rem(10px);
-  margin-bottom: rem(10px);
-  width: rem(53px);
-}
-
-.occlss-form__input-group--year {
-  width: rem(70px);
-}
-
-
 // Inline fields container
-
 .occlss-form__inline-fields {
   @extend %clearfix;
 }
-
 
 // Form controls
 .occlss-form__controls {

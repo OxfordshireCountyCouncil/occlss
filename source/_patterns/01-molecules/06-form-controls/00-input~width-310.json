@@ -1,0 +1,10 @@
+{
+    "form-cntrs-tag": "div",
+    "form-cntrs-name": "input-type-text",
+    "form-cntrs-class": "occlss-form-cntrs--size-310",
+    "form-cntrs-label-text": "Form control max width 310px",
+    "form-cntrs-label-class": "",
+    "form-cntrs-input-type": "text",
+    "form-cntrs-input-class": "",
+    "form-cntrs-error-text": ""
+}

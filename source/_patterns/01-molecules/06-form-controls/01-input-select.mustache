@@ -1,8 +1,8 @@
 <{{form-cntrs-tag}} class="occlss-form-cntrs {{form-cntrs-class}} {{#form-cntrs-error-text}}occlss-form-cntrs--error{{/form-cntrs-error-text}}">
-    <label class="occlss-form-cntrs__label {{form-cntrs-label-class}} {{#form-cntrs-error-text}}occlss-form-cntrs__label--error{{/form-cntrs-error-text}}" for="inpt-{{form-cntrs-name}}">{{form-cntrs-label-text}}</label>
-    <select class="occlss-form-cntrs__select{{form-cntrs-select-class}}" id="inpt-{{form-cntrs-name}}" name="inpt-{{form-cntrs-name}}" {{#form-cntrs-error-text}}aria-describedby="inpt-errr-desckid-{{form-cntrs-name}}"{{/form-cntrs-error-text}}>
+    <label class="occlss-form-cntrs__label {{form-cntrs-label-class}} {{#form-cntrs-error-text}}occlss-form-cntrs__label--error{{/form-cntrs-error-text}}" for="{{form-cntrs-name}}">{{form-cntrs-label-text}}</label>
+    <select class="occlss-form-cntrs__select {{form-cntrs-select-class}}" id="{{form-cntrs-name}}" name="{{form-cntrs-name}}" {{#form-cntrs-error-text}}aria-describedby="inpt-errr-desckid-{{form-cntrs-name}}"{{/form-cntrs-error-text}}>
         {{#form-cntrs-select-options}}
-            <option value="{{form-cntrs-select-options-VALUE}}">{{form-cntrs-select-options-name}}</option>
+            <option value="{{form-cntrs-select-options-value}}">{{form-cntrs-select-options-name}}</option>
         {{/form-cntrs-select-options}}
     </select>
     {{#form-cntrs-error-text}}

@@ -1,8 +1,8 @@
 {
     "form-cntrs-tag": "div",
-    "form-cntrs-name": "input-type-text-error",
+    "form-cntrs-name": "input-type-select",
     "form-cntrs-class": "",
-    "form-cntrs-label-text": "Text input error",
+    "form-cntrs-label-text": "Select input",
     "form-cntrs-label-class": "",
     "form-cntrs-select-class": "",
     "form-cntrs-select-options": [

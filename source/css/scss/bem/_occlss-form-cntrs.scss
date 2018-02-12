@@ -1,5 +1,33 @@
+// Form controls group
 .occlss-form-cntrs {
-  
+  margin: rem(0 0 30px 0);
+}
+
+.occlss-form-cntrs--listitem {
+  margin-bottom: 0;
+}
+
+.occlss-form-cntrs--short-search {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.occlss-form-cntrs__short-search-icon {
+  position: absolute;
+  top: rem(10px);
+  left: rem(9px);
+  pointer-events:none;
+  .occlss-icon__container {
+      fill: $occlss-short-search-form-icon-color;
+  }
+}
+
+.occlss-form-cntrs--sign-up-group {
+  padding: rem($occlss-sign-up-form-padding-group);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+      padding-right: 0;
+      margin-bottom: rem(16px);
+  }
 }
 
 .occlss-form-cntrs__checkbox,
@@ -43,7 +71,6 @@
   display: none;
 }
 
-
 .occlss-form-cntrs__textarea {
   height: rem($occlss-form-height-textarea);
   display: inline-block;
@@ -68,9 +95,10 @@
         box-shadow: rem(inset 0px 0px 0px 1px $occlss-short-search-form-border-color-input-focus);
         outline: none;
     }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+      margin-bottom: rem(16px);
+   }
 }
-
-
 
 // Sign up form
 .occlss-form-cntrs__label--sign-up-title {
@@ -79,8 +107,7 @@
     font-weight: $occlss-sign-up-form-font-weight-group-title;
     font-family: $occlss-sign-up-form-font-family-group-title;
 }
-  
-  
+
 .occlss-form-cntrs__input--sign-up {
     width: 100%;
     font-size: rem($occlss-sign-up-form-font-size-input);
@@ -90,45 +117,35 @@
     height: 2.95rem;
 }
 
-// Form controls group
-.occlss-form-cntrs {
-    margin: rem(0 0 30px 0);
-  }
-  
-  .occlss-form-cntrs--listitem {
-    margin-bottom: 0;
-  }
-  
-  // Form controls group width
-  .occlss-form-cntrs--day,
-  .occlss-form-cntrs--month,
-  .occlss-form-cntrs--year {
-    clear: none;
-    float: left;
-    margin-right: rem(10px);
-    margin-bottom: rem(10px);
-    width: rem(53px);
-  }
-  
-  .occlss-form-cntrs--year {
-    width: rem(70px);
-  }
-  
-  // sizes
-  $input-width:(
-    450: 450,
-    310: 310,
-    210: 210
-  );
-  
-  @each $key,$val in $input-width {
-    .occlss-form-cntrs--size-#{$key} {
-      @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-        max-width: ($val / 16) * 1rem;
-      }
-    }
+// Form controls group width
+.occlss-form-cntrs--day,
+.occlss-form-cntrs--month,
+.occlss-form-cntrs--year {
+  clear: none;
+  float: left;
+  margin-right: rem(10px);
+  margin-bottom: rem(10px);
+  width: rem(53px);
 }
 
+.occlss-form-cntrs--year {
+  width: rem(70px);
+}
+
+// sizes
+$input-width:(
+  450: 450,
+  310: 310,
+  210: 210
+);
+
+@each $key,$val in $input-width {
+  .occlss-form-cntrs--size-#{$key} {
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+      max-width: ($val / 16) * 1rem;
+    }
+  }
+}
 
 // Form controls group inline
 .occlss-form-cntrs--inline {
@@ -153,13 +170,11 @@
         flex: 1 1 auto;
     }
 }
-  
-  
+
 // Password
 .occlss-form-cntrs--password {
     position: relative;
 }
-
 
 .occlss-form-cntrs--password .occlss-form-cntrs__input {
     padding-right: rem(50px);
@@ -181,10 +196,10 @@
 }
 
 .occlss-form-cntrs__label--error {
-display: inline-block;
+  display: inline-block;
 }
 
-  // Form lable
+// Form lable
 .occlss-form-cntrs__label {
     @extend .occlss-form__group-title;
     margin-top: 0;

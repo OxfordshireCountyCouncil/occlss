@@ -7,7 +7,6 @@
   }
 }
 
-
 // Short search
 .occlss-form__short-search-submit {
   padding: rem($occlss-short-search-form-padding-submit);
@@ -16,18 +15,10 @@
   }
 }
 
-.occlss-form__short-search-controls {
-  position: relative;
-}
-
-
-.occlss-form__short-search-icon {
-  position: absolute;
-  top: rem(9px);
-  left: rem(10px);
-  pointer-events:none;
-  .occlss-icon__container {
-      fill: $occlss-short-search-form-icon-color;
+.occlss-form__short-search-group {
+  padding: rem($occlss-short-search-form-padding-form-group);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+      padding: 0;
   }
 }
 
@@ -36,15 +27,6 @@
   margin: 0;
   padding: 0;
 }
-
-.occlss-form__sign-up-group {
-  padding: rem($occlss-sign-up-form-padding-group);
-  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
-      padding-right: 0;
-      margin-bottom: rem(16px);
-  }
-}
-
 
 .occlss-form__sign-up-form-controls {
   display: flex;
@@ -71,7 +53,6 @@
   cursor: pointer;
 }
 
-
 .occlss-form__error-message {
   color: $occlss-form-color-base-error;
   display: block;
@@ -79,15 +60,7 @@
   padding-top: 3px;
 }
 
-.occlss-form__short-search-group {
-  padding: rem($occlss-short-search-form-padding-form-group);
-  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-      padding: 0;
-      margin-bottom: rem(16px);
-  }
-}
-
-// Form group title
+// Form group title (usually this is a legend tag)
 .occlss-form__group-title {
   font-weight: $occlss-form-font-weight-group-title;
   font-family: $occlss-form-font-family-group-title;
@@ -107,7 +80,7 @@
   width: 100%;
 }
 
-// Form description text
+// Form description text (Usually this text going below the legend)
 .occlss-form__desc-text {
   margin-bottom: rem(25px);
   display: inline-block;
@@ -115,6 +88,7 @@
 
 // Hint text
 .occlss-form__hint-text {
+  display: block;
   color: $occlss-form-font-color-hint-text;
   margin-bottom: 0;
 }

@@ -93,7 +93,7 @@ $margin-toplist:(
 
 
 // bottom space
-$margin-toplist:(
+$margin-bottomlist:(
   none: 0,
   xs: 6,
   sm: 12,
@@ -101,7 +101,7 @@ $margin-toplist:(
   large: 50
 );
 
-@each $key,$val in $margin-toplist {
+@each $key,$val in $margin-bottomlist {
     .occlss-u-bspace-#{$key} {
         margin-bottom: ($val / 16) * 1rem;
     }

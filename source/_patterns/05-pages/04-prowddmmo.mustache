@@ -23,24 +23,20 @@
         </p>
 
 
-
-
-
-
-
-          <form action="#" method="get" role="search">
+        {{#prowdSearchBox}}        
+        <form class="occlss-form occlss-u-bspace-large">
             <div class="occlss-layout">
-              <div class="occlss-layout__col occlss-layout__col--12">
-                <div class="occlss-form-cntrs">
-                  <label class="occlss-form-cntrs__label occlss-u-visuallyhidden" for="inp01022018">Search register</label>
-                  <input class="occlss-form-cntrs__input" id="inp01022018" name="inp01022018" type="text">
+
+                <div class="occlss-layout__col occlss-layout__col--12 occlss-layout__col--bleed occlss-form__horizontal-cont">
+                    {{> molecules-input }}
                 </div>
-              </div>
-              <div class="occlss-layout__col occlss-layout__col--12">
-                <button type="submit" class="occlss-button occlss-button--primary occlss-button--fullwidth">Search register</button>
-              </div>
+                <div class="occlss-layout__col occlss-layout__col--12 occlss-layout__col--bleed occlss-form__controls occlss-form__controls--inline-horizontal">
+                    <button type="submit" class="occlss-button occlss-button--primary occlss-button--fullwidth occlss-u-bspace-none">Search register</button>
+                </div>
+
             </div>
-          </form>
+        </form>
+        {{/prowdSearchBox}}
 
 
         <p>
@@ -73,16 +69,14 @@
           
             <h2>Records</h2>
             <div class="occlss-form">
+            {{#sortBy}}
               <form>
-                <label class="occlss-form-cntrs__label occlss-search-place-form__label" for="options-a1e1">Sort by: </label>
-                <select class="occlss-form-cntrs__select js-occlss-search-place-form-select" name="select-a-place" id="options-a1e1">
-                  <option value="1">Our reference</option>
-                  <option value="">Abingdon</option>
-                </select>
+                {{> molecules-input-select }}
               </form>
+            {{/sortBy}}
             </div>
 
-          <p class="occlss-u-tspace-md"><strong>Records 711 to 716 of 71</strong></p>
+          <p class="occlss-u-tspace-sm"><strong>Records 711 to 716 of 71</strong></p>
           {{> atoms-splitter(classes: "occlss-u-bspace-md") }}
          
           <div class="occlss-info-card">

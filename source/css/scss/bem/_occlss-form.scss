@@ -118,3 +118,19 @@
     margin-right: rem(50px);
   }
 }
+
+// Horisontal form
+.occlss-form__controls--inline-horizontal {
+  padding: 0 35%;
+
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    padding: 0;
+  }
+}
+
+.occlss-form__horizontal-cont {
+  padding: 0 10%;
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    padding: 0;
+  }
+}

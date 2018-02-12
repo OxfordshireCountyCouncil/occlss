@@ -5,5 +5,7 @@
     font-weight: $occlss-summary-text-font-weight-primary;
     color: $occlss-summary-text-font-color-primary;
     line-height: $occlss-summary-text-line-height-primary;
-    margin: rem($occlss-summary-text-font-margin-primary);
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        margin: rem($occlss-summary-text-font-margin-primary);
+    }
 }

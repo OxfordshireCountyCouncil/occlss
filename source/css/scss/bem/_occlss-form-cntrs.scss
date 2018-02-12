@@ -62,9 +62,10 @@
     appearance: none;
     background-color: #ffffff;
     background-image: url('#{$occlss-global-image-path}/arrow-down-bold.svg');
-    background-position: right 1.3rem center;
+    background-position: right rem(21px) center;
     background-repeat: no-repeat;
-    background-size: 1.3rem;
+    background-size: rem(21px);
+    padding-right: rem(60px);
 }
 
 .occlss-form-cntrs__select::-ms-expand {
@@ -153,11 +154,13 @@ $input-width:(
     display: flex;
     display: -ms-flexbox;
     flex-flow: row wrap;
-    
+
+    .occlss-form-cntrs__select,
     .occlss-form-cntrs__input,
     .occlss-form-cntrs__label {
         margin: 0;
     }
+    
     .occlss-form-cntrs__label {
         display: flex;
         display: -ms-flexbox;
@@ -165,10 +168,32 @@ $input-width:(
         padding-right: rem(12px);
         align-items: center;
     }
+
+    .occlss-form-cntrs__select,
     .occlss-form-cntrs__input {
         width: auto;
         flex: 1 1 auto;
     }
+}
+
+// Sort by
+.occlss-form-cntrs--sort-by {
+  margin-bottom: 0;
+  .occlss-form-cntrs__select {
+      background-image: url('#{$occlss-global-image-path}/arrow-both.svg');
+      background-position: right rem(5px) center;
+      background-repeat: no-repeat;
+      background-size: rem(21px);
+      padding: rem(5px 30px 5px 5px);
+      max-width: rem(260px);
+      height: rem(36px);
+      font-size: rem(14px);
+      border-radius: rem(5px);
+      &:focus {
+        box-shadow: rem(inset 0px 0px 0px 1px $occlss-short-search-form-border-color-input-focus);
+        outline: none;
+    }
+  }
 }
 
 // Password

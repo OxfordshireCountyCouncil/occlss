@@ -61,6 +61,11 @@ Format:
       }
     }
   }
+  .occlss-button {
+    &:hover {
+      color: #ffffff;
+    }
+  }
 
   .occlss-u-more-link__icon {
     fill: #ffffff;

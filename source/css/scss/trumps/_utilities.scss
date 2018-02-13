@@ -51,6 +51,9 @@
 
 .occlss-u-unstyled-list {
     @extend %reset_list_style;
+    li {
+        margin-bottom: 0;
+    }
 }
 
 // Removing fildset dafault style

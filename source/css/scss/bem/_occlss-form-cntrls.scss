@@ -14,7 +14,7 @@
 
 .occlss-form-cntrls__short-search-icon {
   position: absolute;
-  top: rem(10px);
+  top: rem(8px);
   left: rem(9px);
   pointer-events:none;
   .occlss-icon__container {
@@ -44,7 +44,6 @@
     font-size: $occlss-form-cntrls-font-size-base;
     height: $occlss-form-cntrls-input-height-truncated;
     line-height: $occlss-form-cntrls-line-height-base-input;
-    margin: 0.2rem 0 0 0;
     padding: $occlss-form-cntrls-padding-base-vertical 0.7rem;
     width: 100%;
 }
@@ -62,10 +61,10 @@
     appearance: none;
     background-color: #ffffff;
     background-image: url('#{$occlss-global-image-path}/arrow-down-bold.svg');
-    background-position: right rem(21px) center;
+    background-position: right rem(13px) center;
     background-repeat: no-repeat;
     background-size: rem(21px);
-    padding-right: rem(60px);
+    padding-right: rem(43px);
 }
 
 .occlss-form-cntrls__select::-ms-expand {
@@ -89,7 +88,7 @@
 
 // Short search
 .occlss-form-cntrls__input--short-search {
-    padding: rem(11px 20px 11px 50px);
+    padding: rem(11px 20px 11px 48px);
     border-radius: rem($occlss-form-cntrls-short-search-border-radius-input);
     height: auto;
     &:focus {
@@ -322,4 +321,12 @@ $input-width:(
 .occlss-form-cntrls__radiobutton:disabled + .occlss-form-cntrls__label::before {
   width: rem(33px);
   height: rem(33px);
+}
+
+// Password container
+.occlss-form-cntrls__show-hide {
+  position: absolute;
+  right: rem(10px);
+  top: 51%;
+  cursor: pointer;
 }

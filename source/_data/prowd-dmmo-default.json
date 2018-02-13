@@ -22,7 +22,7 @@
     "sortBy": {
         "form-cntrs-tag": "div",
         "form-cntrs-name": "input-sort-by",
-        "form-cntrs-class": "occlss-form-cntrs--inline occlss-form-cntrs--sort-by",
+        "form-cntrs-class": "occlss-form-cntrls--inline occlss-form-cntrls--sort-by",
         "form-cntrs-label-text": "Sort by:",
         "form-cntrs-label-class": "",
         "form-cntrs-select-class": "",

@@ -1,7 +1,7 @@
 {
     "form-cntrs-tag": "div",
     "form-cntrs-name": "input-type-radio-3",
-    "form-cntrs-class": "occlss-form-cntrs--listitem",
+    "form-cntrs-class": "occlss-form-cntrls--listitem",
     "form-cntrs-label-text": "Radio button disabled",
     "form-cntrs-label-class": "",
     "form-cntrs-input-type": "radio",

@@ -1,7 +1,7 @@
 {
     "form-cntrs-tag": "div",
     "form-cntrs-name": "input-type-text-inline",
-    "form-cntrs-class": "occlss-form-cntrs--inline",
+    "form-cntrs-class": "occlss-form-cntrls--inline",
     "form-cntrs-label-text": "Inline label:",
     "form-cntrs-label-class": "",
     "form-cntrs-input-type": "text",

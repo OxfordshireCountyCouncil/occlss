@@ -50,7 +50,7 @@
             padding-right: 0;
         }
     }
-    .occlss-form-cntrs__input {
+    .occlss-form-cntrls__input {
         @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
             margin-bottom: rem(10px);
         }

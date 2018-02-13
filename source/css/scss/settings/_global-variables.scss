@@ -563,95 +563,94 @@ $occlss-breadcrumb-font-size-primary:    $occlss-global-font-size-regular !defau
 $occlss-breadcrumb-line-height:          normal !default;
 
 
+
+
+
 // Page Footer _occlss-page-footer.scss
 $occlss-page-footer-background:          $occlss-brand-color-black !default;
 
 
 
 
-// Forms _occlss-form.scss
-$occlss-form-font-size-base:          1rem !default; // Base font size
-$occlss-form-title-font-size-large:   $occlss-global-font-size-xx-large !default;
-$occlss-form-label-font-size:         $occlss-global-font-size-medium !default;
-$occlss-form-label-font-size-small:   18px !default;
-$occlss-form-title-underline-color:   $occlss-brand-color-mine-shaft !default;
 
-$occlss-form-padding-base-vertical:   0.85rem !default; // Using rem instead of px so function uses same units
-$occlss-form-border-width-base-input: 0.063rem!default; // Using rem instead of px so function uses same units
-$occlss-form-line-height-base-input:  1.3 !default; // Base font size
+// Form  _occlss-form.scss
+// form base
+$occlss-form-color-base-error:                   $occlss-brand-color-milano-red !default;
+$occlss-form-background-color-base-error:        $occlss-brand-color-bridesmaid !default;
+$occlss-form-title-font-size-large:              $occlss-global-font-size-xx-large !default;
+$occlss-form-label-font-size:                    $occlss-global-font-size-medium !default; 
+$occlss-form-font-weight-group-title:            $occlss-global-font-weight-medium !default;
+$occlss-form-font-family-group-title:            $occlss-global-font-family-secondary !default;
+$occlss-form-title-underline-color:              $occlss-brand-color-mine-shaft !default;
+// Hint text
+$occlss-form-font-color-hint-text:               $occlss-brand-color-emperor !default;
 
 
+
+
+
+// Form controls _occlss-form-cntrls.scss
+$occlss-form-cntrls-label-font-size-small:      18px !default;
+$occlss-form-cntrls-border-input-general:       1px solid $occlss-brand-color-mine-shaft !default;
+$occlss-form-cntrls-font-size-input-general:    $occlss-global-font-size-regular !default; 
+$occlss-form-cntrls-font-size-base:             1rem !default; // Base font size
+$occlss-form-cntrls-padding-base-vertical:      0.85rem !default; // Using rem instead of px so function uses same units 
+$occlss-form-cntrls-border-width-base-input:    0.063rem!default; // Using rem instead of px so function uses same units
+$occlss-form-cntrls-line-height-base-input:     1.3 !default; // Base font size
 
 
 // input heights will vary by browser and type
 // if height not explicitly set
-$occlss-form-input-height-exact: (
-  ($occlss-form-font-size-base * $occlss-form-line-height-base-input) +
-  ($occlss-form-padding-base-vertical * 2) +
-  ($occlss-form-border-width-base-input * 2)
+$occlss-form-cntrls-input-height-exact: (
+  ($occlss-form-cntrls-font-size-base * $occlss-form-cntrls-line-height-base-input) +
+  ($occlss-form-cntrls-padding-base-vertical * 2) +
+  ($occlss-form-cntrls-border-width-base-input * 2) 
 ) !default;
 
 // truncated to 1 decimal place
 // (i.e., 1.21rem -> 1.2rem)
-$occlss-form-input-height-truncated:          floor($occlss-form-input-height-exact * 10) / 10 !default;
-$occlss-form-border-color-base-input:         $occlss-brand-color-emperor !default;
-$occlss-form-border-color-base-input-focus:   $occlss-global-colour-focus !default;
-$occlss-form-font-color-base-input:           $occlss-brand-color-emperor !default;
-$occlss-form-color-base-error:                $occlss-brand-color-milano-red !default;
-$occlss-form-background-color-base-error:     $occlss-brand-color-bridesmaid !default;
-$occlss-form-font-weight-group-title:         $occlss-global-font-weight-medium !default;
-$occlss-form-font-family-group-title:         $occlss-global-font-family-secondary !default;
-$occlss-form-height-textarea:                 300px !default;
-$occlss-form-margin-group-title:              0 0 10px 0 !default;
-$occlss-form-border-input-general:            1px solid $occlss-brand-color-mine-shaft !default;
-$occlss-form-font-size-input-general:         16px !default;
+$occlss-form-cntrls-input-height-truncated:          floor($occlss-form-cntrls-input-height-exact * 10) / 10 !default;
+$occlss-form-cntrls-border-color-base-input:         $occlss-brand-color-emperor !default; 
+$occlss-form-cntrls-border-color-base-input-focus:   $occlss-global-colour-focus !default;
+$occlss-form-cntrls-font-color-base-input:           $occlss-brand-color-emperor !default;
+
 
 
 
 
 // Custom checkboxes
-$occlss-form-spacing-checkboxes:                   30px !default;
-$occlss-form-border-color-checkboxes:              $occlss-form-border-color-base-input !default;
-$occlss-form-border-color-checkboxes-focus:        $occlss-form-border-color-base-input-focus !default;
-$occlss-form-border-color-checkboxes-disabled:    #aeb0b5 !default;
+$occlss-form-cntrls-spacing-checkboxes:               30px !default;
+$occlss-form-cntrls-border-color-checkboxes:          $occlss-form-cntrls-border-color-base-input !default;
+$occlss-form-cntrls-border-color-checkboxes-focus:    $occlss-form-cntrls-border-color-base-input-focus !default;
+$occlss-form-cntrls-border-color-checkboxes-disabled: #aeb0b5 !default; 
 
 
 
 
-// Hint text _occlss-form.scss
-$occlss-form-font-color-hint-text:              $occlss-brand-color-emperor !default;
+
+// Short search form
+$occlss-form-cntrls-short-search-border-radius-input:             $occlss-button-search-border-radius !default;
+$occlss-form-cntrls-short-search-border-color-input-focus:        $occlss-brand-color-ronchi !default;
+$occlss-form-cntrls-short-search-icon-color:                      $occlss-brand-color-mine-shaft !default;
 
 
 
 
-// Short search form _occlss-form.scss
-$occlss-short-search-form-font-size-input-short-search:    $occlss-form-font-size-input-general !default;
-$occlss-short-search-form-padding-input:                   11px 20px 11px 50px !default;
-$occlss-short-search-form-border-radius-input:             $occlss-button-search-border-radius !default;
-$occlss-short-search-form-border-input:                    $occlss-form-border-input-general !default;
-$occlss-short-search-form-border-color-input-focus:        $occlss-brand-color-ronchi !default;
-$occlss-short-search-form-padding-submit:                  9px 20px !default;
-$occlss-short-search-form-padding-form-group:              0 10px 0 0 !default;
-$occlss-short-search-form-icon-color:                      $occlss-brand-color-mine-shaft !default;
+
+// Sign up form
+$occlss-form-cntrls-sign-up-font-size-input:           $occlss-form-cntrls-font-size-input-general !default;
+$occlss-form-cntrls-sign-up-font-color-input:          $occlss-brand-color-cod-gray !default;
+$occlss-form-cntrls-sign-up-border-input:              $occlss-form-cntrls-border-input-general !default;
+$occlss-form-cntrls-sign-up-font-color-group-title:    #ffffff !default;
+$occlss-form-cntrls-sign-up-font-size-group-title:     $occlss-global-font-size-medium !default;
+$occlss-form-cntrls-sign-up-font-weight-group-title:   $occlss-global-font-weight-medium !default;
+$occlss-form-cntrls-sign-up-font-family-group-title:   $occlss-global-font-family-secondary !default;
 
 
 
 
-// Short search form _occlss-form.scsss
-$occlss-sign-up-form-font-size-input:           $occlss-form-font-size-input-general !default;
-$occlss-sign-up-form-font-color-input:          $occlss-brand-color-cod-gray !default;
-$occlss-sign-up-form-padding-input:             12px 20px 11px 20px !default;
-$occlss-sign-up-form-border-input:              $occlss-form-border-input-general !default;
-$occlss-sign-up-form-padding-group:             0 10px 0 0 !default;
-$occlss-sign-up-form-padding-submit:            9px 20px !default;
-$occlss-sign-up-form-font-color-group-title:    #ffffff !default;
-$occlss-sign-up-form-font-size-group-title:     $occlss-global-font-size-medium !default;
-$occlss-sign-up-form-font-weight-group-title:   $occlss-global-font-weight-medium !default;
-$occlss-sign-up-form-font-family-group-title:   $occlss-global-font-family-secondary !default;
 
-
-
-// Place search form
+// Search place form
 $occlss-search-place-form-bg-color:             $occlss-brand-color-coriander !default;
 $occlss-search-place-form-link-font-size:       $occlss-global-font-size-medium !default;
 $occlss-search-place-form-link-font-weight:     $occlss-global-font-weight-bold !default;
@@ -679,10 +678,12 @@ $occlss-category-nav-font-family-nav-item-selected:  $occlss-global-font-family-
 
 
 
+
 // Site navigation _occlss-site-nav.scss
 $occlss-site-nav-background-color:                    $occlss-brand-color-aqua-deep !default;
 $occlss-site-nav-padding:                             0 24px !default;
 $occlss-site-nav-toggle-link-color-hover:             $occlss-link-color-primary-hover !default;
+
 
 
 
@@ -699,6 +700,7 @@ $occlss-top-tasks-pane-heading-font-size:             32px !default;
 
 
 
+
 // Tabs _occlss-tab-widget.scss
 $occlss-tab-widget-font-family-tab:                      $occlss-global-font-family-secondary !default;
 $occlss-tab-widget-font-weight-tab:                      $occlss-global-font-weight-semibold !default;
@@ -712,6 +714,7 @@ $occlss-tab-widget-border-color-tabs:                    $occlss-brand-color-ros
 
 
 
+
 // Summary list _occlss-summary-list.scss
 $occlss-summary-list-border-color-item:                $occlss-brand-color-coriander !default;
 $occlss-summary-list-border-color-item-tab-widget:     $occlss-brand-color-rose-of-sharon !default;
@@ -721,8 +724,10 @@ $occlss-summary-list-font-color-tab-widget-hover:      $occlss-brand-color-cleme
 
 
 
+
 // View all link _utilities.scss
 $occlss-utilities-font-color-more-link-tab-widget:     $occlss-brand-color-mine-shaft !default;
+
 
 
 

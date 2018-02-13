@@ -5,6 +5,6 @@
     "form-cntrs-label-text": "Text input field focused",
     "form-cntrs-label-class": "",
     "form-cntrs-input-type": "text",
-    "form-cntrs-input-class": "occlss-form-cntrs__input--focus",
+    "form-cntrs-input-class": "occlss-form-cntrls__input--focus",
     "form-cntrs-error-text": ""
 }

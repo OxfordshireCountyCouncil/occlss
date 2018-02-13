@@ -9,14 +9,14 @@
 
 // Short search
 .occlss-form__short-search-submit {
-  padding: rem($occlss-short-search-form-padding-submit);
+  padding: rem(9px 20px);
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
       padding: rem(9px 13px);
   }
 }
 
 .occlss-form__short-search-group {
-  padding: rem($occlss-short-search-form-padding-form-group);
+  padding: rem(0 10px 0 0);
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
       padding: 0;
   }
@@ -37,7 +37,7 @@
 }
 
 .occlss-form__sign-up-form-submit {
-  padding: rem($occlss-sign-up-form-padding-submit);
+  padding: rem(9px 20px);
   margin-bottom: 0;
   &:focus,
   &:active {
@@ -65,7 +65,7 @@
   font-weight: $occlss-form-font-weight-group-title;
   font-family: $occlss-form-font-family-group-title;
   font-size: rem($occlss-form-label-font-size);
-  margin: rem($occlss-form-margin-group-title);
+  margin: rem(0 0 10px 0);
 }
 
 .occlss-form__group-title--large {

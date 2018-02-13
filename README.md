@@ -135,6 +135,7 @@ Following this structure allows you to intersperse OCCLSS code with your own, so
 // Images path
 $occlss-global-image-path:  '../../images/occlss';
 
+
 @import " node_modules/occlss/settings/global-variables";
 
 
@@ -184,9 +185,9 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/bem/occlss-site-nav";
 @import "node_modules/occlss/bem/occlss-head-logo";
 @import "node_modules/occlss/bem/occlss-form";
+@import "node_modules/occlss/bem/occlss-form-cntrls";
 @import "node_modules/occlss/bem/occlss-breadcrumb";
 @import "node_modules/occlss/bem/occlss-category-nav";
-@import "node_modules/occlss/bem/occlss-short-search-form";
 @import "node_modules/occlss/bem/occlss-alert";
 @import "node_modules/occlss/bem/occlss-summary-list";
 @import "node_modules/occlss/bem/occlss-popular-content-pane";
@@ -194,7 +195,6 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/bem/occlss-promoted-content-panel";
 @import "node_modules/occlss/bem/occlss-tab-widget";
 @import "node_modules/occlss/bem/occlss-card.scss";
-@import "node_modules/occlss/bem/occlss-sign-up-form";
 @import "node_modules/occlss/bem/occlss-page-guide";
 @import "node_modules/occlss/bem/occlss-sidebar-item-section";
 @import "node_modules/occlss/bem/occlss-version-bar";
@@ -203,10 +203,15 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/bem/occlss-a-to-z";
 @import "node_modules/occlss/bem/occlss-hero-pane";
 @import "node_modules/occlss/bem/occlss-search-place-form";
+@import "node_modules/occlss/bem/occlss-splitter";
+@import "node_modules/occlss/bem/occlss-info-card";
+@import "node_modules/occlss/bem/occlss-trim";
+
 
 // UTILITIES
 // scope
 @import "node_modules/occlss/scopes/cms-content-footer";
+
 
 // trumps
 @import "node_modules/occlss/trumps/globals";

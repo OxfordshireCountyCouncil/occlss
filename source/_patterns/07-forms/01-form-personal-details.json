@@ -1,0 +1,26 @@
+{   
+    "formTitle": "Personal details of the applicant",
+    "formSubTitle": "There are the details of the person who requires the Blue Badge.",
+    "firtstGroup": {
+        "options": [{
+            "form-cntrs-tag": "div",
+            "form-cntrs-name": "input-type-text-name",
+            "form-cntrs-class": "occlss-form-cntrls--size-450",
+            "form-cntrs-label-text": "First name",
+            "form-cntrs-label-class": "",
+            "form-cntrs-input-type": "text",
+            "form-cntrs-input-class": "",
+            "form-cntrs-error-text": ""
+        },
+        {
+            "form-cntrs-tag": "div",
+            "form-cntrs-name": "input-type-text-sure-name",
+            "form-cntrs-class": "occlss-form-cntrls--size-450",
+            "form-cntrs-label-text": "Last name",
+            "form-cntrs-label-class": "",
+            "form-cntrs-input-type": "text",
+            "form-cntrs-input-class": "",
+            "form-cntrs-error-text": ""
+        }]
+    }
+}

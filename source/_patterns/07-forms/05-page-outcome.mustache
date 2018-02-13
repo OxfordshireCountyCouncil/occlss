@@ -1,0 +1,48 @@
+{{> organisms-page-head-with-login-nav }}
+
+<div id="occlss-main-content">
+    <div class="occlss-wrapper">
+        <div class="occlss-layout occlss-layout--gutter-s">
+            <div class="occlss-layout__col occlss-layout__col--sm-10">
+                {{> atoms-heading(occlss-heading-text: "Apply for a Blue Badge", occlss-heading-tag: "h1",occlss-heading-class: "occlss-u-tspace-large",occlss-heading-secondary-text:"") }}
+                <div class="occlss-trim occlss-trim--green">
+                <!-- green trim -->
+                <form class="occlss-form">
+                    <fieldset>
+                        <legend class="occlss-form__group-title occlss-form__group-title--large occlss-u-bspace-large">Outcome</legend>
+                        <p>
+                            We’re sorry, based on your answers you are not eligible to apply for a Blue Badge at this time. 
+                        </p>
+                        <p>
+                            You must wait six months after making an application before reapplying, unless there has been a significant change in your medical conditions. 
+                        </p>
+                        <p>
+                            Case reference number: <strong>BB686300</strong> 
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="occlss-form__group-title occlss-form__group-title--large">What next?</legend>
+                        <p>
+                            You can still proceed with your application, even though you are unlikely to qualify at this time. Or you can cancel your application now and return at a later date as suggested.
+                        </p>
+                    </fieldset>
+                    <nav class="occlss-form__controls occlss-u-bspace-large" role="navigation">
+                        <ul class="occlss-u-unstyled-list">
+                            <li class="occlss-form__controls-list-item occlss-form__controls-list-item--spaced">
+                                <a href="{{ link.forms-form-personal-details }}" class="occlss-button occlss-button--primary occlss-form__submit">Cancel application</a>
+                            </li>
+                            <li class="occlss-form__controls-list-item">
+                                <a href="{{ link.forms-form-personal-details }}">Continue with my application</a>
+                        </ul>
+                    </nav>
+
+                </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> organisms-page-footer }}

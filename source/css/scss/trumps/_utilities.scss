@@ -31,24 +31,15 @@
     &:focus {
         @extend %highlight-bg-on-focus;
     }
-}
-
-.occlss-u-more-link__icon {
-    width: rem(19px);
-    height: rem(19px);
-    margin-left: rem(10px);
-    fill: $occlss-link-color-primary;
-}
-
-.occlss-u-more-link--dark {
-    color: $occlss-utilities-font-color-more-link-tab-widget;
-    .occlss-u-more-link__icon {
-        fill: $occlss-utilities-font-color-more-link-tab-widget;
+    &__icon {
+        width: rem(19px);
+        height: rem(19px);
+        margin-left: rem(10px);
+        fill: $occlss-link-color-primary;
     }
 }
 
 // Unstiled list
-
 .occlss-u-unstyled-list {
     @extend %reset_list_style;
     li {
@@ -56,28 +47,6 @@
     }
 }
 
-// Removing fildset dafault style
-.occlss-u-unFieldset {
-    border: none;
-}
-
-// Reset margin
-
-.occlss-u-rm-top {
-    margin-top: 0;
-}
-
-.occlss-u-rm-bottom {
-    margin-bottom: 0;
-}
-
-.occlss-u-rm-left {
-    margin-left: 0;
-}
-
-.occlss-u-rm-right {
-    margin-right: 0;
-}
 
 // top space
 $margin-toplist:(

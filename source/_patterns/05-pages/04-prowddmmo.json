@@ -27,23 +27,11 @@
     },
 
     "sidebarItemSection":{
-        "section-title": "Related",
+        "section-title": "Protection against claims",
         "section-modclass": "occlss-sidebar-item-section--residents",
         "summaryList":{
             "list-mod-class": "",
             "listItem": [
-            {
-                "listItem-link-name": "Public rights of way",
-                "listItem-mod-class": "",
-                "listItem-link-mod-class": "",
-                "listItem-link-url":  "javascript:void(0);"
-            },
-            {
-                "listItem-link-name": "Modifications and diversions to The Definitive Map and Statement",
-                "listItem-mod-class": "",
-                "listItem-link-mod-class": "",
-                "listItem-link-url":  "javascript:void(0);"
-            }
             ]
         }
     }

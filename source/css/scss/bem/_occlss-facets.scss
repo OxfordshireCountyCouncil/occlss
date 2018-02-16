@@ -1,0 +1,25 @@
+.occlss-facets {
+    @extend %reset_list_style;
+    margin-bottom: rem(25px);
+}
+
+.occlss-facets__item {
+    margin-bottom: rem(4px);
+    display: block;
+}
+
+.occlss-facets__item-link {
+    text-decoration: none;
+    color: $occlss-facets-link-color-primary;
+}
+
+.occlss-facets__cbx,
+.occlss-facets__item-value,
+.occlss-facets__item-count {
+    vertical-align: middle;
+}
+
+.occlss-facets__cbx {
+    height: rem(16px);
+    width: rem(16px);
+}

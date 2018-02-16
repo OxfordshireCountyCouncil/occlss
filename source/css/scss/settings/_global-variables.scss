@@ -864,17 +864,28 @@ $occlss-hero-pane-heading-font-color:                      $occlss-brand-color-m
 
 
 // Popular content panel
-
 $occlss-popular-content-color-primary:                     $occlss-brand-color-dingley !default;
 $occlss-popular-content-heading-color:                     #ffffff !default;
 $occlss-popular-content-heading-font-size:                 $occlss-global-font-size-large !default;
 $occlss-popular-content-heading-font-weight:               $occlss-global-font-weight-semibold !default;
 
 
+
 // Splitter
 $occlss-splitter-color:                                    $occlss-brand-color-cascade !default;
+
 
 
 // Trim
 $occlss-trim-border-color-primary:    $occlss-brand-color-lynch !default;
 $occlss-trim-border-color-green:      $occlss-brand-color-aqua-deep !default;
+
+
+// Filter pannel
+$occlss-fp-close-psnrl-bg-color-primary:    $occlss-brand-color-aqua-deep;
+$occlss-fp-close-psnrl-icon-hover-color:    $occlss-link-bg-color-primary-hover;
+
+
+
+// Facets
+$occlss-facets-link-color-primary:    #000000;

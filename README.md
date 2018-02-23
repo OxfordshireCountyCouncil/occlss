@@ -140,86 +140,89 @@ $occlss-global-image-path:  '../../images/occlss';
 
 
 // TOOLS
-@import "node_modules/occlss/tools/breakpoint-sass/stylesheets/breakpoint";
-@import "node_modules/occlss/tools/functions";
-@import "node_modules/occlss/tools/mixins_rem";
-@import "node_modules/occlss/tools/mixin_link-colors";
-@import "node_modules/occlss/tools/placeholder-classes";
-@import "node_modules/occlss/tools/mixin_box_sizing";
-@import "node_modules/occlss/tools/mixin_box-shadow";
-@import "node_modules/occlss/tools/mixin_button-variant";
-@import "node_modules/occlss/tools/mixin_hover";
-@import "node_modules/occlss/tools/mixin_opacity";
-@import "node_modules/occlss/tools/mixin_border-radius";
-@import "node_modules/occlss/tools/mixin_tab-focus";
-@import "node_modules/occlss/tools/mixin_user-select";
-@import "node_modules/occlss/tools/mixins_layout";
-@import "node_modules/occlss/tools/mixin_transition";
-@import "node_modules/occlss/tools/mixin_button_sizes";
-@import "node_modules/occlss/tools/reflex/reflex-index";
+@import "node_modules/occlss/scss/tools/breakpoint-sass/stylesheets/breakpoint";
+@import "node_modules/occlss/scss/tools/functions";
+@import "node_modules/occlss/scss/tools/mixins_rem";
+@import "node_modules/occlss/scss/tools/mixin_link-colors";
+@import "node_modules/occlss/scss/tools/placeholder-classes";
+@import "node_modules/occlss/scss/tools/mixin_box_sizing";
+@import "node_modules/occlss/scss/tools/mixin_box-shadow";
+@import "node_modules/occlss/scss/tools/mixin_button-variant";
+@import "node_modules/occlss/scss/tools/mixin_hover";
+@import "node_modules/occlss/scss/tools/mixin_opacity";
+@import "node_modules/occlss/scss/tools/mixin_border-radius";
+@import "node_modules/occlss/scss/tools/mixin_tab-focus";
+@import "node_modules/occlss/scss/tools/mixin_user-select";
+@import "node_modules/occlss/scss/tools/mixins_layout";
+@import "node_modules/occlss/scss/tools/mixin_transition";
+@import "node_modules/occlss/scss/tools/mixin_button_sizes";
+@import "node_modules/occlss/scss/tools/reflex/reflex-index";
 
 
 // GENERIC
-@import "node_modules/occlss/generic/box-sizing";
-@import "node_modules/occlss/generic/normalize";
-@import "node_modules/occlss/generic/shared";
-@import "node_modules/occlss/generic/reset";
+@import "node_modules/occlss/scss/generic/box-sizing";
+@import "node_modules/occlss/scss/generic/normalize";
+@import "node_modules/occlss/scss/generic/shared";
+@import "node_modules/occlss/scss/generic/reset";
 
 
 // BASE
-@import "node_modules/occlss/base/page";
-@import "node_modules/occlss/base/headings";
-@import "node_modules/occlss/base/links";
+@import "node_modules/occlss/scss/base/page";
+@import "node_modules/occlss/scss/base/headings";
+@import "node_modules/occlss/scss/base/links";
 
 
 // OBJECTS
-@import "node_modules/occlss/objects/wrapper";
-@import "node_modules/occlss/objects/occlss-button";
+@import "node_modules/occlss/scss/objects/wrapper";
+@import "node_modules/occlss/scss/objects/occlss-button";
 
 
 /// BEM (components)
-@import "node_modules/occlss/bem/occlss-icon";
-@import "node_modules/occlss/bem/occlss-button";
-@import "node_modules/occlss/bem/occlss-page-head";
-@import "node_modules/occlss/bem/occlss-page-footer";
-@import "node_modules/occlss/bem/occlss-site-nav";
-@import "node_modules/occlss/bem/occlss-head-logo";
-@import "node_modules/occlss/bem/occlss-form";
-@import "node_modules/occlss/bem/occlss-form-cntrls";
-@import "node_modules/occlss/bem/occlss-breadcrumb";
-@import "node_modules/occlss/bem/occlss-category-nav";
-@import "node_modules/occlss/bem/occlss-alert";
-@import "node_modules/occlss/bem/occlss-summary-list";
-@import "node_modules/occlss/bem/occlss-popular-content-pane";
-@import "node_modules/occlss/bem/occlss-top-tasks-pane";
-@import "node_modules/occlss/bem/occlss-promoted-content-panel";
-@import "node_modules/occlss/bem/occlss-tab-widget";
-@import "node_modules/occlss/bem/occlss-card.scss";
-@import "node_modules/occlss/bem/occlss-page-guide";
-@import "node_modules/occlss/bem/occlss-sidebar-item-section";
-@import "node_modules/occlss/bem/occlss-version-bar";
-@import "node_modules/occlss/bem/occlss-pagination";
-@import "node_modules/occlss/bem/occlss-skip-to-content";
-@import "node_modules/occlss/bem/occlss-a-to-z";
-@import "node_modules/occlss/bem/occlss-hero-pane";
-@import "node_modules/occlss/bem/occlss-search-place-form";
-@import "node_modules/occlss/bem/occlss-splitter";
-@import "node_modules/occlss/bem/occlss-info-card";
-@import "node_modules/occlss/bem/occlss-trim";
+@import "node_modules/occlss/scss/bem/occlss-icon";
+@import "node_modules/occlss/scss/bem/occlss-button";
+@import "node_modules/occlss/scss/bem/occlss-page-head";
+@import "node_modules/occlss/scss/bem/occlss-page-footer";
+@import "node_modules/occlss/scss/bem/occlss-site-nav";
+@import "node_modules/occlss/scss/bem/occlss-head-logo";
+@import "node_modules/occlss/scss/bem/occlss-form";
+@import "node_modules/occlss/scss/bem/occlss-form-cntrls";
+@import "node_modules/occlss/scss/bem/occlss-breadcrumb";
+@import "node_modules/occlss/scss/bem/occlss-category-nav";
+@import "node_modules/occlss/scss/bem/occlss-alert";
+@import "node_modules/occlss/scss/bem/occlss-summary-list";
+@import "node_modules/occlss/scss/bem/occlss-popular-content-pane";
+@import "node_modules/occlss/scss/bem/occlss-top-tasks-pane";
+@import "node_modules/occlss/scss/bem/occlss-promoted-content-panel";
+@import "node_modules/occlss/scss/bem/occlss-tab-widget";
+@import "node_modules/occlss/scss/bem/occlss-card.scss";
+@import "node_modules/occlss/scss/bem/occlss-page-guide";
+@import "node_modules/occlss/scss/bem/occlss-sidebar-item-section";
+@import "node_modules/occlss/scss/bem/occlss-version-bar";
+@import "node_modules/occlss/scss/bem/occlss-pagination";
+@import "node_modules/occlss/scss/bem/occlss-skip-to-content";
+@import "node_modules/occlss/scss/bem/occlss-a-to-z";
+@import "node_modules/occlss/scss/bem/occlss-hero-pane";
+@import "node_modules/occlss/scss/bem/occlss-search-place-form";
+@import "node_modules/occlss/scss/bem/occlss-splitter";
+@import "node_modules/occlss/scss/bem/occlss-info-card";
+@import "node_modules/occlss/scss/bem/occlss-trim";
+@import "node_modules/occlss/scss/bem/occlss-fp";
+@import "node_modules/occlss/scss/bem/occlss-facets";
+@import "node_modules/occlss/scss/bem/occlss-co";
+@import "node_modules/occlss/scss/bem/occlss-pager";
 
 
 // UTILITIES
 // scope
-@import "node_modules/occlss/scopes/cms-content-footer";
+@import "node_modules/occlss/scss/scopes/cms-content-footer";
 
 
 // trumps
-@import "node_modules/occlss/trumps/globals";
-@import "node_modules/occlss/trumps/utilities";
-@import "node_modules/occlss/trumps/owl-carousel";
-@import "node_modules/occlss/trumps/owl-carousel-theme";
-@import "node_modules/occlss/trumps/shame";
-@import "node_modules/occlss/trumps/hacks";
+@import "node_modules/occlss/scss/trumps/globals";
+@import "node_modules/occlss/scss/trumps/utilities";
+@import "node_modules/occlss/scss/trumps/owl-carousel";
+@import "node_modules/occlss/scss/trumps/owl-carousel-theme";
+@import "node_modules/occlss/scss/trumps/shame";
 ```
 
 Or you can add in your main.scss just the following
@@ -227,7 +230,7 @@ Or you can add in your main.scss just the following
 ```scss
 // Images path
 $occlss-global-image-path:  '../../images/occlss';
-@import "node_modules/occlss/scss/style.scss";
+@import "node_modules/occlss/scss/scss/style.scss";
 ```
 
 But this is not recommended and you will have less control over the elements you will use in your app.

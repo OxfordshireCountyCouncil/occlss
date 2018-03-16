@@ -29,7 +29,7 @@
 
 
     // Get browser geolocation
-    $("#js-occlss-search-place-form-link").on("click", function () {
+    $("#js-occlss-search-place-form-link").on("click", function (event) {
         var output = document.getElementById("out");
         if (!navigator.geolocation) {
             console.log('Geolocation is not supported by your browser');
@@ -47,6 +47,8 @@
             console.log('Unable to retrieve your location');
         }
         navigator.geolocation.getCurrentPosition(success, error);
+        event.preventDefault();
+        event.stopPropagation();
     });
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */

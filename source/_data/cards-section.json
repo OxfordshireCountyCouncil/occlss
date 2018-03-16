@@ -4,46 +4,46 @@
         {
             "panel-size": "occlss-layout__col--sm-4",
             "cardDefault": {
-                "card-image-url": "../../images/demo/demo-Image-1.png",
-                "card-image-alt-text": "image 1",
-                "card-title-text": "Other story",
+                "card-image-url": "http://content.presspage.com/uploads/1660/500_fireengine1-2.jpg?10000",
+                "card-image-alt-text": "Oxfordshire County Council Fire and Rescue Service",
+                "card-title-text": "Fire crews tackle burst water main at Madley Park",
                 "card-text": [
                   {
-                    "paragraph": "A brief summary of what this story is about."
+                    "paragraph": "Oxfordshire County Council’s Fire and Rescue Service is continuing to assist Thames Water with the clean-up operation following an earlier burst water main which closed the A4095 at Madley Park, Witney."
                   }
               ],
               "card-link-title": "Read this story",
-              "card-link-url": "javascript:void(0);"
+              "card-link-url": "http://news.oxfordshire.gov.uk/fire-crews-assist-with-burst-water-main-at-madley-park/"
             }
         },
         {
             "panel-size": "occlss-layout__col--sm-4",
             "cardDefault": {
-                "card-image-url": "../../images/demo/demo-Image-2.png",
-                "card-image-alt-text": "image 2",
-                "card-title-text": "Other story",
+                "card-image-url": "http://content.presspage.com/uploads/1660/1920_roadworks.jpg?10000",
+                "card-image-alt-text": "Roadworks",
+                "card-title-text": "Roads in Oxford are set to benefit from a new partnership between Oxfordshire County Council and Oxford City Council.",
                 "card-text": [
                   {
-                    "paragraph": "A brief summary of what this story is about."
+                    "paragraph": "Roads in Oxford are set to benefit from a new partnership between Oxfordshire County Council and Oxford City Council. The two councils are looking to work together to maintain the city’s highways, pavements and cycle lanes in a partnership"
                   }
               ],
               "card-link-title": "Read this story",
-              "card-link-url": "javascript:void(0);"
+              "card-link-url": "http://news.oxfordshire.gov.uk/oxford-roads-set-to-benefit-from-new-partnership/"
             }
         },
         {
             "panel-size": "occlss-layout__col--sm-4",
             "cardDefault": {
-                "card-image-url": "../../images/demo/demo-Image-3.png",
-                "card-image-alt-text": "image 3",
-                "card-title-text": "Other story",
+                "card-image-url": "http://content.presspage.com/uploads/1660/500_img-1385.jpg?10000",
+                "card-image-alt-text": "new scheme to combat bullying",
+                "card-title-text": "First schools sign up to new scheme to combat bullying",
                 "card-text": [
                   {
-                    "paragraph": "A brief summary of what this story is about."
+                    "paragraph": "Parents and children should never shy away from reporting bullying to their school – that’s the message at the heart of a new initiative led by Oxfordshire County Council.Schools are being invited to sign up to an ‘anti-bullying"
                   }
               ],
               "card-link-title": "Read this story",
-              "card-link-url": "javascript:void(0);"
+              "card-link-url": "http://news.oxfordshire.gov.uk/first-schools-sign-up-to-oxfordshire-anti-bullying-charter/"
             }
         }
     ]

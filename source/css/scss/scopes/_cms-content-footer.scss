@@ -27,6 +27,7 @@ Format:
   font-weight: $occlss-cms-footer-text-font-weight;
   h2,h3,h4,h5 {
     color: #ffffff;
+    font-size: rem($occlss-cms-footer-text-font-size);
     font-weight: $occlss-cms-footer-heading-font-weight;
     margin: rem(0 0 10px 0);
   }

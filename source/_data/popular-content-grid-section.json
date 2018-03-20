@@ -246,7 +246,130 @@
                     }
                     ]
                 }
-            }  
+            },
+            {
+                "popular-content-pane-heading": "Children and families",
+                "popular-content-pane-mode-class": "",
+                "popular-content-pane-view-more-link-name": "More children and families",
+                "popular-content-pane-view-more-link-url": "https://www.oxfordshire.gov.uk/cms/public-site/children-education-and-families",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Special Educational Needs",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/special-educational-needs-and-disability-local-offer"
+                    },
+                    {
+                        "listItem-link-name": "Music Service",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/music-service"
+                    },
+                    {
+                        "listItem-link-name": "Early years education",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/early-years-education"
+                    },
+                    {
+                        "listItem-link-name": "Report child abuse",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/content/report-child-abuse"
+                    },
+                    {
+                        "listItem-link-name": "More children and families",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/children-education-and-families"
+                    }
+                    ]
+                }
+            },
+            {
+                "popular-content-pane-heading": "Adult social care",
+                "popular-content-pane-mode-class": "",
+                "popular-content-pane-view-more-link-name": "More adult social care",
+                "popular-content-pane-view-more-link-url": "https://www.oxfordshire.gov.uk/cms/public-site/children-education-and-families",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Report safeguarding concern",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/content/raising-safeguarding-concern-professional"
+                    },
+                    {
+                        "listItem-link-name": "Getting a needs assessment",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/getting-needs-assessment"
+                    },
+                    {
+                        "listItem-link-name": "Living at home",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/living-home"
+                    },
+                    {
+                        "listItem-link-name": "Equipment and adaptations",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/equipment-aids-and-adaptations"
+                    },
+                    {
+                        "listItem-link-name": "More adult social care",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/children-education-and-families"
+                    }
+                    ]
+                }
+            },
+            {
+                "popular-content-pane-heading": "Museums and history",
+                "popular-content-pane-mode-class": "",
+                "popular-content-pane-view-more-link-name": "More museums and history",
+                "popular-content-pane-view-more-link-url": "https://www.oxfordshire.gov.uk/cms/public-site/children-education-and-families",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "The Oxfordshire Museum",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/museums"
+                    },
+                    {
+                        "listItem-link-name": "Museum Resource Centre",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/museums-resource-centre"
+                    },
+                    {
+                        "listItem-link-name": "History Centre",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/oxfordshire-history-centre"
+                    },
+                    {
+                        "listItem-link-name": "Family history",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/family-history-oxfordshire"
+                    },
+                    {
+                        "listItem-link-name": "More museums and history",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/children-education-and-families"
+                    }
+                    ]
+                }
+            } 
         ]
   }
 }

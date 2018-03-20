@@ -5,7 +5,7 @@
             "panel-size": "occlss-layout__col--lg-8 occlss-layout__col--md-6",
             "featuredPanelDefault" : {
                 "promoted-content-panel-mod-class": " ",
-                "promoted-content-panel-url": "javascript:void(0);",
+                "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/content/school-term-dates-and-holidays/",
                 "promoted-content-panel-textlines": [
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-large",
@@ -19,12 +19,12 @@
                     },
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-mega",
-                        "promoted-content-panel-textline-text": "Friday 20 October",
+                        "promoted-content-panel-textline-text": "Thursday 29 March",
                         "promoted-content-panel-textline-arrow": false
                     },
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
-                        "promoted-content-panel-textline-text": "The next term starts Monday 30 October",
+                        "promoted-content-panel-textline-text": "The next term starts Monday 16 April",
                         "promoted-content-panel-textline-arrow": false
                     },
                     {
@@ -39,7 +39,7 @@
             "panel-size": "occlss-layout__col--lg-4 occlss-layout__col--md-6",
             "featuredPanelDefault" : {
                 "promoted-content-panel-mod-class": "occlss-promoted-content-panel--ronchi",
-                "promoted-content-panel-url": "javascript:void(0);",
+                "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/sitemap/",
                 "promoted-content-panel-textlines": [
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-mega",
@@ -53,7 +53,7 @@
             "panel-size": "occlss-layout__col--md-6",
             "featuredPanelDefault" : {
                 "promoted-content-panel-mod-class": "occlss-promoted-content-panel--ronchi",
-                "promoted-content-panel-url": "javascript:void(0);",
+                "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/content/full-library-activity-and-event-listing/",
                 "promoted-content-panel-textlines": [
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-small",
@@ -72,7 +72,7 @@
             "panel-size": "occlss-layout__col--md-6",
             "featuredPanelDefault" : {
                 "promoted-content-panel-mod-class": "occlss-promoted-content-panel--como",
-                "promoted-content-panel-url": "javascript:void(0);",
+                "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/public-site/consultation/",
                 "promoted-content-panel-textlines": [
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-small",
@@ -91,7 +91,7 @@
             "panel-size": "occlss-layout__col--12",
             "featuredPanelDefault" : {
                 "promoted-content-panel-mod-class": "occlss-promoted-content-panel--aqua-dee occlss-promoted-content-panel--nogaps",
-                "promoted-content-panel-url": "javascript:void(0);",
+                "promoted-content-panel-url": "http://news.oxfordshire.gov.uk/",
                 "promoted-content-panel-textlines": [
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-small",

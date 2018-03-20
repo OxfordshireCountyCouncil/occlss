@@ -4,7 +4,7 @@
             {
                 "name": "Residents",
                 "modeClass": "occlss-category-nav__item--residents",
-                "state": "",
+                "state": "active",
                 "linkURL": "link.pages-homepage"
             },
             {

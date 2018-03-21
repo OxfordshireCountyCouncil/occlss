@@ -4,7 +4,7 @@
         {
             "panel-size": "occlss-layout__col--lg-8 occlss-layout__col--md-6",
             "featuredPanelDefault" : {
-                "promoted-content-panel-mod-class": " ",
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--dingley",
                 "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/content/school-term-dates-and-holidays/",
                 "promoted-content-panel-textlines": [
                     {
@@ -71,7 +71,7 @@
         {
             "panel-size": "occlss-layout__col--md-6",
             "featuredPanelDefault" : {
-                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--como",
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--aqua-dee",
                 "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/public-site/consultation/",
                 "promoted-content-panel-textlines": [
                     {

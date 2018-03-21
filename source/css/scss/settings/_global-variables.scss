@@ -80,6 +80,15 @@ $occlss-brand-color-lynch:          #617799;
 $occlss-brand-color-ghost:          #c9cfd9;
 $occlss-brand-color-athens-gray:    #f0f2f4;
 
+$occlss-brand-color-pale-sky:       #667088;
+$occlss-brand-color-lochmara:       #007dc3;
+$occlss-brand-color-royal-purple:   #604099;
+
+
+
+
+
+
 
 
 // Wayfinding colors
@@ -115,13 +124,13 @@ $occlss-brand-color-milano-red:  #ad0505;
 $occlss-brand-color-bridesmaid:  #fee6e6;
 
 $occlss-brand-color-denim:       #0e73d8;
-$occlss-brand-color-solitude:    #ecf5fe;
+$occlss-brand-color-solitude:      #ecf5fe;
 
-$occlss-brand-color-apple:       #50b948;
-$occlss-brand-color-zanah:       #d8efd7;
+$occlss-brand-color-chateau-green:  #39b54a;
+$occlss-brand-color-zanah:          #d8efd7;
 
-$occlss-brand-color-tahiti-gold: #f3830b;
-$occlss-brand-color-bleach-white:#feebd8;
+$occlss-brand-color-tahiti-gold:    #f3830b;
+$occlss-brand-color-bleach-white:   #feebd8;
 
 
 
@@ -544,7 +553,7 @@ $occlss-button-search-shadow-primary:               0px 3px 5px lighten($occlss-
 
 
 // Page head _occlss-page-head.scss
-$occlss-page-head-color-residents:       $occlss-brand-color-dingley !default;
+$occlss-page-head-color-residents:       $occlss-brand-color-aqua-deep !default;
 $occlss-page-head-color-business:        $occlss-brand-color-wedgewood !default;
 $occlss-page-head-color-council:         $occlss-brand-color-rose-of-sharon !default;
 
@@ -670,9 +679,12 @@ $occlss-category-nav-link-color:                     $occlss-brand-color-emperor
 $occlss-category-nav-underline-height:               4px !default;
 $occlss-category-nav-underline-active-height:        8px !default;
 $occlss-category-nav-margin-underline:               0 30px 0 0 !default;
-$occlss-category-nav-color-underline-residents:      $occlss-brand-color-dingley !default;
-$occlss-category-nav-color-underline-business:       $occlss-brand-color-wedgewood !default;
-$occlss-category-nav-color-underline-council:        $occlss-brand-color-peru-tan !default;
+$occlss-category-nav-color-text-residents:           #000000 !default;
+$occlss-category-nav-color-underline-residents:      $occlss-brand-color-aqua-deep !default;
+$occlss-category-nav-color-text-business:            #000000 !default;
+$occlss-category-nav-color-underline-business:       $occlss-brand-color-lochmara !default;
+$occlss-category-nav-color-text-council:             #000000 !default;
+$occlss-category-nav-color-underline-council:        $occlss-brand-color-royal-purple !default;
 $occlss-category-nav-font-size-nav-item-selected:    $occlss-global-font-size-xxxx-large !default;
 $occlss-category-nav-font-family-nav-item-selected:  $occlss-global-font-family-primary !default;
 
@@ -681,7 +693,7 @@ $occlss-category-nav-font-family-nav-item-selected:  $occlss-global-font-family-
 
 // Site navigation _occlss-site-nav.scss
 $occlss-site-nav-background-color:                    $occlss-brand-color-aqua-deep !default;
-$occlss-site-nav-background-color-secondary:          $occlss-brand-color-apple !default;
+$occlss-site-nav-background-color-secondary:          $occlss-brand-color-chateau-green !default;
 $occlss-site-nav-padding:                             0 24px !default;
 $occlss-site-nav-toggle-link-color-hover:             $occlss-link-color-primary-hover !default;
 
@@ -691,7 +703,7 @@ $occlss-site-nav-toggle-link-color-hover:             $occlss-link-color-primary
 // Pane
 // Top tasks pane _occlss-top-tasks-pane.scss
 $occlss-top-tasks-pane-heading-border:                2px solid $occlss-brand-color-tacao !default;
-$occlss-top-tasks-pane-content-border:                5px solid $occlss-brand-color-tacao !default;
+$occlss-top-tasks-pane-content-border:                3px solid $occlss-brand-color-tacao !default;
 $occlss-top-tasks-pane-color-residents:               $occlss-brand-color-dingley !default;
 $occlss-top-tasks-pane-color-business:                $occlss-brand-color-wedgewood !default;
 $occlss-top-tasks-pane-color-council:                 $occlss-brand-color-peru-tan !default;
@@ -742,6 +754,7 @@ $occlss-promoted-content-panel-font-size-short-summary:       $occlss-global-fon
 $occlss-promoted-content-panel-font-size-intro-text:          $occlss-global-font-size-xxx-large !default;
 $occlss-promoted-content-panel-font-size-more-link:           $occlss-global-font-size-x-large !default;
 $occlss-promoted-content-panel-background-color-aqua-deep:    $occlss-brand-color-aqua-deep !default;
+$occlss-promoted-content-panel-background-color-dingley:      $occlss-brand-color-dingley !default;
 $occlss-promoted-content-panel-background-color-givry:        $occlss-brand-color-givry !default;
 $occlss-promoted-content-panel-font-color-givry:              $occlss-brand-color-mine-shaft !default;
 $occlss-promoted-content-panel-background-color-ghost:        $occlss-brand-color-ghost !default;
@@ -791,7 +804,7 @@ $occlss-alert-border-color-warning:                  $occlss-brand-color-tahiti-
 $occlss-alert-background-color-warning:              $occlss-brand-color-bleach-white !default;
 $occlss-alert-border-color-error:                    $occlss-brand-color-milano-red !default;
 $occlss-alert-background-color-error:                $occlss-brand-color-bridesmaid !default;
-$occlss-alert-border-color-success:                  $occlss-brand-color-apple !default;
+$occlss-alert-border-color-success:                  $occlss-brand-color-chateau-green !default;
 $occlss-alert-background-color-success:              $occlss-brand-color-zanah !default;
 $occlss-alert-border-color-info:                     $occlss-brand-color-denim !default;
 $occlss-alert-background-color-info:                 $occlss-brand-color-solitude !default;
@@ -862,11 +875,11 @@ $occlss-a-to-z-letter-color-off:                           #989898 !default;
 $occlss-hero-pane-heading-font-family:                     $occlss-global-font-family-secondary !default;                
 $occlss-hero-pane-heading-font-weight:                     $occlss-global-font-weight-black !default;               
 $occlss-hero-pane-heading-font-color:                      $occlss-brand-color-mine-shaft !default;
-
+$occlss-hero-pane-heading-bg-color:                        $occlss-brand-color-coriander !default;
 
 
 // Popular content panel
-$occlss-popular-content-color-primary:                     $occlss-brand-color-dingley !default;
+$occlss-popular-content-color-primary:                     $occlss-brand-color-aqua-deep !default;
 $occlss-popular-content-heading-color:                     #ffffff !default;
 $occlss-popular-content-heading-font-size:                 $occlss-global-font-size-large !default;
 $occlss-popular-content-heading-font-weight:               $occlss-global-font-weight-semibold !default;

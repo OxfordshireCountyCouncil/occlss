@@ -51,14 +51,17 @@
 .occlss-category-nav__item--residents {
 
     .occlss-category-nav__link {
-        color: $occlss-category-nav-color-underline-residents;
+        color: $occlss-category-nav-color-text-residents;
         &:after {
             background: $occlss-category-nav-color-underline-residents;
         }
         &:active,
         &:hover {
-            color: $occlss-category-nav-color-underline-residents;
+            color: $occlss-category-nav-color-text-residents;
         }
+    }
+    &.is-active .occlss-category-nav__link {
+        color: $occlss-category-nav-color-underline-residents;
     }
     /*.occlss-category-nav__title {
         color: $occlss-category-nav-color-underline-residents;
@@ -67,14 +70,17 @@
 
 .occlss-category-nav__item--business {
     .occlss-category-nav__link {
-        color: $occlss-category-nav-color-underline-business;
+        color: $occlss-category-nav-color-text-business;
         &:after {
             background: $occlss-category-nav-color-underline-business;
         }
         &:active,
         &:hover {
-            color: $occlss-category-nav-color-underline-business;
+            color: $occlss-category-nav-color-text-business;
         }
+    }
+    &.is-active .occlss-category-nav__link {
+        color: $occlss-category-nav-color-underline-business;
     }
     /*.occlss-category-nav__title {
         color: $occlss-category-nav-color-underline-business;
@@ -83,14 +89,17 @@
 
 .occlss-category-nav__item--council {
     .occlss-category-nav__link {
-        color: $occlss-category-nav-color-underline-council;
+        color: $occlss-category-nav-color-text-council;
         &:after {
             background: $occlss-category-nav-color-underline-council;
         }
         &:active,
         &:hover {
-            color: $occlss-category-nav-color-underline-council;
+            color: $occlss-category-nav-color-text-council;
         }
+    }
+    &.is-active .occlss-category-nav__link {
+        color: $occlss-category-nav-color-underline-council;
     }
     /*.occlss-category-nav__title {
         color: $occlss-category-nav-color-underline-council;

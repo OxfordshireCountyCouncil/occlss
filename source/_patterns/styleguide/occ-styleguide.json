@@ -50,6 +50,21 @@
         "occlss-color-variable-name": "$occlss-brand-color-athens-gray",
         "occlss-color-name": "#f0f2f4",
         "occlss-color-sass-var-name": "#f0f2f4"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-pale-sky",
+        "occlss-color-name": "#667088",
+        "occlss-color-sass-var-name": "#667088"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-lochmara",
+        "occlss-color-name": "#007dc3",
+        "occlss-color-sass-var-name": "#007dc3"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-royal-purple",
+        "occlss-color-name": "#604099",
+        "occlss-color-sass-var-name": "#604099"
       }
     ]
   },
@@ -167,9 +182,9 @@
         "occlss-color-sass-var-name": "#ecf5fe"
       },
       {
-        "occlss-color-variable-name": "$occlss-brand-color-apple",
-        "occlss-color-name": "#50b948",
-        "occlss-color-sass-var-name": "#50b948"
+        "occlss-color-variable-name": "$occlss-brand-color-chateau-green",
+        "occlss-color-name": "#39b54a",
+        "occlss-color-sass-var-name": "#39b54a"
       },
       {
         "occlss-color-variable-name": "$occlss-brand-color-zanah",

@@ -292,7 +292,7 @@
                 "popular-content-pane-heading": "Adult social care",
                 "popular-content-pane-mode-class": "",
                 "popular-content-pane-view-more-link-name": "More adult social care",
-                "popular-content-pane-view-more-link-url": "https://www.oxfordshire.gov.uk/cms/public-site/children-education-and-families",
+                "popular-content-pane-view-more-link-url": "https://www.oxfordshire.gov.uk/cms/public-site/adult-social-care",
                 "summaryList":{
                     "list-mod-class": "occlss-summary-list--popular-content-pane",
                     "listItem": [
@@ -324,7 +324,7 @@
                         "listItem-link-name": "More adult social care",
                         "listItem-mod-class": "occlss-summary-list__item--underlined",
                         "listItem-link-mod-class": "",
-                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/children-education-and-families"
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/adult-social-care"
                     }
                     ]
                 }
@@ -333,7 +333,7 @@
                 "popular-content-pane-heading": "Museums and history",
                 "popular-content-pane-mode-class": "",
                 "popular-content-pane-view-more-link-name": "More museums and history",
-                "popular-content-pane-view-more-link-url": "https://www.oxfordshire.gov.uk/cms/public-site/children-education-and-families",
+                "popular-content-pane-view-more-link-url": "https://www.oxfordshire.gov.uk/cms/public-site/leisure-and-culture",
                 "summaryList":{
                     "list-mod-class": "occlss-summary-list--popular-content-pane",
                     "listItem": [
@@ -365,7 +365,7 @@
                         "listItem-link-name": "More museums and history",
                         "listItem-mod-class": "occlss-summary-list__item--underlined",
                         "listItem-link-mod-class": "",
-                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/children-education-and-families"
+                        "listItem-link-url":  "https://www.oxfordshire.gov.uk/cms/public-site/leisure-and-culture"
                     }
                     ]
                 }

@@ -4,7 +4,7 @@
         {
             "panel-size": "occlss-layout__col--lg-8 occlss-layout__col--md-6",
             "featuredPanelDefault" : {
-                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--dingley",
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--a",
                 "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/content/school-term-dates-and-holidays/",
                 "promoted-content-panel-textlines": [
                     {
@@ -38,7 +38,7 @@
         {
             "panel-size": "occlss-layout__col--lg-4 occlss-layout__col--md-6",
             "featuredPanelDefault" : {
-                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--ronchi",
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--b",
                 "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/sitemap/",
                 "promoted-content-panel-textlines": [
                     {
@@ -52,7 +52,7 @@
         {
             "panel-size": "occlss-layout__col--md-6",
             "featuredPanelDefault" : {
-                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--ronchi",
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--c",
                 "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/content/full-library-activity-and-event-listing/",
                 "promoted-content-panel-textlines": [
                     {
@@ -71,7 +71,7 @@
         {
             "panel-size": "occlss-layout__col--md-6",
             "featuredPanelDefault" : {
-                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--aqua-dee",
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--d",
                 "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/public-site/consultation/",
                 "promoted-content-panel-textlines": [
                     {
@@ -90,7 +90,7 @@
         {
             "panel-size": "occlss-layout__col--12",
             "featuredPanelDefault" : {
-                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--aqua-dee occlss-promoted-content-panel--nogaps",
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--e",
                 "promoted-content-panel-url": "http://news.oxfordshire.gov.uk/",
                 "promoted-content-panel-textlines": [
                     {

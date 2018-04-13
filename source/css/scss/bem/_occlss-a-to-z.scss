@@ -11,12 +11,17 @@
     }
 }
 
+.occlss-a-to-z__listitems {
+    @extend %reset_list_style;
+}
 
 .occlss-a-to-z__item {
     display: inline-block;
     border-right: rem(2px solid #fff);
     width: rem(35px);
     height: rem(28px);
+    margin: 0;
+    margin-bottom: 0;
     text-align: center;
     vertical-align: middle;
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {

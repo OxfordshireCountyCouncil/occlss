@@ -15,7 +15,7 @@
                         <fieldset>
                             <legend class="occlss-form__group-title occlss-u-bspace-none">{{groupTitle}}</legend>
                             <span class="occlss-form__hint-text occlss-u-bspace-sm">{{groupHintText}}</span>
-                            <ul class="occlss-u-unstyled-list">
+                            <ul class="occlss-form__listitems">
                                 {{#options}}
                                     {{> molecules-checkbox }}
                                 {{/options}}
@@ -26,7 +26,7 @@
                     </fieldset>
 
                     <nav class="occlss-form__controls occlss-u-bspace-large" role="navigation">
-                        <ul class="occlss-u-unstyled-list">
+                        <ul class="occlss-form__listitems">
                             <li class="occlss-form__controls-list-item occlss-form__controls-list-item--spaced">
                                 <a href="{{ link.forms-form-yes-no }}" class="occlss-button occlss-button--neutral">Back</a>
                             </li>

@@ -1,91 +1,8 @@
 {
-  "genericcolors": {
+  "residentscolors": {
     "color": [
       {
-        "occlss-color-variable-name": "$occlss-brand-color-aqua-deep",
-        "occlss-color-name": "#00483a",
-        "occlss-color-sass-var-name": "#00483a"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-como",
-        "occlss-color-name": "#567b6c",
-        "occlss-color-sass-var-name": "#567b6c"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-como",
-        "occlss-color-name": "#567b6c",
-        "occlss-color-sass-var-name": "#567b6c"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-cascade",
-        "occlss-color-name": "#8DB0A3",
-        "occlss-color-sass-var-name": "#8DB0A3"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-hawaiian-tan",
-        "occlss-color-name": "#8D5E16",
-        "occlss-color-sass-var-name": "#8D5E16"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-tacao",
-        "occlss-color-name": "#ecc486",
-        "occlss-color-sass-var-name": "#ecc486"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-givry",
-        "occlss-color-name": "#f7e7b5",
-        "occlss-color-sass-var-name": "#f7e7b5"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-lynch",
-        "occlss-color-name": "#617799",
-        "occlss-color-sass-var-name": "#617799"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-ghost",
-        "occlss-color-name": "#c9cfd9",
-        "occlss-color-sass-var-name": "#c9cfd9"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-athens-gray",
-        "occlss-color-name": "#f0f2f4",
-        "occlss-color-sass-var-name": "#f0f2f4"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-pale-sky",
-        "occlss-color-name": "#667088",
-        "occlss-color-sass-var-name": "#667088"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-lochmara",
-        "occlss-color-name": "#007dc3",
-        "occlss-color-sass-var-name": "#007dc3"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-royal-purple",
-        "occlss-color-name": "#604099",
-        "occlss-color-sass-var-name": "#604099"
-      }
-    ]
-  },
-  "residentscolors": {
-    "color": [{
-        "occlss-color-variable-name": "$occlss-brand-color-dingley",
-        "occlss-color-name": "#687a48",
-        "occlss-color-sass-var-name": "#687a48"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-verdigris",
-        "occlss-color-name": "#4f5d37",
-        "occlss-color-sass-var-name": "#4f5d37"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-green-smoke",
-        "occlss-color-name": "#97ac71",
-        "occlss-color-sass-var-name": "#97ac71"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-coriander",
+        "occlss-color-variable-name": "$occlss-brand-color-coriander CHANGEME",
         "occlss-color-name": "#c2ceab",
         "occlss-color-sass-var-name": "#c2ceab"
       }
@@ -94,22 +11,7 @@
   "businescolors": {
     "color": [
       {
-        "occlss-color-variable-name": "$occlss-brand-color-wedgewood",
-        "occlss-color-name": "#417B90",
-        "occlss-color-sass-var-name": "#417B90"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-casal",
-        "occlss-color-name": "#336071",
-        "occlss-color-sass-var-name": "#336071"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-hippie-blue",
-        "occlss-color-name": "#599BB5",
-        "occlss-color-sass-var-name": "#599BB5"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-ziggurat",
+        "occlss-color-variable-name": "$occlss-brand-color-ziggurat CHANGE ME",
         "occlss-color-name": "#AECEDB",
         "occlss-color-sass-var-name": "#AECEDB"
       }
@@ -118,22 +20,7 @@
   "councilcolors": {
     "color": [
       {
-        "occlss-color-variable-name": "$occlss-brand-color-rose-of-sharon",
-        "occlss-color-name": "#b75301",
-        "occlss-color-sass-var-name": "#b75301"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-peru-tan",
-        "occlss-color-name": "#893e01",
-        "occlss-color-sass-var-name": "#893e01"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-clementine",
-        "occlss-color-name": "#e76701",
-        "occlss-color-sass-var-name": "#e76701"
-      },
-      {
-        "occlss-color-variable-name": "$occlss-brand-color-atomic-tangerine",
+        "occlss-color-variable-name": "$occlss-brand-color-atomic-tangerine CHANGE ME",
         "occlss-color-name": "#fea862",
         "occlss-color-sass-var-name": "#fea862"
       }
@@ -182,7 +69,7 @@
         "occlss-color-sass-var-name": "#ecf5fe"
       },
       {
-        "occlss-color-variable-name": "$occlss-brand-color-chateau-green",
+        "occlss-color-variable-name": "$occlss-brand-color-apple",
         "occlss-color-name": "#39b54a",
         "occlss-color-sass-var-name": "#39b54a"
       },

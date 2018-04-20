@@ -51,7 +51,7 @@ $occlss-brand-color-alabaster:     #fcfcfc;
 
 
 
-// Link
+// Link and Button colours
 $occlss-brand-color-venice-blue:   #0a549d;
 $occlss-brand-color-catalina-blue: #073d73;
 $occlss-brand-color-denim:         #0e73d8;
@@ -70,19 +70,19 @@ $occlss-brand-color-maize:         #f5de98;
 
 
 // Generic
-$occlss-brand-color-aqua-deep:      #00483a;
-$occlss-brand-color-como:           #567b6c;
-$occlss-brand-color-cascade:        #8DB0A3;
-$occlss-brand-color-hawaiian-tan:   #8D5E16;
-$occlss-brand-color-tacao:          #ecc486;
-$occlss-brand-color-givry:          #f7e7b5;
-$occlss-brand-color-lynch:          #617799;
-$occlss-brand-color-ghost:          #c9cfd9;
-$occlss-brand-color-athens-gray:    #f0f2f4;
+$occlss-brand-color-aqua-deep:      #00483a; //+++ Wayfinding colours Council
+$occlss-brand-color-como:           #567b6c; //--- ($occlss-promoted-content-panel-background-color-como)
+$occlss-brand-color-cascade:        #8DB0A3; //--- ($occlss-splitter-color)
+//$occlss-brand-color-hawaiian-tan:   #8D5E16; //---
+$occlss-brand-color-tacao:          #ecc486; //--- (Top tasks pane)
+$occlss-brand-color-givry:          #f7e7b5; //--- ($occlss-promoted-content-panel-background-color-givry)
+$occlss-brand-color-lynch:          #617799; //--- (used in lots of places)
+$occlss-brand-color-ghost:          #c9cfd9; //--- ($occlss-promoted-content-panel-background-color-ghost)
+//$occlss-brand-color-athens-gray:    #f0f2f4; //---
 
-$occlss-brand-color-pale-sky:       #667088;
-$occlss-brand-color-lochmara:       #007dc3;
-$occlss-brand-color-royal-purple:   #604099;
+//$occlss-brand-color-pale-sky:       #667088; //---
+$occlss-brand-color-lochmara:       #007dc3; //+++ Wayfinding colours Business
+$occlss-brand-color-royal-purple:   #604099; //--- ($occlss-category-nav-color-underline-council)
 
 
 
@@ -93,40 +93,39 @@ $occlss-brand-color-royal-purple:   #604099;
 
 // Wayfinding colors
 // Residents
-$occlss-brand-color-dingley:     #687a48;
-$occlss-brand-color-verdigris:   #4f5d37;
-$occlss-brand-color-green-smoke: #97ac71;
-$occlss-brand-color-coriander:   #c2ceab;
+$occlss-brand-color-dingley:     #687a48; //--- (meny places)
+//$occlss-brand-color-verdigris:   #4f5d37; //---
+//$occlss-brand-color-green-smoke: #97ac71; //---
+$occlss-brand-color-coriander:   #c2ceab; //--- (few places)
 
 
 
 
 // Business
-$occlss-brand-color-wedgewood:   #417B90;
-$occlss-brand-color-casal:       #336071;
-$occlss-brand-color-hippie-blue: #599BB5;
-$occlss-brand-color-ziggurat:    #AECEDB;
+$occlss-brand-color-wedgewood:   #417B90; //--- (meny places)
+//$occlss-brand-color-casal:       #336071; //---
+//$occlss-brand-color-hippie-blue: #599BB5; //---
+//$occlss-brand-color-ziggurat:    #AECEDB; //--- (few places)
 
 
 
 
 // Council
-$occlss-brand-color-rose-of-sharon:  #b75301;
-$occlss-brand-color-peru-tan:        #893e01;
-$occlss-brand-color-clementine:      #e76701;
-$occlss-brand-color-atomic-tangerine:#fea862;
+$occlss-brand-color-rose-of-sharon:  #b75301; //--- (meny places)
+$occlss-brand-color-peru-tan:        #893e01; //--- (meny places)
+$occlss-brand-color-clementine:      #e76701; //--- (some places)
+//$occlss-brand-color-atomic-tangerine:#fea862; //---
 
 
 
 
 // Web page messages
-$occlss-brand-color-milano-red:  #ad0505;
-$occlss-brand-color-bridesmaid:  #fee6e6;
+$occlss-brand-color-milano-red:     #ad0505;
+$occlss-brand-color-bridesmaid:     #fee6e6;
 
-$occlss-brand-color-denim:       #0e73d8;
-$occlss-brand-color-solitude:      #ecf5fe;
+$occlss-brand-color-solitude:       #ecf5fe;
 
-$occlss-brand-color-chateau-green:  #39b54a;
+$occlss-brand-color-apple:          #50B948;
 $occlss-brand-color-zanah:          #d8efd7;
 
 $occlss-brand-color-tahiti-gold:    #f3830b;
@@ -694,7 +693,7 @@ $occlss-category-nav-font-family-nav-item-selected:  $occlss-global-font-family-
 
 // Site navigation _occlss-site-nav.scss
 $occlss-site-nav-background-color:                    $occlss-brand-color-aqua-deep !default;
-$occlss-site-nav-background-color-secondary:          $occlss-brand-color-chateau-green !default;
+$occlss-site-nav-background-color-secondary:          $occlss-brand-color-apple !default;
 $occlss-site-nav-padding:                             0 24px !default;
 $occlss-site-nav-toggle-link-color-hover:             $occlss-link-color-primary-hover !default;
 
@@ -708,7 +707,6 @@ $occlss-top-tasks-pane-content-border:                3px solid $occlss-brand-co
 $occlss-top-tasks-pane-color-residents:               $occlss-brand-color-dingley !default;
 $occlss-top-tasks-pane-color-business:                $occlss-brand-color-wedgewood !default;
 $occlss-top-tasks-pane-color-council:                 $occlss-brand-color-peru-tan !default;
-//$occlss-top-tasks-pane-background:                    $occlss-brand-color-givry !default;
 $occlss-top-tasks-pane-background:                    #feead2 !default;
 
 
@@ -808,7 +806,7 @@ $occlss-alert-border-color-warning:                  $occlss-brand-color-tahiti-
 $occlss-alert-background-color-warning:              $occlss-brand-color-bleach-white !default;
 $occlss-alert-border-color-error:                    $occlss-brand-color-milano-red !default;
 $occlss-alert-background-color-error:                $occlss-brand-color-bridesmaid !default;
-$occlss-alert-border-color-success:                  $occlss-brand-color-chateau-green !default;
+$occlss-alert-border-color-success:                  $occlss-brand-color-apple !default;
 $occlss-alert-background-color-success:              $occlss-brand-color-zanah !default;
 $occlss-alert-border-color-info:                     $occlss-brand-color-denim !default;
 $occlss-alert-background-color-info:                 $occlss-brand-color-solitude !default;

@@ -38,10 +38,19 @@
     .occlss-top-tasks-pane__heading {
         border-bottom-color: $occlss-top-tasks-pane-color-business;
     }
+    .occlss-top-tasks-pane__content {
+        border-bottom-color: $occlss-top-tasks-pane-color-business;
+    }
 }
 
 .occlss-top-tasks-pane--council {
     .occlss-top-tasks-pane__heading {
         border-bottom-color: $occlss-top-tasks-pane-color-council;
+    }
+    .occlss-top-tasks-pane__content {
+        border-bottom-color: $occlss-top-tasks-pane-color-council;
+    }
+    .occlss-top-tasks-pane__wrapper {
+        background: #fff;
     }
 }

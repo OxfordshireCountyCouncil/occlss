@@ -1,5 +1,6 @@
 {
     "toptasksPane": {
+      "modeClass": "occlss-top-tasks-pane--residents",
       "tabs": [
           {
           "tabTitle": "Apply",

@@ -69,48 +69,24 @@ $occlss-brand-color-maize:         #f5de98;
 
 
 
-// Generic
-
-$occlss-brand-color-como:           #567b6c; //--- ($occlss-promoted-content-panel-background-color-como)
-$occlss-brand-color-cascade:        #8DB0A3; //--- ($occlss-splitter-color)
-$occlss-brand-color-tacao:          #ecc486; //--- (Top tasks pane)
-$occlss-brand-color-givry:          #f7e7b5; //--- ($occlss-promoted-content-panel-background-color-givry)
-$occlss-brand-color-lynch:          #617799; //--- (used in lots of places)
-$occlss-brand-color-ghost:          #c9cfd9; //--- ($occlss-promoted-content-panel-background-color-ghost)
-
-$occlss-brand-color-royal-purple:   #604099; //--- ($occlss-category-nav-color-underline-council)
-
-
-
-
-
-
-
-
 // Wayfinding colors
 // Residents
-$occlss-brand-color-aqua-deep:   #00483a; //+++ Wayfinding colours Council
+$occlss-brand-color-aqua-deep:   #00483a;    
 $occlss-brand-color-nebula:      #d3dfdd;
 
-$occlss-brand-color-dingley:     #687a48; //--- (meny places)
-$occlss-brand-color-coriander:   #c2ceab; //--- (few places)
-
 // Business
-$occlss-brand-color-lochmara:    #007dc3; //+++ Wayfinding colours Business
+$occlss-brand-color-lochmara:    #007dc3; 
 $occlss-brand-color-link-water:  #d9ecf6; 
 
-$occlss-brand-color-wedgewood:   #417B90; //--- (meny places)
 
 // Council
 $occlss-brand-color-victoria:  #503b76;
 $occlss-brand-color-snuff:     #dad3e8;
 
-$occlss-brand-color-rose-of-sharon:  #b75301; //--- (meny places)
-$occlss-brand-color-peru-tan:        #893e01; //--- (meny places)
-$occlss-brand-color-clementine:      #e76701; //--- (some places)
 
 
 
+// Generic
 // Secondary colour palette
 $occlss-brand-color-forest-green:         #24b137;
 $occlss-brand-color-harp:                 #e2f1e4;
@@ -537,8 +513,6 @@ $occlss-button-neutral-shadow:               4px 2px 6px lighten($occlss-brand-c
 $occlss-button-neutral-shadow-hover:         4px 5px 6px lighten($occlss-brand-color-mine-shaft, 60%) !default;
 
 
-
-
 // search button _occlss-button.scss
 $occlss-button-search-font-color:                   $occlss-brand-color-cod-gray !default;
 $occlss-button-search-font-color-hover:           #ffffff !default;
@@ -557,8 +531,8 @@ $occlss-button-search-shadow-primary:               0px 3px 5px lighten($occlss-
 
 // Page head _occlss-page-head.scss
 $occlss-page-head-color-residents:       $occlss-brand-color-aqua-deep !default;
-$occlss-page-head-color-business:        $occlss-brand-color-wedgewood !default;
-$occlss-page-head-color-council:         $occlss-brand-color-rose-of-sharon !default;
+$occlss-page-head-color-business:        $occlss-brand-color-lochmara !default;
+$occlss-page-head-color-council:         $occlss-brand-color-victoria !default;
 
 
 
@@ -663,7 +637,6 @@ $occlss-form-cntrls-sign-up-font-family-group-title:   $occlss-global-font-famil
 
 
 // Search place form
-//$occlss-search-place-form-bg-color:             $occlss-brand-color-coriander !default;
 $occlss-search-place-form-bg-color:             #d6d8e0 !default;
 $occlss-search-place-form-link-font-size:       $occlss-global-font-size-medium !default;
 $occlss-search-place-form-link-font-weight:     $occlss-global-font-weight-bold !default;
@@ -688,7 +661,7 @@ $occlss-category-nav-color-underline-residents:      $occlss-brand-color-aqua-de
 $occlss-category-nav-color-text-business:            #000000 !default;
 $occlss-category-nav-color-underline-business:       $occlss-brand-color-lochmara !default;
 $occlss-category-nav-color-text-council:             #000000 !default;
-$occlss-category-nav-color-underline-council:        $occlss-brand-color-royal-purple !default;
+$occlss-category-nav-color-underline-council:        $occlss-brand-color-victoria !default;
 $occlss-category-nav-font-size-nav-item-selected:    $occlss-global-font-size-xxxx-large !default;
 $occlss-category-nav-font-family-nav-item-selected:  $occlss-global-font-family-primary !default;
 
@@ -706,11 +679,11 @@ $occlss-site-nav-toggle-link-color-hover:             $occlss-link-color-primary
 
 // Pane
 // Top tasks pane _occlss-top-tasks-pane.scss
-$occlss-top-tasks-pane-heading-border:                2px solid $occlss-brand-color-tacao !default;
-$occlss-top-tasks-pane-content-border:                3px solid $occlss-brand-color-tacao !default;
-$occlss-top-tasks-pane-color-residents:               $occlss-brand-color-dingley !default;
-$occlss-top-tasks-pane-color-business:                $occlss-brand-color-wedgewood !default;
-$occlss-top-tasks-pane-color-council:                 $occlss-brand-color-peru-tan !default;
+$occlss-top-tasks-pane-heading-border:                2px solid transparent !default;
+$occlss-top-tasks-pane-content-border:                3px solid transparent !default;
+$occlss-top-tasks-pane-color-residents:               $occlss-brand-color-aqua-deep !default;
+$occlss-top-tasks-pane-color-business:                $occlss-brand-color-lochmara !default;
+$occlss-top-tasks-pane-color-council:                 $occlss-brand-color-victoria !default;
 $occlss-top-tasks-pane-background:                    #feead2 !default;
 
 
@@ -725,21 +698,18 @@ $occlss-tab-widget-font-family-tab:                      $occlss-global-font-fam
 $occlss-tab-widget-font-weight-tab:                      $occlss-global-font-weight-semibold !default;
 $occlss-tab-widget-font-size-tabs:                       $occlss-global-font-size-xxx-large !default;
 $occlss-tab-widget-font-size-tabs-active:                $occlss-global-font-size-xxxx-large !default;
-$occlss-tab-widget-font-color-tabs:                      $occlss-brand-color-rose-of-sharon !default;
-$occlss-tab-widget-font-color-tabs-hover:                $occlss-brand-color-rose-of-sharon !default;
+$occlss-tab-widget-font-color-tabs:                      $occlss-brand-color-selective-yellow !default;
+$occlss-tab-widget-font-color-tabs-hover:                $occlss-brand-color-selective-yellow !default;
 $occlss-tab-widget-font-color-tabs-active:               $occlss-brand-color-cod-gray !default;
-$occlss-tab-widget-border-color-tabs:                    $occlss-brand-color-rose-of-sharon !default;
+$occlss-tab-widget-border-color-tabs:                    $occlss-brand-color-selective-yellow !default;
 
 
 
 
 
 // Summary list _occlss-summary-list.scss
-$occlss-summary-list-border-color-item:                $occlss-brand-color-coriander !default;
-$occlss-summary-list-border-color-item-tab-widget:     $occlss-brand-color-rose-of-sharon !default;
+$occlss-summary-list-border-color-item:                $occlss-brand-color-nebula !default;
 $occlss-summary-list-font-color-tab-widget:            $occlss-brand-color-mine-shaft !default;
-$occlss-summary-list-font-color-tab-widget-hover:      $occlss-brand-color-clementine !default;
-
 
 
 
@@ -752,20 +722,16 @@ $occlss-utilities-font-color-more-link-tab-widget:     $occlss-brand-color-mine-
 
 
 // Featured panels _occlss-promoted-content-panel.scss
-$occlss-promoted-content-panel-background-color:              $occlss-brand-color-lynch !default;
-$occlss-promoted-content-panel-font-color:                    #ffffff !default;
+$occlss-promoted-content-panel-background-color:              $occlss-brand-color-nebula !default;
+$occlss-promoted-content-panel-font-color:                    $occlss-brand-color-cod-gray !default;
 $occlss-promoted-content-panel-font-size-heading:             $occlss-global-font-size-xxxxx-large !default;
 $occlss-promoted-content-panel-font-weight-heading:           $occlss-global-font-weight-bold !default;
 $occlss-promoted-content-panel-font-size-short-summary:       $occlss-global-font-size-x-large !default;
 $occlss-promoted-content-panel-font-size-intro-text:          $occlss-global-font-size-xxx-large !default;
 $occlss-promoted-content-panel-font-size-more-link:           $occlss-global-font-size-x-large !default;
 $occlss-promoted-content-panel-background-color-aqua-deep:    $occlss-brand-color-aqua-deep !default;
-$occlss-promoted-content-panel-background-color-dingley:      $occlss-brand-color-dingley !default;
-$occlss-promoted-content-panel-background-color-givry:        $occlss-brand-color-givry !default;
 $occlss-promoted-content-panel-font-color-givry:              $occlss-brand-color-mine-shaft !default;
-$occlss-promoted-content-panel-background-color-ghost:        $occlss-brand-color-ghost !default;
 $occlss-promoted-content-panel-font-color-ghost:              $occlss-brand-color-mine-shaft !default;
-$occlss-promoted-content-panel-background-color-como:         $occlss-brand-color-como !default;
 $occlss-promoted-content-panel-background-color-ronchi:       $occlss-brand-color-ronchi !default;
 $occlss-promoted-content-panel-font-color-ronchi:             $occlss-brand-color-cod-gray !default;
 
@@ -820,8 +786,8 @@ $occlss-alert-background-color-info:                 $occlss-brand-color-solitud
 
 // Carusel _owl-carousel-theme.scss
 $occlss-carusel-navbar-z-index:                        $occlss-global-zindex-unit-9 !default; 
-$occlss-carusel-nav-button-background-color:           $occlss-brand-color-lynch !default;  
-$occlss-carusel-dot-button-background-color-default:   $occlss-brand-color-lynch !default; 
+$occlss-carusel-nav-button-background-color:           $occlss-brand-color-pale-sky !default;  
+$occlss-carusel-dot-button-background-color-default:   $occlss-brand-color-pale-sky !default; 
 $occlss-carusel-dot-button-background-color-hover:     $occlss-brand-color-pizza !default;
 
 
@@ -847,9 +813,9 @@ $occlss-page-guide-border:                               1px solid $occlss-brand
 // Sidebar _occlss-sidebar-item-section.scss
 // Sidebar item section
 $occlss-sidebar-item-section-background-color:             $occlss-brand-color-mine-shaft !default;  
-$occlss-sidebar-item-section-background-color-residents:   $occlss-brand-color-dingley !default; 
-$occlss-sidebar-item-section-background-color-business:    $occlss-brand-color-wedgewood !default; 
-$occlss-sidebar-item-section-background-color-council:     $occlss-brand-color-peru-tan !default; 
+$occlss-sidebar-item-section-background-color-residents:   $occlss-brand-color-aqua-deep !default; 
+$occlss-sidebar-item-section-background-color-business:    $occlss-brand-color-lochmara !default; 
+$occlss-sidebar-item-section-background-color-council:     $occlss-brand-color-victoria !default; 
 
 
 
@@ -881,7 +847,6 @@ $occlss-a-to-z-letter-color-off:                           #989898 !default;
 $occlss-hero-pane-heading-font-family:                     $occlss-global-font-family-secondary !default;                
 $occlss-hero-pane-heading-font-weight:                     $occlss-global-font-weight-black !default;               
 $occlss-hero-pane-heading-font-color:                      $occlss-brand-color-mine-shaft !default;
-//$occlss-hero-pane-heading-bg-color:                        $occlss-brand-color-coriander !default;
 $occlss-hero-pane-heading-bg-color:                        #feead2 !default;
 
 
@@ -894,12 +859,12 @@ $occlss-popular-content-heading-font-weight:               $occlss-global-font-w
 
 
 // Splitter
-$occlss-splitter-color:                                    $occlss-brand-color-cascade !default;
+$occlss-splitter-color:                                    $occlss-brand-color-iron !default;
 
 
 
 // Trim
-$occlss-trim-border-color-primary:    $occlss-brand-color-lynch !default;
+$occlss-trim-border-color-primary:    $occlss-brand-color-pale-sky !default;
 $occlss-trim-border-color-green:      $occlss-brand-color-aqua-deep !default;
 
 

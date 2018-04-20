@@ -118,40 +118,10 @@
 }
 
 // Mods
-
-.occlss-promoted-content-panel--dingley {
-    background: $occlss-promoted-content-panel-background-color-dingley;
-}
-
 .occlss-promoted-content-panel--aqua-dee {
     background: $occlss-promoted-content-panel-background-color-aqua-deep;
 }
 
-.occlss-promoted-content-panel--givry {
-    background: $occlss-promoted-content-panel-background-color-givry;
-    color: $occlss-promoted-content-panel-font-color-givry;
-    .occlss-promoted-content-panel__link-icon {
-        fill: $occlss-promoted-content-panel-font-color-givry;
-    }
-    &:hover {
-        color: $occlss-promoted-content-panel-font-color-givry;
-    }
-}
-
-.occlss-promoted-content-panel--ghost {
-    background: $occlss-promoted-content-panel-background-color-ghost;
-    color: $occlss-promoted-content-panel-font-color-ghost;
-    .occlss-promoted-content-panel__link-icon {
-        fill: $occlss-promoted-content-panel-font-color-ghost;
-    }
-    &:hover {
-        color: $occlss-promoted-content-panel-font-color-ghost;
-    }
-}
-
-.occlss-promoted-content-panel--como {
-    background: $occlss-promoted-content-panel-background-color-como;
-}
 
 .occlss-promoted-content-panel--ronchi {
     background: $occlss-promoted-content-panel-background-color-ronchi;

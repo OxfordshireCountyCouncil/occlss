@@ -94,19 +94,6 @@
     margin-left: rem(10px);
 }
 
-.occlss-tab-widget__see-more-link {
-    display: block;
-    color: $occlss-summary-list-font-color-tab-widget;
-    &:hover {
-        .occlss-tab-widget__see-more-link-icon {
-            fill: $occlss-summary-list-font-color-tab-widget-hover;
-        }
-    }
-    &:focus {
-        @extend %highlight-bg-on-focus;
-    }
-}
-
 .is-active.occlss-tab-widget__tab-content,
 .no-js .occlss-tab-widget__tab-content {
     display: block;

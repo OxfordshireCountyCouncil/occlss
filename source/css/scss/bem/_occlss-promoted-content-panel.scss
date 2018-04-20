@@ -123,14 +123,14 @@
 }
 
 
-.occlss-promoted-content-panel--ronchi {
-    background: $occlss-promoted-content-panel-background-color-ronchi;
-    color: $occlss-promoted-content-panel-font-color-ronchi;
+.occlss-promoted-content-panel--selective-yellow {
+    background: $occlss-promoted-content-panel-background-color-selective-yellow;
+    color: $occlss-promoted-content-panel-font-color-selective-yellow;
     .occlss-promoted-content-panel__link-icon {
-        fill: $occlss-promoted-content-panel-font-color-ronchi;
+        fill: $occlss-promoted-content-panel-font-color-selective-yellow;
     }
     &:hover {
-        color: $occlss-promoted-content-panel-font-color-ronchi;
+        color: $occlss-promoted-content-panel-font-color-selective-yellow;
     }
 }
 

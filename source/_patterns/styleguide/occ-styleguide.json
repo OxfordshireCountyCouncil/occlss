@@ -1,28 +1,39 @@
 {
-  "residentscolors": {
+  "wayfindingcolours": {
     "color": [
       {
-        "occlss-color-variable-name": "$occlss-brand-color-coriander CHANGEME",
-        "occlss-color-name": "#c2ceab",
-        "occlss-color-sass-var-name": "#c2ceab"
-      }
-    ]
-  },
-  "businescolors": {
-    "color": [
+        "occlss-color-desc-title": "Residents section",
+        "occlss-color-variable-name": "$occlss-brand-color-aqua-deep",
+        "occlss-color-name": "#00483a",
+        "occlss-color-sass-var-name": "#00483a"
+      },
       {
-        "occlss-color-variable-name": "$occlss-brand-color-ziggurat CHANGE ME",
-        "occlss-color-name": "#AECEDB",
-        "occlss-color-sass-var-name": "#AECEDB"
-      }
-    ]
-  },
-  "councilcolors": {
-    "color": [
+        "occlss-color-variable-name": "$occlss-brand-color-nebula",
+        "occlss-color-name": "#d3dfdd",
+        "occlss-color-sass-var-name": "#d3dfdd"
+      },
       {
-        "occlss-color-variable-name": "$occlss-brand-color-atomic-tangerine CHANGE ME",
-        "occlss-color-name": "#fea862",
-        "occlss-color-sass-var-name": "#fea862"
+        "occlss-color-desc-title": "Business section",
+        "occlss-color-variable-name": "$occlss-brand-color-lochmara",
+        "occlss-color-name": "#007dc3",
+        "occlss-color-sass-var-name": "#007dc3"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-link-water",
+        "occlss-color-name": "#d9ecf6",
+        "occlss-color-sass-var-name": "#d9ecf6"
+      },
+
+      {
+        "occlss-color-desc-title": "Council section",
+        "occlss-color-variable-name": "$occlss-brand-color-victoria",
+        "occlss-color-name": "#503b76",
+        "occlss-color-sass-var-name": "#503b76"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-snuff",
+        "occlss-color-name": "#dad3e8",
+        "occlss-color-sass-var-name": "#dad3e8"
       }
     ]
   },
@@ -54,6 +65,7 @@
   "messagescolors": {
     "color":  [
       {
+        "occlss-color-desc-title": "Error alert",
         "occlss-color-variable-name": "$occlss-brand-color-milano-red",
         "occlss-color-name": "#ad0505",
         "occlss-color-sass-var-name": "#ad0505"
@@ -64,11 +76,18 @@
         "occlss-color-sass-var-name": "#fee6e6"
       },
       {
+        "occlss-color-desc-title": "Info alert",
+        "occlss-color-variable-name": "$occlss-brand-color-denim",
+        "occlss-color-name": "#0e73d8",
+        "occlss-color-sass-var-name": "#0e73d8"
+      },
+      {
         "occlss-color-variable-name": "$occlss-brand-color-solitude",
         "occlss-color-name": "#ecf5fe",
         "occlss-color-sass-var-name": "#ecf5fe"
       },
       {
+        "occlss-color-desc-title": "Success alert",
         "occlss-color-variable-name": "$occlss-brand-color-apple",
         "occlss-color-name": "#39b54a",
         "occlss-color-sass-var-name": "#39b54a"
@@ -79,6 +98,7 @@
         "occlss-color-sass-var-name": "#d8efd7"
       },
       {
+        "occlss-color-desc-title": "Warning alert",
         "occlss-color-variable-name": "$occlss-brand-color-tahiti-gold",
         "occlss-color-name": "#f3830b",
         "occlss-color-sass-var-name": "#f3830b"

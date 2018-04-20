@@ -7,6 +7,10 @@
   }
 }
 
+.occlss-form__listitems {
+  @extend %reset_list_style;
+}
+
 // Short search
 .occlss-form__short-search-submit {
   padding: rem(9px 20px);

@@ -26,6 +26,17 @@
             </div>
         {{/wayfindingcolours}}
 
+        <h2 class="stlgd-section-content__heading stlgd-section-content__heading--large">Secondary colour palette</h2>
+
+        {{#secondarypalette}}
+            <div class="sg-colors">
+                {{#color}}
+                {{> atoms-color-swatch }}
+                {{/color}}
+            </div>
+        {{/secondarypalette}}
+        
+
         <h2 class="stlgd-section-content__heading stlgd-section-content__heading--large">Link colours</h2>
 
         {{#linkcolors}}

@@ -37,7 +37,6 @@
       }
     ]
   },
-
   "linkcolors": {
     "color": [
       {
@@ -107,6 +106,50 @@
         "occlss-color-variable-name": "$occlss-brand-color-bleach-white",
         "occlss-color-name": "#feebd8",
         "occlss-color-sass-var-name": "#feebd8"
+      }
+    ]
+  },
+  "secondarypalette": {
+    "color": [
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-forest-green",
+        "occlss-color-name": "#24b137",
+        "occlss-color-sass-var-name": "#24b137"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-harp",
+        "occlss-color-name": "#e2f1e4",
+        "occlss-color-sass-var-name": "#e2f1e4"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-pale-sky",
+        "occlss-color-name": "#656d80",
+        "occlss-color-sass-var-name": "#656d80"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-iron",
+        "occlss-color-name": "#e0e2e5",
+        "occlss-color-sass-var-name": "#e0e2e5"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-keppel",
+        "occlss-color-name": "#38b1a0",
+        "occlss-color-sass-var-name": "#38b1a0"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-swans-down",
+        "occlss-color-name": "#dbeeea",
+        "occlss-color-sass-var-name": "#dbeeea"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-selective-yellow",
+        "occlss-color-name": "#feb603",
+        "occlss-color-sass-var-name": "#feb603"
+      },
+      {
+        "occlss-color-variable-name": "$occlss-brand-color-half-colonial-white",
+        "occlss-color-name": "#fdf3da",
+        "occlss-color-sass-var-name": "#fdf3da"
       }
     ]
   },

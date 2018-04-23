@@ -15,7 +15,6 @@
         color: $occlss-promoted-content-panel-font-color;
         text-decoration: underline;
     }
-
     &:focus {
         @extend %highlight-outline-on-focus;
     }
@@ -24,7 +23,6 @@
 
 
 // Text line sizes
-
 .occlss-promoted-content-panel__text-line--header-mega {
     font-size: rem($occlss-promoted-content-panel-text-line-font-size-header-mega);
     font-weight: $occlss-promoted-content-panel-text-line-font-weight-header-mega;
@@ -114,53 +112,41 @@
 
 
 .occlss-promoted-content-panel__link-icon {
-    fill: #ffffff;
+    fill: $occlss-promoted-content-panel-icon-color;
 }
 
-// Mods
-
-.occlss-promoted-content-panel--dingley {
-    background: $occlss-promoted-content-panel-background-color-dingley;
-}
+// Colours
 
 .occlss-promoted-content-panel--aqua-dee {
     background: $occlss-promoted-content-panel-background-color-aqua-deep;
-}
-
-.occlss-promoted-content-panel--givry {
-    background: $occlss-promoted-content-panel-background-color-givry;
-    color: $occlss-promoted-content-panel-font-color-givry;
+    color: #ffffff;
     .occlss-promoted-content-panel__link-icon {
-        fill: $occlss-promoted-content-panel-font-color-givry;
+        fill: #ffffff;
     }
     &:hover {
-        color: $occlss-promoted-content-panel-font-color-givry;
+        color: #ffffff;
     }
 }
 
-.occlss-promoted-content-panel--ghost {
-    background: $occlss-promoted-content-panel-background-color-ghost;
-    color: $occlss-promoted-content-panel-font-color-ghost;
+.occlss-promoted-content-panel--selective-yellow {
+    background: $occlss-promoted-content-panel-background-color-selective-yellow;
+}
+
+.occlss-promoted-content-panel--forest-green {
+    background: $occlss-promoted-content-panel-background-color-forest-green;
+}
+
+.occlss-promoted-content-panel--lochmara {
+    background: $occlss-promoted-content-panel-background-color-lochmara;
+    color: #ffffff;
     .occlss-promoted-content-panel__link-icon {
-        fill: $occlss-promoted-content-panel-font-color-ghost;
+        fill: #ffffff;
     }
     &:hover {
-        color: $occlss-promoted-content-panel-font-color-ghost;
+        color: #ffffff;
     }
 }
 
-.occlss-promoted-content-panel--como {
-    background: $occlss-promoted-content-panel-background-color-como;
+.occlss-promoted-content-panel--keppel {
+    background: $occlss-promoted-content-panel-background-color-keppel;
 }
-
-.occlss-promoted-content-panel--ronchi {
-    background: $occlss-promoted-content-panel-background-color-ronchi;
-    color: $occlss-promoted-content-panel-font-color-ronchi;
-    .occlss-promoted-content-panel__link-icon {
-        fill: $occlss-promoted-content-panel-font-color-ronchi;
-    }
-    &:hover {
-        color: $occlss-promoted-content-panel-font-color-ronchi;
-    }
-}
-

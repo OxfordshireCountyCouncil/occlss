@@ -15,7 +15,6 @@
         color: $occlss-promoted-content-panel-font-color;
         text-decoration: underline;
     }
-
     &:focus {
         @extend %highlight-outline-on-focus;
     }
@@ -24,7 +23,6 @@
 
 
 // Text line sizes
-
 .occlss-promoted-content-panel__text-line--header-mega {
     font-size: rem($occlss-promoted-content-panel-text-line-font-size-header-mega);
     font-weight: $occlss-promoted-content-panel-text-line-font-weight-header-mega;
@@ -114,44 +112,41 @@
 
 
 .occlss-promoted-content-panel__link-icon {
-    fill: #ffffff;
+    fill: $occlss-promoted-content-panel-icon-color;
 }
 
-// Mods
+// Colours
+
 .occlss-promoted-content-panel--aqua-dee {
     background: $occlss-promoted-content-panel-background-color-aqua-deep;
+    color: #ffffff;
+    .occlss-promoted-content-panel__link-icon {
+        fill: #ffffff;
+    }
+    &:hover {
+        color: #ffffff;
+    }
 }
-
 
 .occlss-promoted-content-panel--selective-yellow {
     background: $occlss-promoted-content-panel-background-color-selective-yellow;
-    color: $occlss-promoted-content-panel-font-color-selective-yellow;
+}
+
+.occlss-promoted-content-panel--forest-green {
+    background: $occlss-promoted-content-panel-background-color-forest-green;
+}
+
+.occlss-promoted-content-panel--lochmara {
+    background: $occlss-promoted-content-panel-background-color-lochmara;
+    color: #ffffff;
     .occlss-promoted-content-panel__link-icon {
-        fill: $occlss-promoted-content-panel-font-color-selective-yellow;
+        fill: #ffffff;
     }
     &:hover {
-        color: $occlss-promoted-content-panel-font-color-selective-yellow;
+        color: #ffffff;
     }
 }
 
-
-/// SORT THIS OUT
-.occlss-promoted-content-panel--a,
-.occlss-promoted-content-panel--e,
-.occlss-promoted-content-panel--c {
-    background: #00483a;
+.occlss-promoted-content-panel--keppel {
+    background: $occlss-promoted-content-panel-background-color-keppel;
 }
-
-.occlss-promoted-content-panel--b,
-.occlss-promoted-content-panel--d {
-    background: #f9a33f;
-    color: #1a1a1a;
-    .occlss-promoted-content-panel__link-icon {
-        fill: #1a1a1a;
-    }
-    &:active,
-    &:hover {
-        color: #1a1a1a;
-    }
-}
-

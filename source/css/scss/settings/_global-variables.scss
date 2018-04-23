@@ -722,18 +722,16 @@ $occlss-utilities-font-color-more-link-tab-widget:     $occlss-brand-color-mine-
 
 
 // Featured panels _occlss-promoted-content-panel.scss
-$occlss-promoted-content-panel-background-color:                           $occlss-brand-color-nebula !default;
+$occlss-promoted-content-panel-background-color:                           transparent !default;
 $occlss-promoted-content-panel-font-color:                                 $occlss-brand-color-cod-gray !default;
-$occlss-promoted-content-panel-font-size-heading:                          $occlss-global-font-size-xxxxx-large !default;
-$occlss-promoted-content-panel-font-weight-heading:                        $occlss-global-font-weight-bold !default;
-$occlss-promoted-content-panel-font-size-short-summary:                    $occlss-global-font-size-x-large !default;
-$occlss-promoted-content-panel-font-size-intro-text:                       $occlss-global-font-size-xxx-large !default;
-$occlss-promoted-content-panel-font-size-more-link:                        $occlss-global-font-size-x-large !default;
+$occlss-promoted-content-panel-icon-color:                                 $occlss-brand-color-cod-gray !default;
+
 $occlss-promoted-content-panel-background-color-aqua-deep:                 $occlss-brand-color-aqua-deep !default;
-$occlss-promoted-content-panel-font-color-givry:                           $occlss-brand-color-mine-shaft !default;
-$occlss-promoted-content-panel-font-color-ghost:                           $occlss-brand-color-mine-shaft !default;
 $occlss-promoted-content-panel-background-color-selective-yellow:          $occlss-brand-color-selective-yellow !default;
-$occlss-promoted-content-panel-font-color-selective-yellow:                          $occlss-brand-color-cod-gray !default;
+
+$occlss-promoted-content-panel-background-color-forest-green:              $occlss-brand-color-forest-green !default;
+$occlss-promoted-content-panel-background-color-lochmara:                  $occlss-brand-color-lochmara !default;
+$occlss-promoted-content-panel-background-color-keppel:                    $occlss-brand-color-keppel !default;
 
 
 $occlss-promoted-content-panel-text-line-font-size-header-mega:            60px !default;

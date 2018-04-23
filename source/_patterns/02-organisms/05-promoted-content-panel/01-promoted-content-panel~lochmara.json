@@ -1,0 +1,13 @@
+{
+    "featuredPanelDefault" : {
+        "promoted-content-panel-mod-class": "occlss-promoted-content-panel--lochmara",
+        "promoted-content-panel-url": "javascript:void(0);",
+        "promoted-content-panel-textlines": [
+            {
+                "promoted-content-panel-textline-mode-class": "",
+                "promoted-content-panel-textline-text": "Lochmara colour ",
+                "promoted-content-panel-textline-arrow": false
+            }
+        ]
+    }
+}

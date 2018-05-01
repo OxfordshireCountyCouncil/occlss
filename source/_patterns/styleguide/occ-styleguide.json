@@ -14,9 +14,9 @@
       },
       {
         "occlss-color-desc-title": "Business section",
-        "occlss-color-variable-name": "$occlss-brand-color-lochmara",
-        "occlss-color-name": "#007dc3",
-        "occlss-color-sass-var-name": "#007dc3"
+        "occlss-color-variable-name": "$occlss-brand-color-boston-blue",
+        "occlss-color-name": "#3a78bb",
+        "occlss-color-sass-var-name": "#3a78bb"
       },
       {
         "occlss-color-variable-name": "$occlss-brand-color-link-water",

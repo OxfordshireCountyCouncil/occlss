@@ -641,7 +641,7 @@ $occlss-search-place-form-bg-color:             #d6d8e0 !default;
 $occlss-search-place-form-link-font-size:       $occlss-global-font-size-medium !default;
 $occlss-search-place-form-link-font-weight:     $occlss-global-font-weight-bold !default;
 $occlss-search-place-form-link-color-hover:     $occlss-brand-color-catalina-blue !default;
-
+$occlss-search-place-form-link-color-disabled:  $occlss-brand-color-pale-sky !default;
 
 
 
@@ -877,3 +877,8 @@ $occlss-facets-link-color-primary:    #000000;
 
 // Pager
 $occlss-pager-border-radius:    5px;
+
+
+// Loading bar
+$occlss-loading-bar-icon-colors:            $occlss-brand-color-pale-sky;   
+$occlss-loading-bar-icon-dark-gray-colors:  $occlss-brand-color-pale-sky;

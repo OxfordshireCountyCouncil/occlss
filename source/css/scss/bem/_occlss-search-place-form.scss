@@ -30,12 +30,20 @@
     vertical-align: bottom;
     font-size: ($occlss-search-place-form-link-font-size);
     font-weight: $occlss-search-place-form-link-font-weight;
+    transition: all 0.5s ease;
     &:hover {
         color: $occlss-search-place-form-link-color-hover;
         text-decoration: none;
     }
     &:focus {
         @extend %highlight-bg-on-focus;
+    }
+    &.is-disabled {
+        color: $occlss-search-place-form-link-color-disabled;
+        pointer-events: none;
+        text-decoration: none;
+        background-color: transparent;
+        outline: transparent;
     }
 }
 
@@ -56,4 +64,3 @@
         }
     }
 }
-

@@ -210,6 +210,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-facets";
 @import "node_modules/occlss/scss/bem/occlss-co";
 @import "node_modules/occlss/scss/bem/occlss-pager";
+@import "node_modules/occlss/scss/bem/occlss-loading-bar";
 
 
 // UTILITIES

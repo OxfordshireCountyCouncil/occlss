@@ -95,3 +95,61 @@ $trim-width:(
         }
     }
 }
+
+
+// Hide
+
+.occlss-u-hide-xs {
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        display: none;
+    }
+}
+
+.occlss-u-hide-sm {
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        display: none;
+    }
+}
+
+.occlss-u-hide-md {
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        display: none;
+    }  
+}
+
+
+.occlss-u-hide-lg {
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+        display: none;
+    }
+}
+
+// Show
+
+.occlss-u-show-xs {
+    display: none;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        display: block;
+    }
+}
+
+.occlss-u-show-sm {
+    display: none;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        display: block;
+    }
+}
+
+.occlss-u-show-md {
+    display: none;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        display: block;
+    }  
+}
+
+.occlss-u-show-lg {
+    display: none;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+        display: block;
+    }
+}

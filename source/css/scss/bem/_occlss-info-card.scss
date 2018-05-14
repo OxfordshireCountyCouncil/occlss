@@ -12,9 +12,18 @@
     &__label {
         font-weight: 700;
         padding: 0 10px 0 0;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            margin-bottom: rem(6px);
+        }
     }
     &__content {
         padding: 0;
         display: inline-block;
+    }
+    &__cont_row {
+        margin-bottom: rem(6px);
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            margin-bottom: rem(12px);
+        }
     }
 }

@@ -1,5 +1,8 @@
 .occlss-hero-pane {
     background-repeat: no-repeat;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+       background: none!important;
+    }
 }
 
 .occlss-hero-pane__heading {
@@ -14,6 +17,11 @@
     font-family: $occlss-hero-pane-heading-font-family;
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         line-height: 1;
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        width: 100%;
+        margin-top: 0;
+        padding: rem(38px 17px 17px 17px);
     }
 }
 

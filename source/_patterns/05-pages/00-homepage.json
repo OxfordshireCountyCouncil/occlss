@@ -15,13 +15,13 @@
                 "name":"Business",
                 "modeClass": "occlss-category-nav__item--business",
                 "state":"",
-                "linkURL": "https://www.oxfordshire.gov.uk/cms/public-site/business"
+                "linkURL": "link.pages-business"
             },
             {
                 "name":"Council",
                 "modeClass": "occlss-category-nav__item--council",
                 "state":"",
-                "linkURL": "https://www.oxfordshire.gov.uk/cms/public-site/about-your-council"
+                "linkURL": "link.pages-council"
             }
         ]
     }

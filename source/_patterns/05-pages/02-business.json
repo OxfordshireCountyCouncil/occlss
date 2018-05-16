@@ -49,6 +49,42 @@
             "listItem-link-url":  "javascript:void(0);"
         }
         ]
+    },
+    "toptasksPane": {
+          "modeClass": "occlss-top-tasks-pane--business",
+          "tabs": [
+              {
+              "tabTitle": "Services",
+              "summaryList":{
+                  "list-mod-class": "occlss-summary-list--tasks-pane",
+                  "listItem": [
+                  {
+                      "listItem-link-name": "Apply for a license",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/licences-and-permits"
+                  },
+                  {
+                      "listItem-link-name": "Apprenticeships",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/apprenticeships"
+                  },
+                  {
+                      "listItem-link-name": "Request a dropped curb",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/dropped-kerbs"
+                  },
+                  {
+                      "listItem-link-name": "Commercial waste disposal",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/commercial-trade-waste"
+                  }
+                  ]
+              }
+          }
+        ]
     }
-      
 }

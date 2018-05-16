@@ -845,7 +845,10 @@ $occlss-a-to-z-letter-color-off:                           #989898 !default;
 $occlss-hero-pane-heading-font-family:                     $occlss-global-font-family-secondary !default;                
 $occlss-hero-pane-heading-font-weight:                     $occlss-global-font-weight-black !default;               
 $occlss-hero-pane-heading-font-color:                      $occlss-brand-color-mine-shaft !default;
-$occlss-hero-pane-heading-bg-color:                        #feead2 !default;
+$occlss-hero-pane-heading-bg-color:                        #fff !default;
+$occlss-hero-pane-heading-bg-color-residents:              #feead2 !default;
+$occlss-hero-pane-heading-bg-color-business:               $occlss-brand-color-link-water !default;
+$occlss-hero-pane-heading-bg-color-council:                $occlss-brand-color-snuff  !default;
 
 
 // Popular content panel

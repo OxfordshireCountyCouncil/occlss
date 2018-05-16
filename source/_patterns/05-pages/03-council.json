@@ -48,5 +48,42 @@
             "listItem-link-url":  "javascript:void(0);"
         }
         ]
+    },
+    "toptasksPane": {
+        "modeClass": "occlss-top-tasks-pane--council",
+        "tabs": [
+            {
+            "tabTitle": "Services",
+            "summaryList":{
+                "list-mod-class": "occlss-summary-list--tasks-pane",
+                "listItem": [
+                {
+                    "listItem-link-name": "Find your councillor",
+                    "listItem-mod-class": "",
+                    "listItem-link-mod-class": "",
+                    "listItem-link-url":  "#"
+                },
+                {
+                    "listItem-link-name": "How to comment",
+                    "listItem-mod-class": "",
+                    "listItem-link-mod-class": "",
+                    "listItem-link-url":  "#"
+                },
+                {
+                    "listItem-link-name": "Contact your council",
+                    "listItem-mod-class": "",
+                    "listItem-link-mod-class": "",
+                    "listItem-link-url":  "#"
+                },
+                {
+                    "listItem-link-name": "Browse committee papers",
+                    "listItem-mod-class": "",
+                    "listItem-link-mod-class": "",
+                    "listItem-link-url":  "#"
+                }
+                ]
+            }
+        }
+      ]
     }
 }

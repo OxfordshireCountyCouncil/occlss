@@ -1,7 +1,8 @@
-<div class="occlss-layout occlss-layout--bleed">
-    <div class="occlss-layout__col">
-        <div class="occlss-hero-pane {{^occlss-hero-image}} occlss-hero-pane--no-image {{/occlss-hero-image}} {{ occlss-hero-spacing }}" {{#occlss-hero-image}} style="background-image: url({{ occlss-hero-image }});"{{/occlss-hero-image}}>
-            <h1 class="occlss-hero-pane__heading">{{ occlss-hero-title }}</h1>
+<div class="occlss-layout">
+    <div class="occlss-layout__col occlss-layout__col--bleed">
+        <div class="occlss-hero-pane {{^occlss-hero-image}} {{/occlss-hero-image}} {{ occlss-hero-spacing }} {{ occlss-hero-mod-class }} " {{#occlss-hero-image}} style="background-image: url({{ occlss-hero-image }});"{{/occlss-hero-image}}>
+            <h1 class="occlss-hero-pane__heading {{ occlss-hero-heading-mod }}">{{ occlss-hero-title }}</h1>
+            {{> organisms-top-tasks-pane }}
         </div>
     </div>
 </div>

@@ -1,5 +1,6 @@
 .occlss-top-tasks-pane {
     &__wrapper {
+        //@extend .occlss-wrapper;
         background: $occlss-top-tasks-pane-background;
     }
 }
@@ -41,6 +42,24 @@
     .occlss-top-tasks-pane__content {
         border-bottom-color: $occlss-top-tasks-pane-color-business;
     }
+    .occlss-top-tasks-pane__wrapper {
+        background: transparent; 
+    }
+    .occlss-top-tasks-pane__layout {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .occlss-top-tasks-pane__col {
+        padding-left: rem(32px);
+        padding-right: rem(90px);
+        background: #fff;
+        width: auto;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            width: 100%;
+            padding-left: rem(16px);
+            padding-right: rem(16px);
+        }
+    }
 }
 
 .occlss-top-tasks-pane--council {
@@ -51,6 +70,21 @@
         border-bottom-color: $occlss-top-tasks-pane-color-council;
     }
     .occlss-top-tasks-pane__wrapper {
+        background: transparent; 
+    }
+    .occlss-top-tasks-pane__layout {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .occlss-top-tasks-pane__col {
+        padding-left: rem(32px);
+        padding-right: rem(90px);
         background: #fff;
+        width: auto;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            width: 100%;
+            padding-left: rem(16px);
+            padding-right: rem(16px);
+        }
     }
 }

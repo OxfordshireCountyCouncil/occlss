@@ -25,9 +25,29 @@
     }
 }
 
+.occlss-hero-pane__heading--residents {
+    background-color: $occlss-hero-pane-heading-bg-color-residents;
+}
 
+.occlss-hero-pane__heading--business {
+    background-color: $occlss-hero-pane-heading-bg-color-business;
+}
+
+.occlss-hero-pane__heading--council {
+    background-color: $occlss-hero-pane-heading-bg-color-council;
+}
+
+.occlss-hero-pane--lgimage {
+    padding-bottom: rem(20px);
+    .occlss-hero-pane__heading  {
+        margin-top: 0;
+    }
+}
+
+// If no image it will remove pagging from the top of the pannel
 .occlss-hero-pane--no-image {
     .occlss-hero-pane__heading  {
         margin-top: 0;
     }
 }
+

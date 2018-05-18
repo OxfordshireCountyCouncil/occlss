@@ -7,8 +7,21 @@
     </div>
   </section>
 
-  {{> sections-categories-grid-section }} 
-  {{> sections-promoted-content-panel-grid-section }}
+<section role="tablist" aria-live="polite">
+    <div class="occlss-wrapper"><!--START wrapper block-->
+      <div class="occlss-layout occlss-layout--popular-content-grid occlss-layout--gutter-s"><!--START layout block-->
+          {{> sections-categories-grid-section }}
+      </div><!--End layout elemnt -->
+    </div>
+</section>
+<section>
+    <div class="occlss-wrapper"><!--START wrapper block-->
+      <div class="occlss-layout occlss-layout--gutter-s"><!--START layout block-->
+          {{> sections-promoted-content-panel-grid-section }}
+        </div><!--End layout elemnt -->
+    </div>
+</section>
+
   {{> sections-recent-news-section }}
 </main>
 

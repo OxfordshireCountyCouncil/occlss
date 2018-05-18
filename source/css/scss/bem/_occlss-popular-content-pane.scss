@@ -57,10 +57,35 @@
 }
 
 
+.occlss-popular-content-pane--residents {
+    &.occlss-popular-content-pane:after {     
+        border-bottom-color: $occlss-popular-content-color-residents;
+    }
+    
+    .occlss-popular-content-pane__heading {
+        background: $occlss-popular-content-color-residents;
+    }
+}
 
+.occlss-popular-content-pane--business {
+    &.occlss-popular-content-pane:after  {
+        border-bottom-color: $occlss-popular-content-color-business;
+    }
+    
+    .occlss-popular-content-pane__heading {
+        background: $occlss-popular-content-color-business;
+    }
+}
 
-
-
+.occlss-popular-content-pane--council {
+    &.occlss-popular-content-pane:after  {
+        border-bottom-color: $occlss-popular-content-color-council;
+    }
+    
+    .occlss-popular-content-pane__heading {
+        background: $occlss-popular-content-color-council;
+    }
+}
 
 
 

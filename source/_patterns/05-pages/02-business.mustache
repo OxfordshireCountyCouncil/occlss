@@ -8,23 +8,78 @@
       {{> organisms-hero-pane(occlss-hero-title: "Business", occlss-hero-image: "../../images/demo/hero-image-3.jpg", occlss-hero-mod-class: "occlss-hero-pane--lgimage",occlss-hero-heading-mod: "occlss-hero-pane__heading--business") }}     
     </div>
   </section>
-  
-<section>
+  <section>
     <div class="occlss-wrapper"><!--START wrapper block-->
       <div class="occlss-layout occlss-layout--gutter-s occlss-u-tspace-sm"><!--START layout block-->
-        {{> sections-recent-news-section }}
+        
+        <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--md-3">
+          <a href="#" class="occlss-promoted-content-panel occlss-promoted-content-panel--aqua-dee">
+            <div class="occlss-promoted-content-panel__content">
+              <div class="occlss-promoted-content-panel__text-line occlss-promoted-content-panel__text-line--header-small">
+                All the news
+                <span class="occlss-icon occlss-icon--arrow-right-long-right-secondary" aria-hidden="true">
+                  <svg aria-hidden="true" class="occlss-icon__container occlss-promoted-content-panel__link-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#arrow-right-long-right-secondary"
+                      class="icon__source icon__source--svg"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--md-4">
+          <a href="#" class="occlss-promoted-content-panel occlss-promoted-content-panel--boston-blue">
+            <div class="occlss-promoted-content-panel__content">
+              <div class="occlss-promoted-content-panel__text-line occlss-promoted-content-panel__text-line--header-small">
+                Licences and permits
+                <span class="occlss-icon occlss-icon--arrow-right-long-right-secondary" aria-hidden="true">
+                  <svg aria-hidden="true" class="occlss-icon__container occlss-promoted-content-panel__link-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#arrow-right-long-right-secondary"
+                      class="icon__source icon__source--svg"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--md-5">
+          <a href="#" class="occlss-promoted-content-panel occlss-promoted-content-panel--boston-blue">
+            <div class="occlss-promoted-content-panel__content">
+              <div class="occlss-promoted-content-panel__text-line occlss-promoted-content-panel__text-line--header-small">
+                Advice for businesses
+                <span class="occlss-icon occlss-icon--arrow-right-long-right-secondary" aria-hidden="true">
+                  <svg aria-hidden="true" class="occlss-icon__container occlss-promoted-content-panel__link-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#arrow-right-long-right-secondary"
+                      class="icon__source icon__source--svg"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div><!--End layout elemnt -->
     </div>
 </section>
-
- <section role="tablist" aria-live="polite">
-    <div class="occlss-wrapper"><!--START wrapper block-->
-      <div class="occlss-layout occlss-layout--popular-content-grid occlss-layout--gutter-s"><!--START layout block-->
-          {{> sections-categories-grid-section }}
-          {{> sections-promoted-content-panel-grid-section }}
+  <section>
+      <div class="occlss-wrapper"><!--START wrapper block-->
+        <div class="occlss-layout occlss-layout--gutter-s"><!--START layout block-->
+          {{> sections-recent-news-section }}
         </div><!--End layout elemnt -->
-    </div>
-</section>
+      </div>
+  </section>
+
+  <section role="tablist" aria-live="polite">
+      <div class="occlss-wrapper"><!--START wrapper block-->
+        <div class="occlss-layout occlss-layout--popular-content-grid occlss-layout--gutter-s occlss-u-tpspace-none"><!--START layout block-->
+            {{> sections-categories-grid-section }}
+            {{> sections-promoted-content-panel-grid-section }}
+          </div><!--End layout elemnt -->
+      </div>
+  </section>
 
 </main>
 

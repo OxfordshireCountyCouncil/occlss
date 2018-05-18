@@ -1,8 +1,8 @@
 .occlss-card {
-    margin-bottom: rem(24px);
+    /*margin-bottom: rem(24px);
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         margin-bottom: 0;
-    }
+    }*/
 }
 
 .occlss-card__image-container {
@@ -46,7 +46,7 @@
 }
 
 .occlss-card__main {
-    margin-bottom: rem(26px);
+    margin-bottom: 0;
     line-height: 1;
 }
 
@@ -64,4 +64,8 @@
         @extend %highlight-bg-on-focus;
         text-decoration: underline;     
     }
+}
+
+.occlss-card__paragraph {
+    margin-bottom: 0;
 }

@@ -150,3 +150,14 @@
 .occlss-promoted-content-panel--keppel {
     background: $occlss-promoted-content-panel-background-color-keppel;
 }
+
+.occlss-promoted-content-panel--pale-sky {
+    background: $occlss-promoted-content-panel-background-color-pale-sky;
+    color: #ffffff;
+    .occlss-promoted-content-panel__link-icon {
+        fill: #ffffff;
+    }
+    &:hover {
+        color: #ffffff;
+    }
+}

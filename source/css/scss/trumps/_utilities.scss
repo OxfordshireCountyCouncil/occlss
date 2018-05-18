@@ -63,6 +63,20 @@ $margin-toplist:(
     }
 }
 
+// top padding space
+$padding-toplist:(
+  none: 0,
+  xs: 6,
+  sm: 12,
+  md: 25,
+  large: 50
+);
+
+@each $key,$val in $padding-toplist {
+    .occlss-u-tpspace-#{$key} {
+        padding-top: ($val / 16) * 1rem;
+    }
+}
 
 // bottom space
 $margin-bottomlist:(
@@ -76,6 +90,21 @@ $margin-bottomlist:(
 @each $key,$val in $margin-bottomlist {
     .occlss-u-bspace-#{$key} {
         margin-bottom: ($val / 16) * 1rem;
+    }
+}
+
+// bottom padding space
+$padding-bottomlist:(
+  none: 0,
+  xs: 6,
+  sm: 12,
+  md: 25,
+  large: 50
+);
+
+@each $key,$val in $padding-bottomlist {
+    .occlss-u-bpspace-#{$key} {
+        padding-bottom: ($val / 16) * 1rem;
     }
 }
 

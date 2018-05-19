@@ -1,0 +1,89 @@
+{
+	"title" : "Council page",
+	"bodyClass": "council",
+    "emergency" : false,
+    "selectedCategoryClass":"occlss-page-head__wraper--council",
+    "category_nav": {
+        "nav_link": [
+            {
+                "name": "Residents",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state": "",
+                "linkURL": "link.pages-homepage"
+            },
+            {
+                "name":"Business",
+                "modeClass": "occlss-category-nav__item--business",
+                "state": "",
+                "linkURL": "link.pages-business"
+            },
+            {
+                "name":"Council",
+                "modeClass": "occlss-category-nav__item--council",
+                "state": "active",
+                "linkURL": "link.pages-council"
+            }
+        ]
+    },
+    "sidebarItemSection":{
+        "section-title": "Parking",
+        "section-modclass": "occlss-sidebar-item-section--council",
+        "listItem": [
+        {
+            "listItem-link-name": "Controlled parking zones",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Blue badge",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Bicester resident's parking",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        }
+        ]
+    },
+    "toptasksPane": {
+        "modeClass": "occlss-top-tasks-pane--council",
+        "tabs": [
+            {
+            "tabTitle": "Services",
+            "summaryList":{
+                "list-mod-class": "occlss-summary-list--tasks-pane",
+                "listItem": [
+                {
+                    "listItem-link-name": "Find your councillor",
+                    "listItem-mod-class": "",
+                    "listItem-link-mod-class": "",
+                    "listItem-link-url":  "#"
+                },
+                {
+                    "listItem-link-name": "How to comment",
+                    "listItem-mod-class": "",
+                    "listItem-link-mod-class": "",
+                    "listItem-link-url":  "#"
+                },
+                {
+                    "listItem-link-name": "Contact your council",
+                    "listItem-mod-class": "",
+                    "listItem-link-mod-class": "",
+                    "listItem-link-url":  "#"
+                },
+                {
+                    "listItem-link-name": "Browse committee papers",
+                    "listItem-mod-class": "",
+                    "listItem-link-mod-class": "",
+                    "listItem-link-url":  "#"
+                }
+                ]
+            }
+        }
+      ]
+    }
+}

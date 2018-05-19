@@ -15,7 +15,7 @@
                 "name":"Business",
                 "modeClass": "occlss-category-nav__item--business",
                 "state":"active",
-                "linkURL": "link.pages-homepage"
+                "linkURL": "link.pages-business"
             },
             {
                 "name":"Council",

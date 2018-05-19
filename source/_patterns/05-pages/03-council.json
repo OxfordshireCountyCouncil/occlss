@@ -25,30 +25,6 @@
             }
         ]
     },
-    "sidebarItemSection":{
-        "section-title": "Parking",
-        "section-modclass": "occlss-sidebar-item-section--council",
-        "listItem": [
-        {
-            "listItem-link-name": "Controlled parking zones",
-            "listItem-mod-class": "",
-            "listItem-link-mod-class": "",
-            "listItem-link-url":  "javascript:void(0);"
-        },
-        {
-            "listItem-link-name": "Blue badge",
-            "listItem-mod-class": "",
-            "listItem-link-mod-class": "",
-            "listItem-link-url":  "javascript:void(0);"
-        },
-        {
-            "listItem-link-name": "Bicester resident's parking",
-            "listItem-mod-class": "",
-            "listItem-link-mod-class": "",
-            "listItem-link-url":  "javascript:void(0);"
-        }
-        ]
-    },
     "toptasksPane": {
           "modeClass": "occlss-top-tasks-pane--council",
           "tabs": [
@@ -58,28 +34,28 @@
                   "list-mod-class": "occlss-summary-list--tasks-pane",
                   "listItem": [
                   {
-                      "listItem-link-name": "Apply for a license",
+                      "listItem-link-name": "Find your councillor",
                       "listItem-mod-class": "",
                       "listItem-link-mod-class": "",
-                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/licences-and-permits"
+                      "listItem-link-url":  "http://mycouncil.oxfordshire.gov.uk/mgMemberIndex.aspx?VW=TABLE&amp;PIC=1&amp;bcr=1"
                   },
                   {
-                      "listItem-link-name": "Apprenticeships",
+                      "listItem-link-name": "How to comment",
                       "listItem-mod-class": "",
                       "listItem-link-mod-class": "",
-                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/apprenticeships"
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/comments-compliments-and-complaints-about-oxfordshire-county-council"
                   },
                   {
-                      "listItem-link-name": "Request a dropped curb",
+                      "listItem-link-name": "Contact your council",
                       "listItem-mod-class": "",
                       "listItem-link-mod-class": "",
-                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/dropped-kerbs"
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/contact-oxfordshire-county-council"
                   },
                   {
-                      "listItem-link-name": "Commercial waste disposal",
+                      "listItem-link-name": "Browse committee papers",
                       "listItem-mod-class": "",
                       "listItem-link-mod-class": "",
-                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/commercial-trade-waste"
+                      "listItem-link-url":  "http://mycouncil.oxfordshire.gov.uk/ieDocHome.aspx?bcr=1"
                   }
                   ]
               }
@@ -131,7 +107,7 @@
             },
             {
                 "popular-content-pane-heading": "Licences and permits",
-                "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
                 "popular-content-pane-view-more-link-name": "More licenses and permits",
                 "popular-content-pane-view-more-link-url": "https://www2.oxfordshire.gov.uk/cms/public-site/licences-and-permits",
                 "summaryList":{
@@ -172,7 +148,7 @@
             } ,
             {
                 "popular-content-pane-heading": "Advice for businesses",
-                "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
                 "popular-content-pane-view-more-link-name": "More advice for businesses",
                 "popular-content-pane-view-more-link-url": "https://www2.oxfordshire.gov.uk/cms/public-site/advice-businesses",
                 "summaryList":{
@@ -213,7 +189,7 @@
             },
             {
                 "popular-content-pane-heading": "More in this section",
-                "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
                 "popular-content-pane-view-more-link-name": "",
                 "popular-content-pane-view-more-link-url": "",
                 "summaryList":{
@@ -256,25 +232,6 @@
   },
   "featuredPanelGridSection": {
     "featuredPanels": [
-        {
-            "panel-size": "occlss-layout__col--lg-4 occlss-layout__col--md-6",
-            "featuredPanelDefault" : {
-                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--boston-blue",
-                "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/content/school-term-dates-and-holidays/",
-                "promoted-content-panel-textlines": [
-                    {
-                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-small",
-                        "promoted-content-panel-textline-text": "Current contract opportunities",
-                        "promoted-content-panel-textline-arrow": false
-                    },
-                    {
-                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
-                        "promoted-content-panel-textline-text": "View the latest contract opportunities on the South East Centre of Excellence's (SECE) Portal",
-                        "promoted-content-panel-textline-arrow": true
-                    }
-                ]
-            }
-        },
         {
             "panel-size": "occlss-layout__col--lg-4 occlss-layout__col--md-6",
             "featuredPanelDefault" : {

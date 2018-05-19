@@ -161,3 +161,15 @@
         color: #ffffff;
     }
 }
+
+.occlss-promoted-content-panel--victoria {
+    background: $occlss-promoted-content-panel-background-color-victoria;
+    color: #ffffff;
+    .occlss-promoted-content-panel__link-icon {
+        fill: #ffffff;
+    }
+    &:hover {
+        color: #ffffff;
+    }
+}
+

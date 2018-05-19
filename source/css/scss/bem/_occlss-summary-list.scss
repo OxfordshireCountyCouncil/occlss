@@ -18,6 +18,9 @@
     border-bottom: rem(1px solid $occlss-summary-list-border-color-item);
 }
 
+.occlss-summary-list__link {
+    padding-bottom: rem(6px);
+}
 
 .occlss-summary-list--tasks-pane,
 .occlss-summary-list--popular-content-pane {

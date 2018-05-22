@@ -115,8 +115,6 @@
     .occlss-category-nav__link {
         margin: 0;
         padding: rem(0 30px 0 0);
-        pointer-events: none;
-        cursor: default;
         font-family: $occlss-category-nav-font-family-nav-item-selected;
         @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
             font-size: rem($occlss-category-nav-font-size-nav-item-selected);
@@ -129,5 +127,12 @@
         &:after {
             display: none;
         }
+    }
+}
+
+.is-disabled {
+    .occlss-category-nav__link {
+        pointer-events: none;
+        cursor: default;
     }
 }

@@ -4,6 +4,10 @@
   var $popularContentPanes = $('.js-occlss-popular-content-pane');
   
   var popularContentPaneSetup = function($pane, $allPanes, i) {
+      $pane.children().children().children().children().on('focus', function () {
+        if (!$(this).data("mouseDown") && !$(this).parents('.js-occlss-popular-content-pane').hasClass('is-active'))
+          $(this).parents('.js-occlss-popular-content-pane').click();
+      });
       $pane.on('focus', function () {
         if (!$(this).data("mouseDown"))
           $(this).click();

@@ -21,8 +21,8 @@
       $pane.on('click', function (e) {
         if ($(this).hasClass('is-active')) {
           //Close the current section
-          $allPanes.removeClass('is-active');
-          $('.collapsing-section').slideUp();
+          //$allPanes.removeClass('is-active');
+          //$('.collapsing-section').slideUp();
         } else {
           //close the prev section & open the newly click
           $allPanes.removeClass('is-active');

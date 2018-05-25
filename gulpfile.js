@@ -349,8 +349,8 @@ gulp.task('minify-default-css', function(done) {
 /******************************************************
  * COMPOUND TASKS
 ******************************************************/
-//gulp.task('default', gulp.series('patternlab:build'));
+gulp.task('default', gulp.series('patternlab:build'));
 gulp.task('gen', gulp.series('genCSSframework','genNodeModule'));
 gulp.task('patternlab:watch', gulp.series('patternlab:build', watch));
 gulp.task('patternlab:serve', gulp.series('clean:svgicons', 'svg-sprite-create', 'split-svg-mustache','patternlab:build', 'patternlab:connect', watch));
-gulp.task('default', gulp.series('clean:svgicons', 'svg-sprite-create', 'split-svg-mustache','patternlab:build', 'patternlab:connect', watch));
+gulp.task('start', gulp.series('clean:svgicons', 'svg-sprite-create', 'split-svg-mustache','patternlab:build', 'patternlab:connect', watch));

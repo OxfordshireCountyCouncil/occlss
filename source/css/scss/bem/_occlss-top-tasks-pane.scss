@@ -21,9 +21,15 @@
     font-size: rem($occlss-top-tasks-pane-heading-font-size);
 }
 
+.occlss-top-tasks-pane__col {
+    display: flex;
+    flex-direction: column;
+}
+
 .occlss-top-tasks-pane__content {
     border-bottom: rem($occlss-top-tasks-pane-content-border);
     padding-bottom: rem(10px);
+    flex: 1;
 }
 
 .occlss-top-tasks-pane--residents {

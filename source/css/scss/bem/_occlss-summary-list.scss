@@ -1,6 +1,5 @@
 .occlss-summary-list {
     @extend %reset_list_style;
-    //margin-bottom: rem(10px);
 }
 
 .occlss-summary-list--indented {
@@ -8,19 +7,16 @@
 }
 
 .occlss-summary-list__item {
-    //padding-bottom: rem(4px);
     margin-bottom: 0;
     margin-left: 0;
 }
 
 .occlss-summary-list__item--underlined {
-    //margin-bottom: rem(7px);
     border-bottom: rem(1px solid $occlss-summary-list-border-color-item);
 }
 
 .occlss-summary-list__link {
     padding: rem(15px 15px);
-    //background: #e0e2e5;
 }
 
 .occlss-summary-list--tasks-pane,
@@ -51,9 +47,7 @@
 }
 
 .occlss-summary-list--popular-content-pane {
-    //padding: rem(0 15px);
     .occlss-summary-list__item {
-        //margin-bottom: rem(10px);
         &:last-of-type {
             border-bottom: none;
         }

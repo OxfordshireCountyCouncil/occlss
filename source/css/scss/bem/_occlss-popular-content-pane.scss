@@ -1,14 +1,20 @@
 .occlss-popular-content-pane {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+
     &:after {
         content:"";
         display: block;
         border-bottom: rem(4px solid $occlss-popular-content-color-primary);
     }
+    
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         height: rem(45px);
     }
+    
     overflow: hidden;
+
     &:focus {
         outline: 0;
     }
@@ -42,7 +48,7 @@
 }
 
 .occlss-popular-content-pane__content {
-    //padding-bottom: rem(5px);
+    flex: 1;
 }
 
 .occlss-popular-content-pane.is-active {

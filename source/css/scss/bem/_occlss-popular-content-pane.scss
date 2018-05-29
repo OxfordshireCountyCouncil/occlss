@@ -1,8 +1,9 @@
 .occlss-popular-content-pane {
+    height: 100%;
     &:after {
         content:"";
         display: block;
-        border-bottom: rem(5px solid $occlss-popular-content-color-primary);
+        border-bottom: rem(4px solid $occlss-popular-content-color-primary);
     }
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         height: rem(45px);
@@ -13,13 +14,13 @@
     }
 }
 
+
 .occlss-popular-content-pane__heading {
     width: 100%;
     background: $occlss-popular-content-color-primary;
     color: $occlss-popular-content-heading-color;
     font-size: rem($occlss-popular-content-heading-font-size);
     padding: rem(9px 14px);
-    //margin-bottom: rem(15px);
     margin-bottom: 0;
     font-weight: $occlss-popular-content-heading-font-weight;
 

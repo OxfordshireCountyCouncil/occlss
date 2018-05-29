@@ -5,7 +5,7 @@
         border-bottom: rem(5px solid $occlss-popular-content-color-primary);
     }
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
-        height: rem(38px);
+        height: rem(45px);
     }
     overflow: hidden;
     &:focus {
@@ -18,22 +18,23 @@
     background: $occlss-popular-content-color-primary;
     color: $occlss-popular-content-heading-color;
     font-size: rem($occlss-popular-content-heading-font-size);
-    padding: rem(5px 14px);
+    padding: rem(9px 14px);
     margin-bottom: rem(15px);
+    font-weight: $occlss-popular-content-heading-font-weight;
 
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
        cursor: pointer;
        position: relative;
        &:after {
         content: "";
-        width: rem(20px);
+        width: rem(21px);
         height: rem(13px);
         background-image: url('#{$occlss-global-image-path}/icon-angle-arrow-down-white.svg');
         background-size: cover;
         display: block;
         position: absolute;
         right: rem(15px);
-        top: rem(13px);
+        top: rem(16px);
       }
     }
 }

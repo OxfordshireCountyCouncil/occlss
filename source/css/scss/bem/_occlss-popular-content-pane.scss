@@ -19,7 +19,8 @@
     color: $occlss-popular-content-heading-color;
     font-size: rem($occlss-popular-content-heading-font-size);
     padding: rem(9px 14px);
-    margin-bottom: rem(15px);
+    //margin-bottom: rem(15px);
+    margin-bottom: 0;
     font-weight: $occlss-popular-content-heading-font-weight;
 
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
@@ -40,8 +41,7 @@
 }
 
 .occlss-popular-content-pane__content {
-    padding-bottom: rem(5px);
-
+    //padding-bottom: rem(5px);
 }
 
 .occlss-popular-content-pane.is-active {

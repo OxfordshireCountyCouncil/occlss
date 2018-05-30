@@ -11,16 +11,18 @@
     text-decoration: none;
     background: $occlss-promoted-content-panel-background-color;
     color: $occlss-promoted-content-panel-font-color;
+    overflow: hidden;
     &:hover {
         color: $occlss-promoted-content-panel-font-color;
         text-decoration: underline;
+        .occlss-promoted-content-panel__arrow {
+            text-decoration: underline;
+        }
     }
     &:focus {
         @extend %highlight-outline-on-focus;
     }
-    
 }
-
 
 // Text line sizes
 .occlss-promoted-content-panel__text-line--header-mega {
@@ -172,4 +174,3 @@
         color: #ffffff;
     }
 }
-

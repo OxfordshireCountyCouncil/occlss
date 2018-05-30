@@ -57,7 +57,7 @@
         @include transition(background-color .1s ease-in-out);
         &:hover {
             color: #000000;
-            background-color: #e0e2e5;
+            background-color: $occlss-summary-list-hover-color;
         }
     }
 }

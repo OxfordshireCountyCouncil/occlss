@@ -24,28 +24,23 @@
   display: inline-block;
   margin-left: 0;
   padding-left: 0;
+  @extend %reset_list_style;
 }
 
 .occlss-breadcrumb__item {
-  display: inline-block;
-  padding-right: 0.3em;
-  position: relative;
+  float: left;
   font-size: em($occlss-breadcrumb-font-size-primary);
-  &:after {
-    content: ">";
-    margin-left: 0.3em;
-  }
-  &:before {
-    content: "";
+
+  &:first-of-type {
+    font-weight: $occlss-breadcrumb-first-link-weight;
   }
 
-  &:last-child {
-    &:after {
-      display: none;
-    }
+  &:not(:last-child):after{
+    content: ">";
+    color: $occlss-breadcrumb-text-colour;
+    margin: rem(0 5px);
   }
 }
-
 
 .occlss-breadcrumb--no-space {
     margin-bottom: 0;

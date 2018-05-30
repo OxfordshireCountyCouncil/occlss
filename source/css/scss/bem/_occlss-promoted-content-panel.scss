@@ -25,6 +25,18 @@
 }
 
 // Text line sizes
+.occlss-promoted-content-panel__text-line--header-giga {
+    font-size: rem($occlss-promoted-content-panel-text-line-font-size-header-giga);
+    font-weight: $occlss-promoted-content-panel-text-line-font-weight-header-giga;
+    font-family: $occlss-promoted-content-panel-text-line-font-family-header-giga;
+    line-height: 0.9;
+    margin-bottom: rem(20px);
+    .occlss-icon__container {
+        width: rem($occlss-promoted-content-panel-text-line-font-size-header-giga);
+        height: rem($occlss-promoted-content-panel-text-line-font-size-header-giga);
+    }
+}
+
 .occlss-promoted-content-panel__text-line--header-mega {
     font-size: rem($occlss-promoted-content-panel-text-line-font-size-header-mega);
     font-weight: $occlss-promoted-content-panel-text-line-font-weight-header-mega;

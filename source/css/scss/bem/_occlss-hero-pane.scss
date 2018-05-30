@@ -21,7 +21,7 @@
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
         width: 100%;
         margin-top: 0;
-        padding: rem(38px 17px 17px 17px);
+        padding: rem(17px);
     }
 }
 

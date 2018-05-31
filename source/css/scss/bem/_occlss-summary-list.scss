@@ -59,6 +59,7 @@
             color: #000000;
             background-color: $occlss-summary-list-hover-color;
         }
+        &:focus:hover,
         &:hover:active,
         &:active,
         &:focus {

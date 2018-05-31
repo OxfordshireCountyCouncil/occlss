@@ -59,5 +59,10 @@
             color: #000000;
             background-color: $occlss-summary-list-hover-color;
         }
+        &:hover:active,
+        &:active,
+        &:focus {
+            @extend %highlight-bg-on-focus;
+        }
     }
 }

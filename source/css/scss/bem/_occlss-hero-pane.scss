@@ -27,6 +27,9 @@
 
 .occlss-hero-pane__heading--residents {
     background-color: $occlss-hero-pane-heading-bg-color-residents;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding: rem(38px 17px 17px 17px);
+    }
 }
 
 .occlss-hero-pane__heading--business {

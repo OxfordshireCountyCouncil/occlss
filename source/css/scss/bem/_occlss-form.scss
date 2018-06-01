@@ -21,7 +21,7 @@
 
 .occlss-form__short-search-group {
   padding: rem(0 10px 0 0);
-  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+  @include breakpoint(max-width ((map-get($occlss-layout-breakpoints, 'sm')))-1) {
       padding: 0;
   }
 }

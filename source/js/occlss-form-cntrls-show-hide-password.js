@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery( document ).ready(function( $ ) {
   $('.js-occlss-form-cntrls-show-hide-password').click(function() {
     var getImage = $(this).children().children('svg').children().attr("xlink:href");
     var imgInVisible = getImage.replace("visible", "invisible");

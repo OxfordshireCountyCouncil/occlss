@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery( document ).ready(function( $ ) {
 
     // do not close facets if click on facets panel
     $('body').on('click', '.js-occlss-fp', function(e) {

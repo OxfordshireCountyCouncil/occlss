@@ -1,14 +1,14 @@
 (function (document, window, $, undefined) {
     'use strict';
 
-    $('html').on('click', '.js-occlss-hideshow-content-btn', function(event){
+    jQuery('html').on('click', '.js-occlss-hideshow-content-btn', function(event){
         
-        if ($(this).hasClass('is-active')) {
-            $(this).removeClass('is-active');
-            $(this).next('.js-occlss-hideshow-content').css("display","");
+        if (jQuery(this).hasClass('is-active')) {
+            jQuery(this).removeClass('is-active');
+            jQuery(this).next('.js-occlss-hideshow-content').css("display","");
         } else {
-              $(this).addClass('is-active');
-              $(this).next('.js-occlss-hideshow-content').css("display","block");
+            jQuery(this).addClass('is-active');
+            jQuery(this).next('.js-occlss-hideshow-content').css("display","block");
         }
 
         event.preventDefault();

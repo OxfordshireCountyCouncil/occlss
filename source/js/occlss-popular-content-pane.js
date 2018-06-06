@@ -1,44 +1,44 @@
 (function (document, window, $, undefined) {
   'use strict';
 
-  var $popularContentPanes = $('.js-occlss-popular-content-pane');
+  var $popularContentPanes = jQuery('.js-occlss-popular-content-pane');
   
   var popularContentPaneSetup = function($pane, $allPanes, i) {
       $pane.children().find( "a" ).on('focus', function () {
-        if (!$(this).data("mouseDown") && !$(this).parents('.js-occlss-popular-content-pane').hasClass('is-active'))
-          $(this).parents('.js-occlss-popular-content-pane').click();
+        if (!jQuery(this).data("mouseDown") && !jQuery(this).parents('.js-occlss-popular-content-pane').hasClass('is-active'))
+        jQuery(this).parents('.js-occlss-popular-content-pane').click();
       });
       $pane.on('focus', function () {
-        if (!$(this).data("mouseDown"))
-          $(this).click();
+        if (!jQuery(this).data("mouseDown"))
+        jQuery(this).click();
       });
       $pane.on('mousedown', function () {
-        $(this).data("mouseDown", true);
+        jQuery(this).data("mouseDown", true);
       });
       $pane.on('mouseup', function () {
-        $(this).removeData("mouseDown");
+        jQuery(this).removeData("mouseDown");
       });
       $pane.on('click', function (e) {
-        var target = $( e.target );
+        var target = jQuery( e.target );
         if (!target.is( "a" )) {
-          if ($(this).hasClass('is-active')) {
+          if (jQuery(this).hasClass('is-active')) {
             //Close the current section
             $allPanes.removeClass('is-active');
-            $('.collapsing-section').slideUp();
+            jQuery('.collapsing-section').slideUp();
           } else {
             //close the prev section & open the newly click
             $allPanes.removeClass('is-active');
-            $('.collapsing-section').slideUp(); //Side up all sections that are open & remove their open class
-            $(this).addClass('is-active');
-            var sectionToOpen = $(this).next('.collapsing-section');
-            $(sectionToOpen).slideDown();
+            jQuery('.collapsing-section').slideUp(); //Side up all sections that are open & remove their open class
+            jQuery(this).addClass('is-active');
+            var sectionToOpen = jQuery(this).next('.collapsing-section');
+            jQuery(sectionToOpen).slideDown();
           }
         }
       });
   };
   $popularContentPanes.each(function (i) {
-      var $this = $(this);
-      popularContentPaneSetup($(this), $popularContentPanes, i)
+      var $this = jQuery(this);
+      popularContentPaneSetup(jQuery(this), $popularContentPanes, i)
   });
 
 })(document, window, jQuery);

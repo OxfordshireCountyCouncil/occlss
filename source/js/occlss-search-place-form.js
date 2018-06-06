@@ -1,11 +1,11 @@
 (function (document, window, $, undefined) {
     'use strict';
     // bind change event to select
-    $('.js-occlss-search-place-form-select').on('change', function () {
-        var url = $(this).val(); // get selected value
+    jQuery('.js-occlss-search-place-form-select').on('change', function () {
+        var url = jQuery(this).val(); // get selected value
         var api = 'https://api.postcodes.io/postcodes/' + url;
         
-        $.get( api ).done(function( data ) {
+        jQuery.get( api ).done(function( data ) {
             if (data.result.postcode) {
               window.location.href = 'https://apps.esriuk.com/app/MyNearest/18/view/c24c6ff042d14a4c8c7f64b97c58db76/index.html?x=' + data.result.longitude + '&y=' + data.result.latitude + '&sr=4326';
             }
@@ -17,12 +17,12 @@
     
 
     // By postcode
-    $("#js-occlss-search-place-form-postcode").submit(function (event) {
-        var postcode = $(this).find('.occlss-form-cntrls__input').val();
+    jQuery("#js-occlss-search-place-form-postcode").submit(function (event) {
+        var postcode = jQuery(this).find('.occlss-form-cntrls__input').val();
         postcode = postcode.replace(/[^a-z0-9]/i, '');
         var api = 'https://api.postcodes.io/postcodes/' + postcode;
         
-        $.get( api )
+        jQuery.get( api )
 	        .done(function( data ) {
 	          if (data.result.postcode) {
                 window.location.href = 'https://apps.esriuk.com/app/MyNearest/18/view/c24c6ff042d14a4c8c7f64b97c58db76/index.html?x=' + data.result.longitude + '&y=' + data.result.latitude + '&sr=4326';
@@ -34,17 +34,17 @@
     });
 
     // Get browser geolocation
-    $("#js-occlss-search-place-form-link").on("click", function (event) {
+    jQuery("#js-occlss-search-place-form-link").on("click", function (event) {
         var geo_options = {
             enableHighAccuracy: true,
             maximumAge        : 0,
             timeout           : 6000
         };
 
-        $(this).addClass('is-disabled');
-        $(this).attr('tabindex', -1);
-        $(this).children('.js-occlss-loading-bar').addClass('is-active');
-        //$(this).append("<div class=\"occlss-loading-bar\"><div class=\"occlss-loading-bar__content occlss-loading-bar__content--dark-gray\"><i class=\"occlss-loading-bar__icon\"></i><i class=\"occlss-loading-bar__icon\"></i><i class=\"occlss-loading-bar__icon\"></i><i class=\"occlss-loading-bar__icon\"></i></div></div>");
+        jQuery(this).addClass('is-disabled');
+        jQuery(this).attr('tabindex', -1);
+        jQuery(this).children('.js-occlss-loading-bar').addClass('is-active');
+        //jQuery(this).append("<div class=\"occlss-loading-bar\"><div class=\"occlss-loading-bar__content occlss-loading-bar__content--dark-gray\"><i class=\"occlss-loading-bar__icon\"></i><i class=\"occlss-loading-bar__icon\"></i><i class=\"occlss-loading-bar__icon\"></i><i class=\"occlss-loading-bar__icon\"></i></div></div>");
 
 
         if (navigator.geolocation) {

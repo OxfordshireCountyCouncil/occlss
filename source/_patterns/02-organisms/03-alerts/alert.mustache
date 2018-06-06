@@ -1,6 +1,6 @@
 <div class="occlss-alert {{ mod-class }}">
     <div class="occlss-layout"><!--START layout block-->
-        <div class="occlss-layout__col occlss-layout__col--2  occlss-alert__sign-cont"><!--START layout elemnt -->
+        <div class="occlss-layout__col occlss-layout__col--2 occlss-layout__col--flex occlss-alert__sign-cont"><!--START layout elemnt -->
             
             {{#alet-type-error}}
                 <span class="occlss-icon occlss-icon--exclamation-mark" aria-hidden="true">
@@ -36,7 +36,7 @@
             {{/alet-type-success}}
 
         </div><!--End layout elemnt -->
-        <div class="occlss-layout__col occlss-layout__col--9 occlss-alert__cont"><!--START layout elemnt -->
+        <div class="occlss-layout__col occlss-layout__col--9 occlss-alert__cont occlss-layout__col--flex"><!--START layout elemnt -->
                 {{#heading}}<h3 class="occlss-alert__heading">{{ heading }}</h3>{{/heading}}
                 {{#text}}
                 <p class="occlss-alert__text">

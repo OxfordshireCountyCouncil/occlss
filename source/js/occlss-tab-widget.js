@@ -1,10 +1,10 @@
 (function (document, window, $, undefined) {
     'use strict';
 
-    var $tabWidget = $('.js-occlss-tab-widget');
+    var $tabWidget = jQuery('.js-occlss-tab-widget');
 
     var setupTabs = function ($tab, $allTabs, $tabPanels, $tabListItems, $mobileTab, $mobileTabs, i) {
-        $mobileTab = $($mobileTab);
+        $mobileTab = jQuery($mobileTab);
 
         $mobileTab
             .attr({
@@ -31,7 +31,7 @@
                     'aria-describedby': 'occlss-tab-widget-description'
                 })
                 .addClass('is-active');
-            $($mobileTab)
+            jQuery($mobileTab)
                 .attr({
                     'tabindex': '0',
                     'aria-selected': 'true',
@@ -42,20 +42,20 @@
 
         $mobileTab.on('click', function (e) {
             e.preventDefault();
-            mtabClick($(this), $allTabs, $tabPanels, $mobileTabs, i);
+            mtabClick(jQuery(this), $allTabs, $tabPanels, $mobileTabs, i);
         });
 
         $tab.on('click', function (e) {
             e.preventDefault();
-            tabClick($(this), $allTabs, $tabPanels, $mobileTabs, i);
+            tabClick(jQuery(this), $allTabs, $tabPanels, $mobileTabs, i);
         });
 
         $tab.on('focus', function (e) {
-            tabClick($(this), $allTabs, $tabPanels, $mobileTabs, i);
+            tabClick(jQuery(this), $allTabs, $tabPanels, $mobileTabs, i);
         });
 
         $tab.on('keydown', function (e) {
-            tabKeydown($(this), $allTabs, $tabPanels, $tabListItems, i, e);
+            tabKeydown(jQuery(this), $allTabs, $tabPanels, $tabListItems, i, e);
         });
 
         if ($tab.hasClass("is-active") ) {
@@ -124,7 +124,7 @@
 
     var mtabClick = function ($thisTab, $allTabs, $tabPanels, $mobileTabs, i) {
         
-        var $cTab = $($allTabs[i]);
+        var $cTab = jQuery($allTabs[i]);
 
         $mobileTabs
             .attr({
@@ -234,28 +234,28 @@
     $tabWidget.each(function () {
 
         // Get All the objects
-        var $this = $(this),
+        var $this = jQuery(this),
             $tabList = $this.find('> ul'),
             $tabListItems = $tabList.find('li'),
             $allTabs = $tabListItems.find('a'),
-            $mobileTabs = $('.js-occlss-mob-tab'),
+            $mobileTabs = jQuery('.js-occlss-mob-tab'),
             $tabPanels = $this.find('> div > div');
 
         $tabList.attr('role', 'tablist');
         $tabListItems.attr('role', 'presentation');
 
         $allTabs.each(function (i) {
-            setupTabs($(this), $allTabs, $tabPanels, $tabListItems, $mobileTabs[i], $mobileTabs, i);
+            setupTabs(jQuery(this), $allTabs, $tabPanels, $tabListItems, $mobileTabs[i], $mobileTabs, i);
         });
 
         $tabPanels.each(function (i) {
-            setupTabPanels($(this), i);
+            setupTabPanels(jQuery(this), i);
         });
 
 
     });
 
 
-    $('html').addClass('js').removeClass('no-js');
+    jQuery('html').addClass('js').removeClass('no-js');
 
 })(document, window, jQuery);

@@ -11,9 +11,18 @@
     @extend .occlss-layout__col;
     @extend .occlss-layout__col--flex;
     @extend .occlss-layout__col--md-4;
+    @include transition(background-color .1s ease);
+    position: relative;
+    margin-bottom: rem(32px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        margin-bottom: 0;
+    }
     &::after {
         content: "";
-        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: rem(16px);
+        right: rem(16px);
         height: rem(3px);
         background-color: $occlss-short-summary-residents-color;
         display: block;
@@ -22,12 +31,12 @@
 
 .occlss-short-summary__link {
     @extend .occlss-promoted-content-panel;
-    //@extend .occlss-promoted-content-panel--victoria;
-    @include transition(background-color .1s ease);
+    padding: 0;
     &:hover {
         text-decoration: none;
     }
 }
+
 
 .occlss-short-summary__content-title {
     font-size: rem($occlss-short-summary-content-font-size-title);
@@ -40,7 +49,7 @@
             background-color: $occlss-short-summary-residents-color;
         }
     }
-    .occlss-short-summary__link {
+    .occlss-short-summary__link-cont {
         &:hover {
             background-color: $occlss-short-summary-residents-color;
         }
@@ -53,7 +62,7 @@
             background-color: $occlss-short-summary-business-color;
         }
     }
-    .occlss-short-summary__link {
+    .occlss-short-summary__link-cont {
         &:hover {
             background-color: $occlss-short-summary-business-color;
         }
@@ -66,7 +75,7 @@
             background-color: $occlss-short-summary-council-color;
         }
     }
-    .occlss-short-summary__link {
+    .occlss-short-summary__link-cont {
         &:hover {
             background-color: $occlss-short-summary-council-color;
         }

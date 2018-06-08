@@ -1,46 +1,77 @@
 {{> organisms-page-head-with-form}}
 
-<section>
-  <div class="occlss-wrapper">
-    {{> organisms-hero-pane(occlss-hero-title: "Council", occlss-hero-image: "../../images/demo/hero-image-3.jpg", occlss-hero-mod-class: "occlss-hero-pane--lgimage",occlss-hero-heading-mod: "occlss-hero-pane__heading--council") }} 
-  </div>
-</section>
 
 <main role="main" id="occlss-main-content"><!--START section block -->
+    <div class="occlss-wrapper">
+      {{> molecules-breadcrumb(occlss-breadcrumb-no-space: 'true') }}
+  </div>
+  
   <div class="occlss-wrapper occlss-wrapper--secondary"><!--START wrapper block-->
+	  
+    <div class="occlss-layout occlss-layout--gutter-s"><!--START layout block-->
+      <div class="occlss-layout__col occlss-layout__col--md-12"><!--START layout elemnt -->
+        <h1 class="occlss-g-heading-main">Government in Oxfordshire</h1>
+	    </div><!--End layout elemnt -->
+    </div> <!--End layout block -->
+
 	  <div class="occlss-layout occlss-layout--gutter-s"><!--START layout block-->
-      <div class="occlss-layout__col occlss-layout__col--md-9"><!--START layout elemnt -->
-        <h1 class="occlss-g-heading-main">Street and resident parking permits</h1>
+
+        <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--md-3">
+          <a href="#" class="occlss-promoted-content-panel occlss-promoted-content-panel--aqua-dee">
+            <div class="occlss-promoted-content-panel__content">
+              <div class="occlss-promoted-content-panel__text-line occlss-promoted-content-panel__text-line--header-small">
+                All the news
+                <span class="occlss-icon occlss-icon--arrow-right-long-right-secondary" aria-hidden="true">
+                  <svg aria-hidden="true" class="occlss-icon__container occlss-promoted-content-panel__link-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#arrow-right-long-right-secondary"
+                      class="icon__source icon__source--svg"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
 
 
-        {{> molecules-page-guide }}
+        <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--md-5">
+          <a href="#" class="occlss-promoted-content-panel occlss-promoted-content-panel--boston-blue">
+            <div class="occlss-promoted-content-panel__content">
+              <div class="occlss-promoted-content-panel__text-line occlss-promoted-content-panel__text-line--header-small">
+                Licences and permits
+                <span class="occlss-icon occlss-icon--arrow-right-long-right-secondary" aria-hidden="true">
+                  <svg aria-hidden="true" class="occlss-icon__container occlss-promoted-content-panel__link-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#arrow-right-long-right-secondary"
+                      class="icon__source icon__source--svg"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
 
-        <h2>1. Apply for or renew a resident's parking permit</h2>
+        <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--md-4">
+          <a href="#" class="occlss-promoted-content-panel occlss-promoted-content-panel--pale-sky">
+            <div class="occlss-promoted-content-panel__content">
+              <div class="occlss-promoted-content-panel__text-line occlss-promoted-content-panel__text-line--header-small">
+                Advice for businesses
+                <span class="occlss-icon occlss-icon--arrow-right-long-right-secondary" aria-hidden="true">
+                  <svg aria-hidden="true" class="occlss-icon__container occlss-promoted-content-panel__link-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#arrow-right-long-right-secondary"
+                      class="icon__source icon__source--svg"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
 
-        <p>
-          You can only apply for or renew a permit online.
-        </p>
-        <p>
-          We deal with parking permits for on-street parking in areas where controlled parking zone (CPZ) have been introduces (where parking is only permitted in designated parking bays).
-        </p>
-        <p>
-          Please note that you will recieve a parking tickets if you parking in a permit holder bay without display a valid resident or permit.
-        </p>
-        
-         <button class="occlss-button occlss-button--primary">Apply for a resident's parking permit</button>
-         <button class="occlss-button occlss-button--primary">Renew a reasident's parking permit</button>
 
-
-        {{> molecules-pagination }}
-
-	  </div><!--End layout elemnt -->
-    <div class="occlss-layout__col occlss-layout__col--md-3"><!--START layout elemnt -->
-
-      {{> organisms-sidebar-item-section }}
-
-    </div><!--End layout elemnt -->
     </div> <!--End layout block -->
   </div> <!--End wrapper block -->
+
+
+
 </main><!--End section block -->
+
 
 {{> organisms-page-footer }}

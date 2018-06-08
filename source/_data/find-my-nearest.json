@@ -3,10 +3,10 @@
         "selectAPlace": {
             "form-cntrs-tag": "div",
             "form-cntrs-name": "select-a-place",
-            "form-cntrs-class": "occlss-search-place-form__input-group",
+            "form-cntrs-class": "occlss-find-my-nearest__input-group",
             "form-cntrs-label-text": "Or select a place",
-            "form-cntrs-label-class": "occlss-search-place-form__label",
-            "form-cntrs-select-class": "js-occlss-search-place-form-select",
+            "form-cntrs-label-class": "occlss-find-my-nearest__label",
+            "form-cntrs-select-class": "js-occlss-find-my-nearest-select",
             "form-cntrs-select-options": [
                 {
                     "form-cntrs-select-options-value": "none",

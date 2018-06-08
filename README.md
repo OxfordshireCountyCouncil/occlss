@@ -202,7 +202,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-skip-to-content";
 @import "node_modules/occlss/scss/bem/occlss-a-to-z";
 @import "node_modules/occlss/scss/bem/occlss-hero-pane";
-@import "node_modules/occlss/scss/bem/occlss-search-place-form";
+@import "node_modules/occlss/scss/bem/occlss-find-my-nearest";
 @import "node_modules/occlss/scss/bem/occlss-splitter";
 @import "node_modules/occlss/scss/bem/occlss-info-card";
 @import "node_modules/occlss/scss/bem/occlss-trim";

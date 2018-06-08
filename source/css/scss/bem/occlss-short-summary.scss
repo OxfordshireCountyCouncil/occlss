@@ -1,0 +1,77 @@
+.occlss-short-summary {
+    @extend .occlss-layout;
+}
+
+.occlss-short-summary__title-cont {
+    @extend .occlss-layout__col;
+    @extend .occlss-layout__col--12;
+}
+
+.occlss-short-summary__link-cont {
+    @extend .occlss-layout__col;
+    @extend .occlss-layout__col--flex;
+    @extend .occlss-layout__col--md-4;
+    &::after {
+        content: "";
+        width: 100%;
+        height: rem(3px);
+        background-color: $occlss-short-summary-residents-color;
+        display: block;
+    }
+}
+
+.occlss-short-summary__link {
+    @extend .occlss-promoted-content-panel;
+    //@extend .occlss-promoted-content-panel--victoria;
+    @include transition(background-color .1s ease);
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.occlss-short-summary__content-title {
+    font-size: rem($occlss-short-summary-content-font-size-title);
+    font-weight: $occlss-short-summary-content-font-weight-title;
+}
+
+.occlss-short-summary--residents {
+    .occlss-short-summary__link-cont {
+        &::after {
+            background-color: $occlss-short-summary-residents-color;
+        }
+    }
+    .occlss-short-summary__link {
+        &:hover {
+            background-color: $occlss-short-summary-residents-color;
+        }
+    }
+}
+
+.occlss-short-summary--business {
+    .occlss-short-summary__link-cont {
+        &::after {
+            background-color: $occlss-short-summary-business-color;
+        }
+    }
+    .occlss-short-summary__link {
+        &:hover {
+            background-color: $occlss-short-summary-business-color;
+        }
+    }
+}
+
+.occlss-short-summary--council {
+    .occlss-short-summary__link-cont {
+        &::after {
+            background-color: $occlss-short-summary-council-color;
+        }
+    }
+    .occlss-short-summary__link {
+        &:hover {
+            background-color: $occlss-short-summary-council-color;
+        }
+    }
+}
+
+ 
+  

@@ -1,31 +1,31 @@
 {
-  "summaryList":{
+    "summaryList":{
       "list-mod-class": "",
       "listItem": [
-      {
+        {
           "listItem-link-name": "Current vacancies",
           "listItem-mod-class": "",
           "listItem-link-mod-class": "",
-          "listItem-link-url":  "#"
-      },
-      {
-          "listItem-link-name": "Teaching vacancies",
-          "listItem-mod-class": "",
-          "listItem-link-mod-class": "",
-          "listItem-link-url":  "#"
-      },
-      {
-          "listItem-link-name": "Childcare job",
-          "listItem-mod-class": "",
-          "listItem-link-mod-class": "",
-          "listItem-link-url":  "#"
-      },
-      {
-          "listItem-link-name": "Social care careers",
-          "listItem-mod-class": "",
-          "listItem-link-mod-class": "",
-          "listItem-link-url":  "#"
-      }
+          "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Teaching vacancies",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Childcare job",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Social care careers",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        }
       ]
+    }
   }
-} 

@@ -30,18 +30,69 @@
         "occlss-short-summary-split-mod-class": "occlss-splitter--residents",
         "occlss-short-summary-list": [
           {
-            "title": "What we are doing",
-            "summary": "An energy recovery facility at Ardley now treats our residual waste instead of disposal in landfill.",
+            "title": "Find a recycling centre",
+            "summary": "Locations of our waste recycling centres and opening times.",
             "link": "#"
           },
           {
-            "title": "How we did it",
-            "summary": "The steps we took to procure the residual waste treatment contract.",
+            "title": "Charges for non-household waste",
+            "summary": "Information about the charges for non-household waste at our recycling centres.",
             "linkURL": "#"
           },
           {
-            "title": "Food waste collection",
-            "summary": "Food waste is collected along with your other recycling.",
+            "title": "Van and trailer e-permits",
+            "summary": "You can apply online for a free e-permit to use a van or trailer at the waste recycling centres.",
+            "inkURL": "#"
+          },
+
+
+          {
+            "title": "Recycling A-Z",
+            "summary": "Advice on how to recycle household waste at our recycling centres.",
+            "link": "#"
+          },
+          {
+            "title": "Visiting recycling centres",
+            "summary": "What to expect when you visit a household waste recycling centre, including charges.",
+            "linkURL": "#"
+          },
+          {
+            "title": "Alkerton recycling centre",
+            "summary": "You can apply online for a free e-permit to use a van or trailer at the waste recycling centres.",
+            "inkURL": "#"
+          },
+
+
+          {
+            "title": "Ardley Fields recycling centre",
+            "summary": "Brackley Road, Ardley, OX27 7PH.",
+            "link": "#"
+          },
+          {
+            "title": "Dix Pit recycling centre",
+            "summary": "Linch Hill, Stanton Harcourt, OX29 5BB. Postcode for Sat Nav - OX29 5UX.",
+            "linkURL": "#"
+          },
+          {
+            "title": "Drayton recycling centre",
+            "summary": "Steventon Road, Drayton, near Abingdon, OX14 4LA.",
+            "inkURL": "#"
+          },
+
+
+          {
+            "title": "Oakley Wood recycling centre",
+            "summary": "Old Icknield Way, Crowmarsh, near Wallingford, OX10 6PW.",
+            "link": "#"
+          },
+          {
+            "title": "Redbridge recycling centre",
+            "summary": "Old Abingdon Road, Oxford, OX1 4XG.",
+            "linkURL": "#"
+          },
+          {
+            "title": "Stanford Vale recycling centre",
+            "summary": "Faringdon Road, Stanford in the Vale, Faringdon, SN7 8L",
             "inkURL": "#"
           }
         ]

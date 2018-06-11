@@ -1,0 +1,50 @@
+{
+	"title" : "Residents simple landing page",
+	"bodyClass": "residents",
+    "emergency" : false,
+    "selectedCategoryClass":"occlss-page-head__wraper--residents",
+    "category_nav": {
+        "nav_link": [
+            {
+                "name": "Residents",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state": "active",
+                "linkURL": "link.pages-homepage"
+            },
+            {
+                "name":"Business",
+                "modeClass": "occlss-category-nav__item--business",
+                "state":"",
+                "linkURL": "link.pages-business"
+            },
+            {
+                "name":"Council",
+                "modeClass": "occlss-category-nav__item--council",
+                "state":"",
+                "linkURL": "link.pages-council"
+            }
+        ]
+    },  
+    "short-summary": {
+        "occlss-short-summary-mod-class": "occlss-short-summary--residents",
+        "occlss-short-summary-split-mod-class": "occlss-splitter--residents",
+        "occlss-short-summary-list": [
+          {
+            "title": "What we are doing",
+            "summary": "An energy recovery facility at Ardley now treats our residual waste instead of disposal in landfill.",
+            "link": "#"
+          },
+          {
+            "title": "How we did it",
+            "summary": "The steps we took to procure the residual waste treatment contract.",
+            "linkURL": "#"
+          },
+          {
+            "title": "Food waste collection",
+            "summary": "Food waste is collected along with your other recycling.",
+            "inkURL": "#"
+          }
+        ]
+    
+      }
+}

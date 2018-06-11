@@ -1,0 +1,60 @@
+{
+	"title" : "Council simple landing page",
+	"bodyClass": "council",
+    "emergency" : false,
+    "selectedCategoryClass":"occlss-page-head__wraper--council",
+    "category_nav": {
+        "nav_link": [
+            {
+                "name": "Residents",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state": "",
+                "linkURL": "link.pages-homepage"
+            },
+            {
+                "name":"Business",
+                "modeClass": "occlss-category-nav__item--business",
+                "state": "",
+                "linkURL": "link.pages-business"
+            },
+            {
+                "name":"Council",
+                "modeClass": "occlss-category-nav__item--council",
+                "state": "active",
+                "linkURL": "link.pages-council"
+            }
+        ]
+    },
+    "short-summary": {
+        "occlss-short-summary-mod-class": "occlss-short-summary--council",
+        "occlss-short-summary-split-mod-class": "occlss-splitter--council",
+        "occlss-short-summary-list": [
+          {
+            "title": "Oxfordshire County Council",
+            "summary": "How Oxfordshire County Council works to provide services to the public.",
+            "link": "#"
+          },
+          {
+            "title": "District councils",
+            "summary": "This page describes the work of the five district councils in Oxfordshire.",
+            "linkURL": "#"
+          },
+          {
+            "title": "MPs and MEPs",
+            "summary": "Find your Members of Parliament (MPs) and Members of European Parliament (MEPs).",
+            "inkURL": "#"
+          },
+          {
+            "title": "Parish and town councils",
+            "summary": "What are parish and town councils and how do they work?",
+            "inkURL": "#"
+          },
+          {
+            "title": "Mayors and chairs",
+            "summary": "Details about the chairmen of Oxfordshire's district councils and town mayors.",
+            "inkURL": "#"
+          }
+        ]
+    
+      }
+}

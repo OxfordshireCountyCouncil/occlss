@@ -187,7 +187,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/objects/occlss-button";
 
 
-/// BEM (components)
+// BEM (components)
 @import "node_modules/occlss/scss/bem/occlss-icon";
 @import "node_modules/occlss/scss/bem/occlss-button";
 @import "node_modules/occlss/scss/bem/occlss-page-head";

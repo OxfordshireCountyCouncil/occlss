@@ -45,13 +45,13 @@ To generate the front-end for Pattern Lab type:
 **npm:**
 
 ```
-$ gulp patternlab:build
+$ gulp
 ```
 
 **yarn:**
 
 ```
-$ yarn patternlab:build
+$ yarn gulp
 ```
     
 
@@ -62,7 +62,7 @@ To generate the SCSS framework out of the Pattern Lab
 **npm:**
 
 ```
-$ gulp genCSSframework 
+$ gulp gen 
 ```
 
 **yarn:**
@@ -71,6 +71,16 @@ $ gulp genCSSframework
 $ yarn genCSSframework
 ```
 
+### To start work on the OCCLSS
+
+```
+$ gulp start
+```
+**yarn:**
+
+```
+$ yarn gulp start
+```
 
 ## SCSS framework
 
@@ -211,7 +221,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-co";
 @import "node_modules/occlss/scss/bem/occlss-pager";
 @import "node_modules/occlss/scss/bem/occlss-loading-bar";
-
+@import "node_modules/occlss/scss/bem/occlss-short-summary";
 
 // UTILITIES
 // scope

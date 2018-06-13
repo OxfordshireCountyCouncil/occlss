@@ -45,13 +45,13 @@ To generate the front-end for Pattern Lab type:
 **npm:**
 
 ```
-$ gulp patternlab:build
+$ gulp
 ```
 
 **yarn:**
 
 ```
-$ yarn patternlab:build
+$ yarn gulp
 ```
     
 
@@ -62,7 +62,7 @@ To generate the SCSS framework out of the Pattern Lab
 **npm:**
 
 ```
-$ gulp genCSSframework 
+$ gulp gen 
 ```
 
 **yarn:**
@@ -71,6 +71,16 @@ $ gulp genCSSframework
 $ yarn genCSSframework
 ```
 
+### To start work on the OCCLSS
+
+```
+$ gulp start
+```
+**yarn:**
+
+```
+$ yarn gulp start
+```
 
 ## SCSS framework
 
@@ -202,7 +212,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-skip-to-content";
 @import "node_modules/occlss/scss/bem/occlss-a-to-z";
 @import "node_modules/occlss/scss/bem/occlss-hero-pane";
-@import "node_modules/occlss/scss/bem/occlss-search-place-form";
+@import "node_modules/occlss/scss/bem/occlss-find-my-nearest";
 @import "node_modules/occlss/scss/bem/occlss-splitter";
 @import "node_modules/occlss/scss/bem/occlss-info-card";
 @import "node_modules/occlss/scss/bem/occlss-trim";
@@ -211,7 +221,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-co";
 @import "node_modules/occlss/scss/bem/occlss-pager";
 @import "node_modules/occlss/scss/bem/occlss-loading-bar";
-
+@import "node_modules/occlss/scss/bem/occlss-short-summary";
 
 // UTILITIES
 // scope

@@ -1,0 +1,25 @@
+{{ #short-summary}}
+<div class="occlss-short-summary {{ occlss-short-summary-mod-class }}">
+
+  <div class="occlss-short-summary__title-cont">
+    <h2 class="occlss-u-bspace-xs">In this section</h2>
+    <div class="occlss-splitter {{ occlss-short-summary-split-mod-class }} occlss-u-tspace-none"></div>
+  </div>
+
+{{#occlss-short-summary-list}}
+  <article class="occlss-short-summary__link-cont">
+    <a href="{{linkURL}}" class="occlss-short-summary__link">
+      <div class="occlss-short-summary__content-wraper">
+
+        <div class="occlss-short-summary__content">
+          {{#title}}<h3 class="occlss-short-summary__content-title">{{ title }}</h3>{{/title}}
+          {{#summary}}<p>{{summary}}</p>{{/summary}}
+        </div>
+
+      </div>
+    </a>
+  </article>
+{{/occlss-short-summary-list}}
+
+</div>
+{{/short-summary}}

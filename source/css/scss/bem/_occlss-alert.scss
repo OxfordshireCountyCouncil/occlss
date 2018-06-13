@@ -15,9 +15,9 @@
 }
 
 .occlss-alert__cont {
-    
-   // justify-content: center;
-   // align-items: start;
+   flex-direction: column;
+   justify-content: center;
+   overflow: hidden;
 
 }
 

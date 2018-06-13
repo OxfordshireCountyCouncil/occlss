@@ -29,7 +29,8 @@
                     },
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
-                        "promoted-content-panel-textline-text": "View all school term and holiday dates",
+                        "promoted-content-panel-textline-text": "View all school term and holiday",
+                        "promoted-content-panel-textline-spleat": "dates",
                         "promoted-content-panel-textline-arrow": true
                     }
                 ]
@@ -43,7 +44,8 @@
                 "promoted-content-panel-textlines": [
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-mega",
-                        "promoted-content-panel-textline-text": "Other ways we can help you",
+                        "promoted-content-panel-textline-text": "Other ways we can help",
+                        "promoted-content-panel-textline-spleat": "you",
                         "promoted-content-panel-textline-arrow": true
                     }
                 ]
@@ -62,7 +64,8 @@
                     },
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
-                        "promoted-content-panel-textline-text": "Find council events around the county",
+                        "promoted-content-panel-textline-text": "Find council events around the",
+                        "promoted-content-panel-textline-spleat": "county",
                         "promoted-content-panel-textline-arrow": true
                     }
                 ]
@@ -81,7 +84,8 @@
                     },
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
-                        "promoted-content-panel-textline-text": "Have your say about the policies that affect you.",
+                        "promoted-content-panel-textline-text": "Have your say about the policies that affect",
+                        "promoted-content-panel-textline-spleat": " you.",
                         "promoted-content-panel-textline-arrow": true
                     }
                 ]
@@ -95,7 +99,8 @@
                 "promoted-content-panel-textlines": [
                     {
                         "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-small",
-                        "promoted-content-panel-textline-text": "All the news from your county council",
+                        "promoted-content-panel-textline-text": "All the news from your county",
+                        "promoted-content-panel-textline-spleat": " council",
                         "promoted-content-panel-textline-arrow": true
                     }
                 ]

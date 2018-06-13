@@ -1,0 +1,70 @@
+{
+	"title" : "Residents simple page",
+	"bodyClass": "residents",
+    "emergency" : false,
+    "selectedCategoryClass":"occlss-page-head__wraper--residents",
+    "category_nav": {
+        "nav_link": [
+            {
+                "name": "Residents",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state": "active",
+                "linkURL": "link.pages-homepage"
+            },
+            {
+                "name":"Business",
+                "modeClass": "occlss-category-nav__item--business",
+                "state":"",
+                "linkURL": "link.pages-business"
+            },
+            {
+                "name":"Council",
+                "modeClass": "occlss-category-nav__item--council",
+                "state":"",
+                "linkURL": "link.pages-council"
+            }
+        ]
+    },
+    "sidebarItemSection":{
+        "section-title": "Related content",
+        "section-modclass": "occlss-sidebar-item-section--residents",
+        "summaryList":{
+            "list-mod-class": "occlss-summary-list--sidebar-nav",
+            "listItem": [
+              {
+                "listItem-link-name": "Change of vehicle",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+              },
+              {
+                  "listItem-link-name": "Parking zone restrictions",
+                  "listItem-mod-class": "",
+                  "listItem-link-mod-class": "",
+                  "listItem-link-url":  "javascript:void(0);"
+              },
+              {
+                  "listItem-link-name": "Information for students",
+                  "listItem-mod-class": "",
+                  "listItem-link-mod-class": "",
+                  "listItem-link-url":  "javascript:void(0);"
+              },
+              {
+                  "listItem-link-name": "Renew a parking premit",
+                  "listItem-mod-class": "",
+                  "listItem-link-mod-class": "",
+                  "listItem-link-url":  "javascript:void(0);"
+              },
+              {
+                "listItem-link-name-title": "External"
+              },
+              {
+                "listItem-link-name": "Oxfordshire Local View",
+                "listItem-mod-class": "",
+                "listItem-link-mod-class": "",
+                "listItem-link-url":  "javascript:void(0);"
+              }
+            ]
+          }
+        }
+}

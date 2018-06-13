@@ -1,7 +1,7 @@
 (function (document, window, $, undefined) {
     'use strict';
     // bind change event to select
-    jQuery('.js-occlss-search-place-form-select').on('change', function () {
+    jQuery('.js-occlss-find-my-nearest-select').on('change', function () {
         var url = jQuery(this).val(); // get selected value
         var api = 'https://api.postcodes.io/postcodes/' + url;
         
@@ -17,7 +17,7 @@
     
 
     // By postcode
-    jQuery("#js-occlss-search-place-form-postcode").submit(function (event) {
+    jQuery("#js-occlss-find-my-nearest-postcode").submit(function (event) {
         var postcode = jQuery(this).find('.occlss-form-cntrls__input').val();
         postcode = postcode.replace(/[^a-z0-9]/i, '');
         var api = 'https://api.postcodes.io/postcodes/' + postcode;
@@ -34,7 +34,7 @@
     });
 
     // Get browser geolocation
-    jQuery("#js-occlss-search-place-form-link").on("click", function (event) {
+    jQuery("#js-occlss-find-my-nearest-link").on("click", function (event) {
         var geo_options = {
             enableHighAccuracy: true,
             maximumAge        : 0,

@@ -67,3 +67,17 @@
         }
     }
 }
+
+.occlss-summary-list--sidebar-nav {
+    .occlss-summary-list__link  {
+        display: inline-block;
+        padding: rem(8px 0);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:focus {
+            @extend %highlight-bg-on-focus;
+        }
+    }
+}

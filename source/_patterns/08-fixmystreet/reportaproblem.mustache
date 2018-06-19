@@ -1,0 +1,526 @@
+<style>
+    .section-heading {
+        font-size: 32px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #00483a;
+    }
+
+    #front-howto {
+        border-right: 1em solid transparent;
+    }
+
+#front_stats {
+    display: table;
+    width: 100%;
+    color: #fff;
+    background: #50B948;
+    font-family: "Open Sans", Arial, Helvetica, "DejaVu Sans Condensed", "DejaVu Sans", sans-serif
+}
+
+#front_stats div {
+    display: table-cell;
+    text-align: center;
+    padding: 1em;
+    line-height: 1.25em;
+    font-size: 0.8125em;
+    font-weight: bold
+}
+
+#front_stats big {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.5385em
+}
+
+ol.big-numbers {
+    padding: 0;
+    margin: 0;
+    counter-reset: li
+}
+
+ol.big-numbers>li {
+   position: relative;
+   list-style: none;
+   padding: 0 0 0 2.5em;
+   font-weight: 400;
+   font-family: "Fira Sans", sans-serif;
+   font-size: 1.25rem;
+   margin: 0 0 40px 0;
+
+}
+
+
+ol.big-numbers>li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: 0;
+    color: #656d80;
+    line-height: 1;
+    font-family: "Open Sans", Arial, Helvetica, "DejaVu Sans Condensed", "DejaVu Sans", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem
+}
+
+
+
+
+
+
+.full-width {
+    margin: 0 -1em
+}
+
+#front_stats {
+    display: table;
+    width: 100%;
+    color: #fff;
+    background: #50B948;
+    font-family: "Open Sans", Arial, Helvetica, "DejaVu Sans Condensed", "DejaVu Sans", sans-serif
+}
+
+#front_stats div {
+    display: table-cell;
+    text-align: center;
+    padding: 1em;
+    line-height: 1.25em;
+    font-size: 0.8125em;
+    font-weight: bold
+}
+@media (max-width: 992px) {
+    #front_stats div {
+        display: block;
+        text-align: center;
+        padding: 1em;
+        line-height: 1.25em;
+        font-size: 0.8125em;
+        font-weight: bold
+    }
+}
+
+#front_stats big {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #50B948;
+    font-size: 64px;
+    font-weight: 900;
+    font-family: "Fira Sans", sans-serif;
+}
+#front-howto {
+    border-right: 1em solid transparent
+}
+
+#front_stats {
+    background: none;
+    color: #222;
+    padding-top: 1em
+}
+
+
+
+
+#front-howto .full-width {
+    margin: 0 -1em
+}
+
+
+
+.item-list__item--empty {
+    background: none;
+    color: #777
+}
+
+.item-list__item--empty p {
+    margin: 0;
+    padding: 1em;
+    text-align: center
+}
+
+.item-list--front-page {
+    border-bottom: none
+}
+
+.item-list--front-page .item-list__item {
+    background-color: transparent
+}
+
+.problem-header .update-img,
+.item-list .update-img {
+    float: right;
+    margin: 0.3em 0 0.5em 1em;
+    width: 33%
+}
+
+h4.static-with-rule {
+    margin-top: 1em;
+    margin-bottom: 0;
+    padding: 0.75em 1.14286em
+}
+
+.item-list--updates li {
+    background: transparent;
+    margin-top: 0;
+    padding: 1em 1em 1em 0;
+    margin-left: 1em
+}
+
+.item-list--updates li .item-list__update-text>:last-child {
+    margin-bottom: 0
+}
+
+.item-list--updates li .meta-2 {
+    font-style: normal
+}
+
+
+
+.item-list {
+    margin: 0 0 1em;
+    padding: 0;
+    border-bottom: 0.25em solid #50B948;
+}
+
+.item-list__item--indented, .item-list__item--with-pin {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.item-list__item {
+    list-style: none;
+    background-color: #f6fcf0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.item-list__item--with-pin a {
+      border-top: 1px solid #e5e5e5;
+}
+
+.item-list__item--with-pin.yellow a {
+    background-size: 24px 32px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(https://oxfordshire.commercial.fixmystreet.staging.mysociety.org/cobrands/oxfordshire/images/pin-yellow-small.png);
+}
+
+.item-list__item--with-pin a {
+    background-image: url(https://oxfordshire.commercial.fixmystreet.staging.mysociety.org/cobrands/oxfordshire/images/pin-yellow-small.png);
+    background-size: 24px 32px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-decoration: none;
+}
+
+.item-list__item--with-pin.orange a {
+    background-size: 24px 32px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(https://oxfordshire.commercial.fixmystreet.staging.mysociety.org/cobrands/oxfordshire/images/pin-orange-small.png);
+}
+
+
+
+.item-list--reports__item a:before, .item-list--reports__item a:after {
+    content: " ";
+    display: table;
+}
+
+
+
+.item-list--reports__item .img {
+    width: 90px;
+    float: right;
+    height: auto;
+    margin-left: 1em;
+}
+
+#front-recently img {
+    height: auto;
+    max-width: 100%;
+}
+
+#front-recently img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+
+.item-list__item--indented a, .item-list__item--with-pin a {
+    display: block;
+    padding: 1em;
+    padding-left: 2.5em;
+    border-left: solid 1em transparent;
+    background: transparent;
+}
+
+.item-list--front-page .item-list__item {
+    background-color: transparent;
+}
+
+.item-list--front-page {
+    border-bottom: none;
+}
+
+.item-list--front-page {
+    border-bottom: none
+}
+
+.item-list--front-page .item-list__item {
+    background-color: transparent
+}
+
+
+.item-list--reports__item--selected {
+    background: #cfcfcf
+}
+
+.item-list--reports__item--selected a,
+.item-list--reports__item--selected a:hover,
+.item-list--reports__item--selected a:focus {
+    background-color: transparent
+}
+
+.item-list--front-page {
+    border-bottom: none
+}
+
+.item-list--front-page .item-list__item {
+    background-color: transparent
+}
+
+.item-list__item--indented h3, .item-list__item--with-pin h3 {
+    color: inherit;
+    margin: 0 0 0.2em 0;
+    padding-top: 0;
+    line-height: 1.3em;
+    display: inline;
+}
+
+
+
+.item-list--reports__item small, .item-list--reports__item .small-print {
+    color: #333;
+    display: block;
+    padding: 0.25em 0;
+}
+
+#front-recently small, #front-recently .small-print {
+    font-family: "Open Sans",Arial,Helvetica,"DejaVu Sans Condensed","DejaVu Sans",sans-serif;
+    font-size: 0.8125em;
+    line-height: 1.2307em;
+}
+
+.item-list__item {
+    list-style: none;
+    background-color: #f6fcf0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.item-list--reports__item a:after {
+    clear: both;
+}
+.item-list--reports__item a:before, .item-list--reports__item a:after {
+    content: " ";
+    display: table;
+}
+
+
+.item-list__item--indented h3, .item-list__item--with-pin h3 {
+    color: inherit;
+    margin: 0 0 0.2em 0;
+    padding-top: 0;
+    line-height: 1.3em;
+}
+.item-list__heading {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5;
+    padding-top: 0.25em;
+    margin: 0;
+}
+
+.item-list--reports__item .img {
+    width: 90px;
+    float: right;
+    height: auto;
+    margin-left: 1em;
+}
+
+/* Postcode form */
+    .postcode-form .occlss-form-cntrls {
+        margin-bottom: 0;
+    }
+    .postcode-form__controls {
+        padding-left: 12px;
+    }
+    @media (max-width: 992px) {
+        .postcode-form__controls {
+            margin-top: 12px;
+            padding-left: 0;
+        }
+    }
+</style>
+<header class="occlss-page-head" role="banner">
+
+  <div class="occlss-wrapper occlss-page-head__wraper occlss-page-head__wraper--border {{ selectedCategoryClass }}">
+    <!--START wrapper block-->
+    <div class="occlss-layout occlss-layout--align-start">
+      <!--START layout block-->
+      <div class="occlss-layout__col occlss-layout__col--sm-12 occlss-layout__col--bleed occlss-page-head__nav">
+        <nav class="occlss-site-nav">
+          <a href="{{ link.pages-homepage }}" class="occlss-site-nav__logo-link" title="Back to Oxfordshire County Council Home">
+            {{> atoms-occlss-head-logo }}
+          </a>
+        </nav>
+      </div>
+    </div>
+    <!--End layout elemnt -->
+    <div class="occlss-layout occlss-layout--gutter-l">
+      <!--START layout block-->
+      <div class="occlss-layout__col occlss-layout__col--12 occlss-layout__col--order-2-md occlss-page-head__cat-nav-container occlss-page-head__cat-nav-container--secondary">
+        <!--START layout elemnt -->
+        {{> molecules-category-nav }}
+      </div>
+      <!--End layout elemnt -->
+    </div>
+    <!--End layout block -->
+
+  </div>
+  <!--End wrapper block -->
+
+</header>
+
+<section>
+  <!--START section block -->
+  <div class="occlss-wrapper">
+    <!--START wrapper block-->
+    <div class="occlss-layout">
+      <!--START layout block-->
+
+
+      <div class="occlss-layout occlss-layout--gutter-s">
+        <!--START layout block-->
+        <div class="occlss-layout__col occlss-layout__col--12">
+          <!--START layout elemnt -->
+          <h1>Find and report road or street problems</h1>
+        </div>
+        <!--End layout elemnt -->
+
+        <div class="occlss-layout__col occlss-layout__col--md-7">
+          <form class="postcode-form">
+            <div class="occlss-layout">
+              <div class="occlss-layout__col occlss-layout__col--bleed occlss-layout__col--md-10">
+                <div class="occlss-form-cntrls">
+                  <label for="input-type-text-a1e1" class="occlss-form-cntrls__label">Enter an Oxfordshire postcode, or street name and area</label>
+                  <input class="occlss-form-cntrls__input" id="input-type-text-a1e1" name="input-type-text-a1e1" type="text">
+                </div>
+              </div>
+
+              <div class="occlss-layout__col occlss-layout__col--bleed occlss-layout__col--md-2 occlss-layout__col--align-self-end postcode-form__controls">
+                <button type="submit" class="occlss-button occlss-button--primary occlss-button--fullwidth occlss-u-bspace-none">Find</button>
+              </div>
+              <div class="occlss-layout__col occlss-layout__col--12 occlss-layout__col--bleed occlss-u-tspace-sm">
+                ...
+                <a href="#">or locate me automatically</a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <!--End layout elemnt -->
+        <div class="occlss-layout__col occlss-layout__col--md-6">
+          <div id="front-howto">
+            <h2 class="section-heading">How to report a problem</h2>
+
+            <ol class="big-numbers">
+                <li>Enter an Oxfordshire postcode, or street name and area</li>
+                <li>Locate the problem on a map of the area</li>
+                <li>Enter details of the problem</li>
+                
+                    <li>Confirm the report and Oxfordshire County Council will investigate</li>
+                
+            </ol>
+          </div>
+        </div>
+        <div class="occlss-layout__col occlss-layout__col--md-6">
+          <div id="front-recently">
+            <h2 class="section-heading">
+              Recently reported problems
+            </h2>
+            <section class="full-width">
+              <div id="front_stats">
+                  <div><big>0</big> <h3 style="font-weight: 400;line-height: 1">reports in past week</h3></div>
+                  <div><big>0</big> <h3 style="font-weight: 400;line-height: 1">fixed in past month</h3></div>
+                  <div><big>102</big> 
+                  <h3 style="font-weight: 400;line-height: 1">updates on reports</h3></div>
+              </div>
+            </section>
+            <section class="full-width">
+              <ul id="js-reports-list" class="item-list item-list--reports item-list--front-page">
+                <li class="item-list__item item-list--reports__item item-list__item--with-pin yellow" data-report-id="816" data-lastupdate="2017-06-13T15:44:11"
+                  id="report-816">
+                  <a href="https://oxfordshire.commercial.fixmystreet.staging.mysociety.org/report/816">
+                    <h3 class="item-list__heading">Vegetation problem has been scheduled for fixing</h3>
+                    <small>15:42, 13 Jun 2017</small>
+                  </a>
+
+                </li>
+                <li class="item-list__item item-list--reports__item item-list__item--with-pin orange" data-report-id="747" data-lastupdate="2017-07-07T14:26:08"
+                  id="report-747">
+                  <a href="https://oxfordshire.commercial.fixmystreet.staging.mysociety.org/report/747">
+                    <h3 class="item-list__heading">Twin potholes</h3>
+                    <small>
+                      11:15, 31 Jan 2017, last updated 14:26, 7 Jul 2017
+                    </small>
+                  </a>
+
+                </li>
+                <li class="item-list__item item-list--reports__item item-list__item--with-pin yellow" data-report-id="745" data-lastupdate="2017-01-26T12:34:11"
+                  id="report-745">
+                  <a href="https://oxfordshire.commercial.fixmystreet.staging.mysociety.org/report/745">
+                    <h3 class="item-list__heading">Largelothole</h3>
+                    <small>
+                      12:29, 26 Jan 2017
+                    </small>
+                  </a>
+
+                </li>
+                <li class="item-list__item item-list--reports__item item-list__item--with-pin orange" data-report-id="742" data-lastupdate="2017-02-01T15:08:57"
+                  id="report-742">
+                  <a href="https://oxfordshire.commercial.fixmystreet.staging.mysociety.org/report/742">
+                    <h3 class="item-list__heading">Test pothole for Trial</h3>
+                    <small>
+                      17:21, 24 Jan 2017, last updated 15:08, 1 Feb 2017
+                    </small>
+                  </a>
+
+                </li>
+                <li class="item-list__item item-list--reports__item item-list__item--with-pin orange" data-report-id="741" data-lastupdate="2017-02-01T14:05:41"
+                  id="report-741">
+                  <a href="https://oxfordshire.commercial.fixmystreet.staging.mysociety.org/report/741">
+
+                    <h3 class="item-list__heading">Test pothole for Trial</h3>
+                    <small>
+                      17:20, 24 Jan 2017, last updated 14:05, 1 Feb 2017
+                    </small>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+        </div>
+      </div>
+      <!--End layout block -->
+
+    </div>
+    <!--End layout block -->
+  </div>
+  <!--End wrapper block -->
+</section>
+<!--End section block -->
+{{> organisms-page-footer-no-links }}

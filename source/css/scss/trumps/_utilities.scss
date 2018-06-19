@@ -108,6 +108,21 @@ $padding-bottomlist:(
     }
 }
 
+// left padding space
+$padding-leftlist:(
+  none: 0,
+  xs: 6,
+  sm: 12,
+  md: 25,
+  large: 50
+);
+
+@each $key,$val in $padding-leftlist {
+    .occlss-u-lpspace-#{$key} {
+        padding-left: ($val / 16) * 1rem;
+    }
+}
+
 // Max width
 $trim-width:(
   one-quarter: 25%,

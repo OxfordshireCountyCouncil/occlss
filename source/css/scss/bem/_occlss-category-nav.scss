@@ -27,13 +27,15 @@
         content: "";
         bottom: 0;
         position: absolute;
-        width: 82%;
         top: rem(34px);
+        left: 0;
+        right: rem(32px);
         height: rem($occlss-category-nav-underline-height);
         display: block;
         @include transition(all .1s ease-in-out);
         @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
             top: rem(25px);
+            right: rem(12px);
         }
     }
     &:active,
@@ -134,5 +136,18 @@
     .occlss-category-nav__link {
         pointer-events: none;
         cursor: default;
+    }
+}
+
+.occlss-category-nav--small {
+    .occlss-category-nav__item {
+        font-size: rem(18px);
+        padding-bottom: rem(6px);
+        padding-right: rem(12px);
+    }
+    .occlss-category-nav__link {
+        &:after {
+            top: 100%;
+        }
     }
 }

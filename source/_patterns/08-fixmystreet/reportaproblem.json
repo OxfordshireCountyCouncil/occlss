@@ -1,0 +1,37 @@
+{
+    "category_nav": {
+        "site-nav-mod-class": "occlss-category-nav--small",
+        "nav_link": [
+            {
+                "name": "Report a problem",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state": "",
+                "linkURL": "#"
+            },
+            {
+                "name":"Log in to Fixmystreet",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state":"",
+                "linkURL": "#"
+            },
+            {
+                "name":"All reports",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state":"",
+                "linkURL": "#"
+            },
+            {
+                "name":"Local alerts",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state":"",
+                "linkURL": "#"
+            },
+            {
+                "name":"Help",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state":"",
+                "linkURL": "#"
+            }
+        ]
+    }
+}

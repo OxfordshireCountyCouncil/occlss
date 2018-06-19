@@ -51,7 +51,7 @@
   },
   "styleGuideExcludes": [
   ],
-  "defaultPattern": "styleguide",
+  "defaultPattern": "fixmystreet-reportaproblem",
   "defaultShowPatternInfo": false,
   "cleanPublic" : true,
   "patternExtension": "mustache",
@@ -80,7 +80,7 @@
   "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternStates": {
   },
-  "patternExportPatternPartials": ["pages-homepage"],
+  "patternExportPatternPartials": ["fixmystreet-reportaproblem"],
   "patternExportDirectory": "./pattern_exports/",
   "cacheBust": true,
   "starterkitSubDir": "dist"

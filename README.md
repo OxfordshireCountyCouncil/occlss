@@ -222,6 +222,8 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-pager";
 @import "node_modules/occlss/scss/bem/occlss-loading-bar";
 @import "node_modules/occlss/scss/bem/occlss-short-summary";
+@import "node_modules/occlss/scss/bem/occlss-accordion";
+
 
 // UTILITIES
 // scope

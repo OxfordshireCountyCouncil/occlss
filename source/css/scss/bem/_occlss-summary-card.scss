@@ -1,0 +1,31 @@
+.occlss-summary-card {
+    display: block;
+}
+
+.occlss-summary-card__cont {
+    display: block;
+    padding: rem(25px 15px);
+    transition: background-color 0.1s ease-in-out;
+    text-decoration: none;
+    &:hover {
+        background-color: $occlss-summary-card-bg-color-hover;
+        .occlss-summary-card__summary-text {
+            color: $occlss-summary-card-summary-text-color-hover;
+         }
+         .occlss-summary-card__title {
+            color: $occlss-summary-card-title-color;
+         }
+    }
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
+}
+
+.occlss-summary-card__title {
+    margin-bottom: 0;
+}
+
+.occlss-summary-card__summary-text {
+    margin: 0;
+    color: $occlss-summary-card-summary-text-color;
+}

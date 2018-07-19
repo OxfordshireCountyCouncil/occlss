@@ -910,7 +910,7 @@ $occlss-short-summary-council-color:                 $occlss-brand-color-snuff !
 
 
 
-// accordion
+// Accordion
 $occlss-accordion-color-primary:                     $occlss-brand-color-aqua-deep !default;
 $occlss-accordion-color-residents:                   $occlss-brand-color-aqua-deep !default;
 $occlss-accordion-color-business:                    $occlss-brand-color-boston-blue !default;
@@ -918,3 +918,11 @@ $occlss-accordion-color-council:                     $occlss-brand-color-victori
 $occlss-accordion-heading-color:                     #ffffff !default;
 $occlss-accordion-heading-font-size:                 $occlss-global-font-size-large !default;
 $occlss-accordion-heading-font-weight:               $occlss-global-font-weight-regular !default;
+
+
+// Summary card
+$occlss-summary-card-title-color:                    $occlss-link-color-primary !default;
+$occlss-summary-card-title-color-hover:              $occlss-link-color-primary !default;
+$occlss-summary-card-summary-text-color:             #333333 !default;
+$occlss-summary-card-summary-text-color-hover:       #000000 !default;
+$occlss-summary-card-bg-color-hover:                 $occlss-brand-color-iron !default;

@@ -50,6 +50,9 @@
 .occlss-pager__link {
     font-weight: normal;
     color: #000;
+    &:focus {
+      @extend %highlight-bg-on-focus;
+    }
 }
 
 .occlss-pager__item.is-active:first-child {

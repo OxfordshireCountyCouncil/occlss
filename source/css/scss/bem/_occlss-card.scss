@@ -11,11 +11,12 @@
     overflow: hidden;
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         height: auto;
-        overflow: visible;
+        max-height: rem(400px);
     }
     position: relative;
     margin-bottom: rem(23px);
     border: 1px solid #000000;
+    background-color: #000000;
 }
 
 .occlss-card__image {

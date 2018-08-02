@@ -24,6 +24,13 @@
     }
 }
 
+@-moz-document url-prefix() {
+    .occlss-promoted-content-panel:hover .occlss-promoted-content-panel__arrow {
+        text-decoration: none;
+        display: inline;
+    }
+}
+
 // Text line sizes
 .occlss-promoted-content-panel__text-line--header-giga {
     font-size: rem($occlss-promoted-content-panel-text-line-font-size-header-giga);

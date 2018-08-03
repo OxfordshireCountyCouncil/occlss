@@ -393,6 +393,18 @@ $reflex-cell-spacing-lg:    ($reflex-cell-spacing * 2) !default;
  $occlss-layout-columns:     $occlss-global-column-amount !default; // number of columns
  
 
+// Global font sizes
+$occlss-g-xxxxx-large-font-size:    $occlss-global-font-size-xxxxx-large !default;
+$occlss-g-xxxx-large-font-size:     $occlss-global-font-size-xxxx-large !default;
+$occlss-g-xxx-large-font-size:      $occlss-global-font-size-xxx-large !default;
+$occlss-g-xx-large-font-size:       $occlss-global-font-size-xx-large !default;
+$occlss-g-x-large-font-size:        $occlss-global-font-size-x-large !default;
+$occlss-g-large-font-size:          $occlss-global-font-size-large !default;
+$occlss-g-medium-font-size:         $occlss-global-font-size-medium !default;
+$occlss-g-regular-font-size:        $occlss-global-font-size-regular !default;
+$occlss-g-small-font-size:          $occlss-global-font-size-small !default;
+
+
 
 
 // Main title
@@ -728,6 +740,9 @@ $occlss-utilities-font-color-more-link-tab-widget:     $occlss-brand-color-mine-
 $occlss-promoted-content-panel-background-color:                           transparent !default;
 $occlss-promoted-content-panel-font-color:                                 $occlss-brand-color-cod-gray !default;
 $occlss-promoted-content-panel-icon-color:                                 $occlss-brand-color-cod-gray !default;
+$occlss-promoted-content-panel-padding:                                    20px !default;
+
+
 
 // Promo colours
 $occlss-promoted-content-panel-background-color-aqua-deep:                 $occlss-brand-color-aqua-deep !default;

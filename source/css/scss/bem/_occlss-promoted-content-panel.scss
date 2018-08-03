@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     height: inherit;
-    padding: rem(20px);
+    padding: rem($occlss-promoted-content-panel-padding);
     position: relative;
     display: block;
     -ms-flex: 1 1 auto;
@@ -192,4 +192,59 @@
     &:hover {
         color: #ffffff;
     }
+}
+
+// Image container
+
+.occlss-promoted-content-panel--row {
+    @extend .occlss-layout;
+    padding: 0;
+    display: flex;
+}
+
+.occlss-promoted-content-panel__image-container--cell,
+.occlss-promoted-content-panel__content--cell {
+    @extend .occlss-layout__col;
+    @extend .occlss-layout__col--flex;
+}
+
+.occlss-promoted-content-panel__image-container--cell {
+    @extend .occlss-layout__col--md-5;
+    padding: 0;
+}
+.occlss-promoted-content-panel__content--cell {
+    @extend .occlss-layout__col--md-7;
+}
+
+.occlss-promoted-content-panel__image-container--cell-full {
+    min-height: 245px;
+}
+.occlss-promoted-content-panel__image-container--cell-full,
+.occlss-promoted-content-panel__content--cell-full {
+    @extend .occlss-layout__col;
+    @extend .occlss-layout__col--flex;
+    @extend .occlss-layout__col--xs-12;
+}
+
+
+.occlss-promoted-content-panel__image-container {
+    overflow: hidden;
+    position: relative;
+
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        min-height: 400px;
+    }
+}
+
+.occlss-promoted-content-panel__image {
+    height: auto;
+    display: block;
+
+       position: absolute;
+       top: 50%; 
+       left: 50%;
+       -webkit-transform: translate(-50%,-50%);
+       -ms-transform: translate(-50%,-50%);
+       transform: translate(-50%,-50%);    
+
 }

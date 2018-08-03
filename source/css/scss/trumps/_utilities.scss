@@ -60,6 +60,9 @@ $margin-toplist:(
 @each $key,$val in $margin-toplist {
     .occlss-u-tspace-#{$key} {
         margin-top: ($val / 16) * 1rem;
+        @include breakpoint(max-height 800px) {
+            margin-top: (round($val / 5 ) / 16) * 1rem;
+        }
     }
 }
 
@@ -75,6 +78,9 @@ $padding-toplist:(
 @each $key,$val in $padding-toplist {
     .occlss-u-tpspace-#{$key} {
         padding-top: ($val / 16) * 1rem;
+        @include breakpoint(max-height 800px) {
+            padding-top: (round($val / 5 ) / 16) * 1rem;
+        }
     }
 }
 
@@ -88,10 +94,16 @@ $margin-bottomlist:(
 );
 
 @each $key,$val in $margin-bottomlist {
+
     .occlss-u-bspace-#{$key} {
         margin-bottom: ($val / 16) * 1rem;
+
+        @include breakpoint(max-height 800px) {
+            margin-bottom: (round($val / 5 ) / 16) * 1rem;
+        }
     }
 }
+
 
 // bottom padding space
 $padding-bottomlist:(
@@ -105,6 +117,9 @@ $padding-bottomlist:(
 @each $key,$val in $padding-bottomlist {
     .occlss-u-bpspace-#{$key} {
         padding-bottom: ($val / 16) * 1rem;
+        @include breakpoint(max-height 800px) {
+            padding-bottom: (round($val / 5 ) / 16) * 1rem;
+        }
     }
 }
 

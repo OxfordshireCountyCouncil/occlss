@@ -8,6 +8,9 @@
     @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
         margin: rem($occlss-summary-text-font-margin-primary);
     }
+    @include breakpoint(max-height 800px) {
+        margin: rem(0 0 30px 0);
+    }
 }
 
 // Global font sizes

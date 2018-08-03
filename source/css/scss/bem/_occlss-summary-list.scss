@@ -81,3 +81,16 @@
         }
     }
 }
+
+.occlss-summary-list--large {
+    .occlss-summary-list__item {
+        display: block;
+        margin-bottom: rem(10px);
+    }
+    .occlss-summary-list__link {
+        display: inline-block;
+        padding: 0;
+        text-decoration: none;
+        @extend .occlss-g-x-large-text;
+    }
+}

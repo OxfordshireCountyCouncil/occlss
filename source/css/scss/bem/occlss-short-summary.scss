@@ -16,7 +16,11 @@
     margin-bottom: rem(32px);
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         margin-bottom: 0;
+        &:last-child {
+            margin-bottom: rem(32px);
+        }
     }
+
     &::after {
         content: "";
         position: absolute;

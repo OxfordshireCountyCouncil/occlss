@@ -135,6 +135,12 @@ gulp.task('pl-copy:js', function(){
     .pipe(gulp.dest(path.resolve(paths().public.js)));
 });
 
+// JS Styleguide copy
+gulp.task('pl-copy:js-styleguide', function(){
+  return gulp.src('**/*.js', {cwd: path.resolve(paths().source.js_styleguide)} )
+    .pipe(gulp.dest(path.resolve(paths().public.js_styleguide)));
+});
+
 // Images copy
 gulp.task('pl-copy:img', function(){
   return gulp.src('**/*.*',{cwd: path.resolve(paths().source.images)} )
@@ -201,6 +207,7 @@ gulp.task('pl-assets', gulp.series(
   gulp.parallel(
     'sass',
     'pl-copy:js',
+    'pl-copy:js-styleguide',
     'pl-copy:img',
     'pl-copy:favicon',
     'pl-copy:font',

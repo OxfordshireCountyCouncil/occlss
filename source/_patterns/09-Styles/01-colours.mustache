@@ -1,0 +1,96 @@
+<div style="background: #ffffff">
+    <div class="occlss-layout occlss-layout--gutter-s">
+        <div class="occlss-layout__col occlss-layout__col--12">
+            <main id="occlss-main-content">
+
+
+            <div class="stlgd-section-heading js-stlgd-page-section" id="colours">
+                <h1 class="stlgd-section-heading__cont" title="Colours">Colours</h1>
+            </div>
+
+            <div class="stlgd-section-content">
+                <div class="stlgd-section-content__content stlgd-section-content__content--med">
+
+                    <p class="stlgd-section-content__intro-text">
+                        Our colour palette designed to communicate trustworthiness while meeting the accessibility standards.
+                    </p>
+                    <p>
+                        The colour swatches below lists the hex value and the SASS variable for each corresponding colour.
+                    </p>
+
+                    <h2 class="stlgd-section-content__heading stlgd-section-content__heading--large">Wayfinding colours</h2>
+
+                    <p>
+                        Colours from this pallet we using to distinguish residents, business and council sections from the rest
+                    </p>
+
+                    {{#wayfindingcolours}}
+                        <div class="sg-colors">
+                            {{#color}}
+                            {{> atoms-color-swatch }}
+                            {{/color}}
+                        </div>
+                    {{/wayfindingcolours}}
+
+                    <h2 class="stlgd-section-content__heading stlgd-section-content__heading--large">Secondary colour palette</h2>
+
+                    {{#secondarypalette}}
+                        <div class="sg-colors">
+                            {{#color}}
+                            {{> atoms-color-swatch }}
+                            {{/color}}
+                        </div>
+                    {{/secondarypalette}}
+                    
+
+                    <h2 class="stlgd-section-content__heading stlgd-section-content__heading--large">Link colours</h2>
+
+                    {{#linkcolors}}
+                        <div class="sg-colors">
+                            {{#color}}
+                            {{> atoms-color-swatch }}
+                            {{/color}}
+                        </div>
+                    {{/linkcolors}}
+
+                    <h2 class="stlgd-section-content__heading stlgd-section-content__heading--large">Messages colours</h2>
+
+                    {{#messagescolors}}
+                        <div class="sg-colors">
+                            {{#color}}
+                            {{> atoms-color-swatch }}
+                            {{/color}}
+                        </div>
+                    {{/messagescolors}}
+
+                    <h2 class="stlgd-section-content__heading stlgd-section-content__heading--large">Search Button colours</h2>
+                    
+                    {{#searchbuttoncolors}}
+                        <div class="sg-colors">
+                            {{#color}}
+                            {{> atoms-color-swatch }}
+                            {{/color}}
+                        </div>
+                    {{/searchbuttoncolors}}
+
+                    <h2 class="stlgd-section-content__heading stlgd-section-content__heading--large">Typography colours</h2>
+
+                    {{#typographycolors}}
+                        <div class="sg-colors">
+                            {{#color}}
+                            {{> atoms-color-swatch }}
+                            {{/color}}
+                        </div>
+                    {{/typographycolors}}
+
+                </div>
+            </div>
+
+
+
+            </main>
+        </div>
+    </div>
+</div>
+
+ {{> styleguide-footer }}

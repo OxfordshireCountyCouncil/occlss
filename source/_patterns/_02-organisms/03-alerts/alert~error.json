@@ -1,0 +1,13 @@
+{
+    "alet-type-error": true,
+    "alet-type": "error",
+    "mod-class": "occlss-alert--error",
+    "icon": {
+        "icon-class-name":"occlss-icon--exclamation-error occlss-alert__sign",
+        "aria-hidden":"true"
+    },
+    "heading": "We're sorry, there is a problem",
+    "text": [
+        {"paragraph":"The details are highlighed below."}
+    ]
+}

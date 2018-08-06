@@ -1,0 +1,292 @@
+{
+	"title" : "Council page",
+	"bodyClass": "council",
+    "emergency" : false,
+    "selectedCategoryClass":"occlss-page-head__wraper--council",
+    "category_nav": {
+        "nav_link": [
+            {
+                "name": "Residents",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state": "",
+                "linkURL": "link.pages-homepage"
+            },
+            {
+                "name":"Business",
+                "modeClass": "occlss-category-nav__item--business",
+                "state":"",
+                "linkURL": "link.pages-business"
+            },
+            {
+                "name":"Council",
+                "modeClass": "occlss-category-nav__item--council",
+                "state":"active",
+                "linkURL": "link.pages-council"
+            }
+        ]
+    },
+    "toptasksPane": {
+          "modeClass": "occlss-top-tasks-pane--council",
+          "tabs": [
+              {
+              "tabTitle": "Services",
+              "summaryList":{
+                  "list-mod-class": "occlss-summary-list--tasks-pane",
+                  "listItem": [
+                  {
+                      "listItem-link-name": "Find your councillor",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "http://mycouncil.oxfordshire.gov.uk/mgMemberIndex.aspx?VW=TABLE&amp;PIC=1&amp;bcr=1"
+                  },
+                  {
+                      "listItem-link-name": "How to comment",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/comments-compliments-and-complaints-about-oxfordshire-county-council"
+                  },
+                  {
+                      "listItem-link-name": "Contact your council",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/contact-oxfordshire-county-council"
+                  },
+                  {
+                      "listItem-link-name": "Browse committee papers",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "http://mycouncil.oxfordshire.gov.uk/ieDocHome.aspx?bcr=1"
+                  }
+                  ]
+              }
+          }
+        ]
+    },
+    "popularcontentGridSection" : {
+        "popularcontentSection": [
+            {
+                "popular-content-pane-heading": "Local government",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
+                "popular-content-pane-view-more-link-name": "More local government",
+                "popular-content-pane-view-more-link-url": "https://www2.oxfordshire.gov.uk/cms/public-site/oxfordshire-county-council",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Oxfordshire County Council",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/oxfordshire-county-council"
+                    },
+                    {
+                        "listItem-link-name": "District councils",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/district-councils"
+                    },
+                    {
+                        "listItem-link-name": "Parish and town councils",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/parish-and-town-councils"
+                    },
+                    {
+                        "listItem-link-name": "Local MPs and MEPs",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/your-local-mps-and-meps"
+                    },
+                    {
+                        "listItem-link-name": "More local government",
+                        "listItem-mod-class": "",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/oxfordshire-county-council"
+                    }
+                    ]
+                }
+            },
+            {
+                "popular-content-pane-heading": "Councillors",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
+                "popular-content-pane-view-more-link-name": "More councillors",
+                "popular-content-pane-view-more-link-url": "https://www2.oxfordshire.gov.uk/cms/public-site/oxfordshire-councillors",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Full list of councillors",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "http://mycouncil.oxfordshire.gov.uk/mgMemberIndex.aspx?VW=TABLE&amp;PIC=1&amp;bcr=1"
+                    },
+                    {
+                        "listItem-link-name": "The Cabinet",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/cabinet"
+                    },
+                    {
+                        "listItem-link-name": "Leader of the Council",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/leader-council"
+                    },
+                    {
+                        "listItem-link-name": "Allowances",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/oxfordshire-councillor-allowances"
+                    },
+                    {
+                        "listItem-link-name": "More councillors",
+                        "listItem-mod-class": "",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/oxfordshire-councillors"
+                    }
+                    ]
+                }
+            } ,
+            {
+                "popular-content-pane-heading": "Meetings and decisions",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
+                "popular-content-pane-view-more-link-name": "More meetings and decisions",
+                "popular-content-pane-view-more-link-url": "https://www2.oxfordshire.gov.uk/cms/public-site/meetings-and-decisions",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Meetings calendar",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "http://mycouncil.oxfordshire.gov.uk/mgCalendarMonthView.aspx?GL=1&amp;bcr=1"
+                    },
+                    {
+                        "listItem-link-name": "Agendas, minutes and reports",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "http://mycouncil.oxfordshire.gov.uk/ieDocHome.aspx?bcr=1"
+                    },
+                    {
+                        "listItem-link-name": "What happens at meetings?",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/what-happens-meetings"
+                    },
+                    {
+                        "listItem-link-name": "Get involved at meetings",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/get-involved-meetings"
+                    },
+                    {
+                        "listItem-link-name": "More meetings and decisions",
+                        "listItem-mod-class": "",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/meetings-and-decisions"
+                    }
+                    ]
+                }
+            },
+            {
+                "popular-content-pane-heading": "Council tax and finance",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
+                "popular-content-pane-view-more-link-name": "More council tax and finance",
+                "popular-content-pane-view-more-link-url": "https://www2.oxfordshire.gov.uk/cms/public-site/council-tax-and-finance",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Your council tax",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/your-council-tax-bill"
+                    },
+                    {
+                        "listItem-link-name": "Council spending",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/council-funding-and-spending"
+                    },
+                    {
+                        "listItem-link-name": "Reports of council spending",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/financial-transparency"
+                    },
+                    {
+                        "listItem-link-name": "Annual accounts and audit",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/annual-accounts-and-audit"
+                    },
+                    {
+                        "listItem-link-name": "More council tax and finance",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/council-tax-and-finance"
+                    }
+                    ]
+                }
+            },
+            {
+                "popular-content-pane-heading": "More in this section",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
+                "popular-content-pane-view-more-link-name": "",
+                "popular-content-pane-view-more-link-url": "",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Voting and elections",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/voting-and-elections"
+                    },
+                    {
+                        "listItem-link-name": "Make a complaint",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/complaints-about-oxfordshire-county-council"
+                    },
+                    {
+                        "listItem-link-name": "Managers and salaries",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/managers-and-salaries"
+                    },
+                    {
+                        "listItem-link-name": "Working for us",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/working-oxfordshire-county-council"
+                    },
+                    {
+                        "listItem-link-name": "Aims and objectives",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/vision-and-objectives"
+                    }
+                    ]
+                }
+            }
+        ]
+  },
+  "featuredPanelGridSection": {
+    "featuredPanels": [
+        {
+            "panel-size": "occlss-layout__col--lg-4 occlss-layout__col--md-6",
+            "featuredPanelDefault" : {
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--selective-yellow",
+                "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/sitemap/",
+                "promoted-content-panel-textlines": [
+                    {
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-mega",
+                        "promoted-content-panel-textline-text": "Other ways we can help you",
+                        "promoted-content-panel-textline-arrow": true
+                    }
+                ]
+            }
+        }
+    ]
+  }
+}

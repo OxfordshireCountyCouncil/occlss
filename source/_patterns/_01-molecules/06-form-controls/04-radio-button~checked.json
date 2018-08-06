@@ -1,0 +1,12 @@
+{
+    "form-cntrs-tag": "div",
+    "form-cntrs-name": "input-type-radio-2",
+    "form-cntrs-class": "occlss-form-cntrls--listitem",
+    "form-cntrs-label-text": "Radio button checked",
+    "form-cntrs-label-class": "",
+    "form-cntrs-input-type": "radio",
+    "form-cntrs-input-value": "opt-2",
+    "form-cntrs-input-class": "",
+    "form-cntrs-input-status": "checked",
+    "form-cntrs-input-group-name": "radio-1"
+}

@@ -1,0 +1,56 @@
+{{#findMyNearest}}
+<div class="occlss-wrapper">
+    <div class="occlss-find-my-nearest" role="search">
+        <div class="occlss-layout occlss-layout--gutter-s">
+
+            <div class="occlss-layout__col occlss-layout__col--md-5">
+                <form id="js-occlss-find-my-nearest-postcode">
+                    <div class="occlss-layout occlss-find-my-nearest__search-form-cont occlss-find-my-nearest__search-form-cont--postcode">
+                        <div class="occlss-layout__col occlss-layout__col--md-8">
+                            <div class="occlss-form-cntrls occlss-find-my-nearest__input-group">
+                                <legend class="occlss-form-cntrls__label occlss-find-my-nearest__label">Find my nearest ...</legend>
+                                <label for="input-type-text-a1e1">Enter a postcode</label>
+                                <input class="occlss-form-cntrls__input" id="input-type-text-a1e1" name="input-type-text-a1e1" type="text">
+                            </div>
+                        </div>
+
+                        <div class="occlss-layout__col occlss-layout__col--md-4 occlss-layout__col--align-self-end occlss-find-my-nearest__input-group">
+                            <button type="submit" class="occlss-button occlss-button--primary occlss-button--fullwidth occlss-find-my-nearest__submit">Search</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="occlss-layout__col occlss-layout__col--md-4 occlss-layout__col--align-self-end">
+                {{#selectAPlace}}
+                    {{> molecules-input-select }}
+                {{/selectAPlace}}
+            </div>
+
+
+            <div class="occlss-layout__col occlss-layout__col--md-3 occlss-layout__col--align-self-end occlss-find-my-nearest__find-my-location-cont">
+
+                <span class="occlss-icon occlss-icon--pin" aria-hidden="true">
+                    <svg aria-hidden="true" class="occlss-icon__container occlss-find-my-nearest__icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#pin" class="icon__source icon__source--svg"></use>
+                    </svg>
+                </span>
+
+                <a href="javascript:void(0);" class="occlss-find-my-nearest__link" id="js-occlss-find-my-nearest-link">
+                Or find my location 
+                <div class="occlss-loading-bar js-occlss-loading-bar">
+                    <div class="occlss-loading-bar__content occlss-loading-bar__content--dark-gray">
+                        <i class="occlss-loading-bar__icon"></i>
+                        <i class="occlss-loading-bar__icon"></i>
+                        <i class="occlss-loading-bar__icon"></i>
+                        <i class="occlss-loading-bar__icon"></i>
+                    </div>
+                </div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+{{/findMyNearest}}

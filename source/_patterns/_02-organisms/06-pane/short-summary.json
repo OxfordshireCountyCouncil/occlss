@@ -1,0 +1,34 @@
+{
+  "short-summary": {
+    "occlss-short-summary-mod-class": "occlss-short-summary--business",
+    "occlss-short-summary-split-mod-class": "occlss-splitter--business",
+    "occlss-short-summary-list": [
+      {
+        "title": "Oxfordshire County Council",
+        "summary": "How Oxfordshire County Council works to provide services to the public.",
+        "link": "#"
+      },
+      {
+        "title": "District councils",
+        "summary": "This page describes the work of the five district councils in Oxfordshire.",
+        "linkURL": "#"
+      },
+      {
+        "title": "MPs and MEPs",
+        "summary": "Find your Members of Parliament (MPs) and Members of European Parliament (MEPs).",
+        "inkURL": "#"
+      },
+      {
+        "title": "Parish and town councils",
+        "summary": "What are parish and town councils and how do they work?",
+        "inkURL": "#"
+      },
+      {
+        "title": "Mayors and chairs",
+        "summary": "Details about the chairmen of Oxfordshire's district councils and town mayors.",
+        "inkURL": "#"
+      }
+    ]
+
+  }
+}

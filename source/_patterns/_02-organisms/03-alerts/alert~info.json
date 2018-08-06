@@ -1,0 +1,13 @@
+{
+    "alet-type-info": true,
+    "alet-type": "info",
+    "mod-class": "occlss-alert--info",
+    "icon": {
+        "icon-class-name":"occlss-icon--info occlss-alert__sign",
+        "aria-hidden":"true"
+    },
+    "heading": "Cookie",
+    "text": [
+        {"paragraph":"We use cookie to ensure that we give you the best experience on our website. By countinuing to browser the site you are agreeing our use of cookies."}
+    ]
+}

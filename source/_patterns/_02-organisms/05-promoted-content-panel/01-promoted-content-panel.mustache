@@ -1,0 +1,24 @@
+{{#featuredPanelDefault}}
+<a href="{{{ promoted-content-panel-url }}}" class="occlss-promoted-content-panel {{ promoted-content-panel-mod-class }}">
+  <div class="occlss-promoted-content-panel__content">
+    
+
+    {{#promoted-content-panel-textlines}}
+    <div class="occlss-promoted-content-panel__text-line {{ promoted-content-panel-textline-mode-class }}">
+        {{promoted-content-panel-textline-text}}
+        {{#promoted-content-panel-textline-arrow}}
+        <span class="occlss-icon occlss-icon--arrow-right-long-right-secondary occlss-promoted-content-panel__arrow">
+            {{promoted-content-panel-textline-spleat}}
+            <svg aria-hidden="true" class="occlss-icon__container occlss-promoted-content-panel__link-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#arrow-right-long-right-secondary"
+                    class="icon__source icon__source--svg"></use>
+            </svg>
+        </span>
+        {{/promoted-content-panel-textline-arrow}}
+    </div>
+    {{/promoted-content-panel-textlines}}
+
+  </div>
+</a>
+
+{{/featuredPanelDefault}}

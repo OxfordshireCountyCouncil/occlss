@@ -1,0 +1,17 @@
+{{#cardDefault}}
+    <article class="occlss-card">
+        <a href="{{ card-link-url }}" class="occlss-card__link">
+            <figure class="occlss-card__image-container">
+                <img src="{{ card-image-url }}" class="occlss-card__image" alt="{{ card-image-alt-tex }}">
+            </figure>
+            <header class="occlss-card__header">
+                <h3 class="occlss-card__title">{{ card-title-text }}</h3>
+            </header>
+            <div class="occlss-card__main">
+            {{#card-text}}
+                <p class="occlss-card__paragraph">{{paragraph}}</p>
+            {{/card-text}}
+            </div>
+        </a>
+    </article>
+{{/cardDefault}}

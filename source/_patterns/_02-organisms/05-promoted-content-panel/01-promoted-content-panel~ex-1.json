@@ -1,0 +1,28 @@
+{
+    "featuredPanelDefault" : {
+        "promoted-content-panel-mod-class": "occlss-promoted-content-panel__heading--micra",
+        "promoted-content-panel-url": "javascript:void(0);",
+        "promoted-content-panel-textlines": [
+            {
+                "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-small",
+                "promoted-content-panel-textline-text": "Short term dates",
+                "promoted-content-panel-textline-arrow": false
+            },
+            {
+                "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
+                "promoted-content-panel-textline-text": "The school year has now ended",
+                "promoted-content-panel-textline-arrow": false
+            },
+            {
+                "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-large",
+                "promoted-content-panel-textline-text": "The next term date status Tuesday 5 September (Monday 4 September in an inset day).",
+                "promoted-content-panel-textline-arrow": false
+            },
+            {
+                "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
+                "promoted-content-panel-textline-text": "View all school term and holiday dates",
+                "promoted-content-panel-textline-arrow": true
+            }
+        ]
+    }
+}

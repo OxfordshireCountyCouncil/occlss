@@ -1,0 +1,11 @@
+{
+    "form-cntrs-tag": "div",
+    "form-cntrs-name": "input-type-checkbox",
+    "form-cntrs-class": "occlss-form-cntrls--listitem",
+    "form-cntrs-label-text": "Checkbox",
+    "form-cntrs-label-class": "",
+    "form-cntrs-input-type": "checkbox",
+    "form-cntrs-input-value": "checkbox-1",
+    "form-cntrs-input-class": "",
+    "form-cntrs-input-status": ""
+}

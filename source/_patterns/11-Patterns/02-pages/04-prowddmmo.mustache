@@ -1,0 +1,410 @@
+{{> organisms-page-head-with-form}}
+
+<div class="occlss-wrapper">
+  {{> molecules-breadcrumb }}
+</div>
+
+<main role="main" id="occlss-main-content">
+  <!--START section block -->
+
+  <div class="occlss-wrapper occlss-wrapper--secondary">
+    <!--START wrapper block-->
+    <div class="occlss-layout occlss-layout--gutter-s">
+        <div class="occlss-layout__col occlss-layout__col--md-3 occlss-u-hide-md">
+        <!--START layout elemnt -->
+        {{> organisms-sidebar-item-section }}
+      </div>
+      <!--START layout block-->
+      <div class="occlss-layout__col occlss-layout__col--md-9">
+        <!--START layout elemnt -->
+        <h1>Register of Landowner Statements</h1>
+        <p class="occlss-g-summary-text">
+          Search the register of landowner statements, declarations and plans deposited by landowners.
+        </p>
+
+
+        {{#prowdSearchBox}}        
+        <form class="occlss-form occlss-u-bspace-large">
+            <div class="occlss-layout">
+
+                <div class="occlss-layout__col occlss-layout__col--12 occlss-layout__col--bleed occlss-form__horizontal-cont">
+                    {{> molecules-input }}
+                </div>
+                <div class="occlss-layout__col occlss-layout__col--12 occlss-layout__col--bleed occlss-form__controls occlss-form__controls--inline-horizontal">
+                    <button type="submit" class="occlss-button occlss-button--primary occlss-button--fullwidth occlss-u-bspace-none">Search register</button>
+                </div>
+
+            </div>
+        </form>
+        {{/prowdSearchBox}}
+        
+       <a href="javascript:void(0);" class="js-occlss-hideshow-content-btn occlss-u-show-sm">What is the register?</a>
+      
+        <div class="occlss-u-hide-sm js-occlss-hideshow-content">
+            <p>
+              The register of statements, declarations and plans deposited by landowners to prevent their land being:
+            </p>
+
+            <ul>
+              <li>Recorded as a public right of way on the basis of presumed dedication under the Highways Act 1980 section 31(6),
+                protecting against such claims only during the period of time the statement and declaration are valid.</li>
+              <li>Registered as a town or village green under the Commons Act 2006 Section 15A, provided they are deposited before
+                there has been 20 years recreational use of the land as of right.</li>
+            </ul>
+
+            <p>
+              Please note entries prior to 1 October 2013 only refer to deposits under the Highways Act 1980.
+            </p>
+        </div>
+
+      </div>
+      <!--End layout elemnt -->
+    </div>
+
+    <div class="occlss-wrapper occlss-wrapper--secondary">
+      <!--START wrapper block-->
+      <div class="occlss-layout occlss-layout--gutter-s">
+        <!--START layout block-->
+
+        
+        <div class="occlss-layout__col occlss-layout__col--md-9  occlss-layout__col--order-2">
+
+          
+            <h2>Records</h2>
+            <div class="occlss-form">
+            {{#sortBy}}
+              <form>
+                {{> molecules-input-select }}
+              </form>
+            {{/sortBy}}
+            </div>
+            
+          <p class="occlss-u-tspace-sm">
+            <strong>Records 711 to 716 of 71</strong>
+            <span class="occlss-co"><a href="javascript:void(0)" class="js-occlss-open-close-fp">View filters</a></span>
+          </p>
+
+          {{> atoms-splitter(classes: "occlss-u-bspace-md") }}
+         
+          <div class="occlss-info-card">
+
+            <a href="#" class="occlss-info-card__title">Ambrosden Depot and Camp &amp; most of Ambrosden Village</a>
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Our reference: </div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">1002</div>
+            </div>
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Highway statement received: </div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">24/03/1994</div>
+            </div>
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Declaration expiry date: </div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">23/03/2000</div>
+            </div>
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Parishes: </div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">Ambrosden</div>
+            </div>
+
+            {{> atoms-splitter(classes: "occlss-u-tspace-md occlss-u-bspace-md") }}
+
+          </div>
+          <div class="occlss-info-card">
+
+            <a href="#" class="occlss-info-card__title">
+              Land at Brize Rorton<br>
+              Brize Norton<br>
+              Oxfordshire<br>
+              OX18 3NX
+            </a>
+
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Our reference: </div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">1002</div>
+            </div>
+
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Highway statement received: </div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">24/03/1994</div>
+            </div>
+
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Declaration expiry date: </div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">23/03/2000</div>
+            </div>
+
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Parishes: </div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">Ambrosden</div>
+            </div>
+
+            {{> atoms-splitter(classes: "occlss-u-tspace-md occlss-u-bspace-md") }}
+
+          </div>
+          <div class="views-row occlss-info-card">
+
+            <a href="#" class="occlss-info-card__title">
+              1. The Kennels, Bradwell Grove, Burford, OX18 4JP<br>
+              2. Land to the west of the Kennels, Bradwell Grove, Burford OX18 4JR<br>
+              3. Land to the east of the Lower Glissard's Plantation, Bradwell Grove  OX18 4JJ<br>
+              4. land to the west of Woodside Farm, Bradwell Grove, Burford OX18 4JJ</a>
+
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Our reference:</div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">1927</div>
+            </div>
+
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Greens statement received:</div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">Mon, 13/11/2017 - 12:00</div>
+            </div>
+
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Highway statement received:</div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">02/10/2017</div>
+            </div>
+
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Declaration expiry date:</div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">12/11/2037</div>
+            </div>
+
+            <div class="occlss-layout">
+              <div class="occlss-info-card__label occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-3">Parishes:</div>
+              <div class="occlss-info-card__content occlss-layout__col occlss-layout__col--6 occlss-layout__col--xs-9">Broadwell, Shilton</div>
+            </div>
+
+
+            {{> atoms-splitter(classes: "occlss-u-tspace-md occlss-u-bspace-md") }}
+
+          </div>
+
+          <nav class="occlss-pager" role="navigation" aria-labelledby="pagination-heading">
+            <h4 id="pagination-heading" class="occlss-u-visuallyhidden">Pagination</h4>
+            <ul class="occlss-pager__items">
+              <li class="occlss-pager__item occlss-pager__item--first">
+                <a href="#" class="occlss-pager__link" title="Go to first page">
+                  <span class="occlss-u-visuallyhidden">First page</span>
+                  <span aria-hidden="true">First</span>
+                </a>
+              </li>
+              <li class="occlss-pager__item occlss-pager__item--previous">
+                <a href="#" class="occlss-pager__link" title="Go to previous page" rel="prev">
+                  <span class="occlss-u-visuallyhidden">Previous page</span>
+                  <span aria-hidden="true">Previous</span>
+                </a>
+              </li>
+              <li class="occlss-pager__item occlss-pager__item--ellipsis" role="presentation">…</li>
+              <li class="occlss-pager__item">
+                <a href="#" class="occlss-pager__link" title="Go to page 3">
+                  <span class="occlss-u-visuallyhidden">
+                    Page
+                  </span>3</a>
+              </li>
+              <li class="occlss-pager__item">
+                <a href="#" class="occlss-pager__link" title="Go to page 4">
+                  <span class="occlss-u-visuallyhidden">
+                    Page
+                  </span>4</a>
+              </li>
+              <li class="occlss-pager__item is-active">
+                <a href="#" class="occlss-pager__link" title="Current page">
+                  <span class="occlss-u-visuallyhidden">
+                    Current page
+                  </span>5</a>
+              </li>
+              <li class="occlss-pager__item">
+                <a href="#" class="occlss-pager__link" title="Go to page 6">
+                  <span class="occlss-u-visuallyhidden">
+                    Page
+                  </span>6</a>
+              </li>
+              <li class="occlss-pager__item">
+                <a href="#" class="occlss-pager__link" title="Go to page 7">
+                  <span class="occlss-u-visuallyhidden">
+                    Page
+                  </span>7</a>
+              </li>
+              <li class="occlss-pager__item occlss-pager__item--ellipsis" role="presentation">…</li>
+              <li class="occlss-pager__item occlss-pager__item--next">
+                <a href="#" class="occlss-pager__link" title="Go to next page" rel="next">
+                  <span class="occlss-u-visuallyhidden">Next page</span>
+                  <span aria-hidden="true">Next</span>
+                </a>
+              </li>
+              <li class="occlss-pager__item occlss-pager__item--last">
+                <a href="#" class="occlss-pager__link" title="Go to last page">
+                  <span class="occlss-u-visuallyhidden">Last page</span>
+                  <span aria-hidden="true">Last</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <aside class="js-occlss-fp occlss-layout__col occlss-layout__col--md-3 occlss-layout__col--order-1 occlss-fp">
+  
+              <div class="occlss-fp__header">
+                  <a href="javascript:void(0)" class="js-occlss-open-close-fp occlss-fp__close-link">
+                    Close
+                    <span class="occlss-icon occlss-icon--ex" aria-hidden="true">
+                      <svg aria-hidden="true" class="occlss-icon__container occlss-fp__close-link-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#ex" class="icon__source icon__source--svg"></use>
+                      </svg>
+                    </span>
+                  </a>
+              </div>
+
+              
+              <div class="occlss-fp__g">
+                <h2 class="occlss-fp__g-heading occlss-fp__g-heading--large">Filter my results</h2>
+                <a href="#" class="occlss-fp__g-link">Clear filters</a>
+              </div>
+
+              <div class="occlss-fp__g">
+
+                <h3 class="occlss-fp__g-heading">Deposit type</h3>
+                
+                <ul class="occlss-facets">
+                  
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">Highway</span>
+                      <span class="occlss-facets__item-count">(65)</span>
+                    </a>
+                  </li>
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">Highway and Village Green</span>
+                      <span class="occlss-facets__item-count">(89)</span>
+                    </a>
+                  </li>
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">Village Green</span>
+                      <span class="occlss-facets__item-count">(3)</span>
+                    </a>
+                  </li>                
+                </ul>
+
+              </div>
+
+              <div class="occlss-fp__g">
+
+                <h3 class="occlss-fp__g-heading">District</h3>
+                
+                <ul class="occlss-facets">
+                  
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">Cherwell</span>
+                      <span class="occlss-facets__item-count">(163)</span>
+                    </a>
+                  </li>
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">Oxford City</span>
+                      <span class="occlss-facets__item-count">(33)</span>
+                    </a>
+                  </li>
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">South Oxfordshire</span>
+                      <span class="occlss-facets__item-count">(225)</span>
+                    </a>
+                  </li>                   
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">Vale of the White Horse</span>
+                      <span class="occlss-facets__item-count">(2)</span>
+                    </a>
+                  </li>                 
+                </ul>
+
+              </div>
+
+              <div class="occlss-fp__g">
+
+                <h3 class="occlss-fp__g-heading">Parish</h3>
+                
+                <ul class="occlss-facets">
+                  
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">Abingdon</span>
+                      <span class="occlss-facets__item-count">(4)</span>
+                    </a>
+                  </li>
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">Adderbury</span>
+                      <span class="occlss-facets__item-count">(2)</span>
+                    </a>
+                  </li>
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">Alvescot</span>
+                      <span class="occlss-facets__item-count">(2)</span>
+                    </a>
+                  </li>                   
+                  <li class="occlss-facets__item">
+                    <a href="#" rel="nofollow" class="occlss-facets__item-link">
+                      <input role="presentation" aria-label="Used" tabindex="-1" type="checkbox" name="LH_ItemCondition" id="e1-23" class="occlss-facets__cbx"
+                    aria-hidden="true">
+                      <span class="occlss-facets__item-value">Ambrosden</span>
+                      <span class="occlss-facets__item-count">(1)</span>
+                    </a>
+                  </li>
+                  <li class="occlss-facets__item">
+                    <a href="#" class="occlss-fp__g-link">Show more</a>
+                  </li>                 
+                </ul>
+
+              </div>
+
+        </aside>
+
+
+      </div>
+    </div>
+
+    <!--End layout block -->
+  </div>
+  <!--End wrapper block -->
+</main>
+<!--End section block -->
+
+{{> organisms-page-footer }}

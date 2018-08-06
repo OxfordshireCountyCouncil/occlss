@@ -1,0 +1,60 @@
+<div class="occlss-alert {{ mod-class }}">
+    <div class="occlss-layout"><!--START layout block-->
+        <div class="occlss-layout__col occlss-layout__col--2 occlss-layout__col--flex occlss-alert__sign-cont"><!--START layout elemnt -->
+            
+            {{#alet-type-error}}
+                <span class="occlss-icon occlss-icon--exclamation-mark" aria-hidden="true">
+                    <svg aria-hidden="true" class="occlss-icon__container occlss-alert__sign">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#exclamation-mark" class="icon__source icon__source--svg"></use>
+                    </svg>
+                </span>
+            {{/alet-type-error}}
+
+            
+             {{#alet-type-warning}}
+                <span class="occlss-icon occlss-icon--warning-sign" aria-hidden="true">
+                    <svg aria-hidden="true" class="occlss-icon__container occlss-alert__sign">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#warning-sign" class="icon__source icon__source--svg"></use>
+                    </svg>
+                </span>
+            {{/alet-type-warning}}
+
+            {{#alet-type-info}}
+                <span class="occlss-icon occlss-icon--info" aria-hidden="true">
+                    <svg aria-hidden="true" class="occlss-icon__container occlss-alert__sign">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#info" class="icon__source icon__source--svg"></use>
+                    </svg>
+                </span>
+            {{/alet-type-info}}
+            
+            {{#alet-type-success}}
+                <span class="occlss-icon occlss-icon--check" aria-hidden="true">
+                    <svg aria-hidden="true" class="occlss-icon__container occlss-alert__sign">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#check" class="icon__source icon__source--svg"></use>
+                    </svg>
+                </span>
+            {{/alet-type-success}}
+
+        </div><!--End layout elemnt -->
+        <div class="occlss-layout__col occlss-layout__col--9 occlss-alert__cont occlss-layout__col--flex"><!--START layout elemnt -->
+                {{#heading}}<h3 class="occlss-alert__heading">{{ heading }}</h3>{{/heading}}
+                {{#text}}
+                <p class="occlss-alert__text">
+                    {{ paragraph }}
+                </p>
+                {{/text}}
+        </div><!--End layout elemnt -->
+ 
+        <div class="occlss-layout__col occlss-layout__col--1 occlss-layout__controls"><!--START layout elemnt -->
+              <a href="javascript:void(0);">
+                    
+                    <span class="occlss-icon occlss-icon--ex occlss-alert__ex-icon" aria-hidden="true">
+                        <svg aria-hidden="true" class="occlss-icon__container">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/occlss-sprite.svg#ex" class="icon__source icon__source--svg"></use>
+                        </svg>
+                    </span>
+                    
+              </a>
+        </div><!--End layout elemnt -->
+    </div> <!--End layout block -->
+</div>

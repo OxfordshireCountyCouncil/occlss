@@ -1,0 +1,71 @@
+<div style="padding: 10px; background-color: #fff;">
+
+    <div class="occlss-trim occlss-trim--green">
+        <!-- green trim -->
+
+        <form class="occlss-form">
+            <fieldset>
+                <legend class="occlss-form__group-title occlss-form__group-title--large">Legend text large</legend>
+                <span class="occlss-form__desc-text">Group description text</span>
+
+                {{> molecules-input }}
+
+                <fieldset> 
+                    <legend class="occlss-form__group-title">Select an option</legend>
+                    <ul class="occlss-form__listitems">
+                        <li class="occlss-form-cntrls occlss-form-cntrls--listitem">
+                            <input class="occlss-form-cntrls__checkbox" id="cb-opt-1" type="checkbox" name="cb-opt" value="option-1" checked>
+                            <label class="occlss-form-cntrls__label" for="cb-opt-1">Option 1</label>
+                        </li>
+                        <li class="occlss-form-cntrls occlss-form-cntrls--listitem">
+                            <input class="occlss-form-cntrls__checkbox" id="cb-opt-2" type="checkbox" name="cb-opt" value="option-2">
+                            <label class="occlss-form-cntrls__label" for="cb-opt-2">Option 2</label>
+                        </li>
+                        <li class="occlss-form-cntrls occlss-form-cntrls--listitem">
+                            <input class="occlss-form-cntrls__checkbox" id="cb-opt-3" type="checkbox" name="cb-opt" value="option-3">
+                            <label class="occlss-form-cntrls__label" for="cb-opt-3">Option 3</label>
+                        </li>
+                        <li class="occlss-form-cntrls occlss-form-cntrls--listitem">
+                            <input class="occlss-form-cntrls__checkbox" id="cb-opt-none" type="checkbox" name="cb-opt" disabled>
+                            <label class="occlss-form-cntrls__label" for="cb-opt-none">Option disabled</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                <legend class="occlss-form__group-title">Select an option</legend>
+                    <ul class="occlss-form__listitems">
+                        <li class="occlss-form-cntrls occlss-form-cntrls--listitem">
+                            <input class="occlss-form-cntrls__radiobutton" id="opt-1" type="radio" checked name="radio-1" value="opt-1">
+                            <label class="occlss-form-cntrls__label" for="opt-1">Options 1</label>
+                        </li>
+                        <li class="occlss-form-cntrls occlss-form-cntrls--listitem">
+                            <input class="occlss-form-cntrls__radiobutton" id="opt-2" type="radio" name="radio-1" value="opt-2">
+                            <label class="occlss-form-cntrls__label" for="opt-2">Options 2</label>
+                        </li>
+                        <li class="occlss-form-cntrls occlss-form-cntrls--listitem">
+                            <input class="occlss-form-cntrls__radiobutton" id="opt-3" type="radio" name="radio-1" value="opt-3" disabled>
+                            <label class="occlss-form-cntrls__label" for="opt-3">Options 3</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            
+            </fieldset>
+
+            <nav class="occlss-form__controls occlss-u-bspace-large" role="navigation">
+                <ul class="occlss-form__listitems">
+                    <li class="occlss-form__controls-list-item occlss-form__controls-list-item--spaced">
+                        <button class="occlss-button occlss-button--neutral">Back</button>
+                    </li>
+                    <li class="occlss-form__controls-list-item">
+                        <button class="occlss-button occlss-button--primary occlss-form__submit">Continue</button>
+                    </li>
+                </ul>
+            </nav>
+
+        </form>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,54 @@
+
+
+.occlss-table {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #0b0c0c;
+    width: 100%;
+    margin-bottom: 20px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        font-size: 19px;
+        line-height: 1.31579;
+        margin-bottom: 30px;
+    }
+}
+
+.occlss-table__header {
+    font-weight: 700;
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px solid #bfc1c3;
+    text-align: left;
+}
+
+.occlss-table__cell {
+    padding: 10px 20px 10px 0;
+    border-bottom: 1px solid #bfc1c3;
+    text-align: left;
+}
+
+.occlss-table__cell--numeric {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+}
+
+.occlss-table__header--numeric,
+.occlss-table__cell--numeric {
+    text-align: right;
+}
+
+.occlss-table__header:last-child,
+.occlss-table__cell:last-child {
+    padding-right: 0;
+}
+
+.occlss-table__caption {
+    font-weight: 700;
+    display: table-caption;
+    text-align: left;
+}

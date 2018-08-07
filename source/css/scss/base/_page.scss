@@ -25,7 +25,7 @@ html {
 
 p {
     line-height: $occlss-page-line-height-paragraph-unit;
-    margin: $occlss-page-margin-paragraph-unit;
+    margin: rem($occlss-page-margin-paragraph-unit);
 }
 
 ul {

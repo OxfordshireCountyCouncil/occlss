@@ -5,15 +5,8 @@ h4,
 h5,
 h6 {
   clear: both;
-  //line-height: $occlss-heading-font-line-height;
-  //font-weight: $occlss-heading-font-weight;
   font-family: $occlss-heading-font-family;
   margin: rem($occlss-heading-margin);
-  
-  &:first-of-type {
-    margin-top: 0;
-  }
-
 }
 
 

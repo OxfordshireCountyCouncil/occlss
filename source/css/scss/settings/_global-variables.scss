@@ -591,6 +591,9 @@ $occlss-form-font-color-hint-text:               $occlss-brand-color-emperor !de
 
 // Form controls _occlss-form-cntrls.scss
 $occlss-form-cntrls-label-font-size-small:      18px !default;
+$occlss-form-cntrls-label-font-size-deftxt:     16px !default;
+$occlss-form-cntrls-label-font-weight-deftxt:   $occlss-global-font-weight-regular !default;
+$occlss-form-cntrls-label-font-family-deftxt:   $occlss-global-font-family-primary !default;
 $occlss-form-cntrls-border-input-general:       1px solid $occlss-brand-color-mine-shaft !default;
 $occlss-form-cntrls-font-size-input-general:    $occlss-global-font-size-regular !default; 
 $occlss-form-cntrls-font-size-base:             1rem !default; // Base font size

@@ -56,6 +56,10 @@
     border-top: none;
 }
 
+.occlss-summary-card--councillor:first-of-type {
+    border-top: rem(2px solid $occlss-summary-card-border-color);
+}
+
 .occlss-summary-card__list {
     @extend %reset_list_style;
 }

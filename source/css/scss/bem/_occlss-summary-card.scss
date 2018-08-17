@@ -38,6 +38,15 @@
     }
 }
 
+.occlss-summary-card__party-logo {
+    float: right;
+    margin-top: rem(-35px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        float: none;
+        margin-top: 0;
+    }
+}
+
 .occlss-summary-card--councillor {
     border-top: rem(2px solid $occlss-summary-card-border-color);
     border-bottom: rem(2px solid $occlss-summary-card-border-color);

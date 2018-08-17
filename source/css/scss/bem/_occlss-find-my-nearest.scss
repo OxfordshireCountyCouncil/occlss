@@ -28,9 +28,10 @@
 }
 
 .occlss-find-my-nearest__link {
-    vertical-align: bottom;
     font-size: ($occlss-find-my-nearest-link-font-size);
+    font-weight: $occlss-find-my-nearest-link-font-weight;
     transition: all 0.5s ease;
+    padding: 0;
     &:hover {
         color: $occlss-find-my-nearest-link-color-hover;
         text-decoration: none;
@@ -84,17 +85,17 @@
 }
 
 .occlss-find-my-nearest--district {
-    max-width: rem(600px);
+    //max-width: rem(600px);
     margin-bottom: rem(40px);
     .occlss-find-my-nearest__input-group {
         padding-bottom: rem(24px);
     }
     .occlss-find-my-nearest__controls {
         @extend .occlss-layout__col--align-self-end;
-        margin-bottom: 24px;
-        padding-left: 24px;
+        margin-bottom: rem(24px);
+        padding-left: rem(24px);
         @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-            margin-bottom: 12px;
+            margin-bottom: rem(12px);
             padding-left: 0;
         }
     }
@@ -107,5 +108,29 @@
         @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
             margin-bottom: 0;
         }
+    }
+    .occlss-find-my-nearest__search-form-cont {
+        padding-left: rem(10px);
+    }
+}
+
+.occlss-find-my-nearest--district-tight {
+    .occlss-find-my-nearest__controls {
+            margin-bottom: rem(12px);
+            padding-left: 0;
+    }
+    .occlss-form-cntrls__input {
+            margin-bottom: 0;
+    }
+    .occlss-find-my-nearest__find-my-location-cont {
+            margin-bottom: 0;
+    }
+    .occlss-find-my-nearest__link {
+        margin-bottom: 0;
+        padding: 0;
+        font-size: rem(16px);
+    }
+    .occlss-find-my-nearest__input-group {
+        padding-bottom: rem(12px);
     }
 }

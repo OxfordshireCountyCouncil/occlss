@@ -39,11 +39,19 @@
     }
 }
 
+// list styles
 // Unstiled list
 .occlss-u-unstyled-list {
     @extend %reset_list_style;
     li {
         margin-bottom: 0;
+    }
+}
+
+.occlss-u-summary-list {
+    @extend %reset_list_style;
+    li {
+        margin-bottom: rem(12px);
     }
 }
 

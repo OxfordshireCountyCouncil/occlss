@@ -1,0 +1,18 @@
+{
+    "featuredPanelDefault" : {
+        "promoted-content-panel-mod-class": "occlss-promoted-content-panel--aqua-dee",
+        "promoted-content-panel-url": "javascript:void(0);",
+        "promoted-content-panel-textlines": [
+            {
+                "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--alert-heading occlss-promoted-content-panel__text-line--header-small",
+                "promoted-content-panel-textline-text": "Zombie apocalypse forecast",
+                "promoted-content-panel-textline-arrow": false
+            },
+            {
+                "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--alert-text occlss-promoted-content-panel__text-line--text-medium",
+                "promoted-content-panel-textline-text": "Oxfordshire is set to experience a zombie apocalypse over the next few days. Make sure you are prepared for the worst, with these tips from the Emergency ",
+                "promoted-content-panel-textline-arrow": true
+            }
+        ]
+    }
+}

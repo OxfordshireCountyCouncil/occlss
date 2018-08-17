@@ -248,3 +248,16 @@
        transform: translate(-50%,-50%);    
 
 }
+
+// Alerts
+.occlss-promoted-content-panel__text-line--alert-heading {
+    border-bottom: rem(1px solid $occlss-promoted-content-panel-text-line-alert-heading-underline-color);
+    padding-bottom: rem(10px);
+    padding-left: rem(10px);
+    padding-right: rem(10px);
+}
+
+.occlss-promoted-content-panel__text-line--alert-text {
+    padding-left:  rem(10px);
+    padding-right: rem(10px);
+}

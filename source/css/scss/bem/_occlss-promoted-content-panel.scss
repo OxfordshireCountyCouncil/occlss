@@ -12,6 +12,9 @@
     background: $occlss-promoted-content-panel-background-color;
     color: $occlss-promoted-content-panel-font-color;
     overflow: hidden;
+}
+
+.occlss-promoted-content-panel--link {
     &:hover {
         color: $occlss-promoted-content-panel-font-color;
         text-decoration: underline;

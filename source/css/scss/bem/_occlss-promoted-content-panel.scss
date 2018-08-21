@@ -198,37 +198,48 @@
 }
 
 // Image container
-
-.occlss-promoted-content-panel--row {
+.occlss-promoted-content-panel--image-left,
+.occlss-promoted-content-panel--image-top {
+    
     @extend .occlss-layout;
     padding: 0;
     display: flex;
+
+    .occlss-promoted-content-panel__image-container,
+    .occlss-promoted-content-panel__content {
+        @extend .occlss-layout__col;
+        @extend .occlss-layout__col--flex;
+    }
+
 }
 
-.occlss-promoted-content-panel__image-container--cell,
-.occlss-promoted-content-panel__content--cell {
-    @extend .occlss-layout__col;
-    @extend .occlss-layout__col--flex;
+.occlss-promoted-content-panel--image-left {
+    .occlss-promoted-content-panel__image-container {
+        width: 50%;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            width: 100%;
+        }
+        padding: 0;
+    }
+    .occlss-promoted-content-panel__content {
+        width: 50%;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            width: 100%;
+        }
+    }
 }
 
-.occlss-promoted-content-panel__image-container--cell {
-    @extend .occlss-layout__col--md-5;
-    padding: 0;
+.occlss-promoted-content-panel--image-top {
+    .occlss-promoted-content-panel__image-container {
+        min-height: 245px;
+    }
+    .occlss-promoted-content-panel__image-container,
+    .occlss-promoted-content-panel__content {
+        @extend .occlss-layout__col;
+        @extend .occlss-layout__col--flex;
+        @extend .occlss-layout__col--xs-12;
+    }
 }
-.occlss-promoted-content-panel__content--cell {
-    @extend .occlss-layout__col--md-7;
-}
-
-.occlss-promoted-content-panel__image-container--cell-full {
-    min-height: 245px;
-}
-.occlss-promoted-content-panel__image-container--cell-full,
-.occlss-promoted-content-panel__content--cell-full {
-    @extend .occlss-layout__col;
-    @extend .occlss-layout__col--flex;
-    @extend .occlss-layout__col--xs-12;
-}
-
 
 .occlss-promoted-content-panel__image-container {
     overflow: hidden;

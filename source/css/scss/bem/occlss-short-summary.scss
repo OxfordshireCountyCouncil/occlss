@@ -35,10 +35,14 @@
 
 .occlss-short-summary__link {
     @extend .occlss-promoted-content-panel;
+    color: $occlss-short-summary-content-font-color;
     padding: 0;
     &:hover {
+        color: $occlss-short-summary-content-font-color;
         text-decoration: none;
     }
+
+    
 }
 
 

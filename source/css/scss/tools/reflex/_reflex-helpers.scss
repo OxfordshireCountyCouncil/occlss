@@ -214,6 +214,17 @@
     padding: 0;
 }
 
+.occlss-layout__col--parent {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    .occlss-layout__col {
+      width: 100%;
+    }
+    
+}
+
 .#{$reflex-prefix}layout__col--bleed-x {
     padding: $reflex-cell-spacing 0;
 }

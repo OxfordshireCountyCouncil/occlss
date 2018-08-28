@@ -213,14 +213,14 @@
 
 .occlss-promoted-content-panel--image-left {
     .occlss-promoted-content-panel__image-container {
-        width: 50%;
+        width: 40%;
         @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
             width: 100%;
         }
         padding: 0;
     }
     .occlss-promoted-content-panel__content {
-        width: 50%;
+        width: 60%;
         @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
             width: 100%;
         }

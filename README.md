@@ -225,6 +225,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-accordion";
 @import "node_modules/occlss/scss/bem/occlss-summary-card";
 @import "node_modules/occlss/scss/bem/occlss-table";
+@import "node_modules/occlss/scss/bem/occlss-social-media-link";
 
 
 // UTILITIES

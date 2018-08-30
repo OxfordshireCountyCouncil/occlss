@@ -1,8 +1,12 @@
 .occlss-hero-pane {
     background-repeat: no-repeat;
+    min-height: rem(400px);
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
        background: none!important;
     }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        min-height: 100%;
+     }
 }
 
 .occlss-hero-pane__heading {
@@ -45,6 +49,9 @@
     .occlss-hero-pane__heading  {
         margin-top: 0;
     }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding-bottom: 0;
+     }
 }
 
 // If no image it will remove pagging from the top of the pannel

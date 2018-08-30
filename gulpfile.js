@@ -14,7 +14,8 @@ var gulp          = require('gulp'),
     autoprefixer  = require('gulp-autoprefixer'),
     htmlsplit     = require('gulp-htmlsplit'),
     sassdoc       = require('sassdoc'),
-    del           = require('del');
+    del           = require('del'),
+    replace       = require('gulp-replace');
 
   // SVG
   var $ = {
@@ -120,6 +121,7 @@ gulp.task('svg-sprite-create', function(done) {
 
 gulp.task('split-svg-mustache', function(done) {
   gulp.src('./source/svg-source/delivery/*.mustache')
+    .pipe(replace('-modClass-', '{{ modClass }}'))
     .pipe(htmlsplit())
     .pipe(gulp.dest('./source/_patterns/00-atoms/02-icons/'));
     done();

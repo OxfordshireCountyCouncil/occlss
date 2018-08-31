@@ -1,0 +1,29 @@
+{
+  "summaryList":{
+      "list-mod-class": "",
+      "listItem": [
+      {
+          "listItem-link-name": "Current vacancies",
+          "listItem-mod-class": "occlss-summary-list__item--underlined occlss-summary-list__item--td",
+          "listItem-link-mod-class": ""
+      },
+      {
+          "listItem-link-name": "Teaching vacancies",
+          "listItem-mod-class": "occlss-summary-list__item--underlined occlss-summary-list__item--td",
+          "listItem-link-mod-class": ""
+      },
+      {
+          "listItem-link-name": "Childcare job",
+          "listItem-mod-class": "occlss-summary-list__item--underlined occlss-summary-list__item--td",
+          "listItem-link-mod-class": "",
+          "listItem-link-url":  "#"
+      },
+      {
+          "listItem-link-name": "Social care careers",
+          "listItem-mod-class": "occlss-summary-list__item--underlined occlss-summary-list__item--td",
+          "listItem-link-mod-class": "",
+          "listItem-link-url":  "#"
+      }
+      ]
+  }
+} 

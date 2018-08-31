@@ -191,6 +191,12 @@ $occlss-global-colour-focus:  $occlss-brand-color-ronchi !default;
 
 
 
+// Global padding
+$occlss-global-padding-v1:       15px 20px 10px 0 !default;
+
+
+
+
 ///////////////////////////
 // END global variables //
 /////////////////////////
@@ -732,6 +738,7 @@ $occlss-tab-widget-border-color-tabs:                    $occlss-brand-color-sel
 $occlss-summary-list-border-color-item:                $occlss-brand-color-nebula !default;
 $occlss-summary-list-font-color-tab-widget:            $occlss-brand-color-mine-shaft !default;
 $occlss-summary-list-hover-color:                      $occlss-brand-color-iron !default;
+$occlss-summary-list-item-padding:                     $occlss-global-padding-v1 !default;
 
 // View all link _utilities.scss
 $occlss-utilities-font-color-more-link-tab-widget:     $occlss-brand-color-mine-shaft !default;
@@ -973,7 +980,7 @@ $occlss-summary-card-border-color:                   $occlss-brand-color-nebula 
 
 // Table
 $occlss-table-border-color:                          $occlss-brand-color-iron !default;
-$occlss-table-cell-padding:                          15px 20px 10px 0 !default;
+$occlss-table-cell-padding:                          $occlss-global-padding-v1 !default;
 $occlss-table-header-font-weight:                    $occlss-global-font-weight-bold !default;
 $occlss-table-header-font-weight-numeric:            $occlss-global-font-weight-regular !default;
 $occlss-table-header-font-weight-caption:            $occlss-global-font-weight-bold !default;

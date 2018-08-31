@@ -51,7 +51,8 @@
 }
 
 .occlss-table__caption {
-    font-weight: $occlss-table-header-font-weight-caption;
+    //font-weight: $occlss-table-header-font-weight-caption;
     display: table-caption;
     text-align: left;
+    @extend h2;
 }

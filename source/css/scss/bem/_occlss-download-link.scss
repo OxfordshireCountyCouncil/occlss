@@ -1,8 +1,15 @@
 .occlss-download-link {
-    background: #e0e2e5;
+    background: $occlss-download-link-bg-color;
     margin: rem(0 0 32px 0);
     padding: rem($occlss-download-link-padding);
     display: inline-block;
+    &:focus {
+        @extend %highlight-outline-on-focus;
+    }
+}
+
+.occlss-download-link__icon {
+    text-decoration: none;
 }
 
 .occlss-download-link__lnk {

@@ -1,40 +1,36 @@
 .occlss-alert-box {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
     position: relative;
-    margin-bottom: 20px;
-    padding: 10px 0;
-    font-size: 19px;
-    line-height: 1.31579;
-    margin-bottom: 30px;
+    margin-bottom: rem(20px);
+    padding: rem(10px 0);
+    font-size: rem(19px);
+    margin-bottom: rem(30px);
 }
 
 .occlss-alert-box__icon {
-    font-weight: 900;
+    font-weight: $occlss-alert-box-icon-font-weight;
     display: inline-block;
     position: absolute;
     top: 50%;
     left: 0;
-    min-width: 57px;
-    min-height: 55px;
-    margin-top: -26px;
-    padding-top: 3px;
-    border: 3px solid #000000;
+    min-width: rem(57px);
+    min-height: rem(55px);
+    margin-top: rem(-26px);
+    padding-top: rem(3px);
+    border: rem(3px solid $occlss-alert-box-icon-color);
     border-radius: 50%;
     color: #fff;
-    background: #000000;
-    font-size: 47px;
-    line-height: 42px;
+    background: $occlss-alert-box-icon-color;
+    font-size: rem(47px);
+    line-height: rem(42px);
     text-align: center;
 }
 
 .occlss-alert-box__text {
     display: block;
-    margin-left: 11px;
-    padding-left: 65px;
-    font-size: 19px;
-    font-weight: 400;
+    margin-left: rem(11px);
+    padding-left: rem(65px);
+    font-weight: $occlss-alert-box-font-weight;
+    font-size: rem($occlss-alert-box-font-size);
 }
 
 .occlss-alert-box__assistive {

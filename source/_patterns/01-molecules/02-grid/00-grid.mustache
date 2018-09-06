@@ -886,6 +886,44 @@
   </section>
 
   <section class="occlss-layout">
+
+  <div class="occlss-layout__col occlss-layout__col--12">
+    <h3>Responsive offsets</h3>
+
+    <p>There are responsive offset classes that correspond to the available breakpoints so you can choose to offset your <code>occlss-layout__col--x</code> elements at certain viewport sizes.</p>
+    <p>For example: <code>.occlss-layout__col--offset-2-md</code></p>
+  </div>
+  <div class="occlss-layout__col occlss-layout__col--12">
+
+
+<section class="occlss-layout example-section">
+        <div class="occlss-layout__col occlss-layout__col--12">
+              <h3>.occlss-layout__col--offset-<em>&lt;n&gt;</em>-<em>&lt;breakpoint&gt;</em> <a href="#offset">#</a></h3>
+              <p>When applied to <code>col-x</code> applies an offset when viewport size is above the selected breakpoint.</p>
+        </div>
+        <div class="occlss-layout__col occlss-layout__col--12">
+        <div class="occlss-layout">
+            <div class="occlss-layout__col occlss-layout__col--md-4 occlss-layout__col--offset-3 example-col">
+              <p>Offset by 3 columns at all times</p>
+            </div>
+            <div class="occlss-layout__col occlss-layout__col--4 occlss-layout__col--offset-2-md example-col">
+              <p>Offset by 2 columns when viewport size is above 768px</p>
+            </div>
+            <div class="occlss-layout__col occlss-layout__col--4 occlss-layout__col--offset-1-lg example-col">
+              <p>Offset by 1 column when viewport size is above 1200px</p>
+            </div>
+          </div>
+
+        </div>
+  </section>
+
+
+
+
+  </div>
+</section>
+
+  <section class="occlss-layout">
     <div class="occlss-layout__col occlss-layout__col--12">
       <h2>Advanced layout layout</h2>
     </div>

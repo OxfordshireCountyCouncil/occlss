@@ -232,6 +232,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-box-out";
 @import "node_modules/occlss/scss/bem/occlss-download-link";
 @import "node_modules/occlss/scss/bem/occlss-jump-link";
+@import "node_modules/occlss/scss/bem/occlss-calendar-date";
 
 
 // UTILITIES

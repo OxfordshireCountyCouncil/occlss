@@ -1,0 +1,13 @@
+.occlss-jump-link__nav {
+    list-style: none;
+}
+
+.occlss-jump-link__nav-item {
+    :before {
+        display: inline-block;
+        content: "\2014 ";
+        width: rem(24px);
+        margin-left: rem(-16px);
+    }
+}
+

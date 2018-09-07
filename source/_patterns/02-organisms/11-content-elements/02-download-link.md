@@ -1,0 +1,1 @@
+This is a style for use within a content page to make a document link stand out. This is different from an inline document link that works the same way as a regular link.

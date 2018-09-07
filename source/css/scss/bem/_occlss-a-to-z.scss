@@ -47,3 +47,29 @@
 .occlss-a-to-z__letter--off {
     color: $occlss-a-to-z-letter-color-off;
 }
+
+.occlss-a-to-z--inverse {
+    .occlss-a-to-z__wraper {
+        background-color: #fff;
+        text-align: left;
+    }
+    .occlss-a-to-z__item {
+        border-right-color: $occlss-a-to-z-background;
+    }
+    .occlss-a-to-z__letter {
+        @extend a;
+        color: $occlss-a-to-z-background;
+        &:focus {
+            @extend %highlight-bg-on-focus;
+        }
+    }
+    .occlss-a-to-z__letter--off {
+        color: $occlss-a-to-z-letter-color-off;
+        &:hover {
+            color: $occlss-a-to-z-letter-color-off;
+        }
+    }
+    .occlss-a-to-z__letter--selected {
+        color: $occlss-a-to-z-letter-selected-color;
+    }
+}

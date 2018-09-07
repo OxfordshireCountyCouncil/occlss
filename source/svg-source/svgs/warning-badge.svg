@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Warning icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Example-standard-page" transform="translate(-32.000000, -721.000000)">
+            <g id="Warning" transform="translate(32.000000, 721.000000)">
+                <g id="Warning-icon">
+                    <circle id="Combined-Shape" fill="#1A1A1A" cx="30" cy="30" r="30"></circle>
+                    <g id="Icon-/-Error-icon" stroke-width="1" transform="translate(25.000000, 13.000000)" fill="#FFFFFF">
+                        <path d="M2.02603647,-6.53801015e-15 L7.5067433,-7.10542736e-15 C8.6113128,-7.30833579e-15 9.5067433,0.8954305 9.5067433,2 C9.5067433,2.01486933 9.50657747,2.02973821 9.50624586,2.04460384 L9.03962712,22.9622044 C9.01538071,24.0491231 8.12731369,24.9176005 7.04012455,24.9176005 L2.56566046,24.9176005 C1.4811823,24.9176005 0.594293283,24.0532961 0.566325648,22.9691786 L0.0267016573,2.05157805 C-0.00178411275,0.947375921 0.870256295,0.0291509545 1.97445842,0.000665184412 C1.99164753,0.000221746575 2.00884165,-7.54635883e-15 2.02603647,-7.54951657e-15 Z" id="Rectangle-8"></path>
+                        <rect id="Rectangle-10" x="0.979779573" y="27.6170073" width="7.66246395" height="7.38299275" rx="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

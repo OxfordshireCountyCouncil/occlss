@@ -46,17 +46,16 @@
         margin-top: 0;
     }
 }
-
-.occlss-summary-card--councillor {
+.occlss-summary-card--lined {
     border-top: rem(2px solid $occlss-summary-card-border-color);
     border-bottom: rem(2px solid $occlss-summary-card-border-color);
 }
 
-.occlss-summary-card--councillor:not(:first-child) {
+.occlss-summary-card--lined:not(:first-child) {
     border-top: none;
 }
 
-.occlss-summary-card--councillor:first-of-type {
+.occlss-summary-card--lined:first-of-type {
     border-top: rem(2px solid $occlss-summary-card-border-color);
 }
 

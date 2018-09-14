@@ -1,11 +1,13 @@
 .occlss-widget-container {
     display: inline-block;
     width: 100%;
-    padding-left: rem(24px);
+    padding-left: 0;
     position: relative;
 
     @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
-
+    
+    padding-left: rem(24px);
+    
     &::before {
             content: "";
             position: absolute;

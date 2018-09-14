@@ -1,0 +1,28 @@
+.occlss-calendar-date {
+    border: rem(1px solid $occlss-calendar-date-color);
+    //max-width: 250px;
+}
+.occlss-calendar-date__header,
+.occlss-calendar-date__content,
+.occlss-calendar-date__footer {
+    text-align: center;
+}
+.occlss-calendar-date__header {
+    background: $occlss-calendar-date-color;
+    font-size: rem($occlss-calendar-date-header-font-size); 
+    font-weight: $occlss-calendar-date-header-font-weight;
+    padding: rem(6px);
+
+}
+
+.occlss-calendar-date__content {
+    padding-top: rem(10px);
+    font-size: rem(125px);
+    font-weight: $occlss-calendar-date-content-font-weight;
+    line-height: 0.8;
+}
+.occlss-calendar-date__footer {
+    font-size: rem($occlss-calendar-date-footer-font-size);
+    font-weight: $occlss-calendar-date-footer-font-weight;
+    padding-bottom: rem(10px);
+}

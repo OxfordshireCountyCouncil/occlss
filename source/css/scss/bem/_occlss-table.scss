@@ -1,0 +1,58 @@
+.occlss-table {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #0b0c0c;
+    width: 100%;
+    margin-bottom: rem(20px);
+    border-spacing: 0;
+    border-collapse: collapse;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        line-height: 1.31579;
+        margin-bottom: rem(30px);
+    }
+}
+
+.occlss-table__body {
+
+}
+.occlss-table__head {
+
+}
+
+.occlss-table__header {
+    font-weight: $occlss-table-header-font-weight;
+    padding: rem($occlss-table-cell-padding);
+    border-bottom: 1px solid $occlss-table-border-color;
+    text-align: left;
+}
+
+.occlss-table__cell {
+    padding: rem($occlss-table-cell-padding);
+    border-bottom: rem(1px solid $occlss-table-border-color);
+    text-align: left;
+}
+
+.occlss-table__cell--numeric {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: $occlss-table-header-font-weight-numeric;
+}
+
+.occlss-table__header--numeric,
+.occlss-table__cell--numeric {
+    text-align: right;
+}
+
+.occlss-table__header:last-child,
+.occlss-table__cell:last-child {
+    padding-right: 0;
+}
+
+.occlss-table__caption {
+    //font-weight: $occlss-table-header-font-weight-caption;
+    display: table-caption;
+    text-align: left;
+    @extend h2;
+}

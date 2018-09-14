@@ -1,0 +1,1 @@
+This is similar to the info box but should be used where more information is being supplied. For example, instructions or guidance.

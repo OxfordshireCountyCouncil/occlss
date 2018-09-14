@@ -24,3 +24,10 @@
         fill: $occlss-form-color-base-error;
     }
 }
+
+.occlss-icon--small {
+    .occlss-icon__container {
+        width: rem(18px);
+        height: rem(18px);
+    }
+}

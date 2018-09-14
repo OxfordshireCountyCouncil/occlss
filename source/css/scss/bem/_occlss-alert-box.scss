@@ -1,0 +1,47 @@
+.occlss-alert-box {
+    position: relative;
+    padding: rem(10px 0);
+    font-size: rem(19px);
+    margin-bottom: rem(30px);
+}
+
+.occlss-alert-box__icon {
+    font-weight: $occlss-alert-box-icon-font-weight;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    min-width: rem(57px);
+    min-height: rem(55px);
+    margin-top: rem(-26px);
+    padding-top: rem(3px);
+    border: rem(3px solid $occlss-alert-box-icon-color);
+    border-radius: 50%;
+    color: #fff;
+    background: $occlss-alert-box-icon-color;
+    font-size: rem(47px);
+    line-height: rem(42px);
+    text-align: center;
+}
+
+.occlss-alert-box__text {
+    display: block;
+    margin-left: rem(11px);
+    padding-left: rem(65px);
+    font-weight: $occlss-alert-box-font-weight;
+    font-size: rem($occlss-alert-box-font-size);
+}
+
+.occlss-alert-box__assistive {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    border: 0;
+    white-space: nowrap;
+}

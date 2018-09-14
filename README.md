@@ -222,6 +222,18 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-pager";
 @import "node_modules/occlss/scss/bem/occlss-loading-bar";
 @import "node_modules/occlss/scss/bem/occlss-short-summary";
+@import "node_modules/occlss/scss/bem/occlss-accordion";
+@import "node_modules/occlss/scss/bem/occlss-summary-card";
+@import "node_modules/occlss/scss/bem/occlss-table";
+@import "node_modules/occlss/scss/bem/occlss-social-media-link";
+@import "node_modules/occlss/scss/bem/occlss-widget-container";
+@import "node_modules/occlss/scss/bem/occlss-alert-box";
+@import "node_modules/occlss/scss/bem/occlss-info-box";
+@import "node_modules/occlss/scss/bem/occlss-box-out";
+@import "node_modules/occlss/scss/bem/occlss-download-link";
+@import "node_modules/occlss/scss/bem/occlss-jump-link";
+@import "node_modules/occlss/scss/bem/occlss-calendar-date";
+
 
 // UTILITIES
 // scope

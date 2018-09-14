@@ -166,3 +166,29 @@
 @media only screen and (max-width: map-get($reflex-breakpoints, 'xlg')) {
     @include reflex-loop-layout--order-helpers($reflex-columns, '-xlg');
 }
+
+// --------------------------------------------------
+// reflex offset helpers generation
+// --------------------------------------------------
+
+@include make-offset-helpers();
+
+@media only screen and (min-width: map-get($reflex-breakpoints, 'xs')) {
+    @include loop-offset-helpers($reflex-columns - 1, '-xs');
+}
+
+@media only screen and (min-width: map-get($reflex-breakpoints, 'sm')) {
+    @include loop-offset-helpers($reflex-columns - 1, '-sm');
+}
+
+@media only screen and (min-width: map-get($reflex-breakpoints, 'md')) {
+    @include loop-offset-helpers($reflex-columns - 1, '-md');
+}
+
+@media only screen and (min-width: map-get($reflex-breakpoints, 'lg')) {
+    @include loop-offset-helpers($reflex-columns - 1, '-lg');
+}
+
+@media only screen and (min-width: map-get($reflex-breakpoints, 'xlg')) {
+    @include loop-offset-helpers($reflex-columns - 1, '-xlg');
+}

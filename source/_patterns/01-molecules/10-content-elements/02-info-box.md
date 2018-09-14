@@ -1,0 +1,1 @@
+Unlike the alert box, this is a callout that simply supplies some some related or supplimentary information that may only apply to some people but will be quite important to them. It allows us to add this information without breaking the flow of the content too much. It should be short and to the point.

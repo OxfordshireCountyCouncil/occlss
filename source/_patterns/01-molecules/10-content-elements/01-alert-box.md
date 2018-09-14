@@ -1,0 +1,1 @@
+This is a callout that allows us to draw the user’s attention to something of high importance. It should only be used where failure to comply with the warning could lead to a fine or danger to the user. For example, where they might get a parking ticket. It won’t be used often.

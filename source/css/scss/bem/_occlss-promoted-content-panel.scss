@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     height: inherit;
-    padding: rem(20px);
+    padding: rem($occlss-promoted-content-panel-padding);
     position: relative;
     display: block;
     -ms-flex: 1 1 auto;
@@ -12,6 +12,9 @@
     background: $occlss-promoted-content-panel-background-color;
     color: $occlss-promoted-content-panel-font-color;
     overflow: hidden;
+}
+
+.occlss-promoted-content-panel--link {
     &:hover {
         color: $occlss-promoted-content-panel-font-color;
         text-decoration: underline;
@@ -21,6 +24,13 @@
     }
     &:focus {
         @extend %highlight-outline-on-focus;
+    }
+}
+
+@-moz-document url-prefix() {
+    .occlss-promoted-content-panel:hover .occlss-promoted-content-panel__arrow {
+        text-decoration: none;
+        display: inline;
     }
 }
 
@@ -185,4 +195,79 @@
     &:hover {
         color: #ffffff;
     }
+}
+
+// Image container
+
+.occlss-promoted-content-panel--image-left,
+.occlss-promoted-content-panel--image-top {
+    @extend .occlss-layout;
+    padding: 0;
+    display: flex;
+    .occlss-promoted-content-panel__image-container,
+    .occlss-promoted-content-panel__content {
+        @extend .occlss-layout__col;
+        @extend .occlss-layout__col--flex;
+    }
+}
+
+.occlss-promoted-content-panel--image-left {
+    .occlss-promoted-content-panel__image-container {
+        width: 48%;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            width: 100%;
+        }
+        padding: 0;
+    }
+    .occlss-promoted-content-panel__content {
+        width: 52%;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            width: 100%;
+        }
+    }
+}
+
+.occlss-promoted-content-panel--image-top {
+    .occlss-promoted-content-panel__image-container {
+        min-height: 245px;
+    }
+    .occlss-promoted-content-panel__image-container,
+    .occlss-promoted-content-panel__content {
+        @extend .occlss-layout__col;
+        @extend .occlss-layout__col--flex;
+        @extend .occlss-layout__col--xs-12;
+    }
+}
+
+.occlss-promoted-content-panel__image-container {
+    overflow: hidden;
+    position: relative;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        min-height: 400px;
+    }
+}
+
+.occlss-promoted-content-panel__image {
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);    
+
+}
+
+// Alerts
+.occlss-promoted-content-panel__text-line--alert-heading {
+    border-bottom: rem(1px solid $occlss-promoted-content-panel-text-line-alert-heading-underline-color);
+    padding-bottom: rem(10px);
+    padding-left: rem(10px);
+    padding-right: rem(10px);
+}
+
+.occlss-promoted-content-panel__text-line--alert-text {
+    padding-left:  rem(10px);
+    padding-right: rem(10px);
 }

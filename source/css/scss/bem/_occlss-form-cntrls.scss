@@ -234,6 +234,13 @@ $input-width:(
     font-size: rem($occlss-form-cntrls-label-font-size-small);
 }
 
+.occlss-form-cntrls__label--def-text{
+  font-size: rem($occlss-form-cntrls-label-font-size-deftxt);
+  margin: 0;
+  font-weight: $occlss-form-cntrls-label-font-weight-deftxt;
+  font-family: $occlss-form-cntrls-label-font-family-deftxt;
+}
+
 // Custom checkboxes
 .occlss-form-cntrls__checkbox,
 .occlss-form-cntrls__radiobutton {
@@ -330,3 +337,5 @@ $input-width:(
   top: 51%;
   cursor: pointer;
 }
+
+

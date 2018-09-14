@@ -1,0 +1,15 @@
+.occlss-social-media-link {
+    display: inline-block;
+    text-decoration: none;
+    color: $occlss-social-media-link-color;
+}
+
+.occlss-social-media-link__heading {
+    font-weight: $occlss-social-media-link-font-weight;
+    vertical-align: sub;
+}
+
+.occlss-social-media-link__icon {
+    float: left;
+    margin-right: rem(10px);
+}

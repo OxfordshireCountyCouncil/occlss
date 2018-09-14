@@ -11,8 +11,16 @@
     margin-left: 0;
 }
 
+
 .occlss-summary-list__item--underlined {
     border-bottom: rem(1px solid $occlss-summary-list-border-color-item);
+}
+
+.occlss-summary-list__item--td  {
+    padding: rem($occlss-summary-list-item-padding);
+    .occlss-summary-list__link {
+        padding: 0;
+    }
 }
 
 .occlss-summary-list__link {
@@ -79,5 +87,18 @@
         &:focus {
             @extend %highlight-bg-on-focus;
         }
+    }
+}
+
+.occlss-summary-list--large {
+    .occlss-summary-list__item {
+        display: block;
+        margin-bottom: rem(10px);
+    }
+    .occlss-summary-list__link {
+        display: inline-block;
+        padding: 0;
+        text-decoration: none;
+        @extend .occlss-g-medium-text;
     }
 }

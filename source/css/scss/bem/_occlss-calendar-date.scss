@@ -24,5 +24,7 @@
 .occlss-calendar-date__footer {
     font-size: rem($occlss-calendar-date-footer-font-size);
     font-weight: $occlss-calendar-date-footer-font-weight;
+    padding-left: rem(10px);
+    padding-right: rem(10px);
     padding-bottom: rem(10px);
 }

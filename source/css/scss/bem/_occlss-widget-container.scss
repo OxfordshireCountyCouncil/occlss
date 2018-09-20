@@ -8,15 +8,15 @@
     
     padding-left: rem(24px);
     
-    &::before {
-            content: "";
-            position: absolute;
-            background: $occlss-wdget-container-border-color;
-            width: rem(1px);
-            height: 101%;
-            top: 0;
-            left: 0;
-    }
+    /*&::before {
+        content: "";
+        position: absolute;
+        background: $occlss-wdget-container-border-color;
+        width: rem(1px);
+        height: 101%;
+        top: 0;
+        left: 0;
+    }*/
 
     &::after {
         content: "";

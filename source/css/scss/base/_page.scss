@@ -25,7 +25,11 @@ html {
 
 p {
     line-height: $occlss-page-line-height-paragraph-unit;
-    margin: rem($occlss-page-margin-paragraph-unit);
+    //margin: rem($occlss-page-margin-paragraph-unit);
+    margin-top: rem($occlss-page-margin-paragraph-unit-top);
+    margin-bottom: rem($occlss-page-margin-paragraph-unit-bottom);
+    margin-left: rem($occlss-page-margin-paragraph-unit-left);
+    margin-right: rem($occlss-page-margin-paragraph-unit-right);
 }
 
 p + h2,

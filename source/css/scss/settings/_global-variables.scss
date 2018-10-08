@@ -218,8 +218,12 @@ $occlss-page-font-size-primary:    $occlss-global-font-size-regular !default;
 
 
 // Paragraph default variables
-$occlss-page-line-height-paragraph-unit: 1.5 !default;
-$occlss-page-margin-paragraph-unit:      0 0 30px 0 !default;
+$occlss-page-line-height-paragraph-unit:    1.5 !default;
+$occlss-page-margin-paragraph-unit:         0 0 30px 0 !default;
+$occlss-page-margin-paragraph-unit-top:     0 !default;
+$occlss-page-margin-paragraph-unit-bottom:  30px !default;
+$occlss-page-margin-paragraph-unit-left:    0 !default;
+$occlss-page-margin-paragraph-unit-right:   0 !default;
 
 
 
@@ -256,7 +260,7 @@ $occlss-heading-font-weight-h3:  $occlss-global-font-weight-medium !default;
 
 
 // Base heading 4
-$occlss-heading-font-size-h4:   $occlss-global-font-size-x-large !default;
+$occlss-heading-font-size-h4:   $occlss-global-font-size-medium !default;
 $occlss-heading-font-weight-h4: $occlss-global-font-weight-medium !default;
 $occlss-heading-color-h4:       $occlss-brand-color-emperor !default;
 

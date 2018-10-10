@@ -3,19 +3,21 @@
  * EDITION-NODE-GULP
  * The gulp wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.
 ******************************************************/
-var gulp          = require('gulp'),
-    path          = require('path'),
-    browserSync   = require('browser-sync').create(),
-    svgSprite     = require('gulp-svg-sprite'),
-    argv          = require('minimist')(process.argv.slice(2)),
-    sass          = require('gulp-sass'),
-    plumber       = require('gulp-plumber'),
-    sourcemaps    = require('gulp-sourcemaps'),
-    autoprefixer  = require('gulp-autoprefixer'),
-    htmlsplit     = require('gulp-htmlsplit'),
-    sassdoc       = require('sassdoc'),
-    del           = require('del'),
-    replace       = require('gulp-replace');
+var gulp           = require('gulp'),
+    path           = require('path'),
+    browserSync    = require('browser-sync').create(),
+    svgSprite      = require('gulp-svg-sprite'),
+    argv           = require('minimist')(process.argv.slice(2)),
+    sass           = require('gulp-sass'),
+    plumber        = require('gulp-plumber'),
+    sourcemaps     = require('gulp-sourcemaps'),
+    autoprefixer   = require('gulp-autoprefixer'),
+    htmlsplit      = require('gulp-htmlsplit'),
+    sassdoc        = require('sassdoc'),
+    del            = require('del'),
+    replace        = require('gulp-replace'),
+    jshint         = require('gulp-jshint'),
+    jshint_stylish = require('jshint-stylish');
 
   // SVG
   var $ = {
@@ -134,7 +136,10 @@ gulp.task('split-svg-mustache', function(done) {
 // JS copy
 gulp.task('pl-copy:js', function(){
   return gulp.src('**/*.js', {cwd: path.resolve(paths().source.js)} )
-    .pipe(gulp.dest(path.resolve(paths().public.js)));
+     .pipe(jshint())
+     .pipe(jshint.reporter(jshint_stylish))
+     .pipe(jshint.reporter('fail'))
+     .pipe(gulp.dest(path.resolve(paths().public.js)));
 });
 
 // Images copy

@@ -1,0 +1,14 @@
+node_modules
+**/*-be-ignored.js
+test_ignore_stuff/
+source/js/svg4everybody.min.js
+source/js/svg4everybody.js
+source/js/selectivizr.js
+source/js/progress.js
+source/js/owl.carousel.options.js
+source/js/owl.carousel.js
+source/js/modernizr.js
+source/js/jquery.prettify.min.js
+source/js/fitvids.js
+source/js/browser.detect.js
+source/js/_modernizr.js

@@ -77,7 +77,7 @@
 
             $this.wrapInner($panelLnk);
 
-            setupLinkSetup($this.find('a'))
+            setupLinkSetup($this.find('a'));
 
         }); 
     });

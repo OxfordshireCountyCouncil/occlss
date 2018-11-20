@@ -143,3 +143,9 @@
         padding-bottom: rem(12px);
     }
 }
+
+.occlss-find-my-nearest--side-bar {
+    .occlss-layout__col {
+        @extend .occlss-layout__col--xs-12;
+    }
+}

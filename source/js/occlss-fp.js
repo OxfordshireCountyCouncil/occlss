@@ -16,7 +16,7 @@ jQuery( document ).ready(function() {
     jQuery('body').on('click', '.js-occlss-open-close-fp', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      jQuery('.js-occlss-fp').toggleClass('is-open')
+      jQuery('.js-occlss-fp').toggleClass('is-open');
     });
     
 });

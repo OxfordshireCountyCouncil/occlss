@@ -62,7 +62,8 @@ $margin-toplist:(
   xs: 6,
   sm: 12,
   md: 25,
-  large: 50
+  large: 50,
+  paragraph: 30
 );
 
 @each $key,$val in $margin-toplist {
@@ -77,7 +78,8 @@ $padding-toplist:(
   xs: 6,
   sm: 12,
   md: 25,
-  large: 50
+  large: 50,
+  paragraph: 30
 );
 
 @each $key,$val in $padding-toplist {
@@ -92,7 +94,8 @@ $margin-bottomlist:(
   xs: 6,
   sm: 12,
   md: 25,
-  large: 50
+  large: 50,
+  paragraph: 30
 );
 
 @each $key,$val in $margin-bottomlist {
@@ -109,7 +112,8 @@ $padding-bottomlist:(
   xs: 6,
   sm: 12,
   md: 25,
-  large: 50
+  large: 50,
+  paragraph: 30
 );
 
 @each $key,$val in $padding-bottomlist {

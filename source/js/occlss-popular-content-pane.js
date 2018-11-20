@@ -38,7 +38,7 @@
   };
   $popularContentPanes.each(function (i) {
       var $this = jQuery(this);
-      popularContentPaneSetup(jQuery(this), $popularContentPanes, i)
+      popularContentPaneSetup(jQuery(this), $popularContentPanes, i);
   });
 
 })(document, window, jQuery);

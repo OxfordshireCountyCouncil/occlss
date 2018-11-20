@@ -30,6 +30,7 @@
 .occlss-breadcrumb__item {
   float: left;
   font-size: em($occlss-breadcrumb-font-size-primary);
+  margin-bottom: 0;
 
   &:first-of-type {
     font-weight: $occlss-breadcrumb-first-link-weight;

@@ -7,6 +7,14 @@
   }
 }
 
+.occlss-form + h2,
+.occlss-form + h3,
+.occlss-form + h4,
+.occlss-form + h5,
+.occlss-form + p { 
+  margin-top: rem(45px);
+}
+
 .occlss-form__listitems {
   @extend %reset_list_style;
 }

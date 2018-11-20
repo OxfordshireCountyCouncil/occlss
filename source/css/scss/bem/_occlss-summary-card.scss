@@ -38,6 +38,14 @@
     }
 }
 
+.occlss-summary-card__img-scope img,
+.occlss-summary-card__imgcont {
+    width: 100%;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        margin-bottom: rem(20px);
+    }
+}
+
 .occlss-summary-card__party-logo {
     float: right;
     margin-top: rem(-35px);

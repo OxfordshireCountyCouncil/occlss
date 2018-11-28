@@ -1,6 +1,6 @@
 .occlss-content-navigation {
     border-bottom: rem(1px solid $occlss-content-navigation-border-color);
-    margin: rem(40px 0);
+    margin: rem(40px 0 0 0);
 }
 
 .occlss-content-navigation__nav {
@@ -15,16 +15,15 @@
 
 .occlss-content-navigation__list {
     @extend %reset_list_style;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        margin-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 .occlss-content-navigation__list-item {
-    
-    margin-left: 35px;
-    padding-right: 35px;
-
     &:before {
         content: "-";
-        margin-left: -35px;
         padding-right: 5px;
     }
 }

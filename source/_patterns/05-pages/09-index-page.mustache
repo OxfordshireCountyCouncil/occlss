@@ -2,74 +2,92 @@
 
 
 <div class="occlss-wrapper">
-    {{> molecules-breadcrumb(occlss-breadcrumb-no-space: 'true') }}
+  {{> molecules-breadcrumb(occlss-breadcrumb-no-space: 'true') }}
 </div>
 
-<main role="main" id="occlss-main-content"><!--START section block -->
-  <div class="occlss-wrapper occlss-wrapper--secondary"><!--START wrapper block-->
-	  <div class="occlss-layout occlss-layout--gutter-s"><!--START layout block-->
-      <div class="occlss-layout__col occlss-layout__col--md-6"><!--START layout elemnt -->
 
 
-        <h1 class="occlss-g-heading-main occlss-u-bspace-sm">Apply for a Blue Badge</h1>
-        <p class="occlss-g-summary-text occlss-u-bspace-none">How to apply or renew a disabled parking Blue Badge.</p>
 
-        {{> molecules-content-nav }}
+<section id="pagecontent">
+  <div class="occlss-wrapper">
 
-        <h2>How the council is organised</h2>
+    <article role="article" class="occlss-wrapper occlss-wrapper--secondary">
 
-        {{> molecules-alert-box }}
-        {{> molecules-info-box(text:'This is some information that is related to the content surrounding it. This might not apply to everyone but it might be important to you') }}
-        {{> organisms-box-out }}
-
-        {{> organisms-download-link }}
-
-        {{> organisms-jump-link }}
+      <div class="occlss-layout occlss-layout--gutter-s">
 
 
-        <p class="occlss-g-medium-text">This font style is bigger than normal paragraph text but can be used to draw attention to a pice of content. Keep it short and sweet.</p>
+        <header class="occlss-layout__col occlss-layout__col--md-8">
+          <h1 class="occlss-g-heading-main occlss-u-bspace-sm">Apply for a Blue Badge</h1>
+          <p class="occlss-g-summary-text occlss-u-bspace-none">How to apply or renew a disabled parking Blue Badge.</p>
+          {{> molecules-content-nav }}
+        </header>
 
-        <p>
-        This font style is bigger than normal paragraph text but can be used to draw attention to a pice of content. Keep it short and sweet.
-        </p>
-        
-        <p>Six crews and one aerial platform appliance attended the incident – they were from Oxford, Kidlington, The Slade (Headington) and Wheatley.</p>
-        <p>On arrival crews were faced with smoke coming from the entrance to the ground floor store area of the building. Thames Valley Police also attended the incident to provide assistance with the investigation and traffic control around the area.</p>
-        <p>Two crews wearing breathing apparatus entered the store area with firefighting jets to extinguish the fire. The fire involved one store cupboard in the area that is used as a store area for residents. The crews quickly extinguished the fire to stop any spread in to the main part of the building.</p>
-        <p>Incident Commander, Group Manager Paul Bremble, said: “The crews were quick to extinguish the fire and stop it from spreading to other parts of the building. The store is situated at the ground floor of the tower and does not have direct access to the main part of the building. The construction of the store is designed to stop the spread of the fire to other parts of the building. There was no risk to residents during the incident and no spread of the smoke or the fire to the flats above.</p>
-        <p>
-          “Thankfully no one was hurt at the incident and our crews are working with Thames Valley Police to ascertain the cause of the fire.”
-        </p>
+        <div class="occlss-layout__col occlss-layout__col--md-8">
 
-        {{> organisms-find-my-nearest-district-council }}
+          <h2>Check if you are eligible for a Blue Badge</h2>
 
-        <p>
-          <a href="javascript:void(0);">Stephen Clarke</a>, Head of Housing and Property at Oxford City Council, said: “Everybody is rightly concerned about fires in tower blocks since the tragedy in Grenfell Tower in London. Today’s small fire, and the textbook response to it, shows that the safeguards in place in Oxford work well.
-        </p>
-        <p>
-          “We are very grateful to the firefighters for their speedy and successful response, and are reinforced that we were right a couple of years ago to decide to go above and beyond national fire safety standards in our £20 million refurbishment programme for all five Oxford tower blocks.
-        </p>
-        
-        <p>
-          “The comprehensive fire measures we decided on included fitting sprinklers – which Oxfordshire’s Chief Fire Officer has confirmed puts our blocks amongst only 18 in the country with sprinklers, out of around 600 blocks in total.”
-        </p>
-        <ul>
-          <li>Recomends budget and policy framework to the council</li>
-          <li>Leads the council</li>
-          <li>Makes all the key decisions</li>
-          <li>Commissions policy review from scrutiny committees</li>
-        </ul>
+          <p>You may qualify for a Blue Badge if any of the following apply.</p>
+
+          <h3>Auto-eligible criteria</h3>
+
+         <div class="occlss-accordion js-occlss-accordion">
+            <h4 class="occlss-accordion__panel-title">Terminal illness</h4>
+            <div class="occlss-accordion__panel-content">
+              <p>If you are someone who has been given a medical prognosis of less than a year to live, please speak to your MacMillan Nurse, hospice worker, specialist nurse, GP or Health Professional who will complete a form on your behalf. You do not have to complete an application.</p>
+            </div>
+
+            <h4 class="occlss-accordion__panel-title">Disability Living Allowance mobility component</h4>
+            <div class="occlss-accordion__panel-content">
+              <p>
+                  You qualify if you are:
+              </p>
+              <ul>
+                <li>In receipt of the Higher Rate Mobility Component – this will be confirmed on the letter from the DWP.</li>
+              </ul>
+              <p>You don't qualify if you are in receipt of:</p>
+              <ul>
+                <li>Low or Middle Rate Mobility Component</li>
+                <li>the Care Component at any rate (unless they are also in receipt of the Higher Rate Mobility Component)</li>
+                <li>Attendance Allowance at any rate</li>
+                <li>Pension Credit</li>
+              </ul>
+            </div>
+          </div>
+
+        <p>You qualify if you have a permanent and substantial difficulty that causes inability to walk or very considerable difficulty in walking.</p>
+        <p>Being unable to walk means that you can't take a single step.</p>
 
         {{> molecules-pagination }}
 
-        
-	  </div><!--End layout elemnt -->
-    <div class="occlss-layout__col occlss-layout__col--md-4 occlss-layout__col--offset-2-md">
-      {{> organisms-find-my-nearest-district-council }}
-	  </div><!--End layout elemnt -->
-    
-    </div> <!--End layout block -->
-  </div> <!--End wrapper block -->
-</main><!--End section block -->
+
+
+        </div>
+        <div class="occlss-layout__col occlss-layout__col--md-3 occlss-layout__col--offset-1-md">
+
+
+
+          <div>
+            <div>
+              <div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="occlss-sidebar-item-section occlss-sidebar-item-section--residents" role="complementary">
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </article>
+
+
+  </div>
+</section>
 
 {{> organisms-page-footer-no-link }}

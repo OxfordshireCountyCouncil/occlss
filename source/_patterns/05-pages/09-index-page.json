@@ -60,10 +60,6 @@
         ]
     },
     "pagination_nav": {
-        "nav_link_previous": {
-            "name": "Check if you are eligible for a Blue Badge",
-            "linkURL": "#"
-        },
         "nav_link_next": {
             "name": "Check your documents",
             "linkURL": "#"

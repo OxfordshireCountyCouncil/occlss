@@ -28,7 +28,6 @@
     }
     &:active,
     &:focus {
-
         @extend %highlight-outline-on-focus;
     }
 }

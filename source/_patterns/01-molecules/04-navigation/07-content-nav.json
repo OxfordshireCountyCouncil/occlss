@@ -1,0 +1,36 @@
+{ 
+    "index_nav": {
+        "title": "Contents",
+        "aria-label": "Pages in this guide",
+        "nav_link": [
+            {
+                "name": "Check if you are eligible for a Blue Badge",
+                "listItemmodeClass": "",
+                "linkItemmodeClass": "",
+                "state": "active",
+                "linkURL": "#"
+            },
+            {
+                "name":"Check your documents",
+                "listItemmodeClass": "",
+                "linkItemmodeClass": "",
+                "state":"",
+                "linkURL": "#"
+            },
+            {
+                "name":"How to supply your documents",
+                "listItemmodeClass": "",
+                "linkItemmodeClass": "",
+                "state":"",
+                "linkURL": "#"
+            },
+            {
+                "name":"Start your application",
+                "listItemmodeClass": "",
+                "linkItemmodeClass": "",
+                "state":"",
+                "linkURL": "#"
+            }
+        ]
+    }
+}

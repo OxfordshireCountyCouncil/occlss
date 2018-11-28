@@ -1,0 +1,62 @@
+{
+	"title" : "Apply for a Blue Badge",
+	"bodyClass": "residents",
+    "emergency" : false,
+    "selectedCategoryClass":"occlss-page-head__wraper--residents",
+    "category_nav": {
+        "nav_link": [
+            {
+                "name": "Residents",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state": "active",
+                "linkURL": "link.pages-homepage"
+            },
+            {
+                "name":"Business",
+                "modeClass": "occlss-category-nav__item--business",
+                "state":"",
+                "linkURL": "link.pages-business"
+            },
+            {
+                "name":"Council",
+                "modeClass": "occlss-category-nav__item--council",
+                "state":"",
+                "linkURL": "link.pages-council"
+            }
+        ]
+    },
+    "index_nav": {
+        "title": "Contents",
+        "aria-label": "Pages in this guide",
+        "nav_link": [
+            {
+                "name": "Check if you are eligible for a Blue Badge",
+                "listItemmodeClass": "",
+                "linkItemmodeClass": "",
+                "state": "active",
+                "linkURL": "#"
+            },
+            {
+                "name":"Check your documents",
+                "listItemmodeClass": "",
+                "linkItemmodeClass": "",
+                "state":"",
+                "linkURL": "#"
+            },
+            {
+                "name":"How to supply your documents",
+                "listItemmodeClass": "",
+                "linkItemmodeClass": "",
+                "state":"",
+                "linkURL": "#"
+            },
+            {
+                "name":"Start your application",
+                "listItemmodeClass": "",
+                "linkItemmodeClass": "",
+                "state":"",
+                "linkURL": "#"
+            }
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+.occlss-content-navigation {
+    border-bottom: rem(1px solid $occlss-content-navigation-border-color);
+    margin: rem(40px 0);
+}
+
+.occlss-content-navigation__nav {
+    padding-bottom: rem(20px);
+}
+
+.occlss-content-navigation__title {
+    font-family: $occlss-content-navigation-title-font-family;
+    font-size: rem(18px);
+    margin-bottom: rem(15px);
+}
+
+.occlss-content-navigation__list {
+    @extend %reset_list_style;
+}
+
+.occlss-content-navigation__list-item {
+    
+    margin-left: 35px;
+    padding-right: 35px;
+
+    &:before {
+        content: "-";
+        margin-left: -35px;
+        padding-right: 5px;
+    }
+}
+
+.occlss-content-navigation__lnk {
+    text-decoration: none;
+}

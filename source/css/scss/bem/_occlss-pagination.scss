@@ -22,26 +22,36 @@
     &:hover,
     &:active,
     &:focus {
-        text-decoration: none;
         .occlss-pagination__icon {
             fill: $occlss-link-color-primary-hover;
         }
     }
+    &:active,
     &:focus {
+
         @extend %highlight-outline-on-focus;
     }
 }
 
 .occlss-pagination__link-title {
     display: block;
+    font-size: rem($occlss-pagination-title-font-size);
 }
 
 .occlss-pagination__item--previous {
-    float: left;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        float: left;
+    }
     text-align: left;
     .occlss-pagination__icon {
         margin-left: 0;
         margin-right: rem(10px);
+    }
+}
+
+.occlss-pagination__item--next {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        float: right;
     }
 }
 

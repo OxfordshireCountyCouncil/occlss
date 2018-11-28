@@ -1,0 +1,12 @@
+{ 
+    "pagination_nav": {
+        "nav_link_previous": {
+            "name": "Overview",
+            "linkURL": "#"
+        },
+        "nav_link_next": {
+            "name": "What you need before applying for a permit",
+            "linkURL": "#"
+        }
+    }
+}

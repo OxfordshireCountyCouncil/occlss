@@ -1,5 +1,5 @@
 .occlss-pagination {
-    margin: rem(30px) 0;
+    margin: rem(30px -15px);
 }
 
 .occlss-pagination__list {
@@ -7,9 +7,9 @@
 }
 
 .occlss-pagination__item {
-    float: left;
+    
     list-style: none;
-    text-align: right;
+    
     margin: 0;
     padding: 0;
     width: 50%;
@@ -39,10 +39,9 @@
 }
 
 .occlss-pagination__item--previous {
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-        float: left;
-    }
+    float: left;
     text-align: left;
+    
     .occlss-pagination__icon {
         margin-left: 0;
         margin-right: rem(10px);
@@ -50,8 +49,9 @@
 }
 
 .occlss-pagination__item--next {
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'xs'))) {
         float: right;
+        text-align: right;
     }
 }
 

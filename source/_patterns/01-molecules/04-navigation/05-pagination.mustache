@@ -1,18 +1,24 @@
-<nav class="occlss-pagination" role="navigation" aria-label="Pagination">
-    <ul class="occlss-pagination__list">
-        <li class="occlss-pagination__item occlss-pagination__item--previous">
-            <a href="javascript:void(0);" class="occlss-pagination__link" rel="prev">
-                <span class="occlss-pagination__link-title">Previous</span>
-                <span class="occlss-u-visuallyhidden">:</span>
-                <span class="occlss-pagination__link-label">Overview</span>
-            </a>
-        </li>
-        <li class="occlss-pagination__item occlss-pagination__item--next">
-            <a href="javascript:void(0);" class="occlss-pagination__link" rel="next">
-                <span class="occlss-pagination__link-title">Next</span>
-                <span class="occlss-u-visuallyhidden">:</span>
-                <span class="occlss-pagination__link-label">What you need before applying for a permit</span>
-            </a>
-        </li>
-    </ul>
-</nav>
+{{#pagination_nav}}
+    <nav class="occlss-pagination" role="navigation" aria-label="Pagination">
+        <ul class="occlss-pagination__list">
+          {{#nav_link_previous}}
+                <li class="occlss-pagination__item occlss-pagination__item--previous">
+                    <a href="{{ linkURL }}" class="occlss-pagination__link" rel="prev">
+                        <span class="occlss-pagination__link-title">Previous</span>
+                        <span class="occlss-u-visuallyhidden">:</span>
+                        <span class="occlss-pagination__link-label">{{ name }}</span>
+                    </a>
+                </li>
+           {{/nav_link_previous}}
+           {{#nav_link_next}}
+                <li class="occlss-pagination__item occlss-pagination__item--next">
+                    <a href="{{ linkURL }}" class="occlss-pagination__link" rel="next">
+                        <span class="occlss-pagination__link-title">Next</span>
+                        <span class="occlss-u-visuallyhidden">:</span>
+                        <span class="occlss-pagination__link-label">{{ name }}</span>
+                    </a>
+                </li>
+            {{/nav_link_next}}
+        </ul>
+    </nav>
+{{/pagination_nav}}

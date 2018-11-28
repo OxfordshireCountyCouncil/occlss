@@ -1,21 +1,21 @@
-{{#index_nav}}
-<aside class="occlss-content-navigation" role="complementary">
-    <nav role="navigation" class="occlss-content-navigation__nav" aria-label="{{ aria-label }}">
-    <h2 class="occlss-content-navigation__title">{{ title }}</h2>
-    <ol class="occlss-content-navigation__list">
-        {{#nav_link}}
-            {{#state }}
-            <li class="occlss-content-navigation__list-item {{ listItemmodeClass }}" aria-current="true">
-                {{ name }}
-            </li>
-            {{/state}}
-            {{^state}}
-            <li class="occlss-content-navigation__list-item {{ listItemmodeClass }}">    
-                <a href="{{ linkURL }}" class="occlss-content-navigation__lnk {{ linkItemmodeClass }}">{{ name }}</a>
-            </li>
-            {{/state}}
-        {{/nav_link}}
-    </ol>
-  </nav>
-</aside>
-{{/index_nav}}
+{{#pagination_nav}}
+    <aside class="occlss-content-navigation" role="complementary">
+        <nav role="navigation" class="occlss-content-navigation__nav" aria-label="{{ aria-label }}">
+        <h2 class="occlss-content-navigation__title">{{ title }}</h2>
+        <ol class="occlss-content-navigation__list">
+            {{#nav_link}}
+                {{#state }}
+                <li class="occlss-content-navigation__list-item {{ listItemmodeClass }}" aria-current="true">
+                    {{ name }}
+                </li>
+                {{/state}}
+                {{^state}}
+                <li class="occlss-content-navigation__list-item {{ listItemmodeClass }}">    
+                    <a href="{{ linkURL }}" class="occlss-content-navigation__lnk {{ linkItemmodeClass }}">{{ name }}</a>
+                </li>
+                {{/state}}
+            {{/nav_link}}
+        </ol>
+    </nav>
+    </aside>
+{{/pagination_nav}}

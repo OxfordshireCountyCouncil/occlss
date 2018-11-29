@@ -1,0 +1,92 @@
+/**
+ * Chat
+ */
+
+.chat {
+  $chat-closed-width: 15rem;
+  $chat-opened-width: 34rem;
+  $chat-opened-height: 30rem;
+  $chat-container: $chat-opened-height - 8rem;
+  $chat-header-height: 4rem;
+  $chat-padding: 1.5rem;
+
+  background: $occlss-brand-color-victoria;
+  bottom: 0;
+  height: $chat-header-height - 1rem;
+  padding: $chat-padding;
+  position: fixed;
+  right: 3rem;
+  transition: width 200ms ease, height 200ms ease;
+  width: $chat-closed-width;
+  z-index: 3;
+  @media (min-width: 768px) {
+    right: 3rem;
+  }
+  &__header {
+    margin-bottom: 1.5rem;
+    &::after {
+      background: url("#{$occlss-global-image-path}/objectivity-chatbot/arrow-down-bold-white.svg")
+        0 0 no-repeat;
+      background-size: rem(21px);
+      content: "";
+      display: block;
+      height: 1.5rem;
+      position: absolute;
+      right: $chat-padding;
+      top: 0.7rem;
+      transform: rotate(-180deg);
+      transition: 100ms ease-in-out;
+      width: 1.5rem;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__header-title {
+    color: white;
+    font-size: 1.375rem;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: -0.6rem;
+  }
+  &__container {
+    height: ($chat-opened-height - $chat-header-height - $chat-padding);
+    position: relative;
+  }
+  &--opened {
+    background: #d6d8e0;
+    height: $chat-opened-height;
+    width: ($chat-opened-width * 0.7);
+    @media (min-width: 768px) {
+      width: $chat-opened-width;
+    }
+  }
+  &--opened & {
+    &__header::after {
+      background-image: url("#{$occlss-global-image-path}/arrow-down-bold.svg");
+      top: 1.2rem;
+      transform: rotate(0);
+    }
+    &__header-title {
+      color: $occlss-brand-color-mine-shaft;
+      margin-top: -0.1rem;
+    }
+  }
+  .css-gtdio3 {
+    height: $chat-container;
+  }
+  .css-1lmr15n {
+    & > .main {
+      color: rgb(82, 82, 82);
+      font-size: 1rem;
+      height: 3.1rem;
+      line-height: 1.3;
+      width: 100%;
+      border: 1px solid $occlss-brand-color-mine-shaft;
+      padding: 0.85rem 0.7rem;
+      &:focus {
+        border-color: rgb(237, 200, 86);
+      }
+    }
+  }
+}

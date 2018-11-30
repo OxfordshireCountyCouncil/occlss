@@ -1,5 +1,5 @@
 .occlss-pagination {
-    margin: rem(30px) 0;
+    margin: rem(30px -15px);
 }
 
 .occlss-pagination__list {
@@ -7,9 +7,9 @@
 }
 
 .occlss-pagination__item {
-    float: left;
+    
     list-style: none;
-    text-align: right;
+    
     margin: 0;
     padding: 0;
     width: 50%;
@@ -22,11 +22,11 @@
     &:hover,
     &:active,
     &:focus {
-        text-decoration: none;
         .occlss-pagination__icon {
             fill: $occlss-link-color-primary-hover;
         }
     }
+    &:active,
     &:focus {
         @extend %highlight-outline-on-focus;
     }
@@ -34,14 +34,24 @@
 
 .occlss-pagination__link-title {
     display: block;
+    font-size: rem($occlss-pagination-title-font-size);
+    margin-bottom: rem(5px);
 }
 
 .occlss-pagination__item--previous {
     float: left;
     text-align: left;
+    
     .occlss-pagination__icon {
         margin-left: 0;
         margin-right: rem(10px);
+    }
+}
+
+.occlss-pagination__item--next {
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        float: right;
+        text-align: right;
     }
 }
 

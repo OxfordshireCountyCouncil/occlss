@@ -16,6 +16,9 @@ $chat-color-secondary: #b5bcd6;
   padding: $chat-padding;
   position: fixed;
   right: rem(48px); // 3rem;
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    right: 0;
+  }
   transition: width 200ms ease, height 200ms ease;
   width: $chat-closed-width;
   z-index: 3;
@@ -61,6 +64,9 @@ $chat-color-secondary: #b5bcd6;
     @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
     //@media (min-width: 768px) {
       width: $chat-opened-width;
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+      width: 100%;
     }
   }
   &--opened & {

@@ -1,15 +1,12 @@
-/**
- * Chat
- */
-
+// Chatbot
 .chat {
   $chat-closed-width: 15rem;
   $chat-opened-width: 34rem;
-  $chat-opened-height: 30rem;
-  $chat-container: $chat-opened-height - 8rem;
+  $chat-opened-height: 34rem;
+  $chat-container: $chat-opened-height - 5.5rem;
   $chat-header-height: 4rem;
   $chat-padding: 1.5rem;
-
+  
   background: $occlss-brand-color-victoria;
   bottom: 0;
   height: $chat-header-height - 1rem;
@@ -72,9 +69,14 @@
       margin-top: -0.1rem;
     }
   }
-  .css-gtdio3 {
-    height: $chat-container;
+  .css-o3xlyv,
+  .css-sdb7gy {
+    font-family: $occlss-global-font-family-primary;
   }
+  .css-1t62idy {
+    height: $chat-container;
+  } 
+  // input style
   .css-1lmr15n {
     & > .main {
       color: rgb(82, 82, 82);
@@ -87,6 +89,43 @@
       &:focus {
         border-color: rgb(237, 200, 86);
       }
+    }
+  } 
+  // button style
+  .css-1wctqlt {
+    & > button:not(:disabled) {
+      height: auto;
+      margin-bottom: 0;
+      @extend .occlss-button;
+      @extend .occlss-button--primary;
+    }
+  }
+  .css-1wegtiu {
+    ul {
+      li {
+        margin-bottom: 0;
+      }
+    }
+  } 
+  // upload disable
+  .css-15g3li9 {
+    display: none;
+  } 
+  // send arrow style {
+  .css-1rzkomi {
+    position: relative;
+    svg {
+      display: none;
+    }
+    &::after {
+      background: url("#{$occlss-global-image-path}/objectivity-chatbot/arrow-right-long-right-secondary.svg") 0 0 no-repeat;
+      content: "";
+      display: block;
+      height: 1.5rem;
+      position: absolute;
+      right: 3px;
+      top: -2px;
+      width: 1.5rem;
     }
   }
 }

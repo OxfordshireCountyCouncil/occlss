@@ -1,19 +1,19 @@
 // Chatbot
 $chat-color-primary:   #383d48;
 $chat-color-secondary: #b5bcd6;
+
 .chat {
   $chat-closed-width: rem(240px);//15rem;
   $chat-opened-width: rem(544px); // 34rem;
   $chat-opened-height: rem(544px); //34rem;
   $chat-container: $chat-opened-height - rem(88px); //5.5rem;
   $chat-header-height: rem(64px); // 4rem;
-  $chat-padding: rem(24px); // 1.5rem; 
   
   //background: $occlss-brand-color-victoria;  
   background: $chat-color-primary;
   bottom: 0;
   height: $chat-header-height - rem(16px); // 1rem; 
-  padding: $chat-padding;
+  padding: 20px 24px 35px 24px;
   position: fixed;
   right: rem(48px); // 3rem;
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
@@ -36,8 +36,8 @@ $chat-color-secondary: #b5bcd6;
       display: block;
       height: rem(24px); // 1.5rem; 
       position: absolute;
-      right: $chat-padding;
-      top: rem(11.2px); // 0.7rem;
+      right: rem(24px);
+      top: rem(19px);
       transform: rotate(-180deg);
       transition: 100ms ease-in-out;
       width: rem(24px); // 1.5rem;
@@ -50,11 +50,12 @@ $chat-color-secondary: #b5bcd6;
     color: white;
     font-size: rem(22px); // 1.375rem; 
     line-height: 1;
-    margin-bottom: 0;
-    margin-top: rem(-9.6px); // 0.6rem;
+    padding: 20px 24px 24px 24px;
+    margin: -20px -24px -24px -24px;
+    position: relative;
   }
   &__container {
-    height: ($chat-opened-height - $chat-header-height - $chat-padding);
+    height: ($chat-opened-height - $chat-header-height - rem(24px));
     position: relative;
   }
   &--opened {

@@ -1,0 +1,28 @@
+{
+	"title" : "Admissions to infant and primary schools",
+	"bodyClass": "residents",
+    "emergency" : false,
+    "selectedCategoryClass":"occlss-page-head__wraper--residents",
+    "category_nav": {
+        "nav_link": [
+            {
+                "name": "Residents",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state": "active",
+                "linkURL": "link.pages-homepage"
+            },
+            {
+                "name":"Business",
+                "modeClass": "occlss-category-nav__item--business",
+                "state":"",
+                "linkURL": "link.pages-business"
+            },
+            {
+                "name":"Council",
+                "modeClass": "occlss-category-nav__item--council",
+                "state":"",
+                "linkURL": "link.pages-council"
+            }
+        ]
+    }
+}

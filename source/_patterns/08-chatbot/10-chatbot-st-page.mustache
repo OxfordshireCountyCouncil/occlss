@@ -244,22 +244,6 @@
 </section>
 
 
-<div class="chat">
-  <div class="chat__header" title="Toggle chat">
-    <h4 class="chat__header-title">Chatbot</h4>
-  </div>
-  <div class="chat__container">
-    <div id="webchat"></div>
-  </div>
-</div>
-
-<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
-<script>
-  window.WebChat.renderWebChat({
-    directLine: window.WebChat.createDirectLine({
-      secret: '49eMuqc5OG4.cwA.7_w.8Tt0SEuOmUvH3GOg9T4X2YQjgHEehPDQ3Gm2faabMBk'
-    })
-  }, document.getElementById('webchat'));
-</script>
+{{> chatbot-chatbot-script }}
 
 {{> organisms-page-footer }}

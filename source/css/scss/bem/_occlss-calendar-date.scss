@@ -18,12 +18,20 @@
     font-weight: $occlss-calendar-font-size-weight;
 }
 
+.occlss-calendar-date__header,
+.occlss-calendar-date__footer {
+    background: $occlss-calendar-date-color;
+}
+
+
 .occlss-calendar-date__content {
     @extend .occlss-layout__col--auto;
 }
 
-.occlss-calendar-date__header,
+.occlss-calendar-date__header {
+    @extend .occlss-layout__col--sm-4;
+}
+
 .occlss-calendar-date__footer {
-    @extend .occlss-layout__col--xs-3;
-    background: $occlss-calendar-date-color;
+    @extend .occlss-layout__col--sm-3;
 }

@@ -1,8 +1,8 @@
 .occlss-calendar-date {
     border: rem(1px solid $occlss-calendar-date-color);
     @extend .occlss-layout;
-    margin-bottom: rem(26px);
 }
+
 .occlss-calendar-date__header,
 .occlss-calendar-date__content,
 .occlss-calendar-date__footer {
@@ -24,7 +24,6 @@
 
 .occlss-calendar-date__header,
 .occlss-calendar-date__footer {
-    @extend .occlss-layout__col--md-4;
-    @extend .occlss-layout__col--sm-3;
+    @extend .occlss-layout__col--xs-3;
     background: $occlss-calendar-date-color;
 }

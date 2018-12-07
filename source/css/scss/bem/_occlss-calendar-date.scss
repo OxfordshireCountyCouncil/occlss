@@ -1,30 +1,30 @@
 .occlss-calendar-date {
     border: rem(1px solid $occlss-calendar-date-color);
-    //min-width: rem(250px);
+    @extend .occlss-layout;
+    margin-bottom: rem(26px);
 }
 .occlss-calendar-date__header,
 .occlss-calendar-date__content,
 .occlss-calendar-date__footer {
     text-align: center;
 }
-.occlss-calendar-date__header {
-    background: $occlss-calendar-date-color;
-    font-size: rem($occlss-calendar-date-header-font-size); 
-    font-weight: $occlss-calendar-date-header-font-weight;
-    padding: rem(6px);
 
+.occlss-calendar-date__header,
+.occlss-calendar-date__content,
+.occlss-calendar-date__footer {
+    @extend .occlss-layout__col;
+    padding: rem(6px);
+    font-size: rem($occlss-calendar-font-size); 
+    font-weight: $occlss-calendar-font-size-weight;
 }
 
 .occlss-calendar-date__content {
-    padding-top: rem(10px);
-    font-size: rem(125px);
-    font-weight: $occlss-calendar-date-content-font-weight;
-    line-height: 0.8;
+    @extend .occlss-layout__col--auto;
 }
+
+.occlss-calendar-date__header,
 .occlss-calendar-date__footer {
-    font-size: rem($occlss-calendar-date-footer-font-size);
-    font-weight: $occlss-calendar-date-footer-font-weight;
-    padding-left: rem(10px);
-    padding-right: rem(10px);
-    padding-bottom: rem(10px);
+    @extend .occlss-layout__col--md-4;
+    @extend .occlss-layout__col--sm-3;
+    background: $occlss-calendar-date-color;
 }

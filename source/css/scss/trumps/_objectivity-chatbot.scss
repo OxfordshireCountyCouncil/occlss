@@ -2,7 +2,7 @@
 $chat-color-primary:   #383d48;
 $chat-color-secondary: #b5bcd6;
 
-.chat {
+.obj-chat {
   $chat-closed-width: rem(240px);
   $chat-opened-width: rem(544px); 
   $chat-opened-height: rem(544px); 
@@ -137,6 +137,17 @@ $chat-color-secondary: #b5bcd6;
       right: rem(3px);
       top: rem(-2px);
       width: rem(24px); 
+    }
+  }
+  ul,
+  ol,
+  p {
+    margin-bottom: rem(12px);
+  }
+  ul,
+  ol {
+    li {
+      margin-bottom: rem(6px);
     }
   }
 }

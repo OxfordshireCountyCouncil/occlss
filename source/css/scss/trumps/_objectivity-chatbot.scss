@@ -96,7 +96,7 @@ $chat-color-secondary: #b5bcd6;
       line-height: 1.3;
       width: 100%;
       border-top: 1px solid $chat-color-secondary;
-      padding: rem(13.6px 11.2px); 
+      //padding: rem(13.6px 11.2px); 
       &:focus {
         border-color: rgb(237, 200, 86);
       }
@@ -121,7 +121,17 @@ $chat-color-secondary: #b5bcd6;
   // upload disable
   .css-15g3li9 {
     display: none;
-  } 
+  }
+
+  .css-bo8nme {
+    width: auto;
+    height: auto;
+    padding-top: rem(13px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+      padding-top: rem(11px);
+    }
+  }
+ 
   // send arrow style {
   .css-1rzkomi {
     position: relative;
@@ -144,6 +154,9 @@ $chat-color-secondary: #b5bcd6;
   p {
     margin-bottom: rem(12px);
     font-size: rem(15px);
+    &:only-child {
+      margin-bottom: 0;
+    }
   }
   ul,
   ol {
@@ -151,4 +164,5 @@ $chat-color-secondary: #b5bcd6;
       margin-bottom: rem(6px);
     }
   }
+
 }

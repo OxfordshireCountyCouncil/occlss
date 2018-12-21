@@ -50,10 +50,8 @@
 }
 
 .occlss-pagination__item--next {
-    //@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'xs'))) {
-        float: right;
-        text-align: right;
-    //}
+    float: right;
+    text-align: right;
 }
 
 .occlss-pagination__icon {

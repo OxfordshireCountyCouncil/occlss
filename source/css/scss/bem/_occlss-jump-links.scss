@@ -1,0 +1,26 @@
+.occlss-jump-links__nav {
+    list-style: none;
+    border-bottom: rem(1px solid $jump-links-border-color);
+    padding-bottom: rem(30px);
+}
+
+.occlss-jump-links__title {
+    font-size: rem($jump-links-link-font-size);
+}
+
+.occlss-jump-links__nav-item {
+    margin-bottom: rem(8px);
+    :before {
+        display: inline-block;
+        content: "\2014 ";
+        width: rem(24px);
+        margin-left: rem(-16px);
+        color: $jump-links-dash-color;
+    }
+}
+
+.occlss-jump-links__lnk {
+    &:focus {
+        @extend %highlight-outline-on-focus;
+    }
+}

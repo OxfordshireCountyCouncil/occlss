@@ -1,0 +1,296 @@
+{
+	"title" : "Business page",
+	"bodyClass": "business",
+    "emergency" : false,
+    "selectedCategoryClass":"occlss-page-head__wraper--business",
+    "category_nav": {
+        "nav_link": [
+            {
+                "name": "Residents",
+                "modeClass": "occlss-category-nav__item--residents",
+                "state": "",
+                "linkURL": "link.pages-homepage"
+            },
+            {
+                "name":"Business",
+                "modeClass": "occlss-category-nav__item--business",
+                "state":"active",
+                "linkURL": "link.pages-business"
+            },
+            {
+                "name":"Council",
+                "modeClass": "occlss-category-nav__item--council",
+                "state":"",
+                "linkURL": "link.pages-council"
+            }
+        ]
+    },
+    "sidebarItemSection":{
+        "section-title": "Parking",
+        "section-modclass": "occlss-sidebar-item-section--business",
+        "listItem": [
+        {
+            "listItem-link-name": "Controlled parking zones",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Blue badge",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        },
+        {
+            "listItem-link-name": "Bicester resident's parking",
+            "listItem-mod-class": "",
+            "listItem-link-mod-class": "",
+            "listItem-link-url":  "javascript:void(0);"
+        }
+        ]
+    },
+    "toptasksPane": {
+          "modeClass": "occlss-top-tasks-pane--business",
+          "tabs": [
+              {
+              "tabTitle": "Services",
+              "summaryList":{
+                  "list-mod-class": "occlss-summary-list--tasks-pane",
+                  "listItem": [
+                  {
+                      "listItem-link-name": "Apply for a license",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/licences-and-permits"
+                  },
+                  {
+                      "listItem-link-name": "Apprenticeships",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/apprenticeships"
+                  },
+                  {
+                      "listItem-link-name": "Request a dropped curb",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/dropped-kerbs"
+                  },
+                  {
+                      "listItem-link-name": "Commercial waste disposal",
+                      "listItem-mod-class": "",
+                      "listItem-link-mod-class": "",
+                      "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/commercial-trade-waste"
+                  }
+                  ]
+              }
+          }
+        ]
+    },
+    "popularcontentGridSection" : {
+        "popularcontentSection": [
+            {
+                "popular-content-pane-heading": "Trading Standards",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
+                "popular-content-pane-view-more-link-name": "More trading standards",
+                "popular-content-pane-view-more-link-url": "https://www2.oxfordshire.gov.uk/cms/public-site/trading-standards",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Buy with confidence",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/buy-confidence"
+                    },
+                    {
+                        "listItem-link-name": "Advice for consumers",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/advice-communities"
+                    },
+                    {
+                        "listItem-link-name": "Business advice",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/trading-standards-business-advice"
+                    },
+                    {
+                        "listItem-link-name": "Farming and animal health",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/farming-and-animal-health"
+                    },
+                    {
+                        "listItem-link-name": "More trading standards",
+                        "listItem-mod-class": "",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/trading-standards"
+                    }
+                    ]
+                }
+            },
+            {
+                "popular-content-pane-heading": "Licences and permits",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
+                "popular-content-pane-view-more-link-name": "More licenses and permits",
+                "popular-content-pane-view-more-link-url": "https://www2.oxfordshire.gov.uk/cms/public-site/licences-and-permits",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Request a dropped kerb",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/dropped-kerbs"
+                    },
+                    {
+                        "listItem-link-name": "Scaffolding or hoarding licence",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/scaffolding-and-hoarding-licences"
+                    },
+                    {
+                        "listItem-link-name": "Skip permit",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/skip-permit"
+                    },
+                    {
+                        "listItem-link-name": "Road closures",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/requesting-temporary-traffic-regulation-order-ttro"
+                    },
+                    {
+                        "listItem-link-name": "More licenses and permits",
+                        "listItem-mod-class": "",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/licences-and-permits"
+                    }
+                    ]
+                }
+            } ,
+            {
+                "popular-content-pane-heading": "Advice for businesses",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
+                "popular-content-pane-view-more-link-name": "More advice for businesses",
+                "popular-content-pane-view-more-link-url": "https://www2.oxfordshire.gov.uk/cms/public-site/advice-businesses",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Commercial waste",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/commercial-trade-waste"
+                    },
+                    {
+                        "listItem-link-name": "Employing children",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/employing-children"
+                    },
+                    {
+                        "listItem-link-name": "Oxfordshire Local Enterprise Partnership",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.oxfordshirelep.com"
+                    },
+                    {
+                        "listItem-link-name": "Pensions",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/pensions"
+                    },
+                    {
+                        "listItem-link-name": "More advice for businesses",
+                        "listItem-mod-class": "",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/advice-businesses"
+                    }
+                    ]
+                }
+            },
+            {
+                "popular-content-pane-heading": "More in this section",
+                "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
+                "popular-content-pane-view-more-link-name": "",
+                "popular-content-pane-view-more-link-url": "",
+                "summaryList":{
+                    "list-mod-class": "occlss-summary-list--popular-content-pane",
+                    "listItem": [
+                    {
+                        "listItem-link-name": "Supplier payment services",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www.hants.gov.uk/business/suppliers"
+                    },
+                    {
+                        "listItem-link-name": "Information for providers",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/information-providers"
+                    },
+                    {
+                        "listItem-link-name": "Broadband for Oxfordshire",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/better-broadband-oxfordshire"
+                    },
+                    {
+                        "listItem-link-name": "Current contract opportunities",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/content/current-contracts-and-opportunities"
+                    },
+                    {
+                        "listItem-link-name": "Apprenticeships",
+                        "listItem-mod-class": "occlss-summary-list__item--underlined",
+                        "listItem-link-mod-class": "",
+                        "listItem-link-url":  "https://www2.oxfordshire.gov.uk/cms/public-site/apprenticeships"
+                    }
+                    ]
+                }
+            }
+        ]
+  },
+  "featuredPanelGridSection": {
+    "featuredPanels": [
+        {
+            "panel-size": "occlss-layout__col--lg-4 occlss-layout__col--md-6",
+            "featuredPanelDefault" : {
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--boston-blue",
+                "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/content/school-term-dates-and-holidays/",
+                "promoted-content-panel-textlines": [
+                    {
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-small",
+                        "promoted-content-panel-textline-text": "Current contract opportunities",
+                        "promoted-content-panel-textline-arrow": false
+                    },
+                    {
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--text-medium",
+                        "promoted-content-panel-textline-text": "View the latest contract opportunities on the South East Centre of Excellence's (SECE)",
+                        "promoted-content-panel-textline-spleat": " Portal",
+                        "promoted-content-panel-textline-arrow": true
+                    }
+                ]
+            }
+        },
+        {
+            "panel-size": "occlss-layout__col--lg-4 occlss-layout__col--md-6",
+            "featuredPanelDefault" : {
+                "promoted-content-panel-mod-class": "occlss-promoted-content-panel--selective-yellow",
+                "promoted-content-panel-url": "https://www.oxfordshire.gov.uk/cms/sitemap/",
+                "promoted-content-panel-textlines": [
+                    {
+                        "promoted-content-panel-textline-mode-class": "occlss-promoted-content-panel__text-line--header-mega",
+                        "promoted-content-panel-textline-text": "Other ways we can help",
+                        "promoted-content-panel-textline-spleat": " you",
+                        "promoted-content-panel-textline-arrow": true
+                    }
+                ]
+            }
+        }
+    ]
+  }
+}

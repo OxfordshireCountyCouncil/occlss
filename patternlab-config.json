@@ -51,7 +51,7 @@
   },
   "styleGuideExcludes": [
   ],
-  "defaultPattern": "chatbot",
+  "defaultPattern": "styleguide",
   "defaultShowPatternInfo": false,
   "cleanPublic" : true,
   "patternExtension": "mustache",

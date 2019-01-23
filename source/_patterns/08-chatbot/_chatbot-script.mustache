@@ -1,0 +1,16 @@
+<div class="obj-chat js-chatbot">
+  <div class="obj-chat__header" title="Toggle chat">
+    <h4 class="obj-chat__header-title">Chatbot</h4>
+  </div>
+  <div class="obj-chat__container">
+    <div id="webchat"></div>
+  </div>
+</div>
+
+<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat-es5.js"></script>
+<script>
+  window.WebChat.renderWebChat({
+      directLine: window.WebChat.createDirectLine({ secret: 'zXp0HW2Lrw0.cwA.Oxs.ucDDfM2FzXfo2cyrjoL5e4CIYVb3FNuo7bp-lDaEjhs' }),
+      styleOptions: { hideUploadButton: true }
+  }, document.getElementById('webchat'));
+</script>

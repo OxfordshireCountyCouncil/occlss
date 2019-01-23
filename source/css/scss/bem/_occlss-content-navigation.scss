@@ -1,0 +1,33 @@
+.occlss-content-navigation {
+    border-bottom: rem(1px solid $occlss-content-navigation-border-color);
+    margin: rem(40px 0 0 0);
+}
+
+.occlss-content-navigation__nav {
+    padding-bottom: rem(20px);
+}
+
+.occlss-content-navigation__title {
+    font-family: $occlss-content-navigation-title-font-family;
+    font-size: rem(18px);
+    margin-bottom: rem(15px);
+}
+
+.occlss-content-navigation__list {
+    @extend %reset_list_style;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        margin-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.occlss-content-navigation__list-item {
+    &:before {
+        content: "-";
+        padding-right: 5px;
+    }
+}
+
+.occlss-content-navigation__lnk {
+    text-decoration: none;
+}

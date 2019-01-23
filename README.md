@@ -233,6 +233,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-download-link";
 @import "node_modules/occlss/scss/bem/occlss-jump-link";
 @import "node_modules/occlss/scss/bem/occlss-calendar-date";
+@import "node_modules/occlss/scss/bem/occlss-content-navigation";
 
 
 // UTILITIES
@@ -245,6 +246,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/trumps/utilities";
 @import "node_modules/occlss/scss/trumps/owl-carousel";
 @import "node_modules/occlss/scss/trumps/owl-carousel-theme";
+@import "node_modules/occlss/scss/trumps/objectivity-chatbot";
 @import "node_modules/occlss/scss/trumps/shame";
 ```
 
@@ -253,7 +255,7 @@ Or you can add in your main.scss just the following
 ```scss
 // Images path
 $occlss-global-image-path:  '../../images/occlss';
-@import "node_modules/occlss/scss/scss/style.scss";
+@import "node_modules/occlss/scss/style.scss";
 ```
 
 But this is not recommended and you will have less control over the elements you will use in your app.

@@ -41,6 +41,7 @@
 .occlss-summary-card__img-scope img,
 .occlss-summary-card__imgcont {
     width: 100%;
+    height: auto;
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
         margin-bottom: rem(20px);
     }

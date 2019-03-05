@@ -2,7 +2,7 @@
 
 ## Class naming convention
 
-## `govuk` namespacing
+## `OCCLSS` namespacing
 
 All class names start with a `.occlss-` namespace to reduce the likelihood of
 conflicting with existing classes in your application. It also helps to identify
@@ -375,14 +375,14 @@ Good:
 Bad:
 ```
 @mixin FONT_STACK() {
-  font-family: $govuk-font-stack;
+  font-family: $occlss-font-stack;
 }
 ```
 
 Good:
 ```
 @mixin font-stack() {
-  font-family: $govuk-font-stack;
+  font-family: $occlss-font-stack;
 }
 ```
 

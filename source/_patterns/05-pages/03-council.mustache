@@ -3,12 +3,12 @@
   <div class="occlss-wrapper">
       {{> molecules-breadcrumb(occlss-breadcrumb-no-space: 'true') }}
   </div>
-  <section>
+  <div>
     <div class="occlss-wrapper">
       {{> organisms-hero-pane(occlss-hero-title: "Coucil", occlss-hero-image: "../../images/demo/hero-image-concil-01_0.jpg", occlss-hero-mod-class: "occlss-hero-pane--lgimage",occlss-hero-heading-mod: "occlss-hero-pane__heading--council") }}     
     </div>
-  </section>
-  <section>
+  </div>
+  <div>
     <div class="occlss-wrapper"><!--START wrapper block-->
       <div class="occlss-layout occlss-layout--gutter-s occlss-u-tspace-sm"><!--START layout block-->
         
@@ -66,28 +66,28 @@
 
       </div><!--End layout elemnt -->
     </div>
-</section>
-  <section>
+</div>
+  <div>
       <div class="occlss-wrapper"><!--START wrapper block-->
         <div class="occlss-layout occlss-layout--gutter-s"><!--START layout block-->
           {{> sections-recent-news-section }}
         </div><!--End layout elemnt -->
       </div>
-  </section>
+  </div>
 
-  <section role="tablist" aria-live="polite">
+  <div role="tablist" aria-live="polite">
       <div class="occlss-wrapper"><!--START wrapper block-->
         <div class="occlss-layout occlss-layout--popular-content-grid occlss-layout--gutter-s occlss-u-tpspace-none"><!--START layout block-->
             {{> sections-categories-grid-section }}
             {{> sections-promoted-content-panel-grid-section }}
           </div><!--End layout elemnt -->
       </div>
-  </section>
+  </div>
 
 </main>
 
-<section class="occlss-section occlss-section--find-my-nearest">
+<div class="occlss-section occlss-section--find-my-nearest">
   {{> organisms-find-my-nearest }}
-</section>
+</div>
 
 {{> organisms-page-footer }}

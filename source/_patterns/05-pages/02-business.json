@@ -89,6 +89,7 @@
     "popularcontentGridSection" : {
         "popularcontentSection": [
             {
+                "popular-content-pane-id": "1",
                 "popular-content-pane-heading": "Trading Standards",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
                 "popular-content-pane-view-more-link-name": "More trading standards",
@@ -130,6 +131,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "2",
                 "popular-content-pane-heading": "Licences and permits",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
                 "popular-content-pane-view-more-link-name": "More licenses and permits",
@@ -171,6 +173,7 @@
                 }
             } ,
             {
+                "popular-content-pane-id": "3",
                 "popular-content-pane-heading": "Advice for businesses",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
                 "popular-content-pane-view-more-link-name": "More advice for businesses",
@@ -212,6 +215,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "4",
                 "popular-content-pane-heading": "More in this section",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--business",
                 "popular-content-pane-view-more-link-name": "",

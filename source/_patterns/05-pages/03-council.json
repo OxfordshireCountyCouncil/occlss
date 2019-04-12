@@ -65,6 +65,7 @@
     "popularcontentGridSection" : {
         "popularcontentSection": [
             {
+                "popular-content-pane-id": "1",
                 "popular-content-pane-heading": "Local government",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
                 "popular-content-pane-view-more-link-name": "More local government",
@@ -106,6 +107,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "2",
                 "popular-content-pane-heading": "Councillors",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
                 "popular-content-pane-view-more-link-name": "More councillors",
@@ -147,6 +149,7 @@
                 }
             } ,
             {
+                "popular-content-pane-id": "3",
                 "popular-content-pane-heading": "Meetings and decisions",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
                 "popular-content-pane-view-more-link-name": "More meetings and decisions",
@@ -188,6 +191,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "4",
                 "popular-content-pane-heading": "Council tax and finance",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
                 "popular-content-pane-view-more-link-name": "More council tax and finance",
@@ -229,6 +233,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "5",
                 "popular-content-pane-heading": "More in this section",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--council",
                 "popular-content-pane-view-more-link-name": "",

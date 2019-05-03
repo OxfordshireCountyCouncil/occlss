@@ -2,7 +2,6 @@
     height: 100%;
     display: block;
 
-
     &:after {
         content:"";
         display: block;
@@ -12,14 +11,14 @@
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         height: rem(45px);
     }
-    
+
     overflow: hidden;
-
+    
     &:focus {
-        outline: 0;
+        @extend %highlight-outline-on-focus;
     }
-}
 
+}
 
 .occlss-popular-content-pane__heading {
     width: 100%;

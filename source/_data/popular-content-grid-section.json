@@ -2,6 +2,7 @@
   "popularcontentGridSection" : {
         "popularcontentSection": [
             {
+                "popular-content-pane-id": "1",
                 "popular-content-pane-heading": "Jobs",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--residents",
                 "popular-content-pane-view-more-link-name": "More jobs",
@@ -43,6 +44,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "2",
                 "popular-content-pane-heading": "Schools",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--residents",
                 "popular-content-pane-view-more-link-name": "More schools",
@@ -84,6 +86,7 @@
                 }
             } ,
             {
+                "popular-content-pane-id": "3",
                 "popular-content-pane-heading": "Libraries",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--residents",
                 "popular-content-pane-view-more-link-name": "More libraries",
@@ -125,6 +128,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "4",
                 "popular-content-pane-heading": "Roads and parking",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--residents",
                 "popular-content-pane-view-more-link-name": "More roads and parking",
@@ -166,6 +170,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "5",
                 "popular-content-pane-heading": "Registration",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--residents",
                 "popular-content-pane-view-more-link-name": "More registration services",
@@ -207,6 +212,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "6",
                 "popular-content-pane-heading": "Waste and recycling",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--residents",
                 "popular-content-pane-view-more-link-name": "More waste and recycling",
@@ -248,6 +254,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "7",
                 "popular-content-pane-heading": "Children and families",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--residents",
                 "popular-content-pane-view-more-link-name": "More children and families",
@@ -289,6 +296,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "8",
                 "popular-content-pane-heading": "Adult social care",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--residents",
                 "popular-content-pane-view-more-link-name": "More adult social care",
@@ -330,6 +338,7 @@
                 }
             },
             {
+                "popular-content-pane-id": "9",
                 "popular-content-pane-heading": "Museums and history",
                 "popular-content-pane-mode-class": "occlss-popular-content-pane--residents",
                 "popular-content-pane-view-more-link-name": "More museums and history",

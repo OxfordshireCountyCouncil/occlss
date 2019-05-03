@@ -43,7 +43,7 @@ $occlss-p-enable-shadows:     true !default;
     &:focus {
       // Avoid using mixin so we can pass custom focus shadow properly
       @if $occlss-p-enable-shadows {
-        box-shadow: $occlss-button-box-shadow-default, 0 0 0 1px rgba($border, 1);
+        box-shadow: 0 0 0 1px rgba($border, 1);
       }
       @else {
         box-shadow: 0 0 0 2px rgba($border, .5);

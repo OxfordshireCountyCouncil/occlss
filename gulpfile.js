@@ -30,7 +30,7 @@ var gulp           = require('gulp'),
 var cleanCSS    = require('gulp-clean-css');
 
 gulp.task('sass', function(){
-    return gulp.src('source/css/scss/style.scss')
+    return gulp.src('source/css/scss/occlss.scss')
     //.pipe(sassdoc())
     .pipe(plumber('Error Running Sass'))
     .pipe(sourcemaps.init())

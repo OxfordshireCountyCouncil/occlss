@@ -45,6 +45,9 @@
 
 .occlss-breadcrumb__link {
   text-decoration: none;
+  &:focus {
+    @extend %highlight-bg-on-focus;
+}
 }
 
 .occlss-breadcrumb--no-space {

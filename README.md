@@ -234,6 +234,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/bem/occlss-jump-link";
 @import "node_modules/occlss/scss/bem/occlss-calendar-date";
 @import "node_modules/occlss/scss/bem/occlss-content-navigation";
+@import "node_modules/occlss/scss/bem/occlss-footer-feedback";
 
 
 // UTILITIES
@@ -255,7 +256,7 @@ Or you can add in your main.scss just the following
 ```scss
 // Images path
 $occlss-global-image-path:  '../../images/occlss';
-@import "node_modules/occlss/scss/style.scss";
+@import "node_modules/occlss/scss/occlss.scss";
 ```
 
 But this is not recommended and you will have less control over the elements you will use in your app.

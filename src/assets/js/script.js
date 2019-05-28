@@ -23,7 +23,6 @@ $(document).ready( function(){
         } else {
             $('.js-mobile-menu-layout').addClass('mobile-menu-layout--expanded');
         }
-
         event.preventDefault();
     });
 

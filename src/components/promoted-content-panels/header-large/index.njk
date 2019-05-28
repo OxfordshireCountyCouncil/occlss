@@ -1,0 +1,17 @@
+---
+title: Promoted content panel
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+{% from "promoted-content-panel/macro.njk" import occlssPromotedContentPanel %}
+
+{{ occlssPromotedContentPanel({
+  panelColour: "selective-yellow",
+  textRows: [
+        {
+          text: "Line font size - header-large",
+          textSize: "header-large"
+        }
+  ]
+}) }}

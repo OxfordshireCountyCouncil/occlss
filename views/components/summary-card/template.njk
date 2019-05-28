@@ -1,0 +1,10 @@
+{% if params.cards %}
+    {% for card in params.cards %}
+        <div class="occlss-summary-card">
+            <a href="{{ card.url }}" class="occlss-summary-card__cont">
+                {% if card.title %}<h2 class="occlss-summary-card__title">{{ card.title }}</h2>{% endif %}
+                {% if card.summaryText %}<p class="occlss-summary-card__summary-text">{{ card.summaryText }}</p>{% endif %}
+            </a>
+        </div>
+    {% endfor %}
+{% endif %}

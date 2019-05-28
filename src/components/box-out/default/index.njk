@@ -1,0 +1,44 @@
+---
+title: Box out
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "box-out/macro.njk" import occlssBoxOut %}
+
+{{ occlssBoxOut({
+  heading: "Instructions for doing a thing",
+  content: [
+    {
+      type: "p",
+      items: [
+        {
+          content: "Instructions for a thing that you might need to do. Of cource, you may not need to do it but it's better safe than sorry"
+        }
+      ]
+    },{
+      type: "ul",
+      items: [
+        {
+          content: "The first thing in a list of things"
+        },{
+          content: "The next thing in the list"
+        },{
+          content: "A thing that is in the wrorong list"
+        },{
+          content: "This might belong in the list"
+        },{
+          content: "This is not a list item, it just looks like one"
+        }
+      ]
+    },{
+      type: "p",
+      items: [
+        {
+          content: "When you have done the right thing above, do another thing."
+        }
+      ]
+    }
+  ]
+}) }}

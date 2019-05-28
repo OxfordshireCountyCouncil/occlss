@@ -1,0 +1,25 @@
+<div class="occlss-short-summary {{ params.modClass }}">
+  
+{% if params.sectionTitle %}
+  <div class="occlss-short-summary__title-cont">
+    <h2 class="occlss-u-bspace-xs">{{ params.sectionTitle }}</h2>
+    <div class="occlss-splitter occlss-splitter--business occlss-u-tspace-none"></div>
+  </div>
+{% endif %}
+
+{% for pane in params.panes %}
+  <article class="occlss-short-summary__link-cont">
+    <a href="{{ pane.url }}" class="occlss-short-summary__link">
+      <div class="occlss-short-summary__content-wraper">
+
+        <div class="occlss-short-summary__content">
+          <h3 class="occlss-short-summary__content-title">Oxfordshire County Council</h3>
+          <p>How Oxfordshire County Council works to provide services to the public.</p>
+        </div>
+
+      </div>
+    </a>
+  </article>
+{% endfor %}
+
+</div>

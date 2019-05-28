@@ -1,0 +1,28 @@
+{% macro UIel(params) %}
+
+{% if params.item == 'h1' %}
+   <h1 class="stlgd-section-heading__cont" title="{{ params.content }}">{{ params.content }}</h1>
+{% endif %}
+
+{% if params.item == 'intro-text' %}
+<p class="stlgd-section-content__intro-text">{{ params.content }}</p>
+{% endif %}
+
+{% if params.item == 'color-box' %}
+
+{% for clrBox in params.boxes %}
+<div class="doc-sg-colors">
+{% if clrBox.descTitle %}<h5 class="doc-sg-colors-desc-title">{{ clrBox.descTitle }}</h5>{% endif %}
+<div class="doc-sg-colors__cont">
+{% if clrBox.hexColor %}<span class="doc-sg-swatch" style="background: {{ clrBox.hexColor }}"></span>{% endif %}
+<span class="doc-sg-label">
+{% if clrBox.sassVar %}<strong><small>SASS var:</small></strong>{{ clrBox.sassVar }}<br>{% endif %}
+{% if clrBox.hexColor %}<strong><small>HEX:</small></strong> {{ clrBox.hexColor }}{% endif %}
+</span>
+</div>
+</div>
+{% endfor %}
+
+{% endif %}
+
+{% endmacro %}

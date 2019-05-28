@@ -1,0 +1,13 @@
+---
+title: Button secondary disabled
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+{% from "button/macro.njk" import occlssButton %}
+
+{{ occlssButton({
+  text: "Secondary disabled",
+  classes: "occlss-button--secondary is-disabled",
+  "disabled": true
+}) }}

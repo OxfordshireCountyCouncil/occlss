@@ -1,0 +1,34 @@
+.#{$doc-prefix}page-header_nav {
+    background: $doc-page-header-nav-bg;
+    max-height: rem(50px);
+}
+
+.#{$doc-prefix}page-header_nav__list {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: rem(0 10px);
+}
+
+.#{$doc-prefix}page-header_nav__list-item {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.#{$doc-prefix}page-header_nav__list-item-lnk {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    color: $doc-page-header-nav-link-color;
+    padding: rem(10px 35px 10px 0);
+    &:hover {
+        color: $doc-page-header-nav-link-color-hover;  
+    }
+}
+
+.#{$doc-prefix}page-header_nav__list-item-lnk--open {
+    font-weight: 600;
+    color: $doc-page-header-nav-link-color-hover;
+}

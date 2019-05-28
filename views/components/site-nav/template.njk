@@ -1,0 +1,23 @@
+<nav class="occlss-site-nav{% if params.mobileNav == "true" %} occlss-site-nav--mobile{% endif %}">
+    {% if params.logoLinkLogoUrl %}
+        <a href="{{ params.logoLinkUrl }}" class="occlss-site-nav__logo-link"
+            title="{{ params.logoLinkTitle }}">
+            <img src="{{ params.logoLinkLogoUrl }}" class="occlss-head-logo" alt="{{ params.logoLinkLogoAlt }}">
+        </a>
+    {% endif %}
+    
+    {% if params.mobileNav == "true" %}
+        <a href="javascript:void(0);" class="occlss-site-nav__toggler js-occlss-nav-toggler-button">
+            Menu
+        </a>
+    {% endif %}
+    {% if params.navItems %}
+    <ul class="occlss-site-nav__list">
+        {% for item in params.navItems %}
+        <li class="occlss-site-nav__item">
+          <a href="{{ item.url }}" class="occlss-site-nav__link">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</nav>

@@ -1,0 +1,18 @@
+---
+title: Alert error
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "alert/macro.njk" import occlssAlert %}
+
+{{ occlssAlert({
+  title: "We're sorry, there is a problem",
+  content: "The details are highlighed below.",
+  state: "error",
+  controls: "true"
+}) }}
+
+
+

@@ -1,0 +1,18 @@
+<aside class="occlss-content-navigation" role="complementary">
+	<nav role="navigation" class="occlss-content-navigation__nav" aria-label="Pages in this guide">
+		{% if params.heading %}<h2 class="occlss-content-navigation__title">{{ params.heading }}</h2>{% endif %}
+		<ol class="occlss-content-navigation__list">
+			{% for item in params.items %}
+				{% if item.url %}
+					<li class="occlss-content-navigation__list-item ">    
+						<a href="{{ item.url }}" class="occlss-content-navigation__lnk ">{{ item.title }}</a>
+					</li>
+				{% else %}
+					<li class="occlss-content-navigation__list-item " aria-current="true">
+						{{ item.title }}
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ol>
+	</nav>
+</aside>

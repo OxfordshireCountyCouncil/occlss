@@ -1,0 +1,17 @@
+---
+title: Promoted content panel
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+{% from "promoted-content-panel/macro.njk" import occlssPromotedContentPanel %}
+
+{{ occlssPromotedContentPanel({
+  panelColour: "aqua-dee",
+  textRows: [
+        {
+          text: "Aqua dee colour",
+          textSize: "text-large"
+        }
+  ]
+}) }}

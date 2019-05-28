@@ -1,0 +1,24 @@
+---
+title: Jump links
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "jump-links/macro.njk" import occlssJumpLinks %}
+
+{{ occlssJumpLinks({
+  title: "On this page",
+  links: [
+    {
+      title: "Jump link 1",
+      url: "#jump-link-1"
+    },{
+      title: "Jump link 2",
+      url: "#jump-link-2"
+    },{
+      title: "Jump link 3",
+      url: "#jump-link-3"
+    }
+  ]
+}) }}

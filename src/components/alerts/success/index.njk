@@ -1,0 +1,17 @@
+---
+title: Alert success
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "alert/macro.njk" import occlssAlert %}
+
+{{ occlssAlert({
+  title: "This is what a success alert message looks like.",
+  state: "success",
+  controls: "true"
+}) }}
+
+
+

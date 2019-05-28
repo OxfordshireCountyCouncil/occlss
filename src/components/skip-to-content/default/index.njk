@@ -1,0 +1,27 @@
+---
+title: Skip to content
+layout: layout-example.njk
+doc_gap: true
+---
+
+Press [tab] key to see the menu
+
+{% from "skip-to-content/macro.njk" import occlssSkipToContent %}
+
+{{ occlssSkipToContent({
+  items: [
+    {
+      title: "skip to Main Navigation",
+      url: "#main-nav"
+    },{
+      title: "skip to Main Content",
+      url: "#occlss-main-content"
+    },{
+      title: "skip to Footer",
+      url: "#occlss-footer"
+    }
+  ]
+}) }}
+
+
+

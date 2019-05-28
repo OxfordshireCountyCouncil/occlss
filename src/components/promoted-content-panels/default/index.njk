@@ -1,0 +1,25 @@
+---
+title: Promoted content panel
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+{% from "promoted-content-panel/macro.njk" import occlssPromotedContentPanel %}
+
+{{ occlssPromotedContentPanel({
+  panelColour: "aqua-dee",
+  panelURL: "javascript:void(0);",
+  panelType: "alerts",
+  textRows: [
+        {
+          text: "Zombie apocalypse forecast",
+          textSize: "header-small",
+          showArrow: "false"
+        },
+        {
+          text: "Oxfordshire is set to experience a zombie apocalypse over the next few days. Make sure you are prepared for the worst, with these tips from the Emergency ",
+          textSize: "text-medium",
+          showArrow: "true"
+        }
+  ]
+}) }}

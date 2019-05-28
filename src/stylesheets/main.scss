@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900');
+// Images path 
+$occlss-global-image-path:  '/assets/images/occlss/';
+@import 'occlss';
+
+// primary secondary tertiary quaternary quinary senary septenary octonary nonary denary
+// Settings             
+// gloval config and settings
+@import '01-settings/doc-vars';
+
+
+// Tools 
+// site-wide mixins and functions
+@import 'breakpoint';
+@import "02-tools/mixins_rem";
+@import "02-tools/mixin_link-colors";
+@import "02-tools/mixin_box_sizing";
+@import "02-tools/mixin_box-shadow";
+@import "02-tools/mixin_hover";
+@import "02-tools/mixin_opacity";
+@import "02-tools/mixin_border-radius";
+@import "02-tools/mixin_tab-focus";
+@import "02-tools/mixin_user-select";
+@import "02-tools/mixins_layout";
+@import "02-tools/mixin_transition";
+//@import "02-tools/placeholder-classes";
+@import "02-tools/functions";
+
+
+// Generic
+// low-specificity, far-reaching rulesets (e.g. resets)
+//@import "03-generic/box-sizing";
+//@import "03-generic/normalize";
+//@import "03-generic/reset";
+
+
+// Base elements
+// Unclassed HTML elements (e.g. a {}, blockquote {}, address {})
+@import "04-base/html";
+@import "04-base/body";
+//@import "04-base/links";
+//@import "04-base/typography";
+
+
+// Objects
+// Objects, abstractions, and design patterns (e.g. .o-layout {})
+@import 'reflex';
+@import "05-objects/doc-wrapper";
+
+
+// Components
+// Discrete, complete chunks of UI (e.g. .c-carousel {})
+@import "06-components/doc-flex-grid";
+@import "06-components/doc-example-pane";
+@import "06-components/doc-page";
+@import "06-components/doc-main-nav";
+@import "06-components/doc-el";
+@import "06-components/doc-page-header";
+@import "06-components/doc-page-footer";
+@import "06-components/doc-page-header-nav";
+@import "06-components/doc-page-header-title";
+@import "06-components/doc-sg-colors";
+@import "06-components/doc-typography";
+
+// Trumps
+// High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {})
+@import "07-trumps/utilities";
+@import "07-trumps/highlight";
+
+

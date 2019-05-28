@@ -1,0 +1,18 @@
+---
+title: Version bar
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "version-bar/macro.njk" import occlssVersionBar %}
+
+{{ occlssVersionBar({
+  badge: "BETA",
+  links: [
+    {
+      title: "What is this?",
+      url: "javascript:void(0);"
+    }
+  ]
+}) }}

@@ -1,0 +1,18 @@
+---
+title: Alert info
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "alert/macro.njk" import occlssAlert %}
+
+{{ occlssAlert({
+  title: "Cookie",
+  content: "We use cookie to ensure that we give you the best experience on our website. By countinuing to browser the site you are agreeing our use of cookies.",
+  state: "info",
+  controls: "true"
+}) }}
+
+
+

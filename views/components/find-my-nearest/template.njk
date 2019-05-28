@@ -1,0 +1,1675 @@
+{% from "form-controls/macro.njk" import occlssFormCntrls %}
+{% from "button/macro.njk" import occlssButton %}
+
+
+{%- set classes %} class="occlss-find-my-nearest {% if params.type == "district" %} occlss-find-my-nearest--district {% elseif params.type == "short" %}occlss-find-my-nearest--short{% endif %}"{% endset %}
+
+{% if params.type == "district" %}
+<div {{- classes | safe }} role="search">
+    <div class="occlss-layout">
+        <div class="occlss-layout__col occlss-layout__col--12">
+            <form id="js-occlss-find-my-nearest-postcode">
+                <div class="occlss-layout occlss-find-my-nearest__search-form-cont">
+                    
+                    <div class="occlss-layout__col occlss-layout__col--bleed occlss-layout__col--12">
+
+                        {{ occlssFormCntrls({
+                        type: "select",
+                        cntrlsClasses: "occlss-find-my-nearest__input-group",
+                        labelText: "Chose the option",
+                        labelClasses: "occlss-u-visuallyhidden",
+                        legendText: "Find in Oxfordshire",
+                        legendClasses: "occlss-form-cntrls__label occlss-find-my-nearest__label",
+                        options: [
+                            {
+                            value: "District council",
+                            name: "District council"
+                            },{
+                            value: "Concillors",
+                            name: "Concillors"
+                            },{
+                            value: "MPs",
+                            name: "MPs"
+                            },{
+                            value: "Schools",
+                            name: "Schools"
+                            },{
+                            value: "Libraries",
+                            name: "Libraries"
+                            },{
+                            value: "Waste recycling centres",
+                            name: "Waste recycling centres"
+                            }
+                        ]
+                        }) }}
+
+                    </div>
+                    
+                    <div class="occlss-layout__col occlss-layout__col--bleed occlss-layout__col--sm-6">
+
+                        {{ occlssFormCntrls({
+                        type: "input-text",
+                        cntrlsClasses: "occlss-find-my-nearest__input-group",
+                        labelText: "Enter a postcode",
+                        labelRemoveClasses: true
+                        }) }}
+                    
+                    </div>
+                    
+                    <div class="occlss-layout__col occlss-layout__col--sm-6 occlss-find-my-nearest__controls">
+
+                        {{ occlssButton({
+                        text: "Find",
+                        classes: "occlss-button--primary occlss-button--fullwidth occlss-find-my-nearest__submit"
+                        }) }}
+
+                    </div>
+
+                    <div class="occlss-layout__col occlss-layout__col--12 occlss-layout__col--align-self-end occlss-find-my-nearest__find-my-location-cont">
+                        <a href="javascript:void(0);" class="occlss-find-my-nearest__link" id="js-occlss-find-my-nearest-link">Or locate me now</a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% elseif params.type == "short" %}
+
+<div {{- classes | safe }} role="search">
+    <div class="occlss-layout">
+        <div class="occlss-layout__col occlss-layout__col--12">
+            <form id="js-occlss-find-my-nearest-postcode">
+                <div class="occlss-layout occlss-find-my-nearest__search-form-cont occlss-find-my-nearest__search-form-cont--postcode">
+                    <div class="occlss-layout__col occlss-layout__col--bleed occlss-layout__col--12">
+
+                        {{ occlssFormCntrls({
+                        type: "input-text",
+                        legendText: "Find my nearest ...",
+                        descText: "MP, MEP, councillor",
+                        legendClasses: "occlss-form-cntrls__label occlss-find-my-nearest__label",
+                        cntrlsClasses: "occlss-find-my-nearest__input-group",
+                        labelText: "Enter a postcode",
+                        labelRemoveClasses: true
+                        }) }}
+
+
+                    </div>
+                    <div class="occlss-layout__col occlss-layout__col--12 occlss-find-my-nearest__input-group">
+                        {{ occlssButton({
+                        text: "Find",
+                        classes: "occlss-button occlss-button--primary occlss-button--fullwidth occlss-find-my-nearest__submit"
+                        }) }}
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="occlss-wrapper">
+    <div {{- classes | safe }} role="search">
+        <div class="occlss-layout occlss-layout--gutter-s">
+
+            <div class="occlss-layout__col occlss-layout__col--md-5">
+                <form id="js-occlss-find-my-nearest-postcode">
+                    <div class="occlss-layout occlss-find-my-nearest__search-form-cont occlss-find-my-nearest__search-form-cont--postcode">
+                        <div class="occlss-layout__col occlss-layout__col--md-8">
+                            <div class="occlss-form-cntrls occlss-find-my-nearest__input-group">
+                                {{ occlssFormCntrls({
+                                    type: "input-text",
+                                    cntrlsClasses: "occlss-find-my-nearest__input-group",
+                                    legendText: "Find my nearest ...",
+                                    legendClasses: "occlss-form-cntrls__label occlss-find-my-nearest__label",
+                                    labelText: "Enter a postcode",
+                                    labelRemoveClasses: true
+                                }) }}
+                            </div>
+                        </div>
+
+                        <div class="occlss-layout__col occlss-layout__col--md-4 occlss-layout__col--align-self-end occlss-find-my-nearest__input-group">
+                                
+                                {{ occlssButton({
+                                text: "Search",
+                                type: "submit",
+                                classes: "occlss-button--primary occlss-button--fullwidth occlss-find-my-nearest__submit"
+                                }) }}
+                       
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="occlss-layout__col occlss-layout__col--md-4 occlss-layout__col--align-self-end">
+
+                        {{ occlssFormCntrls({
+                        type: "select",
+                        cntrlsClasses: "occlss-find-my-nearest__input-group",
+                        selectClasses: "js-occlss-find-my-nearest-select",
+                        labelText: "Or select a place",
+                        labelClasses: "occlss-find-my-nearest__label",
+                        options: [
+                            {
+                                value: "none",
+                                name: ""
+                            },
+                            {
+                                value: "OX141EN",
+                                name: "Abingdon"
+                            },
+                            {
+                                value: "OX173NF",
+                                name: "Adderbury"
+                            },
+                            {
+                                value: " OX97EW",
+                                name: "Adwell"
+                            },
+                            {
+                                value: "OX92LT",
+                                name: "Albury"
+                            },
+                            {
+                                value: "OX156NH",
+                                name: "Alkerton"
+                            },
+                            {
+                                value: "OX182PT",
+                                name: "Alvescot"
+                            },
+                            {
+                                value: "OX252RQ",
+                                name: "Ambrosden"
+                            },
+                            {
+                                value: "OX144NT",
+                                name: "Appleford"
+                            },
+                            {
+                                value: "OX135JT",
+                                name: "Appleton"
+                            },
+                            {
+                                value: "OX128PY",
+                                name: "Ardington"
+                            },
+                            {
+                                value: "OX277HP",
+                                name: "Ardley"
+                            },
+                            {
+                                value: "OX251NZ",
+                                name: "Arncott"
+                            },
+                            {
+                                value: "OX76AN",
+                                name: "Ascott-under-Wychwood"
+                            },
+                            {
+                                value: "SN68NG",
+                                name: "Ashbury"
+                            },
+                            {
+                                value: "OX184HW",
+                                name: "Asthall"
+                            },
+                            {
+                                value: "OX182DJ",
+                                name: "Aston"
+                            },
+                            {
+                                value: "OX495SS",
+                                name: "Aston Rowant"
+                            },
+                            {
+                                value: "OX119DN",
+                                name: "Aston Tirrold"
+                            },
+                            {
+                                value: "OX119ER",
+                                name: "Aston Upthorpe"
+                            },
+                            {
+                                value: "OX182LF",
+                                name: "Bampton"
+                            },
+                            {
+                                value: "OX165UD",
+                                name: "Banbury"
+                            },
+                            {
+                                value: "OX150PP",
+                                name: "Barford St John"
+                            },
+                            {
+                                value: "OX150RS",
+                                name: "Barford St Michael"
+                            },
+                            {
+                                value: "OX39HE",
+                                name: "Barton"
+                            },
+                            {
+                                value: "SN77QD",
+                                name: "Baulking"
+                            },
+                            {
+                                value: "OX39SS",
+                                name: "Beckley"
+                            },
+                            {
+                                value: "RG80QB",
+                                name: "Beech Fm"
+                            },
+                            {
+                                value: "OX51PA",
+                                name: "Begbroke"
+                            },
+                            {
+                                value: "OX106RY",
+                                name: "Benson"
+                            },
+                            {
+                                value: "OX107PE",
+                                name: "Berinsfield"
+                            },
+                            {
+                                value: "OX106JR",
+                                name: "Berrick Salome"
+                            },
+                            {
+                                value: "OX135QB",
+                                name: "Bessels Leigh"
+                            },
+                            {
+                                value: "OX266JF",
+                                name: "Bicester"
+                            },
+                            {
+                                value: "RG94DX",
+                                name: "Binfield Heath"
+                            },
+                            {
+                                value: "RG96BS",
+                                name: "Bix"
+                            },
+                            {
+                                value: "OX182PJ",
+                                name: "Black Bourton"
+                            },
+                            {
+                                value: "OX46TU",
+                                name: "Blackbird Leys"
+                            },
+                            {
+                                value: "OX251TS",
+                                name: "Blackthorn"
+                            },
+                            {
+                                value: "OX201RW",
+                                name: "Bladon"
+                            },
+                            {
+                                value: "OX201UH",
+                                name: "Blenheim Palace"
+                            },
+                            {
+                                value: "OX53DP",
+                                name: "Bletchingdon"
+                            },
+                            {
+                                value: "OX119NX",
+                                name: "Blewbury"
+                            },
+                            {
+                                value: "OX154ES",
+                                name: "Bloxham"
+                            },
+                            {
+                                value: "OX154AN",
+                                name: "Bodicote"
+                            },
+                            {
+                                value: "OX171AS",
+                                name: "Bourton"
+                            },
+                            {
+                                value: "SN68JL",
+                                name: "Bourton (near Faringdon)"
+                            },
+                            {
+                                value: "OX495NS",
+                                name: "Brightwell Baldwin"
+                            },
+                            {
+                                value: "OX100RQ",
+                                name: "Brightwell-cum-Sotwell"
+                            },
+                            {
+                                value: "OX495LD",
+                                name: "Britwell Salome"
+                            },
+                            {
+                                value: "OX183YN",
+                                name: "Brize Norton"
+                            },
+                            {
+                                value: "GL73QS",
+                                name: "Broadwell"
+                            },
+                            {
+                                value: "OX155DU",
+                                name: "Broughton"
+                            },
+                            {
+                                value: "GL73JH",
+                                name: "Broughton Poggs"
+                            },
+                            {
+                                value: "OX76QA",
+                                name: "Bruern Abbey"
+                            },
+                            {
+                                value: "SN78QR",
+                                name: "Buckland"
+                            },
+                            {
+                                value: "OX277LT",
+                                name: "Bucknell"
+                            },
+                            {
+                                value: "OX184BD",
+                                name: "Burford"
+                            },
+                            {
+                                value: "SN78BX",
+                                name: "Buscot"
+                            },
+                            {
+                                value: "OX183TL",
+                                name: "Carterton"
+                            },
+                            {
+                                value: "OX294BN",
+                                name: "Cassington"
+                            },
+                            {
+                                value: "OX278TH",
+                                name: "Caversfield"
+                            },
+                            {
+                                value: "OX73NF",
+                                name: "Chadlington"
+                            },
+                            {
+                                value: "OX447RQ",
+                                name: "Chalgrove"
+                            },
+                            {
+                                value: "OX73PX",
+                                name: "Charlbury"
+                            },
+                            {
+                                value: "OX52QU",
+                                name: "Charlton-on-Otmoor"
+                            },
+                            {
+                                value: "OX120EN",
+                                name: "Charney Bassett"
+                            },
+                            {
+                                value: "GL560SU",
+                                name: "Chastleton"
+                            },
+                            {
+                                value: "RG80NE",
+                                name: "Checkendon"
+                            },
+                            {
+                                value: "OX261UX",
+                                name: "Chesterton"
+                            },
+                            {
+                                value: "OX129US",
+                                name: "Childrey"
+                            },
+                            {
+                                value: "OX73HT",
+                                name: "Chilson"
+                            },
+                            {
+                                value: "OX110PJ",
+                                name: "Chilton"
+                            },
+                            {
+                                value: "OX182EH",
+                                name: "Chimney"
+                            },
+                            {
+                                value: "OX394JJ",
+                                name: "Chinnor"
+                            },
+                            {
+                                value: "OX75EE",
+                                name: "Chipping Norton"
+                            },
+                            {
+                                value: "OX109LP",
+                                name: "Cholsey"
+                            },
+                            {
+                                value: "OX298AB",
+                                name: "Church Hanborough"
+                            },
+                            {
+                                value: "OX76NG",
+                                name: "Churchill"
+                            },
+                            {
+                                value: "OX182SR",
+                                name: "Clanfield"
+                            },
+                            {
+                                value: "OX171HA",
+                                name: "Claydon"
+                            },
+                            {
+                                value: "OX150PA",
+                                name: "Clifton"
+                            },
+                            {
+                                value: "OX143EG",
+                                name: "Clifton Hampden"
+                            },
+                            {
+                                value: "SN67PT",
+                                name: "Coleshill"
+                            },
+                            {
+                                value: "OX298NH",
+                                name: "Combe"
+                            },
+                            {
+                                value: "SN68NT",
+                                name: "Compton Beauchamp"
+                            },
+                            {
+                                value: "OX73EH",
+                                name: "Cornbury and Wychwood"
+                            },
+                            {
+                                value: "OX76TX",
+                                name: "Cornwell"
+                            },
+                            {
+                                value: "OX182EG",
+                                name: "Cote"
+                            },
+                            {
+                                value: "NN135SN",
+                                name: "Cottisford"
+                            },
+                            {
+                                value: "OX42DQ",
+                                name: "Cowley"
+                            },
+                            {
+                                value: "OX299TG",
+                                name: "Crawley"
+                            },
+                            {
+                                value: "OX171NN",
+                                name: "Cropredy"
+                            },
+                            {
+                                value: "OX394RR",
+                                name: "Crowell"
+                            },
+                            {
+                                value: "OX106AE",
+                                name: "Crowmarsh"
+                            },
+                            {
+                                value: "OX108ED",
+                                name: "Crowmarsh Gifford"
+                            },
+                            {
+                                value: "OX449EZ",
+                                name: "Cuddesdon"
+                            },
+                            {
+                                value: "OX143DU",
+                                name: "Culham"
+                            },
+                            {
+                                value: "OX29PQ",
+                                name: "Cumnor"
+                            },
+                            {
+                                value: "OX297YL",
+                                name: "Curbridge"
+                            },
+                            {
+                                value: "OX495NH",
+                                name: "Cuxham"
+                            },
+                            {
+                                value: "OX150SS",
+                                name: "Deddington"
+                            },
+                            {
+                                value: "OX120DL",
+                                name: "Denchworth"
+                            },
+                            {
+                                value: "OX449JE",
+                                name: "Denton"
+                            },
+                            {
+                                value: "OX118HX",
+                                name: "Didcot"
+                            },
+                            {
+                                value: "OX107JG",
+                                name: "Dorchester"
+                            },
+                            {
+                                value: "OX144JG",
+                                name: "Drayton (nr Abingdon)"
+                            },
+                            {
+                                value: "OX156EN",
+                                name: "Drayton (nr Banbury)"
+                            },
+                            {
+                                value: "OX107AX",
+                                name: "Drayton St Leonard"
+                            },
+                            {
+                                value: "OX297YH",
+                                name: "Ducklington"
+                            },
+                            {
+                                value: "OX256LD/Duns Tew",
+                                name: "Duns Tew"
+                            },
+                            {
+                                value: "RG49PJ",
+                                name: "Dunsden"
+                            },
+                            {
+                                value: "OX495AY",
+                                name: "Easington"
+                            },
+                            {
+                                value: "OX129TD",
+                                name: "East Challow"
+                            },
+                            {
+                                value: "OX119LE",
+                                name: "East Hagbourne"
+                            },
+                            {
+                                value: "OX120JL",
+                                name: "East Hanney"
+                            },
+                            {
+                                value: "OX128JX",
+                                name: "East Hendred"
+                            },
+                            {
+                                value: "OX135PR",
+                                name: "Eaton"
+                            },
+                            {
+                                value: "SN78BJ",
+                                name: "Eaton Hastings"
+                            },
+                            {
+                                value: "OX39UL",
+                                name: "Elsfield"
+                            },
+                            {
+                                value: "OX74NE",
+                                name: "Enstone"
+                            },
+                            {
+                                value: "OX156LA",
+                                name: "Epwell"
+                            },
+                            {
+                                value: "OX106JY",
+                                name: "Ewelme"
+                            },
+                            {
+                                value: "OX294FD",
+                                name: "Eynsham"
+                            },
+                            {
+                                value: "SN77JN",
+                                name: "Faringdon"
+                            },
+                            {
+                                value: "OX29NS",
+                                name: "Farmoor"
+                            },
+                            {
+                                value: "OX73AG",
+                                name: "Fawler"
+                            },
+                            {
+                                value: "OX52RD",
+                                name: "Fencott"
+                            },
+                            {
+                                value: "SN77PR",
+                                name: "Fernham"
+                            },
+                            {
+                                value: "OX76HD",
+                                name: "Fifield"
+                            },
+                            {
+                                value: "GL73JG",
+                                name: "Filkins"
+                            },
+                            {
+                                value: "MK184AQ",
+                                name: "Finmere"
+                            },
+                            {
+                                value: "OX73BP",
+                                name: "Finstock"
+                            },
+                            {
+                                value: "OX298AQ",
+                                name: "Freeland"
+                            },
+                            {
+                                value: "OX135NX",
+                                name: "Frilford"
+                            },
+                            {
+                                value: "OX278ED",
+                                name: "Fringford"
+                            },
+                            {
+                                value: "OX277QR",
+                                name: "Fritwell"
+                            },
+                            {
+                                value: "OX184BZ",
+                                name: "Fulbrook"
+                            },
+                            {
+                                value: "OX135LY",
+                                name: "Fyfield"
+                            },
+                            {
+                                value: "OX135HB",
+                                name: "Garford"
+                            },
+                            {
+                                value: "OX449EL",
+                                name: "Garsington"
+                            },
+                            {
+                                value: "OX201AL",
+                                name: "Glympton"
+                            },
+                            {
+                                value: "OX279AF",
+                                name: "Godington"
+                            },
+                            {
+                                value: "SN78PA",
+                                name: "Goosey"
+                            },
+                            {
+                                value: "RG80DP",
+                                name: "Goring"
+                            },
+                            {
+                                value: "RG87RR",
+                                name: "Goring Heath"
+                            },
+                            {
+                                value: "OX52PR",
+                                name: "Gosford"
+                            },
+                            {
+                                value: "OX182RY",
+                                name: "Grafton"
+                            },
+                            {
+                                value: "OX14LB",
+                                name: "Grandpont"
+                            },
+                            {
+                                value: "SN77NG",
+                                name: "Great Coxwell"
+                            },
+                            {
+                                value: "OX447LA",
+                                name: "Great Haseley"
+                            },
+                            {
+                                value: "OX447PN",
+                                name: "Great Milton"
+                            },
+                            {
+                                value: "OX75RX",
+                                name: "Great Rollright"
+                            },
+                            {
+                                value: "OX74DL",
+                                name: "Great Tew"
+                        },
+                        {
+                            value: "OX127PJ",
+                            name: "Grove"
+                        },
+                        {
+                            value: "OX299UB",
+                            name: "Hailey"
+                        },
+                        {
+                            value: "OX52QH",
+                            name: "Hampton Gay"
+                        },
+                        {
+                            value: "OX52QA",
+                            name: "Hampton Poyle"
+                        },
+                        {
+                            value: "OX171HN",
+                            name: "Hanwell"
+                        },
+                        {
+                            value: "OX278SS",
+                            name: "Hardwick (nr Bicester)"
+                        },
+                        {
+                            value: "OX295AN",
+                            name: "Hardwick (nr Witney)"
+                        },
+                        {
+                            value: "RG94AX",
+                            name: "Harpsden"
+                        },
+                        {
+                            value: "OX110DX",
+                            name: "Harwell"
+                        },
+                        {
+                            value: "SN78JQ",
+                            name: "Hatford"
+                        },
+                        {
+                            value: "OX39BU",
+                            name: "Headington"
+                        },
+                        {
+                            value: "RG91AG",
+                            name: "Henley-on-Thames"
+                        },
+                        {
+                            value: "OX278HD",
+                            name: "Hethe"
+                        },
+                        {
+                            value: "OX75TL",
+                            name: "Heythrop"
+                        },
+                        {
+                            value: "RG95DN",
+                            name: "Highmoor"
+                        },
+                        {
+                            value: "SN78RN",
+                            name: "Hinton Waldrist"
+                        },
+                        {
+                            value: "OX331PR",
+                            name: "Holton"
+                        },
+                        {
+                            value: "OX184JS",
+                            name: "Holwell"
+                        },
+                        {
+                            value: "OX155QQ",
+                            name: "Hook Norton"
+                        },
+                        {
+                            value: "OX156BB",
+                            name: "Horley"
+                        },
+                        {
+                            value: "OX156DF",
+                            name: "Hornton"
+                        },
+                        {
+                            value: "OX331RP",
+                            name: "Horspath"
+                        },
+                        {
+                            value: "OX331AU",
+                            name: "Horton-cum-Studley"
+                        },
+                        {
+                            value: "OX76HW",
+                            name: "Idbury"
+                        },
+                        {
+                            value: "OX44EL",
+                            name: "Iffley"
+                        },
+                        {
+                            value: "OX106AQ",
+                            name: "Ipsden"
+                        },
+                        {
+                            value: "OX52TQ",
+                            name: "Islip"
+                        },
+                        {
+                            value: "OX26AH",
+                            name: "Jericho"
+                        },
+                        {
+                            value: "GL73HG",
+                            name: "Kelmscott"
+                        },
+                        {
+                            value: "GL73QT",
+                            name: "Kencot"
+                        },
+                        {
+                            value: "OX44YH",
+                            name: "Kennington"
+                        },
+                        {
+                            value: "OX201BN",
+                            name: "Kiddington"
+                        },
+                        {
+                            value: "OX51DZ",
+                            name: "Kidlington"
+                        },
+                        {
+                            value: "RG49BE",
+                            name: "Kidmore End"
+                        },
+                        {
+                            value: "OX76YP",
+                            name: "Kingham"
+                        },
+                        {
+                            value: "OX135DA",
+                            name: "Kingston Bagpuize"
+                        },
+                        {
+                            value: "OX129QQ",
+                            name: "Kingston Lisle"
+                        },
+                        {
+                            value: "OX53HH",
+                            name: "Kirtlington"
+                        },
+                        {
+                            value: "GL73LB",
+                            name: "Langford"
+                        },
+                        {
+                            value: "OX265DR",
+                            name: "Launton"
+                        },
+                        {
+                            value: "OX299NT",
+                            name: "Leafield"
+                        },
+                        {
+                            value: "OX129LS",
+                            name: "Letcombe Bassett"
+                        },
+                        {
+                            value: "OX129JQ",
+                            name: "Letcombe Regis"
+                        },
+                        {
+                            value: "OX182AZ",
+                            name: "Lew"
+                        },
+                        {
+                            value: "OX495TB",
+                            name: "Lewknor"
+                        },
+                        {
+                            value: "SN77LG",
+                            name: "Little Coxwell"
+                        },
+                        {
+                            value: "GL73QN",
+                            name: "Little Faringdon"
+                        },
+                        {
+                            value: "OX447QD",
+                            name: "Little Milton"
+                        },
+                        {
+                            value: "OX75QB",
+                            name: "Little Rollright"
+                        },
+                        {
+                            value: "OX74JB",
+                            name: "Little Tew"
+                        },
+                        {
+                            value: "OX144RD",
+                            name: "Little Wittenham"
+                        },
+                        {
+                            value: "OX44XQ",
+                            name: "Littlemore"
+                        },
+                        {
+                            value: "SN78ED",
+                            name: "Littleworth (near Faringdon)"
+                        },
+                        {
+                            value: "OX106RY",
+                            name: "Littleworth (near Wallingford)"
+                        },
+                        {
+                            value: "OX128QG",
+                            name: "Lockinge"
+                        },
+                        {
+                            value: "OX298BX",
+                            name: "Long Hanborough"
+                        },
+                        {
+                            value: "OX144RF",
+                            name: "Long Wittenham"
+                        },
+                        {
+                            value: "SN77TW",
+                            name: "Longcot"
+                        },
+                        {
+                            value: "OX135EL",
+                            name: "Longworth"
+                        },
+                        {
+                            value: "OX252LZ",
+                            name: "Lower Arncott"
+                        },
+                        {
+                            value: "RG96AD",
+                            name: "Lower Assendon"
+                        },
+                        {
+                            value: "OX255PD",
+                            name: "Lower Heyford"
+                        },
+                        {
+                            value: "OX120EQ",
+                            name: "Lyford"
+                        },
+                        {
+                            value: "OX76QL",
+                            name: "Lyneham"
+                        },
+                        {
+                            value: "RG47TW",
+                            name: "Mapledurham"
+                        },
+                        {
+                            value: "OX136NZ",
+                            name: "Marcham"
+                        },
+                        {
+                            value: "OX449LR",
+                            name: "Marsh Baldon"
+                        },
+                        {
+                            value: "OX30SW",
+                            name: "Marston"
+                        },
+                        {
+                            value: "OX252NJ",
+                            name: "Merton"
+                        },
+                        {
+                            value: "RG96BY",
+                            name: "Middle Assendon"
+                        },
+                        {
+                            value: "OX255PP",
+                            name: "Middle Aston"
+                        },
+                        {
+                            value: "OX77BS",
+                            name: "Middle Barton"
+                        },
+                        {
+                            value: "OX254TD",
+                            name: "Middleton Stoney"
+                        },
+                        {
+                            value: "OX154RN",
+                            name: "Milcombe"
+                        },
+                        {
+                            value: "OX144EW",
+                            name: "Milton (nr Abingdon)"
+                        },
+                        {
+                            value: "OX154LL",
+                            name: "Milton (nr Banbury)"
+                        },
+                        {
+                            value: "OX76LF",
+                            name: "Milton-under-Wychwood"
+                        },
+                        {
+                            value: "OX290SG",
+                            name: "Minster Lovell"
+                        },
+                        {
+                            value: "NN135RR",
+                            name: "Mixbury"
+                        },
+                        {
+                            value: "NN135RR",
+                            name: "Mixbury"
+                        },
+                        {
+                            value: "OX92HW",
+                            name: "Moreton"
+                        },
+                        {
+                            value: "OX109JT",
+                            name: "Moulsford"
+                        },
+                        {
+                            value: "OX52RE",
+                            name: "Murcott"
+                        },
+                        {
+                            value: "RG95DA",
+                            name: "Nettlebed"
+                        },
+                        {
+                            value: "OX14SU",
+                            name: "New Hinksey"
+                        },
+                        {
+                            value: "OX107AD",
+                            name: "Newington"
+                        },
+                        {
+                            value: "MK184AZ",
+                            name: "Newton Purcell"
+                        },
+                        {
+                            value: "OX52TF",
+                            name: "Noke"
+                        },
+                        {
+                            value: "OX256JE",
+                            name: "North Aston"
+                        },
+                        {
+                            value: "OX20LZ",
+                            name: "North Hinksey Village"
+                        },
+                        {
+                            value: "OX296RB",
+                            name: "North Leigh"
+                        },
+                        {
+                            value: "OX119AS",
+                            name: "North Moreton"
+                        },
+                        {
+                            value: "OX156AA",
+                            name: "North Newington"
+                        },
+                        {
+                            value: "OX449AX",
+                            name: "Northfield Brook"
+                        },
+                        {
+                            value: "OX295UH",
+                            name: "Northmoor"
+                        },
+                        {
+                            value: "RG95SP",
+                            name: "Nuffield"
+                        },
+                        {
+                            value: "OX449NY",
+                            name: "Nuneham Courtenay"
+                        },
+                        {
+                            value: "OX52QU",
+                            name: "Oddington"
+                        },
+                        {
+                            value: "OX12RF",
+                            name: "Osney"
+                        },
+                        {
+                            value: "OX75PP",
+                            name: "Over Norton"
+                        },
+                        {
+                            value: "OX13BB",
+                            name: "Oxford"
+                        },
+                        {
+                            value: "OX251PD",
+                            name: "Piddington"
+                        },
+                        {
+                            value: "RG96HJ",
+                            name: "Pishill"
+                        },
+                        {
+                            value: "OX97EJ",
+                            name: "Postcombe"
+                        },
+                        {
+                            value: "OX171PF",
+                            name: "Prescote"
+                        },
+                        {
+                            value: "SN78QB",
+                            name: "Pusey"
+                        },
+                        {
+                            value: "OX495AN",
+                            name: "Pyrton"
+                        },
+                        {
+                            value: "OX182SX",
+                            name: "Radcot"
+                        },
+                        {
+                            value: "OX143GG",
+                            name: "Radley"
+                        },
+                        {
+                            value: "OX73AU",
+                            name: "Ramsden"
+                        },
+                        {
+                            value: "OX39HE",
+                            name: "Risinghurst"
+                        },
+                        {
+                            value: "OX44SN",
+                            name: "Rose Hill"
+                        },
+                        {
+                            value: "RG94QD",
+                            name: "Rotherfield Greys"
+                        },
+                        {
+                            value: "RG95JN",
+                            name: "Rotherfield Peppard"
+                        },
+                        {
+                            value: "OX254SF",
+                            name: "Rousham"
+                        },
+                        {
+                            value: "OX75FD",
+                            name: "Salford"
+                        },
+                        {
+                            value: "OX77AG",
+                            name: "Sandford St Martin"
+                        },
+                        {
+                            value: "OX44YP",
+                            name: "Sandford-on-Thames"
+                        },
+                        {
+                            value: "OX38EG",
+                            name: "Sandhills"
+                        },
+                        {
+                            value: "OX76NW",
+                            name: "Sarsden"
+                        },
+                        {
+                            value: "SN77PX",
+                            name: "Shellingford"
+                        },
+                        {
+                            value: "OX278EG",
+                            name: "Shelswell"
+                        },
+                        {
+                            value: "OX156NH",
+                            name: "Shenington"
+                        },
+                        {
+                            value: "SN78SQ",
+                            name: "Shifford"
+                        },
+                        {
+                            value: "OX184AJ",
+                            name: "Shilton"
+                        },
+                        {
+                            value: "RG94BU",
+                            name: "Shiplake"
+                        },
+                        {
+                            value: "OX136EP",
+                            name: "Shippon"
+                        },
+                        {
+                            value: "OX52QH",
+                            name: "Shipton-on-Cherwell"
+                        },
+                        {
+                            value: "OX76JS",
+                            name: "Shipton-under-Wychwood"
+                        },
+                        {
+                            value: "OX495DQ",
+                            name: "Shirburn"
+                        },
+                        {
+                            value: "OX38TD",
+                            name: "Shotover Hill"
+                        },
+                        {
+                            value: "SN68EZ",
+                            name: "Shrivenham"
+                        },
+                        {
+                            value: "OX156PJ",
+                            name: "Shutford"
+                        },
+                        {
+                            value: "OX155QT",
+                            name: "Sibford Ferris"
+                        },
+                        {
+                            value: "OX155QT",
+                            name: "Sibford Gower"
+                        },
+                        {
+                            value: "OX256LW",
+                            name: "Somerton"
+                        },
+                        {
+                            value: "RG49NB",
+                            name: "Sonning Common"
+                        },
+                        {
+                            value: "OX277HT",
+                            name: "Souldern"
+                        },
+                        {
+                            value: "OX15AS",
+                            name: "South Hinksey"
+                        },
+                        {
+                            value: "OX296XN",
+                            name: "South Leigh"
+                        },
+                        {
+                            value: "OX119BU",
+                            name: "South Moreton"
+                        },
+                        {
+                            value: "OX154JE",
+                            name: "South Newington"
+                        },
+                        {
+                            value: "RG80JL",
+                            name: "South Stoke"
+                        },
+                        {
+                            value: "OX129PX",
+                            name: "Sparsholt"
+                        },
+                        {
+                            value: "OX73JU",
+                            name: "Spelsbury"
+                        },
+                        {
+                            value: "OX136ES",
+                            name: "St Helen Without"
+                        },
+                        {
+                            value: "OX447UN",
+                            name: "Stadhampton"
+                        },
+                        {
+                            value: "OX297RX",
+                            name: "Standlake"
+                        },
+                        {
+                            value: "SN78LL",
+                            name: "Stanford in the Vale"
+                        },
+                        {
+                            value: "OX295RJ",
+                            name: "Stanton Harcourt"
+                        },
+                        {
+                            value: "OX331HF",
+                            name: "Stanton St John"
+                        },
+                        {
+                            value: "OX254RZ",
+                            name: "Steeple Aston"
+                        },
+                        {
+                            value: "OX77BX",
+                            name: "Steeple Barton"
+                        },
+                        {
+                            value: "OX136SN",
+                            name: "Steventon"
+                        },
+                        {
+                            value: "OX278SD",
+                            name: "Stoke Lyne"
+                        },
+                        {
+                            value: "RG95PU",
+                            name: "Stoke Row"
+                        },
+                        {
+                            value: "OX97EZ",
+                            name: "Stoke Talmage"
+                        },
+                        {
+                            value: "OX298EF",
+                            name: "Stonesfield"
+                        },
+                        {
+                            value: "RG96HB",
+                            name: "Stonor"
+                        },
+                        {
+                            value: "OX279AT",
+                            name: "Stratton Audley"
+                        },
+                        {
+                            value: "OX26UX",
+                            name: "Summertown"
+                        },
+                        {
+                            value: "OX136RB",
+                            name: "Sunningwell"
+                        },
+                        {
+                            value: "OX144BB",
+                            name: "Sutton Courtenay"
+                        },
+                        {
+                            value: "OX155EU",
+                            name: "Swalcliffe"
+                        },
+                        {
+                            value: "OX74BD",
+                            name: "Swerford"
+                        },
+                        {
+                            value: "OX184EA",
+                            name: "Swinbrook"
+                        },
+                        {
+                            value: "RG96EA",
+                            name: "Swyncombe"
+                        },
+                        {
+                            value: "OX394NG",
+                            name: "Sydenham"
+                        },
+                        {
+                            value: "OX53AG",
+                            name: "Tackley"
+                        },
+                        {
+                            value: "OX155SJ",
+                            name: "Tadmarton"
+                        },
+                        {
+                            value: "OX184UB",
+                            name: "Taynton"
+                        },
+                        {
+                            value: "OX97AU",
+                            name: "Tetsworth"
+                        },
+                        {
+                            value: "OX92QA",
+                            name: "Thame"
+                        },
+                        {
+                            value: "OX52AB",
+                            name: "Thrupp"
+                        },
+                        {
+                            value: "OX92LG",
+                            name: "Tiddington"
+                        },
+                        {
+                            value: "OX449NH",
+                            name: "Toot Baldon"
+                        },
+                        {
+                            value: "OX93QW",
+                            name: "Towersey"
+                        },
+                        {
+                            value: "OX135QL",
+                            name: "Tubney"
+                        },
+                        {
+                            value: "OX277SJ",
+                            name: "Tusmore"
+                        },
+                        {
+                            value: "OX277SP",
+                            name: "Tusmore Park"
+                        },
+                        {
+                            value: "SN77SA",
+                            name: "Uffington"
+                        },
+                        {
+                            value: "OX251QS",
+                            name: "Upper Arncott"
+                        },
+                        {
+                            value: "OX255LB",
+                            name: "Upper Heyford"
+                        },
+                        {
+                            value: "OX184LX",
+                            name: "Upton (nr Burford)"
+                        },
+                        {
+                            value: "OX119HP)",
+                            name: "Upton (nr Didcot)"
+                        },
+                        {
+                            value: "OX100DB",
+                            name: "Wallingford"
+                        },
+                        {
+                            value: "OX128HB",
+                            name: "Wantage"
+                        },
+                        {
+                            value: "OX107HG",
+                            name: "Warborough"
+                        },
+                        {
+                            value: "OX171SE",
+                            name: "Wardington"
+                        },
+                        {
+                            value: "OX331LB",
+                            name: "Waterperry"
+                        },
+                        {
+                            value: "OX331JR",
+                            name: "Waterstock"
+                        },
+                        {
+                            value: "OX495JS",
+                            name: "Watlington"
+                        },
+                        {
+                            value: "OX252PR",
+                            name: "Wendlebury"
+                        },
+                        {
+                            value: "OX129TW",
+                            name: "West Challow"
+                        },
+                        {
+                            value: "OX110NW",
+                            name: "West Hagbourne"
+                        },
+                        {
+                            value: "OX120LW",
+                            name: "West Hanney"
+                        },
+                        {
+                            value: "OX128RP",
+                            name: "West Hendred"
+                        },
+                        {
+                            value: "OX129QB",
+                            name: "Westcot"
+                        },
+                        {
+                            value: "OX253QL",
+                            name: "Weston-on-the-Green"
+                        },
+                        {
+                            value: "OX184JT",
+                            name: "Westwell"
+                        },
+                        {
+                            value: "OX97EN",
+                            name: "Wheatfield"
+                        },
+                        {
+                            value: "OX331SL",
+                            name: "Wheatley"
+                        },
+                        {
+                            value: "RG87HH",
+                            name: "Whitchurch-on-Thames"
+                        },
+                        {
+                            value: "OX184DU",
+                            name: "Widford"
+                        },
+                        {
+                            value: "OX154LE",
+                            name: "Wigginton"
+                        },
+                        {
+                            value: "OX284YR",
+                            name: "Witney"
+                        },
+                        {
+                            value: "OX28PH",
+                            name: "Wolvercote"
+                        },
+                        {
+                            value: "RG80SA",
+                            name: "Woodcote"
+                        },
+                        {
+                            value: "OX39TN",
+                            name: "Woodeaton"
+                        },
+                        {
+                            value: "OX201UH",
+                            name: "Woodstock"
+                        },
+                        {
+                            value: "SN77QL",
+                            name: "Woolstone"
+                        },
+                        {
+                            value: "OX15JL/Wootton",
+                            name: "Wootton (nr Abingdon)"
+                        },
+                        {
+                            value: "OX201DL",
+                            name: "Wootton (nr Woodstock)"
+                        },
+                        {
+                            value: "OX294SY",
+                            name: "Worton"
+                        },
+                        {
+                            value: "OX156QQ",
+                            name: "Wroxton"
+                        },
+                        {
+                            value: "OX73EL",
+                            name: "Wychwood Forest"
+                        },
+                        {
+                            value: "OX28QE",
+                            name: "Wytham"
+                        },
+                        {
+                            value: "OX51LT",
+                            name: "Yarnton"
+                        },
+                        {
+                            value: "OX297QX",
+                            name: "Yelford"
+                        }
+                    ]
+                    
+                    }) }}
+            </div>
+
+            <div class="occlss-layout__col occlss-layout__col--md-3 occlss-layout__col--align-self-end occlss-find-my-nearest__find-my-location-cont">
+
+                <span class="occlss-icon occlss-icon--pin" aria-hidden="true">
+                    <svg aria-hidden="true" class="occlss-icon__container occlss-find-my-nearest__icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#pin" class="icon__source icon__source--svg"></use>
+                    </svg>
+                </span>
+
+                <a href="javascript:void(0);" class="occlss-find-my-nearest__link" id="js-occlss-find-my-nearest-link">
+                Or find my location 
+                <div class="occlss-loading-bar js-occlss-loading-bar">
+                    <div class="occlss-loading-bar__content occlss-loading-bar__content--dark-gray">
+                        <i class="occlss-loading-bar__icon"></i>
+                        <i class="occlss-loading-bar__icon"></i>
+                        <i class="occlss-loading-bar__icon"></i>
+                        <i class="occlss-loading-bar__icon"></i>
+                    </div>
+                </div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endif %}

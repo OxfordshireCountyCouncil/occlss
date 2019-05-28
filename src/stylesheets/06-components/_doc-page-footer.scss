@@ -1,0 +1,109 @@
+.#{$doc-prefix}page-footer {
+    color: $doc-page-footer-text-color;
+    max-height: rem(120px);
+    background: $doc-page-footer-bg-color;
+    padding: rem(16px);
+}
+
+.#{$doc-prefix}page-footer__heading {
+    font-size: rem(22px);
+}
+
+.#{$doc-prefix}page-footer__layout {
+    display: inline-block;
+    display: flex;
+    *display: inline;
+    zoom: 1;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    letter-spacing: -0.31em !important;
+    *letter-spacing: normal !important;
+    word-spacing: -0.43em !important;
+    list-style-type: none;
+}
+
+.#{$doc-prefix}page-footer__layout-col {
+    font-weight: 300;
+    flex-direction: column;
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+    padding: 1rem 1rem;
+
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        padding: 0;
+    }
+
+    & h2, 
+    & .occlss-table__caption, 
+    & h3,
+    & h4, 
+    & h5 {
+      color: #ffffff;
+      font-size: 1.375rem;
+      font-weight: 700;
+      margin: 0 0 0.625rem 0;
+    }
+
+    & .icon-list {
+        margin-bottom: 1.25rem;
+    }
+      
+    & .icon-list li {
+        float: left;
+        margin-right: 0.75rem;
+    }
+      
+    & li,
+    & p {
+        margin: 0 0 0.3125rem 0;
+    }
+      
+    & li:last-child,
+    & p:last-child {
+        margin: 0;
+    }
+      
+    & a, .s-cms-content-footer .occlss-a-to-z--inverse .occlss-a-to-z__letter, .occlss-a-to-z--inverse .s-cms-content-footer .occlss-a-to-z__letter {
+        color: #ffffff;
+        font-weight: 400;
+        text-decoration: none;
+    }
+      
+    & a:hover, .s-cms-content-footer .occlss-a-to-z--inverse .occlss-a-to-z__letter:hover, .occlss-a-to-z--inverse .s-cms-content-footer .occlss-a-to-z__letter:hover {
+        color: #edc856;
+    }
+      
+    & a:focus .occlss-u-more-link__icon, .s-cms-content-footer .occlss-a-to-z--inverse .occlss-a-to-z__letter:focus .occlss-u-more-link__icon, .occlss-a-to-z--inverse .s-cms-content-footer .occlss-a-to-z__letter:focus .occlss-u-more-link__icon {
+        fill: #000000;
+    }
+      
+    & .occlss-button:hover, .s-cms-content-footer .obj-chat .css-1wctqlt > button:hover:not(:disabled), .obj-chat .s-cms-content-footer .css-1wctqlt > button:hover:not(:disabled) {
+        color: #ffffff;
+    }
+      
+    & .occlss-u-more-link__icon {
+        fill: #ffffff;
+    }
+      
+    & .icon-list {
+        margin-top: 1.25rem;
+    }
+      
+    & .occlss-u-more-link {
+        font-weight: 700;
+    }
+
+}
+
+
+  
+
+  

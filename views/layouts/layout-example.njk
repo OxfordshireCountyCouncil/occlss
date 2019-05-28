@@ -1,0 +1,23 @@
+{%- set htmlClass %} {% if doc_bg == 'white' %}class="html-bg-white"{% endif %}{% endset %}
+{%- set bodyClass %} class="{% if doc_bg == 'white' %}body-bg-white{% endif %}{% if doc_gap %} body-gap{% endif %}"{% endset %}
+
+<!doctype html>
+<html lang="en" {{ htmlClass | safe }}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/assets/js/vendor/modernizr.js"></script>
+    <link href="/assets/css/main.css" rel="stylesheet" media="all" />
+    <title>{{ title }} – Example</title>
+  </head>
+  <body {{ bodyClass | safe }}>
+    <form novalidate>
+        {% block body %}
+          {{ contents | safe }}
+        {% endblock %}
+    </form>
+  </body>
+  {% include "_footer-example-script.njk" %}
+  {% include "_occlss-script.njk" %}
+</html>

@@ -1,0 +1,23 @@
+{% from "form-controls/macro.njk" import occlssFormCntrls %}
+{% from "button/macro.njk" import occlssButton %}
+
+<form class="occlss-form occlss-form--sign-up">
+    <div class="occlss-layout">
+
+        {{ occlssFormCntrls({
+        type: "input-text",
+        cntrlsClasses: "occlss-form-cntrls--sign-up-group occlss-layout__col occlss-layout__col--sm-12 occlss-layout__col--md-7 occlss-layout__col--bleed",
+        labelText: "Email address",
+        labelClasses: "occlss-form-cntrls__label--sign-up-title"
+        }) }}
+
+        <div class="occlss-layout__col occlss-layout__col--sm-12 occlss-layout__col--md-5 occlss-layout__col--bleed occlss-form__sign-up-form-controls">
+            {{ occlssButton({
+            text: "Sign up",
+            classes: "occlss-button--primary occlss-button--fullwidth occlss-find-my-nearest__submit"
+            }) }}
+       
+        </div>
+
+    </div>
+</form>

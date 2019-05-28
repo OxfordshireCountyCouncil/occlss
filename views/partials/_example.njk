@@ -1,0 +1,58 @@
+{#{ example({group: "components", item: "alert-box", example: "default", html: true, nunjucks: true, open: false }) }#}
+
+{% macro example(params) %}
+
+{% set exampleRoot = "src/" + params.group + "/" + params.item + "/" + params.example + "/" %}
+
+{% if params.customCode %}
+  {% set examplePath = exampleRoot + "code.njk" %}
+{% else %}
+  {% set examplePath = exampleRoot + "index.njk" %}
+{% endif %}
+
+{% set exampleURL = "/" + params.group + "/" + params.item + "/" + params.example + "/index.html" %}
+
+{% set exampleId = params.id | default("example-" + params.example) %}
+
+{% set exampleTitle = getFrontmatter(examplePath).title %}
+
+{% set multipleTabs = params.html and params.nunjucks %}
+{% set tabs = params.html or params.nunjucks %}
+
+<div class="doc-example-pane" id="doc-example-pane-{{ exampleTitle | lower }}">
+
+  <div class="doc-example-pane__html-example">
+    <span class="doc-example-pane__new-window"><a href="{{ exampleURL }}" class="doc-example-pane__new-window-lnk" target="_blank">Open this example in a new window</a></span>
+    <iframe title="{{ exampleTitle }}" class="doc-example-pane__iframe" src="{{ exampleURL }}" width="100%" scrolling="no" frameBorder="0" id="doc-example-iframe"></iframe>
+  </div>
+
+  {% if tabs %}
+  <ul class="doc-example-pane-tabs js-doc-example-pane-tabs" role="tablist">
+    {% if params.html %}<li class="doc-example-pane-tabs__item js-doc-example-pane-tabs__item{{ " doc-example-pane-tabs__item--open" if (params.html and params.open ) }}" role="presentation"><a href="#{{ exampleId }}-html" role="tab" aria-controls="{{ exampleId }}-html" data-track="tab-html" class="doc-example-pane-tabs__item-link">HTML</a></li>{% endif %}
+    {% if params.nunjucks %}<li class="doc-example-pane-tabs__item js-doc-example-pane-tabs__item{{ " doc-example-pane-tabs__item--open" if (params.open and params.html == null or params.open and params.html == false ) }}" role="presentation"><a href="#{{ exampleId }}-nunjucks" role="tab" aria-controls="{{ exampleId }}-nunjucks" data-track="tab-nunjucks" class="doc-example-pane-tabs__item-link">Nunjucks</a></li>{% endif %}
+  </ul>
+  {% endif %}
+
+  <div class="doc-example-pane-tabs__code js-doc-example-pane-tabs__code {{ " doc-example-pane-tabs__code--open" if (params.html and params.open ) }}" id="{{ exampleId }}-html">
+    <pre data-module="app-copy"><code class="hljs html">
+      {{- getHTMLCode(examplePath) | highlight('html') | safe -}}
+    </code></pre>
+  </div>
+
+  <div class="doc-example-pane-tabs__code js-doc-example-pane-tabs__code {{ " doc-example-pane-tabs__code--open" if (params.open and params.html == null or params.open and params.html == false ) }}" id="{{ exampleId }}-nunjucks">
+    <pre data-module="app-copy"><code class="hljs js">
+      {{- getNunjucksCode(examplePath)  | highlight('js') | safe -}}
+    </code></pre>
+  </div>
+
+</div>
+
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/vendor/iframeResizer.min.js"></script>
+<script>
+  iFrameResize({
+        heightCalculationMethod : 'lowestElement',
+  },'#doc-example-iframe')
+</script-->
+
+{% endmacro %}

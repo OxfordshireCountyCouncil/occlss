@@ -1,0 +1,98 @@
+.#{$doc-prefix}example-pane {
+    background: $doc-example-pane-bg-primary;
+}
+
+.#{$doc-prefix}example-pane__html-example {
+    position: relative;
+    padding: rem(50px 26px 26px);
+    border: 1px solid $doc-example-pane-border-color-primary;
+}
+
+.#{$doc-prefix}example-pane__new-window {
+    background: $doc-example-pane-bg-secondary;
+    padding: rem(2px 12px 5px 12px);
+    display: inline-block;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.#{$doc-prefix}example-pane__new-window-lnk {
+    font-size: rem(12px);
+}
+
+.#{$doc-prefix}example-pane-tabs__code {
+    display: none;
+}
+
+.#{$doc-prefix}example-pane-tabs__code--open {
+    display: block;
+}
+
+.#{$doc-prefix}example-pane__html-example + pre,
+.#{$doc-prefix}example-pane-tabs__code pre {
+    border-top: none;
+}
+
+.#{$doc-prefix}example-pane__html-example + p {
+    padding-top: rem(30px); 
+}
+
+.#{$doc-prefix}example-pane-tabs {
+    border: 1px solid $doc-example-pane-border-color-primary;
+    border-top: none;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.#{$doc-prefix}example-pane-tabs__item {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+.#{$doc-prefix}example-pane-tabs__item--open {
+    .#{$doc-prefix}example-pane-tabs__item-link {
+        border-bottom: 3px solid $doc-example-border-color-selected;
+    }
+}
+
+.#{$doc-prefix}example-pane-tabs__item-link {
+    display: block;
+    margin-top: -1px;
+    padding: 15px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    color: #005ea5;
+    background: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    &:hover {
+        border-bottom: 3px solid $doc-example-border-color-selected;
+    }
+}
+
+pre {
+    position: relative;
+    margin: 0;
+    padding: rem(20px);
+    overflow: auto;
+    border: 1px solid $doc-example-pane-border-color-primary;
+    background-color: $doc-example-pane-bg-tertiary;
+    margin-bottom: 15px;
+}
+
+.doc-example-pane__iframe {
+    resize: both;
+    overflow: auto;
+    min-width: rem(250px);
+    min-height: rem(30px);
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    background: $doc-example-pane-bg-primary;
+}

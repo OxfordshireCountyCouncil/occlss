@@ -1,0 +1,13 @@
+---
+title: Button search disabled
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+{% from "button/macro.njk" import occlssButton %}
+
+{{ occlssButton({
+  text: "Search disabled",
+  classes: "occlss-button--search is-disabled",
+  "disabled": true
+}) }}

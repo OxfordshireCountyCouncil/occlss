@@ -1,0 +1,22 @@
+<nav class="occlss-pagination" role="navigation" aria-label="Pagination">
+	<ul class="occlss-pagination__list">
+		{% if params.previous %}
+		<li class="occlss-pagination__item occlss-pagination__item--previous">
+			<a href="{{ params.previous.url }}" class="occlss-pagination__link" rel="prev">
+				<span class="occlss-pagination__link-title">{{ params.previous.title }}</span>
+				<span class="occlss-u-visuallyhidden">:</span>
+				<span class="occlss-pagination__link-label">{{ params.previous.linkLabel }}</span>
+			</a>
+		</li>
+		{% endif %}
+		{% if params.next %}
+		<li class="occlss-pagination__item occlss-pagination__item--next">
+			<a href="{{ params.next.url }}" class="occlss-pagination__link" rel="next">
+				<span class="occlss-pagination__link-title">{{ params.next.title }}</span>
+				<span class="occlss-u-visuallyhidden">:</span>
+				<span class="occlss-pagination__link-label">{{ params.next.linkLabel }}</span>
+			</a>
+		</li>
+		{% endif %}
+	</ul>
+</nav>

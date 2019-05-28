@@ -1,0 +1,58 @@
+{#
+  heading: "Instructions for doing a thing",
+  content: [
+    {
+      type: "p",
+      items: [
+        {
+          content: text
+        }
+      ]
+    },{
+      type: "ul",
+      items: [
+        {
+          content: text
+        },{
+          content: text
+        },{
+          content: text
+        },{
+          content: text
+        },{
+          content: text
+        }
+      ]
+    },{
+      type: "p",
+      items: [
+        {
+          content: text
+        }
+      ]
+    }
+  ]
+#}
+
+<div class="occlss-box-out">
+    {% if params.heading %}
+    <div class="occlss-info-box" role="note" aria-label="Information">
+        <h3>{{ params.heading }}</h3>
+    </div>
+    {% endif %}
+
+    {% for item in params.content %}
+        
+        {% if item.type == "ul" %}
+            <ul>
+                {% for listitem in item.items %}
+                    <li>{{ listitem.content }}</li>
+                {% endfor %}
+            </ul>
+        {% elseif item.type == "p" %}
+            {% for listitem in item.items %}
+                <p>{{ listitem.content }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</div>

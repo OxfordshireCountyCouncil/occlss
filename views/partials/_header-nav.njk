@@ -1,0 +1,14 @@
+<nav class="doc-page-header_nav doc-flex-grid__col">
+  <div class="doc-wrapper">
+    <ul class="doc-page-header_nav__list">
+      <li class="doc-page-header_nav__list-item">
+        <a href="/" class="doc-page-header_nav__list-item-lnk{{ " doc-page-header_nav__list-item-lnk--open" if (path == "") }}">Get started</a>
+      </li>
+      {% for item in navigation %}
+      <li class="doc-page-header_nav__list-item">
+        <a href="/{{ item.url }}" class="doc-page-header_nav__list-item-lnk{{ " doc-page-header_nav__list-item-lnk--open" if (item.url in  path) }}">{{ item.label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

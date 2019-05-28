@@ -1,0 +1,33 @@
+<nav>
+    {% for item in navigation %}
+      {% if item.url in path %}
+      {% if item.items %}
+        {% for theme, items in item.items | groupby("theme") %}
+          {% if theme != 'undefined' %}
+            <h4>{{ theme }}</h4>
+          {% endif %}
+          <ul>
+          {% for subitem in items %}
+            <li class="{% if subitem.url == path %}current{% endif %}">
+              <a href="/{{ subitem.url }}">{{ subitem.label }}</a>
+              {% if (subitem.headings) and (subitem.url == path) %}
+                <ul>
+                  {% for link in subitem.headings %}
+                    {% if link.depth == 2 %}
+                      <li>
+                        <a href="/{{ subitem.url }}/#{{ link.url }}" >
+                          {{ link.text }}
+                        </a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+        {% endfor %}
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+</nav>

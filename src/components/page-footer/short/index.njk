@@ -1,0 +1,12 @@
+---
+title: Page footer short
+layout: layout-example.njk
+---
+
+{% from "page-footer/macro.njk" import occlssPageFooter %}
+
+{{ occlssPageFooter({
+  type: "short",
+  fRowHeading: "Oxfordshire County Council",
+  fRowHTML: "<p>County Hall, New Road, Oxford, OX1 1ND</p>\n"
+}) }}

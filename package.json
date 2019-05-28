@@ -1,45 +1,51 @@
 {
-  "name": "edition-node-gulp",
-  "description": "The gulp wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.",
-  "version": "1.2.4",
-  "dependencies": {
-    "browser-sync": "^2.11.2",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-svg-sprite": "^1.3.7",
-    "minimist": "^1.2.0",
-    "patternlab-node": "^2.0.0",
-    "sassdoc": "^2.5.0",
-    "styleguidekit-assets-default": "^3.0.0",
-    "styleguidekit-mustache-default": "^3.0.0"
-  },
-  "keywords": [
-    "Pattern Lab",
-    "Atomic Web Design",
-    "Node",
-    "Gulp",
-    "Javascript"
-  ],
+  "name": "doc",
+  "private": true,
+  "description": "Docs",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pattern-lab/edition-node-gulp.git"
+    "url": ""
   },
-  "bugs": "https://github.com/pattern-lab/edition-node-gulp/issues",
-  "author": "Brian Muenzenmeyer",
+  "author": "MW",
   "license": "MIT",
+  "homepage": "",
+  "scripts": {
+    "preinstall": "node bin/check-nvmrc.js",
+    "prestart": "node bin/check-nvmrc.js",
+    "build": "node tasks/build.js",
+    "start": "node tasks/serve.js"
+  },
   "engines": {
-    "node": ">=5.0"
+    "node": "8.11.4"
   },
   "devDependencies": {
-    "bower": "^1.4.1",
-    "del": "^3.0.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-htmlsplit": "^1.1.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-size": "^2.0.0",
-    "gulp-sourcemaps": "^1.12.0",
-    "gulp-svg-sprite": "^1.2.9",
-    "gulp-util": "^3.0.6"
+    "breakpoint-sass": "^2.7.1",
+    "fs-extra": "^7.0.1",
+    "iframe-resizer": "^3.6.3",
+    "js-beautify": "^1.8.8",
+    "jstransformer-marked": "^1.0.3",
+    "jstransformer-nunjucks": "^0.5.0",
+    "marked": "^0.5.2",
+    "metalsmith": "^2.3.0",
+    "metalsmith-assets": "^0.1.0",
+    "metalsmith-browser-sync": "^1.1.1",
+    "metalsmith-env": "^2.1.1",
+    "metalsmith-in-place": "^4.2.0",
+    "metalsmith-layouts": "^2.3.0",
+    "metalsmith-permalinks": "^2.0.0",
+    "metalsmith-sass": "^1.5.1",
+    "nunjucks": "^3.1.4",
+    "reflex-grid": "^2.0.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.3.1",
+    "clipboard": "^2.0.4",
+    "gray-matter": "^4.0.1",
+    "highlight.js": "^9.13.1",
+    "html5shiv": "^3.7.3",
+    "jquery": "^3.3.1",
+    "metalsmith-postcss": "^4.2.0",
+    "modernizr": "^3.6.0",
+    "occlss": ""
   }
 }

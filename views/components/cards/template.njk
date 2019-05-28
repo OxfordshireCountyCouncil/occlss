@@ -1,0 +1,56 @@
+
+{% if params.cardRows.length == 1 %}
+    {% for item in params.cardRows %}
+        <article class="occlss-card">
+            <a href="{{ item.cardURL }}" class="occlss-card__link">
+                <figure class="occlss-card__image-container">
+                    <img src="{{ item.cardImageURL }}" class="occlss-card__image" alt="">
+                </figure>
+                <header class="occlss-card__header">
+                    <h3 class="occlss-card__title">{{ item.cardTitle  }}</h3>
+                </header>
+                <div class="occlss-card__main">
+                    {% for paragraphtext in item.cardParagraph %}
+                        <p class="occlss-card__paragraph">{{ paragraphtext.text  }}</p>
+                    {% endfor %}
+                </div>
+            </a>
+        </article>
+    {% endfor %}
+{% elseif params.cardRows.length > 1 %}
+
+<div id="newsCardSection">
+  <div class="occlss-wrapper">
+    <!--START wrapper block-->
+    <div class="occlss-layout occlss-layout--gutter-s">
+      <!--START layout block-->
+
+        {% for item in params.cardRows %}
+            <div class="occlss-layout__col occlss-layout__col--sm-4">
+            
+                <article class="occlss-card">
+                    <a href="{{ item.cardURL }}" class="occlss-card__link">
+                        <figure class="occlss-card__image-container">
+                            <img src="{{ item.cardImageURL }}" class="occlss-card__image" alt="">
+                        </figure>
+                        <header class="occlss-card__header">
+                            <h3 class="occlss-card__title">{{ item.cardTitle  }}</h3>
+                        </header>
+                        <div class="occlss-card__main">
+                            {% for paragraphtext in item.cardParagraph %}
+                                <p class="occlss-card__paragraph">{{ paragraphtext.text  }}</p>
+                            {% endfor %}
+                        </div>
+                    </a>
+                </article>
+            </div>
+        {% endfor %}
+
+    </div>
+    <!--End layout elemnt -->
+  </div>
+</div>
+
+{% endif %}
+
+

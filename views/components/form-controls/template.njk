@@ -1,0 +1,96 @@
+{% set cntrlsid =  params.labelText | lower | replace(" ","-") %}
+{%- set cntrlsClasses %} class="occlss-form-cntrls {% if params.state == "error" %}occlss-form-cntrls--error{% endif %}{{ params.cntrlsClasses }}"{% endset %}
+{% if params.labelRemoveClasses %}
+{% else %}
+{%- set labelClasses %} class="occlss-form-cntrls__label{% if params.state == "error" %} occlss-form-cntrls__label--error{% endif %} {{ params.labelClasses }}"{% endset %}
+{% endif %}
+{%- set legendClasses %} class="occlss-form-cntrls__label{% if params.state == "error" %} occlss-form-cntrls__label--error{% endif %} {{ params.legendClasses }}"{% endset %}
+{%- set selectClasses %} class="occlss-form-cntrls__select {{ params.selectClasses }}"{% endset %}
+{%- set inputTextClasses %} class="occlss-form-cntrls__input {{ params.inputClasses }}"{% endset %}
+
+
+<div {{- cntrlsClasses | safe }}>
+    {% if params.type == "input-text" %}
+        {% if params.legendText %}
+        <legend {{ legendClasses | safe }}>{{ params.legendText }}</legend>
+        {% endif %}
+        {% if params.descText %}
+            <span class="occlss-find-my-nearest__desc-text">
+                <strong>{{ params.descText }}</strong>
+            </span>
+        {% endif %}
+        <label {{- labelClasses | safe }} for="{{ cntrlsid }}">{{ params.labelText }}</label>
+        <input {{- inputTextClasses | safe }} id="{{ cntrlsid }}" name="{{ cntrlsid }}" type="text" {% if params.state == "error" %}aria-describedby="describedby-{{ cntrlsid }}"{% endif %}>
+        {% if params.state == "error" %}
+        <span class="occlss-icon occlss-icon--exclamation-mark occlss-icon--error" aria-hidden="true">
+            <svg aria-hidden="true" class="occlss-icon__container">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#exclamation-mark" class="icon__source icon__source--svg"></use>
+            </svg>
+        </span>
+        <span class="occlss-form__error-message" id="describedby-{{ cntrlsid }}" role="alert">{{ params.statusMessage }}</span>
+        {% endif %}
+    {% endif %}
+    {% if params.type == "select" %}
+        {% if params.legendText %}
+        <legend {{ legendClasses | safe }}>{{ params.legendText }}</legend>
+        {% endif %}
+        {% if params.descText %}
+            <span class="occlss-find-my-nearest__desc-text">
+                <strong>{{ params.descText }}</strong>
+            </span>
+        {% endif %}
+        <label {{- labelClasses | safe }} for="{{ cntrlsid }}">{{ params.labelText }}</label>
+        <select {{ selectClasses | safe }} id="{{ cntrlsid }}" name="{{ cntrlsid }}">
+            {% for opt in params.options %}
+            <option value="{{ opt.value | lower | replace(" ","-") }}"{% if opt.selected %} selected{% endif %}>{{ opt.name }}</option>
+            {% endfor %}
+        </select>
+        {% if params.state == "error" %}
+        <span class="occlss-icon occlss-icon--exclamation-mark occlss-icon--error" aria-hidden="true">
+            <svg aria-hidden="true" class="occlss-icon__container">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#exclamation-mark" class="icon__source icon__source--svg"></use>
+            </svg>
+        </span>
+        <span class="occlss-form__error-message" id="describedby-{{ cntrlsid }}" role="alert">{{ params.statusMessage }}</span>
+        {% endif %}
+    {% endif %}
+    {% if params.type == "textarea" %}
+        {% if params.legendText %}<legend {{ legendClasses | safe }}>{{ params.legendText }}</legend>{% endif %}
+        <label {{- labelClasses | safe }} for="{{ cntrlsid }}">{{ params.labelText }}</label>
+        {% if params.state == "error" %}
+        <span class="occlss-form__error-message" id="describedby-{{ cntrlsid }}" role="alert">{{ params.statusMessage }}</span>
+        {% endif %}
+        <textarea class="occlss-form-cntrls__textarea " id="{{ cntrlsid }}" name="{{ cntrlsid }}" {% if params.state == "error" %}aria-describedby="describedby-{{ cntrlsid }}"{% endif %}></textarea>
+        {% if params.state == "error" %}
+        <span class="occlss-icon occlss-icon--exclamation-mark occlss-icon--error" aria-hidden="true">
+            <svg aria-hidden="true" class="occlss-icon__container">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#exclamation-mark" class="icon__source icon__source--svg"></use>
+            </svg>
+        </span>
+        {% endif %}
+    {% endif %}
+    {% if params.type == "checkbox" %}
+        <input class="occlss-form-cntrls__checkbox" id="{{ cntrlsid }}" name="{{ cntrlsid }}" type="checkbox" {% if params.state == "error" %}aria-describedby="describedby-{{ cntrlsid }}"{% endif %}{% if params.status == "disabled" %} disabled{% endif %}>
+        <label {{- labelClasses | safe }} for="{{ cntrlsid }}">{{ params.labelText }}</label>
+        {% if params.state == "error" %}
+        <span class="occlss-icon occlss-icon--exclamation-mark occlss-icon--error" aria-hidden="true">
+            <svg aria-hidden="true" class="occlss-icon__container">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#exclamation-mark" class="icon__source icon__source--svg"></use>
+            </svg>
+        </span>
+        <span class="occlss-form__error-message" id="describedby-{{ cntrlsid }}" role="alert">{{ params.statusMessage }}</span>
+        {% endif %}
+    {% endif %}
+    {% if params.type == "radio-button" %}
+        <input class="occlss-form-cntrls__radiobutton" id="{{ cntrlsid }}" name="{{ cntrlsid }}" type="radio" {% if params.state == "error" %}aria-describedby="describedby-{{ cntrlsid }}"{% endif %}{% if params.status == "disabled" %} disabled{% endif %}>
+        <label {{- labelClasses | safe }} for="{{ cntrlsid }}">{{ params.labelText }}</label>
+        {% if params.state == "error" %}
+        <span class="occlss-icon occlss-icon--exclamation-mark occlss-icon--error" aria-hidden="true">
+            <svg aria-hidden="true" class="occlss-icon__container">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#exclamation-mark" class="icon__source icon__source--svg"></use>
+            </svg>
+        </span>
+        <span class="occlss-form__error-message" id="describedby-{{ cntrlsid }}" role="alert">{{ params.statusMessage }}</span>
+        {% endif %}
+    {% endif %}
+</div>

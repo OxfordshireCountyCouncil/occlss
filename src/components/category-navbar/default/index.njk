@@ -1,0 +1,24 @@
+---
+title: Category navbar
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "category-navbar/macro.njk" import occlssCategoryNavbar %}
+
+{{ occlssCategoryNavbar({
+  items: [
+    {
+      title: "Residents",
+      url: "https://www.oxfordshire.gov.uk/",
+      active: "true"
+    },{
+      title: "Business",
+      url: "https://www.oxfordshire.gov.uk/business"
+    },{
+      title: "Council",
+      url: "https://www.oxfordshire.gov.uk/council"
+    }
+  ]
+}) }}

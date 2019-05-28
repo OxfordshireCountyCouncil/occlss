@@ -1,0 +1,12 @@
+<nav>
+  <ul class="doc-main-nav__list">
+    <li class="doc-main-nav__list-item">
+      <a href="/" class="doc-main-nav__list-item-lnk {% if subitem.url == path %}doc-main-nav__list-item-lnk--current{% endif %}">Get started</a>
+    </li>
+    {% for item in navigation %}
+    <li class="doc-main-nav__list-item">
+      <a href="/{{ item.url }}" class="doc-main-nav__list-item-lnk">{{ item.label }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

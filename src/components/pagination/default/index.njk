@@ -1,0 +1,24 @@
+---
+title: Pagination
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "pagination/macro.njk" import occlssPagination %}
+
+{{ occlssPagination({
+  previous: {
+    title: "Previous",
+    url: "javascript:void(0);",
+    linkLabel: "Overview"
+  },
+  next: {
+    title: "Next",
+    url: "javascript:void(0);",
+    linkLabel: "What you need before applying for a permit"
+  }
+}) }}
+
+
+

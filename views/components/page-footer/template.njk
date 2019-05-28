@@ -1,0 +1,135 @@
+<footer class="occlss-page-footer" id="occlss-footer">
+  <div class="occlss-wrapper occlss-page-footer__wraper">
+    <!--START wrapper block-->
+    <div class="occlss-layout occlss-layout--gutter-s">
+      <!--START layout block-->
+			{% if params.fRowHeading %}
+      <div class="occlss-layout__col occlss-layout__col--sm-5 s-cms-content-footer">
+        <!--START layout elemnt -->
+
+        {% if params.fRowHeading %}<h4>{{ params.fRowHeading }}</h4>{% endif %}
+				{{ params.fRowHTML | safe }}
+
+				{% if params.fRowSocialicons %}
+        <ul class="icon-list">
+					{% for item in params.fRowSocialicons %}
+
+					{% if item.icon == "facebook" %}
+          <li>
+            <a href="http://www.facebook.com/OxfordshireCountyCouncil" target="_blank" id="occlss_facebook_lnk">
+              <span class="occlss-icon occlss-icon--facebook" aria-hidden="false" id="occlss_facebook_icon">
+                <svg role="img" title="Oxfordshire county council on facebook" class="occlss-icon__container">
+                  <title>Oxfordshire county council on facebook</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#facebook" class="icon__source icon__source--svg"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+					{% endif %}
+
+					{% if item.icon == "twitter" %}
+          <li>
+            <a href="http://www.twitter.com/oxfordshirecc" target="_blank" id="occlss_twitter_lnk">
+              <span class="occlss-icon occlss-icon--twitter" aria-hidden="false" id="occlss_twitter_icon">
+                <svg role="img" title="Oxfordshire county council on twitter" class="occlss-icon__container">
+                  <title>Oxfordshire county council on twitter</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#twitter" class="icon__source icon__source--svg"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+					{% endif %}
+
+					{% if item.icon == "rss" %}
+          <li>
+            <a href="https://www.oxfordshire.gov.uk/cms/feeds/top-stories.xml" target="_blank" id="occlss_rss_lnk">
+              <span class="occlss-icon occlss-icon--rss" aria-hidden="false" id="occlss_rss_icon">
+                <svg role="img" title="Top stories rss feed" class="occlss-icon__container">
+                  <title>Top stories rss feed</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#rss" class="icon__source icon__source--svg"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+					{% endif %}
+
+					{% if item.icon == "linkedin" %}
+          <li>
+            <a href="https://www.linkedin.com/company/oxfordshire-county-council" target="_blank" id="occlss_linkedin_lnk">
+              <span class="occlss-icon occlss-icon--linkedin" aria-hidden="true">
+                <svg aria-hidden="true" class="occlss-icon__container">
+                  <title>Oxfordshire county council on linkedin</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#linkedin" class="icon__source icon__source--svg"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+					{% endif %}
+
+					{% if item.icon == "instagram" %}
+					<li>
+							<a href="https://www.instagram.com/oxfordshirecc" target="_blank" id="occlss_instagram_lnk">
+								<span class="occlss-icon occlss-icon--instagram" aria-hidden="true">
+									<svg aria-hidden="true" class="occlss-icon__container">
+										<title>Oxfordshire county council on instagram</title>
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#instagram" class="icon__source icon__source--svg"></use>
+									</svg>
+								</span>
+							</a>
+						</li>
+					{% endif %}
+
+					{% endfor %}
+        </ul>
+				{% endif %}
+
+        {{ params.fRowSecondHTML | safe }}
+
+      </div>
+			{% endif %}
+      <!--End layout elemnt -->
+			{% if params.sRowHeading %}
+      <div class="occlss-layout__col occlss-layout__col--sm-4 s-cms-content-footer">
+        <!--START layout elemnt -->
+        {% if params.sRowHeading %}<h4>{{ params.sRowHeading }}</h4>{% endif %}
+				{% if params.sRowListItems %}
+					<ul>
+					{% for item in params.sRowListItems %}
+            <li>
+							{% if item.url %}
+								<a href="{{ item.url }}">{{ item.title }}</a>
+							{% else %}
+								{{ item.title }}
+							{% endif %}
+            </li>
+					{% endfor%}
+					</ul>
+				{% endif %}
+      </div>
+			{% endif %}
+      <!--End layout elemnt -->
+			{% if params.tRowHeading %}
+      <div class="occlss-layout__col occlss-layout__col--sm-3 s-cms-content-footer">
+        <!--START layout elemnt -->
+        {% if params.tRowHeading %}<h4>{{ params.tRowHeading }}</h4>{% endif %}
+				{% if params.tRowListItems %}
+					<ul>
+					{% for item in params.tRowListItems %}
+            <li>
+							{% if item.url %}
+								<a href="{{ item.url }}">{{ item.title }}</a>
+							{% else %}
+								{{ item.title }}
+							{% endif %}
+            </li>
+					{% endfor%}
+					</ul>
+				{% endif %}
+      </div>
+			{% endif %}
+      <!--End layout elemnt -->
+    </div>
+    <!--End layout block -->
+  </div>
+  <!--End wrapper block -->
+</footer>

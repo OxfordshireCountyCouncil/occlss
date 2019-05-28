@@ -1,0 +1,37 @@
+---
+title: Popular content pane
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "popular-content-pane/macro.njk" import occlssPopularContentPane %}
+
+{{ occlssPopularContentPane({
+  panels: [
+    {
+      heading: "Jobs",
+      items: [
+        {
+          title: "Current vacancies",
+          url: "javascript:void(0);"
+        },{
+          title: "Teaching and school vacancies",
+          url: "javascript:void(0);"
+        },{
+          title: "Childcare vacancies",
+          url: "javascript:void(0);"
+        },{
+          title: "Adult social care vacancies",
+          url: "javascript:void(0);"
+        },{
+          title: "More jobs",
+          url: "javascript:void(0);"
+        }
+      ]
+    }
+  ]
+}) }}
+
+
+

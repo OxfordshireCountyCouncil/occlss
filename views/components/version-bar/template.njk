@@ -1,0 +1,16 @@
+<div class="occlss-version-bar">
+    <div class="occlss-wrapper occlss-version-bar__wraper"><!--START wrapper block-->
+      <div class="occlss-layout occlss-layout--bleed"><!--START layout block-->
+        <div class="occlss-layout__col occlss-layout__col--8 occlss-version-bar__left">
+          {% if params.badge %}<span class="occlss-version-bar__badge">{{ params.badge }}</span>{% endif %}
+        </div>
+        <div class="occlss-layout__col occlss-layout__col--4 occlss-version-bar__right">
+			{% if params.links %}
+				{% for link in params.links %}
+					<a href="{{ link.url }}" class="occlss-version-bar__link">{{ link.title }}</a>
+				{% endfor %}
+			{% endif %}
+        </div>
+      </div>
+    </div>
+</div>

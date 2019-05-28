@@ -1,0 +1,12 @@
+---
+title: Info box
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "info-box/macro.njk" import occlssInfoBox %}
+
+{{ occlssInfoBox({
+  content: "This is some information that is related to the content surrounding it. This might not apply to everyone but it might be important to you"
+}) }}

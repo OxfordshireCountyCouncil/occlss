@@ -1,0 +1,26 @@
+{% for panel in params.panels %}
+{%- set tabID %}tab-{{ panel.heading | lower | replace(" ","-") }}{% endset %}
+{%- set paneID %}pane-{{ panel.heading | lower | replace(" ","-") }}{% endset %}
+
+<div class="js-occlss-popular-content-pane occlss-popular-content-pane occlss-popular-content-pane--residents"
+	id="{{ tabID }}" tabindex="0" aria-controls="{{ paneID }}" role="tab">
+	{% if panel.heading %}<h2 class="occlss-popular-content-pane__heading">{{ panel.heading }}</h2>{% endif %}
+	<div class="occlss-popular-content-pane__content" id="{{ paneID }}" aria-labelledby="{{ tabID }}" role="tabpanel">
+		<ul class="occlss-summary-list occlss-summary-list--popular-content-pane">
+			{% for item in panel.items %}
+			<li class="occlss-summary-list__item occlss-summary-list__item--underlined">
+				{% if item.url %}
+				<a href="{{ item.url }}"
+					class="occlss-summary-list__link ">
+					{{ item.title }}
+				</a>
+				{% else %}
+					{{ item.title }}	
+				{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+
+	</div>
+</div>
+{% endfor %}

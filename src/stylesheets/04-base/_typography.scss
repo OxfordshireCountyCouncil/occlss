@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 $doc-gutter/2;
+	text-rendering: optimizeLegibility;
+}
+
+h1 {
+	font-size: doc-font-size('xxxxx-large');
+}
+
+h2 {
+	font-size: doc-font-size('xxxx-large');
+}
+
+h3 {
+	font-size: doc-font-size('xxx-large');
+}
+
+h4 {
+	font-size: doc-font-size('xx-large');
+}
+
+h5 {
+	font-size: doc-font-size('x-large');
+}
+
+h6 {
+	font-size: doc-font-size('large');
+}
+
+// Text //
+p,
+address,
+ol,
+ul,
+label,
+blockquote {
+	margin: 0 0 $doc-gutter/2;
+	font-style: normal;
+}

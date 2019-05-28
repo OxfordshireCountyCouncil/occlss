@@ -1,0 +1,29 @@
+---
+title: Content navigation
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "content-navigation/macro.njk" import occlssContentNavigation %}
+
+{{ occlssContentNavigation({
+  heading: "Contents",
+  items: [
+    {
+      title: "Check if you are eligible for a Blue Badge"
+    },{
+      title: "Check your documents",
+      url: "javascript:void(0);"
+    },{
+      title: "How to supply your documents",
+      url: "javascript:void(0);"
+    },{
+      title: "Start your application",
+      url: "javascript:void(0);"
+    }
+  ]
+}) }}
+
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="html-bg-white">
+
+{% include "_head.njk" %}
+
+<body class="body-full-height body-bg-white">
+
+<!-- grid start -->
+<div class="doc-flex-grid doc-flex-grid--column">
+
+  {% include "_header.njk" %}
+  {% set bc_parameters = {'layout': 'full'} %}
+  {% include "_body-content.njk" %}
+  {% include "_footer.njk" %}
+
+</div>
+<!-- grid ends -->
+{% include "_footer-script.njk" %}
+</body>
+</html>

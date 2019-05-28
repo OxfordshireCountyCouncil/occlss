@@ -1,0 +1,191 @@
+---
+title: Table
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "table/macro.njk" import occlssTable %}
+
+
+
+{{ occlssTable({
+  'responsive': true,
+  'firstCellIsHeader': true,
+  'head' : [
+    {
+      text: 'Council Tax Band'
+    },
+    {
+      text: 'Property Values'
+    },
+    {
+      text: 'Band D Proportion'
+    },
+    {
+      text: '2017/18'
+    },
+    {
+      text: '2018/19'
+    },
+    {
+      text: 'Change'
+    }
+  ],
+  'rows' : [
+    [
+      {
+        text: 'A'
+      },
+      {
+        text: 'Up to £40,000'
+      },
+      {
+        text: '6/9'
+      },
+      {
+        text: '£897.06'
+      },
+      {
+        text: '£950.79'
+      },
+      {
+        text: '£53.73'
+      }
+    ],[
+      {
+        text: 'B'
+      },
+      {
+        text: 'Over £40,000 and up to £52,000'
+      },
+      {
+        text: '7/9'
+      },
+      {
+        text: '£1,046.57'
+      },
+      {
+        text: '£1,109.26'
+      },
+      {
+        text: '£62.69'
+      }
+    ],[
+      {
+        text: 'C'
+      },
+      {
+        text: 'Over £52,000 and up to £68,000'
+      },
+      {
+        text: '8/9'
+      },
+      {
+        text: '£1,196.08'
+      },
+      {
+        text: '£1,267.72'
+      },
+      {
+        text: '£71.64'
+      }
+    ],[
+      {
+        text: 'D'
+      },
+      {
+        text: 'Over £68,000 and up to £88,000'
+      },
+      {
+        text: '9/9'
+      },
+      {
+        text: '£1,345.59'
+      },
+      {
+        text: '£1,426.19'
+      },
+      {
+        text: '£80.60'
+      }
+    ],[
+      {
+        text: 'E'
+      },
+      {
+        text: 'Over £88,000 and up to £120,000'
+      },
+      {
+        text: '11/9'
+      },
+      {
+        text: '£1,644.61'
+      },
+      {
+        text: '£1,743.12'
+      },
+      {
+        text: '£98.51'
+      }
+    ],[
+      {
+        text: 'F'
+      },
+      {
+        text: 'Over £120,000 and up to £160,000'
+      },
+      {
+        text: '13/9'
+      },
+      {
+        text: '£1,943.63'
+      },
+      {
+        text: '£2,060.05'
+      },
+      {
+        text: '£116.42'
+      }
+    ],[
+      {
+        text: 'G'
+      },
+      {
+        text: 'Over £160,000 and up to £320,000'
+      },
+      {
+        text: '15/9'
+      },
+      {
+        text: '£2,242.65'
+      },
+      {
+        text: '£2,376.98'
+      },
+      {
+        text: '£134.33'
+      }
+    ],[
+      {
+        text: 'H'
+      },
+      {
+        text: 'Over £320,000'
+      },
+      {
+        text: '18/9'
+      },
+      {
+        text: '£2,691.18'
+      },
+      {
+        text: '£2,852.38'
+      },
+      {
+        text: '£161.20'
+      }
+    ]
+
+  ]
+}) }}

@@ -1,0 +1,20 @@
+{% if params.items %}
+<div class="occlss-a-to-z {% if params.inverce == "true" %}occlss-a-to-z--inverse{% endif %}">
+    <div class="occlss-wrapper occlss-a-to-z__wraper">
+        <ul class="occlss-a-to-z__listitems">
+            {% for item in params.items %}
+                {% if item.url %}
+                <li class="occlss-a-to-z__item">
+                    <a class="occlss-a-to-z__letter {% if item.selected == "true" %}occlss-a-to-z__letter--selected{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+                </li>
+                {% else %}
+                <li class="occlss-a-to-z__item">
+                    <span class="occlss-a-to-z__letter occlss-a-to-z__letter--off">Y</span>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+    </div>
+</div>
+{% endif %}

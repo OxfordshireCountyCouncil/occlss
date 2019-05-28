@@ -1,0 +1,68 @@
+---
+title: Hero pane
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "hero-pane/macro.njk" import occlssHeroPane %}
+
+{{ occlssHeroPane({
+  heading: "Working for Oxfordshire County Council",
+  headingModeClass: "occlss-hero-pane__heading--residents",
+  imageURL: "http://www.oxfordshire.gov.uk/sites/default/files/2018-04/pond_flowers1200x132.jpg",
+  panels: [
+		{
+		title: "Apply",
+		items: [
+			{
+			title: "Jobs",
+			url: "javascript:void(0);"
+			},{
+			title: "Blue Badge",
+			url: "javascript:void(0);"
+			},{
+			title: "Bus pass",
+			url: "javascript:void(0);"
+			},{
+			title: "Resident parking permit",
+			url: "javascript:void(0);"
+			}
+		]
+		},{
+		title: "Pay",
+		items: [
+			{
+			title: "Parking tickets",
+			url: "javascript:void(0);"
+			},{
+			title: "Certificates",
+			url: "javascript:void(0);"
+			},{
+			title: "Ceremonies",
+			url: "javascript:void(0);"
+			},{
+			title: "Council Tax",
+			url: "javascript:void(0);"
+			}
+		]
+		},{
+		title: "Report",
+		items: [
+			{
+			title: "Pothole",
+			url: "javascript:void(0);"
+			},{
+			title: "Faulty street light",
+			url: "javascript:void(0);"
+			},{
+			title: "Safeguarding concern",
+			url: "javascript:void(0);"
+			},{
+			title: "Street problem",
+			url: "javascript:void(0);"
+			}
+		]
+	    }
+	]
+}) }}

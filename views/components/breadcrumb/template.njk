@@ -1,0 +1,22 @@
+<div class="occlss-breadcrumb ">
+      <div class="occlss-layout occlss-layout--gutter-s"><!--START layout block-->
+        <div class="occlss-layout__col occlss-layout__col--12">
+          <nav role="navigation" aria-labelledby="system-breadcrumb">
+            <h2 class="occlss-u-visuallyhidden">Breadcrumb</h2>
+            <ol class="occlss-breadcrumb__container">
+			   {% for item in params.items %}
+				{% if item.url %}
+					<li class="occlss-breadcrumb__item">
+						<a href="{{ item.url }}" class="occlss-breadcrumb__link">{{ item.itemName }}</a>
+					</li>
+				{% else %}
+					<li class="occlss-breadcrumb__item" aria-current="page">
+						{{ item.itemName }}
+					</li>
+				{% endif %}
+			   {% endfor %}
+            </ol>
+          </nav>
+        </div>
+    </div>
+</div>

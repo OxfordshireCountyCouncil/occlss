@@ -1,0 +1,17 @@
+  {% block body %}
+  <div class="doc-flex-grid doc-flex-grid--row doc-flex-grid--full-height">
+    <div class="doc-wrapper">
+      <div class="doc-flex-grid">
+        {% if bc_parameters.menu == 'true' %}
+          {% include "_main-nav.njk" %}
+        {% endif %}
+        <main id="main-content" class="doc-page__main doc-page__main--scope {% if bc_parameters.layout == 'full' %}doc-page__main--full{% endif %} doc-page__main--secondary doc-flex-grid__col" role="main">
+          {% if bc_parameters.headerTitle == 'true' %}
+            {% include "_doc-page-head.njk" %}
+          {% endif %}
+          {{ contents | safe }}
+        </main>
+      </div>
+    </div>
+  </div>
+  {% endblock %}

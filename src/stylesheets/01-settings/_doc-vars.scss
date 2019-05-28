@@ -1,0 +1,180 @@
+// Doc options
+$doc-prefix: 'doc-';
+$doc-gutter: 1rem;
+/////////////////////////////
+
+/// Breakpoints
+$mobile : screen;
+$tablet : min-width 768px;
+$desktop : min-width 1024px;
+$widedesktop : min-width 1400px;
+
+// --------------------------------------------------
+// reflex variables
+// --------------------------------------------------
+
+// Prefix
+// -------------------------
+// You can optionally namespace reflex classes to avoid clashing with other css frameworks
+// e.g. setting $reflex-prefix as "reflex-" here would cause col-sm-6 to become reflex-col-sm-6
+// Example: $reflex-prefix: reflex-;
+// By default this is an empty string
+$reflex-prefix: 'doc-' !default;
+
+// Legacy support
+// -------------------------
+// Reflex adds a lot of css propertie to support older browsers that don't support flexbox layout.
+// If you prefer to use this as a purely flexbox grid without legacy support then set this to false
+$legacy-support: true !default;
+
+// Responsive visibility helpers
+// -------------------------
+// Reflex has some generic visibility classes to hide elements at different breakpoints.
+// If you want to disable these then set this to false
+$visibility-helpers: true !default;
+
+// Grid
+// -------------------------
+$reflex-columns: 12 !default; // number of columns
+
+// Breakpoints
+// -------------------------
+$reflex-xs: 576px !default;
+$reflex-sm: 768px !default;
+$reflex-md: 992px !default;
+$reflex-lg: 1200px !default;
+$reflex-xlg: 1600px !default;
+
+$reflex-xxs-max:    ($reflex-xs - 1);
+$reflex-xs-max:     ($reflex-sm - 1);
+$reflex-sm-max:     ($reflex-md - 1);
+$reflex-md-max:     ($reflex-lg - 1);
+$reflex-lg-max:     ($reflex-xlg - 1);
+
+// Spacing
+// -------------------------
+$reflex-grid-spacing:       15px !default;
+//////////////////////////////////////////
+
+// Color THEME
+$doc-colours: (
+    'doc-link': #007bff,
+    'doc-link-hover': #0056b3,
+    'aqua-deep': #00483a,
+    'nebula': #d3dfdd,
+    'boston-blue': #3a78bb,
+    'link-water': #d9ecf6,
+    'victoria': #503b76,
+    'snuff': #dad3e8,
+    'forest-green': #24b137,
+    'harp': #e2f1e4,
+    'pale-sky': #656d80,
+    'iron': #e0e2e5,
+    'keppel': #38b1a0,
+    'swans-down': #dbeeea,
+    'selective-yellow': #feb603,
+    'half-colonial-white': #fdf3da,
+    'venice-blue': #0a549d,
+    'catalina-blue': #073d73,
+    'denim': #0e73d8,
+    'selago': #e5effb,
+    'milano-red': #ad0505,
+    'bridesmaid': #fee6e6,
+    'solitude': #ecf5fe,
+    'apple': #39b54a,
+    'zanah': #d8efd7,
+    'tahiti-gold': #f3830b,
+    'bleach-white': #feebd8,
+    'ronchi': #edc856,
+    'pizza': #d0a116,
+    'sahara': #B48C13,
+    'maize': #f5de98,
+    'black': #000000,
+    'emperor': #525252,
+    'cod-gray': #1a1a1a,
+    'mine-shaft': #333333,
+    'alabaster': #fcfcfc,
+    'white': #ffffff
+);
+
+// @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+
+// Typography
+$font-family-primary:     'Roboto', sans-serif !default;
+
+// Font size
+$doc-font-size: (
+    'xxxxx-large': 42px,
+    'xxxx-large':  36px,
+    'xxx-large':   30px,
+    'xx-large':    26px,
+    'x-large':     24px,
+    'large':       22px,
+    'medium':      20px,
+    'regular':     16px,
+    'mall':        14px
+);
+
+// Font weight
+$doc-font-weight: (
+    'thin':      100,
+    'light':     300,
+    'regular':   400,
+    'bold':      700,
+    'black':     900
+);
+
+// Z-index
+$doc-z-index: (
+    'unit-1':  990,
+    'unit-2':  1000,
+    'unit-3':  1030,
+    'unit-4':  1040,
+    'unit-5':  1050,
+    'unit-6':  1060,
+    'unit-7':  1070,
+    'unit-8':  1080,
+    'unit-9':  1090,
+    'unit-10': 1100
+);
+
+// Paths
+$doc-global-image-path:  '../../images' !default;
+
+$doc-enable-rounded:     true !default;
+
+// Body
+$doc-body-text-color:      (map-get($doc-colours, 'black')) !default; 
+$doc-body-bg-color:        (map-get($doc-colours, 'white')) !default;
+
+// Link heighlight
+$doc-highlight-color:      (map-get($doc-colours, 'maize')) !default;
+
+// Page
+$doc-bg:                   (map-get($doc-colours, 'white')) !default;
+
+// Page header
+$doc-page-header-bg:                   (map-get($doc-colours, 'aqua-deep')) !default;
+
+// Page header nav
+$doc-page-header-nav-bg:               (map-get($doc-colours, 'mine-shaft')) !default;
+$doc-page-header-nav-link-color:       (map-get($doc-colours, 'white')) !default;
+$doc-page-header-nav-link-color-hover: (map-get($doc-colours, 'ronchi')) !default;
+
+// Main nav 
+$doc-main-nav-list-item-lnk-color:         (map-get($doc-colours, 'venice-blue')) !default;
+$doc-main-nav-list-item-lnk-hover-color:   (map-get($doc-colours, 'ronchi')) !default;
+$doc-main-nav-theme-name-color:            (map-get($doc-colours, 'mine-shaft')) !default;
+$doc-main-nav-list-item-lnk-line-color:    (map-get($doc-colours, 'mine-shaft')) !default;
+$doc-main-nav-list-item-current-color:     (map-get($doc-colours, 'ronchi')) !default;
+
+// Example
+$doc-example-pane-bg-primary:           (map-get($doc-colours, 'white')) !default;
+$doc-example-pane-bg-secondary:         (map-get($doc-colours, 'link-water')) !default;
+$doc-example-pane-bg-tertiary:          #f8f8f8 !default;
+$doc-example-pane-border-color-primary: #e2e1e1 !default;
+$doc-example-border-color-selected:     (map-get($doc-colours, 'ronchi')) !default;
+
+// Page footer
+$doc-page-footer-text-color:            (map-get($doc-colours, 'white')) !default;
+$doc-page-footer-bg-color:              (map-get($doc-colours, 'black')) !default;

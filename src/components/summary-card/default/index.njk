@@ -1,0 +1,17 @@
+---
+title:  Summary card
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+{% from "summary-card/macro.njk" import occlssSummaryCard %}
+
+{{ occlssSummaryCard({
+  cards: [
+    {
+      title: "Your council tax bil",
+      summaryText: "How to calculate and pay your council tax bil.",
+      url: "javascript:void(0);"
+    }
+  ]
+}) }}

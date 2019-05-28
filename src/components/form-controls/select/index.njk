@@ -1,0 +1,31 @@
+---
+title: Select
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "form-controls/macro.njk" import occlssFormCntrls %}
+
+{{ occlssFormCntrls({
+  type: "select",
+  labelText: "Select",
+  options: [
+    {
+        value: "Option A",
+        name: "Option A"
+    },{
+        value: "Option B",
+        name: "Option B"
+    },{
+        value: "Option C",
+        name: "Option C"
+    },{
+        value: "Option D",
+        name: "Option D"
+    }
+  ]
+}) }}
+
+
+

@@ -1,0 +1,18 @@
+---
+title: Alert warning
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "alert/macro.njk" import occlssAlert %}
+
+{{ occlssAlert({
+  title: "Sorry, we are having some problems",
+  content: "We are experiencing some technical issues with our website. We apollogise for any inconvenience.",
+  state: "warning",
+  controls: "true"
+}) }}
+
+
+

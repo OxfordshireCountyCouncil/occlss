@@ -1,0 +1,11 @@
+
+<div class="occlss-jump-links">
+	{% if params.title %}<h2 class="occlss-jump-links__title">{{ params.title }}</h2>{% endif %}
+	{% if params.links %}
+	<ul class="occlss-jump-links__nav">
+		{% for item in params.links %}
+			<li class="occlss-jump-links__nav-item"><a href="{{ item.url }}" class="occlss-jump-links__lnk">{{ item.title }}</a></li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+</div>

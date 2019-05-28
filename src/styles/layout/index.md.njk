@@ -1,0 +1,111 @@
+---
+title: Layout
+description: [Description]
+section: styles
+layout: layout-pane.njk
+order: 0
+show_page_nav: false
+---
+
+{% from "_doc-el.njk" import UIel %}
+
+## Page wrapper 
+
+
+```html
+<div class="occlss-wrapper">
+
+</div>
+```
+
+## Responsive grid
+
+### Grid container
+
+```html
+<div class="occlss-layout">
+
+</div>
+```
+
+### Grid cel
+
+```html
+<div class="occlss-layout__col occlss-layout__col--6">
+
+</div>
+```
+
+## Responsive grid page layout
+
+<div class="occlss-wrapper occlss-wrapper--secondary">
+    <div class="occlss-layout occlss-layout--gutter-s">
+        <div class="occlss-layout__col occlss-layout__col--md-8 doc-example-col">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et sagittis dui. Maecenas rhoncus justo aliquam urna finibus tincidunt et ut mauris.
+        </div>
+        <div class="occlss-layout__col occlss-layout__col--md-3 occlss-layout__col--offset-1-md doc-example-col">
+            Vivamus nulla leo, dignissim nec tempor vel, consequat ac dolor. Nunc dignissim in ante sed dapibus. Aenean sit amet aliquet dolor, at auctor erat.
+        </div>
+    </div>
+</div>
+
+```html
+<div class="occlss-wrapper occlss-wrapper--secondary">
+    <div class="occlss-layout occlss-layout--gutter-s">
+        <div class="occlss-layout__col occlss-layout__col--md-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et sagittis dui. Maecenas rhoncus justo aliquam urna finibus tincidunt et ut mauris.
+        </div>
+        <div class="occlss-layout__col occlss-layout__col--md-3 occlss-layout__col--offset-1-md">
+            Vivamus nulla leo, dignissim nec tempor vel, consequat ac dolor. Nunc dignissim in ante sed dapibus. Aenean sit amet aliquet dolor, at auctor erat.
+        </div>
+    </div>
+</div>
+```
+
+<div class="occlss-wrapper occlss-wrapper--secondary">
+    <div class="occlss-layout occlss-layout--gutter-s">
+        <div class="occlss-layout__col occlss-layout__col--md-9  occlss-layout__col--order-2 doc-example-col">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et sagittis dui. Maecenas rhoncus justo aliquam urna finibus tincidunt et ut mauris.
+        </div>
+        <div class="occlss-layout__col occlss-layout__col--md-3 occlss-layout__col--order-1 doc-example-col">
+            Vivamus nulla leo, dignissim nec tempor vel, consequat ac dolor. Nunc dignissim in ante sed dapibus. Aenean sit amet aliquet dolor, at auctor erat.
+        </div>
+    </div>
+</div>
+
+```html
+<div class="occlss-wrapper occlss-wrapper--secondary">
+    <div class="occlss-layout occlss-layout--gutter-s">
+        <div class="occlss-layout__col occlss-layout__col--md-9  occlss-layout__col--order-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et sagittis dui. Maecenas rhoncus justo aliquam urna finibus tincidunt et ut mauris.
+        </div>
+        <div class="occlss-layout__col occlss-layout__col--md-3 occlss-layout__col--order-1">
+            Vivamus nulla leo, dignissim nec tempor vel, consequat ac dolor. Nunc dignissim in ante sed dapibus. Aenean sit amet aliquet dolor, at auctor erat.
+        </div>
+    </div>
+</div>
+```
+
+<div class="occlss-wrapper occlss-wrapper--secondary">
+    <div class="occlss-layout occlss-layout--gutter-s">
+        <div class="occlss-layout__col occlss-layout__col--md-6 doc-example-col">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et sagittis dui. Maecenas rhoncus justo aliquam urna finibus tincidunt et ut mauris.
+        </div>
+        <div class="occlss-layout__col occlss-layout__col--md-5 occlss-layout__col--offset-1-md doc-example-col">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et sagittis dui. Maecenas rhoncus justo aliquam urna finibus tincidunt et ut mauris.        
+        </div>
+    </div>
+</div>
+
+```html
+<div class="occlss-wrapper occlss-wrapper--secondary">
+    <div class="occlss-layout occlss-layout--gutter-s">
+        <div class="occlss-layout__col occlss-layout__col--md-6 doc-example-col">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et sagittis dui. Maecenas rhoncus justo aliquam urna finibus tincidunt et ut mauris.
+        </div>
+        <div class="occlss-layout__col occlss-layout__col--md-5 occlss-layout__col--offset-1-md doc-example-col">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et sagittis dui. Maecenas rhoncus justo aliquam urna finibus tincidunt et ut mauris.        
+        </div>
+    </div>
+</div>
+```

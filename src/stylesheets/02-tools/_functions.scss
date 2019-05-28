@@ -1,0 +1,65 @@
+// Get colours from $doc-colours
+@function doc-color($key) {
+
+	@if type-of($key)=='color' {
+		@error 'Never user colors like `#{ $key }` as map keys';
+	}
+
+	@if map-has-key($doc-colours, $key) {
+		@return map-get($doc-colours, $key);
+	}
+
+	@error 'Unknown `#{ $key }` in $doc-colours.';
+	@return null;
+
+}
+
+
+// Get font size from $doc-font-size
+@function doc-font-size($key) {
+
+	@if type-of($key)=='font-size' {
+		@error 'Never user font size like `#{ $key }` as map keys';
+	}
+
+	@if map-has-key($doc-font-size, $key) {
+		@return rem(map-get($doc-font-size, $key));
+	}
+
+	@error 'Unknown `#{ $key }` in $doc-font-size.';
+	@return null;
+
+}
+
+
+// Get font weight from $doc-font-weight
+@function doc-font-weight($key) {
+
+	@if type-of($key)=='font-weight' {
+		@error 'Never user font weight like `#{ $key }` as map keys';
+	}
+
+	@if map-has-key($doc-font-weight, $key) {
+		@return rem(map-get($doc-font-weight, $key));
+	}
+
+	@error 'Unknown `#{ $key }` in $doc-font-weight.';
+	@return null;
+
+}
+
+// Get z index from $doc-z-index
+@function doc-z-index($key) {
+
+	@if type-of($key)=='doc-z-index' {
+		@error 'Never user z index like `#{ $key }` as map keys';
+	}
+
+	@if map-has-key($doc-z-index, $key) {
+		@return rem(map-get($doc-z-index, $key));
+	}
+
+	@error 'Unknown `#{ $key }` in $doc-z-index.';
+	@return null;
+
+}

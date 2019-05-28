@@ -1,0 +1,36 @@
+---
+title: Short summary
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "short-summary/macro.njk" import occlssShortSummary %}
+
+{{ occlssShortSummary({
+  sectionTitle: "In this section",
+  modClass: "occlss-short-summary--business",
+  panes: [
+    {
+      title: "Oxfordshire County Council",
+      content: "How Oxfordshire County Council works to provide services to the public.",
+      url: "javascript:void(0);"
+    },{
+      title: "District councils",
+      content: "This page describes the work of the five district councils in Oxfordshire.",
+      url: "javascript:void(0);"
+    },{
+      title: "MPs and MEPs",
+      content: "Find your Members of Parliament (MPs) and Members of European Parliament (MEPs).",
+      url: "javascript:void(0);"
+    },{
+      title: "Parish and town councils",
+      content: "What are parish and town councils and how do they work?",
+      url: "javascript:void(0);"
+    },{
+      title: "Mayors and chairs",
+      content: "Details about the chairmen of Oxfordshire's district councils and town mayors.",
+      url: "javascript:void(0);"
+    }
+  ]
+}) }}

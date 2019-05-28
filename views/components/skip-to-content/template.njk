@@ -1,0 +1,9 @@
+<nav class="occlss-skip-to-content">
+    <ul class="occlss-skip-to-content__skip-menu">
+        {% for item in params.items %}
+            <li class="occlss-skip-to-content__item">
+                <a href="{{ item.url }}" class="occlss-skip-to-content__skip-menu-link">{{ item.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

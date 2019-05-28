@@ -1,6 +1,0 @@
-// Links
-// @include link-colors(color, hover, active, visited, focus);
-
-a {
-  @include link-colors($occlss-link-color-primary, $occlss-link-color-primary-hover);
-}

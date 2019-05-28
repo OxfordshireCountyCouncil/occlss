@@ -1,21 +1,3 @@
-body {
-
-	color: $doc-body-text-color;
-
-	font-family: $font-family-primary;
-
-	// Better font rendering for Webkit and Firefox
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
-	*,
-	*::before,
-	*::after {
-		box-sizing: border-box;
-	}
-
-}
-
 .body-bg-white {
 	background: #ffffff;
 }

@@ -22,7 +22,16 @@
 </div>
 </div>
 {% endfor %}
+{% endif %}
 
+{% if params.item == 'changelog' %}
+## Changelog
+{% for log in params.logs %}
+#### {{ log.heading }} 
+{% for comment in log.comments %}
+ - {{ comment.text }}
+{% endfor %}
+{% endfor %}
 {% endif %}
 
 {% endmacro %}

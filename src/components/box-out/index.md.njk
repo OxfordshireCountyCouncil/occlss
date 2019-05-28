@@ -8,8 +8,8 @@ order: 0
 show_page_nav: false
 ---
 
+{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
-
 
 ## Box out
 
@@ -25,3 +25,17 @@ This is similar to the info box but should be used where more information is bei
 ### How it works
 
 [Text]
+
+{{ UIel({
+    item: "changelog",
+    logs: [
+        {
+        heading: "1.0.0",
+        comments: [
+            {
+                text: "Component Added"
+            }
+        ]
+        }
+    ] 
+}) }}

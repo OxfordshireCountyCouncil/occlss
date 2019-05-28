@@ -8,10 +8,8 @@ order: 0
 show_page_nav: true
 ---
 
+{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
-
-
-
 
 ## Primary button
 
@@ -120,3 +118,18 @@ Search button – used in head search form
 {{ example({group: "components", item: "buttons", example: "search-disabled", html: true }) }}
 
 [Text]
+
+
+{{ UIel({
+    item: "changelog",
+    logs: [
+        {
+        heading: "1.0.0",
+        comments: [
+            {
+                text: "Component Added"
+            }
+        ]
+        }
+    ] 
+}) }}

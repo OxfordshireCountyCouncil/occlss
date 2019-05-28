@@ -8,6 +8,7 @@ order: 0
 show_page_nav: false
 ---
 
+{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
 
 
@@ -22,3 +23,18 @@ show_page_nav: false
 ### How it works
 
 [Text]
+
+
+{{ UIel({
+    item: "changelog",
+    logs: [
+        {
+        heading: "1.0.0",
+        comments: [
+            {
+                text: "Component Added"
+            }
+        ]
+        }
+    ] 
+}) }}

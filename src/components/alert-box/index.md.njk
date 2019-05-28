@@ -8,6 +8,7 @@ order: 0
 show_page_nav: false
 ---
 
+{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
 
 
@@ -25,3 +26,18 @@ This is a callout that allows us to draw the user’s attention to something of 
 ### How it works
 
 [Text]
+
+
+{{ UIel({
+    item: "changelog",
+    logs: [
+        {
+        heading: "1.0.0",
+        comments: [
+            {
+                text: "Component Added"
+            }
+        ]
+        }
+    ] 
+}) }}

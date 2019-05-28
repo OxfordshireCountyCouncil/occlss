@@ -8,6 +8,7 @@ order: 0
 show_page_nav: true
 ---
 
+{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
 
 ## Default
@@ -89,6 +90,19 @@ show_page_nav: true
 
 {{ example({group: "components", item: "promoted-content-panels", example: "image-left", html: true }) }}
 
+{{ UIel({
+    item: "changelog",
+    logs: [
+        {
+        heading: "1.0.0",
+        comments: [
+            {
+                text: "Component Added"
+            }
+        ]
+        }
+    ] 
+}) }}
 
 
     

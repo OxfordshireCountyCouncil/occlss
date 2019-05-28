@@ -8,6 +8,7 @@ order: 0
 show_page_nav: true
 ---
 
+{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
 
 ## Error
@@ -54,3 +55,17 @@ show_page_nav: true
 ### When to use this component 
 
 [Text]
+
+{{ UIel({
+    item: "changelog",
+    logs: [
+        {
+        heading: "1.0.0",
+        comments: [
+            {
+                text: "Component Added"
+            }
+        ]
+        }
+    ] 
+}) }}

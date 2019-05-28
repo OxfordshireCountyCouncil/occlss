@@ -8,6 +8,8 @@ order: 0
 show_page_nav: false
 ---
 
+{% from "_doc-el.njk" import UIel %}
+{% from "table/macro.njk" import occlssTable %}
 {% from "_example.njk" import example %}
 
 
@@ -22,3 +24,66 @@ show_page_nav: false
 ### How it works
 
 [Text]
+
+## Component classes
+
+{{ occlssTable({
+  'head' : [
+    {
+      text: 'Container class'
+    },
+    {
+      text: 'Mod class'
+    },
+    {
+      text: 'Description'
+    }
+  ],
+  'rows' : [
+    [
+      {
+        text: '.occlss-accordion'
+      },
+      {
+        text: '.occlss-accordion--residents'
+      },
+      {
+        text: '[Description]'
+      }
+    ],[
+      {
+        text: '.occlss-accordion'
+      },
+      {
+        text: '.occlss-accordion--business'
+      },
+      {
+        text: '[Description]'
+      }
+    ],[
+      {
+        text: '.occlss-accordion'
+      },
+      {
+        text: '.occlss-accordion--council'
+      },
+      {
+        text: '[Description]'
+      }
+    ]
+  ]
+}) }}
+
+{{ UIel({
+    item: "changelog",
+    logs: [
+        {
+        heading: "1.0.0",
+        comments: [
+            {
+                text: "Component Added"
+            }
+        ]
+        }
+    ] 
+}) }}

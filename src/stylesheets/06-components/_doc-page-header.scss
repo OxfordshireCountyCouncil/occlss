@@ -1,6 +1,6 @@
 .#{$doc-prefix}page-header {
     background: $doc-page-header-bg;
-    max-height: rem(70px);
+    max-height: rem(60px);
 }
 
 .#{$doc-prefix}page-header__logo-cont {
@@ -9,8 +9,45 @@
 
 .#{$doc-prefix}page-header__logo-link {
     display: inline-block;
+    padding-top: rem(6px);
+}
+
+.mobile-menu-layout .#{$doc-prefix}page-header__logo-link {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        padding-left: rem(40px);
+    }
+}
+
+.#{$doc-prefix}page-header__sidebar-close {
+    display: block;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: rem(16px);
+    width: rem(32px);
+    height: rem(32px);
+    display: none;
+}
+
+.mobile-menu-layout .#{$doc-prefix}page-header__sidebar-close {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        display: block;
+    }
+}
+
+.#{$doc-prefix}page-header__sidebar-close__icon {
+    padding: 0;
+    margin: 0;
+    display: block;
+    path {
+        fill: #ffffff;
+    }
 }
 
 .#{$doc-prefix}page-header__logo {
 
 }
+
+

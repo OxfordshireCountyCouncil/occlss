@@ -1,5 +1,7 @@
-// code example tabs
+
 $(document).ready( function(){
+
+    // code example tabs
     $('.js-doc-example-pane-tabs__item a').click( function(event) {
         var tab_id = $(this).attr('href');
         if($(this).parents('.js-doc-example-pane-tabs__item').hasClass('doc-example-pane-tabs__item--open')) {
@@ -13,4 +15,19 @@ $(document).ready( function(){
         }
         event.preventDefault();
     });
+
+    // expand left nav menu
+    $('.js-doc-page-sidebar-close').click( function(event) {
+        if($('.js-mobile-menu-layout').hasClass('mobile-menu-layout--expanded')) {
+            $('.js-mobile-menu-layout').removeClass('mobile-menu-layout--expanded');
+        } else {
+            $('.js-mobile-menu-layout').addClass('mobile-menu-layout--expanded');
+        }
+
+        event.preventDefault();
+    });
+
 });
+
+
+

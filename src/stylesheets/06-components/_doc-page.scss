@@ -9,7 +9,7 @@
     justify-content: end;
 }
 
-.doc-page__main--scope {
+.#{$doc-prefix}page__main--scope {
     code {
         padding: rem(2px 4px);
         color: #333;
@@ -40,6 +40,22 @@
         display: none;
     }
 }
+
+
+.mobile-menu-layout--expanded .#{$doc-prefix}page__main--secondary {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        width: 60%;
+    }
+}
+
+.mobile-menu-layout--expanded .#{$doc-prefix}page__sidebar--primary {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        width: 40%;
+        display: block;
+    }
+}
+
+
 
 .#{$doc-prefix}page__main--full {
     width: 100%;

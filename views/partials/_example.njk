@@ -23,7 +23,7 @@
 
   <div class="doc-example-pane__html-example">
     <span class="doc-example-pane__new-window"><a href="{{ exampleURL }}" class="doc-example-pane__new-window-lnk" target="_blank">Open this example in a new window</a></span>
-    <iframe title="{{ exampleTitle }}" class="doc-example-pane__iframe" src="{{ exampleURL }}" width="100%" scrolling="no" frameBorder="0" id="doc-example-iframe"></iframe>
+    <iframe title="{{ exampleTitle }}" class="doc-example-pane__iframe" src="{{ exampleURL }}" frameBorder="0" id="doc-example-iframe"></iframe>
   </div>
 
   {% if tabs %}
@@ -46,13 +46,5 @@
   </div>
 
 </div>
-
-<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/js/vendor/iframeResizer.min.js"></script>
-<script>
-  iFrameResize({
-        heightCalculationMethod : 'lowestElement',
-  },'#doc-example-iframe')
-</script-->
 
 {% endmacro %}

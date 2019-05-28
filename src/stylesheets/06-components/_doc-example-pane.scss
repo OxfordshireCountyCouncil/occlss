@@ -4,8 +4,9 @@
 
 .#{$doc-prefix}example-pane__html-example {
     position: relative;
-    padding: rem(50px 26px 26px);
+    padding-top: rem(30px);
     border: 1px solid $doc-example-pane-border-color-primary;
+    overflow: hidden;
 }
 
 .#{$doc-prefix}example-pane__new-window {

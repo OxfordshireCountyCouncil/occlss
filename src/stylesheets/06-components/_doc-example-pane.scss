@@ -5,7 +5,7 @@
 .#{$doc-prefix}example-pane__html-example {
     position: relative;
     padding-top: rem(30px);
-    border: 1px solid $doc-example-pane-border-color-primary;
+    border: rem(1px solid $doc-example-pane-border-color-primary);
     overflow: hidden;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .#{$doc-prefix}example-pane-tabs {
-    border: 1px solid $doc-example-pane-border-color-primary;
+    border: rem(1px solid $doc-example-pane-border-color-primary);
     border-top: none;
     margin-bottom: 0;
     padding: 0;
@@ -63,17 +63,17 @@
 
 .#{$doc-prefix}example-pane-tabs__item-link {
     display: block;
-    margin-top: -1px;
-    padding: 15px;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
+    margin-top: rem(-1px);
+    padding: rem(15px);
+    border-top: rem(2px solid transparent);
+    border-bottom: rem(2px solid transparent);
     color: #005ea5;
     background: inherit;
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 3px solid transparent;
+    border-bottom: rem(3px solid transparent);
     &:hover {
-        border-bottom: 3px solid $doc-example-border-color-selected;
+        border-bottom: rem(3px solid $doc-example-border-color-selected);
     }
 }
 
@@ -84,7 +84,7 @@ pre {
     overflow: auto;
     border: 1px solid $doc-example-pane-border-color-primary;
     background-color: $doc-example-pane-bg-tertiary;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }
 
 .doc-example-pane__iframe {

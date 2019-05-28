@@ -4,11 +4,11 @@
 }
 
 .#{$doc-prefix}page-header__logo-cont {
-    padding: 0;
+    padding: rem(0 16px);
 }
 
 .#{$doc-prefix}page-header__logo-link {
-
+    display: inline-block;
 }
 
 .#{$doc-prefix}page-header__logo {

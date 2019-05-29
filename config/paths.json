@@ -10,6 +10,7 @@
     "breakpoint": "node_modules/breakpoint-sass/stylesheets/breakpoint",
     "reflexgrid": "node_modules/reflex-grid/scss/reflex",
   "source": "src/",
+    "pages": "src/pages/",
     "styles": "src/styles/",
     "components": "src/components/",
     "patterns": "src/paterns/",

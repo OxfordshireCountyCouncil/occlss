@@ -22,9 +22,9 @@ var $ = {
 // First clean all sprite elements
 gulp.task('clean:svgicons', function (done) {
   return del([
-    './deploy/icons/**/*',
+    './views/components/icon/template.njk',
     './source/svg-source/delivery/**/*',
-    './source/images/occlss-sprite.svg',
+    './src/assets/images/occlss-sprite.svg',
     './source/css/scss/bem/_occlss-icon-gen.scss'
   ]);
   done();
@@ -55,7 +55,7 @@ gulp.task('svg-sprite-create', function(done) {
               template: "./source/svg-source/tpl/custom.scss"
             },*/
             njk: {
-              dest: "./source/svg-source/delivery/icons",
+              dest: "./views/components/icon/template",
               template: "./source/svg-source/tpl/custom.html"
             }
           }

@@ -1,8 +1,8 @@
 {{#shapes}}
 {% if params.name == "{{name}}" %}
-<span class="occlss-icon occlss-icon--{{name}}--icon-class--" aria-hidden="true">
-	<svg aria-hidden="true" class="occlss-icon__container">
-		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss-sprite.svg#{{name}}" class="icon__source icon__source--svg"></use>
+<span class="occlss-icon occlss-icon--{{name}} --icon-class--" aria-hidden="true">
+	<svg aria-hidden="true" class="occlss-icon__container --icon-container-class-- ">
+		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss-sprite.svg#{{name}}" class="icon__source icon__source--svg --icon-source-class--"></use>
 	</svg>
 </span>
 {% endif %}

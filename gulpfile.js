@@ -71,6 +71,8 @@ gulp.task('svg-sprite-create', function(done) {
       }
     }))
     .pipe(replace('--icon-class--', '{{ params.class }}'))
+    .pipe(replace('--icon-container-class--', '{{ params.containerClass }}'))
+    .pipe(replace('--icon-source-class--', '{{ params.sourceClass }}'))
     .pipe(gulp.dest("./"));
     done();
 });

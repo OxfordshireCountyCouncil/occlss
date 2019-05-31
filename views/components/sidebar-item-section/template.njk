@@ -1,8 +1,24 @@
-<aside class="occlss-sidebar-item-section " role="complementary">
-    <h2 class="occlss-sidebar-item-section__title">
-        {{ params.heading }}
-    </h2>
-    <nav class="occlss-sidebar-item-section__navbar" role="navigation">
-
+<div class="occlss-sidebar-item-section {{ params.containerClasses }}" role="complementary">
+    <nav class="occlss-sidebar-item-section__navbar" aria-label="Related content">
+        <ul class="occlss-summary-list occlss-summary-list--sidebar-nav">
+        {% for item in params.items %}
+            {% if item.url %}
+            <li class="occlss-summary-list__item">
+                <a href="{{ item.url }}" class="occlss-summary-list__link">{{ item.text }}</a>
+            </li>
+            {% else %}
+            <li class="occlss-summary-list__item">
+                {% if item.type == "main" %}
+                    <h2 class="occlss-sidebar-item-section__title">{{ item.text }}</h4>
+                {% elseif item.type == "sub" %}
+                    <div class="occlss-splitter occlss-u-tspace-xs occlss-u-bspace-sm"></div>
+                    <h4 class="occlss-u-bspace-xs">{{ item.text }}</h4>
+                {% else %}
+                    {{ item.text }}
+                {% endif %}
+            </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
     </nav>
-</aside>
+</div>

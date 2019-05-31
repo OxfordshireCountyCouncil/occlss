@@ -9,6 +9,7 @@ show_page_nav: false
 ---
 
 {% from "_doc-el.njk" import UIel %}
+{% from "table/macro.njk" import occlssTable %}
 {% from "_example.njk" import example %}
 
 ## Sidebar item section
@@ -22,6 +23,14 @@ show_page_nav: false
 ### How it works
 
 [Text]
+
+## Modifier classes
+
+Container `.occlss-sidebar-item-section` modifier `.occlss-sidebar-item-section--council` the modifier will add colour to the vertical line. This modifier used only if the sidebar item section appearing in the council area.
+
+`.occlss-sidebar-item-section--business` the modifier used only if the sidebar item section appearing in the council area. 
+
+`.occlss-sidebar-item-section--residents` the modifier used only if the sidebar item section appearing in the residents area.
 
 {{ UIel({
     item: "changelog",

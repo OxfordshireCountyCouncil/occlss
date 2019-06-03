@@ -9,7 +9,6 @@
 
 					<ul class="occlss-summary-list occlss-summary-list--tasks-pane">
 						{% for item in  pane.items %}
-							
 						<li class="occlss-summary-list__item">
 							{% if item.url %}
 							<a href="{{ item.url }}" class="occlss-summary-list__link ">{{ item.title }}</a>
@@ -18,13 +17,10 @@
 							{% endif %}
 						</li>
 						{% endfor %}
-
 					</ul>
-
 				</div>
 			</div>
 			{% endfor %}
-
 		</div>
 	</div>
 </div>

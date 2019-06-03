@@ -35,17 +35,18 @@
     {%- set classes %} occlss-promoted-content-panel__text-line--{{ item.textSize }} {% if params.panelType == "alerts" and loop.index <= 1 %}occlss-promoted-content-panel__text-line--alert-heading{% elseif params.panelType == "alerts" and loop.index > 1 %}occlss-promoted-content-panel__text-line--alert-text{% endif %}{% endset %}
 
     <div class="occlss-promoted-content-panel__text-line {{ classes }}">
-        {{ item.text }}
-
         {%- if item.showArrow == "true" %}
+        {{ item.text | lastfirststr('first') }}
         <span class="occlss-icon occlss-icon--arrow-right-long-right-secondary occlss-promoted-content-panel__arrow">
+        {{ item.text | lastfirststr('last') }}
             <svg aria-hidden="true" class="occlss-icon__container occlss-promoted-content-panel__link-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#arrow-right-long-right-secondary"
                     class="icon__source icon__source--svg"></use>
             </svg>
         </span>
+        {%- else %}
+        {{ item.text }}
         {%- endif %}
-
     </div>
 
   {% endfor %}

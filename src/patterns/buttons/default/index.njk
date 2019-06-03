@@ -1,0 +1,27 @@
+---
+title: Buttons
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "button/macro.njk" import occlssButton %}
+
+<form class="occlss-form">
+    <nav class="occlss-form__controls occlss-u-bspace-large" role="navigation">
+        <ul class="occlss-form__listitems">
+            <li class="occlss-form__controls-list-item occlss-form__controls-list-item--spaced">
+                {{ occlssButton({
+                text: "Back",
+                classes: "occlss-button--neutral"
+                }) }}
+            </li>
+            <li class="occlss-form__controls-list-item">
+                {{ occlssButton({
+                text: "Continue",
+                classes: "occlss-button--primary"
+                }) }}
+            </li>
+        </ul>
+    </nav>
+</form>

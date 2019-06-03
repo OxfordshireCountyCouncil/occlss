@@ -3,11 +3,11 @@
 	<ul class="occlss-layout occlss-layout--align-self-end occlss-category-nav__list">
 		{% for item in params.items %}
 			{% if item.active == "true" %}
-				<li class="occlss-layout__col occlss-layout__col--auto occlss-category-nav__item occlss-category-nav__item--residents is-active is-disabled">
+				<li class="occlss-layout__col occlss-layout__col--auto occlss-category-nav__item occlss-category-nav__item--{{ item.title | lower | safe }} is-active is-disabled">
 					<a href="{{ item.url }}" class="occlss-category-nav__link" tabindex="-1" aria-disabled="true">{{ item.title }}</a>
 				</li>
 			{% else %}
-				<li class="occlss-layout__col occlss-layout__col--auto occlss-category-nav__item occlss-category-nav__item--council">
+				<li class="occlss-layout__col occlss-layout__col--auto occlss-category-nav__item occlss-category-nav__item--{{ item.title | lower | safe }}">
 					<a href="{{ item.url }}" class="occlss-category-nav__link">{{ item.title }}</a>
 				</li>
 			{% endif %}

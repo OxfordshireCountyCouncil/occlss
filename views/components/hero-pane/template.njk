@@ -1,11 +1,12 @@
 {% from "top-tasks-pane/macro.njk" import occlssTopTasksPane %}
 
-<div class="occlss-hero-pane"
+<div class="occlss-hero-pane {{ params.heroClasses | safe }}"
 	style="background-image: url( {{ params.imageURL }} );">
 	{% if params.heading %}<h1 class="occlss-hero-pane__heading {{ params.headingModeClass }}">{{ params.heading }}</h1>{% endif %}
 	{% if params.panels %}
 		{{ occlssTopTasksPane({ 
-			panels: params.panels
+			panels: params.panels,
+			category: params.category
 		}) }}
 	{% endif %}
 </div>

@@ -1,0 +1,631 @@
+---
+title: Home page
+layout: layout-example.njk
+---
+
+{% from "category-navbar/macro.njk" import occlssCategoryNavbar %}
+{% from "hero-pane/macro.njk" import occlssHeroPane %}
+{% from "popular-content-pane/macro.njk" import occlssPopularContentPane %}
+{% from "promoted-content-panel/macro.njk" import occlssPromotedContentPanel %}
+{% from "cards/macro.njk" import occlssCard %}
+{% from "atoz/macro.njk" import occlssAtoZ %}
+{% from "page-footer/macro.njk" import occlssPageFooter %}
+{% from "page-head/macro.njk" import occlssPageHead %}
+
+{{ occlssPageHead({
+  type: "default",
+  section: "residents"
+}) }}
+
+<main id="occlss-main-content">
+
+  <div>
+    <div class="occlss-wrapper">
+
+		{{ occlssHeroPane({
+			category: "residents",
+			heading: "What do you need to do today?",
+			headingModeClass: "occlss-hero-pane__heading--residents",
+			imageURL: "http://www.oxfordshire.gov.uk/sites/default/files/2018-04/pond_flowers1200x132.jpg",
+			panels: [
+			{
+			title: "Apply",
+			items: [
+				{
+				title: "Jobs",
+				url: "javascript:void(0);"
+				},{
+				title: "Blue Badge",
+				url: "javascript:void(0);"
+				},{
+				title: "Bus pass",
+				url: "javascript:void(0);"
+				},{
+				title: "Resident parking permit",
+				url: "javascript:void(0);"
+				}
+			]
+			},{
+			title: "Pay",
+			items: [
+				{
+				title: "Parking tickets",
+				url: "javascript:void(0);"
+				},{
+				title: "Certificates",
+				url: "javascript:void(0);"
+				},{
+				title: "Ceremonies",
+				url: "javascript:void(0);"
+				},{
+				title: "Council Tax",
+				url: "javascript:void(0);"
+				}
+			]
+			},{
+			title: "Report",
+			items: [
+				{
+				title: "Pothole",
+				url: "javascript:void(0);"
+				},{
+				title: "Faulty street light",
+				url: "javascript:void(0);"
+				},{
+				title: "Safeguarding concern",
+				url: "javascript:void(0);"
+				},{
+				title: "Street problem",
+				url: "javascript:void(0);"
+				}
+			]
+			}
+		]
+		}) }}
+
+	</div>
+  </div>
+
+<div role="tablist" aria-live="polite">
+    <div class="occlss-wrapper"><!--START wrapper block-->
+      <div class="occlss-layout occlss-layout--popular-content-grid occlss-layout--gutter-s occlss-u-bpspace-none">
+	  <!--START layout block-->
+
+			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
+				{{ occlssPopularContentPane({
+				panels: [
+					{
+					heading: "Jobs",
+					items: [
+						{
+						title: "Current vacancies",
+						url: "javascript:void(0);"
+						},{
+						title: "Teaching and school vacancies",
+						url: "javascript:void(0);"
+						},{
+						title: "Childcare vacancies",
+						url: "javascript:void(0);"
+						},{
+						title: "Adult social care vacancies",
+						url: "javascript:void(0);"
+						},{
+						title: "More jobs",
+						url: "javascript:void(0);"
+						}
+					]
+					}
+				]
+				}) }}
+			</div>
+			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
+				{{ occlssPopularContentPane({
+				panels: [
+					{
+					heading: "Schools",
+					items: [
+						{
+						title: "Term dates and holidays",
+						url: "javascript:void(0);"
+						},{
+						title: "School appeals",
+						url: "javascript:void(0);"
+						},{
+						title: "Transfer or move school",
+						url: "javascript:void(0);"
+						},{
+						title: "School closures",
+						url: "javascript:void(0);"
+						},{
+						title: "More schools",
+						url: "javascript:void(0);"
+						}
+					]
+					}
+				]
+				}) }}
+			</div>
+			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
+				{{ occlssPopularContentPane({
+				panels: [
+					{
+					heading: "Libraries",
+					items: [
+						{
+						title: "Find a library",
+						url: "javascript:void(0);"
+						},{
+						title: "eBooks and audio",
+						url: "javascript:void(0);"
+						},{
+						title: "Renew or reserve",
+						url: "javascript:void(0);"
+						},{
+						title: "Search for a book",
+						url: "javascript:void(0);"
+						},{
+						title: "More libraries",
+						url: "javascript:void(0);"
+						}
+					]
+					}
+				]
+				}) }}
+			</div>
+			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
+				{{ occlssPopularContentPane({
+				panels: [
+					{
+					heading: "Roads, travel and parking",
+					items: [
+						{
+						title: "Park and ride",
+						url: "javascript:void(0);"
+						},{
+						title: "Major current roadworks",
+						url: "javascript:void(0);"
+						},{
+						title: "Parking permits",
+						url: "javascript:void(0);"
+						},{
+						title: "On-street parking",
+						url: "javascript:void(0);"
+						},{
+						title: "More roads, travel and parking",
+						url: "javascript:void(0);"
+						}
+					]
+					}
+				]
+				}) }}
+			</div>
+			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
+				{{ occlssPopularContentPane({
+				panels: [
+					{
+					heading: "Births, deaths and ceremonies",
+					items: [
+						{
+						title: "List of inquests",
+						url: "javascript:void(0);"
+						},{
+						title: "Registration offices",
+						url: "javascript:void(0);"
+						},{
+						title: "Weddings and other ceremonies",
+						url: "javascript:void(0);"
+						},{
+						title: "Book an appointment",
+						url: "javascript:void(0);"
+						},{
+						title: "More registration services",
+						url: "javascript:void(0);"
+						}
+					]
+					}
+				]
+				}) }}
+			</div>
+			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
+				{{ occlssPopularContentPane({
+				panels: [
+					{
+					heading: "Waste and recycling",
+					items: [
+						{
+						title: "Find a recycling centre",
+						url: "javascript:void(0);"
+						},{
+						title: "Recycling A-Z",
+						url: "javascript:void(0);"
+						},{
+						title: "Van and trailer e-permits",
+						url: "javascript:void(0);"
+						},{
+						title: "Charges for non-household waste",
+						url: "javascript:void(0);"
+						},{
+						title: "More waste and recycling",
+						url: "javascript:void(0);"
+						}
+					]
+					}
+				]
+				}) }}
+			</div>
+            <div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
+				{{ occlssPopularContentPane({
+				panels: [
+					{
+					heading: "Families and children",
+					items: [
+						{
+						title: "Information for parents",
+						url: "javascript:void(0);"
+						},{
+						title: "Early years education",
+						url: "javascript:void(0);"
+						},{
+						title: "Fire drills in schools",
+						url: "javascript:void(0);"
+						},{
+						title: "Fostering",
+						url: "javascript:void(0);"
+						},{
+						title: "Special educational needs and disability",
+						url: "javascript:void(0);"
+						}
+					]
+					}
+				]
+				}) }}
+			</div>
+            <div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
+				{{ occlssPopularContentPane({
+				panels: [
+					{
+					heading: "Social and health care",
+					items: [
+						{
+						title: "Adult social care",
+						url: "javascript:void(0);"
+						},{
+						title: "Children's services",
+						url: "javascript:void(0);"
+						},{
+						title: "Getting a needs assessment",
+						url: "javascript:void(0);"
+						},{
+						title: "Report safeguarding concern",
+						url: "javascript:void(0);"
+						},{
+						title: "More social and health care",
+						url: "javascript:void(0);"
+						}
+					]
+					}
+				]
+				}) }}
+			</div>
+            <div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
+				{{ occlssPopularContentPane({
+				panels: [
+					{
+					heading: "Museums and history",
+					items: [
+						{
+						title: "The Oxfordshire Museum",
+						url: "javascript:void(0);"
+						},{
+						title: "Museum Resource Centre",
+						url: "javascript:void(0);"
+						},{
+						title: "Oxfordshire History Centre",
+						url: "javascript:void(0);"
+						},{
+						title: "Family history",
+						url: "javascript:void(0);"
+						},{
+						title: "Find a museum in Oxfordshire",
+						url: "javascript:void(0);"
+						}
+					]
+					}
+				]
+				}) }}
+			</div>
+			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-8 occlss-layout__col--md-6 occlss-layout__col--order-2-lg">
+				{{ occlssPromotedContentPanel({
+				panelColour: "aqua-dee",
+				panelURL: "javascript:void(0);",
+				textRows: [
+						{
+						text: "School term dates",
+						textSize: "header-large",
+						showArrow: "false"
+						},{
+							text: "This term ends:",
+							textSize: "text-medium",
+							showArrow: "false"
+						},{
+							text: "Thursday 29 March",
+							textSize: "header-mega",
+							showArrow: "false"
+						},{
+							text: "The next term starts Monday 16 April",
+							textSize: "text-medium",
+							showArrow: "false"
+						},{
+							text: "View all school term and holiday",
+							textSize: "text-medium",
+							showArrow: "true"
+						}
+					]
+				}) }}
+			</div>
+			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-6 occlss-layout__col--order-1-lg">
+				{{ occlssPromotedContentPanel({
+				panelColour: "selective-yellow",
+				panelURL: "javascript:void(0);",
+				textRows: [
+					{
+						text: "Other ways we can help",
+						textSize: "header-mega",
+						showArrow: "true"
+					}
+				]
+				}) }}
+			</div>
+			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--md-6 occlss-layout__col--order-3-lg">
+				{{ occlssPromotedContentPanel({
+				panelColour: "forest-green",
+				panelURL: "javascript:void(0);",
+				textRows: [
+					{
+						text: "What's on",
+						textSize: "header-small",
+						showArrow: "false"
+					},{
+						text: "Find council events around the",
+						textSize: "text-medium",
+						showArrow: "true"
+					}
+				]
+				}) }}
+			</div>
+			
+			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--md-6 occlss-layout__col--order-4-lg">
+				{{ occlssPromotedContentPanel({
+				panelColour: "aqua-dee",
+				panelURL: "javascript:void(0);",
+				textRows: [
+					{
+						text: "Consultations",
+						textSize: "header-small",
+						showArrow: "false"
+					},{
+						text: "Have your say about the policies that affect",
+						textSize: "text-medium",
+						showArrow: "true"
+					}
+				]
+				}) }}
+			</div>
+		
+			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-12 occlss-layout__col--md-6 occlss-layout__col--order-5-lg">
+				{{ occlssPromotedContentPanel({
+				panelColour: "aqua-dee",
+				panelURL: "javascript:void(0);",
+				textRows: [
+					{
+						text: "All the news from your county",
+						textSize: "header-small",
+						showArrow: "true"
+					}
+				]
+				}) }}
+			</div>
+        </div>
+		<!--End layout elemnt -->
+    </div>
+</div>
+
+
+	{{ occlssCard({
+	cardRows: [
+		{
+			cardTitle: "Oxfordshire’s Fire and Rescue Service goes electric to reduce emissions ",
+			cardURL: "javascript:void(0);",
+			cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_img-20190510-092916-386999.jpg",
+			cardParagraph: [
+				{
+				text: "The drive to reduce carbon emissions and clean up the air has stepped up a gear as Oxfordshire County Council takes delivery of a new fleet of electric cars and vans."
+				}
+			]
+		},{
+			cardTitle: "Oxfordshire communities and local businesses gearing up for OVO Energy Women’s Tour cycle race",
+			cardURL: "javascript:void(0);",
+			cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_photo-henleybusinessbanner2-414318.jpg",
+			cardParagraph: [
+				{
+				text: "Oxfordshire communities and local businesses are making plans to welcome the prestigious OVO Energy Women’s Tour cycle race, which will pass through the county on Wednesday 12 June."
+				}
+			]
+		},{
+			cardTitle: "‘Adorable’ Archie set to influence baby name choice for Oxfordshire parents ",
+			cardURL: "javascript:void(0);",
+			cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_babyfeet-926346.jpg",
+			cardParagraph: [
+				{
+				text: "Staff at Oxfordshire County Council’s Registration Service are expecting a surge in boys named Archie following the birth of the Duke and Duchess of Sussex’s first child."
+				}
+			]
+		}
+	]
+	}) }}
+
+</main>
+
+<div class="occlss-section occlss-section--find-my-nearest">
+  {#{> organisms-find-my-nearest }#}
+</div>
+
+{{ occlssAtoZ({
+  items: [
+    {
+      title: "A",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/A"
+    },{
+      title: "B",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/B"
+    },{
+      title: "C",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/C"
+    },{
+      title: "B",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/B"
+    },{
+      title: "D",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/D"
+    },{
+      title: "E",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/E"
+    },{
+      title: "F",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/F"
+    },{
+      title: "G",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/G"
+    },{
+      title: "H",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/H"
+    },{
+      title: "I",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/I"
+    },{
+      title: "J",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/J"
+    },{
+      title: "K",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/K"
+    },{
+      title: "L",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/L"
+    },{
+      title: "M",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/M"
+    },{
+      title: "N",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/N"
+    },{
+      title: "O"
+    },{
+      title: "P",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/P"
+    },{
+      title: "Q",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/Q"
+    },{
+      title: "R",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/R"
+    },{
+      title: "S",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/S"
+    },{
+      title: "T",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/T"
+    },{
+      title: "U"
+    },{
+      title: "V",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/V"
+    },{
+      title: "W",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/W"
+    },{
+      title: "X",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/X"
+    },{
+      title: "Y",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/Y"
+    },{
+      title: "Z",
+      url: "https://www.oxfordshire.gov.uk/cms/atoz/Z"
+    }
+  ]
+}) }}
+
+{{ occlssPageFooter({
+  fRowHeading: "Oxfordshire County Council",
+  fRowHTML: "<p>County Hall, New Road, Oxford, OX1 1ND</p>\n <p><a href=\"https://www.oxfordshire.gov.uk/residents/contact-council/contact-us\" class=\"occlss-u-more-link\">Contact us<span class=\"occlss-icon occlss-icon--arrow-right-long-right-secondary\" aria-hidden=\"true\"><svg aria-hidden=\"true\" class=\"occlss-icon__container occlss-u-more-link__icon\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/assets/images/occlss/occlss-sprite.svg#arrow-right-long-right-secondary\" class=\"icon__source icon__source--svg\"></use></svg></span></a></p>\n",
+  fRowSocialicons: [
+    {
+      icon: "facebook"
+    },{
+      icon: "twitter"
+    },{
+      icon: "rss"
+    },{
+      icon: "linkedin"
+    },{
+      icon: "instagram"
+    }
+  ],
+  fRowSecondHTML: "<h5>Sign up for the YourOxfordshire newsletter</h5>\n <p>Get the latest news direct to your inbox every month.</p>\n <div class=\"occlss-layout occlss-u-tspace-sm\"><div class=\"occlss-layout__col occlss-layout__col--xs-12 occlss-layout__col--md-8 occlss-layout__col--bleed occlss-form__sign-up-form-controls\"><a href=\"http://oxfordshire.us1.list-manage1.com/subscribe?u=feb3ea90bfa82dcb90c21a3e7&id=206c6fb447\" class=\"occlss-button occlss-button--primary occlss-button--fullwidth occlss-form__sign-up-form-submit\" target=\"_blank\">Sign up to the newsletter</a></div></div>",
+  sRowHeading: "Services",
+  sRowListItems: [
+    {
+      title: "Business",
+      url: "https://www.oxfordshire.gov.uk/business"
+    },{
+      title: "Children, education and families",
+      url: "https://www.oxfordshire.gov.uk/residents/children-education-and-families"
+    },{
+      title: "Community and living",
+      url: "https://www.oxfordshire.gov.uk/residents/community-and-living"
+    },{
+      title: "Environment and planning",
+      url: "https://www.oxfordshire.gov.uk/residents/environment-and-planning"
+    },{
+      title: "Fire and public safety",
+      url: "https://www.oxfordshire.gov.uk/residents/fire-and-public-safety"
+    },{
+      title: "Leisure and culture",
+      url: "https://www.oxfordshire.gov.uk/residents/leisure-and-culture"
+    },{
+      title: "Roads and transport",
+      url: "https://www.oxfordshire.gov.uk/residents/roads-and-transport"
+    },{
+      title: "Social and health care",
+      url: "https://www.oxfordshire.gov.uk/residents/social-and-health-care"
+    }
+  ],
+  tRowHeading: "Information",
+  tRowListItems: [
+    {
+      title: "Access to information",
+      url: "https://www.oxfordshire.gov.uk/council/about-your-council/access-data-and-information"
+    },{
+      title: "Accessibility options",
+      url: "https://www.oxfordshire.gov.uk/council/about-website/help-using-site"
+    },{
+      title: "Terms and conditions",
+      url: "https://www.oxfordshire.gov.uk/council/about-website/terms-and-conditions"
+    },{
+      title: "How we use cookies",
+      url: "https://www.oxfordshire.gov.uk/residents/environment-and-planning"
+    },{
+      title: "Privacy",
+      url: "https://www.oxfordshire.gov.uk/council/about-website/terms-and-conditions#privacy"
+    },{
+      title: "Sitemap",
+      url: "https://www.oxfordshire.gov.uk/cms/sitemap"
+    },{
+      title: "GOV.UK",
+      url: "http://www.gov.uk/"
+    },{
+      title: "Brexit information on GOV.UK",
+      url: "https://www.gov.uk/government/brexit"
+    }
+  ]
+}) }}

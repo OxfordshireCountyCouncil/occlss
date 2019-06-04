@@ -2,7 +2,7 @@
 {%- set tabID %}tab-{{ panel.heading | lower | replace(" ","-") }}{% endset %}
 {%- set paneID %}pane-{{ panel.heading | lower | replace(" ","-") }}{% endset %}
 
-<div class="js-occlss-popular-content-pane occlss-popular-content-pane occlss-popular-content-pane--residents"
+<div class="js-occlss-popular-content-pane occlss-popular-content-pane occlss-popular-content-pane--{{ params.category | lower | safe }}"
 	id="{{ tabID }}" tabindex="0" aria-controls="{{ paneID }}" role="tab">
 	{% if panel.heading %}<h2 class="occlss-popular-content-pane__heading">{{ panel.heading }}</h2>{% endif %}
 	<div class="occlss-popular-content-pane__content" id="{{ paneID }}" aria-labelledby="{{ tabID }}" role="tabpanel">

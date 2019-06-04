@@ -1,0 +1,55 @@
+.occlss-breadcrumb {
+  display: block;
+  line-height: $occlss-breadcrumb-line-height;
+  margin-bottom: rem(90px);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    margin-bottom: rem(60px);
+  }
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    margin-bottom: 0;
+  }
+}
+
+.occlss-breadcrumb__wrapper {
+  padding: 0;
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    padding: 0;
+  }
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    padding: 0;
+  }
+}
+
+.occlss-breadcrumb__container {
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 0;
+  @extend %reset_list_style;
+}
+
+.occlss-breadcrumb__item {
+  float: left;
+  font-size: em($occlss-breadcrumb-font-size-primary);
+  margin-bottom: 0;
+
+  &:first-of-type {
+    font-weight: $occlss-breadcrumb-first-link-weight;
+  }
+
+  &:not(:last-child):after{
+    content: ">";
+    color: $occlss-breadcrumb-text-colour;
+    margin: rem(0 5px);
+  }
+}
+
+.occlss-breadcrumb__link {
+  text-decoration: none;
+  &:focus {
+    @extend %highlight-bg-on-focus;
+}
+}
+
+.occlss-breadcrumb--no-space {
+    margin-bottom: 0;
+}

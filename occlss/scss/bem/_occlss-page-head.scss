@@ -1,0 +1,57 @@
+.occlss-page-head {
+  &__wraper {
+  
+    &--border {
+      border-bottom: 4px solid transparent;
+    }
+    
+    &--residents {
+      border-bottom-color: $occlss-page-head-color-residents;
+    }
+    &--business {
+      border-bottom-color: $occlss-page-head-color-business;
+    }
+    
+    &--council {
+      border-bottom-color: $occlss-page-head-color-council;
+    }
+
+    &--residents,
+    &--business,
+    &--council {
+      .occlss-page-head__cat-nav-container {
+          padding: rem(70px 0 21px 0);
+          @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+            padding: rem(20px 0);  
+          }
+          @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            padding: rem(5px 0 11px 0);  
+          }
+      }
+
+    }
+
+  }
+}
+
+.occlss-page-head__nav {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.occlss-page-head__cat-nav-container {
+  padding: rem(70px 0 42px 0);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    padding: rem(20px 0 42px 0);    
+  }
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    padding: rem(5px 0 20px 0);  
+  }
+}
+
+.occlss-page-head__search-container {
+  padding: rem(24px 0);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    padding: rem(20px 0 0 0);
+  }
+}

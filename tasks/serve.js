@@ -10,7 +10,8 @@ const browsersyncCnf = {
   server: paths.public, // server directory
   files: [
     paths.source + '**/*',
-    paths.views + '**/*'
+    paths.views + '**/*',
+    paths.occlss + '**/*',
   ] // files to watch
 };
 

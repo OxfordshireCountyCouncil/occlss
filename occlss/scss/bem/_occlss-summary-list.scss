@@ -1,0 +1,104 @@
+.occlss-summary-list {
+    @extend %reset_list_style;
+}
+
+.occlss-summary-list--indented {
+    padding-left: rem(24px);
+}
+
+.occlss-summary-list__item {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+
+.occlss-summary-list__item--underlined {
+    border-bottom: rem(1px solid $occlss-summary-list-border-color-item);
+}
+
+.occlss-summary-list__item--td  {
+    padding: rem($occlss-summary-list-item-padding);
+    .occlss-summary-list__link {
+        padding: 0;
+    }
+}
+
+.occlss-summary-list__link {
+    padding: rem(15px 15px);
+}
+
+.occlss-summary-list--tasks-pane,
+.occlss-summary-list--popular-content-pane {
+    .occlss-summary-list__link {
+        text-decoration: none;
+        display: block;
+        &:focus {
+            @extend %highlight-bg-on-focus;
+        }
+    }
+}
+
+.occlss-summary-list--tasks-pane {
+    
+    .occlss-summary-list__item {
+        border-bottom: none;
+    }
+
+    .occlss-summary-list__link {
+        padding: rem(10px);
+        color: $occlss-summary-list-font-color-tab-widget;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.occlss-summary-list--popular-content-pane {
+    .occlss-summary-list__item {
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    .occlss-summary-list__link {
+        color: $occlss-summary-list-font-color-tab-widget;
+        @include transition(background-color .1s ease-in-out);
+        &:hover {
+            color: #000000;
+            background-color: $occlss-summary-list-hover-color;
+        }
+        &:focus:hover,
+        &:hover:active,
+        &:active,
+        &:focus {
+            @extend %highlight-bg-on-focus;
+        }
+    }
+}
+
+.occlss-summary-list--sidebar-nav {
+    .occlss-summary-list__link  {
+        display: inline-block;
+        padding: rem(8px 0);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:focus {
+            @extend %highlight-bg-on-focus;
+        }
+    }
+}
+
+.occlss-summary-list--large {
+    .occlss-summary-list__item {
+        display: block;
+        margin-bottom: rem(10px);
+    }
+    .occlss-summary-list__link {
+        display: inline-block;
+        padding: 0;
+        text-decoration: none;
+        @extend .occlss-g-medium-text;
+    }
+}

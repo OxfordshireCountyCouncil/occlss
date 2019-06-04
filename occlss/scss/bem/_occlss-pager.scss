@@ -1,0 +1,121 @@
+.occlss-pager {
+  text-align: center;
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+      padding-top: 2.4em;
+      padding-bottom: 0;
+  }
+}
+
+.occlss-pager__items {
+    @extend %clearfix;
+    clear: inherit;
+    display: inline-block;
+    padding: 0;
+}
+
+.occlss-pager__item {
+
+  border: 1px solid #dbdbdb;
+  background-color: #f9f9f9;
+
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    border-radius: $occlss-pager-border-radius;
+    margin: 0.3em;
+  }
+}
+
+.occlss-pager__item--last {
+   margin-left: 0.4em;
+   border-radius: $occlss-pager-border-radius;
+}
+
+.occlss-pager__item--first {
+    margin-right: 0.4em;
+    border-radius: $occlss-pager-border-radius;
+}
+
+.occlss-pager__link,
+.occlss-pager__item--current,
+.occlss-pager__item--ellipsis {
+  display: block;
+  padding: 0.5em 0.8em;
+  text-decoration: none;
+}
+
+.occlss-pager__link {
+    font-weight: normal;
+    color: #000;
+    &:focus {
+      @extend %highlight-bg-on-focus;
+    }
+}
+
+.occlss-pager__item.is-active:first-child {
+    border-radius: $occlss-pager-border-radius 0 0 $occlss-pager-border-radius;
+}
+
+.is-active .occlss-pager__link,
+.occlss-pager__item a:hover {
+  border-color: #bbbbbb;
+  background-color: #efefef;
+  color: #9b9b9b;
+}
+
+.occlss-pager__item--current {
+  border-color: #bbbbbb;
+  background-color: #efefef;
+}
+
+.occlss-pager__item--ellipsis {
+  border: 1px solid #dbdbdb;
+  border-radius: 0;
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    display: none;
+  }
+}
+
+.occlss-pager__item--previous span[aria-hidden],
+.occlss-pager__item--next span[aria-hidden] {
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    text-align: center;
+    font-size: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 10px 3px;
+  }
+}
+
+.occlss-pager__item--previous {
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    border-radius: $occlss-pager-border-radius 0 0 $occlss-pager-border-radius;
+    text-align: initial;
+    span[aria-hidden] {
+      &:before {
+      	content: "";
+        border-style: solid;
+        border-width: 7px 7px 7px 0;
+        border-color: transparent #000000 transparent transparent;
+      }
+    }
+  }
+}
+
+.occlss-pager__item--next {
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    border-radius: 0 $occlss-pager-border-radius $occlss-pager-border-radius 0;
+    text-align: initial;
+    span[aria-hidden] {
+      &:after {
+      	content: "";
+        border-style: solid;
+        border-width: 7px 0 7px 7px;
+        border-color: transparent transparent transparent #000000;
+      }
+    }
+  }
+}

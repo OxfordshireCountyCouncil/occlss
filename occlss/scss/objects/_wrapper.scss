@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    #WRAPPERS
+\*------------------------------------*/
+
+.occlss-wrapper {
+  max-width: $occlss-wrapper-width-primary;
+  margin: 0 auto;
+  padding: 0;
+  background: $occlss-wrapper-background--secondary;
+  @extend %clearfix;
+}
+
+
+.occlss-wrapper--spacing {
+  padding-left:$occlss-wrapper-gutter-unit;
+  padding-right: $occlss-wrapper-gutter-unit;
+}
+
+.occlss-wrapper--wide {
+  max-width: $occlss-wrapper-width-wide;
+}
+
+
+.occlss-wrapper--secondary {
+  background: $occlss-wrapper-background--secondary;
+}

@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: $occlss-heading-font-family;
+  margin: rem($occlss-heading-margin);
+}
+
+
+h1 {
+    font-size: rem($occlss-heading-font-size-h1);
+    color: $occlss-heading-color-h1;
+    font-weight: $occlss-heading-font-weight-h1;
+}
+
+h2 {
+    font-size: rem($occlss-heading-font-size-h2);
+    font-weight: $occlss-heading-font-weight-h2;
+}
+
+h3 {
+    font-size: rem($occlss-heading-font-size-h3);
+    font-weight: $occlss-heading-font-weight-h3;
+}
+
+h4 {
+    font-size: rem($occlss-heading-font-size-h4);
+    font-weight: $occlss-heading-font-weight-h4;
+    color: $occlss-heading-color-h4;
+
+}
+
+h5 {
+    font-size: rem($occlss-heading-font-size-h5);
+}
+
+h6 {
+    font-size: rem($occlss-heading-font-size-h6);
+}
+
+

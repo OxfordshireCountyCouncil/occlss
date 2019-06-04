@@ -1,0 +1,341 @@
+// Form controls group
+.occlss-form-cntrls {
+  margin: rem(0 0 30px 0);
+}
+
+.occlss-form-cntrls--listitem {
+  margin-bottom: 0;
+}
+
+.occlss-form-cntrls--short-search {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.occlss-form-cntrls__short-search-icon {
+  position: absolute;
+  top: rem(8px);
+  left: rem(9px);
+  pointer-events:none;
+  .occlss-icon__container {
+      fill: $occlss-form-cntrls-short-search-icon-color;
+  }
+}
+
+.occlss-form-cntrls--sign-up-group {
+  padding: rem(0 10px 0 0);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+      padding-right: 0;
+      margin-bottom: rem(16px);
+  }
+}
+
+.occlss-form-cntrls__checkbox,
+.occlss-form-cntrls__radiobutton,
+.occlss-form-cntrls__textarea,
+.occlss-form-cntrls__input,
+.occlss-form-cntrls__select {
+    appearance: none;
+    border: $occlss-form-cntrls-border-width-base-input solid $occlss-form-cntrls-border-color-base-input;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: $occlss-form-cntrls-font-color-base-input; // standardize on firefox
+    display: inline-block;
+    font-size: $occlss-form-cntrls-font-size-base;
+    height: $occlss-form-cntrls-input-height-truncated;
+    line-height: $occlss-form-cntrls-line-height-base-input;
+    padding: $occlss-form-cntrls-padding-base-vertical 0.7rem;
+    width: 100%;
+}
+
+.occlss-form-cntrls__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.occlss-form-cntrls__select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    background-image: url('#{$occlss-global-image-path}/arrow-down-bold.svg');
+    background-position: right rem(13px) center;
+    background-repeat: no-repeat;
+    background-size: rem(21px);
+    padding-right: rem(43px);
+}
+
+.occlss-form-cntrls__select::-ms-expand {
+  display: none;
+}
+
+.occlss-form-cntrls__textarea {
+  height: rem(300px);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.occlss-form-cntrls__input:focus, 
+.occlss-form-cntrls__input--focus, 
+.occlss-form-cntrls__textarea:focus, 
+.occlss-form-cntrls__textarea--focus, 
+.occlss-form-cntrls__select:focus, 
+.occlss-form-cntrls__select--focus {
+  border-color: $occlss-form-cntrls-border-color-base-input-focus;
+}
+
+// Short search
+.occlss-form-cntrls__input--short-search {
+    padding: rem(11px 20px 11px 48px);
+    border-radius: rem($occlss-form-cntrls-short-search-border-radius-input);
+    height: auto;
+    &:focus {
+        box-shadow: rem(inset 0px 0px 0px 1px $occlss-form-cntrls-short-search-border-color-input-focus);
+        outline: none;
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+      margin-bottom: rem(16px);
+   }
+}
+
+// Sign up form
+.occlss-form-cntrls__label--sign-up-title {
+    color: $occlss-form-cntrls-sign-up-font-color-group-title;
+    font-size: $occlss-form-cntrls-sign-up-font-size-group-title;
+    font-weight: $occlss-form-cntrls-sign-up-font-weight-group-title;
+    font-family: $occlss-form-cntrls-sign-up-font-family-group-title;
+}
+
+.occlss-form-cntrls__input--sign-up {
+    width: 100%;
+    font-size: rem($occlss-form-cntrls-sign-up-font-size-input);
+    padding: rem(12px 20px 11px 20px);
+    border: rem($occlss-form-cntrls-sign-up-border-input);
+    color: $occlss-form-cntrls-sign-up-font-color-input;
+    height: 2.95rem;
+}
+
+// Form controls group width
+.occlss-form-cntrls--day,
+.occlss-form-cntrls--month,
+.occlss-form-cntrls--year {
+  clear: none;
+  float: left;
+  margin-right: rem(10px);
+  margin-bottom: rem(10px);
+  width: rem(53px);
+}
+
+.occlss-form-cntrls--year {
+  width: rem(70px);
+}
+
+// sizes
+$input-width:(
+  450: 450,
+  310: 310,
+  210: 210
+);
+
+@each $key,$val in $input-width {
+  .occlss-form-cntrls--size-#{$key} {
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+      max-width: ($val / 16) * 1rem;
+    }
+  }
+}
+
+// Form controls group inline
+.occlss-form-cntrls--inline {
+  
+    display: flex;
+    display: -ms-flexbox;
+    flex-flow: row wrap;
+
+    .occlss-form-cntrls__select,
+    .occlss-form-cntrls__input,
+    .occlss-form-cntrls__label {
+        margin: 0;
+    }
+    
+    .occlss-form-cntrls__label {
+        display: flex;
+        display: -ms-flexbox;
+        flex: 0 0 auto;
+        padding-right: rem(12px);
+        align-items: center;
+    }
+
+    .occlss-form-cntrls__select,
+    .occlss-form-cntrls__input {
+        width: auto;
+        flex: 1 1 auto;
+    }
+}
+
+// Sort by
+.occlss-form-cntrls--sort-by {
+  margin-bottom: 0;
+  .occlss-form-cntrls__select {
+      background-image: url('#{$occlss-global-image-path}/arrow-both.svg');
+      background-position: right rem(5px) center;
+      background-repeat: no-repeat;
+      background-size: rem(21px);
+      padding: rem(5px 30px 5px 5px);
+      max-width: rem(260px);
+      height: rem(36px);
+      font-size: rem(14px);
+      border-radius: rem(5px);
+      &:focus {
+        box-shadow: rem(inset 0px 0px 0px 1px $occlss-form-cntrls-short-search-border-color-input-focus);
+        outline: none;
+    }
+  }
+}
+
+// Password
+.occlss-form-cntrls--password {
+    position: relative;
+}
+
+.occlss-form-cntrls--password .occlss-form-cntrls__input {
+    padding-right: rem(50px);
+}
+
+.occlss-form-cntrls--error {
+
+    .occlss-form-cntrls__input,
+    .occlss-form-cntrls__textarea,
+    .occlss-form-cntrls__select {
+        width: calc(100% - 40px);
+        border: rem(1px) solid $occlss-form-color-base-error;
+        background-color: $occlss-form-background-color-base-error;
+    }
+    
+    .occlss-form-cntrls__label {
+        margin-top: 0;
+    }
+}
+
+.occlss-form-cntrls__label--error {
+  display: inline-block;
+}
+
+// Form lable
+.occlss-form-cntrls__label {
+    @extend .occlss-form__group-title;
+    margin-top: 0;
+    display: block;
+}
+
+.occlss-form-cntrls__label--small {
+    font-size: rem($occlss-form-cntrls-label-font-size-small);
+}
+
+.occlss-form-cntrls__label--def-text{
+  font-size: rem($occlss-form-cntrls-label-font-size-deftxt);
+  margin: 0;
+  font-weight: $occlss-form-cntrls-label-font-weight-deftxt;
+  font-family: $occlss-form-cntrls-label-font-family-deftxt;
+}
+
+// Custom checkboxes
+.occlss-form-cntrls__checkbox,
+.occlss-form-cntrls__radiobutton {
+// The actual input element is only visible to screen readers, because
+// all visual styling is done via the label.
+
+  @extend %sr-only;
+
+  .lt-ie9 & {
+    border: 0;
+    float: left;
+    margin: 0.4em 0.4em 0 0;
+    position: static;
+    width: auto;
+  }
+
+}
+
+.occlss-form-cntrls__checkbox + .occlss-form-cntrls__label,
+.occlss-form-cntrls__radiobutton + .occlss-form-cntrls__label {
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: rem(25px);
+}
+
+.occlss-form-cntrls__checkbox + .occlss-form-cntrls__label::before,
+.occlss-form-cntrls__radiobutton + .occlss-form-cntrls__label::before {
+  background: #ffffff;
+  box-shadow: 0 0 0 1px $occlss-form-cntrls-border-color-checkboxes;
+  content: '\a0';
+  display: inline-block;
+  height: rem($occlss-form-cntrls-spacing-checkboxes);
+  line-height: rem($occlss-form-cntrls-spacing-checkboxes);
+  margin-right: 0.6em;
+  text-indent: 0.15em;
+  vertical-align: middle\0; // Target IE 11 and below to vertically center inputs
+  width: rem($occlss-form-cntrls-spacing-checkboxes);
+}
+
+.occlss-form-cntrls__radiobutton + .occlss-form-cntrls__label::before {
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px $occlss-form-cntrls-border-color-checkboxes;
+  width: rem($occlss-form-cntrls-spacing-checkboxes);
+  height: rem($occlss-form-cntrls-spacing-checkboxes); // Size overrides to account for shape + checked styling
+  line-height: rem($occlss-form-cntrls-spacing-checkboxes);
+  margin-right: 0.75em;
+}
+
+.occlss-form-cntrls__radiobutton:checked + .occlss-form-cntrls__label::before {
+  background-image: url('#{$occlss-global-image-path}/icon-circle.svg');
+  background-position: 50%;
+  background-size: rem(17px 17px);
+  background-repeat: no-repeat;
+}
+
+.occlss-form-cntrls__checkbox:checked + .occlss-form-cntrls__label::before,
+.occlss-form-cntrls__checkbox:checked:disabled + .occlss-form-cntrls__label::before {
+  background-image: url('#{$occlss-global-image-path}/icon-check.svg');
+  background-position: 50%;
+  background-size: rem(21px 15px);
+  background-repeat: no-repeat;
+}
+
+.occlss-form-cntrls__radiobutton:focus + .occlss-form-cntrls__label::before {
+  box-shadow: rem(0 0 0 2px #ffffff, 0 0 0 4px $occlss-form-cntrls-border-color-checkboxes-focus);
+  outline-offset: rem(5px);
+}
+
+.occlss-form-cntrls__checkbox:disabled + .occlss-form-cntrls__label {
+  color: #d6d7d9;
+}
+
+.occlss-form-cntrls__checkbox:focus + .occlss-form-cntrls__label::before {
+  box-shadow: rem(0 0 0 0px #ffffff, 0 0 0 2px $occlss-form-cntrls-border-color-checkboxes-focus);
+  outline-offset: rem(3px);
+}
+
+.occlss-form-cntrls__checkbox:disabled + .occlss-form-cntrls__label::before,
+.occlss-form-cntrls__radiobutton:disabled + .occlss-form-cntrls__label::before {
+  background: #f1f1f1;
+  box-shadow: rem(0 0 0 1px $occlss-form-cntrls-border-color-checkboxes-disabled);
+  cursor: not-allowed;
+}
+
+.occlss-form-cntrls__radiobutton:disabled + .occlss-form-cntrls__label::before {
+  width: rem(33px);
+  height: rem(33px);
+}
+
+// Password container
+.occlss-form-cntrls__show-hide {
+  position: absolute;
+  right: rem(10px);
+  top: 51%;
+  cursor: pointer;
+}
+
+

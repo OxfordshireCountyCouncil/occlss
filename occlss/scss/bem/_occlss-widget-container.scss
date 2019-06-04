@@ -1,0 +1,41 @@
+.occlss-widget-container {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+    position: relative;
+
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    
+    padding-left: rem(24px);
+    
+    /*&::before {
+        content: "";
+        position: absolute;
+        background: $occlss-wdget-container-border-color;
+        width: rem(1px);
+        height: 101%;
+        top: 0;
+        left: 0;
+    }*/
+
+    &::after {
+        content: "";
+        background: $occlss-wdget-container-border-color;
+        width: 100%;
+        height: rem(1px);
+        display: block;
+        margin-bottom: rem(20px);
+    }
+
+    &:first-of-type {
+        margin-top: rem(70px);
+    }
+
+    &:last-of-type {
+        &::after {
+            display: none;
+        }
+    }
+
+    }
+  }

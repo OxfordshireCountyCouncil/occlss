@@ -1,0 +1,81 @@
+.occlss-button {
+  display: block;
+  margin-bottom: rem(12px);
+  font-family: $occlss-button-font-family-default;
+  font-weight: $occlss-button-font-weight-default;
+  line-height: $occlss-button-line-height-default;
+  text-align: center;
+
+  white-space: normal;
+  text-decoration: none;
+
+  width: auto;
+
+
+  vertical-align: middle;
+  background: none;
+  user-select: none;
+  border: rem($occlss-button-border-size-default solid transparent);
+
+  @include button-size($occlss-button-padding-y-default, $occlss-button-padding-x-default, $occlss-button-font-size-default, $occlss-button-radius-default);
+  
+  @include transition($occlss-button-transition-default);
+
+  // Share hover and focus styles
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.is-disabled,
+  &:disabled {
+    cursor: $occlss-button-cursor-disabled-default;
+    outline: 0;
+    @include box-shadow(none);
+  }
+  
+  &:active {
+    outline: none;
+  }
+
+}
+
+.occlss-button--link  {
+  font-weight: $occlss-button-link-font-weight;
+  color: $occlss-button-link-font-color;
+  border-radius: 0;
+  text-decoration: underline;
+
+
+  &,
+  &:active,
+  &.active,
+  &:disabled {
+    background-color: transparent;
+    @include box-shadow(none);
+  }
+  &,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  @include hover {
+    border-color: transparent;
+  }
+  @include hover-focus {
+    color: $occlss-button-link-font-color-hover;
+    text-decoration: $occlss-button-link-font-decoration-hover;
+    background-color: transparent;
+  }
+  &:disabled {
+    color: $occlss-button-link-font-color-disabled;
+    @include hover-focus {
+      text-decoration: none;
+    }
+  }
+}
+
+// Button sizes
+.occlss-button--fullwidth {
+  width: 100%;
+}

@@ -1,0 +1,132 @@
+.occlss-site-nav {
+  @if variable-exists(occlss-site-nav-background-color) {
+    background-color: $occlss-site-nav-background-color;
+    background-image: url('#{$occlss-global-image-path}/occ-badge-nav-bg.png');
+    background-repeat: no-repeat;
+    background-position: 125% 31%;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+      background-image: none;
+    }
+  }
+  padding: rem($occlss-site-nav-padding);
+  @extend %clearfix;
+
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    padding: rem(0 6px);
+  }
+
+  border-bottom: rem($occlss-site-nav-background-color-secondary 4px solid);
+  
+}
+
+.occlss-site-nav__logo-link {
+  display: block;
+  float: left;
+  &:focus {
+    @extend %highlight-outline-on-focus;
+  }
+}
+
+//
+
+.occlss-site-nav__toggler {
+    display: none;
+}
+
+.occlss-site-nav__toggler {
+  color: #ffffff;
+  border-radius: rem(5px);
+  padding: rem(8px);
+  margin-top: rem(10px);
+  margin-right: rem(10px);
+
+  float: right;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.is-active {
+    color: $occlss-site-nav-toggle-link-color-hover;
+    border-color: $occlss-site-nav-toggle-link-color-hover;
+  }
+
+}
+
+//
+
+.occlss-site-nav__list {
+  @extend %reset_list_style;
+  float: right;
+}
+
+.occlss-site-nav__item {
+  float: left;
+  margin: 0;
+}
+
+
+.occlss-site-nav__sub-menu {
+  display: none;
+  @extend %reset_list_style;
+}
+//
+
+
+.occlss-site-nav__link {
+  line-height: 2.8;
+  color: #fff;
+  display: block;
+  padding: rem(12px);
+  text-decoration: none;
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    padding: rem(12px 5px);
+  }
+  &:focus {
+    @extend %highlight-outline-on-focus;
+  }
+}
+
+// Mobile style
+
+.occlss-site-nav--mobile {
+
+  .occlss-site-nav__toggler {  
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+      display: inline-block;
+      margin-top: rem(16px);
+    }
+  }
+
+
+  .occlss-site-nav__list {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+      display: none;
+      float: none;
+    }
+  }
+  
+  
+  .occlss-site-nav__item {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .occlss-site-nav__link {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+       width: 100%;
+       padding: rem(12px);
+       text-align: center;
+       border-top: 1px solid #ffffff;
+    }
+  }
+
+}
+
+
+//
+.is-active.occlss-site-nav__list {
+  display: block;
+}

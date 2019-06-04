@@ -1,0 +1,86 @@
+.occlss-alert {
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.occlss-alert__sign-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.occlss-alert__sign {
+    width: rem(50px);
+    height: rem(50px);
+}
+
+.occlss-alert__cont {
+   flex-direction: column;
+   justify-content: center;
+   overflow: hidden;
+
+}
+
+.occlss-layout__controls {
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: normal;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.occlss-alert__ex-icon {
+    .occlss-icon__container {
+        width: rem(15px);
+        height: rem(15px);
+    }
+}
+
+.occlss-alert__heading {
+    padding: 0;
+    margin: 0;
+    color: $occlss-alert-font-color-heading;
+    font-size: rem($occlss-alert-font-size-heading);
+    font-weight: $occlss-alert-font-weight-heading;
+    margin-bottom: 0;
+}
+
+.occlss-alert__text {
+    margin: rem(10px 0 0 0);
+    color: $occlss-alert-font-color-text;
+    font-size: rem($occlss-alert-font-size-text);
+    font-weight: $occlss-alert-font-weight-text;
+    line-height: 1.2;
+}
+
+.occlss-alert--warning {
+    border-color: $occlss-alert-border-color-warning;
+    background-color: $occlss-alert-background-color-warning;
+    .occlss-icon__container {
+        fill: $occlss-alert-border-color-warning;
+    }
+}
+
+.occlss-alert--error {
+    border-color: $occlss-alert-border-color-error;
+    background-color: $occlss-alert-background-color-error;
+    .occlss-icon__container {
+        fill: $occlss-alert-border-color-error;
+    }
+}
+
+.occlss-alert--success {
+    border-color: $occlss-alert-border-color-success;
+    background-color: $occlss-alert-background-color-success;
+    .occlss-icon__container {
+        fill:  $occlss-alert-border-color-success;
+    }
+}
+
+.occlss-alert--info {
+    border-color: $occlss-alert-border-color-info;
+    background-color: $occlss-alert-background-color-info;
+    .occlss-icon__container {
+        fill:  $occlss-alert-border-color-info;
+    }
+}

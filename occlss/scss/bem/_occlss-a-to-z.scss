@@ -1,0 +1,75 @@
+.occlss-a-to-z {
+    &__wraper {
+        background-color: $occlss-a-to-z-background;
+        text-align: center;
+        border-bottom: 1px solid #ffffff;
+        padding: rem(19px 12px);
+
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            text-align: left;
+        }
+    }
+}
+
+.occlss-a-to-z__listitems {
+    @extend %reset_list_style;
+}
+
+.occlss-a-to-z__item {
+    display: inline-block;
+    border-right: rem(2px solid #fff);
+    width: rem(35px);
+    height: rem(28px);
+    margin: 0;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        border-right: 0;
+    }
+    &:last-child {
+        border: none;
+    }
+}
+
+.occlss-a-to-z__letter {
+    font-size: rem($occlss-a-to-z-letter-font-size);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: $occlss-a-to-z-letter-font-weight;
+    text-decoration: none;
+    line-height: 1.2;
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
+}
+
+.occlss-a-to-z__letter--off {
+    color: $occlss-a-to-z-letter-color-off;
+}
+
+.occlss-a-to-z--inverse {
+    .occlss-a-to-z__wraper {
+        background-color: #fff;
+        text-align: left;
+    }
+    .occlss-a-to-z__item {
+        border-right-color: $occlss-a-to-z-background;
+    }
+    .occlss-a-to-z__letter {
+        @extend a;
+        color: $occlss-a-to-z-background;
+        &:focus {
+            @extend %highlight-bg-on-focus;
+        }
+    }
+    .occlss-a-to-z__letter--off {
+        color: $occlss-a-to-z-letter-color-off;
+        &:hover {
+            color: $occlss-a-to-z-letter-color-off;
+        }
+    }
+    .occlss-a-to-z__letter--selected {
+        color: $occlss-a-to-z-letter-selected-color;
+    }
+}

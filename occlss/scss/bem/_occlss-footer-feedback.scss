@@ -1,0 +1,40 @@
+.occlss-footer-feedback__wrapper {
+    border-top: 4px solid $footer-feedback-bg-color;
+}
+
+.occlss-footer-feedback__controls {
+    margin: rem(0 30px);
+    padding: rem(14px 30px 10px 30px);
+    background: $footer-feedback-bg-color;
+    text-align: right;
+    display: block; 
+}
+
+.occlss-footer-feedback__controls.is-active {
+    display: none; 
+}
+
+.occlss-footer-feedback__controls--submitted {
+    text-align: left;
+}
+
+.occlss-footer-feedback__submitted-message {
+    font-weight: $footer-feedback-submitted-text-weight;
+}
+
+.occlss-footer-feedback__link {
+    color: $footer-feedback-links-color;
+}
+
+.occlss-footer-feedback__close-cont {
+    float: right;
+}
+
+.occlss-footer-feedback__form-cont {
+    display: none;
+    overflow: hidden;
+}
+
+.occlss-footer-feedback__form-cont.is-active {
+    display: block; 
+}

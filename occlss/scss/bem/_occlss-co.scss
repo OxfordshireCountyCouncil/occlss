@@ -1,0 +1,8 @@
+// Close open psnnel
+.occlss-co {
+    display: none;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        display: block;
+        margin-top: rem(15px);
+    }
+}

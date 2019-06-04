@@ -1,0 +1,39 @@
+$base-line-height: 1.5% !default;
+
+address,
+blockquote,
+dl,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+p,
+pre,
+table,
+ul {
+	@if $base-line-height != null {
+		margin-top: $base-line-height;
+	}
+}
+
+dd,
+ol,
+ul {
+	@if $base-line-height != null {
+		margin-left: $base-line-height;
+	}
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+//::-moz-selection { text-shadow: none; background: $text-selection-background-color;}
+//::selection { text-shadow: none; background: $text-selection-background-color;}

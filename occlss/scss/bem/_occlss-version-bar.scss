@@ -1,0 +1,24 @@
+.occlss-version-bar {
+    &__wraper {
+        padding: rem($occlss-version-bar-padding);        
+        background: $occlss-version-bar-background;
+        color: white;
+    }
+}
+
+
+.occlss-version-bar__badge {
+    font-weight: $occlss-version-bar-badge-font-weight;
+    text-transform: uppercase;
+}
+
+.occlss-version-bar__right {
+    text-align: right;
+}
+
+.occlss-version-bar__link {
+    color: #ffffff;
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
+}

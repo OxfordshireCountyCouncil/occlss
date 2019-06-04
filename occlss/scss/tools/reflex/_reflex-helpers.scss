@@ -1,0 +1,276 @@
+
+// --------------------------------------------------
+// layout modifiers
+// --------------------------------------------------
+
+// --------------------------------------------------
+// layout full bleed (no internal padding)
+// --------------------------------------------------
+.#{$reflex-prefix}layout--bleed {
+    .#{$reflex-prefix}layout__col {
+        padding: 0;
+    }
+}
+
+// --------------------------------------------------
+// flex-wrap
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout--wrap {
+    @include reflex-flex-wrap(wrap);
+}
+
+.#{$reflex-prefix}layout--no-wrap {
+    @include reflex-flex-wrap(nowrap);
+}
+
+.#{$reflex-prefix}layout--wrap-reverse {
+    @include reflex-flex-wrap(wrap-reverse);
+}
+
+// --------------------------------------------------
+// flex-direction
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout--direction-row {
+    @include reflex-flex-direction(row);
+}
+
+.#{$reflex-prefix}layout--direction-row-reverse {
+    @include reflex-flex-direction(row-reverse);
+}
+
+.#{$reflex-prefix}layout--direction-column {
+    @include reflex-flex-direction(column);
+}
+
+.#{$reflex-prefix}layout--direction-column-reverse {
+    @include reflex-flex-direction(column-reverse);
+}
+
+// --------------------------------------------------
+// align-layout__col-cells (cross axis)
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout--align-start {
+    @include reflex-align-items(flex-start);
+}
+
+.#{$reflex-prefix}layout--align-end {
+    @include reflex-align-items(flex-end);
+
+    // fallback to legacy vertical-align
+    .#{$reflex-prefix}layout__col {
+        vertical-align: bottom;
+    }
+}
+
+.#{$reflex-prefix}layout--align-center {
+    @include reflex-align-items(center);
+
+    // fallback to legacy vertical-align
+    .#{$reflex-prefix}layout__col {
+        vertical-align: middle;
+    }
+}
+
+.#{$reflex-prefix}layout--align-baseline {
+    @include reflex-align-items(baseline);
+
+    // fallback to legacy vertical-align
+    .#{$reflex-prefix}layout__col {
+        vertical-align: baseline;
+    }
+}
+
+
+.occlss-layout--popular-content-grid {
+    padding:  rem(16px 0);
+}
+
+.occlss-layout--gutter-s {
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding-left:  rem(16px);
+        padding-right: rem(16px);
+    }
+}
+
+.occlss-layout--gutter-l {
+    padding-left:  rem(16px);
+    padding-right: rem(16px);
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding-left:  rem(32px);
+        padding-right: rem(32px);
+    }
+}
+
+// --------------------------------------------------
+// align-content (cross axis)
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout--align-content-start {
+    @include reflex-align-content(flex-start);
+}
+
+.#{$reflex-prefix}layout--align-content-end {
+    @include reflex-align-content(flex-end);
+
+    // fallback to legacy vertical-align
+    .#{$reflex-prefix}layout__col {
+        vertical-align: bottom;
+    }
+}
+
+.#{$reflex-prefix}layout--align-content-center {
+    @include reflex-align-content(center);
+}
+
+.#{$reflex-prefix}layout--align-content-space-between {
+    @include reflex-align-content(space-between);
+}
+
+.#{$reflex-prefix}layout--align-content-space-around {
+    @include reflex-align-content(space-around);
+}
+
+
+
+// --------------------------------------------------
+// align-self
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout__col--align-self-stretch {
+    @include reflex-align-self(stretch);
+}
+
+.#{$reflex-prefix}layout__col--align-self-start {
+    @include reflex-align-self(flex-start);
+}
+
+.#{$reflex-prefix}layout__col--align-self-end {
+    @include reflex-align-self(flex-end);
+    vertical-align: bottom;
+}
+
+.#{$reflex-prefix}layout__col--align-self-center {
+    @include reflex-align-self(center);
+    vertical-align: middle;
+}
+
+.#{$reflex-prefix}layout__col--align-self-baseline {
+    @include reflex-align-self(baseline);
+    vertical-align: baseline;
+}
+
+// --------------------------------------------------
+// justify-content (main axis)
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout--justify-start {
+    @include reflex-justify-content-start();
+}
+
+.#{$reflex-prefix}layout--justify-end {
+    @include reflex-justify-content-end();
+
+    .#{$reflex-prefix}layout__cell,
+    .#{$reflex-prefix}layout__col {
+        @include reflex-resetTextAlign();
+    }
+}
+
+.#{$reflex-prefix}layout--justify-center {
+    @include reflex-justify-content-center();
+
+    .#{$reflex-prefix}layout__cell,
+    .#{$reflex-prefix}layout__col {
+        @include reflex-resetTextAlign();
+    }
+}
+
+.#{$reflex-prefix}layout--justify-space-between {
+    @include reflex-justify-content-space-between();
+
+    .#{$reflex-prefix}layout__cell,
+    .#{$reflex-prefix}layout__col {
+        @include reflex-resetTextAlign();
+    }
+}
+
+.#{$reflex-prefix}layout--justify-space-around {
+    @include reflex-justify-content-space-around();
+
+    .#{$reflex-prefix}layout__cell,
+    .#{$reflex-prefix}layout__col {
+        @include reflex-resetTextAlign();
+    }
+}
+
+// --------------------------------------------------
+// layout__col modifiers
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout__col--bleed {
+    padding: 0;
+}
+
+.occlss-layout__col--parent {
+    padding: 0;
+    .occlss-layout__col {
+      width: 100%;
+    }
+}
+
+.#{$reflex-prefix}layout__col--bleed-x {
+    padding: $reflex-cell-spacing 0;
+}
+
+.#{$reflex-prefix}layout__col--bleed-y {
+    padding: 0 $reflex-cell-spacing;
+}
+
+.#{$reflex-prefix}layout__col--bg {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 50%;
+}
+
+// --------------------------------------------------
+// layout__cell modifiers
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout__cell--padding-sm {
+    padding: $reflex-cell-spacing-sm;
+}
+
+.#{$reflex-prefix}layout__cell--padding-md {
+    padding: $reflex-cell-spacing-md;
+}
+
+.#{$reflex-prefix}layout__cell--padding-lg {
+    padding: $reflex-cell-spacing-lg;
+}
+
+.#{$reflex-prefix}layout__cell-img {
+    display: block;
+    @include reflex-display-flex-only();
+    @include reflex-flex(0, 0, auto);
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.#{$reflex-prefix}layout__cell-footer {
+    @include reflex-display-flex();
+    width: 100%;
+    margin-top: auto;
+}
+
+// --------------------------------------------------
+// Responsive visibility modifiers
+// --------------------------------------------------
+
+@include reflex-responsive-visibility-helpers();

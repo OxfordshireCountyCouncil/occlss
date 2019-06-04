@@ -1,0 +1,128 @@
+.occlss-top-tasks-pane {
+    &__wrapper {
+        background: $occlss-top-tasks-pane-background;
+    }
+}
+
+.occlss-top-tasks-pane__layout {
+    padding-left: rem(16px);
+    padding-right: rem(16px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.occlss-top-tasks-pane__heading {
+    padding-bottom: rem(10px);
+    margin-bottom: rem(15px);
+    border-bottom: rem($occlss-top-tasks-pane-heading-border);
+    font-size: rem($occlss-top-tasks-pane-heading-font-size);
+}
+
+.occlss-top-tasks-pane__col {
+    /* flexbox */ 
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.occlss-top-tasks-pane__content {
+    border-bottom: rem($occlss-top-tasks-pane-content-border);
+    padding-bottom: rem(10px);
+    /* flexbox */ 
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.occlss-top-tasks-pane--residents {
+    .occlss-top-tasks-pane__heading {
+        border-bottom-color: $occlss-top-tasks-pane-color-residents;
+    }
+    .occlss-top-tasks-pane__content {
+        border-bottom-color: $occlss-top-tasks-pane-color-residents;
+    }
+}
+
+.occlss-top-tasks-pane--business {
+    .occlss-top-tasks-pane__heading {
+        border-bottom-color: $occlss-top-tasks-pane-color-business;
+    }
+    .occlss-top-tasks-pane__content {
+        border-bottom-color: $occlss-top-tasks-pane-color-business;
+    }
+    .occlss-top-tasks-pane__wrapper {
+        background: transparent; 
+    }
+    .occlss-top-tasks-pane__layout {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .occlss-top-tasks-pane__col {
+        padding-left: rem(32px);
+        padding-right: rem(90px);
+        background: #fff;
+        width: auto;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            width: 100%;
+            padding-left: rem(16px);
+            padding-right: rem(16px);
+        }
+    }
+}
+
+.occlss-top-tasks-pane--council {
+    .occlss-top-tasks-pane__heading {
+        border-bottom-color: $occlss-top-tasks-pane-color-council;
+    }
+    .occlss-top-tasks-pane__content {
+        border-bottom-color: $occlss-top-tasks-pane-color-council;
+    }
+    .occlss-top-tasks-pane__wrapper {
+        background: transparent; 
+    }
+    .occlss-top-tasks-pane__layout {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .occlss-top-tasks-pane__col {
+        padding-left: rem(32px);
+        padding-right: rem(90px);
+        background: #fff;
+        width: auto;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            width: 100%;
+            padding-left: rem(16px);
+            padding-right: rem(16px);
+        }
+    }
+}
+
+.occlss-top-tasks-pane--widget {
+    .occlss-top-tasks-pane__heading {
+        border-bottom-color: $occlss-top-tasks-pane-color-widget;
+    }
+    .occlss-top-tasks-pane__content {
+        border-bottom-color: $occlss-top-tasks-pane-color-widget;
+    }
+    .occlss-top-tasks-pane__wrapper {
+        background: transparent; 
+    }
+    .occlss-top-tasks-pane__layout {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .occlss-top-tasks-pane__col {
+        padding-left: rem(12px);
+        padding-right: rem(12px);
+        background: #fff;
+        width: auto;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            width: 100%;
+            padding-left: rem(16px);
+            padding-right: rem(16px);
+        }
+    }
+}

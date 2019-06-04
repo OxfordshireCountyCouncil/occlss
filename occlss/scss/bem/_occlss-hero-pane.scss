@@ -1,0 +1,63 @@
+.occlss-hero-pane {
+    background-repeat: no-repeat;
+    min-height: rem(400px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+       background: none!important;
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        min-height: 100%;
+     }
+}
+
+.occlss-hero-pane__heading {
+    display: inline-block;
+    font-weight: $occlss-hero-pane-heading-font-weight;
+    color: $occlss-hero-pane-heading-font-color;
+    padding: rem(10px 50px 10px 30px);
+    font-size: rem(46px);
+    margin-top: rem(54px);
+    margin-bottom: 0;
+    background-color: $occlss-hero-pane-heading-bg-color;
+    font-family: $occlss-hero-pane-heading-font-family;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        line-height: 1;
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        width: 100%;
+        margin-top: 0;
+        padding: rem(17px);
+    }
+}
+
+.occlss-hero-pane__heading--residents {
+    background-color: $occlss-hero-pane-heading-bg-color-residents;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding: rem(38px 17px 17px 17px);
+    }
+}
+
+.occlss-hero-pane__heading--business {
+    background-color: $occlss-hero-pane-heading-bg-color-business;
+}
+
+.occlss-hero-pane__heading--council {
+    background-color: $occlss-hero-pane-heading-bg-color-council;
+}
+
+.occlss-hero-pane--lgimage {
+    padding-bottom: rem(20px);
+    .occlss-hero-pane__heading  {
+        margin-top: 0;
+    }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding-bottom: 0;
+     }
+}
+
+// If no image it will remove pagging from the top of the pannel
+.occlss-hero-pane--no-image {
+    .occlss-hero-pane__heading  {
+        margin-top: 0;
+    }
+}
+

@@ -1,0 +1,30 @@
+.occlss-splitter {
+    &::after {
+        content: "";
+        width: 100%;
+        height: rem(1px);
+        background-color: $occlss-splitter-color;
+        display: block;
+    }
+}
+
+.occlss-splitter--residents {
+    &::after {
+        content: "";
+        background-color: $occlss-splitter-residents-color;
+    }
+}
+
+.occlss-splitter--business {
+    &::after {
+        content: "";
+        background-color: $occlss-splitter-business-color;
+    }
+}
+
+.occlss-splitter--council {
+    &::after {
+        content: "";
+        background-color: $occlss-splitter-council-color;
+    }
+}

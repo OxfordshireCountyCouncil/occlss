@@ -1,0 +1,198 @@
+//
+//Prefix to denote utilities, overrides, and helper classes. Classes beginning with .u-
+//should never be redefined, bound onto, or modified. These classes appear in the Trumps
+//layer and usually carry !important.
+//
+
+// Create grid utility classes
+@include make_a_grid($make_grid: true);
+
+
+// This class will hide object from display
+.occlss-u-hidden {
+  display: none;
+}
+
+
+// This class will hide object from display but it will be visable for screen readers
+.occlss-u-visuallyhidden {
+    @extend %sr-only;
+}
+
+// View all link
+.occlss-u-more-link {
+    &:hover,
+    &:active,
+    &:focus {
+        .occlss-u-more-link__icon {
+            fill: $occlss-link-color-primary-hover;
+        }
+    }
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
+    &__icon {
+        width: rem(19px);
+        height: rem(19px);
+        margin-left: rem(10px);
+        fill: $occlss-link-color-primary;
+    }
+}
+
+// list styles
+// Unstiled list
+.occlss-u-unstyled-list {
+    @extend %reset_list_style;
+    li {
+        margin-bottom: 0;
+    }
+}
+
+.occlss-u-summary-list {
+    @extend %reset_list_style;
+    li {
+        margin-bottom: rem(12px);
+    }
+}
+
+
+// top space
+$margin-toplist:(
+  none: 0,
+  xs: 6,
+  sm: 12,
+  md: 25,
+  large: 50,
+  paragraph: 30
+);
+
+@each $key,$val in $margin-toplist {
+    .occlss-u-tspace-#{$key} {
+        margin-top: ($val / 16) * 1rem;
+    }
+}
+
+// top padding space
+$padding-toplist:(
+  none: 0,
+  xs: 6,
+  sm: 12,
+  md: 25,
+  large: 50,
+  paragraph: 30
+);
+
+@each $key,$val in $padding-toplist {
+    .occlss-u-tpspace-#{$key} {
+        padding-top: ($val / 16) * 1rem;
+    }
+}
+
+// bottom space
+$margin-bottomlist:(
+  none: 0,
+  xs: 6,
+  sm: 12,
+  md: 25,
+  large: 50,
+  paragraph: 30
+);
+
+@each $key,$val in $margin-bottomlist {
+
+    .occlss-u-bspace-#{$key} {
+        margin-bottom: ($val / 16) * 1rem;
+    }
+}
+
+
+// bottom padding space
+$padding-bottomlist:(
+  none: 0,
+  xs: 6,
+  sm: 12,
+  md: 25,
+  large: 50,
+  paragraph: 30
+);
+
+@each $key,$val in $padding-bottomlist {
+    .occlss-u-bpspace-#{$key} {
+        padding-bottom: ($val / 16) * 1rem;
+    }
+}
+
+// Max width
+$trim-width:(
+  one-quarter: 25%,
+  one-third: 33.333%,
+  one-half: 50%,
+  two-thirds: 66.666%,
+  three-quarters: 75%,
+);
+
+@each $key,$val in $trim-width {
+    .occlss-u-max-width-#{$key} {
+        @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            max-width: $val;
+        }
+    }
+}
+
+
+// Hide
+
+.occlss-u-hide-xs {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        display: none;
+    }
+}
+
+.occlss-u-hide-sm {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        display: none;
+    }
+}
+
+.occlss-u-hide-md {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        display: none;
+    }  
+}
+
+
+.occlss-u-hide-lg {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+        display: none;
+    }
+}
+
+// Show
+
+.occlss-u-show-xs {
+    display: none;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        display: block;
+    }
+}
+
+.occlss-u-show-sm {
+    display: none;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        display: block;
+    }
+}
+
+.occlss-u-show-md {
+    display: none;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        display: block;
+    }  
+}
+
+.occlss-u-show-lg {
+    display: none;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+        display: block;
+    }
+}

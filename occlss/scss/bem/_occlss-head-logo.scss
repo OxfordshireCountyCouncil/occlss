@@ -1,0 +1,8 @@
+.occlss-head-logo {
+  width: rem(196px); 
+  height: rem(66px);
+  display: block;
+  &__path {
+    fill: $occlss-head-logo-color;
+  }
+}

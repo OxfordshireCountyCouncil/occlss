@@ -1,0 +1,47 @@
+// Accessibility select borders on focus
+a:not([class]):focus {
+    @extend %highlight-bg-on-focus;
+}
+
+.occlss-site-nav__logo-link:focus {
+    @extend %highlight-outline-on-focus;
+}
+
+input:focus,
+textarea:focus,
+keygen:focus,
+select:focus,
+.occlss-button:focus {
+    @extend %highlight-outline-on-focus;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  outline: none;
+}
+
+
+
+// Grid system old browsers hack
+
+.ie6, 
+.ie7, 
+.ie8,
+.ie9 {
+    .occlss-layout {
+        @extend %clearfix;
+    }
+    .occlss-layout__col {
+        float: left;
+        display: block;
+    }
+}
+
+.ie6, 
+.ie7, 
+.ie8 {
+    .occlss-layout__col {
+        width: 100%;
+    }
+
+}

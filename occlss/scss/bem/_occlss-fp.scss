@@ -1,0 +1,65 @@
+.occlss-fp {
+    margin-top: rem(184px);
+    transition: left 0.5s ease;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        background: #fff;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        bottom: 20px;
+        left: -400px;
+        min-width: 300px;
+        max-width: 320px;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+        padding: 20px;
+        box-shadow: 0 0.125rem 0.25rem 0 rgba(26, 26, 26, 0.2);
+        margin-top: 0;
+    }
+}
+
+.occlss-fp.is-open {
+    left: 0;
+}
+
+
+.occlss-fp__g-heading {
+    margin-bottom: rem(10px);
+    &--large {
+        margin-bottom: 0;
+    }
+}
+
+.occlss-fp__g-link {
+    display: block;
+    margin:  rem(18px 0 18px 25px);
+}
+
+// Close panel
+.occlss-fp__header {
+    background: $occlss-fp-close-psnrl-bg-color-primary;
+    margin: rem(-24px -23px 24px -23px);
+    text-align: right;
+    padding: rem(10px 15px 10px 10px);
+    display: none;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        display: block;
+    }
+}
+
+.occlss-fp__close-link {
+    color: #fff;
+    text-decoration: none;
+    &-icon {
+        fill: #fff;
+        width: rem(12px);
+        height: rem(12px);
+        margin-left: rem(5px);
+    }
+    &:hover {
+        .occlss-fp__close-link-icon {
+            fill: $occlss-fp-close-psnrl-icon-hover-color;
+        }
+    }
+}

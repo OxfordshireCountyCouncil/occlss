@@ -1,0 +1,64 @@
+.occlss-pagination {
+    margin: rem(0 -15px);
+}
+
+.occlss-pagination__list {
+    @extend %reset_list_style;
+}
+
+.occlss-pagination__item {    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.occlss-pagination__link {
+    
+    display: block;
+    padding: rem(15px);
+    text-decoration: underline;
+
+    &:hover,
+    &:active,
+    &:focus {
+        .occlss-pagination__icon {
+            fill: $occlss-link-color-primary-hover;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        @extend %highlight-outline-on-focus;
+    }
+}
+
+.occlss-pagination__link-title {
+    display: block;
+    font-size: rem($occlss-pagination-title-font-size);
+    margin-bottom: rem(5px);
+}
+
+.occlss-pagination__item--previous {
+    float: left;
+    text-align: left;
+    
+    .occlss-pagination__icon {
+        margin-left: 0;
+        margin-right: rem(10px);
+    }
+}
+
+.occlss-pagination__item--next {
+    float: right;
+    text-align: right;
+}
+
+.occlss-pagination__icon {
+    fill: $occlss-link-color-primary;
+    width: rem(22px);
+    height: rem(22px);
+    margin-left: rem(10px);
+}
+
+

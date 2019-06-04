@@ -1,0 +1,18 @@
+<svg width="27" height="51" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+ <title>icon-arrow-right-white</title>
+ <desc>Created with Sketch.</desc>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="Page-1">
+   <g fill="#FFFFFF" fill-rule="nonzero" id="icon-arrow-right-white">
+    <path id="Shape" d="m26.583576,24.544598l-24.111868,-24.11869c-0.567717,-0.567877 -1.478205,-0.567877 -2.045921,0c-0.567716,0.567876 -0.567716,1.478622 0,2.046499l23.083552,23.090083l-23.083552,23.090084c-0.567716,0.567877 -0.567716,1.478623 0,2.046499c0.278502,0.278581 0.653409,0.428587 1.017605,0.428587c0.364195,0 0.739102,-0.139291 1.017604,-0.428587l24.111868,-24.11869c0.567716,-0.557162 0.567716,-1.478623 0.010712,-2.035785z"/>
+   </g>
+  </g>
+ </g>
+</svg>

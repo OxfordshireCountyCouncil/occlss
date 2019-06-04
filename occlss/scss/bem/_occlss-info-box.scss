@@ -1,0 +1,16 @@
+.occlss-info-box {
+  border-left: rem(10px solid $occlss-info-box-border-color);
+  padding: rem(10px 16px);
+  margin: rem(32px 0);
+
+  h2:first-of-type,
+  h3:first-of-type,
+  h4:first-of-type,
+  h5:first-of-type,
+  h6:first-of-type,
+  p:first-of-type,
+  div:first-of-type
+  {
+    margin-top: 0;
+  }
+}

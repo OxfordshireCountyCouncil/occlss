@@ -1,0 +1,101 @@
+.occlss-popular-content-pane {
+    height: 100%;
+    display: block;
+
+    &:after {
+        content:"";
+        display: block;
+        border-bottom: rem(4px solid $occlss-popular-content-color-primary);
+    }
+    
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        height: rem(45px);
+    }
+
+    overflow: hidden;
+    
+    &:focus {
+        @extend %highlight-outline-on-focus;
+    }
+
+}
+
+.occlss-popular-content-pane__heading {
+    width: 100%;
+    background: $occlss-popular-content-color-primary;
+    color: $occlss-popular-content-heading-color;
+    font-size: rem($occlss-popular-content-heading-font-size);
+    padding: rem(9px 14px);
+    margin-bottom: 0;
+    font-weight: $occlss-popular-content-heading-font-weight;
+
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+       cursor: pointer;
+       position: relative;
+       &:after {
+        content: "";
+        width: rem(21px);
+        height: rem(13px);
+        background-image: url('#{$occlss-global-image-path}/icon-angle-arrow-down-white.svg');
+        background-size: cover;
+        display: block;
+        position: absolute;
+        right: rem(15px);
+        top: rem(16px);
+      }
+    }
+}
+
+.occlss-popular-content-pane__content {
+    /* flexbox */ 
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.occlss-popular-content-pane.is-active {
+    height: 100%;
+    height: inherit;
+}
+
+.is-active  .occlss-popular-content-pane__heading {
+    &:after {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+
+.occlss-popular-content-pane--residents {
+    &.occlss-popular-content-pane:after {     
+        border-bottom-color: $occlss-popular-content-color-residents;
+    }
+    
+    .occlss-popular-content-pane__heading {
+        background: $occlss-popular-content-color-residents;
+    }
+}
+
+.occlss-popular-content-pane--business {
+    &.occlss-popular-content-pane:after  {
+        border-bottom-color: $occlss-popular-content-color-business;
+    }
+    
+    .occlss-popular-content-pane__heading {
+        background: $occlss-popular-content-color-business;
+    }
+}
+
+.occlss-popular-content-pane--council {
+    &.occlss-popular-content-pane:after  {
+        border-bottom-color: $occlss-popular-content-color-council;
+    }
+    
+    .occlss-popular-content-pane__heading {
+        background: $occlss-popular-content-color-council;
+    }
+}

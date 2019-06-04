@@ -1,0 +1,10 @@
+// Transition
+@mixin transition($transition...) {
+  @if $occlss-global-enable-transitions-option {
+    @if length($transition) == 0 {
+      transition: $occlss-global-transition-parameters;
+    } @else {
+      transition: $transition;
+    }
+  }
+}

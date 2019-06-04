@@ -1,0 +1,31 @@
+.occlss-box-out {
+    background: $occlss-box-out-bg-color;
+    padding: rem($occlss-box-out-padding);
+    margin: rem(32px 0);
+   .occlss-info-box:first-child {
+       margin: rem((-$occlss-box-out-padding) (-$occlss-box-out-padding) 0 (-$occlss-box-out-padding));
+   }
+
+   h2:first-child,
+   h3:first-child,
+   h4:first-child,
+   h5:first-child,
+   h6:first-child,
+   p:first-child,
+   p:first-child {
+     margin-top: 0;
+   }
+
+   .occlss-info-box:last-child,
+   h2:last-child,
+   h3:last-child,
+   h4:last-child,
+   h5:last-child,
+   h6:last-child,
+   p:last-child,
+   p:last-child {
+     margin-bottom: 0;
+   }
+
+
+}

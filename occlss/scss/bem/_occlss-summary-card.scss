@@ -1,0 +1,88 @@
+.occlss-summary-card {
+    display: block;
+}
+
+.occlss-summary-card__cont {
+    display: block;
+    padding: rem(25px 15px);
+    transition: background-color 0.1s ease-in-out;
+    text-decoration: none;
+}
+
+.occlss-summary-card__cont--link {
+    &:hover {
+        background-color: $occlss-summary-card-bg-color-hover;
+        .occlss-summary-card__summary-text {
+            color: $occlss-summary-card-summary-text-color-hover;
+         }
+         .occlss-summary-card__title {
+            color: $occlss-summary-card-title-color;
+         }
+    }
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
+}
+
+.occlss-summary-card__title {
+    margin-bottom: 0;
+}
+
+.occlss-summary-card__summary-text {
+    margin: 0;
+    color: $occlss-summary-card-summary-text-color;
+}
+
+.occlss-summary-card__avatar {
+    width: 100%;
+    box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        margin-bottom: rem(20px);
+    }
+}
+
+.occlss-summary-card__img-scope img,
+.occlss-summary-card__imgcont {
+    width: 100%;
+    height: auto;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        margin-bottom: rem(20px);
+    }
+}
+
+.occlss-summary-card__party-logo {
+    float: right;
+    margin-top: rem(-35px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        float: none;
+        margin-top: 0;
+    }
+}
+.occlss-summary-card--lined {
+    border-top: rem(2px solid $occlss-summary-card-border-color);
+    border-bottom: rem(2px solid $occlss-summary-card-border-color);
+}
+
+.occlss-summary-card--lined:not(:first-child) {
+    border-top: none;
+}
+
+.occlss-summary-card--lined:first-of-type {
+    border-top: rem(2px solid $occlss-summary-card-border-color);
+}
+
+.occlss-summary-card__list {
+    @extend %reset_list_style;
+}
+
+.occlss-summary-card__list-item {
+    color: $occlss-summary-card-summary-text-color;
+    margin-bottom: rem(5px);
+}
+
+.occlss-summary-card__summary-cont {
+    padding-left: rem(20px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+        padding-left: 0;
+    }
+}

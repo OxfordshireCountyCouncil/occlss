@@ -1,0 +1,54 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+//   @include button-variant($occlss-button-action-color, $occlss-button-action-bg, $occlss-button-action-border, false, false, false);
+
+// Shadow
+$occlss-p-enable-shadows:     true !default;
+
+@mixin button-variant($color: false, $background: false, $border: false, $color-hover: false, $background-hover: false, $border-hover: false) {
+
+   @if ($color and $background ) {
+
+    $active-color:  $color;
+    $active-background: darken($background, 10%);
+    $active-border: darken($border, 12%);
+
+    @if ($color-hover) {
+      $active-color: $color-hover;
+    }
+
+    @if ($background-hover) {
+      $active-background: $background-hover;
+    }
+
+    @if ($border-hover) {
+      $active-border: $border-hover;
+    }
+
+
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+    @include box-shadow($occlss-button-box-shadow-default);
+    // Hover and focus styles are shared
+    @include hover {
+      color: $active-color;
+      background-color: $active-background;
+      border-color: $active-border;
+    }
+    &.is-focus,
+    &:focus {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      @if $occlss-p-enable-shadows {
+        box-shadow: 0 0 0 1px rgba($border, 1);
+      }
+      @else {
+        box-shadow: 0 0 0 2px rgba($border, .5);
+      }
+    }
+  }
+
+}

@@ -1,0 +1,194 @@
+// --------------------------------------------------
+// reflex layout
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout {
+    @include reflex-display-flex();
+    @include reflex-flex-wrap();
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    max-width: $reflex-max-width;
+
+    @include reflex-setupWhitespace();
+
+    &:before,
+    &:after {
+        @include reflex-resetWhitespace();
+        max-width: 100%;
+    }
+
+    *:before,
+    *:after {
+        @include reflex-resetWhitespace();
+    }
+
+    // handle nested layouts
+    & .#{$reflex-prefix}layout {
+        @include reflex-flex(1, 1, auto);
+    }
+
+    // Reset the box-sizing so our layout works properly
+    * {
+        @include box-sizing(border-box);
+    }
+    *:before,
+    *:after {
+        @include box-sizing(border-box);
+    }
+
+    // handle when lists are used as a layout
+    list-style-type: none;
+}
+
+// --------------------------------------------------
+// reflex layout__col defaults
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout__col {
+    @include reflex-setupCols();
+}
+
+.#{$reflex-prefix}layout__col--flex {
+    @include reflex-display-flex();
+}
+
+/*
+[class*="#{$reflex-prefix}layout__col-"] {
+    @include reflex-setupCols();
+}*/
+
+// --------------------------------------------------
+// reflex layout__cell defaults
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout__cell {
+    position: relative;
+    display: block;
+    @include reflex-flex(1, 1, auto);
+}
+
+// ie11 hack
+:-ms-fullscreen, :root {
+    .layout__cell {
+        width: 100%;
+    }
+}
+
+// --------------------------------------------------
+// reflex layout generation
+// --------------------------------------------------
+
+@include reflex-make-reflex-layout(layout__col--);
+
+@media (min-width: map-get($reflex-breakpoints, 'xs')) {
+    @include reflex-make-reflex-layout(layout__col--xs-);
+}
+
+@media (min-width: map-get($reflex-breakpoints, 'sm')) {
+    @include reflex-make-reflex-layout(layout__col--sm-);
+}
+
+@media (min-width: map-get($reflex-breakpoints, 'md')) {
+    @include reflex-make-reflex-layout(layout__col--md-);
+}
+
+@media (min-width: map-get($reflex-breakpoints, 'lg')) {
+    @include reflex-make-reflex-layout(layout__col--lg-);
+}
+
+@media (min-width: map-get($reflex-breakpoints, 'xlg')) {
+    @include reflex-make-reflex-layout(layout__col--xlg-);
+}
+
+
+// --------------------------------------------------
+// reflex layout__col-auto
+// --------------------------------------------------
+
+.#{$reflex-prefix}layout__col--auto {
+    @include reflex-setupAutoCols();
+}
+
+@media (min-width: map-get($reflex-breakpoints, 'xs')) {
+    .#{$reflex-prefix}layout__col--xs-auto {
+        @include reflex-setupAutoCols();
+    }
+}
+
+@media (min-width: map-get($reflex-breakpoints, 'sm')) {
+    .#{$reflex-prefix}layout__col--sm-auto {
+        @include reflex-setupAutoCols();
+    }
+}
+
+@media (min-width: map-get($reflex-breakpoints, 'md')) {
+    .#{$reflex-prefix}layout__col--md-auto {
+        @include reflex-setupAutoCols();
+    }
+}
+
+@media (min-width: map-get($reflex-breakpoints, 'lg')) {
+    .#{$reflex-prefix}layout__col--lg-auto {
+        @include reflex-setupAutoCols();
+    }
+}
+
+@media (min-width: map-get($reflex-breakpoints, 'xlg')) {
+    .#{$reflex-prefix}layout__col--xlg-auto {
+        @include reflex-setupAutoCols();
+    }
+}
+
+// --------------------------------------------------
+// reflex order helpers generation
+// --------------------------------------------------
+
+@include reflex-make-layout--order-helpers();
+
+@media only screen and (max-width: map-get($reflex-breakpoints, 'xs')) {
+    @include reflex-loop-layout--order-helpers($reflex-columns, '-xs');
+}
+
+@media only screen and (max-width: map-get($reflex-breakpoints, 'sm')) {
+    @include reflex-loop-layout--order-helpers($reflex-columns, '-sm');
+}
+
+@media only screen and (max-width: map-get($reflex-breakpoints, 'md')) {
+    @include reflex-loop-layout--order-helpers($reflex-columns, '-md');
+}
+
+@media only screen and (max-width: map-get($reflex-breakpoints, 'lg')) {
+    @include reflex-loop-layout--order-helpers($reflex-columns, '-lg');
+}
+
+@media only screen and (max-width: map-get($reflex-breakpoints, 'xlg')) {
+    @include reflex-loop-layout--order-helpers($reflex-columns, '-xlg');
+}
+
+// --------------------------------------------------
+// reflex offset helpers generation
+// --------------------------------------------------
+
+@include make-offset-helpers();
+
+@media only screen and (min-width: map-get($reflex-breakpoints, 'xs')) {
+    @include loop-offset-helpers($reflex-columns - 1, '-xs');
+}
+
+@media only screen and (min-width: map-get($reflex-breakpoints, 'sm')) {
+    @include loop-offset-helpers($reflex-columns - 1, '-sm');
+}
+
+@media only screen and (min-width: map-get($reflex-breakpoints, 'md')) {
+    @include loop-offset-helpers($reflex-columns - 1, '-md');
+}
+
+@media only screen and (min-width: map-get($reflex-breakpoints, 'lg')) {
+    @include loop-offset-helpers($reflex-columns - 1, '-lg');
+}
+
+@media only screen and (min-width: map-get($reflex-breakpoints, 'xlg')) {
+    @include loop-offset-helpers($reflex-columns - 1, '-xlg');
+}

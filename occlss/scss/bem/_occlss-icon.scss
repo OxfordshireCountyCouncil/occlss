@@ -1,0 +1,33 @@
+.occlss-icon {
+    display: inline-block;
+    line-height: initial;
+    @include transition(all .3s ease);
+}
+
+.occlss-icon--rotate-180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.occlss-icon__container {
+    vertical-align: middle;
+    fill: #222;
+    width: rem(32px);
+    height: rem(32px);
+}
+
+.occlss-icon--error {
+    .occlss-icon__container {
+        fill: $occlss-form-color-base-error;
+    }
+}
+
+.occlss-icon--small {
+    .occlss-icon__container {
+        width: rem(18px);
+        height: rem(18px);
+    }
+}

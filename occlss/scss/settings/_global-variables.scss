@@ -1,0 +1,1075 @@
+/* VARIABLES NAMING CONVENSION
+
+[1] $occlss - System name: occlss (stands for Oxfordshire County Council live style systems)
+    required in front of OCC style system variable, to distinguish it with the variables in case if
+    the SASS will be merged with different style sheets or integrated in to diffrent systems
+
+
+[2] variable type (global-,brand-)
+[3] name of the class name/block name (heading-,button,wrapper)
+[4] name of the property (color-,font-family,padding-,spacing-unit-)
+[5] property variant/name (
+
+ primary,
+ secondary,
+ success,
+ danger,
+ warning,
+ info,
+ light,
+ tiny,
+ primary,
+ dark,
+
+ hover,
+ focus,
+ active
+
+ emperor,
+ aqua-deep
+
+)
+
+*/
+
+// Colors
+// color names from - http://chir.ag/projects/name-that-color/#525252
+// bc - stands for base color
+// Base colors applies only inside global variable file and not as a block variable, 
+// they are dynamic and very high possibility that they will change during the development process
+
+
+
+
+// Typography colors
+$occlss-brand-color-black:         #000000;
+$occlss-brand-color-emperor:       #525252;
+$occlss-brand-color-cod-gray:      #1a1a1a;
+$occlss-brand-color-mine-shaft:    #333333;
+$occlss-brand-color-alabaster:     #fcfcfc;
+
+
+
+
+// Link and Button colours
+$occlss-brand-color-venice-blue:   #0a549d;
+$occlss-brand-color-catalina-blue: #073d73;
+$occlss-brand-color-denim:         #0e73d8;
+$occlss-brand-color-selago:        #e5effb;
+
+
+
+
+// Search button
+$occlss-brand-color-ronchi:        #edc856;
+$occlss-brand-color-pizza:         #d0a116;
+$occlss-brand-color-sahara:        #B48C13;
+$occlss-brand-color-maize:         #f5de98;
+
+
+
+
+// Wayfinding colors
+// Residents
+$occlss-brand-color-aqua-deep:   #00483a;    
+$occlss-brand-color-nebula:      #d3dfdd;
+
+// Business
+$occlss-brand-color-boston-blue: #3a78bb; 
+$occlss-brand-color-link-water:  #d9ecf6; 
+
+
+// Council
+$occlss-brand-color-victoria:  #503b76;
+$occlss-brand-color-snuff:     #dad3e8;
+
+
+
+
+// Generic
+// Secondary colour palette
+$occlss-brand-color-forest-green:         #24b137;
+$occlss-brand-color-harp:                 #e2f1e4;
+$occlss-brand-color-pale-sky:             #656d80;
+$occlss-brand-color-iron:                 #e0e2e5;
+$occlss-brand-color-keppel:               #38b1a0;
+$occlss-brand-color-swans-down:           #dbeeea;
+$occlss-brand-color-selective-yellow:     #feb603;
+$occlss-brand-color-half-colonial-white:  #fdf3da;
+
+
+
+// Web page messages
+$occlss-brand-color-milano-red:     #ad0505;
+$occlss-brand-color-bridesmaid:     #fee6e6;
+
+$occlss-brand-color-solitude:       #ecf5fe;
+
+$occlss-brand-color-apple:          #50B948;
+$occlss-brand-color-zanah:          #d8efd7;
+
+$occlss-brand-color-tahiti-gold:    #f3830b;
+$occlss-brand-color-bleach-white:   #feebd8;
+
+
+
+
+// Typography
+// Base font face
+$occlss-global-font-family-primary:   'Open Sans', sans-serif !default;
+$occlss-global-font-family-secondary: 'Fira Sans', sans-serif !default;
+
+
+
+
+// Design font sizes
+$occlss-global-font-size-xxxxx-large: 42px !default;
+$occlss-global-font-size-xxxx-large:  36px !default;
+$occlss-global-font-size-xxx-large:   30px !default; 
+$occlss-global-font-size-xx-large:    26px !default; 
+$occlss-global-font-size-x-large:     24px !default; 
+$occlss-global-font-size-large:       22px !default; 
+$occlss-global-font-size-medium:      20px !default; 
+$occlss-global-font-size-regular:     16px !default; // The browser default, typically `16px`
+$occlss-global-font-size-small:       14px !default;
+
+
+
+
+// Font weight
+$occlss-global-font-weight-light:    300 !default;
+$occlss-global-font-weight-regular:  400 !default;
+$occlss-global-font-weight-medium:   500 !default;
+$occlss-global-font-weight-semibold: 600 !default;
+$occlss-global-font-weight-bold:     700 !default;
+$occlss-global-font-weight-black:    900 !default;
+
+
+
+
+// Page container size, grid values
+$occlss-global-page-container-width-default: 1200px !default;
+$occlss-global-page-container-width-wide:    1280px !default;
+$occlss-global-gutter-unit-default:          1rem !default;
+$occlss-global-gutter-unit-small:            0.5rem !default;
+$occlss-global-column-amount:                12 !default;
+
+
+// Z-index
+$occlss-global-zindex-unit-1:  990 !default;
+$occlss-global-zindex-unit-2:  1000 !default;
+$occlss-global-zindex-unit-3:  1030 !default;
+$occlss-global-zindex-unit-4:  1040 !default;
+$occlss-global-zindex-unit-5:  1050 !default;
+$occlss-global-zindex-unit-6:  1060 !default;
+$occlss-global-zindex-unit-7:  1070 !default;
+$occlss-global-zindex-unit-8:  1080 !default;
+$occlss-global-zindex-unit-9:  1090 !default;
+$occlss-global-zindex-unit-10: 1100 !default;
+
+
+
+
+// Paths
+$occlss-global-image-path:  '../../images' !default;
+
+
+
+
+// Global transition parameters 
+$occlss-global-enable-transitions-option:     true !default;
+$occlss-global-transition-parameters:         all .2s ease-in-out !default;
+
+
+
+
+// Global select borders on focus
+$occlss-global-colour-focus:  $occlss-brand-color-ronchi !default;
+
+
+
+
+// Global padding
+$occlss-global-padding-v1:       15px 20px 10px 0 !default;
+
+
+
+
+///////////////////////////
+// END global variables //
+/////////////////////////
+
+
+
+
+// Page default variables
+$occlss-page-font-family-primary:  $occlss-global-font-family-primary !default;
+$occlss-page-font-color-primary:   $occlss-brand-color-mine-shaft !default;
+$occlss-page-font-weight-primary:  $occlss-global-font-weight-regular !default;
+$occlss-page-background-primary:   #CFCFCF !default;
+
+
+
+
+// Browser default font size
+$occlss-page-font-size-primary:    $occlss-global-font-size-regular !default;
+
+
+
+
+// Paragraph default variables
+$occlss-page-line-height-paragraph-unit:    1.5 !default;
+$occlss-page-margin-paragraph-unit:         0 0 30px 0 !default;
+$occlss-page-margin-paragraph-unit-top:     0 !default;
+$occlss-page-margin-paragraph-unit-bottom:  30px !default;
+$occlss-page-margin-paragraph-unit-left:    0 !default;
+$occlss-page-margin-paragraph-unit-right:   0 !default;
+
+
+
+// Page link
+$occlss-link-color-primary:            $occlss-brand-color-venice-blue !default;
+$occlss-link-color-primary-hover:      $occlss-brand-color-ronchi !default;
+$occlss-link-bg-color-primary-hover:   $occlss-brand-color-ronchi !default;
+$occlss-link-font-size:                $occlss-global-font-size-medium !default;
+$occlss-link-color-hover-focus:        $occlss-brand-color-cod-gray !default;
+
+
+
+// Headings
+// Base heading 1
+$occlss-heading-font-size-h1:    $occlss-global-font-size-xxxxx-large !default;
+$occlss-heading-font-weight-h1:  $occlss-global-font-weight-bold !default;
+$occlss-heading-color-h1:        $occlss-brand-color-cod-gray !default;
+
+
+
+
+// Base heading 2
+$occlss-heading-font-size-h2:    $occlss-global-font-size-xx-large !default;
+$occlss-heading-font-weight-h2:  $occlss-global-font-weight-semibold !default;
+
+
+
+
+// Base heading 3
+$occlss-heading-font-size-h3:    $occlss-global-font-size-large !default;
+$occlss-heading-font-weight-h3:  $occlss-global-font-weight-medium !default;
+
+
+
+
+// Base heading 4
+$occlss-heading-font-size-h4:   $occlss-global-font-size-medium !default;
+$occlss-heading-font-weight-h4: $occlss-global-font-weight-medium !default;
+$occlss-heading-color-h4:       $occlss-brand-color-emperor !default;
+
+
+
+
+// Base heading 5
+$occlss-heading-font-size-h5: $occlss-global-font-size-large !default;
+
+
+
+
+// Base heading 6
+$occlss-heading-font-size-h6: $occlss-global-font-size-medium !default;
+
+
+
+
+// Base headings weight
+$occlss-heading-font-weight: $occlss-global-font-weight-bold !default;
+
+
+
+
+// Base headings line height
+$occlss-heading-font-line-height: 1.3 !default;
+
+
+
+
+// Base headings margin
+$occlss-heading-margin: 0 0 30px 0 !default;
+
+
+
+
+// Base headings font family
+$occlss-heading-font-family: $occlss-global-font-family-secondary !default;
+
+
+
+
+// Wraper
+$occlss-wrapper-width-primary:         $occlss-global-page-container-width-default !default;
+$occlss-wrapper-width-wide:            $occlss-global-page-container-width-wide !default;
+$occlss-wrapper-gutter-unit:           $occlss-global-gutter-unit-default !default;
+$occlss-wrapper-gutter-unit--small:    $occlss-global-gutter-unit-small !default;
+$occlss-wrapper-background--secondary: #ffffff !default;
+
+
+
+
+// Grid system
+// --------------------------------------------------
+// reflex variables
+// --------------------------------------------------
+
+// Prefix
+// -------------------------
+// You can optionally reflex-prefix reflex classes to avoid clashing with other css frameworks
+// e.g. setting $reflex-prefix as "reflex-" here would cause layout__col-sm-6 to become reflex-layout__col-sm-6
+// Example: $reflex-prefix: reflex-;
+// By default this is an empty string
+$reflex-prefix: occlss-;
+
+// Legacy support
+// -------------------------
+// Reflex adds a lot of css propertie to support older browsers that don't support flexbox layout.
+// If you prefer to use this as a purely flexbox layout without legacy support then set this to false
+$reflex-legacy-support: true !default;
+
+// Responsive visibility helpers
+// -------------------------
+// Reflex has some generic visibility classes to hide elements at different breakpoints.
+// If you want to disable these then set this to false
+$reflex-visibility-helpers: true !default;
+
+// layout
+// -------------------------
+$reflex-columns: $occlss-global-column-amount !default; // number of columns
+$reflex-max-width: 100% !default; // max-width of layout
+
+// Breakpoints
+// -------------------------
+
+$reflex-breakpoints: (
+  xs: 480px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+  xlg: 1600px
+) !default;
+
+$reflex-breakpoints-max: (
+  xxs: (map-get($reflex-breakpoints, 'xs') - 1),
+  xs:  (map-get($reflex-breakpoints, 'sm') - 1),
+  sm:  (map-get($reflex-breakpoints, 'md') - 1),
+  md:  (map-get($reflex-breakpoints, 'lg') - 1),
+  lg:  (map-get($reflex-breakpoints, 'xlg') - 1)
+) !default;
+
+
+
+
+// Spacing
+// -------------------------
+$reflex-layout-spacing:     $occlss-global-gutter-unit-default $occlss-global-gutter-unit-default !default;
+$reflex-cell-spacing:       $occlss-global-gutter-unit-default !default;
+
+$reflex-cell-spacing-sm:    ($reflex-cell-spacing / 2) !default;
+$reflex-cell-spacing-md:    $reflex-cell-spacing !default;
+$reflex-cell-spacing-lg:    ($reflex-cell-spacing * 2) !default;
+
+
+
+/* Reflex v1.5.0 - https://github.com/leejordan/reflex */
+
+/*
+ *
+ * Reflex is a flexbox grid which provides a way to take advantage of emerging
+ * flexbox support while providing a fall back to inline-block on older browsers
+ *
+ * To disable legacy support and build a flexbox only grid, set the variable legacy-support to false
+ *
+ * Built by Lee Jordan G.C.S.E.
+ * email: ldjordan@gmail.com
+ * github: https://github.com/leejordan
+ *
+ * Structure and calculations are inspired by twitter bootstrap
+ *
+ */
+
+
+
+
+ // Layout
+ $occlss-layout-breakpoints: $reflex-breakpoints !default;
+ $occlss-layout-columns:     $occlss-global-column-amount !default; // number of columns
+ 
+
+// Global font sizes
+$occlss-g-xxxxx-large-font-size:    $occlss-global-font-size-xxxxx-large !default;
+$occlss-g-xxxx-large-font-size:     $occlss-global-font-size-xxxx-large !default;
+$occlss-g-xxx-large-font-size:      $occlss-global-font-size-xxx-large !default;
+$occlss-g-xx-large-font-size:       $occlss-global-font-size-xx-large !default;
+$occlss-g-x-large-font-size:        $occlss-global-font-size-x-large !default;
+$occlss-g-large-font-size:          $occlss-global-font-size-large !default;
+$occlss-g-medium-font-size:         $occlss-global-font-size-medium !default;
+$occlss-g-regular-font-size:        $occlss-global-font-size-regular !default;
+$occlss-g-small-font-size:          $occlss-global-font-size-small !default;
+
+
+
+
+// Main title
+$occlss-main-title-font-size:   $occlss-global-font-size-xxxxx-large !default;
+$occlss-main-title-font-weight: $occlss-global-font-weight-bold !default;
+$occlss-main-title-font-color:  $occlss-brand-color-cod-gray !default;
+$occlss-main-title-line-height: 1.1 !default;
+
+
+
+
+// Summary text
+$occlss-summary-text-font-family:         $occlss-global-font-family-primary !default;
+$occlss-summary-text-font-size-primary:   $occlss-global-font-size-x-large !default;
+$occlss-summary-text-font-weight-primary: $occlss-global-font-weight-medium !default;
+$occlss-summary-text-font-color-primary:  $occlss-brand-color-emperor !default;
+$occlss-summary-text-line-height-primary: 1.4 !default;
+$occlss-summary-text-font-margin-primary: 0 0 90px 0 !default;
+
+
+
+
+// Label
+$occlss-label-font-size:   $occlss-global-font-size-large !default;
+$occlss-label-font-weight: $occlss-global-font-weight-medium !default;
+$occlss-label-font-color:  $occlss-brand-color-emperor !default;
+$occlss-label-line-height: 1.4 !default;
+
+
+
+
+// buttons
+// default _occlss-button.scss
+$occlss-button-font-size-default:          $occlss-global-font-size-medium !default;
+$occlss-button-font-weight-default:        $occlss-global-font-weight-semibold !default;
+$occlss-button-font-family-default:        $occlss-global-font-family-primary !default;
+$occlss-button-border-size-default:        1px !default;
+$occlss-button-radius-default:             .30rem !default;
+$occlss-button-padding-y-default:          10px !default;
+$occlss-button-padding-x-default:          20px !default;
+$occlss-button-line-height-default:        1.25 !default;
+$occlss-button-transition-default:         $occlss-global-transition-parameters !default;
+$occlss-button-box-shadow-default:         none !default;
+$occlss-button-active-box-shadow-default:  inset 0 3px 5px rgba($occlss-brand-color-black,.125) !default;
+$occlss-button-focus-box-shadow-default:   0 0 0 2px rgba($occlss-brand-color-tahiti-gold , .25) !default;
+$occlss-button-cursor-disabled-default:    not-allowed !default;
+
+
+
+
+// button link _occlss-button.scss
+$occlss-button-link-font-weight:            $occlss-global-font-weight-semibold !default;
+$occlss-button-link-font-color:             $occlss-link-color-primary !default;
+$occlss-button-link-font-color-hover:       $occlss-link-color-primary-hover !default;
+$occlss-button-link-font-color-disabled:    $occlss-brand-color-mine-shaft !default;
+$occlss-button-link-font-decoration-hover:  underline !default;
+
+
+
+
+// primary button _occlss-button.scss
+$occlss-button-primary-font-color:          #ffffff !default;
+$occlss-button-primary-font-color-hover:    #ffffff !default;
+$occlss-button-primary-font-color-disable:    $occlss-brand-color-denim !default;
+$occlss-button-primary-background:            $occlss-brand-color-denim !default;
+$occlss-button-primary-background-hover:      $occlss-brand-color-venice-blue !default;
+$occlss-button-primary-background-disable:    $occlss-brand-color-selago !default;
+$occlss-button-primary-border-color:          transparent !default;
+$occlss-button-primary-border-color-hover:    transparent !default;
+$occlss-button-primary-border-bottom:         4px solid $occlss-brand-color-venice-blue !default;
+$occlss-button-primary-border-hover-bottom:   4px solid $occlss-brand-color-catalina-blue !default;
+$occlss-button-primary-border-bottom-disable: 4px solid $occlss-brand-color-denim !default;
+$occlss-button-primary-shadow:                4px 5px 6px lighten($occlss-brand-color-mine-shaft, 60%) !default;
+
+
+
+
+// primary secondary _occlss-button.scss
+$occlss-button-secondary-font-color:            $occlss-brand-color-cod-gray !default;
+$occlss-button-secondary-font-color-hover:      $occlss-brand-color-cod-gray !default;
+$occlss-button-secondary-font-color-disable:    $occlss-brand-color-pizza !default;
+$occlss-button-secondary-background:            $occlss-brand-color-ronchi !default;
+$occlss-button-secondary-background-hover:      $occlss-brand-color-pizza !default;
+$occlss-button-secondary-background-disable:    $occlss-brand-color-maize !default;
+$occlss-button-secondary-border-color:          transparent !default;
+$occlss-button-secondary-border-color-hover:    transparent !default;
+$occlss-button-secondary-border-bottom:         4px solid $occlss-brand-color-pizza !default;
+$occlss-button-secondary-border-hover-bottom:   4px solid $occlss-brand-color-catalina-blue !default;
+$occlss-button-secondary-border-bottom-disable: 4px solid $occlss-brand-color-pizza !default;
+$occlss-button-secondary-shadow:                4px 5px 6px lighten($occlss-brand-color-mine-shaft, 60%) !default;
+
+
+
+
+// negative button _occlss-button.scss
+$occlss-button-negative-font-color:           $occlss-brand-color-milano-red !default;
+$occlss-button-negative-font-color-hover:     #ffffff !default;
+$occlss-button-negative-font-color-disable:    $occlss-brand-color-milano-red !default;
+$occlss-button-negative-background:           transparent !default;
+$occlss-button-negative-background-hover:     $occlss-brand-color-milano-red !default;
+$occlss-button-negative-border-color:         $occlss-brand-color-milano-red !default;
+$occlss-button-negative-border-color-hover:   $occlss-brand-color-milano-red !default;
+$occlss-button-negative-shadow:               4px 2px 6px lighten($occlss-brand-color-mine-shaft, 70%) !default;
+$occlss-button-negative-shadow-hover:         4px 5px 6px lighten($occlss-brand-color-mine-shaft, 60%) !default;
+
+
+
+
+// neutral button _occlss-button.scss
+$occlss-button-neutral-font-color:           $occlss-brand-color-emperor !default;
+$occlss-button-neutral-font-color-hover:     #ffffff !default;
+$occlss-button-neutral-font-color-disable:   $occlss-brand-color-emperor !default;
+$occlss-button-neutral-background:           transparent !default;
+$occlss-button-neutral-background-hover:     $occlss-brand-color-emperor !default;
+$occlss-button-neutral-border-color:         $occlss-brand-color-emperor !default;
+$occlss-button-neutral-border-color-hover:   $occlss-brand-color-emperor !default;
+$occlss-button-neutral-shadow:               4px 2px 6px lighten($occlss-brand-color-mine-shaft, 70%) !default;
+$occlss-button-neutral-shadow-hover:         4px 5px 6px lighten($occlss-brand-color-mine-shaft, 60%) !default;
+
+
+// search button _occlss-button.scss
+$occlss-button-search-font-color:                   $occlss-brand-color-cod-gray !default;
+$occlss-button-search-font-color-hover:           #ffffff !default;
+$occlss-button-search-font-color-disable:           $occlss-brand-color-pizza !default;
+$occlss-button-search-background:                   $occlss-brand-color-ronchi !default;
+$occlss-button-search-background-hover:             $occlss-brand-color-denim !default;
+$occlss-button-search-background-active:            $occlss-brand-color-denim !default;
+$occlss-button-search-background-disable:           $occlss-brand-color-maize !default;
+$occlss-button-search-border-color-primary:         transparent !default;
+$occlss-button-search-border-color-hover:           transparent !default;
+$occlss-button-search-border-radius:                25px !default;
+$occlss-button-search-shadow-primary:               0px 3px 5px lighten($occlss-brand-color-mine-shaft, 60%) !default;
+
+
+
+
+// Page head _occlss-page-head.scss
+$occlss-page-head-color-residents:       $occlss-brand-color-aqua-deep !default;
+$occlss-page-head-color-business:        $occlss-brand-color-boston-blue !default;
+$occlss-page-head-color-council:         $occlss-brand-color-victoria !default;
+
+
+
+
+// Logo
+// occlss head logo _occlss-head-logo.scss
+$occlss-head-logo-color: #ffffff !default;
+
+
+
+
+// Breadcrumb _occlss-breadcrumb.scss
+$occlss-breadcrumb-font-size-primary:    $occlss-global-font-size-regular !default;
+$occlss-breadcrumb-text-colour:          $occlss-brand-color-venice-blue !default;
+$occlss-breadcrumb-line-height:          normal !default;
+$occlss-breadcrumb-first-link-weight:    $occlss-global-font-weight-black !default;
+
+
+
+
+
+// Page Footer _occlss-page-footer.scss
+$occlss-page-footer-background:          $occlss-brand-color-black !default;
+
+
+
+
+
+// Form  _occlss-form.scss
+// form base
+$occlss-form-color-base-error:                   $occlss-brand-color-milano-red !default;
+$occlss-form-background-color-base-error:        $occlss-brand-color-bridesmaid !default;
+$occlss-form-title-font-size-large:              $occlss-global-font-size-xx-large !default;
+$occlss-form-label-font-size:                    $occlss-global-font-size-medium !default; 
+$occlss-form-font-weight-group-title:            $occlss-global-font-weight-medium !default;
+$occlss-form-font-family-group-title:            $occlss-global-font-family-secondary !default;
+$occlss-form-title-underline-color:              $occlss-brand-color-mine-shaft !default;
+// Hint text
+$occlss-form-font-color-hint-text:               $occlss-brand-color-emperor !default;
+
+
+
+
+
+// Form controls _occlss-form-cntrls.scss
+$occlss-form-cntrls-label-font-size-small:      18px !default;
+$occlss-form-cntrls-label-font-size-deftxt:     16px !default;
+$occlss-form-cntrls-label-font-weight-deftxt:   $occlss-global-font-weight-regular !default;
+$occlss-form-cntrls-label-font-family-deftxt:   $occlss-global-font-family-primary !default;
+$occlss-form-cntrls-border-input-general:       1px solid $occlss-brand-color-mine-shaft !default;
+$occlss-form-cntrls-font-size-input-general:    $occlss-global-font-size-regular !default; 
+$occlss-form-cntrls-font-size-base:             1rem !default; // Base font size
+$occlss-form-cntrls-padding-base-vertical:      0.85rem !default; // Using rem instead of px so function uses same units 
+$occlss-form-cntrls-border-width-base-input:    0.063rem!default; // Using rem instead of px so function uses same units
+$occlss-form-cntrls-line-height-base-input:     1.3 !default; // Base font size
+
+
+// input heights will vary by browser and type
+// if height not explicitly set
+$occlss-form-cntrls-input-height-exact: (
+  ($occlss-form-cntrls-font-size-base * $occlss-form-cntrls-line-height-base-input) +
+  ($occlss-form-cntrls-padding-base-vertical * 2) +
+  ($occlss-form-cntrls-border-width-base-input * 2) 
+) !default;
+
+// truncated to 1 decimal place
+// (i.e., 1.21rem -> 1.2rem)
+$occlss-form-cntrls-input-height-truncated:          floor($occlss-form-cntrls-input-height-exact * 10) / 10 !default;
+$occlss-form-cntrls-border-color-base-input:         $occlss-brand-color-emperor !default; 
+$occlss-form-cntrls-border-color-base-input-focus:   $occlss-global-colour-focus !default;
+$occlss-form-cntrls-font-color-base-input:           $occlss-brand-color-emperor !default;
+
+
+
+
+
+// Custom checkboxes
+$occlss-form-cntrls-spacing-checkboxes:               30px !default;
+$occlss-form-cntrls-border-color-checkboxes:          $occlss-form-cntrls-border-color-base-input !default;
+$occlss-form-cntrls-border-color-checkboxes-focus:    $occlss-form-cntrls-border-color-base-input-focus !default;
+$occlss-form-cntrls-border-color-checkboxes-disabled: #aeb0b5 !default; 
+
+
+
+
+
+// Short search form
+$occlss-form-cntrls-short-search-border-radius-input:             $occlss-button-search-border-radius !default;
+$occlss-form-cntrls-short-search-border-color-input-focus:        $occlss-brand-color-ronchi !default;
+$occlss-form-cntrls-short-search-icon-color:                      $occlss-brand-color-mine-shaft !default;
+
+
+
+
+
+// Sign up form
+$occlss-form-cntrls-sign-up-font-size-input:           $occlss-form-cntrls-font-size-input-general !default;
+$occlss-form-cntrls-sign-up-font-color-input:          $occlss-brand-color-cod-gray !default;
+$occlss-form-cntrls-sign-up-border-input:              $occlss-form-cntrls-border-input-general !default;
+$occlss-form-cntrls-sign-up-font-color-group-title:    #ffffff !default;
+$occlss-form-cntrls-sign-up-font-size-group-title:     $occlss-global-font-size-medium !default;
+$occlss-form-cntrls-sign-up-font-weight-group-title:   $occlss-global-font-weight-medium !default;
+$occlss-form-cntrls-sign-up-font-family-group-title:   $occlss-global-font-family-secondary !default;
+
+
+
+
+
+// Search place form
+$occlss-find-my-nearest-bg-color:             #d6d8e0 !default;
+$occlss-find-my-nearest-link-font-size:       $occlss-global-font-size-medium !default;
+$occlss-find-my-nearest-link-font-weight:     $occlss-global-font-weight-regular !default;
+$occlss-find-my-nearest-link-color-hover:     $occlss-brand-color-catalina-blue !default;
+$occlss-find-my-nearest-link-color-disabled:  $occlss-brand-color-pale-sky !default;
+
+$occlss-find-my-nearest-label-font-size:      $occlss-global-font-size-x-large !default;
+
+
+
+
+
+// Navigations
+// Category nav _occlss-category-nav.scss
+$occlss-category-nav-paddin:                         0 !default;
+$occlss-category-nav-font-family:                    $occlss-global-font-family-secondary !default;
+$occlss-category-nav-font-size:                      $occlss-global-font-size-large !default;
+$occlss-category-nav-font-weight:                    $occlss-global-font-weight-bold !default;
+$occlss-category-nav-link-color:                     $occlss-brand-color-emperor !default;
+$occlss-category-nav-underline-height:               4px !default;
+$occlss-category-nav-underline-active-height:        8px !default;
+$occlss-category-nav-margin-underline:               0 30px 0 0 !default;
+$occlss-category-nav-color-text-residents:           #000000 !default;
+$occlss-category-nav-color-underline-residents:      $occlss-brand-color-aqua-deep !default;
+$occlss-category-nav-color-text-business:            #000000 !default;
+$occlss-category-nav-color-underline-business:       $occlss-brand-color-boston-blue !default;
+$occlss-category-nav-color-text-council:             #000000 !default;
+$occlss-category-nav-color-underline-council:        $occlss-brand-color-victoria !default;
+$occlss-category-nav-font-size-nav-item-selected:    $occlss-global-font-size-xxxx-large !default;
+$occlss-category-nav-font-family-nav-item-selected:  $occlss-global-font-family-primary !default;
+
+
+
+
+// Site navigation _occlss-site-nav.scss
+$occlss-site-nav-background-color:                    $occlss-brand-color-aqua-deep !default;
+$occlss-site-nav-background-color-secondary:          $occlss-brand-color-apple !default;
+$occlss-site-nav-padding:                             0 24px !default;
+$occlss-site-nav-toggle-link-color-hover:             $occlss-link-color-primary-hover !default;
+
+
+
+
+// Pane
+// Top tasks pane _occlss-top-tasks-pane.scss
+$occlss-top-tasks-pane-heading-border:                2px solid transparent !default;
+$occlss-top-tasks-pane-content-border:                6px solid transparent !default;
+$occlss-top-tasks-pane-color-residents:               $occlss-brand-color-aqua-deep !default;
+$occlss-top-tasks-pane-color-business:                $occlss-brand-color-boston-blue !default;
+$occlss-top-tasks-pane-color-council:                 $occlss-brand-color-victoria !default;
+$occlss-top-tasks-pane-color-widget:                  #ffffff !default;
+$occlss-top-tasks-pane-background:                    #feead2 !default;
+
+
+
+$occlss-top-tasks-pane-heading-font-size:             32px !default;
+
+
+
+
+// Tabs _occlss-tab-widget.scss
+$occlss-tab-widget-font-family-tab:                      $occlss-global-font-family-secondary !default;
+$occlss-tab-widget-font-weight-tab:                      $occlss-global-font-weight-semibold !default;
+$occlss-tab-widget-font-size-tabs:                       $occlss-global-font-size-xxx-large !default;
+$occlss-tab-widget-font-size-tabs-active:                $occlss-global-font-size-xxxx-large !default;
+$occlss-tab-widget-font-color-tabs:                      $occlss-brand-color-selective-yellow !default;
+$occlss-tab-widget-font-color-tabs-hover:                $occlss-brand-color-selective-yellow !default;
+$occlss-tab-widget-font-color-tabs-active:               $occlss-brand-color-cod-gray !default;
+$occlss-tab-widget-border-color-tabs:                    $occlss-brand-color-selective-yellow !default;
+
+
+
+
+
+// Summary list _occlss-summary-list.scss
+$occlss-summary-list-border-color-item:                $occlss-brand-color-nebula !default;
+$occlss-summary-list-font-color-tab-widget:            $occlss-brand-color-mine-shaft !default;
+$occlss-summary-list-hover-color:                      $occlss-brand-color-iron !default;
+$occlss-summary-list-item-padding:                     $occlss-global-padding-v1 !default;
+
+// View all link _utilities.scss
+$occlss-utilities-font-color-more-link-tab-widget:     $occlss-brand-color-mine-shaft !default;
+
+
+
+
+
+// Featured panels _occlss-promoted-content-panel.scss
+$occlss-promoted-content-panel-background-color:                           transparent !default;
+$occlss-promoted-content-panel-font-color:                                 $occlss-brand-color-cod-gray !default;
+$occlss-promoted-content-panel-icon-color:                                 $occlss-brand-color-cod-gray !default;
+$occlss-promoted-content-panel-padding:                                    20px !default;
+
+
+
+// Promo colours
+$occlss-promoted-content-panel-background-color-aqua-deep:                 $occlss-brand-color-aqua-deep !default;
+$occlss-promoted-content-panel-background-color-selective-yellow:          $occlss-brand-color-selective-yellow !default;
+$occlss-promoted-content-panel-background-color-forest-green:              $occlss-brand-color-forest-green !default;
+$occlss-promoted-content-panel-background-color-boston-blue:               $occlss-brand-color-boston-blue !default;
+$occlss-promoted-content-panel-background-color-keppel:                    $occlss-brand-color-keppel !default;
+$occlss-promoted-content-panel-background-color-pale-sky:                  $occlss-brand-color-pale-sky !default;
+$occlss-promoted-content-panel-background-color-victoria:                  $occlss-brand-color-victoria !default;
+
+$occlss-promoted-content-panel-text-line-font-size-header-giga:            60px !default;
+$occlss-promoted-content-panel-text-line-font-weight-header-giga:          $occlss-global-font-weight-black !default;
+$occlss-promoted-content-panel-text-line-font-family-header-giga:          $occlss-global-font-family-secondary !default;
+
+$occlss-promoted-content-panel-text-line-font-size-header-mega:            60px !default;
+$occlss-promoted-content-panel-text-line-font-weight-header-mega:          $occlss-global-font-weight-bold !default;
+$occlss-promoted-content-panel-text-line-font-family-header-mega:          $occlss-global-font-family-secondary !default;
+
+$occlss-promoted-content-panel-text-line-font-size-header-xlarge:          54px !default;
+$occlss-promoted-content-panel-text-line-font-weight-header-xlarge:        $occlss-global-font-weight-semibold !default;
+$occlss-promoted-content-panel-text-line-font-family-header-xlarge:        $occlss-global-font-family-secondary !default;
+
+$occlss-promoted-content-panel-text-line-font-size-header-large:            40px !default;
+$occlss-promoted-content-panel-text-line-font-weight-header-large:          $occlss-global-font-weight-semibold !default;
+$occlss-promoted-content-panel-text-line-font-family-header-large:          $occlss-global-font-family-secondary !default;
+
+$occlss-promoted-content-panel-text-line-font-size-header-small:            28px !default;
+$occlss-promoted-content-panel-text-line-font-weight-header-small:          $occlss-global-font-weight-bold !default;
+$occlss-promoted-content-panel-text-line-font-family-header-small:          $occlss-global-font-family-secondary !default;
+
+
+$occlss-promoted-content-panel-text-line-font-size-text-medium:              24px !default;
+$occlss-promoted-content-panel-text-line-font-size-text-large:               30px !default;
+
+
+$occlss-promoted-content-panel-text-line-alert-heading-underline-color:      $occlss-brand-color-forest-green !default;
+
+
+// Cards _occlss-card.scss
+$occlss-card-title-font-size:                        $occlss-global-font-size-medium !default;
+$occlss-card-title-font-color:                       $occlss-brand-color-emperor !default;
+$occlss-card-link-font-color:                        $occlss-brand-color-mine-shaft !default;
+
+
+
+// Alerts _occlss-alert.scss
+$occlss-alert-font-color-heading:                    $occlss-brand-color-cod-gray !default;
+$occlss-alert-font-size-heading:                     $occlss-global-font-size-x-large !default;
+$occlss-alert-font-weight-heading:                   $occlss-global-font-weight-semibold !default;
+$occlss-alert-font-color-text:                       $occlss-brand-color-cod-gray !default;
+$occlss-alert-font-size-text:                        $occlss-global-font-size-medium !default;
+$occlss-alert-font-weight-text:                      $occlss-global-font-weight-light !default;
+$occlss-alert-border-color-warning:                  $occlss-brand-color-tahiti-gold !default;
+$occlss-alert-background-color-warning:              $occlss-brand-color-bleach-white !default;
+$occlss-alert-border-color-error:                    $occlss-brand-color-milano-red !default;
+$occlss-alert-background-color-error:                $occlss-brand-color-bridesmaid !default;
+$occlss-alert-border-color-success:                  $occlss-brand-color-apple !default;
+$occlss-alert-background-color-success:              $occlss-brand-color-zanah !default;
+$occlss-alert-border-color-info:                     $occlss-brand-color-denim !default;
+$occlss-alert-background-color-info:                 $occlss-brand-color-solitude !default;
+
+
+
+
+// Carusel _owl-carousel-theme.scss
+$occlss-carusel-navbar-z-index:                        $occlss-global-zindex-unit-9 !default; 
+$occlss-carusel-nav-button-background-color:           $occlss-brand-color-pale-sky !default;  
+$occlss-carusel-dot-button-background-color-default:   $occlss-brand-color-pale-sky !default; 
+$occlss-carusel-dot-button-background-color-hover:     $occlss-brand-color-pizza !default;
+
+
+
+
+// CMS
+// Footer _cms-content-footer.scss
+$occlss-cms-footer-text-font-size:                      $occlss-global-font-size-large !default;
+$occlss-cms-footer-text-font-weight:                    $occlss-global-font-weight-light !default;
+$occlss-cms-footer-heading-font-weight:                 $occlss-global-font-weight-bold !default;
+$occlss-cms-footer-link-font-color:                     $occlss-link-color-primary-hover !default;
+$occlss-cms-footer-link-weight:                         $occlss-global-font-weight-regular !default;
+$occlss-cms-footer-u-more-link-weight:                  $occlss-global-font-weight-bold !default;
+
+
+
+// Page guide _occlss-page-guide.scss
+$occlss-page-guide-border:                               1px solid $occlss-brand-color-mine-shaft !default;  
+
+
+
+
+// Sidebar _occlss-sidebar-item-section.scss
+// Sidebar item section
+$occlss-sidebar-item-section-background-color:             $occlss-brand-color-mine-shaft !default;  
+$occlss-sidebar-item-section-background-color-residents:   $occlss-brand-color-aqua-deep !default; 
+$occlss-sidebar-item-section-background-color-business:    $occlss-brand-color-boston-blue !default; 
+$occlss-sidebar-item-section-background-color-council:     $occlss-brand-color-victoria !default; 
+
+
+
+
+// Version bar
+$occlss-version-bar-background:                          $occlss-brand-color-cod-gray !default;
+$occlss-version-bar-badge-font-weight:                   $occlss-global-font-weight-black !default;
+$occlss-version-bar-padding:                             5px 32px !default;
+
+
+
+
+// Skip to content menu
+$occlss-skip-to-content-background:                      $occlss-brand-color-ronchi !default;
+$occlss-skip-to-content-cont-color:                      $occlss-brand-color-mine-shaft !default;
+
+
+
+
+// A to Z nav
+$occlss-a-to-z-background:                                 $occlss-brand-color-black !default;
+$occlss-a-to-z-letter-font-size:                           $occlss-global-font-size-x-large !default;
+$occlss-a-to-z-letter-font-weight:                         $occlss-global-font-weight-semibold !default;
+$occlss-a-to-z-letter-color-off:                           #989898 !default;
+$occlss-a-to-z-letter-selected-color:                      $occlss-brand-color-ronchi !default;
+
+
+
+
+// Hero pane
+$occlss-hero-pane-heading-font-family:                     $occlss-global-font-family-secondary !default;                
+$occlss-hero-pane-heading-font-weight:                     $occlss-global-font-weight-black !default;               
+$occlss-hero-pane-heading-font-color:                      $occlss-brand-color-mine-shaft !default;
+$occlss-hero-pane-heading-bg-color:                        #fff !default;
+$occlss-hero-pane-heading-bg-color-residents:              #feead2 !default;
+$occlss-hero-pane-heading-bg-color-business:               $occlss-brand-color-link-water !default;
+$occlss-hero-pane-heading-bg-color-council:                $occlss-brand-color-snuff  !default;
+
+
+
+
+// Popular content panel
+$occlss-popular-content-color-primary:                     $occlss-brand-color-aqua-deep !default;
+$occlss-popular-content-color-residents:                   $occlss-brand-color-aqua-deep !default;
+$occlss-popular-content-color-business:                    $occlss-brand-color-boston-blue !default;
+$occlss-popular-content-color-council:                     $occlss-brand-color-victoria !default;
+$occlss-popular-content-heading-color:                     #ffffff !default;
+$occlss-popular-content-heading-font-size:                 $occlss-global-font-size-large !default;
+$occlss-popular-content-heading-font-weight:               $occlss-global-font-weight-regular !default;
+
+
+
+// Splitter
+$occlss-splitter-color:                                    $occlss-brand-color-iron !default;
+$occlss-splitter-residents-color:                          $occlss-brand-color-aqua-deep !default;
+$occlss-splitter-business-color:                           $occlss-brand-color-boston-blue !default;
+$occlss-splitter-council-color:                            $occlss-brand-color-victoria !default;
+
+
+
+
+// Trim
+$occlss-trim-border-color-primary:    $occlss-brand-color-pale-sky !default;
+$occlss-trim-border-color-green:      $occlss-brand-color-aqua-deep !default;
+
+
+
+
+// Filter pannel
+$occlss-fp-close-psnrl-bg-color-primary:    $occlss-brand-color-aqua-deep;
+$occlss-fp-close-psnrl-icon-hover-color:    $occlss-link-bg-color-primary-hover;
+
+
+
+
+// Facets
+$occlss-facets-link-color-primary:    #000000;
+
+
+
+
+// Pager
+$occlss-pager-border-radius:    5px;
+
+
+
+
+// Loading bar
+$occlss-loading-bar-icon-colors:            $occlss-brand-color-pale-sky;   
+$occlss-loading-bar-icon-dark-gray-colors:  $occlss-brand-color-pale-sky;
+
+
+
+
+// Short summary grid
+$occlss-short-summary-content-font-size-title:       $occlss-global-font-size-x-large !default;  
+$occlss-short-summary-content-font-weight-title:     $occlss-global-font-weight-semibold !default; 
+$occlss-short-summary-content-font-size-text:        $occlss-global-font-size-medium !default; 
+$occlss-short-summary-content-font-color:            $occlss-brand-color-cod-gray !default; 
+$occlss-short-summary-residents-color:               $occlss-brand-color-nebula  !default;
+$occlss-short-summary-business-color:                $occlss-brand-color-link-water !default;
+$occlss-short-summary-council-color:                 $occlss-brand-color-snuff !default;
+
+
+
+
+// Accordion
+$occlss-accordion-color-primary:                     $occlss-brand-color-pale-sky !default;
+$occlss-accordion-color-residents:                   $occlss-brand-color-pale-sky !default;
+$occlss-accordion-color-business:                    $occlss-brand-color-pale-sky !default;
+$occlss-accordion-color-council:                     $occlss-brand-color-pale-sky !default;
+$occlss-accordion-heading-color:                     #ffffff !default;
+$occlss-accordion-heading-font-size:                 $occlss-global-font-size-large !default;
+$occlss-accordion-heading-font-weight:               $occlss-global-font-weight-regular !default;
+
+
+
+
+// Summary card
+$occlss-summary-card-title-color:                    $occlss-link-color-primary !default;
+$occlss-summary-card-title-color-hover:              $occlss-link-color-primary !default;
+$occlss-summary-card-summary-text-color:             #333333 !default;
+$occlss-summary-card-summary-text-color-hover:       #000000 !default;
+$occlss-summary-card-bg-color-hover:                 $occlss-brand-color-iron !default;
+$occlss-summary-card-border-color:                   $occlss-brand-color-nebula !default;
+
+
+
+
+// Table
+$occlss-table-border-color:                          $occlss-brand-color-iron !default;
+$occlss-table-cell-padding:                          $occlss-global-padding-v1 !default;
+$occlss-table-header-font-weight:                    $occlss-global-font-weight-bold !default;
+$occlss-table-header-font-weight-numeric:            $occlss-global-font-weight-regular !default;
+$occlss-table-header-font-weight-caption:            $occlss-global-font-weight-bold !default;
+
+
+
+
+// Social media link
+$occlss-social-media-link-color:                      $occlss-brand-color-mine-shaft !default;
+$occlss-social-media-link-font-weight:                $occlss-global-font-weight-semibold !default;
+
+
+
+
+
+// Wdget container 
+$occlss-wdget-container-border-color:                $occlss-brand-color-nebula !default;
+
+
+
+
+
+// Additional content elements
+// Alert box
+$occlss-alert-box-font-weight:                       $occlss-global-font-weight-regular !default;
+$occlss-alert-box-font-size:                         $occlss-global-font-size-medium !default;
+$occlss-alert-box-icon-font-weight:                  $occlss-global-font-weight-black !default;
+$occlss-alert-box-icon-color:                        $occlss-brand-color-black !default;
+
+
+
+
+
+// Info box
+$occlss-info-box-border-color:                       $occlss-brand-color-pale-sky !default;
+
+
+
+
+
+// Box out
+$occlss-box-out-padding:                             26px !default;
+$occlss-box-out-bg-color:                            $occlss-brand-color-iron !default;
+
+
+
+
+
+// Box out
+$occlss-download-link-padding:                        26px !default;
+$occlss-download-link-bg-color:                       $occlss-brand-color-iron !default;
+
+
+
+
+
+// Calendar date
+$occlss-calendar-date-color:                         $occlss-brand-color-selective-yellow !default;
+$occlss-calendar-font-size:                          $occlss-global-font-size-xx-large !default; 
+$occlss-calendar-font-size-weight:                   $occlss-global-font-weight-bold !default;
+
+
+
+// Pagination
+$occlss-pagination-title-font-size:                  $occlss-global-font-size-medium !default;
+
+
+
+
+// Pagination
+$occlss-content-navigation-border-color:             $occlss-brand-color-nebula !default;
+$occlss-content-navigation-title-font-size:          $occlss-brand-color-nebula !default;
+$occlss-content-navigation-title-font-family:        $occlss-global-font-family-primary !default;
+
+
+
+
+// Jump links
+$jump-links-link-font-size:                          $occlss-global-font-size-large !default;
+$jump-links-border-color:                            $occlss-brand-color-nebula !default;
+$jump-links-dash-color:                              $occlss-brand-color-mine-shaft !default;
+
+
+
+
+// Footer feedback
+$footer-feedback-bg-color:                           $occlss-brand-color-iron !default;
+$footer-feedback-links-color:                        $occlss-brand-color-black !default;
+$footer-feedback-submitted-text-weight:              $occlss-global-font-weight-bold !default;

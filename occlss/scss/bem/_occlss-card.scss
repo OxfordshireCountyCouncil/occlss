@@ -1,0 +1,72 @@
+.occlss-card {
+    /*margin-bottom: rem(24px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        margin-bottom: 0;
+    }*/
+}
+
+.occlss-card__image-container {
+    width: 100%;
+    height: rem(257px);
+    overflow: hidden;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        height: auto;
+        max-height: rem(400px);
+    }
+    position: relative;
+    margin-bottom: rem(23px);
+    border: 1px solid #000000;
+    background-color: #000000;
+}
+
+.occlss-card__image {
+     width: 100%;
+     display: block;
+     @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);    
+        
+        //background-size: cover;
+        //background-position: center center;
+    }
+}
+
+.occlss-card__header {
+    margin: 0;
+}
+
+.occlss-card__title {
+    font-size: rem($occlss-card-title-font-size);
+    color: $occlss-card-title-font-color;
+    margin: 0;
+}
+
+.occlss-card__main {
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.occlss-card__link {
+    width: 100%;
+    text-decoration: none;
+    color: $occlss-card-link-font-color;
+    display: inline-block;
+
+    &:hover {
+        color: $occlss-card-link-font-color;
+        text-decoration: underline;
+    }
+    &:focus {
+        @extend %highlight-bg-on-focus;
+        text-decoration: underline;     
+    }
+}
+
+.occlss-card__paragraph {
+    margin-bottom: 0;
+}

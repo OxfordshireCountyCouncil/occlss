@@ -1,0 +1,37 @@
+---
+title: Footer feedback from
+description: [Description]
+section: Components
+layout: layout-pane.njk
+theme: Forms
+order: 0
+show_page_nav: false
+---
+
+{% from "_doc-el.njk" import UIel %}
+{% from "_example.njk" import example %}
+
+
+{{ example({group: "components", item: "footer-feedback-form", example: "default", html: true }) }}
+
+### When to use this component 
+
+[Text]
+
+### How it works
+
+[Text]
+
+{{ UIel({
+    item: "changelog",
+    logs: [
+        {
+        heading: "1.0.0",
+        comments: [
+            {
+                text: "Component Added"
+            }
+        ]
+        }
+    ] 
+}) }}

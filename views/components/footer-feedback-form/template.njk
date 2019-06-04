@@ -1,0 +1,53 @@
+{% from "button/macro.njk" import occlssButton %}
+{% from "form-controls/macro.njk" import occlssFormCntrls %}
+
+
+<div class="occlss-footer-feedback js-occlss-footer-feedback">
+
+    <div class="occlss-wrapper">
+        <div class="occlss-footer-feedback__controls js-occlss-footer-feedback-controls">
+            <a href="#" class="occlss-footer-feedback__link js-footer-feedback-open" aria-expanded="false" aria-controls="occlss-footer-feedback-collapsible--1" id="occlss-footer-feedback-label-collapsible--1">Is there anything wrong with this page?</a>
+        </div>
+    </div>
+
+    <div class="occlss-wrapper occlss-footer-feedback__wrapper">
+    <div class="occlss-footer-feedback__form-cont" aria-labelledby="occlss-footer-feedback-label-collapsible--1" id="occlss-footer-feedback-collapsible--1">
+      <div class="occlss-layout occlss-layout--gutter-s occlss-u-bpspace-none">
+        <div class="occlss-layout__col">
+            
+                <div class="occlss-footer-feedback__close-cont">
+                    <a href="#" class="js-footer-feedback-close">Close</a>
+                </div>
+
+                <form class="occlss-form">
+                    <fieldset>
+                        <legend class="occlss-form__group-title occlss-form__group-title--large">Help us improve Oxfordshire.gov.uk</legend>
+                        <span class="occlss-form__desc-text">Don’t include any personal or financial information like your National Insurance number or credit card numbers.</span>
+                        {{ occlssFormCntrls({
+                        type: "input-text",
+                        inputClasses: "occlss-form-cntrls--size-450",
+                        labelText: "What were you doing?"
+                        }) }}
+                        {{ occlssFormCntrls({
+                        type: "input-text",
+                        inputClasses: "occlss-form-cntrls--size-450",
+                        labelText: "What went wrong?"
+                        }) }}
+                    </fieldset>
+                    <nav class="occlss-form__controls occlss-u-bspace-large" role="navigation">
+                        <ul class="occlss-form__listitems">
+                            <li class="occlss-form__controls-list-item">
+                                {{ occlssButton({
+                                text: "Send",
+                                classes: "occlss-button--primary"
+                                }) }}
+                            </li>
+                        </ul>
+                    </nav>
+                </form>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>

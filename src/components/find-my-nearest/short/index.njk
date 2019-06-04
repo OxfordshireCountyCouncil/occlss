@@ -1,0 +1,12 @@
+---
+title: Find my nearest short
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "find-my-nearest/macro.njk" import occlssFindMyNearest %}
+
+{{ occlssFindMyNearest({
+    type: "short"
+}) }}

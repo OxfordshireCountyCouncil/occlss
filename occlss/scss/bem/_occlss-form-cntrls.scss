@@ -24,6 +24,7 @@
 
 .occlss-form-cntrls--sign-up-group {
   padding: rem(0 10px 0 0);
+  margin-bottom: 0;
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
       padding-right: 0;
       margin-bottom: rem(16px);

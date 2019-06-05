@@ -17,10 +17,6 @@ html {
     @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
         font-size: 100%;
     }
-
-    /*@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'xlg'))) {
-        font-size: 112.5%; // This means 18px 
-    }*/
 }
 
 p {

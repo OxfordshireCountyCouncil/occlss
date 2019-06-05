@@ -11,7 +11,6 @@ const browsersyncCnf = {
   files: [
     paths.source + '**/*',
     paths.views + '**/*',
-    paths.occlss + '**/*',
   ] // files to watch
 };
 

@@ -14,7 +14,7 @@ var $ = {
 //////////////////////////////
 
 // How to?
-// SVG icons should go to "/occlss/svg-source/svgs" folder and must be all the same size,
+// SVG icons should go to "/svg-source/svgs" folder and must be all the same size,
 // the folder name "icon" will be added in to svg id, so it will be "{icon name}"
 // SVG sprite will be created in "images" folder
 // To create SVG sprite type "gulp svg-sprite-create"
@@ -23,15 +23,14 @@ var $ = {
 gulp.task('clean:svgicons', function (done) {
   return del([
     './views/components/icon/template.njk',
-    './occlss/svg-source/delivery/**/*',
-    './src/assets/images/occlss-sprite.svg',
-    './occlss/css/scss/bem/_occlss-icon-gen.scss'
+    './svg-source/delivery/**/*',
+    './src/assets/images/occlss/occlss-sprite.svg'
   ]);
   done();
 });
 
 gulp.task('svg-sprite-create', function(done) {
-  return gulp.src("occlss/svg-source/svgs/*")
+  return gulp.src("svg-source/svgs/*")
     .pipe($.svgSprite({
       shape: {
         spacing: {
@@ -47,16 +46,12 @@ gulp.task('svg-sprite-create', function(done) {
         symbol: {
           dest: "./",
           layout: "diagonal",
-          sprite: "./src/assets/images/occlss-sprite.svg",
+          sprite: "./src/assets/images/occlss/occlss-sprite.svg",
           bust: false,
           render: {
-            /*scss: {
-              dest: "./source/css/scss/bem/_occlss-icon-gen.scss",
-              template: "./source/svg-source/tpl/custom.scss"
-            },*/
             njk: {
               dest: "./views/components/icon/template",
-              template: "./occlss/svg-source/tpl/custom.html"
+              template: "./svg-source/tpl/custom.html"
             }
           }
         }
@@ -83,5 +78,4 @@ gulp.task('svg-sprite-create', function(done) {
  * COMPOUND TASKS
 ******************************************************/
 
-//gulp.task('default', gulp.series('clean:svgicons', 'svg-sprite-create', 'split-svg-mustache'));
 gulp.task('default', gulp.series('clean:svgicons', 'svg-sprite-create'));

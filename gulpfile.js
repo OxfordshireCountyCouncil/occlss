@@ -9,6 +9,16 @@ var $ = {
   svgSprite: require('gulp-svg-sprite'),
 };
 
+
+
+// Clean nodejs.module folder
+gulp.task('clean:nodejsmodule', function (done) {
+  return del([
+    './nodejs.module/**/*'
+  ]);
+  done();
+});
+
 //////////////////////////////
 // SVG sprite generator
 //////////////////////////////
@@ -73,9 +83,21 @@ gulp.task('svg-sprite-create', function(done) {
 });
 
 
+// Generate files for NPM package
+gulp.task('genNodeModule', function (done) {
+  // get Sass files
+  gulp.src(['./src/occlss-scss/**']).pipe(gulp.dest('./nodejs.module/scss'));
+  // get JavaScript files
+  gulp.src(['./src/assets/js/occlss/**','!./src/assets/js/occlss/browser.detect.js']).pipe(gulp.dest('./nodejs.module/js'));
+  // get Images files
+  gulp.src(['./src/assets/images/occlss/**', '!./src/assets/images/occlss/demo', '!./src/assets/images/occlss/demo/**']).pipe(gulp.dest('./nodejs.module/images'));
+  done();
+});
+
 
 /******************************************************
  * COMPOUND TASKS
 ******************************************************/
 
+gulp.task('gen', gulp.series('clean:nodejsmodule','clean:svgicons', 'svg-sprite-create','genNodeModule'));
 gulp.task('default', gulp.series('clean:svgicons', 'svg-sprite-create'));

@@ -8,7 +8,6 @@ order: 0
 show_page_nav: true
 ---
 
-{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
 
 ## Input
@@ -23,7 +22,6 @@ show_page_nav: true
 
 [Text]
 
-
 ## Input error
 
 {{ example({group: "components", item: "form-controls", example: "input-error", html: true }) }}
@@ -35,8 +33,6 @@ show_page_nav: true
 ### How it works
 
 [Text]
-
-
 
 ## Input inline
 
@@ -50,7 +46,6 @@ show_page_nav: true
 
 [Text]
 
-
 ## Input max width 210px
 
 {{ example({group: "components", item: "form-controls", example: "input-width-210", html: true }) }}
@@ -62,7 +57,6 @@ show_page_nav: true
 ### How it works
 
 [Text]
-
 
 ## Input max width 310px
 
@@ -76,8 +70,6 @@ show_page_nav: true
 
 [Text]
 
-
-
 ## Input max width 450px
 
 {{ example({group: "components", item: "form-controls", example: "input-width-450", html: true }) }}
@@ -89,8 +81,6 @@ show_page_nav: true
 ### How it works
 
 [Text]
-
-
 
 ## Select
 
@@ -104,7 +94,6 @@ show_page_nav: true
 
 [Text]
 
-
 ## Textarea
 
 {{ example({group: "components", item: "form-controls", example: "textarea", html: true }) }}
@@ -116,7 +105,6 @@ show_page_nav: true
 ### How it works
 
 [Text]
-
 
 ## Textarea error
 
@@ -130,8 +118,6 @@ show_page_nav: true
 
 [Text]
 
-
-
 ## Checkbox
 
 {{ example({group: "components", item: "form-controls", example: "checkbox", html: true }) }}
@@ -143,8 +129,6 @@ show_page_nav: true
 ### How it works
 
 [Text]
-
-
 
 ## Checkbox disabled
 
@@ -158,7 +142,6 @@ show_page_nav: true
 
 [Text]
 
-
 ## Radio button
 
 {{ example({group: "components", item: "form-controls", example: "radio-button", html: true }) }}
@@ -170,8 +153,6 @@ show_page_nav: true
 ### How it works
 
 [Text]
-
-
 
 ## Radio button disabled
 
@@ -185,16 +166,8 @@ show_page_nav: true
 
 [Text]
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+## Changelog
+
+#### 1.0.0
+
+- Component Added

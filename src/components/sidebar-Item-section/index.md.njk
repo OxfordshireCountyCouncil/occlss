@@ -8,8 +8,6 @@ order: 0
 show_page_nav: false
 ---
 
-{% from "_doc-el.njk" import UIel %}
-{% from "table/macro.njk" import occlssTable %}
 {% from "_example.njk" import example %}
 
 ## Sidebar item section
@@ -32,16 +30,8 @@ Container `.occlss-sidebar-item-section` modifier `.occlss-sidebar-item-section-
 
 `.occlss-sidebar-item-section--residents` the modifier used only if the sidebar item section appearing in the residents area.
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+## Changelog
+
+#### 1.0.0
+
+- Component Added

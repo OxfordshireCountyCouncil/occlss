@@ -8,7 +8,6 @@ order: 0
 show_page_nav: true
 ---
 
-{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
 
 ## Error
@@ -21,8 +20,6 @@ show_page_nav: true
 
 [Text]
 
-
-
 ## Info
 
 {{ example({group: "components", item: "Alerts", example: "info", html: true }) }}
@@ -32,7 +29,6 @@ show_page_nav: true
 ### When to use this component 
 
 [Text]
-
 
 ## Success
 
@@ -44,8 +40,6 @@ show_page_nav: true
 
 [Text]
 
-
-
 ## Warning
 
 {{ example({group: "components", item: "Alerts", example: "warning", html: true }) }}
@@ -56,16 +50,8 @@ show_page_nav: true
 
 [Text]
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+## Changelog
+
+#### 1.0.0
+
+- Component Added

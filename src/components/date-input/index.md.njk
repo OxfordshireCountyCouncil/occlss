@@ -8,9 +8,7 @@ order: 0
 show_page_nav: false
 ---
 
-{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
-
 
 ## Date input
 
@@ -24,17 +22,8 @@ show_page_nav: false
 
 [Text]
 
+## Changelog
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+#### 1.0.0
+
+- Component Added

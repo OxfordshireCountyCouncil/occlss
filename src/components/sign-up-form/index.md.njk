@@ -8,7 +8,6 @@ order: 0
 show_page_nav: false
 ---
 
-{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
 
 ## Sign up form
@@ -23,16 +22,12 @@ show_page_nav: false
 
 [Text]
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+## Changelog
+
+#### 2.0.0
+- container class was missing, added back `occlss-form-cntrls`
+- margin-bottom: 0; added to `occlss-form-cntrls--sign-up-group` class 
+
+#### 1.0.0
+
+- Component Added

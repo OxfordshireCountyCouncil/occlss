@@ -7,15 +7,11 @@ order: 0
 show_page_nav: true
 ---
 
-{% from "_doc-el.njk" import UIel %}
-
 ## Fonts
 
 Oxfordshire County Council websites have common typographic needs: clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields. We recommend a font system that uses two open-source font families: Fira Sans and Open Sans, both of which are designed for legibility and can beautifully adapt to a variety of visual styles.
 
-
 To use our font face you will need to implement the following line in the head of you project 
-
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,900|Open+Sans:300,400,600,700" rel="stylesheet">
@@ -32,7 +28,6 @@ To use our font face you will need to implement the following line in the head o
 
 Font home page - <a href="https://fonts.google.com/specimen/Fira+Sans?selection.family=Fira+Sans" target="_blank">Fira Sans</a>
 
-
 ## Open Sans
 
 <div class="doc-occlss-Fira-Sans-light">Light - 'Open Sans', sans-serif;, weight: 300</div>
@@ -41,7 +36,6 @@ Font home page - <a href="https://fonts.google.com/specimen/Fira+Sans?selection.
 <div class="doc-occlss-Fira-Sans-bold">Bold - 'Open Sans', sans-serif;, weight: 700</div>
 
 Font home page - <a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Open Sans</a>
-
 
 ## Fonts Sizes
 
@@ -54,9 +48,6 @@ Font home page - <a href="https://fonts.google.com/specimen/Open+Sans" target="_
 <div class="doc-occlss-font-size-medium">Font size medium (font-size: 20px; )</div>
 <div class="doc-occlss-font-size-regular">Font size regular (font-size: 16px; )</div>
 <div class="doc-occlss-font-size-small">Font size small (font-size: 14px; )</div>
-
-
-
 
 ## H1 - Main title
 
@@ -90,7 +81,6 @@ Font home page - <a href="https://fonts.google.com/specimen/Open+Sans" target="_
 <h4>Section subtitle <small>Secondary text</small></h4>
 ```
 
-
 ## Summary text example
 
 <p class="occlss-g-summary-text">A paragraph (from the Greek paragraphos, is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
@@ -107,16 +97,8 @@ A paragraph (from the Greek paragraphos, is a self-contained unit of a discourse
 <p>A paragraph text example.</p>
 ```
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+## Changelog
+
+#### 1.0.0
+
+- Component Added

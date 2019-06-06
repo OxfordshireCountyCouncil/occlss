@@ -8,7 +8,6 @@ order: 0
 show_page_nav: false
 ---
 
-{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
 
 ## Popular content pane
@@ -27,17 +26,8 @@ show_page_nav: false
 
 Container class `.occlss-popular-content-pane` mod class `.occlss-popular-content-pane--residents`,`.occlss-popular-content-pane--business`,`.occlss-popular-content-pane--council` this mode classes will add the panel colour.
 
+## Changelog
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+#### 1.0.0
+
+- Component Added

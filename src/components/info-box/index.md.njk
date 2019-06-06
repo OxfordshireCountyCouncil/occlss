@@ -8,7 +8,6 @@ order: 0
 show_page_nav: false
 ---
 
-{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
 
 ## Info box
@@ -25,16 +24,8 @@ Unlike the alert box, this is a callout that simply supplies some some related o
 
 [Text]
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+## Changelog
+
+#### 1.0.0
+
+- Component Added

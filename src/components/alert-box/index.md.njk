@@ -8,16 +8,13 @@ order: 0
 show_page_nav: false
 ---
 
-{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
-
 
 ## Alert Box
 
 This is a callout that allows us to draw the user’s attention to something of high importance. It should only be used where failure to comply with the warning could lead to a fine or danger to the user. For example, where they might get a parking ticket. It won’t be used often.
 
 {{ example({group: "components", item: "alert-box", example: "default", html: true }) }}
-
 
 ### When to use this component 
 
@@ -27,17 +24,8 @@ This is a callout that allows us to draw the user’s attention to something of 
 
 [Text]
 
+## Changelog
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+#### 1.0.0
+
+- Component Added

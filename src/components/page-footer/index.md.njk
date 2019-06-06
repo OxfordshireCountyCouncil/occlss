@@ -8,9 +8,7 @@ order: 0
 show_page_nav: true
 ---
 
-{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
-
 
 ## Page footer full
 
@@ -24,7 +22,6 @@ show_page_nav: true
 
 [Text]
 
-
 ## Page footer short
 
 {{ example({group: "components", item: "page-footer", example: "short", html: true }) }}
@@ -37,16 +34,8 @@ show_page_nav: true
 
 [Text]
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+## Changelog
+
+#### 1.0.0
+
+- Component Added

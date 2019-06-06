@@ -8,7 +8,6 @@ order: 0
 show_page_nav: true
 ---
 
-{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
 
 ## Page head
@@ -23,7 +22,6 @@ show_page_nav: true
 
 [Text]
 
-
 ## Page head mobile menu
 
 {{ example({group: "components", item: "page-head", example: "mobile", html: true }) }}
@@ -36,16 +34,8 @@ show_page_nav: true
 
 [Text]
 
-{{ UIel({
-    item: "changelog",
-    logs: [
-        {
-        heading: "1.0.0",
-        comments: [
-            {
-                text: "Component Added"
-            }
-        ]
-        }
-    ] 
-}) }}
+## Changelog
+
+#### 1.0.0
+
+- Component Added

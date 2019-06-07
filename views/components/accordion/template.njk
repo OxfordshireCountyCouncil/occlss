@@ -4,7 +4,7 @@
 		{% if item.content %} 
 			<div class="occlss-accordion__panel-content">
 				<p>
-					{{ item.content }}
+					{{ item.content | safe }}
 				</p>
 			</div>
 		{% endif %}	

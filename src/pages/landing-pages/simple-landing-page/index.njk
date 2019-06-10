@@ -16,6 +16,7 @@ layout: layout-example.njk
 {% from "accordion/macro.njk" import occlssAccordion %}
 {% from "pagination/macro.njk" import occlssPagination %}
 {% from "short-summary/macro.njk" import occlssShortSummary %}
+{% from "summary-list/macro.njk" import occlssSummaryList %}
 
 {{ occlssPageHead({
   type: "default",
@@ -114,7 +115,7 @@ layout: layout-example.njk
         </div>
         <!-- END :: Promoted content panel -->
         <!-- Short summary -->
-        <div class="occlss-layout__col occlss-layout__col--bleed occlss-layout__col--12 occlss-u-bspace-md">
+        <div class="occlss-layout__col occlss-layout__col--bleed occlss-layout__col--12">
 
             {{ occlssShortSummary({
               sectionTitle: "In this section",
@@ -154,7 +155,35 @@ layout: layout-example.njk
             <h2 class="occlss-g-xxx-large-text occlss-u-bspace-none">Related content</h2>
         </div>
         <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--md-4">
-            
+            {{ occlssSummaryList({
+            items: [
+                {
+                  title: "List of all schools",
+                  url: "javascript:void(0);"
+                },{
+                  title: "School appeals",
+                  url: "javascript:void(0);"
+                },{
+                  title: "School transfers",
+                  url: "javascript:void(0);"
+                },{
+                  title: "Religious education",
+                  url: "javascript:void(0);"
+                },{
+                  title: "School meals",
+                  url: "javascript:void(0);"
+                },{
+                  title: "Exclusions",
+                  url: "javascript:void(0);"
+                },{
+                  title: "Music service",
+                  url: "javascript:void(0);"
+                },{
+                  title: "Being educated at home",
+                  url: "javascript:void(0);"
+                }
+              ]
+            }) }}
         </div>
         <!-- END :: Summary list -->
     </div>

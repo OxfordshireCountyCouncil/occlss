@@ -1,13 +1,15 @@
+{%- set summaryListAttributes %} class="occlss-summary-list{% if params.classes %} {{ params.classes }}{% endif %}"{% endset %}
+
 {% if params.items %}
-	<ul class="occlss-summary-list occlss-u-bspace-md">
+	<ul {{ summaryListAttributes | safe }}>
 		{% for item in params.items %}
-			<li class="occlss-summary-list__item occlss-summary-list__item--underlined occlss-summary-list__item--td">
+			<li class="occlss-summary-list__item{% if item.classes %} {{ item.classes }}{% endif %}">
 			{% if item.url %}
 			<a href="{{ item.url }}" class="occlss-summary-list__link">{{ item.title }}</a>
 			{% else %}
-			{{ item.title }}
+			{{ item.title | safe }}
 			{% endif %}
 			</li>
 		{% endfor %}
-	</li>
+	</ul>
 {% endif %}

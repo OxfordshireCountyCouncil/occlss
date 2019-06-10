@@ -54,66 +54,69 @@ layout: layout-example.njk
     <!-- END :: Page header -->
     <!-- Page content -->
     <div class="occlss-layout occlss-layout--gutter-s">
+
         <!-- Promoted content panel -->
         <div class="occlss-layout__col occlss-layout__col--bleed occlss-layout__col--md-12">
-            <div class="occlss-layout">
+          <div class="occlss-layout">
 
-                <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-4 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
-                  {{ occlssPromotedContentPanel({
-                  panelColour: "aqua-dee",
-                  panelURL: "javascript:void(0);",
-                  textRows: [
-                      {
-                      text: "This term ends Wednesday 24 July",
-                      textSize: "text-medium",
-                      showArrow: "false"
-                      },{
-                      text: "The next term starts 3 September",
-                      textSize: "text-line",
-                      showArrow: "true"
-                      }
-                    ]
-                  }) }}
-                </div>
+              <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-4 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
+                {{ occlssPromotedContentPanel({
+                panelColour: "aqua-dee",
+                panelURL: "javascript:void(0);",
+                textRows: [
+                    {
+                    text: "This term ends Wednesday 24 July",
+                    textSize: "text-medium",
+                    showArrow: "false"
+                    },{
+                    text: "The next term starts 3 September",
+                    textSize: "text-line",
+                    showArrow: "true"
+                    }
+                  ]
+                }) }}
+              </div>
 
-                <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-4 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
-                  {{ occlssPromotedContentPanel({
-                  panelColour: "aqua-dee",
-                  panelURL: "javascript:void(0);",
-                  textRows: [
-                      {
-                      text: "Schools search",
-                      textSize: "text-medium",
-                      showArrow: "false"
-                      },{
-                      text: "Search by school type and town.",
-                      textSize: "text-line",
-                      showArrow: "true"
-                      }
-                    ]
-                  }) }}
-                </div>
-                <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-4 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
-                  {{ occlssPromotedContentPanel({
-                  panelColour: "pale-sky",
-                  panelURL: "javascript:void(0);",
-                  textRows: [
-                      {
-                      text: "Special educational needs",
-                      textSize: "text-medium",
-                      showArrow: "false"
-                      },{
-                      text: "The local offer",
-                      textSize: "text-line",
-                      showArrow: "true"
-                      }
-                    ]
-                  }) }}
-                </div>
+              <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-4 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
+                {{ occlssPromotedContentPanel({
+                panelColour: "aqua-dee",
+                panelURL: "javascript:void(0);",
+                textRows: [
+                    {
+                    text: "Schools search",
+                    textSize: "text-medium",
+                    showArrow: "false"
+                    },{
+                    text: "Search by school type and town.",
+                    textSize: "text-line",
+                    showArrow: "true"
+                    }
+                  ]
+                }) }}
+              </div>
+              
+              <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-4 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
+                {{ occlssPromotedContentPanel({
+                panelColour: "pale-sky",
+                panelURL: "javascript:void(0);",
+                textRows: [
+                    {
+                    text: "Special educational needs",
+                    textSize: "text-medium",
+                    showArrow: "false"
+                    },{
+                    text: "The local offer",
+                    textSize: "text-line",
+                    showArrow: "true"
+                    }
+                  ]
+                }) }}
+              </div>
 
-            </div>
+          </div>
         </div>
         <!-- END :: Promoted content panel -->
+
         <!-- Short summary -->
         <div class="occlss-layout__col occlss-layout__col--bleed occlss-layout__col--12">
 
@@ -150,12 +153,14 @@ layout: layout-example.njk
             }) }}
         </div>
         <!-- END :: Short summary -->
+
         <!-- Summary list -->
         <div class="occlss-layout__col occlss-layout__col--12">
             <h2 class="occlss-g-xxx-large-text occlss-u-bspace-none">Related content</h2>
         </div>
         <div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--md-4">
             {{ occlssSummaryList({
+            classes: 'occlss-u-bspace-md',
             items: [
                 {
                   title: "List of all schools",
@@ -186,6 +191,7 @@ layout: layout-example.njk
             }) }}
         </div>
         <!-- END :: Summary list -->
+
     </div>
     <!-- END :: Page content -->
   </div>

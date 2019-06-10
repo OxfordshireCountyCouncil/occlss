@@ -14,6 +14,7 @@ layout: layout-example.njk
 {% from "breadcrumb/macro.njk" import occlssBreadcrumb %}
 {% from "content-navigation/macro.njk" import occlssContentNavigation %}
 {% from "accordion/macro.njk" import occlssAccordion %}
+{% from "pagination/macro.njk" import occlssPagination %}
 
 {{ occlssPageHead({
   type: "default",
@@ -63,10 +64,10 @@ layout: layout-example.njk
 									heading: "Contents",
 									items: [
 										{
-											title: "Check if you are eligible for a Blue Badge"
-										},{
-											title: "Check your documents",
+											title: "Check if you are eligible for a Blue Badge",
 											url: "javascript:void(0);"
+										},{
+											title: "Check your documents"
 										},{
 											title: "How to supply your documents",
 											url: "javascript:void(0);"
@@ -82,43 +83,31 @@ layout: layout-example.njk
 
 					<div class="occlss-layout__col occlss-layout__col--md-8">
 
-						<h2>Check if you are eligible for a Blue Badge</h2>
+						<h2>Check your documents</h2>
 
-						<p>You may qualify for a Blue Badge if any of the following apply.</p>
+						<p>When you apply for a Blue Badge, you will be asked to provide a number of documents to support your application. The documents you need will depend on the criterion you are applying under. You will save yourself time if you make sure you have the documents available <strong>before</strong> you start your application.</p>
 
-						<h3>Auto-eligible criteria</h3>
+						<h3>How to get further medical information or summaries</h3>
 
-						{{ occlssAccordion({
-							panels: [
-								{
-									title: "Terminal illness",
-									content: "If you are someone who has been given a medical prognosis of less than a year to live, please speak to your
-									MacMillan Nurse, hospice worker, specialist nurse, GP or Health Professional who will complete a form on
-									your behalf. You do not have to complete an application."
-								},{
-									title: "Disability Living Allowance mobility component",
-									content: "You qualify if you are:<ul><li>In receipt of the Higher Rate Mobility Component – this will be confirmed on the letter from the DWP.</li></ul><p>You don't qualify if you are in receipt of:</p><ul><li>Low or Middle Rate Mobility Component</li><li>the Care Component at any rate (unless they are also in receipt of the Higher Rate Mobility Component)</li><li>Attendance Allowance at any rate</li><li>Pension Credit</li></ul>"    
-								}
-							]
+						<p>
+							In order to help us assess your eligibility for a Blue Badge, we may require information regarding your medical history. A copy of your medical summary may be required. To obtain a copy of your medical summary please visit your GP surgery.
+						</p>
+						<p><a href="javascript:void(0);">The NHS website explains how to obtain the information.</a></p>
+
+						<p>Below are the documents you will need to supply for each application criteria.</p>
+
+						{{ occlssPagination({
+							previous: {
+								title: "Previous",
+								url: "javascript:void(0);",
+								linkLabel: "Check if you are eligible for a Blue Badge"
+							},
+							next: {
+								title: "Next",
+								url: "javascript:void(0);",
+								linkLabel: "How to supply your documents"
+							}
 						}) }}
-
-
-
-						<p>You qualify if you have a permanent and substantial difficulty that causes inability to walk or very
-							considerable difficulty in walking.</p>
-						<p>Being unable to walk means that you can't take a single step.</p>
-
-						<nav class="occlss-pagination" role="navigation" aria-label="Pagination">
-							<ul class="occlss-pagination__list">
-								<li class="occlss-pagination__item occlss-pagination__item--next">
-									<a href="#" class="occlss-pagination__link" rel="next">
-										<span class="occlss-pagination__link-title">Next</span>
-										<span class="occlss-u-visuallyhidden">:</span>
-										<span class="occlss-pagination__link-label">Check your documents</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
 
 					</div>
 
@@ -140,7 +129,8 @@ layout: layout-example.njk
 
 
 
-
+{% from "footer-feedback-form/macro.njk" import occlssFooterFeedback %}
+{{ occlssFooterFeedback() }}
 {{ occlssAtoZ({
   items: [
     {

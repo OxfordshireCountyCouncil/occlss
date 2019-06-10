@@ -9,7 +9,7 @@
 {% set exampleURL = "/" + params.group + "/" + params.item + "/" + params.example + "/index.html" %}
 {% set exampleId = params.id | default("example-" + params.example) %}
 {% set exampleTitle = getFrontmatter(examplePath).title %}
-{#% set params = {nunjucks: true} %#}
+{% set params = {nunjucks: true} %}
 {% set multipleTabs = params.html and params.nunjucks %}
 {% set tabs = params.html or params.nunjucks %}
 <div class="doc-example-pane" id="doc-example-pane-{{ exampleTitle | lower }}">

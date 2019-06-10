@@ -1,0 +1,13 @@
+{% if params.items %}
+	<ul class="occlss-summary-list occlss-u-bspace-md">
+		{% for item in params.items %}
+			<li class="occlss-summary-list__item occlss-summary-list__item--underlined occlss-summary-list__item--td">
+			{% if item.url %}
+			<a href="{{ item.url }}" class="occlss-summary-list__link">{{ item.title }}</a>
+			{% else %}
+			{{ item.title }}
+			{% endif %}
+			</li>
+		{% endfor %}
+	</li>
+{% endif %}

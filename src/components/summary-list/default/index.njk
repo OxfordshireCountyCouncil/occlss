@@ -1,0 +1,38 @@
+---
+title: Summary list
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "summary-list/macro.njk" import occlssSummaryList %}
+
+{{ occlssSummaryList({
+ items: [
+    {
+      title: "List of all schools",
+      url: "javascript:void(0);"
+    },{
+      title: "School appeals",
+      url: "javascript:void(0);"
+    },{
+      title: "School transfers",
+      url: "javascript:void(0);"
+    },{
+      title: "Religious education",
+      url: "javascript:void(0);"
+    },{
+      title: "School meals",
+      url: "javascript:void(0);"
+    },{
+      title: "Exclusions",
+      url: "javascript:void(0);"
+    },{
+      title: "Music service",
+      url: "javascript:void(0);"
+    },{
+      title: "Being educated at home",
+      url: "javascript:void(0);"
+    }
+  ]
+}) }}

@@ -118,54 +118,53 @@ Button default (somthing like a mixing etc)
 // ==========           =============================
 */
 
-@import "bem/occlss-icon";
-@import "bem/occlss-button";
-@import "bem/occlss-page-head";
-@import "bem/occlss-page-footer";
-@import "bem/occlss-site-nav";
-@import "bem/occlss-head-logo";
-@import "bem/occlss-form";
-@import "bem/occlss-form-cntrls";
-@import "bem/occlss-breadcrumb";
-@import "bem/occlss-category-nav";
-@import "bem/occlss-alert";
-@import "bem/occlss-summary-list";
-@import "bem/occlss-popular-content-pane";
-@import "bem/occlss-top-tasks-pane";
-@import "bem/occlss-promoted-content-panel";
-@import "bem/occlss-tab-widget";
-@import "bem/occlss-card.scss";
-@import "bem/occlss-page-guide";
-@import "bem/occlss-sidebar-item-section";
-@import "bem/occlss-version-bar";
-@import "bem/occlss-pagination";
-@import "bem/occlss-skip-to-content";
-@import "bem/occlss-a-to-z";
-@import "bem/occlss-hero-pane";
-@import "bem/occlss-find-my-nearest";
-@import "bem/occlss-splitter";
-@import "bem/occlss-info-card";
-@import "bem/occlss-trim";
-@import "bem/occlss-fp";
-@import "bem/occlss-facets";
-@import "bem/occlss-co";
-@import "bem/occlss-pager";
-@import "bem/occlss-loading-bar";
-@import "bem/occlss-short-summary";
-@import "bem/occlss-accordion";
-@import "bem/occlss-summary-card";
-@import "bem/occlss-table";
-@import "bem/occlss-social-media-link";
-@import "bem/occlss-widget-container";
-@import "bem/occlss-alert-box";
-@import "bem/occlss-info-box";
-@import "bem/occlss-box-out";
-@import "bem/occlss-download-link";
-@import "bem/occlss-jump-links";
-@import "bem/occlss-calendar-date";
-@import "bem/occlss-content-navigation";
-@import "bem/occlss-footer-feedback";
+@import "components/prowddmmo/occlss-fp";
+@import "components/prowddmmo/occlss-facets";
+@import "components/prowddmmo/occlss-co";
+@import "components/prowddmmo/occlss-info-card";
 
+@import "components/occlss-form";
+@import "components/occlss-splitter";
+@import "components/occlss-loading-bar";
+
+@import "../../views/components/pager/occlss-pager";
+@import "../../views/components/icon/occlss-icon";
+@import "../../views/components/button/occlss-button";
+@import "../../views/components/page-head/occlss-page-head";
+@import "../../views/components/page-footer/occlss-page-footer";
+@import "../../views/components/site-nav/occlss-site-nav";
+@import "../../views/components/site-nav/occlss-head-logo";
+@import "../../views/components/form-controls/occlss-form-cntrls";
+@import "../../views/components/breadcrumb/occlss-breadcrumb";
+@import "../../views/components/category-navbar/occlss-category-nav";
+@import "../../views/components/alert/occlss-alert";
+@import "../../views/components/summary-list/occlss-summary-list";
+@import "../../views/components/popular-content-pane/occlss-popular-content-pane";
+@import "../../views/components/top-tasks-pane/occlss-top-tasks-pane";
+@import "../../views/components/promoted-content-panel/occlss-promoted-content-panel";
+@import "../../views/components/cards/occlss-card.scss";
+@import "../../views/components/page-guide/occlss-page-guide";
+@import "../../views/components/sidebar-item-section/occlss-sidebar-item-section";
+@import "../../views/components/version-bar/occlss-version-bar";
+@import "../../views/components/pagination/occlss-pagination";
+@import "../../views/components/skip-to-content/occlss-skip-to-content";
+@import "../../views/components/atoz/occlss-a-to-z";
+@import "../../views/components/hero-pane/occlss-hero-pane";
+@import "../../views/components/find-my-nearest/occlss-find-my-nearest";
+@import "../../views/components/short-summary/occlss-short-summary";
+@import "../../views/components/accordion/occlss-accordion";
+@import "../../views/components/summary-card/occlss-summary-card";
+@import "../../views/components/table/occlss-table";
+@import "../../views/components/social-media-link/occlss-social-media-link";
+@import "../../views/components/widget-container/occlss-widget-container";
+@import "../../views/components/alert-box/occlss-alert-box";
+@import "../../views/components/info-box/occlss-info-box";
+@import "../../views/components/box-out/occlss-box-out";
+@import "../../views/components/download-link/occlss-download-link";
+@import "../../views/components/jump-links/occlss-jump-links";
+@import "../../views/components/calendar-date/occlss-calendar-date";
+@import "../../views/components/content-navigation/occlss-content-navigation";
+@import "../../views/components/footer-feedback-form/occlss-footer-feedback";
 
 
 
@@ -174,6 +173,7 @@ Button default (somthing like a mixing etc)
 cms-content-footer...Styles scoped specifically to footer
 Post.................Styles scoped specifically to blog post pages
 */
+
 @import "scopes/cms-content-footer";
 
 

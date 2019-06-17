@@ -1,6 +1,7 @@
 var gulp           = require('gulp'),
     svgSprite      = require('gulp-svg-sprite'),
     del            = require('del'),
+    taskListing    = require('gulp-task-listing'),
     replace        = require('gulp-replace');
 
 // SVG
@@ -101,5 +102,11 @@ gulp.task('genNodeModule', function (done) {
  * COMPOUND TASKS
 ******************************************************/
 
-gulp.task('gen', gulp.series('clean:nodejsmodule','clean:svgicons', 'svg-sprite-create','genNodeModule'));
-gulp.task('default', gulp.series('clean:svgicons', 'svg-sprite-create'));
+gulp.task('node:gen', gulp.series('clean:nodejsmodule','clean:svgicons', 'svg-sprite-create','genNodeModule'));
+gulp.task('svg:gen', gulp.series('clean:svgicons', 'svg-sprite-create'));
+
+
+// Default task -------------------------
+// Lists out available tasks.
+// --------------------------------------
+gulp.task('default', taskListing)

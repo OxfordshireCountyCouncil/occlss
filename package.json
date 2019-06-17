@@ -25,6 +25,7 @@
     "gulp": "^4.0.2",
     "gulp-replace": "^1.0.0",
     "gulp-svg-sprite": "^1.5.0",
+    "gulp-task-listing": "^1.1.0",
     "gulp-util": "^3.0.8",
     "iframe-resizer": "^3.6.3",
     "js-beautify": "^1.8.8",

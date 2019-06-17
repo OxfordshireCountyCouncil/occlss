@@ -1,4 +1,4 @@
-{%- set htmlClass %} {% if doc_bg == 'white' %}class="html-bg-white"{% endif %}{% endset %}
+{%- set htmlClass %} class="js{% if doc_bg == 'white' %} html-bg-white{% endif %}"{% endset %}
 {%- set bodyClass %} class="{% if doc_bg == 'white' %}body-bg-white{% endif %}{% if doc_gap %} body-gap{% endif %}"{% endset %}
 
 <!doctype html>

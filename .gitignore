@@ -8,7 +8,7 @@ Thumbs.db
 public/
 pattern_exports/
 CSSframework/
-nodejs.module/
+nodejs.module-files/
 .yarn.lock
 yarn-error.log
 yarn.lock

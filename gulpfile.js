@@ -15,11 +15,22 @@ var $ = {
 };
 
 
+// Compile node module sass
+gulp.task('genNodeModule:sass', function(done){
+  return gulp.src('./nodejs.module-files/scss/occlss.scss')
+  .pipe(plumber('Error Running Sass'))
+  .pipe(sourcemaps.init())
+  .pipe(sass({
+    precision: 5,
+  }))
+  .pipe(gulp.dest('./nodejs.module-files/css'))
+  done();
+})
 
-// Clean nodejs.module folder
+// Clean nodejs.module-files folder
 gulp.task('clean:nodejsmodule', function (done) {
   return del([
-    './nodejs.module/**/*'
+    './nodejs.module-files/**/*'
   ]);
   done();
 });
@@ -91,35 +102,37 @@ gulp.task('svg-sprite-create', function(done) {
 // Generate files for NPM package
 gulp.task('genNodeModule', function (done) {
   // get Sass files
-  gulp.src(['./src/occlss-scss/**']).pipe(replace('"../../views/components/', '"components/')).pipe(gulp.dest('./nodejs.module/scss'));
+  gulp.src(['./src/occlss-scss/**'])
+  .pipe(replace('"../../views/components/', '"components/'))
+  .pipe(replace('../../images','../images'))
+  .pipe(gulp.dest('./nodejs.module-files/scss'));
   // get Component files
-  gulp.src(['./views/components/**']).pipe(gulp.dest('./nodejs.module/scss/components'));
+  gulp.src(['./views/components/**']).pipe(gulp.dest('./nodejs.module-files/scss/components'));
   // get JavaScript files
-  gulp.src(['./src/assets/js/occlss/**','!./src/assets/js/occlss/browser.detect.js']).pipe(gulp.dest('./nodejs.module/js'));
+  gulp.src(['./src/assets/js/occlss/**','!./src/assets/js/occlss/browser.detect.js']).pipe(gulp.dest('./nodejs.module-files/js'));
   // get Images files
-  gulp.src(['./src/assets/images/occlss/**', '!./src/assets/images/occlss/demo', '!./src/assets/images/occlss/demo/**']).pipe(gulp.dest('./nodejs.module/images'));
+  gulp.src(['./src/assets/images/occlss/**', '!./src/assets/images/occlss/demo', '!./src/assets/images/occlss/demo/**']).pipe(gulp.dest('./nodejs.module-files/images'));
   done();
 });
-
-// Compile node module sass
-gulp.task('genNodeModule:sass', function(){
-  return gulp.src('./nodejs.module/scss/occlss.scss')
-  .pipe(plumber('Error Running Sass'))
-  .pipe(sourcemaps.init())
-  .pipe(sass({
-    precision: 5,
-  }))
-  .pipe(gulp.dest('./nodejs.module/css'))
-})
 
 
 /******************************************************
  * COMPOUND TASKS
 ******************************************************/
 
-gulp.task('node:gen', gulp.series('clean:nodejsmodule','clean:svgicons', 'svg-sprite-create','genNodeModule'));
-gulp.task('svg:gen', gulp.series('clean:svgicons', 'svg-sprite-create'));
+// Generate node module source files
+gulp.task('node:gen', gulp.series(
+  'clean:nodejsmodule',
+  'clean:svgicons',
+  'svg-sprite-create',
+  'genNodeModule'
+));
 
+// Generate svg sprite
+gulp.task('svg:gen', gulp.series(
+  'clean:svgicons',
+  'svg-sprite-create'
+));
 
 // Default task -------------------------
 // Lists out available tasks.

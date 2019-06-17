@@ -1,0 +1,44 @@
+{% from "button/macro.njk" import occlssButton %}
+{% from "date-input/macro.njk" import occlssDateInput %}
+{% from "form-controls/macro.njk" import occlssFormCntrls %}
+
+<form class="occlss-form">
+    <fieldset>
+
+        <legend class="occlss-form__group-title occlss-form__group-title--large">Personal details of the applicant</legend>
+        <span class="occlss-form__desc-text">There are the details of the person who requires the Blue Badge.</span>
+
+        {{ occlssFormCntrls({
+        type: "input-text",
+        inputClasses: "occlss-form-cntrls--size-450",
+        labelText: "First name"
+        }) }}
+
+        {{ occlssFormCntrls({
+        type: "input-text",
+        inputClasses: "occlss-form-cntrls--size-450",
+        labelText: "Last name"
+        }) }}
+
+        {{ occlssDateInput() }}
+
+    </fieldset>
+
+    <nav class="occlss-form__controls occlss-u-bspace-large" role="navigation">
+        <ul class="occlss-form__listitems">
+            <li class="occlss-form__controls-list-item occlss-form__controls-list-item--spaced">
+               {{ occlssButton({
+                text: "Back",
+                classes: "occlss-button--neutral"
+                }) }}
+            </li>
+            <li class="occlss-form__controls-list-item">
+                {{ occlssButton({
+                text: "Continue",
+                classes: "occlss-button--primary"
+                }) }}
+            </li>
+        </ul>
+    </nav>
+
+</form>

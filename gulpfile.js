@@ -1,6 +1,10 @@
 var gulp           = require('gulp'),
     svgSprite      = require('gulp-svg-sprite'),
     del            = require('del'),
+    sass           = require('gulp-sass'),
+    plumber        = require('gulp-plumber'),
+    autoprefixer   = require('gulp-autoprefixer'),
+    sourcemaps     = require('gulp-sourcemaps'),
     taskListing    = require('gulp-task-listing'),
     replace        = require('gulp-replace');
 
@@ -96,6 +100,17 @@ gulp.task('genNodeModule', function (done) {
   gulp.src(['./src/assets/images/occlss/**', '!./src/assets/images/occlss/demo', '!./src/assets/images/occlss/demo/**']).pipe(gulp.dest('./nodejs.module/images'));
   done();
 });
+
+// Compile node module sass
+gulp.task('genNodeModule:sass', function(){
+  return gulp.src('./nodejs.module/scss/occlss.scss')
+  .pipe(plumber('Error Running Sass'))
+  .pipe(sourcemaps.init())
+  .pipe(sass({
+    precision: 5,
+  }))
+  .pipe(gulp.dest('./nodejs.module/css'))
+})
 
 
 /******************************************************

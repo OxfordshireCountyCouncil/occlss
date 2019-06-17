@@ -86,7 +86,9 @@ gulp.task('svg-sprite-create', function(done) {
 // Generate files for NPM package
 gulp.task('genNodeModule', function (done) {
   // get Sass files
-  gulp.src(['./src/occlss-scss/**']).pipe(gulp.dest('./nodejs.module/scss'));
+  gulp.src(['./src/occlss-scss/**']).pipe(replace('"../../views/components/', '"components/')).pipe(gulp.dest('./nodejs.module/scss'));
+  // get Component files
+  gulp.src(['./views/components/**']).pipe(gulp.dest('./nodejs.module/scss/components'));
   // get JavaScript files
   gulp.src(['./src/assets/js/occlss/**','!./src/assets/js/occlss/browser.detect.js']).pipe(gulp.dest('./nodejs.module/js'));
   // get Images files

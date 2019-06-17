@@ -14,7 +14,6 @@ var $ = {
   svgSprite: require('gulp-svg-sprite'),
 };
 
-
 // Compile node module sass
 gulp.task('genNodeModule:sass', function(done){
   return gulp.src('./nodejs.module-files/scss/occlss.scss')

@@ -52,3 +52,17 @@
         color: $doc-main-nav-list-item-current-color;
     }
 }
+
+.#{$doc-prefix}main-nav__list-item-heading {
+    margin-bottom: rem(16px);
+    display: inline-block;
+}
+
+.#{$doc-prefix}main-nav__list-item-heading-lnk {
+    font-weight: 600;
+    font-size: rem(18px);
+}
+
+.is-current.#{$doc-prefix}main-nav__list-item-heading-lnk {
+    color: $doc-main-nav-list-item-current-color;
+}

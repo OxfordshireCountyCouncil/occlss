@@ -14,5 +14,10 @@
   {
     "label": "Pages",
     "url": "pages"
+  },
+  {
+    "label": "How to styleup",
+    "url": "how-to-styleup",
+    "status": "hidden"
   }
 ]

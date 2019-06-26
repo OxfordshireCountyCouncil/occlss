@@ -5,9 +5,11 @@
         <a href="/" class="doc-page-header_nav__list-item-lnk{{ " doc-page-header_nav__list-item-lnk--open" if (path == "") }}">Get started</a>
       </li>
       {% for item in navigation %}
-      <li class="doc-page-header_nav__list-item">
-        <a href="/{{ item.url }}" class="doc-page-header_nav__list-item-lnk{{ " doc-page-header_nav__list-item-lnk--open" if (item.url in  path) }}">{{ item.label }}</a>
-      </li>
+        {% if item.status != 'hidden' %}
+          <li class="doc-page-header_nav__list-item">
+            <a href="/{{ item.url }}" class="doc-page-header_nav__list-item-lnk{{ " doc-page-header_nav__list-item-lnk--open" if (item.url in  path) }}">{{ item.label }}</a>
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </div>

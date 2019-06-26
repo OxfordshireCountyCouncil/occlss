@@ -7,15 +7,11 @@ order: 0
 show_page_nav: true
 ---
 
+{% from "_example.njk" import example %}
+
 Here we will describ what is the minimum you need to apply to meet Oxfordshire County Council standards, if you will not able to do the minimun requrements please contact email[@]hehe
 
-
-Your application should meet accesabolity standarts, and it should be responsive
-
-
 ## Typography
-
-
 
 ### Fonts
 
@@ -111,9 +107,13 @@ A paragraph (from the Greek paragraphos, is a self-contained unit of a discourse
 
 Header shouldent contain any links
 
+{{ example({group: "components", item: "page-head", example: "default", html: true }) }}
+
 ## Footer
 
 The footer shouldn’t contain any links (the Main website has dynamic links they all might changing at some point)
+
+{{ example({group: "components", item: "page-footer", example: "short", html: true }) }}
 
 ## Colours
 

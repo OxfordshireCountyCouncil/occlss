@@ -7,11 +7,19 @@ order: 0
 show_page_nav: true
 ---
 
+{% from "table/macro.njk" import occlssTable %}
+
 We know that our digital services is one of our communication ways with a public and its important to communicate with them in the most comfortable and efficient way. 
 
 We investing a big amount of time to investigate and learn our users and there needs to improve our digital platforms user experience across all the digital platforms. 
 
 Based on research we build Oxfordshire County Council web design patterns to help us and 3rd party platform to follow a common design patterns 
+
+The majority of the users of the Oxfordshire County Council website are using some kind of smartphone or tablet so it’s very important that the experience on these devices is as good as it would be on a desktop or laptop computer. 
+
+The goal of responsive design is to build web pages that detect the visitor's screen size and orientation and change the layout accordingly. (Any screens size) 
+
+Everything should fit the screen without left/right scrolling, all necessary UI elements should be display and function correctly. 
 
 
 ## Support technology
@@ -24,11 +32,227 @@ Services don’t have to look perfect in every browser but users must be able to
 
 ### Browsers
 
-### Screen sizes
+The UI should fully functional in the folowing browsers:
 
-### Screen readers
+{{ occlssTable({
+  'responsive': true,
+  'head' : [
+    {
+      text: 'Operating system'
+    },
+    {
+      text: 'Browser'
+    },
+    {
+      text: 'Support'
+    }
+  ],
+  'rows' : [
+    [
+      {
+        text: 'Windows'
+      },
+      {
+        text: 'Internet Explorer 11 and later'
+      },
+      {
+        text: 'compliant '
+      }
+    ],[
+      {
+        text: ''
+      },
+      {
+        text: 'Edge (latest versions)'
+      },
+      {
+        text: 'compliant'
+      }
+    ],[
+      {
+        text: ''
+      },
+      {
+        text: 'Google Chrome (latest versions)'
+      },
+      {
+        text: 'compliant'
+      }
+    ],[
+      {
+        text: ''
+      },
+      {
+        text: 'Mozilla Firefox (latest versions)'
+      },
+      {
+        text: 'compliant'
+      }
+    ],[
+      {
+        text: 'macOS'
+      },
+      {
+        text: 'Safari 9 and later'
+      },
+      {
+        text: 'compliant'
+      }
+    ],[
+      {
+        text: ''
+      },
+      {
+        text: 'Google Chrome (latest versions)'
+      },
+      {
+        text: 'compliant'
+      }
+    ],[
+      {
+        text: ''
+      },
+      {
+        text: 'Mozilla Firefox (latest versions)'
+      },
+      {
+        text: 'compliant'
+      }
+    ],[
+      {
+        text: 'iOS'
+      },
+      {
+        text: 'Safari for iOS 9.3 and later'
+      },
+      {
+        text: 'compliant'
+      }
+    ],[
+      {
+        text: ''
+      },
+      {
+        text: 'Google Chrome (latest versions)'
+      },
+      {
+        text: 'compliant'
+      }
+    ],[
+      {
+        text: 'Android'
+      },
+      {
+        text: 'Google Chrome (latest versions)'
+      },
+      {
+        text: 'compliant'
+      }
+    ],[
+      {
+        text: ''
+      },
+      {
+        text: 'Samsung Internet (latest versions)'
+      },
+      {
+        text: 'compliant'
+      }
+    ]
+
+  ]
+}) }}
 
 
 ### The project should meet accesability standarts
 
-### Should meet Cookie GDRP standarts 
+The UI should meet WCAG 2 level AA standards, and it shoul work on the folowing devices and tecchology:
+
+{{ occlssTable({
+  'responsive': true,
+  'head' : [
+    {
+      text: 'Software '
+    },
+    {
+      text: 'Version'
+    },
+    {
+      text: 'Type'
+    },
+    {
+      text: 'Browser'
+    }
+  ],
+  'rows' : [
+    [
+      {
+        text: 'JAWS'
+      },
+      {
+        text: '15 or later'
+      },
+      {
+        text: 'screen reader'
+      },
+      {
+        text: 'Internet Explorer 11'
+      }
+    ],[
+      {
+        text: 'ZoomText'
+      },
+      {
+        text: '10.11 or later'
+      },
+      {
+        text: 'screen magnifier'
+      },
+      {
+        text: 'Internet Explorer 11'
+      }
+    ],[
+      {
+        text: 'Dragon NaturallySpeaking'
+      },
+      {
+        text: '11 or later'
+      },
+      {
+        text: 'speech recognition'
+      },
+      {
+        text: 'Internet Explorer 11'
+      }
+    ],[
+      {
+        text: 'NVDA'
+      },
+      {
+        text: '2016 or later'
+      },
+      {
+        text: 'screen reader'
+      },
+      {
+        text: 'Mozilla Firefox (latest versions)'
+      }
+    ],[
+      {
+        text: 'VoiceOver'
+      },
+      {
+        text: '7.0 or later'
+      },
+      {
+        text: 'screen reader'
+      },
+      {
+        text: 'Safari on iOS 10 and OS X'
+      }
+    ]
+
+  ]
+}) }}
+
+## Cookie GDRP standarts 

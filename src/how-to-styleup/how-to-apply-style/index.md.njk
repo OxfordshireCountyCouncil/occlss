@@ -7,7 +7,39 @@ order: 0
 show_page_nav: true
 ---
 
+{% from "_doc-el.njk" import UIel %}
 {% from "_example.njk" import example %}
+
+## Downloads
+
+{{
+    UIel ({
+        item: "intro-text", 
+        content: "To attached the style to yor project we provide multiple options for downloading the Oxfordshire County Council style guide that includes, Javascript, SVG icons and SASS files."
+    })
+}}
+
+{{
+    UIel ({
+        item: "alert-box", 
+        content: "Please do not attach style directly from your main website, please use resources below or build your own."
+    })
+}}
+
+#### GitHub
+
+You can download our latest live style system
+
+<a href="https://github.com/OxfordshireCountyCouncil/occlss" target="_blank">Oxfordshire County Council live style system on GitHub</a>
+
+#### NPM
+
+You can download our SASS, SVG icons, Javascript as npm module and connect it to your project, that will help you keep your app with our latest style
+
+<a href="https://www.npmjs.com/package/occlss" target="_blank">Oxfordshire County Council live style system on NPM</a>
+
+
+Below you can find everthing you need to make your project looks the same as OCC required
 
 ## Typography
 

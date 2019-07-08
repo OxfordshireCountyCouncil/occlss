@@ -34,4 +34,11 @@
 {% endfor %}
 {% endif %}
 
+{% if params.item == 'alert-box' %}
+<div class="occlss-alert-box">
+<span class="occlss-alert-box__icon" aria-hidden="true">!</span>
+<span class="occlss-alert-box__text"><span class="occlss-alert-box__assistive">Warning</span>{{ params.content }}</span>
+</div>
+{% endif %}
+
 {% endmacro %}

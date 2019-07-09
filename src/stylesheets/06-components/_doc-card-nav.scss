@@ -1,0 +1,23 @@
+.#{$doc-prefix}card-nav {
+}
+
+.#{$doc-prefix}card-nav__card {
+
+}
+
+.#{$doc-prefix}card-nav__card-conteiner {
+    outline: 1px solid $doc-card-nav-border-color;
+    padding: rem(16px);
+    
+    @include transition(all .2s ease-in-out);
+
+    &:active,
+    &:hover {
+        outline: 3px solid $doc-card-nav-border-hover-color;
+    }
+}
+
+.#{$doc-prefix}card-nav__card-title,
+.#{$doc-prefix}card-nav__card-content {
+    color: $doc-card-nav-text-color;
+}

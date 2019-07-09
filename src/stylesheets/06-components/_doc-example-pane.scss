@@ -19,6 +19,7 @@
 }
 
 .#{$doc-prefix}example-pane__new-window-lnk {
+    @include transition(all .2s ease-in-out);
     font-size: rem(12px);
 }
 
@@ -62,6 +63,7 @@
 }
 
 .#{$doc-prefix}example-pane-tabs__item-link {
+    @include transition(all .2s ease-in-out);
     display: block;
     margin-top: rem(-1px);
     padding: rem(15px);

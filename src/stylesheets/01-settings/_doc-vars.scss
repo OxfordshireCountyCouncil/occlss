@@ -178,3 +178,9 @@ $doc-example-border-color-selected:     (map-get($doc-colours, 'ronchi')) !defau
 // Page footer
 $doc-page-footer-text-color:            (map-get($doc-colours, 'white')) !default;
 $doc-page-footer-bg-color:              (map-get($doc-colours, 'black')) !default;
+
+
+// Card nav
+$doc-card-nav-border-color:             (map-get($doc-colours, 'nebula')) !default;
+$doc-card-nav-border-hover-color:       (map-get($doc-colours, 'selective-yellow')) !default;
+$doc-card-nav-text-color:               (map-get($doc-colours, 'cod-gray')) !default;

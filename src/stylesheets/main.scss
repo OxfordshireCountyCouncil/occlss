@@ -41,6 +41,7 @@ $occlss-global-image-path:  '/assets/images/occlss/';
 @import "06-components/doc-page-header-title";
 @import "06-components/doc-sg-colors";
 @import "06-components/doc-typography";
+@import "06-components/doc-card-nav";
 
 // Trumps
 // High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {})

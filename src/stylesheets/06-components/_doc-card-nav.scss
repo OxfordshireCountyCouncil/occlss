@@ -1,8 +1,9 @@
 .#{$doc-prefix}card-nav {
+  margin: rem(0 -16px);  
 }
 
 .#{$doc-prefix}card-nav__card {
-
+    padding: rem(16px);
 }
 
 .#{$doc-prefix}card-nav__card-conteiner {

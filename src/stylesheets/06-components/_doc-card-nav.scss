@@ -6,10 +6,16 @@
 }
 
 .#{$doc-prefix}card-nav__card-conteiner {
+    @include transition(all .2s ease-in-out);
+
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    flex: 1;
+    
     outline: 1px solid $doc-card-nav-border-color;
     padding: rem(16px);
-    
-    @include transition(all .2s ease-in-out);
 
     &:active,
     &:hover {

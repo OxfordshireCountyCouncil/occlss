@@ -10,19 +10,22 @@ show_page_nav: false
 
 {% from "_example.njk" import example %}
 
-## Alert Box
+## Alert box
 
-This is a callout that allows us to draw the user’s attention to something of high importance. It should only be used where failure to comply with the warning could lead to a fine or danger to the user. For example, where they might get a parking ticket. It won’t be used often.
+This is a warning message that allows us to draw the user’s attention to something of high importance or as a warning.
 
 {{ example({group: "components", item: "alert-box", example: "default", html: true }) }}
 
+
 ### When to use this component 
 
-[Text]
+It should only be used where failure to comply with the warning could lead to a fine, danger to the user, or where something is temporarily closed. For example, where the customer might get a parking ticket or a library is closed due to a burst pipe. 
 
-### How it works
+The content is in a regular weight but **bold** text can be used if kept to a minimum.
 
-[Text]
+### When not to use this component
+
+There should only be one alert box on a page.
 
 ## Changelog
 

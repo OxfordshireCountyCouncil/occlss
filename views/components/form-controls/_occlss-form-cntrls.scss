@@ -265,6 +265,9 @@ $input-width:(
   cursor: pointer;
   font-weight: 400;
   margin-bottom: rem(25px);
+  padding-left: rem(44px);
+  position: relative;
+  padding-top: rem(2px);
 }
 
 .occlss-form-cntrls__checkbox + .occlss-form-cntrls__label::before,
@@ -275,10 +278,12 @@ $input-width:(
   display: inline-block;
   height: rem($occlss-form-cntrls-spacing-checkboxes);
   line-height: rem($occlss-form-cntrls-spacing-checkboxes);
-  margin-right: 0.6em;
   text-indent: 0.15em;
   vertical-align: middle\0; // Target IE 11 and below to vertically center inputs
   width: rem($occlss-form-cntrls-spacing-checkboxes);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .occlss-form-cntrls__radiobutton + .occlss-form-cntrls__label::before {
@@ -287,7 +292,6 @@ $input-width:(
   width: rem($occlss-form-cntrls-spacing-checkboxes);
   height: rem($occlss-form-cntrls-spacing-checkboxes); // Size overrides to account for shape + checked styling
   line-height: rem($occlss-form-cntrls-spacing-checkboxes);
-  margin-right: 0.75em;
 }
 
 .occlss-form-cntrls__radiobutton:checked + .occlss-form-cntrls__label::before {

@@ -1,5 +1,5 @@
 ---
-title: Home page
+title: Homepage
 layout: layout-example.njk
 ---
 
@@ -16,7 +16,7 @@ layout: layout-example.njk
 
 {{ occlssPageHead({
   type: "default",
-  section: "council"
+  section: "business"
 }) }}
 
 
@@ -32,7 +32,7 @@ layout: layout-example.njk
 					itemName: "Home",
 					url: "javascript:void(0);"
 				},{
-					itemName: "Council"
+					itemName: "Business"
 				}
 			]
 		}) }}
@@ -43,11 +43,11 @@ layout: layout-example.njk
 		<div class="occlss-layout">
 				<div class="occlss-layout__col occlss-layout__col--bleed">
 					{{ occlssHeroPane({
-							category: "council",
+							category: "business",
 							heroClasses: "occlss-hero-pane--lgimage",
-							heading: "Council",
-							headingModeClass: "occlss-hero-pane__heading--council",
-							imageURL: "http://www.oxfordshire.gov.uk/sites/default/files/2018-05/council-top-tasks_0.jpg",
+							heading: "Business",
+							headingModeClass: "occlss-hero-pane__heading--business",
+							imageURL: "http://www.oxfordshire.gov.uk/sites/default/files/2018-05/business-top-tasks_0.jpg",
 							panels: [{
 								title: "Services",
 								items: [{
@@ -93,11 +93,11 @@ layout: layout-example.njk
 			</div>
 			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-5 occlss-layout__col--md-5 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
 				{{ occlssPromotedContentPanel({
-				panelColour: "victoria",
+				panelColour: "boston-blue",
 				panelURL: "javascript:void(0);",
 				textRows: [
 						{
-						text: "Find your county councillor",
+						text: "Licences and permits",
 						textSize: "header-small",
 						showArrow: "true"
 						}
@@ -110,7 +110,7 @@ layout: layout-example.njk
 				panelURL: "javascript:void(0);",
 				textRows: [
 						{
-						text: "Working for us",
+						text: "Advice for businesses",
 						textSize: "header-small",
 						showArrow: "true"
 						}
@@ -120,25 +120,25 @@ layout: layout-example.njk
 
 			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
 				{{ occlssPopularContentPane({
-				category: "council",
+				category: "business",
 				panels: [
 					{
-					heading: "About your council",
+					heading: "Trading Standards",
 					items: [
 						{
-						title: "Government in Oxfordshire",
+						title: "Buy with confidence",
 						url: "javascript:void(0);"
 						},{
-						title: "District councils",
+						title: "Advice for communities",
 						url: "javascript:void(0);"
 						},{
-						title: "Parish and town councils",
+						title: "Business advice",
 						url: "javascript:void(0);"
 						},{
-						title: "Local MPs and MEPs",
+						title: "Farming and animal health",
 						url: "javascript:void(0);"
 						},{
-						title: "More about your council",
+						title: "More Trading Standards",
 						url: "javascript:void(0);"
 						}
 					]
@@ -148,25 +148,25 @@ layout: layout-example.njk
 			</div>
 			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
 				{{ occlssPopularContentPane({
-				category: "council",
+				category: "business",
 				panels: [
 					{
-					heading: "Councillors",
+					heading: "Licences and permits",
 					items: [
 						{
-						title: "Full list of councillors",
+						title: "Request a dropped kerb",
 						url: "javascript:void(0);"
 						},{
-						title: "The Cabinet",
+						title: "Scaffolding or hoarding licence",
 						url: "javascript:void(0);"
 						},{
-						title: "Leader of the Council",
+						title: "Skip permit",
 						url: "javascript:void(0);"
 						},{
-						title: "Allowances",
+						title: "Road closures",
 						url: "javascript:void(0);"
 						},{
-						title: "More councillors",
+						title: "More licenses and permits",
 						url: "javascript:void(0);"
 						}
 					]
@@ -176,25 +176,25 @@ layout: layout-example.njk
 			</div>
 			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
 				{{ occlssPopularContentPane({
-				category: "council",
+				category: "business",
 				panels: [
 					{
-					heading: "Meetings and decisions",
+					heading: "Advice for businesses",
 					items: [
 						{
-						title: "Meetings calendar",
+						title: "Commercial waste",
 						url: "javascript:void(0);"
 						},{
-						title: "Agendas, minutes and reports",
+						title: "Employing children",
 						url: "javascript:void(0);"
 						},{
-						title: "What happens at meetings?",
+						title: "Oxfordshire Local Enterprise Partnership",
 						url: "javascript:void(0);"
 						},{
-						title: "Get involved in meetings",
+						title: "Pensions",
 						url: "javascript:void(0);"
 						},{
-						title: "More meetings and decisions",
+						title: "More advice for businesses",
 						url: "javascript:void(0);"
 						}
 					]
@@ -204,58 +204,47 @@ layout: layout-example.njk
 			</div>
 			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
 				{{ occlssPopularContentPane({
-				category: "council",
-				panels: [
-					{
-					heading: "Council tax and finance",
-					items: [
-						{
-						title: "Your council tax",
-						url: "javascript:void(0);"
-						},{
-						title: "Council spending",
-						url: "javascript:void(0);"
-						},{
-						title: "Reports of council spending",
-						url: "javascript:void(0);"
-						},{
-						title: "Annual accounts and audit",
-						url: "javascript:void(0);"
-						},{
-						title: "More council tax and finance",
-						url: "javascript:void(0);"
-						}
-					]
-					}
-				]
-				}) }}
-			</div>
-			<div class="occlss-layout__col occlss-layout__col--lg-4 occlss-layout__col--md-6">
-				{{ occlssPopularContentPane({
-				category: "council",
+				category: "business",
 				panels: [
 					{
 					heading: "More in this section",
 					items: [
 						{
-						title: "About Oxfordshire",
+						title: "Supplying goods and services",
 						url: "javascript:void(0);"
 						},{
-						title: "Make a complaint",
+						title: "Information for providers",
 						url: "javascript:void(0);"
 						},{
-						title: "Managers and salaries",
+						title: "Broadband for Oxfordshire",
 						url: "javascript:void(0);"
 						},{
-						title: "Voting and elections",
+						title: "Current contract opportunities",
 						url: "javascript:void(0);"
 						},{
-						title: "Our vision",
+						title: "Fire safety advice for businesses",
 						url: "javascript:void(0);"
 						}
 					]
 					}
 				]
+				}) }}
+			</div>
+			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-6 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
+				{{ occlssPromotedContentPanel({
+				panelColour: "boston-blue",
+				panelURL: "javascript:void(0);",
+				textRows: [
+						{
+						text: "Current contract opportunities",
+						textSize: "header-large",
+						showArrow: "false"
+						},{
+							text: "View the latest contract opportunities on the South East Centre of Excellence's (SECE) website",
+							textSize: "text-line",
+							showArrow: "false"
+						}
+					]
 				}) }}
 			</div>
 			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-6 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
@@ -269,57 +258,6 @@ layout: layout-example.njk
 						showArrow: "true"
 					}
 				]
-				}) }}
-			</div>
-			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-6 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
-				{{ occlssPromotedContentPanel({
-				panelColour: "keppel",
-				panelURL: "javascript:void(0);",
-				textRows: [
-						{
-						text: "Our vision",
-						textSize: "text-medium",
-						showArrow: "false"
-						},{
-							text: "The ways we are helping our communities to thrive.",
-							textSize: "text-line",
-							showArrow: "true"
-						}
-					]
-				}) }}
-			</div>
-			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-6 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
-				{{ occlssPromotedContentPanel({
-				panelColour: "victoria",
-				panelURL: "javascript:void(0);",
-				textRows: [
-						{
-						text: "Council funding and spending",
-						textSize: "text-medium",
-						showArrow: "false"
-						},{
-							text: "How council services are paid for and how your Council Tax money is spent.",
-							textSize: "text-line",
-							showArrow: "true"
-						}
-					]
-				}) }}
-			</div>
-			<div class="occlss-layout__col occlss-layout__col--flex occlss-layout__col--lg-4 occlss-layout__col--md-12 occlss-layout__col--sm-12 occlss-layout__col--xs-12">
-				{{ occlssPromotedContentPanel({
-				panelColour: "pale-sky",
-				panelURL: "javascript:void(0);",
-				textRows: [
-						{
-						text: "Get involved in meetings",
-						textSize: "text-medium",
-						showArrow: "false"
-						},{
-							text: "How to address a meeting, ask a question at a full council meeting and present a petition.",
-							textSize: "text-line",
-							showArrow: "true"
-						}
-					]
 				}) }}
 			</div>
       </div>

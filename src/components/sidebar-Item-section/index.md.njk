@@ -10,28 +10,25 @@ show_page_nav: false
 
 {% from "_example.njk" import example %}
 
-## Sidebar item section
-
-Shows users the content that is closely related to the current page.
+This component shows users the content that is closely related to the current page.
 
 {{ example({group: "components", item: "sidebar-item-section", example: "default", html: true }) }}
 
-### When to use this pattern
-
-The related content pattern is displayed on all standard pages and index pages.
+### When to use this component
 
 Think about pages that are related to the current content but are not referenced directly within it. What might the person have been looking for that is similar to the page they are on? For example, on the ‘Apply for a Blue Badge’ page, the user may need the ‘Renew a Blue Badge’ page instead.
 
-If there are no replated pages, the sidebar is blank. Pages that are linked from within the content should not be added to the sidebar.
-
+If there are no related pages, the sidebar is blank. Avoid adding links to pages that are already linked from the page content.
 
 ## Modifier classes
 
-Container `.occlss-sidebar-item-section` modifier `.occlss-sidebar-item-section--council` the modifier will add colour to the vertical line. This modifier used only if the sidebar item section appearing in the council area.
+Container `.occlss-sidebar-item-section` modifier 
 
-`.occlss-sidebar-item-section--business` the modifier used only if the sidebar item section appearing in the business area. 
+`.occlss-sidebar-item-section--council` the modifier will add colour to the vertical line. This modifier is used only if the sidebar item appears in the council area.
 
-`.occlss-sidebar-item-section--residents` the modifier used only if the sidebar item section appearing in the residents area.
+`.occlss-sidebar-item-section--business` this modifier is used only if the sidebar item appears in the business area.
+
+`.occlss-sidebar-item-section--residents` this modifier is used only if the sidebar item appears in the residents area.
 
 ## Changelog
 

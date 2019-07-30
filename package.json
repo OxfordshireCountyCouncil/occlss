@@ -1,6 +1,6 @@
 {
   "name": "occlss",
-  "private": true,
+  "private": false,
   "description": "Oxfordshire County Council live style system",
   "repository": {
     "type": "git",

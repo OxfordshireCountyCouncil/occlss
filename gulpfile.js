@@ -6,7 +6,9 @@ var gulp           = require('gulp'),
     autoprefixer   = require('gulp-autoprefixer'),
     sourcemaps     = require('gulp-sourcemaps'),
     taskListing    = require('gulp-task-listing'),
-    replace        = require('gulp-replace');
+    replace        = require('gulp-replace'),
+    cleanCSS       = require('gulp-clean-css'),
+    rename         = require('gulp-rename');
 
 // SVG
 var $ = {
@@ -22,6 +24,15 @@ gulp.task('genNodeModule:sass', function(done){
   .pipe(sass({
     precision: 5,
   }))
+  .pipe(gulp.dest('./nodejs.module-files/css'))
+  done();
+})
+
+// Clean and minify css
+gulp.task('genNodeModule:mincss', function(done){
+  return gulp.src('./nodejs.module-files/css/*.css')
+  .pipe(cleanCSS({compatibility: 'ie8'}))
+  .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('./nodejs.module-files/css'))
   done();
 })

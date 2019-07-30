@@ -1,14 +1,14 @@
 {
-  "name": "occlss-doc",
+  "name": "occlss",
   "private": true,
   "description": "Oxfordshire County Council live style system",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/OxfordshireCountyCouncil/occlss"
   },
-  "author": "MW",
+  "author": "Oxfordshire County Council web team",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "http://occlss.oxfordshire.gov.uk/",
   "scripts": {
     "preinstall": "node bin/check-nvmrc.js",
     "prestart": "node bin/check-nvmrc.js",
@@ -16,7 +16,7 @@
     "start": "node tasks/serve.js"
   },
   "engines": {
-    "node": "8.11.4"
+    "node": "10.15.1"
   },
   "devDependencies": {
     "breakpoint-sass": "^2.7.1",

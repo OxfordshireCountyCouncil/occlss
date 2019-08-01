@@ -89,7 +89,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import " node_modules/occlss/settings/global-variables";
 
 // TOOLS
-@import "node_modules/occlss/scss/tools/breakpoint-sass/stylesheets/breakpoint";
+@import "node_modules/occlss/scss/tools/breakpoint-sass/breakpoint";
 @import "node_modules/occlss/scss/tools/functions";
 @import "node_modules/occlss/scss/tools/mixins_rem";
 @import "node_modules/occlss/scss/tools/mixin_link-colors";

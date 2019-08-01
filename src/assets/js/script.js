@@ -18,10 +18,10 @@ $(document).ready( function(){
 
     // expand left nav menu
     $('.js-doc-page-sidebar-close').click( function(event) {
-        if($('.js-mobile-menu-layout').hasClass('mobile-menu-layout--expanded')) {
-            $('.js-mobile-menu-layout').removeClass('mobile-menu-layout--expanded');
+        if($('.js-doc-mob-nav').hasClass('is-active')) {
+            $('.js-doc-mob-nav').removeClass('is-active');
         } else {
-            $('.js-mobile-menu-layout').addClass('mobile-menu-layout--expanded');
+            $('.js-doc-mob-nav').addClass('is-active ');
         }
         event.preventDefault();
     });

@@ -14,3 +14,52 @@
     </ul>
   </div>
 </nav>
+
+<div class="doc-mob-nav js-doc-mob-nav">
+  <nav id="doc-mob-nav">
+    <ul class="doc-mob-nav__menu doc-mob-nav__menu--l1">
+      <li class="doc-mob-nav__menuitem">
+        <a href="/" class="doc-mob-nav__menuitem-lnk{{ " is-current" if (path == "") }}">Get started</a>
+      </li>
+      {% for item in navigation %}
+        <li class="doc-mob-nav__menuitem">
+          <a href="/{{ item.url }}" class="doc-mob-nav__menuitem-lnk{{ " is-current" if (item.url in  path) }}">{{ item.label }}</a>
+        {% if item.url in path %}
+                {% if item.items %}
+                  {% for theme, items in item.items | groupby("theme") %}
+                   <ul class="doc-mob-nav__menu doc-mob-nav__menu--l2"> 
+                    
+                    {% if theme != 'undefined' %}
+                      <li class="doc-mob-nav__menuitem">
+                        <strong class="doc-mob-nav__menuitem-title">{{ theme }}</strong>
+                      </li>
+                    {% endif %}
+                    
+                    {% for subitem in items %}
+                      <li class="doc-mob-nav__menuitem {% if subitem.url == path %}is-current{% endif %}">
+                        <a href="/{{ subitem.url }}" class="doc-mob-nav__menuitem-lnk{{ " is-current" if (subitem.url == path) }}">{{ subitem.label }}</a>
+                        {% if (subitem.headings) and (subitem.url == path) %}
+                          <ul class="doc-mob-nav__menu doc-mob-nav__menu--l3">
+                            {% for link in subitem.headings %}
+                              {% if link.depth == 2 %}
+                                <li class="doc-mob-nav__menuitem">
+                                  <a href="/{{ subitem.url }}/#{{ link.url }}" class="doc-mob-nav__menuitem-lnk">
+                                    {{ link.text }}
+                                  </a>
+                                </li>
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                    </ul>
+                  {% endfor %}
+                {% endif %}
+    
+        {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

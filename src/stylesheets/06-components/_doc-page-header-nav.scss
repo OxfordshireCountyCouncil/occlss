@@ -1,6 +1,9 @@
 .#{$doc-prefix}page-header_nav {
     background: $doc-page-header-nav-bg;
     max-height: rem(50px);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        display: none;
+    }
 }
 
 .#{$doc-prefix}page-header_nav__list {
@@ -24,7 +27,6 @@
     color: $doc-page-header-nav-link-color;
     padding: rem(10px 16px 10px 16px);
     @include transition(all .2s ease-in-out);
-    
     &:hover {
         color: $doc-page-header-nav-link-color-hover;  
     }
@@ -33,4 +35,13 @@
 .#{$doc-prefix}page-header_nav__list-item-lnk--open {
     font-weight: 600;
     color: $doc-page-header-nav-link-color-hover;
+}
+
+.#{$doc-prefix}page-header__sidebar-close {
+    @include transition(all .2s ease-in-out);
+    &:hover,
+    &:active,
+    &:focus {
+        outline: 2px solid #edc856;
+    }
 }

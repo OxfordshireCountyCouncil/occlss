@@ -1,8 +1,7 @@
 .#{$doc-prefix}page-footer {
     color: $doc-page-footer-text-color;
-    max-height: rem(120px);
     background: $doc-page-footer-bg-color;
-    padding: rem(16px);
+    padding: rem(32px 16px);
 }
 
 .#{$doc-prefix}page-footer__heading {
@@ -35,7 +34,7 @@
     position: relative;
     width: 100%;
     vertical-align: top;
-    padding: 1rem 1rem;
+    padding: rem(10px 27px);
 
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         padding: 0;

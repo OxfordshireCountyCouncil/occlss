@@ -1,12 +1,5 @@
 .#{$doc-prefix}flex-grid {
-  display: flex;
-
-}
-
-.#{$doc-prefix}flex-grid--column {
-  flex-direction: column;
-  height: 100%;
-  min-height: 100%;
+  @extend .occlss-layout;
 }
 
 .#{$doc-prefix}flex-grid--row {
@@ -18,12 +11,5 @@
 }
 
 .#{$doc-prefix}flex-grid__col {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    flex: 1 0 18%; /* The important bit. This percentage decides your columns. 
-    The percent can be px. It just represents your minimum starting width.
-    */
+  @extend .occlss-layout__col;
 }

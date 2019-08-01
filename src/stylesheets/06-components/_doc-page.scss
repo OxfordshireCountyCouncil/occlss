@@ -62,4 +62,5 @@
 .#{$doc-prefix}page__sidebar {
     background: $doc-bg;
     padding-top: rem(25px);
+    @extend .occlss-layout__col;
 }

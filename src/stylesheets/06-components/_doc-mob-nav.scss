@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     display: none;
+    @extend .occlss-layout__col;
 }
 
 .#{$doc-prefix}mob-nav.is-active {

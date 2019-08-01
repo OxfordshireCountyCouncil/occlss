@@ -1,6 +1,8 @@
 .#{$doc-prefix}page-header_nav {
     background: $doc-page-header-nav-bg;
-    max-height: rem(50px);
+    @extend .occlss-layout__col;
+    padding-top: rem(3px);
+    padding-bottom: rem(3px);
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
         display: none;
     }
@@ -11,7 +13,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    padding: rem(0 10px);
+    padding: rem(0 11px);
 }
 
 .#{$doc-prefix}page-header_nav__list-item {

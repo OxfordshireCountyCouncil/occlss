@@ -175,9 +175,6 @@ $occlss-global-image-path:  '../../images/occlss';
 // trumps
 @import "node_modules/occlss/scss/trumps/globals";
 @import "node_modules/occlss/scss/trumps/utilities";
-@import "node_modules/occlss/scss/trumps/owl-carousel";
-@import "node_modules/occlss/scss/trumps/owl-carousel-theme";
-@import "node_modules/occlss/scss/trumps/objectivity-chatbot";
 @import "node_modules/occlss/scss/trumps/shame";
 ```
 

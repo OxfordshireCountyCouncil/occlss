@@ -39,10 +39,12 @@
 
 .#{$doc-prefix}main-nav__list--internal {
     .#{$doc-prefix}main-nav__list-item-lnk {
+        padding-left: rem(20px);
         &::before {
             display: inline-block;
             content: "\2014 ";
             width: rem(16px);
+            margin-left: rem(-20px);
             color: $doc-main-nav-list-item-lnk-line-color;
         }
     }

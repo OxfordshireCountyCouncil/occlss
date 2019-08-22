@@ -1,0 +1,241 @@
+---
+title: Test
+layout: layout-example.njk
+---
+
+{% from "category-navbar/macro.njk" import occlssCategoryNavbar %}
+{% from "hero-pane/macro.njk" import occlssHeroPane %}
+{% from "popular-content-pane/macro.njk" import occlssPopularContentPane %}
+{% from "promoted-content-panel/macro.njk" import occlssPromotedContentPanel %}
+{% from "cards/macro.njk" import occlssCard %}
+{% from "page-footer/macro.njk" import occlssPageFooter %}
+{% from "page-head/macro.njk" import occlssPageHead %}
+{% from "breadcrumb/macro.njk" import occlssBreadcrumb %}
+
+
+{{ occlssPageHead({
+  type: "default",
+  section: "business"
+}) }}
+
+
+<main id="occlss-main-content">
+
+<div class="occlss-section">
+
+	<div class="occlss-wrapper">
+		{{ occlssBreadcrumb({
+			spaceAfter: false,
+			items: [
+				{
+					itemName: "Home",
+					url: "javascript:void(0);"
+				},{
+					itemName: "Business"
+				}
+			]
+		}) }}
+	</div>
+
+
+	<div class="occlss-wrapper">
+		<div class="occlss-layout">
+				<div class="occlss-layout__col occlss-layout__col--bleed">
+					{{ occlssHeroPane({
+							category: "other",
+							heroClasses: "occlss-hero-pane--news",
+							heading: "News",
+							headingModeClass: "occlss-hero-pane__heading--news",
+							imageURL: "http://www.oxfordshire.gov.uk/sites/default/files/2018-05/business-top-tasks_0.jpg",
+							panels: [{
+                                size: 4,
+								html: "<h2>Help us create a cycling network Oxfordshire can be proud of</h2><p>Residents are encoraged to take part in exiting new plans to redically improve the county's cycling network... <a href='#'>Read this story</a>."
+							}]
+						})
+					}}
+				</div>
+			</div>
+	</div>
+</div>
+
+<div id="main">
+  <div class="occlss-wrapper">
+    <!--START wrapper block-->
+    <div class="occlss-layout">
+      <!--START layout block-->
+		<div class="occlss-layout__col occlss-layout__col--sm-9">
+         <div class="occlss-layout">
+			
+			<div class="occlss-layout__col occlss-layout__col--sm-6">
+                {{ occlssCard({
+                cardRows: [
+                    {
+                        cardTitle: "Oxfordshire’s Fire and Rescue Service goes electric to reduce emissions ",
+                        cardURL: "javascript:void(0);",
+                        cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_img-20190510-092916-386999.jpg",
+                        cardParagraph: [
+                            {
+                            text: "The drive to reduce carbon emissions and clean up the air has stepped up a gear as Oxfordshire County Council takes delivery of a new fleet of electric cars and vans."
+                            }
+                        ]
+                    }
+                ]
+                }) }}
+            </div>
+    		<div class="occlss-layout__col occlss-layout__col--sm-6">
+                {{ occlssCard({
+                cardRows: [
+                    {
+                        cardTitle: "Oxfordshire’s Fire and Rescue Service goes electric to reduce emissions ",
+                        cardURL: "javascript:void(0);",
+                        cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_img-20190510-092916-386999.jpg",
+                        cardParagraph: [
+                            {
+                            text: "The drive to reduce carbon emissions and clean up the air has stepped up a gear as Oxfordshire County Council takes delivery of a new fleet of electric cars and vans."
+                            }
+                        ]
+                    }
+                ]
+                }) }}
+            </div>
+			<div class="occlss-layout__col occlss-layout__col--sm-6">
+                {{ occlssCard({
+                cardRows: [
+                    {
+                        cardTitle: "Oxfordshire’s Fire and Rescue Service goes electric to reduce emissions ",
+                        cardURL: "javascript:void(0);",
+                        cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_img-20190510-092916-386999.jpg",
+                        cardParagraph: [
+                            {
+                            text: "The drive to reduce carbon emissions and clean up the air has stepped up a gear as Oxfordshire County Council takes delivery of a new fleet of electric cars and vans."
+                            }
+                        ]
+                    }
+                ]
+                }) }}
+            </div>
+            <div class="occlss-layout__col occlss-layout__col--sm-6">
+                {{ occlssCard({
+                cardRows: [
+                    {
+                        cardTitle: "Oxfordshire’s Fire and Rescue Service goes electric to reduce emissions ",
+                        cardURL: "javascript:void(0);",
+                        cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_img-20190510-092916-386999.jpg",
+                        cardParagraph: [
+                            {
+                            text: "The drive to reduce carbon emissions and clean up the air has stepped up a gear as Oxfordshire County Council takes delivery of a new fleet of electric cars and vans."
+                            }
+                        ]
+                    }
+                ]
+                }) }}
+            </div>
+            <div class="occlss-layout__col occlss-layout__col--sm-6">
+                {{ occlssCard({
+                cardRows: [
+                    {
+                        cardTitle: "Oxfordshire’s Fire and Rescue Service goes electric to reduce emissions ",
+                        cardURL: "javascript:void(0);",
+                        cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_img-20190510-092916-386999.jpg",
+                        cardParagraph: [
+                            {
+                            text: "The drive to reduce carbon emissions and clean up the air has stepped up a gear as Oxfordshire County Council takes delivery of a new fleet of electric cars and vans."
+                            }
+                        ]
+                    }
+                ]
+                }) }}
+            </div>
+            <div class="occlss-layout__col occlss-layout__col--sm-6">
+                {{ occlssCard({
+                cardRows: [
+                    {
+                        cardTitle: "Oxfordshire’s Fire and Rescue Service goes electric to reduce emissions ",
+                        cardURL: "javascript:void(0);",
+                        cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_img-20190510-092916-386999.jpg",
+                        cardParagraph: [
+                            {
+                            text: "The drive to reduce carbon emissions and clean up the air has stepped up a gear as Oxfordshire County Council takes delivery of a new fleet of electric cars and vans."
+                            }
+                        ]
+                    }
+                ]
+                }) }}
+            </div>
+
+
+		  </div>
+		</div>
+		<div class="occlss-layout__col occlss-layout__col--sm-3">
+			<h2>News by topic</h2>
+			<ul>
+				<li><a href="#">View all our news items</a></li>
+				<li><a href="#">Roads &amp; Transport</a></li>
+				<li><a href="#">Children & Families</a></li>
+				<li><a href="#">Countryside</a></li>
+				<li><a href="#">Community</a></li>
+				<li><a href="#">Fire & Rescue </a></li>
+			</ul>
+
+			<div class="js-occ-twitter-pane">
+				<a class="twitter-timeline"
+				href="https://twitter.com/OxMusicService"
+				data-height="600"
+				data-chrome="nofooter"
+				tweet-limit="4"
+				data-dnt="true"
+				data-aria-polite="assertive"
+				data-link-color="#0a549d">
+				Tweets
+				</a>
+				<script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+
+
+
+		</div>
+    </div>
+    <!--End layout elemnt -->
+  </div>
+</div>
+
+
+
+
+{#{ occlssCard({
+	cardRows: [
+		{
+			cardTitle: "Oxfordshire’s Fire and Rescue Service goes electric to reduce emissions ",
+			cardURL: "javascript:void(0);",
+			cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_img-20190510-092916-386999.jpg",
+			cardParagraph: [
+				{
+				text: "The drive to reduce carbon emissions and clean up the air has stepped up a gear as Oxfordshire County Council takes delivery of a new fleet of electric cars and vans."
+				}
+			]
+		},{
+			cardTitle: "Oxfordshire communities and local businesses gearing up for OVO Energy Women’s Tour cycle race",
+			cardURL: "javascript:void(0);",
+			cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_photo-henleybusinessbanner2-414318.jpg",
+			cardParagraph: [
+				{
+				text: "Oxfordshire communities and local businesses are making plans to welcome the prestigious OVO Energy Women’s Tour cycle race, which will pass through the county on Wednesday 12 June."
+				}
+			]
+		}
+	]
+}) }#}
+
+
+
+</main>
+
+<div class="occlss-section occlss-section--find-my-nearest">
+  {#{> organisms-find-my-nearest }#}
+</div>
+
+{{ occlssPageFooter({
+  type: "short",
+  fRowHeading: "Oxfordshire County Council",
+  fRowHTML: "<p>County Hall, New Road, Oxford, OX1 1ND</p>\n"
+}) }}

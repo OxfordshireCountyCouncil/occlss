@@ -12,23 +12,25 @@
       {% endif %}
       <ul class="doc-main-nav__list">
         {% for subitem in items %}
-        <li class="doc-main-nav__list-item {% if subitem.url == path %}doc-main-nav__list-item--current{% endif %}">
-          <a href="/{{ subitem.url }}"
-            class="doc-main-nav__list-item-lnk {% if subitem.url == path %}doc-main-nav__list-item-lnk--current{% endif %}">{{ subitem.label }}</a>
-          {% if (subitem.headings) and (subitem.url == path) %}
-          <ul class="doc-main-nav__list doc-main-nav__list--internal">
-            {% for link in subitem.headings %}
-            {% if link.depth == 2 %}
-            <li class="doc-main-nav__list-item">
-              <a href="/{{ subitem.url }}/#{{ link.url }}" class="doc-main-nav__list-item-lnk">
-                {{ link.text }}
-              </a>
+          {% if subitem.navvisible != false %}
+            <li class="doc-main-nav__list-item {% if subitem.url == path %}doc-main-nav__list-item--current{% endif %}">
+              <a href="/{{ subitem.url }}"
+                class="doc-main-nav__list-item-lnk {% if subitem.url == path %}doc-main-nav__list-item-lnk--current{% endif %}">{{ subitem.label }}</a>
+              {% if (subitem.headings) and (subitem.url == path) %}
+              <ul class="doc-main-nav__list doc-main-nav__list--internal">
+                {% for link in subitem.headings %}
+                {% if link.depth == 2 %}
+                <li class="doc-main-nav__list-item">
+                  <a href="/{{ subitem.url }}/#{{ link.url }}" class="doc-main-nav__list-item-lnk">
+                    {{ link.text }}
+                  </a>
+                </li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+              {% endif %}
             </li>
-            {% endif %}
-            {% endfor %}
-          </ul>
           {% endif %}
-        </li>
         {% endfor %}
       </ul>
       {% endfor %}

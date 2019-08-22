@@ -126,3 +126,35 @@
         }
     }
 }
+
+
+.occlss-top-tasks-pane--other {
+    .occlss-top-tasks-pane__heading {
+        border-bottom-color: $occlss-top-tasks-pane-color-widget;
+    }
+    .occlss-top-tasks-pane__content {
+        border-bottom-color: $occlss-top-tasks-pane-color-widget;
+    }
+    .occlss-top-tasks-pane__wrapper {
+        background: transparent; 
+    }
+    .occlss-top-tasks-pane__layout {
+        padding: rem(25px);
+    }
+    .occlss-top-tasks-pane__col {
+        padding: rem(25px);
+        background: #fff;
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            width: 100%;
+            padding-left: rem(16px);
+            padding-right: rem(16px);
+        }
+    }
+    h2:last-child,
+    h3:last-child,
+    h4:last-child,
+    h5:last-child,
+    p:last-child {
+        margin-bottom: 0;
+    }
+}

@@ -44,11 +44,27 @@
     background-color: $occlss-hero-pane-heading-bg-color-council;
 }
 
+.occlss-hero-pane__heading--news {
+    color: $occlss-hero-pane-heading-text-color-white;
+    background-color: $occlss-hero-pane-heading-bg-color-news;
+}
+
 .occlss-hero-pane--lgimage {
     padding-bottom: rem(20px);
     .occlss-hero-pane__heading  {
         margin-top: 0;
     }
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        padding-bottom: 0;
+     }
+}
+
+.occlss-hero-pane--news {
+    .occlss-hero-pane__heading  {
+        margin-top: rem(25px);
+    }
+    background-position: center;
+    background-size: cover;
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
         padding-bottom: 0;
      }

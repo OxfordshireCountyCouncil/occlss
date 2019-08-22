@@ -1,0 +1,16 @@
+.occlss-summary-pane {
+  margin-top: rem(16px);
+  margin-bottom: rem(60px);
+  padding-top: rem(20px);
+  border-top: rem(2px solid $summary-pane-line-color);
+}
+
+.occlss-summary-pane__title {
+ margin-bottom: rem(10px);
+}
+
+.occlss-summary-pane__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

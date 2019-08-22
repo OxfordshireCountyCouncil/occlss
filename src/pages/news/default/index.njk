@@ -11,6 +11,7 @@ layout: layout-example.njk
 {% from "page-footer/macro.njk" import occlssPageFooter %}
 {% from "page-head/macro.njk" import occlssPageHead %}
 {% from "breadcrumb/macro.njk" import occlssBreadcrumb %}
+{% from "summary-pane/macro.njk" import occlssSummaryPane %}
 
 
 {{ occlssPageHead({
@@ -167,20 +168,79 @@ layout: layout-example.njk
 		  </div>
 		</div>
 		<div class="occlss-layout__col occlss-layout__col--sm-3">
-			<h2>News by topic</h2>
-			<ul>
-				<li><a href="#">View all our news items</a></li>
-				<li><a href="#">Roads &amp; Transport</a></li>
-				<li><a href="#">Children & Families</a></li>
-				<li><a href="#">Countryside</a></li>
-				<li><a href="#">Community</a></li>
-				<li><a href="#">Fire & Rescue </a></li>
-			</ul>
+
+
+
+            {{ occlssSummaryPane({
+                panels: [
+                    {
+                        title: "News by topic",
+                        listitems: [
+                            {
+                                title: "View all our news items",
+                                url: "#"
+                            },
+                            {
+                                title: "Roads &amp; Transport",
+                                url: "#"
+                            },
+                            {
+                                title: "Children & Families",
+                                url: "#"
+                            },
+                            {
+                                title: "Countryside",
+                                url: "#"
+                            },
+                            {
+                                title: "Community",
+                                url: "#"
+                            },
+                            {
+                                title: "Fire & Rescue",
+                                url: "#"
+                            },
+                            {
+                                title: "All topics",
+                                url: "#"
+                            }
+                        ]
+                    },{
+                        title: "News from youtr area",
+                        listitems: [
+                            {
+                                title: "Abingdon north",
+                                url: "#"
+                            },
+                            {
+                                title: "Abingdon central",
+                                url: "#"
+                            },
+                            {
+                                title: "Abingdon south",
+                                url: "#"
+                            },
+                            {
+                                title: "Bambury",
+                                url: "#"
+                            },
+                            {
+                                title: "Bicester",
+                                url: "#"
+                            },
+                            {
+                                title: "All areas",
+                                url: "#"
+                            }
+                        ]
+                    }
+                ]
+            }) }}
 
 			<div class="js-occ-twitter-pane">
 				<a class="twitter-timeline"
 				href="https://twitter.com/OxMusicService"
-				data-height="600"
+				data-height="400"
 				data-chrome="nofooter"
 				tweet-limit="4"
 				data-dnt="true"
@@ -199,40 +259,7 @@ layout: layout-example.njk
   </div>
 </div>
 
-
-
-
-{#{ occlssCard({
-	cardRows: [
-		{
-			cardTitle: "Oxfordshire’s Fire and Rescue Service goes electric to reduce emissions ",
-			cardURL: "javascript:void(0);",
-			cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_img-20190510-092916-386999.jpg",
-			cardParagraph: [
-				{
-				text: "The drive to reduce carbon emissions and clean up the air has stepped up a gear as Oxfordshire County Council takes delivery of a new fleet of electric cars and vans."
-				}
-			]
-		},{
-			cardTitle: "Oxfordshire communities and local businesses gearing up for OVO Energy Women’s Tour cycle race",
-			cardURL: "javascript:void(0);",
-			cardImageURL: "http://www.oxfordshire.gov.uk/sites/default/files/aggregator/enclosure/500_photo-henleybusinessbanner2-414318.jpg",
-			cardParagraph: [
-				{
-				text: "Oxfordshire communities and local businesses are making plans to welcome the prestigious OVO Energy Women’s Tour cycle race, which will pass through the county on Wednesday 12 June."
-				}
-			]
-		}
-	]
-}) }#}
-
-
-
 </main>
-
-<div class="occlss-section occlss-section--find-my-nearest">
-  {#{> organisms-find-my-nearest }#}
-</div>
 
 {{ occlssPageFooter({
   type: "short",

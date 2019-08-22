@@ -139,10 +139,10 @@
         background: transparent; 
     }
     .occlss-top-tasks-pane__layout {
-        padding: rem(25px);
+        padding: rem(35px);
     }
     .occlss-top-tasks-pane__col {
-        padding: rem(25px);
+        padding: rem(35px);
         background: #fff;
         @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
             width: 100%;

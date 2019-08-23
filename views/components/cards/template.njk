@@ -1,8 +1,8 @@
 
 {% if params.cardRows.length == 1 %}
     {% for item in params.cardRows %}
-        <article class="occlss-card">
-            <a href="{{ item.cardURL }}" class="occlss-card__link">
+        <article class="occlss-card{% if item.cardType == 'teaser' %} occlss-card--teaser{% endif %}">
+            {% if item.cardClicable != false %}<a href="{{ item.cardURL }}" class="occlss-card__link">{% endif %}
                 <figure class="occlss-card__image-container">
                     <img src="{{ item.cardImageURL }}" class="occlss-card__image" alt="">
                 </figure>
@@ -10,11 +10,17 @@
                     <h3 class="occlss-card__title">{{ item.cardTitle  }}</h3>
                 </header>
                 <div class="occlss-card__main">
+                    {% if item.cardDate %}
+                        <p class="occlss-card__paragraph"><span class="occlss-card__date">{{ item.cardDate }}</span></p>
+                    {% endif %}
                     {% for paragraphtext in item.cardParagraph %}
                         <p class="occlss-card__paragraph">{{ paragraphtext.text  }}</p>
                     {% endfor %}
+                    {% if item.cardClicable == false %}
+                        <p class="occlss-card__paragraph"><a href="{{ item.cardURL }}">{% if item.cardURLTitle %}{{  item.cardURLTitle }}{% else %}Read more{% endif %}</a></p>
+                    {% endif %}
                 </div>
-            </a>
+           {% if item.cardClicable != false %}</a>{% endif %}
         </article>
     {% endfor %}
 {% elseif params.cardRows.length > 1 %}
@@ -27,9 +33,8 @@
 
         {% for item in params.cardRows %}
             <div class="occlss-layout__col occlss-layout__col--sm-4">
-            
-                <article class="occlss-card">
-                    <a href="{{ item.cardURL }}" class="occlss-card__link">
+                <article class="occlss-card{% if item.cardType == 'teaser' %} occlss-card--teaser{% endif %}">
+                    {% if item.cardClicable != false %}<a href="{{ item.cardURL }}" class="occlss-card__link">{% endif %}
                         <figure class="occlss-card__image-container">
                             <img src="{{ item.cardImageURL }}" class="occlss-card__image" alt="">
                         </figure>
@@ -37,11 +42,17 @@
                             <h3 class="occlss-card__title">{{ item.cardTitle  }}</h3>
                         </header>
                         <div class="occlss-card__main">
+                            {% if item.cardDate %}
+                                <p class="occlss-card__paragraph"><span class="occlss-card__date">{{ item.cardDate }}</span></p>
+                            {% endif %}
                             {% for paragraphtext in item.cardParagraph %}
                                 <p class="occlss-card__paragraph">{{ paragraphtext.text  }}</p>
                             {% endfor %}
+                            {% if item.cardClicable == false %}
+                                <p class="occlss-card__paragraph"><a href="{{ item.cardURL }}">{% if item.cardURLTitle %}{{  item.cardURLTitle }}{% else %}Read more{% endif %}</a></p>
+                            {% endif %}
                         </div>
-                    </a>
+                {% if item.cardClicable != false %}</a>{% endif %}
                 </article>
             </div>
         {% endfor %}

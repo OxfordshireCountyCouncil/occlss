@@ -70,3 +70,21 @@
 .occlss-card__paragraph {
     margin-bottom: 0;
 }
+
+.occlss-card__date {
+   font-size: rem($occlss-card-date-font-size);
+   font-weight: $occlss-card-date-font-weight; 
+}
+
+.occlss-card--teaser {
+    .occlss-card__title {
+        font-size: rem($occlss-card-teaser-title-font-size);
+        margin-bottom: rem(20px);
+    }
+    .occlss-card__paragraph {
+        margin-bottom: rem(20px);
+    }
+    .occlss-card__paragraph:last-child {
+        margin-bottom: 0;
+    }
+}

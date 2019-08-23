@@ -1,0 +1,53 @@
+.occlss-secondary-site-nav--mobile {
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    display: none;
+  }
+}
+
+.occlss-secondary-site-nav--mobile.is-active {
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    display: block;
+  }
+}
+
+.occlss-secondary-site-nav__container {
+  background: $occlss-s-site-nav-background-color;
+}
+
+.occlss-secondary-site-nav__list {
+  list-style: none;
+  padding: rem(0 0 0 16px);
+  margin: rem(6px 0 0 0);
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    padding: 0;
+  }
+}
+
+.occlss-secondary-site-nav__item {
+  display: inline-block;
+  margin-right: rem(30px);
+  margin-bottom: 0;
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    display: block;
+    width: 100%;
+    padding: rem(12px);
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.occlss-secondary-site-nav__link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+}
+
+.occlss-secondary-site-nav__menu {
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    padding: rem(3px);
+  }
+}

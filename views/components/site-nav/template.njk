@@ -1,3 +1,5 @@
+{% from "secondary-site-nav/macro.njk" import occlssSecondarySiteNav %}
+
 <nav class="occlss-site-nav{% if params.mobileNav == "true" %} occlss-site-nav--mobile{% endif %}">
     {% if params.logoLinkLogoUrl %}
         <a href="{{ params.logoLinkUrl }}" class="occlss-site-nav__logo-link"
@@ -21,3 +23,13 @@
     </ul>
     {% endif %}
 </nav>
+
+{% if params.secondaryNav == true %}
+    {{ occlssSecondarySiteNav({
+        mobile: params.secondaryNavMobile,
+        secondaryNavitems: params.secondaryNavItems,
+        secondaryNavSearch: params.secondaryNavSearch,
+        secondaryNavSearchType: params.secondaryNavSearchType,
+        secondaryNavSearchPlaceholder: params.secondaryNavSearchPlaceholder
+    }) }}
+{% endif %}

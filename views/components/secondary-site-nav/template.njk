@@ -1,0 +1,32 @@
+{% from "short-search-form/macro.njk" import occlssShortSearchForm %}
+<div id="secondary-nav" class="occlss-secondary-site-nav {% if params.mobile == true %} occlss-secondary-site-nav--mobile js-occlss-secondary-site-nav{% endif %}">
+  <div class="occlss-wrapper">
+    <div class="occlss-secondary-site-nav__container">
+      <div class="occlss-layout occlss-layout">
+        {% if params.secondaryNavSearch == true %}
+        <div class="occlss-layout__col occlss-layout__col--md-8 occlss-secondary-site-nav__menu">
+        {% else %}
+        <div class="occlss-layout__col occlss-layout__col--md-12 occlss-secondary-site-nav__menu">
+        {% endif %}
+            {% if params.secondaryNavitems %}
+            <ul class="occlss-secondary-site-nav__list">
+                {% for item in params.secondaryNavitems %}
+                <li class="occlss-secondary-site-nav__item">
+                  <a href="{{ item.url }}" class="occlss-secondary-site-nav__link">{{ item.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% if params.secondaryNavSearch == true %}
+          <div class="occlss-layout__col occlss-layout__col--md-4">
+          {{ occlssShortSearchForm({
+                type: params.secondaryNavSearchType,
+                placeholder: params.secondaryNavSearchPlaceholder
+          }) }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

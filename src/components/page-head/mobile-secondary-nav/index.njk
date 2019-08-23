@@ -1,0 +1,41 @@
+---
+title: Page head
+layout: layout-example.njk
+---
+
+{% from "page-head/macro.njk" import occlssPageHead %}
+
+{{ occlssPageHead({
+  type: "mobile-with-secondary-nav",
+  logoLinkUrl: "https://www.oxfordshire.gov.uk",
+  logoLinkTitle: "Back to Oxfordshire County Council Home",
+  logoLinkLogoUrl: "/assets/images/occlss/logo.svg",
+  logoLinkLogoAlt: "Oxfordshire County Council logo",
+  mobileNav: "true",
+  mainNavItems: [
+    {
+        title: "My account",
+        url: "https://service.oxfordshire.gov.uk/auth?returnurl=http://www.oxfordshire.gov.uk"
+    }
+  ],
+  secondaryNav: true,
+  secondaryNavMobile: true,
+  secondaryNavItems: [
+            {
+                title: "Home",
+                url: "#"
+            },{
+                title: "All news",
+                url: "#"
+            },{
+                title: "News by topic",
+                url: "#"
+            },{
+                title: "Media Library",
+                url: "#"
+            }
+        ],
+    secondaryNavSearch: true,
+    secondaryNavSearchType: "small",
+    secondaryNavSearchPlaceholder: "Search news"
+}) }}

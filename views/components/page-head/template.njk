@@ -74,12 +74,39 @@
 					logoLinkLogoAlt: "Oxfordshire County Council logo",
 					mobileNav: "true",
 					navItems: [
-				{
-					title: "My account",
-					url: "https://service.oxfordshire.gov.uk/auth?returnurl=http://www.oxfordshire.gov.uk"
-				}
-			]
-			}) }}
+							{
+								title: "My account",
+								url: "https://service.oxfordshire.gov.uk/auth?returnurl=http://www.oxfordshire.gov.uk"
+							}
+						]
+					}) }}
+			</div>
+		</div>
+		<!--End layout block -->
+	</div>
+	<!--End wrapper block -->
+</header>
+{% elseif params.type == "mobile-with-secondary-nav" %}
+<header class="occlss-page-head">
+	<div class="occlss-wrapper occlss-page-head__wraper">
+		<!--START wrapper block-->
+		<div class="occlss-layout">
+			<!--START layout block-->
+			<div class="occlss-layout__col occlss-layout__col--sm-12 occlss-layout__col--bleed occlss-page-head__nav">
+				{{ occlssSiteNav({
+					logoLinkUrl: params.logoLinkUrl,
+					logoLinkTitle: params.logoLinkTitle,
+					logoLinkLogoUrl: params.logoLinkLogoUrl,
+					logoLinkLogoAlt: params.logoLinkLogoAlt,
+					mobileNav: params.mobileNav,
+					navItems: params.mainNavItems,
+					secondaryNav: params.secondaryNav,
+					secondaryNavMobile: params.secondaryNavMobile,
+					secondaryNavItems: params.secondaryNavItems,
+					secondaryNavSearch: params.secondaryNavSearch,
+				    secondaryNavSearchType: params.secondaryNavSearchType,
+                    secondaryNavSearchPlaceholder: params.secondaryNavSearchPlaceholder
+					}) }}
 			</div>
 		</div>
 		<!--End layout block -->

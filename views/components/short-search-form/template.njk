@@ -1,19 +1,25 @@
 {% from "form-controls/macro.njk" import occlssFormCntrls %}
 {% from "button/macro.njk" import occlssButton %}
 
-<form class="occlss-form">
+{% block content %}
+<div class="occlss-form occlss-form--small" action="#" method="post" novalidate>
     <div class="occlss-layout">
         <div class="occlss-form__short-search-group occlss-layout__col occlss-layout__col--sm-10 occlss-layout__col--md-9 occlss-layout__col--12 occlss-layout__col--bleed">
-            <div class="occlss-form-cntrls occlss-form-cntrls--short-search">
+            <div class="occlss-form-cntrls occlss-form-cntrls--short-search occlss-form-cntrls--small">
+                {% if params.type != "small" %}
                 <span class="occlss-icon occlss-icon--search occlss-form-cntrls__short-search-icon" aria-hidden="true">
                     <svg aria-hidden="true" class="occlss-icon__container">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#search" class="icon__source icon__source--svg"></use>
                     </svg>
                 </span>
+                {% endif %}
                 <label class="occlss-u-visuallyhidden" for="occlss-short-search-form-input-da1d121aq">Search</label>
+                {% if  params.placeholder %}
+                <input type="text" class="occlss-form-cntrls__input occlss-form-cntrls__input--short-search" id="occlss-short-search-form-input-da1d121aq" name="Search" placeholder="{{ params.placeholder }}">
+                {% else %}
                 <input type="text" class="occlss-form-cntrls__input occlss-form-cntrls__input--short-search" id="occlss-short-search-form-input-da1d121aq" name="Search">
+                {% endif %}
             </div>
-        
         </div>
         <div class="occlss-layout__col occlss-layout__col--sm-2 occlss-layout__col--md-3 occlss-layout__col--12 occlss-layout__col--bleed">
             {{ occlssButton({
@@ -22,4 +28,5 @@
             }) }}
         </div>
     </div>
-</form>
+</div>
+{% endblock %}

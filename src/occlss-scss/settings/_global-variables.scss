@@ -705,6 +705,14 @@ $occlss-site-nav-toggle-link-color-hover:             $occlss-link-color-primary
 
 
 
+// Secondary site navigation _occlss-secondary-site-nav.scss
+$occlss-s-site-nav-background-color:                    $occlss-brand-color-aqua-deep !default;
+$occlss-s-site-nav-background-color-secondary:          $occlss-brand-color-apple !default;
+$occlss-s-site-nav-padding:                             0 24px !default;
+$occlss-s-site-nav-toggle-link-color-hover:             $occlss-link-color-primary-hover !default;
+
+
+
 // Pane
 // Top tasks pane _occlss-top-tasks-pane.scss
 $occlss-top-tasks-pane-heading-border:                2px solid transparent !default;
@@ -819,15 +827,6 @@ $occlss-alert-border-color-success:                  $occlss-brand-color-apple !
 $occlss-alert-background-color-success:              $occlss-brand-color-zanah !default;
 $occlss-alert-border-color-info:                     $occlss-brand-color-denim !default;
 $occlss-alert-background-color-info:                 $occlss-brand-color-solitude !default;
-
-
-
-
-// Carusel _owl-carousel-theme.scss
-$occlss-carusel-navbar-z-index:                        $occlss-global-zindex-unit-9 !default; 
-$occlss-carusel-nav-button-background-color:           $occlss-brand-color-pale-sky !default;  
-$occlss-carusel-dot-button-background-color-default:   $occlss-brand-color-pale-sky !default; 
-$occlss-carusel-dot-button-background-color-hover:     $occlss-brand-color-pizza !default;
 
 
 

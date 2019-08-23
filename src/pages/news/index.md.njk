@@ -5,13 +5,15 @@ section: Pages
 layout: layout-pane.njk
 order: 0
 show_page_nav: false
-show_item_nav: false
+show_item_nav: true
 ---
 
 {% from "_example.njk" import example %}
 
-Test
+## News landing page
 
-## News
+{{ example({group: "pages", item: "news", example: "landing", html: true }) }}
 
-{{ example({group: "pages", item: "news", example: "default", html: true }) }}
+## News internal page
+
+{{ example({group: "pages", item: "news", example: "internal", html: true }) }}

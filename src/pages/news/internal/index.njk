@@ -1,0 +1,143 @@
+---
+title: Test
+layout: layout-example.njk
+---
+
+{% from "category-navbar/macro.njk" import occlssCategoryNavbar %}
+{% from "hero-pane/macro.njk" import occlssHeroPane %}
+{% from "popular-content-pane/macro.njk" import occlssPopularContentPane %}
+{% from "promoted-content-panel/macro.njk" import occlssPromotedContentPanel %}
+{% from "cards/macro.njk" import occlssCard %}
+{% from "page-footer/macro.njk" import occlssPageFooter %}
+{% from "page-head/macro.njk" import occlssPageHead %}
+{% from "breadcrumb/macro.njk" import occlssBreadcrumb %}
+{% from "summary-pane/macro.njk" import occlssSummaryPane %}
+
+
+{{ occlssPageHead({
+  type: "mobile-with-secondary-nav",
+  logoLinkUrl: "https://www.oxfordshire.gov.uk",
+  logoLinkTitle: "Back to Oxfordshire County Council Home",
+  logoLinkLogoUrl: "/assets/images/occlss/logo.svg",
+  logoLinkLogoAlt: "Oxfordshire County Council logo",
+  mobileNav: "true",
+  mainNavItems: [
+    {
+        title: "My account",
+        url: "https://service.oxfordshire.gov.uk/auth?returnurl=http://www.oxfordshire.gov.uk"
+    }
+  ],
+  secondaryNav: true,
+  secondaryNavMobile: true,
+  secondaryNavItems: [
+            {
+                title: "Home",
+                url: "#"
+            },{
+                title: "All news",
+                url: "#"
+            },{
+                title: "News by topic",
+                url: "#"
+            },{
+                title: "Media Library",
+                url: "#"
+            }
+        ],
+    secondaryNavSearch: true,
+    secondaryNavSearchType: "small",
+    secondaryNavSearchPlaceholder: "Search news"
+}) }}
+
+
+<main id="occlss-main-content">
+
+<div class="occlss-section">
+
+	<div class="occlss-wrapper">
+		{{ occlssBreadcrumb({
+			spaceAfter: false,
+			items: [
+				{
+					itemName: "Home",
+					url: "javascript:void(0);"
+				},{
+					itemName: "Business"
+				}
+			]
+		}) }}
+	</div>
+</div>
+
+<div id="main">
+  <div class="occlss-wrapper ">
+    <!--START wrapper block-->
+    <div class="occlss-layout occlss-layout--gutter-s">
+      <!--START layout block-->
+		<div class="occlss-layout__col occlss-layout__col--sm-9">
+
+            <span class="occlss-g-large-text occlss-g-font-weight-light occlss-u-bspace-sm occlss-g-font-inline-block">Oxford, 01 August 2019</span>
+            <h1 class="occlss-g-heading-main occlss-u-bspace-sm">Oxfordshire’s new Chief Fire Officer shares his vision</h1>
+        
+            <p>A vision for an innovative, progressive and outstanding service has been announced by Oxfordshire’s new Chief Fire Officer, who began&nbsp;his role on 01 August 2019.</p>
+
+            <p>Rob MacDougall, 45, wants Oxfordshire County Council Fire and Rescue Service to represent every community.</p>
+
+            <p>Watch his interview with <strong><a href="https://www.youtube.com/watch?v=mzE9NFKek1k&amp;feature=youtu.be" data-ajax="false">That’s Oxfordshire TV here</a></strong>.</p>
+
+            <p>He explains: “Residents will be at the heart of everything we do. We will ensure the safest communities for everyone in Oxfordshire through our prevention and education work, while providing a world class emergency response when people need us the most. We are a great service and aspire to be outstanding through continuous improvement and innovation.”</p>
+
+            <p>The <strong>Cowley</strong> resident was previously Assistant Chief Fire Officer for Oxfordshire.</p>
+
+            <p>Rob joined the service in 1998 and has been based in Oxfordshire for most of his career. He is married with two children.</p>
+
+            <p>The full title of Rob’s role is Director of Community Safety and Chief Fire Officer. Rob will lead all the community safety services including Trading Standards, the Gypsy and Traveller service and Emergency Planning.</p>
+
+            <p>Rob said: “All of these vital services support Oxfordshire’s thriving communities. There is a common purpose: to reduce the chance that anyone will come to harm –&nbsp;the safest communities for everyone in Oxfordshire.”</p>
+
+            <h2><strong>National recognition</strong></h2>
+
+            <p>Talking specifically about the role of Chief Fire Officer, Rob said:</p>
+
+            <p>“Oxfordshire has one of the UK’s very best fire and rescue services, recognised in Her Majesty's Inspectorate&nbsp;of Constabulary and Fire &amp; Rescue Services’ (HMICFRS) recent report.</p>
+
+            <p>“I believe this success is due to integration as part of the County Council, the vision of previous leadership; and the tremendous hard work and dedication of everyone in the organisation.</p>
+
+            <p>“As the new Chief Fire Officer, I not only need to maintain the excellent services that we provide, but make sure we continuously improve and meet the evolving needs of our communities. We are a great service that aspires to be outstanding.</p>
+
+            <p>“Our service is really progressive, moving away from a traditional fire brigade to an innovative and dynamic fire and rescue service. We have broken down some of the hierarchies that used to exist by removing some of the old-fashioned privileges of rank and encouraging open conversation at all levels of the organisation. In the office environment, our senior leaders will actively discourage the use of titles like ‘sir’ and ‘guv’ and would much rather be called by their first names. I am the Chief Fire Officer, but I expect people to call me Rob.</p>
+
+            <p>“We continue to provide a fantastic emergency response when people are in need, but also provide first class preventative services, keeping people safe in their communities, places of work and on the road.</p>
+
+            <p>“Our frontline teams will continue to play a lead role in delivering innovative services. As an example, our local firefighters developed new water rescue techniques. By adapting existing protocols and the way we use equipment, we can get into water much quicker to prevent drownings; saving lives.”</p>
+
+		</div>
+		<div class="occlss-layout__col occlss-layout__col--sm-3">
+
+			<div class="js-occ-twitter-pane">
+				<a class="twitter-timeline"
+				href="https://twitter.com/OxMusicService"
+				data-height="400"
+				data-chrome="nofooter"
+				tweet-limit="4"
+				data-dnt="true"
+				data-aria-polite="assertive"
+				data-link-color="#0a549d">
+				Tweets
+				</a>
+				<script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+
+		</div>
+    </div>
+    <!--End layout elemnt -->
+  </div>
+</div>
+
+</main>
+
+{{ occlssPageFooter({
+  type: "short",
+  fRowHeading: "Oxfordshire County Council",
+  fRowHTML: "<p>County Hall, New Road, Oxford, OX1 1ND</p>\n"
+}) }}

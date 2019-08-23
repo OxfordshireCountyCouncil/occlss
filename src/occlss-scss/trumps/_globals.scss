@@ -50,6 +50,38 @@
     font-size: rem($occlss-g-small-font-size);
 }
 
+// Global font weight
+.occlss-g-font-weight-light {
+    font-weight: $occlss-g-font-weight-light;
+}
+
+.occlss-g-font-weight-regular {
+    font-weight: $occlss-g-font-weight-regular;
+}
+
+.occlss-g-font-weight-medium {
+    font-weight: $occlss-g-font-weight-medium;
+}
+
+.occlss-g-font-weight-semibold {
+    font-weight: $occlss-g-font-weight-semibold;
+}
+
+.occlss-g-font-weight-bold {
+    font-weight: $occlss-g-font-weight-bold;
+}
+
+.occlss-g-font-weight-black {
+    font-weight: $occlss-g-font-weight-black;
+}
+
+
+// Global text inline block
+.occlss-g-font-inline-block {
+    display: inline-block;
+}
+
+
 
 .occlss-g-table-responsive {
     display: block;

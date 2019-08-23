@@ -349,7 +349,7 @@ $input-width:(
   .occlss-form-cntrls__input--short-search {
     padding: rem(6px 12px);
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-      padding: rem(12px);
+      padding: rem(10px 16px);
     }
   }
 }

@@ -62,6 +62,9 @@
 .occlss-hero-pane--news {
     .occlss-hero-pane__heading  {
         margin-top: rem(35px);
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            margin-top: 0;
+         }
     }
     background-position: center;
     background-size: cover;

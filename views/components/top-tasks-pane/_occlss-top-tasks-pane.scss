@@ -140,14 +140,18 @@
     }
     .occlss-top-tasks-pane__layout {
         padding: rem(35px);
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            padding: rem(0);
+         }
     }
     .occlss-top-tasks-pane__col {
         padding: rem(35px);
         background: #fff;
-        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
             width: 100%;
-            padding-left: rem(16px);
-            padding-right: rem(16px);
+        }
+        @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+            padding: rem(16px);
         }
     }
     h2:last-child,

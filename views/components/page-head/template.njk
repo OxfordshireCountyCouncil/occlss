@@ -51,7 +51,9 @@
 			<div
 				class="occlss-layout__col occlss-layout__col--md-5 occlss-layout__col--order-1-md occlss-page-head__search-container">
 				<!--START layout elemnt -->
-				{{ occlssShortSearchForm() }}
+				{{ occlssShortSearchForm({
+					type: params.searchBoxType
+				}) }}
 			</div>
 			<!--End layout elemnt -->
 		</div>

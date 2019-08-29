@@ -54,9 +54,15 @@ layout: layout-example.njk
 			items: [
 				{
 					itemName: "Home",
-					url: "javascript:void(0);"
-				},{
-					itemName: "Business"
+					url: "https://www.oxfordshire.gov.uk/"
+				},
+        {
+					itemName: "Business",
+					url: "https://www.oxfordshire.gov.uk/business"
+				},
+        {
+					itemName: "Newsroom",
+					url: "https://news.oxfordshire.gov.uk"
 				}
 			]
 		}) }}
@@ -107,6 +113,86 @@ layout: layout-example.njk
 
 		</div>
 		<div class="occlss-layout__col occlss-layout__col--sm-3">
+
+            
+
+            {{ occlssPromotedContentPanel({
+              panelColour: "boston-blue",
+              panelURL: "https://news.oxfordshire.gov.uk",
+              textRows: [
+                    {
+                      text: "Back to Newsroom",
+                      textSize: "text-small",
+                      showArrow: "true"
+                    }
+              ]
+            }) }}
+
+            {{ occlssSummaryPane({
+                panels: [
+                    {
+                        title: "News by topic",
+                        listitems: [
+                            {
+                                title: "View all our news items",
+                                url: "#"
+                            },
+                            {
+                                title: "Roads and Transport",
+                                url: "#"
+                            },
+                            {
+                                title: "Children and Families",
+                                url: "#"
+                            },
+                            {
+                                title: "Countryside",
+                                url: "#"
+                            },
+                            {
+                                title: "Community",
+                                url: "#"
+                            },
+                            {
+                                title: "Fire & Rescue",
+                                url: "#"
+                            },
+                            {
+                                title: "All topics",
+                                url: "#"
+                            }
+                        ]
+                    },{
+                        title: "News from your area",
+                        listitems: [
+                            {
+                                title: "Abingdon north",
+                                url: "#"
+                            },
+                            {
+                                title: "Abingdon central",
+                                url: "#"
+                            },
+                            {
+                                title: "Abingdon south",
+                                url: "#"
+                            },
+                            {
+                                title: "Bambury",
+                                url: "#"
+                            },
+                            {
+                                title: "Bicester",
+                                url: "#"
+                            },
+                            {
+                                title: "All areas",
+                                url: "#"
+                            }
+                        ]
+                    }
+                ]
+            }) }}
 
 			<div class="js-occ-twitter-pane">
 				<a class="twitter-timeline"

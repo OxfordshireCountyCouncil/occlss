@@ -74,11 +74,15 @@ layout: layout-example.njk
     <!--START wrapper block-->
     <div class="occlss-layout occlss-layout--gutter-s">
       <!--START layout block-->
-		<div class="occlss-layout__col occlss-layout__col--sm-9">
 
+        <div class="occlss-layout__col occlss-layout__col--md-8">
             <span class="occlss-g-large-text occlss-g-font-weight-light occlss-u-bspace-sm occlss-g-font-inline-block">Oxford, 01 August 2019</span>
             <h1 class="occlss-g-heading-main occlss-u-bspace-sm">Oxfordshire’s new Chief Fire Officer shares his vision</h1>
-        
+        </div>
+
+
+		<div class="occlss-layout__col occlss-layout__col--md-8">
+
             <p>A vision for an innovative, progressive and outstanding service has been announced by Oxfordshire’s new Chief Fire Officer, who began&nbsp;his role on 01 August 2019.</p>
 
             <p>Rob MacDougall, 45, wants Oxfordshire County Council Fire and Rescue Service to represent every community.</p>
@@ -112,9 +116,8 @@ layout: layout-example.njk
             <p>“Our frontline teams will continue to play a lead role in delivering innovative services. As an example, our local firefighters developed new water rescue techniques. By adapting existing protocols and the way we use equipment, we can get into water much quicker to prevent drownings; saving lives.”</p>
 
 		</div>
-		<div class="occlss-layout__col occlss-layout__col--sm-3">
+		<div class="occlss-layout__col occlss-layout__col--md-3 occlss-layout__col--offset-1-md">
 
-            
 
             {{ occlssPromotedContentPanel({
               panelColour: "boston-blue",
@@ -203,13 +206,13 @@ layout: layout-example.njk
 				data-dnt="true"
 				data-aria-polite="assertive"
 				data-link-color="#0a549d">
-				Tweets
-				</a>
-				<script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				Tweets</a>
 			</div>
+			<script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
 
 		</div>
-    </div>
+    
     <!--End layout elemnt -->
   </div>
 </div>

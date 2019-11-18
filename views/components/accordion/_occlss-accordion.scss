@@ -1,6 +1,7 @@
 .js .occlss-accordion__panel-title {
   margin: 0;
   padding-top: rem(24px);
+  @extend h3;
 }
 
 .js .occlss-accordion {

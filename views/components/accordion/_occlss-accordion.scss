@@ -48,6 +48,12 @@
     &:focus {
         @extend %highlight-outline-on-focus;
     }
+
+    &:hover {
+        color: $occlss-accordion-heading-hover-color;
+        background-color: $occlss-accordion-hover-color;
+        outline: 2px solid $occlss-accordion-hover-color;
+    }
 }
 
 
@@ -87,7 +93,7 @@
         background: $occlss-accordion-color-residents;
         &.is-active,
         &:focus {
-            color: #1a1a1a;
+            color: $occlss-accordion-heading-hover-color;
             background-color: #edc856;
             outline: 2px solid #edc856;
         }
@@ -98,7 +104,7 @@
         background: $occlss-accordion-color-business;
         &.is-active,
         &:focus {
-            color: #1a1a1a;
+            color: $occlss-accordion-heading-hover-color;
             background-color: #edc856;
             outline: 2px solid #edc856;
         }
@@ -109,7 +115,7 @@
         background: $occlss-accordion-color-council;
         &.is-active,
         &:focus {
-            color: #1a1a1a;
+            color: $occlss-accordion-heading-hover-color;
             background-color: #edc856;
             outline: 2px solid #edc856;
         }

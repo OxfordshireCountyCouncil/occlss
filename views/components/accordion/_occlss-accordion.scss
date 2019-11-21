@@ -4,6 +4,10 @@
   @extend h3;
 }
 
+.js .occlss-accordion__panel-title:first-of-type {
+    padding-top: 0;
+}
+
 .js .occlss-accordion {
     margin: rem(22px 0);
     width: 100%;
@@ -12,6 +16,8 @@
 
 .occlss-accordion__panel-lnk {
     width: 100%;
+    text-align: left;
+    border: 0;
     border-bottom: none;
     display: block;
     padding: rem(24px 0);
@@ -55,6 +61,10 @@
 
 .is-active.occlss-accordion__panel-lnk {
      @extend %highlight-bg-on-focus;
+}
+
+.occlss-accordion__panel-content {
+    padding: 0;
 }
 
 .js .occlss-accordion__panel-content {

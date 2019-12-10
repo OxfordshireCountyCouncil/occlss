@@ -55,7 +55,6 @@ Format:
   a {
     @include link-colors(#ffffff, $occlss-cms-footer-link-font-color);
     font-weight: $occlss-cms-footer-link-weight;
-    //text-decoration: none;
     &:focus {
       .occlss-u-more-link__icon {
         fill: #000000;

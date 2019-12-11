@@ -45,14 +45,14 @@
 $occlss-brand-color-black:         #000000;
 $occlss-brand-color-emperor:       #525252;
 $occlss-brand-color-cod-gray:      #1a1a1a;
-$occlss-brand-color-mine-shaft:    #333333;
+$occlss-brand-color-woodsmoke:     #0B0C0C;
 $occlss-brand-color-alabaster:     #fcfcfc;
 
 
 
 
 // Link and Button colours
-$occlss-brand-color-venice-blue:   #0a549d;
+$occlss-brand-color-venice-denim:  #0B5EB1;
 $occlss-brand-color-catalina-blue: #073d73;
 $occlss-brand-color-denim:         #0e73d8;
 $occlss-brand-color-selago:        #e5effb;
@@ -204,7 +204,7 @@ $occlss-global-padding-v1:       15px 20px 10px 0 !default;
 
 // Page default variables
 $occlss-page-font-family-primary:  $occlss-global-font-family-primary !default;
-$occlss-page-font-color-primary:   $occlss-brand-color-mine-shaft !default;
+$occlss-page-font-color-primary:   $occlss-brand-color-woodsmoke !default;
 $occlss-page-font-weight-primary:  $occlss-global-font-weight-regular !default;
 $occlss-page-background-primary:   #CFCFCF !default;
 
@@ -228,7 +228,7 @@ $occlss-page-margin-paragraph-unit-right:   0 !default;
 
 
 // Page link
-$occlss-link-color-primary:            $occlss-brand-color-venice-blue !default;
+$occlss-link-color-primary:            $occlss-brand-color-venice-denim !default;
 $occlss-link-color-primary-hover:      $occlss-brand-color-ronchi !default;
 $occlss-link-bg-color-primary-hover:   $occlss-brand-color-ronchi !default;
 $occlss-link-font-size:                $occlss-global-font-size-medium !default;
@@ -467,7 +467,7 @@ $occlss-button-cursor-disabled-default:    not-allowed !default;
 $occlss-button-link-font-weight:            $occlss-global-font-weight-semibold !default;
 $occlss-button-link-font-color:             $occlss-link-color-primary !default;
 $occlss-button-link-font-color-hover:       $occlss-link-color-primary-hover !default;
-$occlss-button-link-font-color-disabled:    $occlss-brand-color-mine-shaft !default;
+$occlss-button-link-font-color-disabled:    $occlss-brand-color-woodsmoke !default;
 $occlss-button-link-font-decoration-hover:  underline !default;
 
 
@@ -478,14 +478,14 @@ $occlss-button-primary-font-color:          #ffffff !default;
 $occlss-button-primary-font-color-hover:    #ffffff !default;
 $occlss-button-primary-font-color-disable:    $occlss-brand-color-denim !default;
 $occlss-button-primary-background:            $occlss-brand-color-denim !default;
-$occlss-button-primary-background-hover:      $occlss-brand-color-venice-blue !default;
+$occlss-button-primary-background-hover:      $occlss-brand-color-venice-denim !default;
 $occlss-button-primary-background-disable:    $occlss-brand-color-selago !default;
 $occlss-button-primary-border-color:          transparent !default;
 $occlss-button-primary-border-color-hover:    transparent !default;
-$occlss-button-primary-border-bottom:         4px solid $occlss-brand-color-venice-blue !default;
+$occlss-button-primary-border-bottom:         4px solid $occlss-brand-color-venice-denim !default;
 $occlss-button-primary-border-hover-bottom:   4px solid $occlss-brand-color-catalina-blue !default;
 $occlss-button-primary-border-bottom-disable: 4px solid $occlss-brand-color-denim !default;
-$occlss-button-primary-shadow:                4px 5px 6px lighten($occlss-brand-color-mine-shaft, 60%) !default;
+$occlss-button-primary-shadow:                4px 5px 6px lighten($occlss-brand-color-woodsmoke, 60%) !default;
 
 
 
@@ -502,7 +502,7 @@ $occlss-button-secondary-border-color-hover:    transparent !default;
 $occlss-button-secondary-border-bottom:         4px solid $occlss-brand-color-pizza !default;
 $occlss-button-secondary-border-hover-bottom:   4px solid $occlss-brand-color-catalina-blue !default;
 $occlss-button-secondary-border-bottom-disable: 4px solid $occlss-brand-color-pizza !default;
-$occlss-button-secondary-shadow:                4px 5px 6px lighten($occlss-brand-color-mine-shaft, 60%) !default;
+$occlss-button-secondary-shadow:                4px 5px 6px lighten($occlss-brand-color-woodsmoke, 60%) !default;
 
 
 
@@ -515,8 +515,8 @@ $occlss-button-negative-background:           transparent !default;
 $occlss-button-negative-background-hover:     $occlss-brand-color-milano-red !default;
 $occlss-button-negative-border-color:         $occlss-brand-color-milano-red !default;
 $occlss-button-negative-border-color-hover:   $occlss-brand-color-milano-red !default;
-$occlss-button-negative-shadow:               4px 2px 6px lighten($occlss-brand-color-mine-shaft, 70%) !default;
-$occlss-button-negative-shadow-hover:         4px 5px 6px lighten($occlss-brand-color-mine-shaft, 60%) !default;
+$occlss-button-negative-shadow:               4px 2px 6px lighten($occlss-brand-color-woodsmoke, 70%) !default;
+$occlss-button-negative-shadow-hover:         4px 5px 6px lighten($occlss-brand-color-woodsmoke, 60%) !default;
 
 
 
@@ -529,8 +529,8 @@ $occlss-button-neutral-background:           transparent !default;
 $occlss-button-neutral-background-hover:     $occlss-brand-color-emperor !default;
 $occlss-button-neutral-border-color:         $occlss-brand-color-emperor !default;
 $occlss-button-neutral-border-color-hover:   $occlss-brand-color-emperor !default;
-$occlss-button-neutral-shadow:               4px 2px 6px lighten($occlss-brand-color-mine-shaft, 70%) !default;
-$occlss-button-neutral-shadow-hover:         4px 5px 6px lighten($occlss-brand-color-mine-shaft, 60%) !default;
+$occlss-button-neutral-shadow:               4px 2px 6px lighten($occlss-brand-color-woodsmoke, 70%) !default;
+$occlss-button-neutral-shadow-hover:         4px 5px 6px lighten($occlss-brand-color-woodsmoke, 60%) !default;
 
 
 // search button _occlss-button.scss
@@ -544,7 +544,7 @@ $occlss-button-search-background-disable:           $occlss-brand-color-maize !d
 $occlss-button-search-border-color-primary:         transparent !default;
 $occlss-button-search-border-color-hover:           transparent !default;
 $occlss-button-search-border-radius:                25px !default;
-$occlss-button-search-shadow-primary:               0px 3px 5px lighten($occlss-brand-color-mine-shaft, 60%) !default;
+$occlss-button-search-shadow-primary:               0px 3px 5px lighten($occlss-brand-color-woodsmoke, 60%) !default;
 
 
 
@@ -566,7 +566,7 @@ $occlss-head-logo-color: #ffffff !default;
 
 // Breadcrumb _occlss-breadcrumb.scss
 $occlss-breadcrumb-font-size-primary:    $occlss-global-font-size-regular !default;
-$occlss-breadcrumb-text-colour:          $occlss-brand-color-venice-blue !default;
+$occlss-breadcrumb-text-colour:          $occlss-brand-color-venice-denim !default;
 $occlss-breadcrumb-line-height:          normal !default;
 $occlss-breadcrumb-first-link-weight:    $occlss-global-font-weight-black !default;
 
@@ -589,7 +589,7 @@ $occlss-form-title-font-size-large:              $occlss-global-font-size-xx-lar
 $occlss-form-label-font-size:                    $occlss-global-font-size-medium !default; 
 $occlss-form-font-weight-group-title:            $occlss-global-font-weight-medium !default;
 $occlss-form-font-family-group-title:            $occlss-global-font-family-secondary !default;
-$occlss-form-title-underline-color:              $occlss-brand-color-mine-shaft !default;
+$occlss-form-title-underline-color:              $occlss-brand-color-woodsmoke !default;
 // Hint text
 $occlss-form-font-color-hint-text:               $occlss-brand-color-emperor !default;
 
@@ -602,7 +602,7 @@ $occlss-form-cntrls-label-font-size-small:      18px !default;
 $occlss-form-cntrls-label-font-size-deftxt:     16px !default;
 $occlss-form-cntrls-label-font-weight-deftxt:   $occlss-global-font-weight-regular !default;
 $occlss-form-cntrls-label-font-family-deftxt:   $occlss-global-font-family-primary !default;
-$occlss-form-cntrls-border-input-general:       1px solid $occlss-brand-color-mine-shaft !default;
+$occlss-form-cntrls-border-input-general:       1px solid $occlss-brand-color-woodsmoke !default;
 $occlss-form-cntrls-font-size-input-general:    $occlss-global-font-size-regular !default; 
 $occlss-form-cntrls-font-size-base:             1rem !default; // Base font size
 $occlss-form-cntrls-padding-base-vertical:      0.85rem !default; // Using rem instead of px so function uses same units 
@@ -642,7 +642,7 @@ $occlss-form-cntrls-border-color-checkboxes-disabled: #aeb0b5 !default;
 // Short search form
 $occlss-form-cntrls-short-search-border-radius-input:             $occlss-button-search-border-radius !default;
 $occlss-form-cntrls-short-search-border-color-input-focus:        $occlss-brand-color-ronchi !default;
-$occlss-form-cntrls-short-search-icon-color:                      $occlss-brand-color-mine-shaft !default;
+$occlss-form-cntrls-short-search-icon-color:                      $occlss-brand-color-woodsmoke !default;
 
 
 
@@ -738,12 +738,12 @@ $occlss-tab-widget-border-color-tabs:                    $occlss-brand-color-sel
 
 // Summary list _occlss-summary-list.scss
 $occlss-summary-list-border-color-item:                $occlss-brand-color-nebula !default;
-$occlss-summary-list-font-color-tab-widget:            $occlss-brand-color-mine-shaft !default;
+$occlss-summary-list-font-color-tab-widget:            $occlss-brand-color-woodsmoke !default;
 $occlss-summary-list-hover-color:                      $occlss-brand-color-iron !default;
 $occlss-summary-list-item-padding:                     $occlss-global-padding-v1 !default;
 
 // View all link _utilities.scss
-$occlss-utilities-font-color-more-link-tab-widget:     $occlss-brand-color-mine-shaft !default;
+$occlss-utilities-font-color-more-link-tab-widget:     $occlss-brand-color-woodsmoke !default;
 
 
 
@@ -797,7 +797,7 @@ $occlss-promoted-content-panel-text-line-alert-heading-underline-color:      $oc
 // Cards _occlss-card.scss
 $occlss-card-title-font-size:                        $occlss-global-font-size-medium !default;
 $occlss-card-title-font-color:                       $occlss-brand-color-emperor !default;
-$occlss-card-link-font-color:                        $occlss-brand-color-mine-shaft !default;
+$occlss-card-link-font-color:                        $occlss-brand-color-woodsmoke !default;
 
 
 
@@ -841,14 +841,14 @@ $occlss-cms-footer-u-more-link-weight:                  $occlss-global-font-weig
 
 
 // Page guide _occlss-page-guide.scss
-$occlss-page-guide-border:                               1px solid $occlss-brand-color-mine-shaft !default;  
+$occlss-page-guide-border:                               1px solid $occlss-brand-color-woodsmoke !default;  
 
 
 
 
 // Sidebar _occlss-sidebar-item-section.scss
 // Sidebar item section
-$occlss-sidebar-item-section-background-color:             $occlss-brand-color-mine-shaft !default;  
+$occlss-sidebar-item-section-background-color:             $occlss-brand-color-woodsmoke !default;  
 $occlss-sidebar-item-section-background-color-residents:   $occlss-brand-color-aqua-deep !default; 
 $occlss-sidebar-item-section-background-color-business:    $occlss-brand-color-boston-blue !default; 
 $occlss-sidebar-item-section-background-color-council:     $occlss-brand-color-victoria !default; 
@@ -866,7 +866,7 @@ $occlss-version-bar-padding:                             5px 32px !default;
 
 // Skip to content menu
 $occlss-skip-to-content-background:                      $occlss-brand-color-ronchi !default;
-$occlss-skip-to-content-cont-color:                      $occlss-brand-color-mine-shaft !default;
+$occlss-skip-to-content-cont-color:                      $occlss-brand-color-woodsmoke !default;
 
 
 
@@ -884,7 +884,7 @@ $occlss-a-to-z-letter-selected-color:                      $occlss-brand-color-r
 // Hero pane
 $occlss-hero-pane-heading-font-family:                     $occlss-global-font-family-secondary !default;                
 $occlss-hero-pane-heading-font-weight:                     $occlss-global-font-weight-black !default;               
-$occlss-hero-pane-heading-font-color:                      $occlss-brand-color-mine-shaft !default;
+$occlss-hero-pane-heading-font-color:                      $occlss-brand-color-woodsmoke !default;
 $occlss-hero-pane-heading-bg-color:                        #fff !default;
 $occlss-hero-pane-heading-bg-color-residents:              #feead2 !default;
 $occlss-hero-pane-heading-bg-color-business:               $occlss-brand-color-link-water !default;
@@ -975,7 +975,7 @@ $occlss-accordion-heading-font-weight:               $occlss-global-font-weight-
 // Summary card
 $occlss-summary-card-title-color:                    $occlss-link-color-primary !default;
 $occlss-summary-card-title-color-hover:              $occlss-link-color-primary !default;
-$occlss-summary-card-summary-text-color:             #333333 !default;
+$occlss-summary-card-summary-text-color:             $occlss-brand-color-woodsmoke !default;
 $occlss-summary-card-summary-text-color-hover:       #000000 !default;
 $occlss-summary-card-bg-color-hover:                 $occlss-brand-color-iron !default;
 $occlss-summary-card-border-color:                   $occlss-brand-color-nebula !default;
@@ -994,7 +994,7 @@ $occlss-table-header-font-weight-caption:            $occlss-global-font-weight-
 
 
 // Social media link
-$occlss-social-media-link-color:                      $occlss-brand-color-mine-shaft !default;
+$occlss-social-media-link-color:                      $occlss-brand-color-woodsmoke !default;
 $occlss-social-media-link-font-weight:                $occlss-global-font-weight-semibold !default;
 
 
@@ -1066,7 +1066,7 @@ $occlss-content-navigation-title-font-family:        $occlss-global-font-family-
 // Jump links
 $jump-links-link-font-size:                          $occlss-global-font-size-large !default;
 $jump-links-border-color:                            $occlss-brand-color-nebula !default;
-$jump-links-dash-color:                              $occlss-brand-color-mine-shaft !default;
+$jump-links-dash-color:                              $occlss-brand-color-woodsmoke !default;
 
 
 

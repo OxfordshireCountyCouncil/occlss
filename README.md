@@ -136,6 +136,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/components/page-head/occlss-page-head";
 @import "node_modules/occlss/scss/components/page-footer/occlss-page-footer";
 @import "node_modules/occlss/scss/components/site-nav/occlss-site-nav";
+@import "node_modules/occlss/scss/components/secondary-site-nav/occlss-secondary-site-nav";
 @import "node_modules/occlss/scss/components/site-nav/occlss-head-logo";
 @import "node_modules/occlss/scss/components/form-controls/occlss-form-cntrls";
 @import "node_modules/occlss/scss/components/breadcrumb/occlss-breadcrumb";
@@ -167,6 +168,7 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/components/calendar-date/occlss-calendar-date";
 @import "node_modules/occlss/scss/components/content-navigation/occlss-content-navigation";
 @import "node_modules/occlss/scss/components/footer-feedback-form/occlss-footer-feedback";
+@import "node_modules/occlss/scss/components/summary-pane/occlss-summary-pane";
 
 // UTILITIES
 // scope

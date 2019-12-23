@@ -1,12 +1,6 @@
 <div class="occlss-accordion js-occlss-accordion">
 	{% for item in params.panels %}
-		{% if item.title %} <h3 class="occlss-accordion__panel-title"> {{ item.title }} </h3> {% endif %}
-		{% if item.content %} 
-			<div class="occlss-accordion__panel-content">
-				<p>
-					{{ item.content | safe }}
-				</p>
-			</div>
-		{% endif %}	
+		{% if item.title %}<h3 class="occlss-accordion__panel-title"> {{ item.title }} </h3>{% endif %}
+		{% if item.content %}<div class="occlss-accordion__panel-content"><p>{{ item.content | safe }}</p></div>{% endif %}	
 	{% endfor %}
 </div>

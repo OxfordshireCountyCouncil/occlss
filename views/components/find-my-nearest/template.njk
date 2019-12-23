@@ -1,5 +1,6 @@
 {% from "form-controls/macro.njk" import occlssFormCntrls %}
 {% from "button/macro.njk" import occlssButton %}
+{% from "loading-bar/macro.njk" import occlssLoadingBar %}
 
 
 {%- set classes %} class="occlss-find-my-nearest {% if params.type == "district" %} occlss-find-my-nearest--district {% elseif params.type == "short" %}occlss-find-my-nearest--short{% endif %}"{% endset %}
@@ -1657,14 +1658,12 @@
 
                 <a href="javascript:void(0);" class="occlss-find-my-nearest__link" id="js-occlss-find-my-nearest-link">
                 Or find my location 
-                <div class="occlss-loading-bar js-occlss-loading-bar">
-                    <div class="occlss-loading-bar__content occlss-loading-bar__content--dark-gray">
-                        <i class="occlss-loading-bar__icon"></i>
-                        <i class="occlss-loading-bar__icon"></i>
-                        <i class="occlss-loading-bar__icon"></i>
-                        <i class="occlss-loading-bar__icon"></i>
-                    </div>
-                </div>
+
+                {{ occlssLoadingBar({
+                    active: false
+                  }
+                )}}
+
                 </a>
                 
             </div>

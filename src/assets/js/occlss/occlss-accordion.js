@@ -2,7 +2,7 @@
     'use strict';
     var $accordionPanels = jQuery('.js-occlss-accordion');
 
-
+    // Set up link
     var setupLinkSetup = function($link) {
         $link.on('click', function (e) {
             if (jQuery(this).attr('aria-expanded') == 'false') {
@@ -52,9 +52,9 @@
 
             $this.attr({
                 'id': ('occlss-accordion-panel-' + $panelID),
-                'aria-labelledby': ('occlss-accordion-control-panel-' + $panelID),
+                'aria-labelledby': 'control-' + ('occlss-accordion-panel-' + $panelID),
                 'aria-hidden': 'true',
-                'role': 'tabpanel'
+                'role': 'region'
             });
            
 
@@ -65,8 +65,7 @@
             var $this = jQuery(this);
             var $panelID = ($panelCounter + '-' + i);
 
-            var $panelLnk = jQuery('<a>', {
-                'href': '#' + ('occlss-accordion-panel-' + $panelID),
+            var $panelLnk = jQuery('<button>', {
                 'aria-expanded': 'false',
                 'aria-controls': ('occlss-accordion-panel-' + $panelID),
                 'id': 'control-' + ('occlss-accordion-panel-' + $panelID),
@@ -77,9 +76,10 @@
 
             $this.wrapInner($panelLnk);
 
-            setupLinkSetup($this.find('a'));
+            setupLinkSetup($this.find('button'));
 
-        }); 
+        });
+
     });
 
   

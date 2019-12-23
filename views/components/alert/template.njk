@@ -41,7 +41,7 @@ controls: true/false
         <div class="occlss-layout__col {% if params.controls == "true"  %} occlss-layout__col--9 {% else %} occlss-layout__col--10 {% endif %} occlss-alert__cont occlss-layout__col--flex"><!--START layout elemnt -->
 
                 {% if params.title %}<h2 class="occlss-alert__heading">{{ params.title }}</h2>{% endif %}
-                {% if params.content %}<p class="occlss-alert__text">{{ params.content }}</p>{% endif %}
+                {% if params.content %}<p class="occlss-alert__text">{{ params.content  | safe }}</p>{% endif %}
 
         </div><!--End layout elemnt -->
 

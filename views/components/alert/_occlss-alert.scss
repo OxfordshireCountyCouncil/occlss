@@ -53,6 +53,10 @@
     line-height: 1.2;
 }
 
+.occlss-alert__text a {
+    @include link-colors(darken($occlss-link-color-primary, 1%), darken($occlss-link-color-primary-hover, 1%));
+}
+
 .occlss-alert--warning {
     border-color: $occlss-alert-border-color-warning;
     background-color: $occlss-alert-background-color-warning;

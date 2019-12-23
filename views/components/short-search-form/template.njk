@@ -11,7 +11,7 @@
                     </svg>
                 </span>
                 {% endif %}
-                <label class="occlss-u-visuallyhidden" for="occlss-short-search-form-input-da1d121aq">Search</label>
+                <label class="occlss-u-visuallyhidden{% if  params.labelTextColor == "light" %} occlss-g-text-color-white{% endif %}" for="occlss-short-search-form-input-da1d121aq">Search</label>
                 {% if  params.placeholder %}
                 <input type="text" class="occlss-form-cntrls__input occlss-form-cntrls__input--short-search" id="occlss-short-search-form-input-da1d121aq" name="Search" placeholder="{{ params.placeholder }}">
                 {% else %}

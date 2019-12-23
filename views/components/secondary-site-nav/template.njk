@@ -20,10 +20,11 @@
         </div>
         {% if params.secondaryNavSearch == true %}
           <div class="occlss-layout__col occlss-layout__col--md-4">
-          {{ occlssShortSearchForm({
-                type: params.secondaryNavSearchType,
-                placeholder: params.secondaryNavSearchPlaceholder
-          }) }}
+            {{ occlssShortSearchForm({
+                  type: params.secondaryNavSearchType,
+                  placeholder: params.secondaryNavSearchPlaceholder,
+                  labelTextColor: "light"
+            }) }}
           </div>
         {% endif %}
       </div>

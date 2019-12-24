@@ -32,7 +32,7 @@
     font-family: "Open Sans", sans-serif;
     padding: rem(0 0 8px 0);
     font-size: rem(18px);
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 0;
     color: $doc-main-nav-theme-name-color;
 }
@@ -52,7 +52,7 @@
 
 .#{$doc-prefix}main-nav__list-item--current {
     .#{$doc-prefix}main-nav__list-item-lnk--current {
-        color: $doc-main-nav-list-item-current-color;
+        font-weight: 700;
     }
 }
 
@@ -62,7 +62,7 @@
 }
 
 .#{$doc-prefix}main-nav__list-item-heading-lnk {
-    font-weight: 600;
+    font-weight: 700;
     font-size: rem(18px);
 }
 

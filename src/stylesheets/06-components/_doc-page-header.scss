@@ -21,6 +21,7 @@
 }
 
 .#{$doc-prefix}page-header__sidebar-close {
+    cursor: pointer;
     display: block;
     background: none;
     border: 0;
@@ -28,8 +29,8 @@
     margin: 0;
     position: absolute;
     top: rem(17px);
-    width: rem(32px);
-    height: rem(32px);
+    width: rem(36px);
+    height: rem(36px);
     display: none;
 }
 

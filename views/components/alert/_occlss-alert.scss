@@ -54,7 +54,7 @@
 }
 
 .occlss-alert__text a {
-    @include link-colors(darken($occlss-link-color-primary, 1%), darken($occlss-link-color-primary-hover, 1%));
+    text-decoration: underline;
 }
 
 .occlss-alert--warning {

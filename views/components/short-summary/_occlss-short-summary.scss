@@ -41,8 +41,9 @@
         color: $occlss-short-summary-content-font-color;
         text-decoration: none;
     }
-
-    
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
 }
 
 

@@ -22,6 +22,9 @@
 // Short search
 .occlss-form__short-search-submit {
   padding: rem(9px 20px);
+  @include breakpoint(max-width (1024px)) {
+    padding: rem(9px 13px);
+  }
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
       padding: rem(9px 13px);
   }

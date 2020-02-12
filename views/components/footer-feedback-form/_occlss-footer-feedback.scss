@@ -24,10 +24,18 @@
 
 .occlss-footer-feedback__link {
     color: $footer-feedback-links-color;
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
 }
 
 .occlss-footer-feedback__close-cont {
     float: right;
+    a {
+        &:focus {
+            @extend %highlight-bg-on-focus;
+        } 
+    }
 }
 
 .occlss-footer-feedback__form-cont {

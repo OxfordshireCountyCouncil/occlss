@@ -39,6 +39,12 @@
     }
 }
 
+.occlss-fp__g a {
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
+}
+
 // Close panel
 .occlss-fp__header {
     background: $occlss-fp-close-psnrl-bg-color-primary;

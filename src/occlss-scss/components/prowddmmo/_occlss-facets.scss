@@ -8,6 +8,16 @@
     display: block;
 }
 
+.occlss-facets__item label {
+    margin-left: rem(6px);
+}
+
+.occlss-facets__item input:focus,
+.occlss-facets__item label:focus {
+    @extend %highlight-outline-on-focus;
+}
+
+
 .occlss-facets__item-link {
     text-decoration: none;
     color: $occlss-facets-link-color-primary;

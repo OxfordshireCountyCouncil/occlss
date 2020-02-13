@@ -42,7 +42,7 @@
         text-decoration: none;
     }
     &:focus {
-        @extend %highlight-bg-on-focus;
+        @extend %highlight-outline-on-focus;
     }
 }
 

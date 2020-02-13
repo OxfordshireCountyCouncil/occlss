@@ -102,6 +102,9 @@
         border-style: solid;
         border-width: rem(7px 7px 7px 0);
         border-color: transparent #000000 transparent transparent;
+        position: absolute;
+        top: rem(-2px);
+        left: 0;
       }
     }
   }

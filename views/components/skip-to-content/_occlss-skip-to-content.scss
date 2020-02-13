@@ -27,4 +27,5 @@
   background: $occlss-skip-to-content-background;
   text-shadow: none;
   color: $occlss-skip-to-content-cont-color;
+  @extend %highlight-outline-on-focus;
 }

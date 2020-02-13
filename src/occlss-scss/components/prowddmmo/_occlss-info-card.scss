@@ -8,6 +8,9 @@
         &:focus {
             text-decoration: underline; 
         }
+        &:focus {
+            @extend %highlight-bg-on-focus;
+        }
     }
     &__label {
         font-weight: 700;

@@ -55,11 +55,15 @@ Format:
   a {
     @include link-colors(#ffffff, $occlss-cms-footer-link-font-color);
     font-weight: $occlss-cms-footer-link-weight;
+    &.is-active:focus {
+      @extend %highlight-outline-on-focus;
+    }
     &:focus {
       .occlss-u-more-link__icon {
         fill: #000000;
       }
     }
+
   }
   .occlss-button {
     &:hover {

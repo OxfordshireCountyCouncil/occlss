@@ -30,4 +30,7 @@
 
 .occlss-content-navigation__lnk {
     text-decoration: none;
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
 }

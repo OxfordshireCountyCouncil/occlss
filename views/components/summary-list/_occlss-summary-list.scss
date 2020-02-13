@@ -25,6 +25,9 @@
 
 .occlss-summary-list__link {
     padding: rem(15px 15px);
+    &:focus {
+        @extend %highlight-bg-on-focus;
+    }
 }
 
 .occlss-summary-list--tasks-pane,

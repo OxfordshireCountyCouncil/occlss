@@ -1,7 +1,7 @@
 .occlss-pager {
   text-align: center;
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-      padding-top: 2.4em;
+      padding-top: 2.4rem;
       padding-bottom: 0;
   }
 }
@@ -14,28 +14,25 @@
 }
 
 .occlss-pager__item {
-
   border: 1px solid #dbdbdb;
   background-color: #f9f9f9;
-
   display: block;
   float: left;
   margin: 0;
   padding: 0;
-
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
     border-radius: $occlss-pager-border-radius;
-    margin: 0.3em;
+    margin: 0.3rem;
   }
 }
 
 .occlss-pager__item--last {
-   margin-left: 0.4em;
+   margin-left: 0.4rem;
    border-radius: $occlss-pager-border-radius;
 }
 
 .occlss-pager__item--first {
-    margin-right: 0.4em;
+    margin-right: 0.4rem;
     border-radius: $occlss-pager-border-radius;
 }
 
@@ -43,13 +40,19 @@
 .occlss-pager__item--current,
 .occlss-pager__item--ellipsis {
   display: block;
-  padding: 0.5em 0.8em;
+  padding: rem(10px 18px);
   text-decoration: none;
+}
+
+.occlss-pager__link {
+  padding-left: rem(20px);
+  padding-right: rem(20px);
 }
 
 .occlss-pager__link {
     font-weight: normal;
     color: #000;
+    line-height: 1.4;
     &:focus {
       @extend %highlight-bg-on-focus;
     }
@@ -63,7 +66,7 @@
 .occlss-pager__item a:hover {
   border-color: #bbbbbb;
   background-color: #efefef;
-  color: #9b9b9b;
+  color: #000000;
 }
 
 .occlss-pager__item--current {
@@ -81,12 +84,11 @@
 
 .occlss-pager__item--previous span[aria-hidden],
 .occlss-pager__item--next span[aria-hidden] {
+  position: relative;
   @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
-    text-align: center;
     font-size: 0;
     overflow: hidden;
-    vertical-align: middle;
-    padding: 10px 3px;
+    padding: rem(10px 3px);
   }
 }
 
@@ -98,7 +100,7 @@
       &:before {
       	content: "";
         border-style: solid;
-        border-width: 7px 7px 7px 0;
+        border-width: rem(7px 7px 7px 0);
         border-color: transparent #000000 transparent transparent;
       }
     }
@@ -113,8 +115,11 @@
       &:after {
       	content: "";
         border-style: solid;
-        border-width: 7px 0 7px 7px;
+        border-width: rem(7px 0 7px 7px);
         border-color: transparent transparent transparent #000000;
+        position: absolute;
+        top: rem(-2px);
+        left: 0;
       }
     }
   }

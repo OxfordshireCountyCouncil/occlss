@@ -142,6 +142,7 @@ $input-width:(
 );
 
 @each $key,$val in $input-width {
+  .occlss-form-cntrls__input--size-#{$key},
   .occlss-form-cntrls--size-#{$key} {
     @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
       max-width: ($val / 16) * 1rem;

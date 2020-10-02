@@ -1,5 +1,5 @@
 {% set cntrlsid =  params.labelText | lower | replace(" ","-") %}
-{%- set cntrlsClasses %} class="occlss-form-cntrls {% if params.state == "error" %}occlss-form-cntrls--error{% endif %}{{ params.cntrlsClasses }}"{% endset %}
+{%- set cntrlsContClasses %} class="occlss-form-cntrls {% if params.state == "error" %}occlss-form-cntrls--error{% endif %} {{ params.cntrlsClasses }}"{% endset %}
 {% if params.labelRemoveClasses %}
 {% else %}
 {%- set labelClasses %} class="occlss-form-cntrls__label{% if params.state == "error" %} occlss-form-cntrls__label--error{% endif %} {{ params.labelClasses }}"{% endset %}
@@ -9,7 +9,7 @@
 {%- set inputTextClasses %} class="occlss-form-cntrls__input {{ params.inputClasses }}"{% endset %}
 {% from "icon/macro.njk" import occlssIcon %}
 
-<div {{- cntrlsClasses | safe }}>
+<div {{- cntrlsContClasses | safe }}>
     {% if params.type == "input-text" %}
         {% if params.legendText %}
         <legend {{ legendClasses | safe }}>{{ params.legendText }}</legend>

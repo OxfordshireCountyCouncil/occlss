@@ -85,7 +85,11 @@
 .occlss-form-cntrls__textarea--focus, 
 .occlss-form-cntrls__select:focus, 
 .occlss-form-cntrls__select--focus {
-  border-color: $occlss-form-cntrls-border-color-base-input-focus;
+  border-width: rem(4px);
+  -webkit-box-shadow: rem(0 0 0 3px $occlss-form-cntrls-border-color-checkboxes-focus);
+  box-shadow: rem(0 0 0 3px $occlss-form-cntrls-border-color-checkboxes-focus);
+
+  //border-color: $occlss-form-cntrls-border-color-base-input-focus;
 }
 
 // Short search
@@ -213,7 +217,7 @@ $input-width:(
     .occlss-form-cntrls__textarea,
     .occlss-form-cntrls__select {
         width: calc(100% - 40px);
-        border: rem(1px) solid $occlss-form-color-base-error;
+        border: rem(2px) solid $occlss-form-color-base-error;
         background-color: $occlss-form-background-color-base-error;
     }
     
@@ -244,97 +248,179 @@ $input-width:(
   font-family: $occlss-form-cntrls-label-font-family-deftxt;
 }
 
-// Custom checkboxes
-.occlss-form-cntrls__checkbox,
-.occlss-form-cntrls__radiobutton {
-// The actual input element is only visible to screen readers, because
-// all visual styling is done via the label.
-
-  @extend %sr-only;
-
-  .lt-ie9 & {
-    border: 0;
-    float: left;
-    margin: 0.4em 0.4em 0 0;
-    position: static;
-    width: auto;
-  }
-
-}
-
-.occlss-form-cntrls__checkbox + .occlss-form-cntrls__label,
-.occlss-form-cntrls__radiobutton + .occlss-form-cntrls__label {
-  cursor: pointer;
-  font-weight: 400;
-  margin-bottom: rem(25px);
-  padding-left: rem(44px);
+// Radio
+.occlss-form-cntrls--radioitem {
+  display: block;
   position: relative;
-  padding-top: rem(2px);
+  min-height: rem(40px);
+  margin-bottom: rem(10px);
+  padding-left: rem(40px);
+  clear: left;
 }
 
-.occlss-form-cntrls__checkbox + .occlss-form-cntrls__label::before,
-.occlss-form-cntrls__radiobutton + .occlss-form-cntrls__label::before {
-  background: #ffffff;
-  box-shadow: 0 0 0 1px $occlss-form-cntrls-border-color-checkboxes;
-  content: '\a0';
-  display: inline-block;
-  height: rem($occlss-form-cntrls-spacing-checkboxes);
-  line-height: rem($occlss-form-cntrls-spacing-checkboxes);
-  text-indent: 0.15em;
-  vertical-align: middle\0; // Target IE 11 and below to vertically center inputs
-  width: rem($occlss-form-cntrls-spacing-checkboxes);
+.occlss-form-cntrls__radiobutton {
+  cursor: pointer;
   position: absolute;
-  left: 0;
+  z-index: 1;
+  top: rem(-2px);
+  left: rem(-2px);
+  width: rem(44px);
+  height: rem(44px);
+  margin: 0;
+  opacity: 0;
+}
+
+.occlss-form-cntrls__label--radiobutton {
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding: rem(8px 15px 5px);
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
+  display: block;
+  margin-bottom: rem(5px);
+}
+
+.occlss-form-cntrls__label--radiobutton:before {
+  content: "";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
   top: 0;
+  left: 0;
+  width: rem(40px);
+  height: rem(40px);
+  border: rem(2px solid currentColor);
+  border-radius: 50%;
+  background: transparent;
 }
 
-.occlss-form-cntrls__radiobutton + .occlss-form-cntrls__label::before {
-  border-radius: 100%;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px $occlss-form-cntrls-border-color-checkboxes;
-  width: rem($occlss-form-cntrls-spacing-checkboxes);
-  height: rem($occlss-form-cntrls-spacing-checkboxes); // Size overrides to account for shape + checked styling
-  line-height: rem($occlss-form-cntrls-spacing-checkboxes);
+.occlss-form-cntrls__radiobutton:checked+.occlss-form-cntrls__label--radiobutton:after {
+  opacity: 1;
 }
 
-.occlss-form-cntrls__radiobutton:checked + .occlss-form-cntrls__label::before {
-  background-image: url('#{$occlss-global-image-path}/icon-circle.svg');
-  background-position: 50%;
-  background-size: rem(17px 17px);
-  background-repeat: no-repeat;
+.occlss-form-cntrls__label--radiobutton:after {
+  content: "";
+  position: absolute;
+  top: rem(10px);
+  left: rem(10px);
+  width: 0;
+  height: 0;
+  border: rem(10px solid currentColor);
+  border-radius: 50%;
+  opacity: 0;
+  background: currentColor;
 }
 
-.occlss-form-cntrls__checkbox:checked + .occlss-form-cntrls__label::before,
-.occlss-form-cntrls__checkbox:checked:disabled + .occlss-form-cntrls__label::before {
-  background-image: url('#{$occlss-global-image-path}/icon-check.svg');
-  background-position: 50%;
-  background-size: rem(21px 15px);
-  background-repeat: no-repeat;
+.occlss-form-cntrls__radiobutton:focus+.occlss-form-cntrls__label--radiobutton:before {
+  border-width: rem(4px);
+  -webkit-box-shadow: rem(0 0 0 4px $occlss-form-cntrls-border-color-checkboxes-focus);
+  box-shadow: rem(0 0 0 4px $occlss-form-cntrls-border-color-checkboxes-focus);
 }
 
-.occlss-form-cntrls__radiobutton:focus + .occlss-form-cntrls__label::before {
-  box-shadow: rem(0 0 0 2px #ffffff, 0 0 0 4px $occlss-form-cntrls-border-color-checkboxes-focus);
-  outline-offset: rem(5px);
+.occlss-form-cntrls__radiobutton:disabled, 
+.occlss-form-cntrls__radiobutton:disabled+.occlss-form-cntrls__label--radiobutton {
+  cursor: default;
 }
 
-.occlss-form-cntrls__checkbox:disabled + .occlss-form-cntrls__label {
-  color: #d6d7d9;
+.occlss-form-cntrls__radiobutton:disabled+.occlss-form-cntrls__label--radiobutton {
+  opacity: .5;
 }
 
-.occlss-form-cntrls__checkbox:focus + .occlss-form-cntrls__label::before {
-  box-shadow: rem(0 0 0 0px #ffffff, 0 0 0 2px $occlss-form-cntrls-border-color-checkboxes-focus);
-  outline-offset: rem(3px);
+.occlss-form-cntrls__radiobutton:disabled, 
+.occlss-form-cntrls__radiobutton:disabled+.occlss-form-cntrls__label--radiobutton {
+  cursor: default;
 }
 
-.occlss-form-cntrls__checkbox:disabled + .occlss-form-cntrls__label::before,
-.occlss-form-cntrls__radiobutton:disabled + .occlss-form-cntrls__label::before {
-  background: #f1f1f1;
-  box-shadow: rem(0 0 0 1px $occlss-form-cntrls-border-color-checkboxes-disabled);
-  cursor: not-allowed;
+
+// Checkbox
+.occlss-form-cntrls--checkbox {
+  display: block;
+  position: relative;
+  min-height: rem(40px);
+  margin-bottom: rem(10px);
+  padding-left: rem(40px);
+  clear: left;
 }
 
-.occlss-form-cntrls__radiobutton:disabled + .occlss-form-cntrls__label::before {
-  width: rem(33px);
-  height: rem(33px);
+.occlss-form-cntrls__checkbox {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: rem(-2px);
+  left: rem(-2px);
+  width: rem(44px);
+  height: rem(44px);
+  margin: 0;
+  opacity: 0;
+}
+
+.occlss-form-cntrls__label--checkbox {
+  display: inline-block;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding: rem(8px 15px 5px);
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.occlss-form-cntrls__label--checkbox:before {
+  content: "";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: rem(40px);
+  height: rem(40px);
+  border: rem(2px solid currentColor);
+  background: transparent;
+}
+
+.occlss-form-cntrls__checkbox:checked+.occlss-form-cntrls__label--checkbox:after {
+  opacity: 1;
+}
+
+.occlss-form-cntrls__label--checkbox:after {
+  content: "";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: rem(11px);
+  left: rem(9px);
+  width: rem(23px);
+  height: rem(12px);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: rem(0 0 5px 5px);
+  border-top-color: transparent;
+  opacity: 0;
+  background: transparent;
+}
+
+.occlss-form-cntrls__checkbox:focus+.occlss-form-cntrls__label--checkbox:before {
+  border-width: rem(4px);
+  -webkit-box-shadow: rem(0 0 0 3px $occlss-form-cntrls-border-color-checkboxes-focus);
+  box-shadow: rem(0 0 0 3px $occlss-form-cntrls-border-color-checkboxes-focus);
+}
+
+.occlss-form-cntrls__checkbox:disabled,
+.occlss-form-cntrls__checkbox:disabled+.occlss-form-cntrls__label--checkbox {
+  cursor: default;
+}
+
+.occlss-form-cntrls__checkbox:disabled+.occlss-form-cntrls__label--checkbox {
+  opacity: .5;
+}
+
+.occlss-form-cntrls__checkbox:disabled,
+.occlss-form-cntrls__checkbox:disabled+.occlss-form-cntrls__label--checkbox {
+  cursor: default;
 }
 
 // Password container

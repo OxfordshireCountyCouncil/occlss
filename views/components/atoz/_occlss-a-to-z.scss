@@ -45,7 +45,7 @@
 }
 
 .occlss-a-to-z__letter--off {
-    color: $occlss-a-to-z-letter-color-off;
+    opacity: .5;
 }
 
 .occlss-a-to-z--inverse {
@@ -64,9 +64,10 @@
         }
     }
     .occlss-a-to-z__letter--off {
-        color: $occlss-a-to-z-letter-color-off;
+        color: $occlss-a-to-z-background;
+        opacity: .5;
         &:hover {
-            color: $occlss-a-to-z-letter-color-off;
+            color: $occlss-a-to-z-background;
         }
     }
     .occlss-a-to-z__letter--selected {

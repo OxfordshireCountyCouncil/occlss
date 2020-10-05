@@ -85,7 +85,11 @@
 .occlss-form-cntrls__textarea--focus, 
 .occlss-form-cntrls__select:focus, 
 .occlss-form-cntrls__select--focus {
-  border-color: $occlss-form-cntrls-border-color-base-input-focus;
+  border-width: rem(4px);
+  -webkit-box-shadow: rem(0 0 0 3px $occlss-form-cntrls-border-color-checkboxes-focus);
+  box-shadow: rem(0 0 0 3px $occlss-form-cntrls-border-color-checkboxes-focus);
+
+  //border-color: $occlss-form-cntrls-border-color-base-input-focus;
 }
 
 // Short search

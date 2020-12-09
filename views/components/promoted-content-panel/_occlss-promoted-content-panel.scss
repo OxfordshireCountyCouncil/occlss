@@ -197,6 +197,19 @@
     }
 }
 
+.occlss-promoted-content-panel--amaranth {
+    background: $occlss-promoted-content-panel-background-color-amaranth;
+    color: #ffffff;
+    .occlss-promoted-content-panel__link-icon {
+        fill: #ffffff;
+    }
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+
+
 // Image container
 
 .occlss-promoted-content-panel--image-left,

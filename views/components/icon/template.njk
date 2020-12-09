@@ -222,3 +222,10 @@
 	</svg>
 </span>
 {% endif %}
+{% if params.name == "youtube" %}
+<span class="occlss-icon occlss-icon--youtube {{ params.class }}" aria-hidden="true">
+	<svg aria-hidden="true" class="occlss-icon__container {{ params.containerClass }} ">
+		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#youtube" class="icon__source icon__source--svg {{ params.sourceClass }}"></use>
+	</svg>
+</span>
+{% endif %}

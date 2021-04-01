@@ -440,3 +440,12 @@ $input-width:(
     }
   }
 }
+
+// Input dissabled
+.occlss-form-cntrls__textarea:disabled,
+.occlss-form-cntrls__input:disabled,
+.occlss-form-cntrls__select:disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: .5;
+}

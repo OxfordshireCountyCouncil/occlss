@@ -1,1 +1,21 @@
-<H1>icon-text</H1>
+<ul class="occlss-icon-text">
+{% for item in params.content %}
+    <li class="occlss-icon-text__list-item">
+    {% if item.title %}
+        <div class="occlss-icon-text__heading">
+            <h3>{{ item.title }}</h3>
+        </div>
+    {% endif %}
+    {% if item.imageURL %}
+        <div class="occlss-icon-text__icon">
+            <img src="{{ item.imageURL }}" alt="{{ item.imsgeALT }}">
+        </div>
+    {% endif %}    
+    {% if item.text %}
+        <div class="occlss-icon-text__content">
+            {{ item.text }}
+        </div>
+    {% endif %}
+    </li>
+{% endfor %}
+</ul>

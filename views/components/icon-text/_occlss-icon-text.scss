@@ -1,3 +1,27 @@
 .occlss-icon-text {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.occlss-icon-text__list-item {
+    margin: rem(0 0 26px 0);
+    clear: both;
+    display: inline-block;
+}
+
+.occlss-icon-text__heading {
+    width: 100%;
+}
+
+.occlss-icon-text__icon {
+    width: rem(48px);
+    height: rem(48px);
+    margin-right: rem(16px);
+    float: left;
+}
+
+.occlss-icon-text__content {
+    width: calc(100% - 64px);
+    float: left;
 }

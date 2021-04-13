@@ -5,9 +5,9 @@
 }
 
 .occlss-icon-text__list-item {
-    margin: rem(0 0 26px 0);
     clear: both;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .occlss-icon-text__heading {
@@ -15,14 +15,22 @@
 }
 
 .occlss-icon-text__icon {
-    width: rem(48px);
-    height: rem(48px);
-    margin-right: rem(16px);
+    flex: 0;
+    flex-shrink: 0;
+    flex-basis: rem(96px);
+    height: rem(96px);
     overflow: hidden;
-    float: left;
 }
 
 .occlss-icon-text__content {
-    width: calc(100% - 64px);
-    float: left;
+    flex: 1;
+    display: flex;
+    padding-left: rem(16px);
+}
+
+.occlss-icon-text__content--content-center {
+    justify-content: center;
+}
+.occlss-icon-text__content--content-middle {
+    align-self: center;
 }

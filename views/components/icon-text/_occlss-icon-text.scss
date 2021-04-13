@@ -5,7 +5,6 @@
 }
 
 .occlss-icon-text__list-item {
-    clear: both;
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,6 +19,11 @@
     flex-basis: rem(96px);
     height: rem(96px);
     overflow: hidden;
+}
+
+.occlss-icon-text__icon-img {
+    width: 100%;
+    height: 100%;
 }
 
 .occlss-icon-text__content {

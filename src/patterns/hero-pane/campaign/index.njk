@@ -1,0 +1,24 @@
+---
+title: Hero pane
+layout: layout-example.njk
+doc_bg: white
+doc_gap: true
+---
+
+{% from "hero-pane/macro.njk" import occlssHeroPane %}
+
+<div class="occlss-wrapper">
+  <div class="occlss-layout">
+    <div class="occlss-layout__col occlss-layout__col--bleed">
+
+      {{ occlssHeroPane({
+        heading: "The Oxfordshire Museum",
+        summarytext: "Further sections of A40 westbound bus lane to provide quicker return journeys to Eynsham park and ride and destinations served by the local bus network.",
+        heroClasses: "occlss-hero-pane--heding-bg-royal-heath",
+        headingModeClass: "occlss-hero-pane__heading--residents",
+        imageURL: "https://dummyimage.com/1200x566/525252/ffffff.png"
+      }) }}
+
+    </div>
+  </div>
+</div>

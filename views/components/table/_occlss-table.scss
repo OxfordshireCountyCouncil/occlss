@@ -58,10 +58,11 @@
 
 // Mod classes
 
+.occlss-table--zebra > .occlss-table__body > .occlss-table__row:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
 .occlss-table--zebra { 
-    .occlss-table__row:nth-child(even) {
-        background-color: #f2f2f2;
-    } 
     .occlss-table__header, 
     .occlss-table__cell {
         padding: rem(8px 8px);

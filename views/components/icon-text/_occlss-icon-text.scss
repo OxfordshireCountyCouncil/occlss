@@ -32,9 +32,14 @@
     padding-left: rem(16px);
 }
 
+.occlss-icon-text__content--no-space {
+    padding-left: 0;
+}
+
 .occlss-icon-text__content--content-center {
     justify-content: center;
 }
 .occlss-icon-text__content--content-middle {
     align-self: center;
 }
+

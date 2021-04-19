@@ -7,6 +7,7 @@
 .occlss-icon-text__list-item {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: rem(35px);
 }
 
 .occlss-icon-text__heading {
@@ -28,7 +29,7 @@
 
 .occlss-icon-text__content {
     flex: 1;
-    padding-left: rem(35px);
+    padding-left: rem(16px);
     p {
         margin-bottom: 0;
     }

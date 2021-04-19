@@ -28,8 +28,10 @@
 
 .occlss-icon-text__content {
     flex: 1;
-    display: flex;
-    padding-left: rem(16px);
+    padding-left: rem(35px);
+    p {
+        margin-bottom: 0;
+    }
 }
 
 .occlss-icon-text__content--no-space {

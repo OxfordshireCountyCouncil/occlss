@@ -53,7 +53,13 @@
 .occlss-table__caption {
     display: table-caption;
     text-align: left;
-    @extend h2;
+    display: table-caption;
+    text-align: left;
+    line-height: rem(24px);
+    font-family: $occlss-table-caption-font-family;
+    font-size: rem($occlss-table-caption-font-size);
+    font-weight: $occlss-table-caption-font-weight; 
+    color: $occlss-table-caption-font-colour;
 }
 
 // Mod classes

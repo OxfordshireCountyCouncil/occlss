@@ -29,6 +29,21 @@
     }
 }
 
+.occlss-hero-pane__summarytext-cont {
+    font-size: rem(20px);
+
+    margin: 0;
+    max-width: 70%;
+    display: block;
+    color: $occlss-hero-pane-heading-font-color;
+    padding: rem(20px 50px 20px 30px);
+    background-color: $occlss-hero-pane-heading-bg-color;
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        max-width: 100%;
+        padding: rem(20px);
+    }
+}
+
 .occlss-hero-pane__heading--residents {
     background-color: $occlss-hero-pane-heading-bg-color-residents;
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
@@ -77,6 +92,97 @@
 .occlss-hero-pane--no-image {
     .occlss-hero-pane__heading  {
         margin-top: 0;
+    }
+}
+
+// Colour modifire for the heading
+.occlss-hero-pane--heding-bg-aqua-deep {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-aqua-deep;
+        color: #ffff;
+    }
+}
+
+.occlss-hero-pane--heding-bg-selective-yellow {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-selective-yellow;
+    }
+}
+
+.occlss-hero-pane--heding-bg-forest-green {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-forest-green;
+    }
+}
+
+.occlss-hero-pane--heding-bg-boston-blue {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-boston-blue;
+        color: #ffff;
+    }
+}
+
+.occlss-hero-pane--heding-bg-keppel {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-keppel;
+    }
+}
+
+.occlss-hero-pane--heding-bg-pale-sky {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-pale-sky;
+        color: #ffff;
+    }
+}
+
+.occlss-hero-pane--heding-bg-victoria {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-victoria;
+        color: #ffff;
+    }
+}
+
+.occlss-hero-pane--heding-bg-amaranth {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-amaranth;
+    }
+}
+
+.occlss-hero-pane--heding-bg-twilight {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-twilight;
+    }
+}
+
+.occlss-hero-pane--heding-bg-swans-down {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-swans-down;
+    }
+}
+
+.occlss-hero-pane--heding-bg-royal-heath {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-royal-heath;
+        color: #ffff;
+    }
+}
+
+.occlss-hero-pane--heding-bg-keppel-dark {
+    .occlss-hero-pane__heading,
+    .occlss-hero-pane__summarytext-cont {
+        background-color: $occlss-hero-pane-heading-background-color-keppel-dark;
+        color: #ffff;
     }
 }
 

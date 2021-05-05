@@ -1,0 +1,48 @@
+.occlss-icon-text {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.occlss-icon-text__list-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem(35px);
+}
+
+.occlss-icon-text__heading {
+    width: 100%;
+}
+
+.occlss-icon-text__icon {
+    flex: 0;
+    flex-shrink: 0;
+    flex-basis: rem(96px);
+    height: rem(96px);
+    overflow: hidden;
+}
+
+.occlss-icon-text__icon-img {
+    width: 100%;
+    height: 100%;
+}
+
+.occlss-icon-text__content {
+    flex: 1;
+    padding-left: rem(16px);
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.occlss-icon-text__content--no-space {
+    padding-left: 0;
+}
+
+.occlss-icon-text__content--content-center {
+    justify-content: center;
+}
+.occlss-icon-text__content--content-middle {
+    align-self: center;
+}
+

@@ -209,6 +209,36 @@
 }
 
 
+.occlss-promoted-content-panel--twilight {
+    background: $occlss-promoted-content-panel-background-color-twilight;
+}
+
+.occlss-promoted-content-panel--swans-down {
+    background: $occlss-promoted-content-panel-background-color-swans-down;
+}
+
+.occlss-promoted-content-panel--royal-heath {
+    background: $occlss-promoted-content-panel-background-color-royal-heath;
+    color: #ffffff;
+    .occlss-promoted-content-panel__link-icon {
+        fill: #ffffff;
+    }
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.occlss-promoted-content-panel--keppel-dark {
+    background: $occlss-promoted-content-panel-background-color-keppel-dark;
+    color: #ffffff;
+    .occlss-promoted-content-panel__link-icon {
+        fill: #ffffff;
+    }
+    &:hover {
+        color: #ffffff;
+    }
+}
+
 
 // Image container
 

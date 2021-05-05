@@ -22,7 +22,7 @@
             </span>
         {% endif %}
         <label {{- labelClasses | safe }} for="{{ cntrlsid }}">{{ params.labelText }}</label>
-        <input {{- inputTextClasses | safe }} id="{{ cntrlsid }}" name="{{ cntrlsFldName }}" type="text" {% if params.state == "error" %}aria-describedby="describedby-{{ cntrlsid }}"{% endif %}>
+        <input {{- inputTextClasses | safe }} id="{{ cntrlsid }}" name="{{ cntrlsFldName }}" type="text" {% if params.state == "error" %}aria-describedby="describedby-{{ cntrlsid }}"{% endif %}{% if params.status == "disabled" %} disabled{% endif %}>
         {% if params.state == "error" %}
         {{ occlssIcon({
             name: "exclamation-mark",
@@ -41,7 +41,7 @@
             </span>
         {% endif %}
         <label {{- labelClasses | safe }} for="{{ cntrlsid }}">{{ params.labelText }}</label>
-        <select {{ selectClasses | safe }} id="{{ cntrlsid }}" name="{{ cntrlsFldName }}">
+        <select {{ selectClasses | safe }} id="{{ cntrlsid }}" name="{{ cntrlsFldName }}"{% if params.status == "disabled" %} disabled{% endif %}>
             {% for opt in params.options %}
             <option value="{{ opt.value | lower | replace(" ","-") }}"{% if opt.selected %} selected{% endif %}>{{ opt.name }}</option>
             {% endfor %}
@@ -60,7 +60,7 @@
         {% if params.state == "error" %}
         <span class="occlss-form__error-message" id="describedby-{{ cntrlsid }}" role="alert">{{ params.statusMessage }}</span>
         {% endif %}
-        <textarea class="occlss-form-cntrls__textarea " id="{{ cntrlsid }}" name="{{ cntrlsFldName }}" {% if params.state == "error" %}aria-describedby="describedby-{{ cntrlsid }}"{% endif %}></textarea>
+        <textarea class="occlss-form-cntrls__textarea" id="{{ cntrlsid }}" name="{{ cntrlsFldName }}" {% if params.state == "error" %}aria-describedby="describedby-{{ cntrlsid }}"{% endif %}{% if params.status == "disabled" %} disabled{% endif %}></textarea>
         {% if params.state == "error" %}
         {{ occlssIcon({
             name: "exclamation-mark",

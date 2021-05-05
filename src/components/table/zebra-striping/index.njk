@@ -1,5 +1,5 @@
 ---
-title: Table Zebra Striping
+title: Table
 layout: layout-example.njk
 doc_bg: white
 doc_gap: true
@@ -9,7 +9,9 @@ doc_gap: true
 
 {{ occlssTable({
   'responsive': true,
+  'classes': "occlss-table--zebra",
   'firstCellIsHeader': true,
+  'caption': "Council Tax",
   'head' : [
     {
       text: 'Council Tax Band'

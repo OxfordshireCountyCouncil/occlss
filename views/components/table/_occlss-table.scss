@@ -51,8 +51,30 @@
 }
 
 .occlss-table__caption {
-    //font-weight: $occlss-table-header-font-weight-caption;
     display: table-caption;
     text-align: left;
-    @extend h2;
+    display: table-caption;
+    text-align: left;
+    line-height: rem(24px);
+    font-family: $occlss-table-caption-font-family;
+    font-size: rem($occlss-table-caption-font-size);
+    font-weight: $occlss-table-caption-font-weight; 
+    color: $occlss-table-caption-font-colour;
+    margin-bottom: rem(15px);
+}
+
+// Mod classes
+
+.occlss-table--zebra > .occlss-table__body > .occlss-table__row:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.occlss-table--zebra { 
+    .occlss-table__header, 
+    .occlss-table__cell {
+        padding: rem(8px 8px);
+        display: table-cell;
+        text-align: left;
+        vertical-align: top;
+    }
 }

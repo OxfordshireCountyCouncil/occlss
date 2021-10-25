@@ -98,6 +98,13 @@ $occlss-brand-color-pale-sky:             #656d80;
 $occlss-brand-color-selective-yellow:     #feb603;
 $occlss-brand-color-amaranth:             #DA1C5C; // RASPBERRY - corparate colour palete
 
+$occlss-brand-color-twilight:             #e9d5e1;
+$occlss-brand-color-swans-down:           #d6ebeb;
+$occlss-brand-color-royal-heath:          #932d67;
+$occlss-brand-color-keppel-dark:          #319d99;
+
+
+
 
 
 
@@ -795,6 +802,10 @@ $occlss-promoted-content-panel-background-color-keppel:                    $occl
 $occlss-promoted-content-panel-background-color-pale-sky:                  $occlss-brand-color-pale-sky !default;
 $occlss-promoted-content-panel-background-color-victoria:                  $occlss-brand-color-victoria !default;
 $occlss-promoted-content-panel-background-color-amaranth:                  $occlss-brand-color-amaranth !default;
+$occlss-promoted-content-panel-background-color-twilight:                  $occlss-brand-color-twilight !default;
+$occlss-promoted-content-panel-background-color-swans-down:                $occlss-brand-color-swans-down !default;
+$occlss-promoted-content-panel-background-color-royal-heath:               $occlss-brand-color-royal-heath !default;
+$occlss-promoted-content-panel-background-color-keppel-dark:               $occlss-brand-color-keppel-dark !default;
 
 $occlss-promoted-content-panel-text-line-font-size-header-giga:            60px !default;
 $occlss-promoted-content-panel-text-line-font-weight-header-giga:          $occlss-global-font-weight-black !default;
@@ -916,6 +927,19 @@ $occlss-hero-pane-heading-bg-color-council:                $occlss-brand-color-s
 $occlss-hero-pane-heading-bg-color-news:                   $occlss-brand-color-aqua-deep  !default;
 $occlss-hero-pane-heading-text-color-white:                #fff !default;
 
+$occlss-hero-pane-heading-background-color-aqua-deep:                 $occlss-brand-color-aqua-deep !default;
+$occlss-hero-pane-heading-background-color-selective-yellow:          $occlss-brand-color-selective-yellow !default;
+$occlss-hero-pane-heading-background-color-forest-green:              $occlss-brand-color-forest-green !default;
+$occlss-hero-pane-heading-background-color-boston-blue:               $occlss-brand-color-boston-blue !default;
+$occlss-hero-pane-heading-background-color-keppel:                    $occlss-brand-color-keppel !default;
+$occlss-hero-pane-heading-background-color-pale-sky:                  $occlss-brand-color-pale-sky !default;
+$occlss-hero-pane-heading-background-color-victoria:                  $occlss-brand-color-victoria !default;
+$occlss-hero-pane-heading-background-color-amaranth:                  $occlss-brand-color-amaranth !default;
+$occlss-hero-pane-heading-background-color-twilight:                  $occlss-brand-color-twilight !default;
+$occlss-hero-pane-heading-background-color-swans-down:                $occlss-brand-color-swans-down !default;
+$occlss-hero-pane-heading-background-color-royal-heath:               $occlss-brand-color-royal-heath !default;
+$occlss-hero-pane-heading-background-color-keppel-dark:               $occlss-brand-color-keppel-dark !default;
+
 
 
 // Popular content panel
@@ -1015,7 +1039,10 @@ $occlss-table-header-font-weight:                    $occlss-global-font-weight-
 $occlss-table-header-font-weight-numeric:            $occlss-global-font-weight-regular !default;
 $occlss-table-header-font-weight-caption:            $occlss-global-font-weight-bold !default;
 
-
+$occlss-table-caption-font-family:                   $occlss-global-font-family-secondary !default;
+$occlss-table-caption-font-size:                     20px !default;
+$occlss-table-caption-font-weight:                   $occlss-global-font-weight-bold !default;
+$occlss-table-caption-font-colour:                   $occlss-brand-color-woodsmoke !default;
 
 
 // Social media link

@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "breakpoint-sass": "^2.7.1",
+    "current-git-branch": "^1.1.0",
     "del": "^6.0.0",
     "fs-extra": "^9.0.1",
     "gulp": "^4.0.2",
@@ -48,7 +49,8 @@
     "metalsmith-sass": "^1.7.0",
     "nunjucks": "^3.2.2",
     "postcss": "^8.2.1",
-    "reflex-grid": "^2.0.4"
+    "reflex-grid": "^2.0.4",
+    "replace-in-file": "^6.2.0"
   },
   "dependencies": {
     "autoprefixer": "^10.1.0",

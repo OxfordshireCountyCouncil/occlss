@@ -196,3 +196,10 @@ $trim-width:(
         display: block;
     }
 }
+
+// Responsive image
+.occlss-u-img-responsive {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}

@@ -465,144 +465,36 @@ layout: layout-example.njk
   ]
 }) }}
 
-<!-- Place this code snippet anywhere you want the button to appear in your page. If no button has been configured in the chat script, it will not show up nor take any space. -->
-<div id="__8x8-chat-button-container-script_137402336760eef126bce5b8.23491832" style="position: fixed; bottom: 10px;"></div>
-
-<!-- This script will not interfere with the button layout, you just need to include it in the same page. It must also be within the <body> section of the page, preferably just before the ending tag. -->
-<script type="text/javascript">
-    window.__8x8Chat = {
-        uuid: "script_137402336760eef126bce5b8.23491832",
-        tenant: "b3hmb3Jkc2hpcmVjb3VudHkwMQ",
-        channel: "OCC WebChat test",
-        domain: "https://vcc-eu10.8x8.com",
-        path: "/.",
-        buttonContainerId: "__8x8-chat-button-container-script_137402336760eef126bce5b8.23491832",
-        align: "right"
-    };
-
-    (function() {
-        var se = document.createElement("script");
-        se.type = "text/javascript";
-        se.async = true;
-        se.src = window.__8x8Chat.domain + window.__8x8Chat.path + "/CHAT/common/js/chat.js";
-
-        var os = document.getElementsByTagName("script")[0];
-        os.parentNode.insertBefore(se, os);
-    })();
-</script>
-
-<div id="cnt-mp-button-link" class="occ-subscribe-badge is-active"><div class="occ-subscribe-badge__message-buble is-active"><div class="occ-subscribe-badge__message-buble-close"><div style="background: rgba(0, 0, 0, 0.4);"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#ffffff"></path></svg></div></div>
-        Sign up to stay up to date with news and updates.
-    </div> <button type="button" id="btn-mp-button-link" class="occ-subscribe-badge__btn"><span class="occlss-u-visuallyhidden">Subscribe for the latest updates</span> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 78 78" enable-background="new 0 0 78 78" xml:space="preserve" class="occ-subscribe-badge__subscribe-icon is-active"><title>Subscribe badge icon</title> <defs><filter x="-20.0%" y="-20.0%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-1"><feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset> <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur> <feColorMatrix values="0 0 0 0 0.101960784   0 0 0 0 0.101960784   0 0 0 0 0.101960784  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix> <feMerge><feMergeNode in="shadowMatrixOuter1"></feMergeNode> <feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="newsletter_icon" filter="url(#filter-1)" transform="translate(9.000000, 9.000000)"><circle id="Oval" fill="#DA1C5C" fill-rule="nonzero" cx="30" cy="30" r="30"></circle> <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17" y="11" width="28" height="35"></rect> <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="13" y="22" width="35" height="26"></rect> <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="17" y="11" width="28" height="35"></rect> <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="13" y="22" width="35" height="26"></rect> <polygon id="Rectangle" fill="#DA1C5C" fill-rule="nonzero" transform="translate(30.000032, 23.967904) rotate(-45.000000) translate(-30.000032, -23.967904) " points="17.3240437 11.2919154 42.6760209 11.2919154 42.6760209 36.6438926 17.3240437 36.6438926"></polygon> <polygon id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" transform="translate(29.999861, 22.995987) rotate(-45.000000) translate(-29.999861, -22.995987) " points="17.3238726 10.3199987 42.6758498 10.3199987 42.6758498 35.6719759 17.3238726 35.6719759"></polygon> <path d="M33.2075517,24.6243881 L33.2075517,20.4788634 L32.2996633,20.4788634 C29.9848485,20.4788634 28.8277751,21.4237992 28.8284432,23.3136707 C28.8120281,23.9092863 29.058617,24.4828271 29.5048501,24.8869249 C29.955788,25.3012151 30.5196275,25.5080325 31.1963684,25.5073867 C31.9439234,25.5093435 32.6143178,25.2150139 33.2075517,24.6243881 Z M38.5185987,29.5457237 C39.0744215,29.7482801 39.8907862,30.0927572 40.9676928,30.579155 C38.6461974,32.8603735 35.5864999,34.000655 31.7886003,34.0000041 C27.9185506,34.0000041 24.8197718,32.8302194 22.4922639,30.4906594 C20.164756,28.1510994 19.0006681,25.0747321 19,21.2615574 C19,17.3880746 20.1791192,14.2087902 22.5373577,11.7237042 C24.8955962,9.23861815 27.9793437,7.99738619 31.7886003,8.00000413 C35.4535567,8.00000413 38.4043611,9.07506527 40.6410133,11.2251793 C42.8776655,13.3752932 43.9973278,16.2454988 44,19.8357958 C44,21.8554608 43.4588745,23.5689968 42.3766234,24.9764037 C41.2943723,26.3838106 39.864732,27.0875141 38.0877024,27.0875141 C36.1643686,27.0875141 34.7734755,26.671585 33.9150232,25.8397269 C32.9299124,26.7500838 31.6225213,27.2487006 30.2694404,27.2300902 C28.9747475,27.2300902 27.9285714,26.8826633 27.1309123,26.1878094 C26.3332532,25.4929555 25.9324194,24.5575248 25.9284111,23.3815173 C25.9284111,21.8849593 26.5814361,20.7446778 27.887486,19.9606728 C29.1935359,19.1766679 30.9592085,18.7833543 33.1845038,18.7807322 C33.0034605,17.0344202 32.2899765,16.1612641 31.0440516,16.1612641 C29.7747448,16.1612641 28.7709903,16.4939418 28.0327882,17.1592972 L27.1649832,15.3992191 C28.1557105,14.6742112 29.3645583,14.3117072 30.7915264,14.3117072 C34.1531853,14.3117072 35.8340148,16.2061674 35.8340148,19.9950878 L35.8340148,24.2536901 C36.7024878,24.8829917 37.4403559,25.1976425 38.047619,25.1976425 C40.2962963,25.1976425 41.4209689,23.3923334 41.421637,19.7817152 C41.421637,17.0370422 40.5144167,14.7502518 38.6999759,12.9213439 C36.8855352,11.0924359 34.5807413,10.177982 31.785594,10.177982 C28.7265646,10.177982 26.259767,11.217313 24.3852012,13.295975 C22.5106355,15.374637 21.5733526,18.0295034 21.5733526,21.2605741 C21.5733526,24.4319922 22.5012827,26.9855803 24.3571429,28.9213384 C26.213003,30.8570965 28.6891534,31.8253034 31.785594,31.8259589 C34.5840816,31.8266144 36.8284164,31.066536 38.5185987,29.5457237 Z" id="Shape" fill="#DA1C5C"></path></g></g></svg></button></div>
-
-    <style type="text/css">
-    .occ-subscribe-badge {
-      display: inline-block;
-      position: fixed;
-      z-index: 999;
-      right: .625rem;
-      bottom: 1.25rem;
-      margin-bottom: -100px
+    <style>
+    .occ_chatbox-button {
+        position: fixed;
+        right: 1.625rem;
+        bottom: 0.625rem;
     }
-
-    .occ-subscribe-badge.is-active {
-      margin-bottom: 0
-    }
-
-    .occ-subscribe-badge__btn {
-      padding: 0;
-      border: 0;
-      cursor: pointer;
-      background: transparent;
-      float: right;
-      transition: all .2s ease-in-out
-    }
-
-    .occ-subscribe-badge__btn:active,
-    .occ-subscribe-badge__btn:focus,
-    .occ-subscribe-badge__btn:hover {
-      opacity: .7
-    }
-
-    .occ-subscribe-badge__btn:active,
-    .occ-subscribe-badge__btn:focus {
-      outline: .1875rem solid #edc856
-    }
-
-    .occ-subscribe-badge__subscribe-icon {
-      width: 4.875rem;
-      vertical-align: middle;
-      transition: all .8s cubic-bezier(.165, .84, .44, 1);
-      opacity: 0;
-      transform: translateY(100px) translateZ(0);
-      transition-delay: .16s
-    }
-
-    .occ-subscribe-badge__subscribe-icon.is-active {
-      opacity: 1;
-      transform: translateY(0) translateZ(0)
-    }
-
-    .occ-subscribe-badge__message-buble {
-      max-width: 14.375rem;
-      border-radius: .25rem;
-      box-shadow: 0 .125rem .25rem 0 rgba(26, 26, 26, .2);
-      font-family: Open Sans, sans-serif;
-      color: #0b0c0c;
-      font-weight: 400;
-      margin-bottom: .625rem;
-      padding: .625rem 1.875rem .625rem .625rem;
-      font-size: .875rem;
-      background-color: #fff;
-      transition: all .8s cubic-bezier(.165, .84, .44, 1);
-      opacity: 0;
-      transform: translateY(210px) translateZ(0);
-      transition-delay: .3s
-    }
-
-    @media (max-width:992px) {
-      .occ-subscribe-badge__message-buble {
-        display: none
-      }
-    }
-
-    .occ-subscribe-badge__message-buble:hover .occ-subscribe-badge__message-buble-close {
-      display: block
-    }
-
-    .occ-subscribe-badge__message-buble-close {
-      width: 1.25rem;
-      height: 1.25rem;
-      float: right;
-      overflow: hidden;
-      margin-right: -1.4375rem;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none
-    }
-
-    .occ-subscribe-badge__message-buble.is-active {
-      opacity: 1;
-      transform: translateY(0) translateZ(0)
-    }
-
-    .occlss-u-visuallyhidden {
-      position: fixed;
-      left: -9999em;
-      outline: none
-    }
-
-    .occ-subscribe-badge__subscribe-icon .cls-1,
-    .occ-subscribe-badge__subscribe-icon .cls-3 {
-      fill: #da1c5c
-    }
-
-    .occ-subscribe-badge__subscribe-icon .cls-2 {
-      fill: #fff
-    }
-
-    .occ-subscribe-badge__subscribe-icon .cls-3 {
-      fill-rule: evenodd
-    }
-
     </style>
+    <!-- Place this code snippet anywhere you want the button to appear in your page. If no button has been configured in the chat script, it will not show up nor take any space. -->
+    <div id="__8x8-chat-button-container-script_110009847613a2b84027b99.87438790" class="occ_chatbox-button"></div>
+    
+    <!-- This script will not interfere with the button layout, you just need to include it in the same page. It must also be within the <body> section of the page, preferably just before the ending tag. -->
+    <script type="text/javascript">
+        window.__8x8Chat = {
+            uuid: "script_110009847613a2b84027b99.87438790",
+            tenant: "b3hmb3Jkc2hpcmVjb3VudHkwMQ",
+            channel: "oWebChat test",
+            domain: "https://vcc-eu10b.8x8.com",
+            path: "/.",
+            buttonContainerId: "__8x8-chat-button-container-script_110009847613a2b84027b99.87438790",
+            align: "right",
+            stylesheetURL: "https://occlss.oxfordshire.gov.uk/chatbox/css/chat.css"
+        };
+    
+        (function() {
+            var se = document.createElement("script");
+            se.type = "text/javascript";
+            se.async = true;
+            se.src = window.__8x8Chat.domain + window.__8x8Chat.path + "/CHAT/common/js/chat.js";
+    
+            var os = document.getElementsByTagName("script")[0];
+            os.parentNode.insertBefore(se, os);
+        })();
+    </script>

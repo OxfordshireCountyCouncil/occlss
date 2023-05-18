@@ -14,7 +14,7 @@
     &.is-focus,
     &:focus,
     &:hover{
-      color: #ffffff;
+      color: $occlss-button-primary-color-hover;
       background-color: $occlss-button-primary-background-hover;
       border-bottom: 4px solid transparent;
       box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));      

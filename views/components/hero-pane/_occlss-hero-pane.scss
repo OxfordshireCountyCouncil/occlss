@@ -44,6 +44,7 @@
     }
 }
 
+.occlss-hero-pane__summarytext-cont--residents,
 .occlss-hero-pane__heading--residents {
     background-color: $occlss-hero-pane-heading-bg-color-residents;
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
@@ -51,10 +52,12 @@
     }
 }
 
+.occlss-hero-pane__summarytext-cont--business,
 .occlss-hero-pane__heading--business {
     background-color: $occlss-hero-pane-heading-bg-color-business;
 }
 
+.occlss-hero-pane__summarytext-cont--council,
 .occlss-hero-pane__heading--council {
     background-color: $occlss-hero-pane-heading-bg-color-council;
 }

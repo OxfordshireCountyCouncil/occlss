@@ -11,18 +11,35 @@
     border-bottom: rem($occlss-button-primary-border-bottom);
     background-size: rem(1px 200px);
     &.is-hover,
-    &.is-focus,
-    &:focus,
     &:hover{
       color: $occlss-button-primary-color-hover;
       background-color: $occlss-button-primary-background-hover;
       border-bottom: 4px solid transparent;
-      box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));      
+      box-shadow: none; 
+      border-bottom: 4px solid $occlss-button-primary-background;
+      &:active {
+        color: $occlss-button-primary-font-color;
+        border-bottom: 4px solid $occlss-button-primary-background;
+      }
+    }
+    &:target,
+    &.is-focus,
+    &:focus {
+      color: $occlss-button-primary-color-focus;
+      background-color: $occlss-button-primary-background-focus;
+      border-bottom: 4px solid transparent;
+      box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));   
     }
     &:active {
       background-color: $occlss-button-primary-background;
-      border-bottom: rem($occlss-button-primary-border-bottom);
-      box-shadow: rem(0 4px 6px 1px rgba(26,26,26,0.35));
+      box-shadow: none; 
+      color: $occlss-button-primary-font-color;
+      border-bottom: 4px solid $occlss-button-primary-background;
+      &:focus {
+        background-color: $occlss-button-primary-background;
+        color: $occlss-button-primary-font-color;
+        border-bottom: 4px solid $occlss-button-primary-background;
+      }
     }
   }
   &.is-disabled,

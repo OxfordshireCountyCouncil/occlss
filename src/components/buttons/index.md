@@ -81,6 +81,11 @@ This is a special button style used exclusively for the main website search in t
 
 ## Changelog
 
+### 3.0.0
+
+- Button primary new style
+- Buttons shadow been removed
+
 ### 1.0.0
 
 - Component added

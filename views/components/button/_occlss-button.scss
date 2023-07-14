@@ -5,7 +5,6 @@
   background-color: $occlss-button-primary-background;
   border-color: transparent;
   border-radius: rem(6px);
-  box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));
 
   @if variable-exists(occlss-button-primary-border-bottom) {
     border-bottom: rem($occlss-button-primary-border-bottom);
@@ -15,7 +14,6 @@
       color: $occlss-button-primary-color-hover;
       background-color: $occlss-button-primary-background-hover;
       border-bottom: 4px solid transparent;
-      box-shadow: none; 
       border-bottom: 4px solid $occlss-button-primary-background;
       &:active {
         color: $occlss-button-primary-font-color;
@@ -28,11 +26,9 @@
       color: $occlss-button-primary-color-focus;
       background-color: $occlss-button-primary-background-focus;
       border-bottom: 4px solid transparent;
-      box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));   
     }
     &:active {
       background-color: $occlss-button-primary-background;
-      box-shadow: none; 
       color: $occlss-button-primary-font-color;
       border-bottom: 4px solid $occlss-button-primary-background;
       &:focus {
@@ -48,7 +44,6 @@
     color: $occlss-button-primary-font-color-disable;
     background: $occlss-button-primary-background-disable;
     border-bottom: rem($occlss-button-primary-border-bottom-disable);
-    box-shadow: none;
   }
 }
 
@@ -58,7 +53,6 @@
   background-color: $occlss-button-secondary-background;
   border-color: transparent;
   border-radius: rem(6px);
-  box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));
 
   @if variable-exists(occlss-button-secondary-border-bottom) {
     border-bottom: rem($occlss-button-secondary-border-bottom);
@@ -68,13 +62,11 @@
     &:focus,
     &:hover{
       background-color: $occlss-button-secondary-background-hover;
-      border-bottom: rem(4px solid transparent);
-      box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));      
+      border-bottom: rem(4px solid transparent);  
     }
     &:active {
       background-color: $occlss-button-secondary-background;
       border-bottom: rem($occlss-button-secondary-border-bottom);
-      box-shadow: rem(0 4px 6px 1px rgba(26,26,26,0.35));
     }
   }
   &.is-disabled,
@@ -83,7 +75,6 @@
     color: $occlss-button-secondary-font-color-disable;
     background: $occlss-button-secondary-background-disable;
     border-bottom: rem($occlss-button-secondary-border-bottom-disable);
-    box-shadow: none;
   }
 }
 
@@ -98,22 +89,16 @@
     $occlss-button-negative-border-color-hover
   );
 
-  box-shadow: rem($occlss-button-negative-shadow);
-  &:hover{
-    box-shadow: rem($occlss-button-negative-shadow);
-  }
   &:active,
   &:focus {
     color:  $occlss-button-negative-font-color-hover;
     background-color: $occlss-button-negative-background-hover;
-    box-shadow: rem($occlss-button-negative-shadow-hover);
   }
 
   &.is-disabled,
   &:disabled {
     color: mix($occlss-button-negative-font-color-disable, #ffffff, 80%);
     background: #ffffff;
-    box-shadow: none;
   }
   padding-top: rem(11px);
   padding-bottom: rem(12px);
@@ -129,24 +114,16 @@
     $occlss-button-neutral-background-hover,
     $occlss-button-neutral-border-color-hover
   );
-
-  box-shadow: rem($occlss-button-neutral-shadow);
-
-  &:hover{
-    box-shadow: rem($occlss-button-neutral-shadow);
-  }
   &:active,
   &:focus {
     color:  $occlss-button-neutral-font-color-hover;
     background-color: $occlss-button-neutral-background-hover;
-    box-shadow: rem($occlss-button-neutral-shadow-hover);
   }
 
   &.is-disabled,
   &:disabled {
     color: mix($occlss-button-neutral-font-color-disable, #ffffff, 80%);
     background: #ffffff;
-    box-shadow: none;
   }
   padding-top: rem(11px);
   padding-bottom: rem(12px);
@@ -157,26 +134,21 @@
   background-color: $occlss-button-search-background;
   border-color: transparent;
   border-radius: rem($occlss-button-search-border-radius);
-  box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));
-
   &.is-hover,
   &.is-focus,
   &:focus,
   &:hover{
     color: $occlss-button-search-font-color-hover;
-    background-color: $occlss-button-search-background-hover;
-    box-shadow: rem(0 2px 4px 0 rgba(26,26,26,0.20));      
+    background-color: $occlss-button-search-background-hover;     
   }
   &:active {
     color: $occlss-button-search-font-color-hover;
     background-color: $occlss-button-search-background-active;
-    box-shadow: rem(0 4px 6px 1px rgba(26,26,26,0.35));
   }
   
   &.is-disabled,
   &:disabled {
     color: $occlss-button-search-font-color-disable;
     background: $occlss-button-search-background-disable;
-    box-shadow: none;
   }
 }

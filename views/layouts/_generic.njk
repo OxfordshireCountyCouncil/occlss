@@ -1,0 +1,36 @@
+{% extends "template.njk" %}
+
+{% block pageTitle %}{{ title }} – Oxfordshire County Council live style system{% endblock %}
+
+{% block head %}
+  {% if not ENVIRONMENT or ENVIRONMENT != 'production' %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  <meta name="og:title" content="{{title}}">
+  <meta name="description" content="{{description}}">
+  <meta name="og:description" content="{{description}}">
+  <link rel="canonical" href="{{ canonical }}">
+  <link href="{{ getFingerprint('stylesheets/main.css') }}" rel="stylesheet" media="all">
+{% endblock %}
+
+{% block bodyStart %}
+  <a id="top"></a>
+{% endblock %}
+
+{# We provide our own header, so blank the one provided by the template #}
+{% block header %}{% endblock %}
+
+{% block main %}
+  {% include "_header.njk" %}
+  {% include "_navigation.njk" %}
+  {% block body %}
+    {{ contents | safe }}
+  {% endblock %}
+{% endblock %}
+
+{# We provide our own footer, so blank the one provided by the template #}
+{% block footer %}{% endblock %}
+
+{% block bodyEnd %}
+  <script src="{{ getFingerprint('javascripts/application.js') }}"></script>
+{% endblock %}

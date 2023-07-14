@@ -19,37 +19,39 @@
 
 {%- set panelContainerType %}{% if params.panelURL %}a{% else %}div{% endif %}{% endset %}
 
-<{{ panelContainerType }} {% if panelContainerType == "a" %} href="{{ params.panelURL }}" {% endif %} class="occlss-promoted-content-panel {% if panelContainerType == "a" %}occlss-promoted-content-panel--link{% endif %} {% if params.imagePosition == "top" %}occlss-promoted-content-panel--image-top {% elseif params.imagePosition == "left" %}occlss-promoted-content-panel--image-left{% endif %} occlss-promoted-content-panel--{{ params.panelColour }} ">
-  
-  {% if params.imageURL %}
-    <figure class="occlss-promoted-content-panel__image-container">
-        <img src="{{ params.imageURL }}" alt="{{ params.imageAlt }}"
-            class="occlss-promoted-content-panel__image">
-    </figure>
-  {% endif %}
-  
-  <div class="occlss-promoted-content-panel__content">
- 
- {% for item in params.textRows %}
+<{{ panelContainerType }} {% if panelContainerType == "a" %} href="{{ params.panelURL }}" {% endif %}
+  class="occlss-promoted-content-panel {% if panelContainerType == "a" %}occlss-promoted-content-panel--link{% endif %} {% if params.imagePosition == "top" %}occlss-promoted-content-panel--image-top {% elseif params.imagePosition == "left" %}occlss-promoted-content-panel--image-left{% endif %} occlss-promoted-content-panel--{{ params.panelColour }} ">
 
-    {%- set classes %} occlss-promoted-content-panel__text-line--{{ item.textSize }} {% if params.panelType == "alerts" and loop.index <= 1 %}occlss-promoted-content-panel__text-line--alert-heading{% elseif params.panelType == "alerts" and loop.index > 1 %}occlss-promoted-content-panel__text-line--alert-text{% endif %}{% endset %}
+  {% if params.imageURL %}
+  <figure class="occlss-promoted-content-panel__image-container">
+    <img src="{{ params.imageURL }}" alt="{{ params.imageAlt }}" class="occlss-promoted-content-panel__image">
+  </figure>
+  {% endif %}
+
+  <div class="occlss-promoted-content-panel__content">
+
+    {% for item in params.textRows %}
+
+    {%- set classes %} occlss-promoted-content-panel__text-line--{{ item.textSize }}
+    {% if params.panelType == "alerts" and loop.index <= 1 %}occlss-promoted-content-panel__text-line--alert-heading{% elseif params.panelType == "alerts" and loop.index > 1 %}occlss-promoted-content-panel__text-line--alert-text{% endif %}{% endset %}
 
     <div class="occlss-promoted-content-panel__text-line {{ classes }}">
-        {%- if item.showArrow == "true" %}
-        {{ item.text | lastfirststr('first') }}
-        <span class="occlss-icon occlss-icon--arrow-right-long-right-secondary occlss-promoted-content-panel__arrow">
+      {%- if item.showArrow == "true" %}
+      {{ item.text | lastfirststr('first') }}
+      <span class="occlss-icon occlss-icon--arrow-right-long-right-secondary occlss-promoted-content-panel__arrow">
         {{ item.text | lastfirststr('last') }}
-            <svg aria-hidden="true" class="occlss-icon__container occlss-promoted-content-panel__link-icon">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/images/occlss/occlss-sprite.svg#arrow-right-long-right-secondary"
-                    class="icon__source icon__source--svg"></use>
-            </svg>
-        </span>
-        {%- else %}
-        {{ item.text }}
-        {%- endif %}
+        <svg aria-hidden="true" class="occlss-icon__container occlss-promoted-content-panel__link-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="/assets/images/occlss/occlss-sprite.svg#arrow-right-long-right-secondary"
+            class="icon__source icon__source--svg"></use>
+        </svg>
+      </span>
+      {%- else %}
+      {{ item.text }}
+      {%- endif %}
     </div>
 
-  {% endfor %}
+    {% endfor %}
 
   </div>
 </{{ panelContainerType }}>

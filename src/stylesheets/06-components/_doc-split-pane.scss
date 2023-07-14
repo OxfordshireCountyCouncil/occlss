@@ -1,0 +1,19 @@
+
+.#{$doc-prefix}split-pane {
+  padding-top: rem(24px);
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    display: flex;
+    position: relative;
+    min-height: 0;
+    overflow: inherit;
+  }
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'xlg'))) {
+    width: 100%;
+  }
+}
+
+@include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+  .#{$doc-prefix}split-pane__nav {
+      display: none;
+  }
+}

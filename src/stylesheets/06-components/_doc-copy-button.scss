@@ -1,0 +1,42 @@
+.#{$doc-prefix}copy-button {
+    position: absolute;
+    z-index: 1;
+    top: rem(10px);
+    right: rem(10px);
+    min-width: rem(110px);
+    padding: rem(3px 10px);
+    border: rem(1px) solid var(--doc-occlss-brand-color-venice-denim);
+    color: var(--doc-occlss-brand-color-venice-denim);
+    background-color: #fff;
+    box-shadow: rem(0 2px 0 0) var(--doc-occlss-brand-color-venice-denim);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+      font-size: rem(16px);
+      line-height: 1.25;
+    }
+
+    &:focus:not(:hover) {
+      color: var(--doc-occlss-brand-color-woodsmoke);
+      background-color: var(--doc-occlss-brand-color-ronchi);
+      box-shadow: rem(0 2px 0 0) var(--doc-occlss-brand-color-woodsmoke);
+    }
+
+    &:active,
+    &:focus {
+      padding: rem(2px 10px);
+      border: rem(2px) solid var(--doc-occlss-brand-color-ronchi);
+      outline: rem(2px) solid rgba(0, 0, 0, 0);
+      box-shadow: none
+    }
+    
+    &:active {
+      margin-top: rem(2px);
+      box-shadow: none
+    }
+}
+  
+
+  

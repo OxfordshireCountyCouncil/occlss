@@ -1,23 +1,27 @@
 [
   {
     "label": "Styles",
-    "url": "styles"
+    "url": "styles",
+    "includeInSearch": true
   },
   {
     "label": "Components",
-    "url": "components"
+    "url": "components",
+    "includeInSearch": true
   },
   {
     "label": "Patterns",
-    "url": "patterns"
+    "url": "patterns",
+    "includeInSearch": true
   },
   {
     "label": "Pages",
-    "url": "pages"
+    "url": "pages",
+    "includeInSearch": true
   },
   {
     "label": "How to style up",
     "url": "how-to-style-up",
-    "status": "hiddennn"
+    "status": "hidden"
   }
 ]

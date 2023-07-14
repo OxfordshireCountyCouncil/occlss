@@ -1,4 +1,3 @@
-{#{ example({group: "components", item: "alert-box", example: "default", html: true, nunjucks: true, open: false }) }#}
 {% macro example(params) %}
 {% set exampleRoot = "src/" + params.group + "/" + params.item + "/" + params.example + "/" %}
 {% if params.customCode %}
@@ -7,31 +6,73 @@
   {% set examplePath = exampleRoot + "index.njk" %}
 {% endif %}
 {% set exampleURL = "/" + params.group + "/" + params.item + "/" + params.example + "/index.html" %}
-{% set exampleId = params.id | default("example-" + params.example) %}
+
 {% set exampleTitle = getFrontmatter(examplePath).title %}
-{#% set params = {nunjucks: true} %#}
-{% set multipleTabs = params.html and params.nunjucks %}
-{% set tabs = params.html or params.nunjucks %}
-<div class="doc-example-pane" id="doc-example-pane-{{ exampleTitle | lower }}">
-  <div class="doc-example-pane__html-example">
-    <span class="doc-example-pane__new-window"><a href="{{ exampleURL }}" class="doc-example-pane__new-window-lnk" target="_blank">Open this example in a new window</a></span>
-    <iframe title="{{ exampleTitle }}" class="doc-example-pane__iframe" src="{{ exampleURL }}" frameBorder="0" id="doc-example-iframe"></iframe>
-  </div>
-  {% if tabs %}
-  <ul class="doc-example-pane-tabs js-doc-example-pane-tabs" role="tablist">
-    {% if params.html %}<li class="doc-example-pane-tabs__item js-doc-example-pane-tabs__item{{ " doc-example-pane-tabs__item--open" if (params.html and params.open ) }}" role="presentation"><a href="#{{ exampleId }}-html" role="tab" aria-controls="{{ exampleId }}-html" data-track="tab-html" class="doc-example-pane-tabs__item-link">HTML</a></li>{% endif %}
-    {% if params.nunjucks %}<li class="doc-example-pane-tabs__item js-doc-example-pane-tabs__item{{ " doc-example-pane-tabs__item--open" if (params.open and params.html == null or params.open and params.html == false ) }}" role="presentation"><a href="#{{ exampleId }}-nunjucks" role="tab" aria-controls="{{ exampleId }}-nunjucks" data-track="tab-nunjucks" class="doc-example-pane-tabs__item-link">Nunjucks</a></li>{% endif %}
-  </ul>
+{% if params.titleSuffix %}
+  {% set exampleTitle = exampleTitle + " " + params.titleSuffix %}
+{% endif %}
+
+{% if params.id %}
+  {% set exampleId = params.id %}
+{% else %}
+  {% set exampleId = (exampleTitle + " example") | slugger %}
+{% endif %}
+
+{% if params.open %}
+  {% set exampleId = exampleId + "-open" %}
+{% endif %}
+
+{% set display = params.displayExample | default(true) %}
+
+{% set multipleTabs = params.html %}
+
+<div class="doc-example-wrapper" id="{{ exampleId }}" data-module="doc-tabs" {%- if params.open %} data-open{% endif %}>
+  {% if display %}
+    <div class="doc-example {{ "doc-example--tabs" if params.html }}">
+      <div class="doc-example__toolbar">
+        <a href="{{ exampleURL }}" class="doc-example__new-window" target="_blank">
+          Open this
+          {#- Don't use full title visually as the context is shown based on location of this link #}
+          <span class="occlss-u-visuallyhidden">{{ exampleTitle | lower }}</span>
+          example in a new tab
+        </a>
+      </div>
+      <iframe title="{{ exampleTitle + " example" }}" data-module="doc-example-frame" class="doc-example__frame doc-example__frame--resizable{% if params.size %} doc-example__frame--{{ params.size }}{% endif %}" src="{{ exampleURL }}" loading="lazy"></iframe>
+    </div>
   {% endif %}
-  <div class="doc-example-pane-tabs__code js-doc-example-pane-tabs__code {{ " doc-example-pane-tabs__code--open" if (params.html and params.open ) }}" id="{{ exampleId }}-html">
-    <pre data-module="app-copy"><code class="hljs html">
-      {{- getHTMLCode(examplePath) | highlight('html') | safe -}}
-    </code></pre>
-  </div>
-  <div class="doc-example-pane-tabs__code js-doc-example-pane-tabs__code {{ " doc-example-pane-tabs__code--open" if (params.open and params.html == null or params.open and params.html == false ) }}" id="{{ exampleId }}-nunjucks">
-    <pre data-module="app-copy"><code class="hljs js">
-      {{- getNunjucksCode(examplePath)  | highlight('js') | safe -}}
-    </code></pre>
-  </div>
+
+  {%- if (multipleTabs) %}
+    <span id="options-{{ exampleId }}"></span>
+    <ul class="doc-tabs" role="tablist">
+      <li class="doc-tabs__item js-tabs__item" role="presentation"><a href="#{{ exampleId }}-html" role="tab" aria-controls="{{ exampleId }}-html" data-track="tab-html">HTML</a></li>
+    </ul>
+  {% elif not (params.hideTab) %}
+    {% set tabType = "html" if params.html %}
+    {#- if at least one tab is set to true show the list -#}
+    {% if tabType %}
+      <ul class="doc-tabs" role="tablist">
+        <li class="doc-tabs__item js-tabs__item" role="presentation">
+          <a href="#{{ exampleId }}-{{ tabType }}" role="tab" aria-controls="{{ exampleId }}-{{ tabType }}" data-track="tab-{{ tabType }}">{{ "HTML" if params.html }}</a>
+        </li>
+      </ul>
+    {% endif %}
+  {% endif %}
+
+  {%- if (params.html) %}
+    {%- if (multipleTabs) or (not params.hideTab) %}
+      <div class="doc-tabs__heading js-tabs__heading"><a href="#{{ exampleId }}-html" aria-controls="{{ exampleId }}-html" data-track="tab-html">HTML</a></div>
+    {% endif %}
+    <div class="doc-tabs__container js-tabs__container{{ " js-tabs__container--no-tabs" if (params.hideTab) }}" id="{{ exampleId }}-html" role="tabpanel">
+      <div class="doc-example__code" data-module="app-copy">
+
+```html
+{{ getHTMLCode(examplePath) | safe }}
+```
+
+      </div>
+    </div>
+  {% endif %}
+
 </div>
+
 {% endmacro %}

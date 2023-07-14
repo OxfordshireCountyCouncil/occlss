@@ -1,0 +1,8 @@
+.#{$doc-prefix}example-wrapper {
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    margin-top: rem(30px);
+    margin-bottom: rem(30px);
+  }
+}

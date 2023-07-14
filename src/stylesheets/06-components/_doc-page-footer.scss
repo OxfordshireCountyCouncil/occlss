@@ -1,6 +1,6 @@
 .#{$doc-prefix}page-footer {
-    color: $doc-page-footer-text-color;
-    background: $doc-page-footer-bg-color;
+    color: #ffffff;
+    background-color: #000000;
     padding: rem(32px 16px);
 }
 
@@ -19,9 +19,6 @@
     position: relative;
     width: 100%;
     max-width: 100%;
-    letter-spacing: -0.31em !important;
-    *letter-spacing: normal !important;
-    word-spacing: -0.43em !important;
     list-style-type: none;
 }
 
@@ -77,7 +74,7 @@
     }
       
     & a:hover, .s-cms-content-footer .occlss-a-to-z--inverse .occlss-a-to-z__letter:hover, .occlss-a-to-z--inverse .s-cms-content-footer .occlss-a-to-z__letter:hover {
-        color: #edc856;
+        color: var(--doc-occlss-brand-color-ronchi);
     }
       
     & a:focus .occlss-u-more-link__icon, .s-cms-content-footer .occlss-a-to-z--inverse .occlss-a-to-z__letter:focus .occlss-u-more-link__icon, .occlss-a-to-z--inverse .s-cms-content-footer .occlss-a-to-z__letter:focus .occlss-u-more-link__icon {

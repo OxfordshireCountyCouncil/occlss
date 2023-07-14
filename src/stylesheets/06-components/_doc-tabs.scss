@@ -1,0 +1,138 @@
+.#{$doc-prefix}tabs {
+    margin: rem(-1px auto);
+    padding: 0;
+    overflow: visible;
+    list-style-type: none;
+    border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+      display: none;
+    }
+  }
+  
+  .#{$doc-prefix}tabs__item {
+    line-height: 1.25;
+    display: inline-block;
+    position: relative;
+    padding: rem(20px);
+    margin-bottom: 0;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+      font-size: rem(19px);
+      line-height: 1.3157894737;
+    }
+  }
+
+  
+  .#{$doc-prefix}tabs__item a,
+  .#{$doc-prefix}tabs__item .occlss-a-to-z--inverse .occlss-a-to-z__letter,
+  .occlss-a-to-z--inverse .#{$doc-prefix}tabs__item .occlss-a-to-z__letter {
+    display: block;
+  }
+  
+  
+  .#{$doc-prefix}tabs__item a:after,
+  .#{$doc-prefix}tabs__item .occlss-a-to-z--inverse .occlss-a-to-z__letter:after,
+  .occlss-a-to-z--inverse .#{$doc-prefix}tabs__item .occlss-a-to-z__letter:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  
+  .#{$doc-prefix}tabs__item--current {
+    border-right: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+    border-left: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+    background: #fff;
+  }
+  
+  .#{$doc-prefix}tabs__item--current:first-child {
+    border-left: 0;
+  }
+  
+  .#{$doc-prefix}tabs__heading {
+    display: none;
+    position: relative;
+    padding: rem(15px);
+    border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+    border-top: 0;
+  }
+  
+  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+    .#{$doc-prefix}tabs__heading {
+        display: block;
+    }
+  }
+  
+  .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button {
+    line-height: 1.25;
+    text-decoration: underline;
+    text-decoration-thickness: max(1px, .0625rem);
+    text-underline-offset: .1578em;
+    border: 0;
+    outline: 0;
+    color: var(--doc-occlss-brand-color-boston-blue);
+    background: none;
+  }
+  
+  .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button:hover {
+    text-decoration-thickness: max(3px, .1875rem, .12em);
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    -webkit-text-decoration-skip: none;
+    text-decoration-skip: none;
+  }
+  
+  .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button:focus {
+    outline: rem(3px) solid #00000000;
+    color: var(--doc-occlss-brand-color-woodsmoke);
+    background-color: var(--doc-occlss-brand-color-ronchi);
+    box-shadow: rem(0 -2px var(--doc-occlss-brand-color-ronchi), 0 4px) var(--doc-occlss-brand-color-woodsmoke);
+    text-decoration: none;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button {
+        font-size: rem(19px);
+        line-height: 1.3157894737;
+    }
+  }
+
+  
+  .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-link:after,
+  .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .#{$doc-prefix}tabs__heading--current {
+    border-bottom: 0
+  }
+  
+  .#{$doc-prefix}tabs__heading--current a:not(:hover):not(:active),
+  .#{$doc-prefix}tabs__heading--current .occlss-a-to-z--inverse .occlss-a-to-z__letter:not(:hover):not(:active),
+  .occlss-a-to-z--inverse .#{$doc-prefix}tabs__heading--current .occlss-a-to-z__letter:not(:hover):not(:active) {
+    text-decoration: none;
+  }
+  
+  .#{$doc-prefix}tabs__container {
+    padding: rem(20px);
+    border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+    background-color: #fff;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+      margin-top: rem(-2px);
+   }
+  }
+  
+  .#{$doc-prefix}tabs__container pre code {
+    outline: rem(1px) solid rgba(0, 0, 0, 0);
+    background-color: var(--doc-occlss-brand-color-example-code-bg);
+  }

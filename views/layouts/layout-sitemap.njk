@@ -1,0 +1,25 @@
+{% extends "layout-single-page.njk" %}
+
+{% set contents %}
+  <h1 class="doc-occlss-font-size-xxxxx-large">Sitemap</h1>
+  {% for item in navigation %}
+    <h2 class="doc-occlss-font-size-xxx-large"><a class="doc-link" href="/{{ item.url }}/">{{ item.label }}</a></h2>
+    {% if item.items %}
+      {% for theme, items in item.items | groupby("theme") %}
+        {% if theme != 'undefined' %}
+          <h3 class="doc-occlss-font-size-xx-large">{{ theme }}</h3>
+        {% endif %}
+        <ul>
+        {% for subitem in items %}
+          <li>
+            <a class="doc-link" href="/{{ subitem.url }}/">{{ subitem.label }}</a>
+            {% if subitem.aliases %}
+              &mdash; also known as {% for alias in subitem.aliases %}{{ ", " if not (loop.first or loop.last) }}{{ " or " if loop.last and loop.length > 1 }}{{ alias | lower }}{% endfor %}
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endset %}

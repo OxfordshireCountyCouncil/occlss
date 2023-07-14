@@ -1,0 +1,168 @@
+.#{$doc-prefix}navigation {
+    background-color: var(--doc-occlss-brand-color-woodsmoke);
+}
+
+.#{$doc-prefix}navigation:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.#{$doc-prefix}navigation__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        position: relative;
+        left: rem(-15px);
+    }
+}
+
+.#{$doc-prefix}navigation__list-item {
+    position: relative;
+    margin-bottom: 0;
+
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: 700;
+        line-height: 3.125;
+        box-sizing: border-box;
+        padding: rem(0 15px);
+        float: left;
+    }
+
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        font-size: rem(19px);
+        line-height: 2.6315789474;
+    }
+
+}
+
+
+
+@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    .#{$doc-prefix}navigation__list-item--current {
+        border-bottom: rem(4px) solid var(--doc-occlss-brand-color-ronchi);
+    }
+
+    .#{$doc-prefix}navigation__list-item--current .doc-link,
+    .#{$doc-prefix}navigation__list-item--current .doc-link--no-visited-state:visited {
+        color: var(--doc-occlss-brand-color-ronchi);
+    }
+}
+
+.#{$doc-prefix}navigation__link {
+    color: #ffffff;
+}
+
+.#{$doc-prefix}navigation__link,
+.#{$doc-prefix}navigation__button {
+    margin: rem(15px 0);
+    padding: 0;
+    font-weight: 700;
+    font-size: rem(19px);
+}
+
+.#{$doc-prefix}navigation__link:after,
+.#{$doc-prefix}navigation__button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.#{$doc-prefix}navigation__link:not([hidden]) {
+    display: inline-block;
+}
+
+@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    .#{$doc-prefix}navigation__link:not([hidden]) {
+        display: inline;
+    }
+}
+
+.#{$doc-prefix}navigation__button {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: underline;
+    text-decoration-thickness: max(1px, .0625rem);
+    text-underline-offset: .1578em;
+    border: 0;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.#{$doc-prefix}navigation__button:hover {
+    text-decoration-thickness: max(3px, .1875rem, .12em);
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    -webkit-text-decoration-skip: none;
+    text-decoration-skip: none;
+}
+
+.#{$doc-prefix}navigation__button:focus {
+    outline: rem(3px) solid #00000000;
+    color: var(--doc-occlss-brand-color-woodsmoke);
+    background-color: var(--doc-occlss-brand-color-ronchi);
+    box-shadow: 0 rem(-2px) var(--doc-occlss-brand-color-ronchi), 0 4px var(--doc-occlss-brand-color-woodsmoke);
+    text-decoration: none;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.#{$doc-prefix}navigation__button:not(:hover):not(:active) {
+    text-decoration: none;
+}
+
+.#{$doc-prefix}navigation__subnav {
+    margin: rem(0 -15px);
+    padding: rem(10px 0);
+    background-color: #fff;
+    list-style: none;
+}
+
+.js-enabled .#{$doc-prefix}navigation__subnav--active {
+    display: block;
+}
+
+@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+
+    .#{$doc-prefix}navigation__subnav,
+    .js-enabled .#{$doc-prefix}navigation__subnav--active {
+        display: none;
+    }
+}
+
+.#{$doc-prefix}navigation__subnav-item {
+    display: block;
+    position: relative;
+    padding: rem(15px);
+    margin-bottom: 0;
+}
+
+.#{$doc-prefix}navigation__subnav-item--current {
+    padding-left: rem(16px);
+    border-left: rem(4px) solid var(--doc-occlss-brand-color-boston-blue);
+}
+
+.#{$doc-prefix}navigation__theme {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    margin: 0;
+    padding: rem(20px 15px 5px);
+    color: var(--doc-occlss-brand-color-emperor);
+    font-size: rem(19px);
+    font-weight: normal;
+}
+
+.#{$doc-prefix}navigation__menu-button {
+    top: auto;
+    right: rem(5px);
+    bottom: rem(25px);
+}

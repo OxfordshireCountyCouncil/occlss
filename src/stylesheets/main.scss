@@ -29,19 +29,29 @@ $occlss-global-image-path:  '/assets/images/occlss/';
 
 // Components
 // Discrete, complete chunks of UI (e.g. .c-carousel {})
+@import "06-components/doc-template";
+@import "06-components/doc-skip-link";
+@import "06-components/doc-link";
 @import "06-components/doc-flex-grid";
-@import "06-components/doc-example-pane";
-@import "06-components/doc-page";
-@import "06-components/doc-main-nav";
+@import "06-components/doc-example-wrapper";
+@import "06-components/doc-example";
+@import "06-components/doc-tabs";
+@import "06-components/doc-copy-button";
+@import "06-components/doc-back-to-top";
 @import "06-components/doc-el";
 @import "06-components/doc-page-header";
 @import "06-components/doc-page-footer";
-@import "06-components/doc-page-header-nav";
 @import "06-components/doc-page-header-title";
 @import "06-components/doc-sg-colors";
 @import "06-components/doc-typography";
 @import "06-components/doc-card-nav";
-@import "06-components/doc-mob-nav";
+@import "06-components/doc-site-search";
+@import "06-components/doc-navigation";
+@import "06-components/doc-subnav";
+@import "06-components/occlss-head-logo";
+@import "06-components/doc-split-pane";
+@import "06-components/doc-page-navigation";
+@import "06-components/doc-content-scope";
 
 // Trumps
 // High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {})

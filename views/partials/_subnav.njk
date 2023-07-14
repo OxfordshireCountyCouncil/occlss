@@ -1,33 +1,34 @@
-<nav>
-    {% for item in navigation %}
-      {% if item.url in path %}
-      {% if item.items %}
-        {% for theme, items in item.items | groupby("theme") %}
-          {% if theme != 'undefined' %}
-            <h4>{{ theme }}</h4>
-          {% endif %}
-          <ul>
-          {% for subitem in items %}
-            <li class="{% if subitem.url == path %}current{% endif %}">
-              <a href="/{{ subitem.url }}">{{ subitem.label }}</a>
-              {% if (subitem.headings) and (subitem.url == path) %}
-                <ul>
-                  {% for link in subitem.headings %}
-                    {% if link.depth == 2 %}
-                      <li>
-                        <a href="/{{ subitem.url }}/#{{ link.url }}" >
-                          {{ link.text }}
-                        </a>
-                      </li>
-                    {% endif %}
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-          </ul>
+<nav class="js-doc-subnav doc-subnav" aria-labelledby="doc-subnav-heading">
+  <h2 class="occlss-u-visuallyhidden" id="doc-subnav-heading">Pages in this section</h2>
+  {% for item in navigation %}
+    {% if permalink.startsWith(item.url) %}
+    {% if item.items %}
+      {% for theme, items in item.items | groupby("theme") %}
+        {% if theme != 'undefined' %}
+          <h3 class="doc-subnav__theme">{{ theme }}</h3>
+        {% endif %}
+        <ul class="doc-subnav__section">
+        {% for subitem in items %}
+          <li class="doc-subnav__section-item{% if subitem.url == permalink %} doc-subnav__section-item--current{% endif %}">
+            <a class="doc-subnav__link doc-link doc-link--no-visited-state doc-link--no-underline" href="/{{ subitem.url }}/">{{ subitem.label }}</a>
+            {% if (subitem.headings) and (subitem.url == permalink) %}
+              <ul class="doc-subnav__section doc-subnav__section--nested">
+                {% for link in subitem.headings %}
+                  {% if link.depth == 2 %}
+                    <li class="doc-subnav__section-item">
+                      <a class="doc-subnav__link doc-link doc-link--no-visited-state doc-link--no-underline" href="/{{ subitem.url }}/#{{ link.url }}" >
+                        {{ link.text }}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
         {% endfor %}
-      {% endif %}
-      {% endif %}
-    {% endfor %}
+        </ul>
+      {% endfor %}
+    {% endif %}
+    {% endif %}
+  {% endfor %}
 </nav>

@@ -1,0 +1,86 @@
+.#{$doc-prefix}example {
+  position: relative;
+  border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJUlEQVQoU2P88ePHfwY0wMHBwYguxjgUFKI7GsTH5m4M3w1ChQAZTSeO0/AZpgAAAABJRU5ErkJggg==") repeat;
+}
+
+.#{$doc-prefix}example--tabs {
+  margin-bottom: 0;
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+    margin-bottom: -1px;
+  }
+}
+
+.#{$doc-prefix}example-col {
+  background-color: #83e3ff;
+  box-shadow: inset 0px 0px 0px 1px #fff;
+  font-size: 0.9em;
+}
+
+.#{$doc-prefix}example__toolbar {
+  padding: rem(10px);
+  border-bottom: rem(1px) solid var(--doc-occlss-brand-color-example-box-border); 
+  background: #fff;
+}
+
+.#{$doc-prefix}example__new-window {
+  font-size: rem(12px);
+  line-height: 1.25;
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    font-size: rem(14px);
+    line-height: 1.4285714286;
+  }
+}
+
+.#{$doc-prefix}example__frame {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  border-right: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+  background: #fff;
+}
+  
+.#{$doc-prefix}example__iframe,
+.#{$doc-prefix}example__frame--xs {
+  height: rem(150px);
+}
+
+.#{$doc-prefix}example__frame--s {
+  height: rem(250px);
+}
+
+.#{$doc-prefix}example__frame--m {
+  height: rem(350px);
+}
+
+.#{$doc-prefix}example__frame--l {
+  height: rem(450px);
+}
+
+.#{$doc-prefix}example__frame--xl {
+  height: rem(550px);
+}
+  
+.#{$doc-prefix}example__frame--resizable {
+  min-width: rem(230px);
+  min-height: rem(60px);
+  overflow: auto;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+    resize: both;
+  }
+}
+  
+.#{$doc-prefix}example__code {
+  position: relative;
+  line-height: 1.25;
+  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    font-size: rem(19px);
+    line-height: 1.3157894737;
+  }
+}
+  
+
+  

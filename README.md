@@ -5,7 +5,7 @@ The OCCLSS includes the resources to create user interfaces consistent with the 
 
 ## Quick start
 
-2. To run the OCCLSS you will require minimum npm v 10.15.1
+2. To run the OCCLSS you will require minimum npm v 19.1.0
 1. Clone the project with `git clone https://github.com/OxfordshireCountyCouncil/occlss.git`
 3. Run `npm install` in the root OCCLSS folder.
 4. To watch for changes, re-generate the front-end, and server it via a BrowserSync server, type npm start to launch the development environment.

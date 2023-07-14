@@ -1,43 +1,48 @@
-{%- set htmlClass %} class="js{% if doc_bg == 'white' %} html-bg-white{% endif %}"{% endset %}
-{%- set bodyClass %} class="{% if doc_bg == 'white' %}body-bg-white{% endif %}{% if doc_gap %} body-gap{% endif %}"{% endset %}
+{% extends "template.njk" %}
+{% set htmlClasses = ['js doc-example-page__wrapper'] %}
 
-<!doctype html>
-<html lang="en" {{ htmlClass | safe }}>
-  <head>
+{% block pageTitle %}{{ title }} – Example - Oxfordshire County Council live style system{% endblock %}
 
-    <link rel="shortcut icon" href="/assets/images/occlss/favicon/favicon.ico" type="image/vnd.microsoft.icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/occlss/favicon/favicon.ico">
-    <link rel="icon" type="image/x-icon" href="/assets/images/occlss/favicon/favicon.ico">
-    <link rel="icon" type="image/gif" href="/assets/images/occlss/favicon/favicon.gif">
-    <link rel="icon" type="image/png" href="/assets/images/occlss/favicon/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/images/occlss/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" href="/assets/images/occlss/favicon/apple-touch-icon-120x120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="/assets/images/occlss/favicon/apple-touch-icon-152x152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="/assets/images/occlss/favicon/apple-touch-icon-72x72.png" sizes="72x72">
-    <link rel="apple-touch-icon" href="/assets/images/occlss/favicon/apple-touch-icon-76x76.png" sizes="76x76">
-    <link rel="apple-touch-icon" href="/assets/images/occlss/favicon/apple-touch-icon-precomposed.png">
+{% block head %}
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="og:title" content="{{title}}">
+  <meta name="description" content="{{description}}">
+  <meta name="og:description" content="{{description}}">
+  <link rel="canonical" href="{{ canonical }}">
 
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,900|Open+Sans:300,400,600,700" rel="stylesheet">
-    <link href="/assets/css/occlss.css" rel="stylesheet" media="all" />
-    <link href="/assets/css/layout.css" rel="stylesheet" media="all" />
-    <script src="/assets/js/vendor/modernizr.js"></script>
-    <title>{{ title }} – Example</title>
-  </head>
-  <body {{ bodyClass | safe }}>
-    <form novalidate>
-        {% block body %}
-          {{ contents | safe }}
-        {% endblock %}
-    </form>
-  </body>
-  {% include "_footer-script.njk" %}
+  <!--<link href="{{ getFingerprint('stylesheets/main.css') }}" rel="stylesheet" media="all">-->
+  <link href="{{ getFingerprint('occlss-scss/occlss.css') }}" rel="stylesheet" media="all">
+  {#- Include any additional stylesheets specified in the example frontmatter #}
+  {% for stylesheet in stylesheets %}
+    <link href="{{ getFingerprint(stylesheet) }}" rel="stylesheet" media="all">
+  {%- endfor %}
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,900|Open+Sans:300,400,600,700');
+    </style>
+
+{% endblock %}
+
+{# Example pages shouldn't have a skip link or header, so blank the one provided by the template #}
+{% block skipLink %}{% endblock %}
+{% block header %}{% endblock %}
+
+{% set bodyClasses = "doc-example-page" %}
+
+{% block main %}
+  <!-- Disable browser validation for any examples that include form elements -->
+  <form action="/form-handler" method="post" novalidate>
+    {% block body %}
+      {{ contents | safe }}
+    {% endblock %}
+  </form>
+{% endblock %}
+
+{% block bodyEnd %}
   {% include "_occlss-script.njk" %}
-  <script
-      type="text/javascript"
-      src="/assets/js/vendor/iframeResizer.contentWindow.min.js"
-      defer
-    ></script>
-</html>
+  <script src="{{ getFingerprint('javascripts/example.js') }}"></script>
+  <script src="{{ getFingerprint('javascripts/vendor/iframeResizer.contentWindow.min.js') }}"></script>
+{% endblock %}
+
+{# Example pages shouldn't have a footer, so blank the one provided by the template #}
+{% block footer %}{% endblock %}

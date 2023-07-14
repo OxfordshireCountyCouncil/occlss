@@ -1,0 +1,10 @@
+.occlss-head-logo {
+    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        width: auto;
+        height: auto;
+    }
+}
+
+.occlss-head-logo__path { 
+    fill: #ffffff;
+}

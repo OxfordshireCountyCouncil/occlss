@@ -1,0 +1,16 @@
+{% extends "_generic.njk" %}
+
+{% block body %}
+  <main id="main-content" role="main">
+    <div class="doc-wrapper">
+      <div class="occlss-layout">
+          <div class="occlss-layout__col occlss-layout__col--12">
+             {{ contents | safe }}
+          </div>
+      </div>
+    </div>
+  </main>
+
+  {% include "_footer.njk" %}
+
+{% endblock %}

@@ -1,22 +1,18 @@
-.stlgd-section-heading__cont {
-    font-size: 2.625rem;
-    color: #1a1a1a;
-    font-weight: 700;
-
+.#{$doc-prefix}section-heading__cont {
+    color: var(--doc-occlss-brand-color-cod-gray);
     font-weight: 300;
-    font-size: 3rem;
+    font-size: rem(48px);
     line-height: 1.25;
     margin-bottom: 0;
 }
 
-.stlgd-section-content__intro-text {
+.#{$doc-prefix}section-content__intro-text {
     line-height: 1.5;
     margin-top: 0;
     margin-bottom: 1.875rem;
     margin-left: 0;
     margin-right: 0;
-
-    margin-bottom: 3rem;
+    margin-bottom: rem(48px);
     font-size: 1.25rem;
     font-weight: 300;
 }

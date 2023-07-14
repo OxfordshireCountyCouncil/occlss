@@ -15,16 +15,16 @@
     position: relative;
     flex: 1;
     
-    outline: 1px solid $doc-card-nav-border-color;
+    outline: rem(1px) solid var(--doc-occlss-brand-color-nebula);
     padding: rem(16px);
 
     &:active,
     &:hover {
-        outline: 3px solid $doc-card-nav-border-hover-color;
+        outline: rem(3px) solid var(--doc-occlss-brand-color-ronchi);
     }
 }
 
 .#{$doc-prefix}card-nav__card-title,
 .#{$doc-prefix}card-nav__card-content {
-    color: $doc-card-nav-text-color;
+    color: var(--doc-occlss-brand-color-cod-gray);
 }

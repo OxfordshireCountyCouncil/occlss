@@ -1,0 +1,21 @@
+.#{$doc-prefix}page-navigation {
+    margin-top: 0;
+    margin-bottom: rem(30px);
+    padding-left: rem(20px);
+    list-style: none;
+}
+
+.#{$doc-prefix}page-navigation__item {
+    line-height: 1.25;
+    margin-bottom: rem(10px);
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+        font-size: rem(19px);
+        line-height: 1.3157894737;
+        display: none;
+    }
+    &:before {
+        content: "—";
+        margin-left: rem(-20px);
+        padding-right: rem(5px);
+    }
+}

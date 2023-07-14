@@ -1,0 +1,56 @@
+<nav id="doc-navigation" class="doc-navigation js-doc-navigation" role="navigation" aria-labelledby="doc-navigation-heading">
+  <div class="doc-wrapper">
+    <div class="occlss-layout">
+      <div class="occlss-layout__col occlss-layout__col--12 occlss-layout__col--bleed-y">
+        <h2 class="occlss-u-visuallyhidden" id="doc-navigation-heading">Menu</h2>
+        <ul class="doc-navigation__list">
+        {% for item in navigation %}
+          <li class="doc-navigation__list-item {% if permalink == item.url or item.url and permalink.startsWith(item.url) %} doc-navigation__list-item--current{% endif %}">
+            
+            <a class="doc-link doc-link--no-visited-state doc-link--no-underline doc-navigation__link js-doc-navigation__link" href="/{{ item.url }}/">
+              {{ item.label }}
+            </a>
+
+            {% if item.items %}
+              
+              <button hidden class="doc-navigation__button js-doc-navigation__button">
+                {{ item.label }}
+              </button>
+              
+              <!-- [html-validate-disable-next aria-label-misuse --- inline fix for html-validate rule, rather than disable it entirely] -->
+              <ul class="doc-navigation__subnav js-doc-navigation__subnav {% if permalink.startsWith(item.url) %}doc-navigation__subnav--active{% endif %}"
+                aria-label="{{ item.label }}"
+                hidden
+              >
+
+                <li class="doc-navigation__subnav-item{% if permalink == item.url %} doc-navigation__subnav-item--current{% endif %}">
+                  <a class="doc-link doc-link--no-visited-state doc-link--no-underline" href="/{{ item.url }}/">
+                    {{ item.label }} overview
+                  </a>
+                </li>
+
+                {% for theme, items in item.items | groupby("theme") %}
+                  <li>
+                    {% if theme != 'undefined' %}
+                      <h3 class="doc-navigation__theme">{{ theme }}</h3>
+                    {% endif %}
+                    <ul class="doc-navigation__list">
+                      {% for subitem in items %}
+                        <li class="doc-navigation__subnav-item{% if permalink == subitem.url %} doc-navigation__subnav-item--current{% endif %}">
+                          <a class="doc-link doc-link--no-visited-state doc-link--no-underline" href="/{{ subitem.url }}/">
+                            {{ subitem.label }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

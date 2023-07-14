@@ -1,0 +1,21 @@
+.#{$doc-prefix}template {
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+@media screen {
+    .#{$doc-prefix}template {
+        overflow-y: scroll;
+    }
+}
+
+.#{$doc-prefix}template__body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.#{$doc-prefix}template {
+    background-color: #000;
+}

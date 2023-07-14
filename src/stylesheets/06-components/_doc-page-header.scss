@@ -1,57 +1,110 @@
-.#{$doc-prefix}page-header {
-   background: $doc-page-header-bg;
-   width: 100%;
+.#{$doc-prefix}header {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--doc-occlss-brand-color-aqua-deep);
 }
 
-.#{$doc-prefix}page-header__logo-cont {
-    padding: rem(0 16px);
-}
-
-.#{$doc-prefix}page-header__logo-link {
-    display: inline-block;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.mobile-menu-layout .#{$doc-prefix}page-header__logo-link {
+// Header container
+.#{$doc-prefix}header__container {
+    position: relative;
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
-        padding-left: rem(40px);
+        padding-bottom: rem(12px);
     }
 }
 
-.#{$doc-prefix}page-header__sidebar-close {
-    cursor: pointer;
+.#{$doc-prefix}header__container:after {
+    content: "";
     display: block;
-    background: none;
-    border: 0;
-    padding: 0;
-    margin: 0;
+    clear: both;
+}
+
+
+// Header link
+.#{$doc-prefix}header__link {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+}
+
+.#{$doc-prefix}header__link:focus {
+    outline: rem(3px) solid var(--doc-occlss-brand-color-ronchi);
+    display: inline-block;
+}
+
+// Header logo
+@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    .#{$doc-prefix}header__logo {
+        width: auto;
+        padding-right: rem(15px);
+        float: left;
+        vertical-align: top;
+    }
+}
+
+// Menu button
+.#{$doc-prefix}header__menu-button {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: none;
     position: absolute;
-    top: rem(17px);
-    width: rem(36px);
-    height: rem(36px);
+    top: 20%;
+    right: rem(12px);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: rem(3px) solid #00000000;
+        color: var(--doc-occlss-brand-color-emperor);
+        background-color: var(--doc-occlss-brand-color-ronchi);
+        box-shadow: 0 rem(-2px) var(--doc-occlss-brand-color-ronchi), 0 0 transparent;
+        text-decoration: none;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    &:after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0);
+        -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+        clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+        border-width: rem(8.66px 5px 0 5px);
+        border-top-color: inherit;
+        content: "";
+        margin-left: 5px;
+    }
+
+    &[aria-expanded=true]:after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: #00000000;
+        -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        border-width: rem(0 5px 8.66px 5px);
+        border-bottom-color: inherit;
+    }
+    
+
+}
+
+.js-enabled .#{$doc-prefix}header__menu-button {
+    display: block;
+}
+
+.#{$doc-prefix}header__menu-button[hidden],
+.js-enabled .#{$doc-prefix}header__menu-button[hidden] {
     display: none;
 }
-
-.mobile-menu-layout .#{$doc-prefix}page-header__sidebar-close {
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
-        display: block;
-    }
-}
-
-.#{$doc-prefix}page-header__sidebar-close__icon {
-    padding: 0;
-    margin: 0;
-    display: block;
-    path {
-        fill: #ffffff;
-    }
-}
-
-.#{$doc-prefix}page-header__logo {
-    padding: 0;
-    margin: 0;
-}
-
-

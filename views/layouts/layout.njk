@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" class="html-bg-white">
+{% extends "_generic.njk" %}
 
-{% include "_head.njk" %}
+{% block body %}
 
-<body class="body-full-height body-bg-white">
+<main id="main-content" role="main">
+  {{ contents | safe }}
+</main>
 
-<!-- grid start -->
-<div class="doc-flex-grid">
+{% include "_footer.njk" %}
 
-  {% include "_header.njk" %}
-  {% set bc_parameters = {'layout': 'full'} %}
-  {% include "_body-content.njk" %}
-  {% include "_footer.njk" %}
-
-</div>
-<!-- grid ends -->
-{% include "_footer-script.njk" %}
-
-</body>
-</html>
+{% endblock %}

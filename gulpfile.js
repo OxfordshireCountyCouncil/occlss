@@ -1,23 +1,34 @@
-var gulp           = require('gulp'),
-    svgSprite      = require('gulp-svg-sprite'),
-    del            = require('del'),
-    sass           = require('gulp-sass'),
-    plumber        = require('gulp-plumber'),
-    autoprefixer   = require('gulp-autoprefixer'),
-    sourcemaps     = require('gulp-sourcemaps'),
-    taskListing    = require('gulp-task-listing'),
-    replace        = require('gulp-replace'),
-    cleanCSS       = require('gulp-clean-css'),
-    rename         = require('gulp-rename');
+const gulp           = require('gulp')
+const taskListing    = require('gulp-task-listing')
+const replace        = require('gulp-replace')
+const cleanCSS       = require('gulp-clean-css')
+const rename         = require('gulp-rename')
+const fs             = require('node:fs')
+const svgSprite      = require('gulp-svg-sprite')
+const plumber        = require('gulp-plumber')
+const sourcemaps     = require('gulp-sourcemaps')
 
-// SVG
-var $ = {
-  gutil: require('gulp-util'),
-  svgSprite: require('gulp-svg-sprite'),
-};
+const sass = require('gulp-sass')(require('sass'))
+
+
+// Generate files for NPM package
+gulp.task('genNodeModule', function (cb) {
+  // get Sass files
+  gulp.src(['./src/occlss-scss/**'])
+  .pipe(replace('"../../views/components/', '"components/'))
+  .pipe(replace('../../images','../images')) 
+  .pipe(gulp.dest('./nodejs.module-files/scss'));
+  // get Component files
+  gulp.src(['./views/components/**']).pipe(gulp.dest('./nodejs.module-files/scss/components'));
+  // get JavaScript files
+  gulp.src(['./src/assets/js/occlss/**','!./src/assets/js/occlss/browser.detect.js']).pipe(gulp.dest('./nodejs.module-files/js'));
+  // get Images files
+  gulp.src(['./src/assets/images/occlss/**', '!./src/assets/images/occlss/demo', '!./src/assets/images/occlss/demo/**']).pipe(gulp.dest('./nodejs.module-files/images'));
+  cb()
+});
 
 // Compile node module sass
-gulp.task('genNodeModule:sass', function(done){
+gulp.task('genNodeModule:sass', function(cb){
   return gulp.src('./nodejs.module-files/scss/occlss.scss')
   .pipe(plumber('Error Running Sass'))
   .pipe(sourcemaps.init())
@@ -25,49 +36,29 @@ gulp.task('genNodeModule:sass', function(done){
     precision: 5,
   }))
   .pipe(gulp.dest('./nodejs.module-files/css'))
-  done();
+  cb()
 })
 
 // Clean and minify css
-gulp.task('genNodeModule:mincss', function(done){
+gulp.task('genNodeModule:mincss', function(cb){
   return gulp.src('./nodejs.module-files/css/*.css')
   .pipe(cleanCSS({compatibility: 'ie8'}))
   .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('./nodejs.module-files/css'))
-  done();
+  cb()
 })
 
 // Clean nodejs.module-files folder
-gulp.task('clean:nodejsmodule', function (done) {
-  return del([
-    './nodejs.module-files/**/*'
-  ]);
-  done();
+gulp.task('clean:nodejsmodule', async function() {
+  if (fs.existsSync('nodejs.module-files')) {
+    return fs.rmdirSync('nodejs.module-files', {force: true, recursive: true})
+  }
 });
 
-//////////////////////////////
-// SVG sprite generator
-//////////////////////////////
 
-// How to?
-// SVG icons should go to "/svg-source/svgs" folder and must be all the same size,
-// the folder name "icon" will be added in to svg id, so it will be "{icon name}"
-// SVG sprite will be created in "images" folder
-// To create SVG sprite type "gulp svg-sprite-create"
-
-// First clean all sprite elements
-gulp.task('clean:svgicons', function (done) {
-  return del([
-    './views/components/icon/template.njk',
-    './svg-source/delivery/**/*',
-    './src/assets/images/occlss/occlss-sprite.svg'
-  ]);
-  done();
-});
-
-gulp.task('svg-sprite-create', function(done) {
+gulp.task('svg-sprite-create', function(cb) {
   return gulp.src("svg-source/svgs/*")
-    .pipe($.svgSprite({
+    .pipe(svgSprite({
       shape: {
         spacing: {
           padding: 0,
@@ -105,44 +96,22 @@ gulp.task('svg-sprite-create', function(done) {
     .pipe(replace('--icon-container-class--', '{{ params.containerClass }}'))
     .pipe(replace('--icon-source-class--', '{{ params.sourceClass }}'))
     .pipe(gulp.dest("./"));
-    done();
+    cb()
 });
 
-
-// Generate files for NPM package
-gulp.task('genNodeModule', function (done) {
-  // get Sass files
-  gulp.src(['./src/occlss-scss/**'])
-  .pipe(replace('"../../views/components/', '"components/'))
-  .pipe(replace('../../images','../images'))
-  .pipe(gulp.dest('./nodejs.module-files/scss'));
-  // get Component files
-  gulp.src(['./views/components/**']).pipe(gulp.dest('./nodejs.module-files/scss/components'));
-  // get JavaScript files
-  gulp.src(['./src/assets/js/occlss/**','!./src/assets/js/occlss/browser.detect.js']).pipe(gulp.dest('./nodejs.module-files/js'));
-  // get Images files
-  gulp.src(['./src/assets/images/occlss/**', '!./src/assets/images/occlss/demo', '!./src/assets/images/occlss/demo/**']).pipe(gulp.dest('./nodejs.module-files/images'));
-  done();
-});
-
-
-/******************************************************
- * COMPOUND TASKS
-******************************************************/
 
 // Generate node module source files
 gulp.task('node:gen', gulp.series(
   'clean:nodejsmodule',
-  'clean:svgicons',
-  'svg-sprite-create',
   'genNodeModule'
 ));
 
-// Generate svg sprite
-gulp.task('svg:gen', gulp.series(
-  'clean:svgicons',
-  'svg-sprite-create'
+gulp.task('node:MinGen', gulp.series(
+  'genNodeModule:sass',
+  'genNodeModule:mincss'
 ));
+
+
 
 // Default task -------------------------
 // Lists out available tasks.

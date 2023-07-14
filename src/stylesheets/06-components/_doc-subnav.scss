@@ -1,0 +1,85 @@
+.#{$doc-prefix}subnav {
+    margin-bottom: rem(100px);
+    padding: rem(0 15px 0 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: rem(14px);
+    line-height: 1.1428571429;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        font-size: rem(16px);
+        line-height: 1.25;
+    }
+}
+
+.#{$doc-prefix}subnav__section {
+    margin: rem(0 0 20px);
+    padding: 0;
+    list-style-type: none;
+}
+
+.#{$doc-prefix}subnav__link {
+    padding: rem(2px 0);
+}
+
+.#{$doc-prefix}subnav__section-item {
+    margin-bottom: rem(5px);
+    padding-top: rem(5px);
+    padding-bottom: rem(5px);
+}
+
+.#{$doc-prefix}subnav__section-item--current {
+    margin-left: rem(-14px);
+    padding-left: rem(10px);
+    border-left: rem(4px) solid var(--doc-occlss-brand-color-venice-denim);
+    background-color: #fff;
+}
+
+.#{$doc-prefix}subnav__section-item--current .#{$doc-prefix}subnav__link {
+    font-weight: bold
+}
+
+.#{$doc-prefix}subnav__section--nested {
+    margin-top: rem(10px);
+    margin-bottom: 0;
+    padding-left: rem(20px);
+}
+
+.#{$doc-prefix}subnav__section--nested .#{$doc-prefix}subnav__section-item:before {
+    content: "—";
+    margin-left: rem(-20px);
+    color: #505a5f
+}
+
+.#{$doc-prefix}subnav__section--nested .#{$doc-prefix}subnav__section-item {
+    margin-bottom: 0;
+}
+
+.#{$doc-prefix}subnav__section--nested .#{$doc-prefix}subnav__link {
+    padding-left: 0;
+    font-weight: normal
+}
+
+.#{$doc-prefix}subnav__theme {
+    margin: 0;
+    padding: rem(0 15px 10px 0);
+    color: var(--doc-occlss-brand-color-emperor);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 1.25;
+    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        font-size: rem(19px);
+        line-height: 1.3157894737;
+    }
+}
+
+
+
+@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    .#{$doc-prefix}subnav__section-item .#{$doc-prefix}link,
+    .#{$doc-prefix}subnav__section-item .#{$doc-prefix}link--no-visited-state:visited {
+        color: var(--doc-occlss-brand-color-venice-denim);
+    }
+}

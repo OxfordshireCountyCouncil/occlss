@@ -1,22 +1,61 @@
-<!DOCTYPE html>
-<html lang="en" class="html-bg-white">
+{% extends "_generic.njk" %}
 
-{% include "_head.njk" %}
+{# If the theme ends in '…', then we nest the caption inside the H1 so that the
+  H1 becomes e.g. 'Ask users for dates'. Otherwise, we put it before the H1. #}
+{% set includeThemeInPageHeading = theme and "…" in theme %}
 
-<body class="body-full-height body-bg-white js-mobile-menu-layout mobile-menu-layout">
-<!-- grid start -->
-<div class="doc-flex-grid">
+{% block body %}
+<div class="doc-split-pane doc-wrapper">
+  <div class="occlss-layout">
+    <div class="doc-split-pane__nav occlss-layout__col occlss-layout__col--md-3">
+      {% include "_subnav.njk" %}
+    </div>
+    <div class="doc-split-pane__content occlss-layout__col occlss-layout__col--md-9">
+      <main id="main-content" class="app-content" role="main">
+        {% if not includeThemeInPageHeading %}
+        <span class="doc-occlss-font-size-large">
+          {{ theme if theme else section }}
+        </span>
+        {% endif %}
+        <h1 class="doc-occlss-font-size-xxxxx-large">
+          {% if includeThemeInPageHeading %}
+          <span class="doc-occlss-font-size-xxxxx-large">
+            {{ theme | replace("…", "") }}
+          </span>
+          {% endif %}
+          {{ title }}
+          {% if status %}
+          <div>
+            <strong>
+              {{ status }}
+            </strong>
+            <p>{{ statusMessage | safe }}</p>
+          </div>
+          {% endif %}
+        </h1>
 
-  {% include "_header.njk" %}
-  {% set bc_parameters = {'headerTitle': 'true', 'menu': 'true'} %}
-  {% include "_body-content.njk" %}
-  {% include "_footer.njk" %}
+        {% if show_page_nav %}
+          <ul class="doc-page-navigation">
+            {% for heading in headings %}
+              {% if heading.depth == 2 %}
+                <li class="doc-page-navigation__item">
+                  <a class="doc-link" href="#{{ heading.url}}">
+                    {{ heading.text }}
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
 
+        <div class="doc-content-scope">
+          {{ contents | safe }}
+        </div>
+        
+      </main>
+    </div>
+  </div>
+  {% include "_back-to-top.njk" %}
 </div>
-<!-- grid ends -->
-
-{% include "_footer-script.njk" %}
-{% include "_footer-example-script.njk" %}
-
-</body>
-</html>
+{% include "_footer.njk" %}
+{% endblock %}

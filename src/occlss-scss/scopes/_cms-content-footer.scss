@@ -65,9 +65,12 @@ Format:
     }
 
   }
-  .occlss-button {
+  .occlss-button--primary {
     &:hover {
-      color: #ffffff;
+      color: $occlss-button-primary-color-hover;
+    }
+    &:focus {
+      color: #fff;
     }
   }
 

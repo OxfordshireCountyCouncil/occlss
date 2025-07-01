@@ -4,7 +4,7 @@
     overflow: visible;
     list-style-type: none;
     border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+    @include breakpoint(max-width (map-get($reflex-breakpoints, 'lg'))) {
       display: none;
     }
   }
@@ -15,7 +15,7 @@
     position: relative;
     padding: rem(20px);
     margin-bottom: 0;
-    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
       font-size: rem(19px);
       line-height: 1.3157894737;
     }
@@ -59,7 +59,7 @@
     border-top: 0;
   }
   
-  @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+  @include breakpoint(max-width (map-get($reflex-breakpoints, 'lg'))) {
     .#{$doc-prefix}tabs__heading {
         display: block;
     }
@@ -95,7 +95,7 @@
   }
 
 
-  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+  @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
     .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button {
         font-size: rem(19px);
         line-height: 1.3157894737;
@@ -127,7 +127,7 @@
     padding: rem(20px);
     border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
     background-color: #fff;
-    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+    @include breakpoint(min-width (map-get($reflex-breakpoints, 'lg'))) {
       margin-top: rem(-2px);
    }
   }

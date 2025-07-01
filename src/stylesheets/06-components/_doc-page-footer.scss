@@ -33,7 +33,7 @@
     vertical-align: top;
     padding: rem(10px 27px);
 
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint(max-width (map-get($reflex-breakpoints, 'md'))) {
         padding: 0;
     }
 

@@ -4,7 +4,7 @@
     top: 20%;
     right: 0;
     margin-right: rem(12px);
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint(max-width (map-get($reflex-breakpoints, 'md'))) {
         position: relative;
         margin-left: rem(12px);
     }
@@ -12,7 +12,7 @@
 
 .js-enabled .#{$doc-prefix}site-search {
     display: block;
-    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
         text-align: left;
     }
 }
@@ -47,7 +47,7 @@
     background-size: rem(40px 40px);
     border: rem(2px) solid var(--doc-occlss-brand-color-emperor);
     
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    @include breakpoint(max-width (map-get($reflex-breakpoints, 'sm'))) {
         width: 100%;
     }
 
@@ -160,7 +160,7 @@
 
 
 
-@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+@include breakpoint(min-width (map-get($reflex-breakpoints, 'sm'))) {
 
     .#{$doc-prefix}site-search__hint,
     .#{$doc-prefix}site-search__input,
@@ -186,7 +186,7 @@
     color: var(--doc-occlss-brand-color-emperor);
 }
 
-@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+@include breakpoint(min-width (map-get($reflex-breakpoints, 'sm'))) {
     .#{$doc-prefix}site-search__link {
         display: inline-block;
     }
@@ -206,7 +206,7 @@
     color: var(--doc-occlss-brand-color-emperor);
 }
 
-@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+@include breakpoint(min-width (map-get($reflex-breakpoints, 'sm'))) {
     .#{$doc-prefix}site-search--section {
         font-size: rem(16px);
         line-height: 1.25;

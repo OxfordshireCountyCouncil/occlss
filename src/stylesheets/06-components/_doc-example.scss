@@ -6,7 +6,7 @@
 
 .#{$doc-prefix}example--tabs {
   margin-bottom: 0;
-  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+  @include breakpoint(min-width (map-get($reflex-breakpoints, 'lg'))) {
     margin-bottom: -1px;
   }
 }
@@ -26,7 +26,7 @@
 .#{$doc-prefix}example__new-window {
   font-size: rem(12px);
   line-height: 1.25;
-  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+  @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
     font-size: rem(14px);
     line-height: 1.4285714286;
   }
@@ -68,7 +68,7 @@
   overflow: auto;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+  @include breakpoint(min-width (map-get($reflex-breakpoints, 'lg'))) {
     resize: both;
   }
 }
@@ -76,7 +76,7 @@
 .#{$doc-prefix}example__code {
   position: relative;
   line-height: 1.25;
-  @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+  @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
     font-size: rem(19px);
     line-height: 1.3157894737;
   }

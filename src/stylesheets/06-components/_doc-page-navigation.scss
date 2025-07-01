@@ -8,7 +8,7 @@
 .#{$doc-prefix}page-navigation__item {
     line-height: 1.25;
     margin-bottom: rem(10px);
-    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
         font-size: rem(19px);
         line-height: 1.3157894737;
         display: none;

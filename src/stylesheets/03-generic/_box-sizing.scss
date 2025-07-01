@@ -1,0 +1,13 @@
+// Reset the box-sizing
+
+html {
+	@include box-sizing(border-box);
+}
+
+* {
+	&,
+	&:after,
+	&:before {
+		@include box-sizing(border-box);
+	}
+}

@@ -6,11 +6,11 @@
 
 {% block body %}
 <div class="doc-split-pane doc-wrapper">
-  <div class="occlss-layout">
-    <div class="doc-split-pane__nav occlss-layout__col occlss-layout__col--md-3">
+  <div class="doc-layout">
+    <div class="doc-split-pane__nav doc-layout__col doc-layout__col--md-3">
       {% include "_subnav.njk" %}
     </div>
-    <div class="doc-split-pane__content occlss-layout__col occlss-layout__col--md-9">
+    <div class="doc-split-pane__content doc-layout__col doc-layout__col--md-9">
       <main id="main-content" class="app-content" role="main">
         {% if not includeThemeInPageHeading %}
         <span class="doc-occlss-font-size-large">

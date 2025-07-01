@@ -1,6 +1,6 @@
 // Images path 
-$occlss-global-image-path:  '/assets/images/occlss/';
-@import 'occlss';
+$doc-global-image-path:  '/assets/images/occlss/';
+//@import 'occlss';
 
 // primary secondary tertiary quaternary quinary senary septenary octonary nonary denary
 // Settings             
@@ -10,21 +10,36 @@ $occlss-global-image-path:  '/assets/images/occlss/';
 
 // Tools 
 // site-wide mixins and functions
+@import "02-tools/breakpoint-sass/breakpoint";
+@import "02-tools/mixin_transition";
+@import "02-tools/mixins_rem";
+@import "02-tools/mixin_box_sizing";
 
+/* GENERIC              Low-specificity, far-reaching rulesets (e.g. resets).
+// =======              ===============================
+Box-sizing...........Apply global `border-box`.
+Normalize.css........A level playing field.
+Shared...............Sensibly and tersely share global commonalities.
+Reset................A pared back reset to remove margins.
+*/
 
-// Generic
-// low-specificity, far-reaching rulesets (e.g. resets) [box-sizing, normalize]
+@import "03-generic/box-sizing";
+@import "03-generic/normalize";
+@import "03-generic/shared";
+@import "03-generic/reset";
 
 
 // Base elements
 // Unclassed HTML elements (e.g. a {}, blockquote {}, address {})
 @import "04-base/html";
+@import "04-base/page";
 @import "04-base/body";
 
 
 // Objects
 // Objects, abstractions, and design patterns (e.g. .o-layout {})
 @import "05-objects/doc-wrapper";
+@import "05-objects/doc-layouts";
 
 
 // Components

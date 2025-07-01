@@ -1,5 +1,5 @@
 .#{$doc-prefix}flex-grid {
-  @extend .occlss-layout;
+  @extend .doc-layout;
 }
 
 .#{$doc-prefix}flex-grid--row {
@@ -11,5 +11,5 @@
 }
 
 .#{$doc-prefix}flex-grid__col {
-  @extend .occlss-layout__col;
+  @extend .doc-layout__col;
 }

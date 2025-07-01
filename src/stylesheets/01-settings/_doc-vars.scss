@@ -56,6 +56,25 @@ $reflex-lg-max:     ($reflex-xlg - 1);
 $reflex-grid-spacing:       16px !default;
 //////////////////////////////////////////
 
+// Breakpoints
+// -------------------------
+
+$reflex-breakpoints: (
+  xs: 480px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+  xlg: 1600px
+) !default;
+
+$reflex-breakpoints-max: (
+  xxs: (map-get($reflex-breakpoints, 'xs') - 1),
+  xs:  (map-get($reflex-breakpoints, 'sm') - 1),
+  sm:  (map-get($reflex-breakpoints, 'md') - 1),
+  md:  (map-get($reflex-breakpoints, 'lg') - 1),
+  lg:  (map-get($reflex-breakpoints, 'xlg') - 1)
+) !default;
+
 // Font size
 $doc-font-size: (
     'xxxxx-large': 42px,
@@ -68,6 +87,25 @@ $doc-font-size: (
     'regular':     16px,
     'mall':        14px
 );
+
+// Global transition parameters 
+$doc-global-enable-transitions-option:     true !default;
+$doc-global-transition-parameters:         all .2s ease-in-out !default;
+
+// Page default variables
+$doc-page-font-family-primary:  'Open Sans', sans-serif !default;
+$doc-page-font-color-primary:   #0B0C0C !default;
+$doc-page-font-weight-primary:  400 !default;
+$doc-page-background-primary:   #ffffff !default;
+
+
+// Paragraph default variables
+$doc-page-line-height-paragraph-unit:    1.5 !default;
+$doc-page-margin-paragraph-unit:         0 0 30px 0 !default;
+$doc-page-margin-paragraph-unit-top:     0 !default;
+$doc-page-margin-paragraph-unit-bottom:  30px !default;
+$doc-page-margin-paragraph-unit-left:    0 !default;
+$doc-page-margin-paragraph-unit-right:   0 !default;
 
 // Doc css vars
 :root {

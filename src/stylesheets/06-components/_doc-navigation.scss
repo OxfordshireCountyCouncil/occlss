@@ -13,7 +13,7 @@
     padding: 0;
     list-style: none;
 
-    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
         position: relative;
         left: rem(-15px);
     }
@@ -23,7 +23,7 @@
     position: relative;
     margin-bottom: 0;
 
-    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-weight: 700;
@@ -33,7 +33,7 @@
         float: left;
     }
 
-    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
         font-size: rem(19px);
         line-height: 2.6315789474;
     }
@@ -42,7 +42,7 @@
 
 
 
-@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+@include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
     .#{$doc-prefix}navigation__list-item--current {
         border-bottom: rem(4px) solid var(--doc-occlss-brand-color-ronchi);
     }
@@ -80,7 +80,7 @@
     display: inline-block;
 }
 
-@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+@include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
     .#{$doc-prefix}navigation__link:not([hidden]) {
         display: inline;
     }
@@ -130,7 +130,7 @@
     display: block;
 }
 
-@include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+@include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
 
     .#{$doc-prefix}navigation__subnav,
     .js-enabled .#{$doc-prefix}navigation__subnav--active {

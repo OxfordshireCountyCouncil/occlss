@@ -13,7 +13,7 @@
     text-decoration: none;
     cursor: pointer;
     
-    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
       font-size: rem(16px);
       line-height: 1.25;
     }

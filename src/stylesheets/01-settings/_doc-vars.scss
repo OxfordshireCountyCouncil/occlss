@@ -107,6 +107,16 @@ $doc-page-margin-paragraph-unit-bottom:  30px !default;
 $doc-page-margin-paragraph-unit-left:    0 !default;
 $doc-page-margin-paragraph-unit-right:   0 !default;
 
+
+$doc-form-cntrls-border-color-base-input-focus: #edc856 !default;
+
+// Page link
+$doc-link-color-primary:            #0B5EB1 !default;
+$doc-link-color-primary-hover:      #edc856 !default;
+$doc-link-bg-color-primary-hover:   #edc856 !default;
+$doc-link-font-size:                20px !default;
+$doc-link-color-hover-focus:        #1a1a1a !default;
+
 // Doc css vars
 :root {
     // Colours

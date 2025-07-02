@@ -1,37 +1,37 @@
-.#{$doc-prefix}tabs {
+.doc-tabs {
     margin: rem(-1px auto);
     padding: 0;
     overflow: visible;
     list-style-type: none;
     border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'lg'))) {
+    @media(max-width: 75rem) {
       display: none;
     }
   }
   
-  .#{$doc-prefix}tabs__item {
+  .doc-tabs__item {
     line-height: 1.25;
     display: inline-block;
     position: relative;
     padding: rem(20px);
     margin-bottom: 0;
-    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
+    @media(min-width: 62rem) {
       font-size: rem(19px);
       line-height: 1.3157894737;
     }
   }
 
   
-  .#{$doc-prefix}tabs__item a,
-  .#{$doc-prefix}tabs__item .occlss-a-to-z--inverse .occlss-a-to-z__letter,
-  .occlss-a-to-z--inverse .#{$doc-prefix}tabs__item .occlss-a-to-z__letter {
+  .doc-tabs__item a,
+  .doc-tabs__item .occlss-a-to-z--inverse .occlss-a-to-z__letter,
+  .occlss-a-to-z--inverse .doc-tabs__item .occlss-a-to-z__letter {
     display: block;
   }
   
   
-  .#{$doc-prefix}tabs__item a:after,
-  .#{$doc-prefix}tabs__item .occlss-a-to-z--inverse .occlss-a-to-z__letter:after,
-  .occlss-a-to-z--inverse .#{$doc-prefix}tabs__item .occlss-a-to-z__letter:after {
+  .doc-tabs__item a:after,
+  .doc-tabs__item .occlss-a-to-z--inverse .occlss-a-to-z__letter:after,
+  .occlss-a-to-z--inverse .doc-tabs__item .occlss-a-to-z__letter:after {
     content: "";
     position: absolute;
     top: 0;
@@ -41,17 +41,17 @@
   }
   
   
-  .#{$doc-prefix}tabs__item--current {
+  .doc-tabs__item--current {
     border-right: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
     border-left: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
     background: #fff;
   }
   
-  .#{$doc-prefix}tabs__item--current:first-child {
+  .doc-tabs__item--current:first-child {
     border-left: 0;
   }
   
-  .#{$doc-prefix}tabs__heading {
+  .doc-tabs__heading {
     display: none;
     position: relative;
     padding: rem(15px);
@@ -59,13 +59,13 @@
     border-top: 0;
   }
   
-  @include breakpoint(max-width (map-get($reflex-breakpoints, 'lg'))) {
-    .#{$doc-prefix}tabs__heading {
+  @media(max-width: 75rem) {
+    .doc-tabs__heading {
         display: block;
     }
   }
   
-  .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button {
+  .doc-tabs__heading .doc-tabs__heading-button {
     line-height: 1.25;
     text-decoration: underline;
     text-decoration-thickness: max(1px, .0625rem);
@@ -76,7 +76,7 @@
     background: none;
   }
   
-  .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button:hover {
+  .doc-tabs__heading .doc-tabs__heading-button:hover {
     text-decoration-thickness: max(3px, .1875rem, .12em);
     -webkit-text-decoration-skip-ink: none;
     text-decoration-skip-ink: none;
@@ -84,7 +84,7 @@
     text-decoration-skip: none;
   }
   
-  .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button:focus {
+  .doc-tabs__heading .doc-tabs__heading-button:focus {
     outline: rem(3px) solid #00000000;
     color: var(--doc-occlss-brand-color-woodsmoke);
     background-color: var(--doc-occlss-brand-color-ronchi);
@@ -95,16 +95,16 @@
   }
 
 
-  @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
-    .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button {
+  @media(min-width: 62rem) {
+    .doc-tabs__heading .doc-tabs__heading-button {
         font-size: rem(19px);
         line-height: 1.3157894737;
     }
   }
 
   
-  .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-link:after,
-  .#{$doc-prefix}tabs__heading .#{$doc-prefix}tabs__heading-button:after {
+  .doc-tabs__heading .doc-tabs__heading-link:after,
+  .doc-tabs__heading .doc-tabs__heading-button:after {
     content: "";
     position: absolute;
     top: 0;
@@ -113,26 +113,26 @@
     left: 0;
   }
   
-  .#{$doc-prefix}tabs__heading--current {
+  .doc-tabs__heading--current {
     border-bottom: 0
   }
   
-  .#{$doc-prefix}tabs__heading--current a:not(:hover):not(:active),
-  .#{$doc-prefix}tabs__heading--current .occlss-a-to-z--inverse .occlss-a-to-z__letter:not(:hover):not(:active),
-  .occlss-a-to-z--inverse .#{$doc-prefix}tabs__heading--current .occlss-a-to-z__letter:not(:hover):not(:active) {
+  .doc-tabs__heading--current a:not(:hover):not(:active),
+  .doc-tabs__heading--current .occlss-a-to-z--inverse .occlss-a-to-z__letter:not(:hover):not(:active),
+  .occlss-a-to-z--inverse .doc-tabs__heading--current .occlss-a-to-z__letter:not(:hover):not(:active) {
     text-decoration: none;
   }
   
-  .#{$doc-prefix}tabs__container {
+  .doc-tabs__container {
     padding: rem(20px);
     border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
     background-color: #fff;
-    @include breakpoint(min-width (map-get($reflex-breakpoints, 'lg'))) {
+    @media(min-width: 75rem) {
       margin-top: rem(-2px);
    }
   }
   
-  .#{$doc-prefix}tabs__container pre code {
+  .doc-tabs__container pre code {
     outline: rem(1px) solid rgba(0, 0, 0, 0);
     background-color: var(--doc-occlss-brand-color-example-code-bg);
   }

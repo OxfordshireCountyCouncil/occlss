@@ -5,7 +5,7 @@ $doc-gutter: 1rem;
 
 /// Breakpoints
 $mobile : screen;
-$tablet : min-width 768px;
+$tablet : min-width 48rem; // 768px
 $desktop : min-width 1024px;
 $widedesktop : min-width 1400px;
 
@@ -40,10 +40,10 @@ $reflex-columns: 12 !default; // number of columns
 // Breakpoints
 // -------------------------
 $reflex-xs: 576px !default;
-$reflex-sm: 768px !default;
-$reflex-md: 992px !default;
-$reflex-lg: 1200px !default;
-$reflex-xlg: 1600px !default;
+$reflex-sm: 48rem !default;
+$reflex-md: 62rem !default;
+$reflex-lg: 75rem !default;
+$reflex-xlg: 100rem !default;
 
 $reflex-xxs-max:    ($reflex-xs - 1);
 $reflex-xs-max:     ($reflex-sm - 1);
@@ -60,11 +60,11 @@ $reflex-grid-spacing:       16px !default;
 // -------------------------
 
 $reflex-breakpoints: (
-  xs: 480px,
-  sm: 768px,
-  md: 992px,
-  lg: 1200px,
-  xlg: 1600px
+  xs: 30rem, // 480px
+  sm: 48rem, // 768px,
+  md: 62rem, // 992px,
+  lg: 75rem, // 1200px,
+  xlg: 100rem // 1600px
 ) !default;
 
 $reflex-breakpoints-max: (

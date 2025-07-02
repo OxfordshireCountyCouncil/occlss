@@ -1,7 +1,7 @@
-.#{$doc-prefix}example-wrapper {
+.doc-example-wrapper {
   margin-top: rem(20px);
   margin-bottom: rem(20px);
-  @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
+  @media(min-width: 62rem) {
     margin-top: rem(30px);
     margin-bottom: rem(30px);
   }

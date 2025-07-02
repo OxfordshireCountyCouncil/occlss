@@ -1,14 +1,14 @@
-.#{$doc-prefix}page-footer {
+.doc-page-footer {
     color: #ffffff;
     background-color: #000000;
     padding: rem(32px 16px);
 }
 
-.#{$doc-prefix}page-footer__heading {
+.doc-page-footer__heading {
     font-size: rem(22px);
 }
 
-.#{$doc-prefix}page-footer__layout {
+.doc-page-footer__layout {
     display: inline-block;
     display: flex;
     *display: inline;
@@ -22,7 +22,7 @@
     list-style-type: none;
 }
 
-.#{$doc-prefix}page-footer__layout-col {
+.doc-page-footer__layout-col {
     font-weight: 300;
     flex-direction: column;
     letter-spacing: normal;
@@ -33,7 +33,7 @@
     vertical-align: top;
     padding: rem(10px 27px);
 
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'md'))) {
+    @media(max-width: 62rem) {
         padding: 0;
     }
 

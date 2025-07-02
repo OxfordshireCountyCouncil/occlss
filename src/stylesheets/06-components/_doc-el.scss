@@ -1,4 +1,4 @@
-.#{$doc-prefix}section-heading__cont {
+.doc-section-heading__cont {
     color: var(--doc-occlss-brand-color-cod-gray);
     font-weight: 300;
     font-size: rem(48px);
@@ -6,7 +6,7 @@
     margin-bottom: 0;
 }
 
-.#{$doc-prefix}section-content__intro-text {
+.doc-section-content__intro-text {
     line-height: 1.5;
     margin-top: 0;
     margin-bottom: 1.875rem;

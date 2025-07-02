@@ -1,19 +1,19 @@
 
-.#{$doc-prefix}split-pane {
+.doc-split-pane {
   padding-top: rem(24px);
-  @include breakpoint(min-width (map-get($reflex-breakpoints, 'sm'))) {
+  @media(min-width: 48rem) {
     display: flex;
     position: relative;
     min-height: 0;
     overflow: inherit;
   }
-  @include breakpoint(min-width (map-get($reflex-breakpoints, 'xlg'))) {
+  @media(min-width: 100rem) {
     width: 100%;
   }
 }
 
-@include breakpoint(max-width (map-get($reflex-breakpoints, 'md'))) {
-  .#{$doc-prefix}split-pane__nav {
+@media(max-width: 62rem) {
+  .doc-split-pane__nav {
       display: none;
   }
 }

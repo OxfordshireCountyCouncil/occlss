@@ -1,4 +1,4 @@
-.#{$doc-prefix}template {
+.doc-template {
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -6,16 +6,16 @@
 }
 
 @media screen {
-    .#{$doc-prefix}template {
+    .doc-template {
         overflow-y: scroll;
     }
 }
 
-.#{$doc-prefix}template__body {
+.doc-template__body {
     margin: 0;
     background-color: #fff;
 }
 
-.#{$doc-prefix}template {
+.doc-template {
     background-color: #000;
 }

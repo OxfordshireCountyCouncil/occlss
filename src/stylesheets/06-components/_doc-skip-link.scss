@@ -1,4 +1,4 @@
-.#{$doc-prefix}skip-link {
+.doc-skip-link {
     position: absolute !important;
     width: rem(1px) !important;
     height: rem(1px) !important;
@@ -14,8 +14,8 @@
     padding: rem(10px 15px);
 }
 
-.#{$doc-prefix}skip-link:active,
-.#{$doc-prefix}skip-link:focus {
+.doc-skip-link:active,
+.doc-skip-link:focus {
     position: static !important;
     width: auto !important;
     height: auto !important;
@@ -27,39 +27,39 @@
     white-space: inherit !important;
 }
 
-.#{$doc-prefix}skip-link:link,
-.#{$doc-prefix}skip-link:visited {
+.doc-skip-link:link,
+.doc-skip-link:visited {
     color: var(--doc-occlss-brand-color-woodsmoke);
 }
 
-.#{$doc-prefix}skip-link:hover {
+.doc-skip-link:hover {
     color: var(--doc-occlss-brand-color-woodsmoke);
 }
 
-.#{$doc-prefix}skip-link:active,
-.#{$doc-prefix}skip-link:focus {
+.doc-skip-link:active,
+.doc-skip-link:focus {
     color: var(--doc-occlss-brand-color-woodsmoke);
 }
 
-@include breakpoint(max-width (map-get($reflex-breakpoints, 'md'))) {
-    .#{$doc-prefix}skip-link {
+@media(max-width: 62rem) {
+    .doc-skip-link {
         line-height: 1.25;
     }
 }
 
 @supports(padding: max(calc(0px))) {
-    .#{$doc-prefix}skip-link {
+    .doc-skip-link {
         padding-right: max(15px, calc(15px + env(safe-area-inset-right)));
         padding-left: max(15px, calc(15px + env(safe-area-inset-left)));
     }
 }
 
-.#{$doc-prefix}skip-link:focus {
+.doc-skip-link:focus {
     outline: 3px solid var(--doc-occlss-brand-color-ronchi);
     outline-offset: 0;
     background-color: var(--doc-occlss-brand-color-ronchi);
 }
 
-.#{$doc-prefix}skip-link-focused-element:focus {
+.doc-skip-link-focused-element:focus {
     outline: none;
 }

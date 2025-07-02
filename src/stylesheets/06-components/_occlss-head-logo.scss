@@ -1,5 +1,5 @@
 .occlss-head-logo {
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'md'))) {
+    @media(max-width: 62rem) {
         width: auto;
         height: auto;
     }

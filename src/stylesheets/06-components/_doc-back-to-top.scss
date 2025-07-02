@@ -1,8 +1,8 @@
-.#{$doc-prefix}back-to-top {
+.doc-back-to-top {
   margin-top: rem(20px);
   margin-bottom: rem(30px);
   position: relative;
-  @include breakpoint(min-width (map-get($reflex-breakpoints, 'sm'))) {
+  @media(min-width: 48rem) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -11,7 +11,7 @@
   }
 }
 
-.#{$doc-prefix}back-to-top__icon {
+.doc-back-to-top__icon {
   display: inline-block;
   width: rem(26px);
   height: rem(30px);
@@ -21,37 +21,32 @@
 }
 
 
-
-  .js-enabled .#{$doc-prefix}back-to-top--fixed {
-    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
-      position: fixed;
-      top: calc(100% - 50px);
-      bottom: auto;
-      left: auto;
-    }
+.js-enabled .doc-back-to-top--fixed {
+  @media(min-width: 62rem) {
+    position: fixed;
+    top: calc(100% - 50px);
+    bottom: auto;
+    left: auto;
   }
-
-  .js-enabled .#{$doc-prefix}back-to-top--hidden .#{$doc-prefix}back-to-top__link {
-    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
-      position: absolute !important;
-      width: 1px !important;
-      height: 1px !important;
-      margin: 0 !important;
-      overflow: hidden !important;
-      clip: rect(0 0 0 0) !important;
-      -webkit-clip-path: inset(50%) !important;
-      clip-path: inset(50%) !important;
-      white-space: nowrap !important;
-    }
 }
 
+.js-enabled .doc-back-to-top--hidden .doc-back-to-top__link {
+  @media(min-width: 62rem) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+  }
+}
 
-
-
-
-.js-enabled .#{$doc-prefix}back-to-top--hidden .#{$doc-prefix}back-to-top__link:active,
-.js-enabled .#{$doc-prefix}back-to-top--hidden .#{$doc-prefix}back-to-top__link:focus {
-    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
+.js-enabled .doc-back-to-top--hidden .doc-back-to-top__link:active,
+.js-enabled .doc-back-to-top--hidden .doc-back-to-top__link:focus {
+    @media(min-width: 62rem) {
       position: static !important;
       width: auto !important;
       height: auto !important;

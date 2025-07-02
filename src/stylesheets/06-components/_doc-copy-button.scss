@@ -1,4 +1,4 @@
-.#{$doc-prefix}copy-button {
+.doc-copy-button {
     position: absolute;
     z-index: 1;
     top: rem(10px);
@@ -13,7 +13,7 @@
     text-decoration: none;
     cursor: pointer;
     
-    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
+    @media(min-width: 62rem) {
       font-size: rem(16px);
       line-height: 1.25;
     }

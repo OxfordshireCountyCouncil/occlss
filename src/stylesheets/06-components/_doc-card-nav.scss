@@ -1,12 +1,12 @@
-.#{$doc-prefix}card-nav {
+.doc-card-nav {
   margin: rem(0 -16px);  
 }
 
-.#{$doc-prefix}card-nav__card {
+.doc-card-nav__card {
     padding: rem(16px);
 }
 
-.#{$doc-prefix}card-nav__card-conteiner {
+.doc-card-nav__card-conteiner {
     @include transition(all .2s ease-in-out);
 
     width: 100%;
@@ -24,7 +24,7 @@
     }
 }
 
-.#{$doc-prefix}card-nav__card-title,
-.#{$doc-prefix}card-nav__card-content {
+.doc-card-nav__card-title,
+.doc-card-nav__card-content {
     color: var(--doc-occlss-brand-color-cod-gray);
 }

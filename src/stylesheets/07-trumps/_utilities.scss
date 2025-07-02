@@ -123,7 +123,7 @@ $trim-width:(
 
 @each $key,$val in $trim-width {
     .occlss-u-max-width-#{$key} {
-        @include breakpoint(min-width (map-get($reflex-breakpoints, 'sm'))) {
+        @media(min-width: 48rem) {
             max-width: $val;
         }
     }
@@ -133,26 +133,26 @@ $trim-width:(
 // Hide
 
 .occlss-u-hide-xs {
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'xs'))) {
+    @media(max-width: 30rem) {
         display: none;
     }
 }
 
 .occlss-u-hide-sm {
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'sm'))) {
+    @media(max-width: 48rem) {
         display: none;
     }
 }
 
 .occlss-u-hide-md {
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'md'))) {
+    @media(max-width: 62rem) {
         display: none;
     }  
 }
 
 
 .occlss-u-hide-lg {
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'lg'))) {
+    @media(max-width: 75rem) {
         display: none;
     }
 }
@@ -161,28 +161,28 @@ $trim-width:(
 
 .occlss-u-show-xs {
     display: none;
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'xs'))) {
+    @media(max-width: 30rem) {
         display: block;
     }
 }
 
 .occlss-u-show-sm {
     display: none;
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'sm'))) {
+    @media(max-width: 48rem) {
         display: block;
     }
 }
 
 .occlss-u-show-md {
     display: none;
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'md'))) {
+    @media(max-width: 62rem) {
         display: block;
     }  
 }
 
 .occlss-u-show-lg {
     display: none;
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'lg'))) {
+    @media(max-width: 75rem) {
         display: block;
     }
 }

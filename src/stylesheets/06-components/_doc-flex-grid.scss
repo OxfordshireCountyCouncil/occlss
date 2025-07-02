@@ -1,15 +1,15 @@
-.#{$doc-prefix}flex-grid {
+.doc-flex-grid {
   @extend .doc-layout;
 }
 
-.#{$doc-prefix}flex-grid--row {
+.doc-flex-grid--row {
   flex-direction: row;
 }
 
-.#{$doc-prefix}flex-grid--full-height {
+.doc-flex-grid--full-height {
   flex: 1;
 }
 
-.#{$doc-prefix}flex-grid__col {
+.doc-flex-grid__col {
   @extend .doc-layout__col;
 }

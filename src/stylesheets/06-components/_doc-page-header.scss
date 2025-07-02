@@ -1,18 +1,18 @@
-.#{$doc-prefix}header {
+.doc-header {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: var(--doc-occlss-brand-color-aqua-deep);
 }
 
 // Header container
-.#{$doc-prefix}header__container {
+.doc-header__container {
     position: relative;
-    @include breakpoint(max-width (map-get($reflex-breakpoints, 'md'))) {
+    @media(max-width: 62rem) {
         padding-bottom: rem(12px);
     }
 }
 
-.#{$doc-prefix}header__container:after {
+.doc-header__container:after {
     content: "";
     display: block;
     clear: both;
@@ -20,20 +20,20 @@
 
 
 // Header link
-.#{$doc-prefix}header__link {
+.doc-header__link {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-decoration: none;
 }
 
-.#{$doc-prefix}header__link:focus {
+.doc-header__link:focus {
     outline: rem(3px) solid var(--doc-occlss-brand-color-ronchi);
     display: inline-block;
 }
 
 // Header logo
-@include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
-    .#{$doc-prefix}header__logo {
+@media(min-width: 62rem) {
+    .doc-header__logo {
         width: auto;
         padding-right: rem(15px);
         float: left;
@@ -42,7 +42,7 @@
 }
 
 // Menu button
-.#{$doc-prefix}header__menu-button {
+.doc-header__menu-button {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: none;
@@ -100,11 +100,11 @@
 
 }
 
-.js-enabled .#{$doc-prefix}header__menu-button {
+.js-enabled .doc-header__menu-button {
     display: block;
 }
 
-.#{$doc-prefix}header__menu-button[hidden],
-.js-enabled .#{$doc-prefix}header__menu-button[hidden] {
+.doc-header__menu-button[hidden],
+.js-enabled .doc-header__menu-button[hidden] {
     display: none;
 }

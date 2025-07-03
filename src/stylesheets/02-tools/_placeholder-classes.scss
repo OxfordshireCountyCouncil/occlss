@@ -1,73 +1,68 @@
 /*
 
-Placeholders are kind of a weird thing. They are classes that aren’t output when your
-SCSS is compiled. So then you might think “What’s the point?”. Actually the point would
-be minimal if it wasn’t for the @extend directive. But first things first. This is how
-you write a placeholder:
-
-%reset_list_style {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.occlss-site-nav__list {
-  @extend %reset_list_style;
-}
+Modern CSS approach using utility classes instead of deprecated @extend.
+This provides better performance and maintainability.
 
 */
 
-// This class will reset list style
+// Import variables for use in this module
+@use '../01-settings/doc-vars' as *;
 
-%reset_list_style {
+// Utility classes (modern approach)
+.reset-list-style {
   margin: 0;
   padding: 0;
   list-style: none;
   list-style-type: none;
 }
 
-// Clearfix class
-// Clearfix
-//
-// For modern browsers
-// 1. The space content is one way to avoid an Opera bug when the
-//    contenteditable attribute is included anywhere else in the document.
-//    Otherwise it causes space to appear at the top and bottom of elements
-//    that are clearfixed.
-// 2. The use of `table` rather than `block` is only necessary if using
-//    `:before` to contain the top-margins of child elements.
-//
-// Source: http://nicolasgallagher.com/micro-clearfix-hack/
-
-%clearfix {
+.clearfix {
   &:before,
   &:after {
-    content: " "; // 1
-    display: table; // 2
+    content: " ";
+    display: table;
   }
   &:after {
     clear: both;
   }
 }
 
-// Screen reader only helper
-%sr-only {
+.sr-only {
   position: fixed;
   left: -9999rem;
   outline: none;
 }
 
-// Heighlite on focus outline only
-%highlight-outline-on-focus {
-    outline: 0.188rem solid $doc-form-cntrls-border-color-base-input-focus;
+.highlight-outline-on-focus {
+  outline: 0.188rem solid $doc-form-cntrls-border-color-base-input-focus;
 }
 
-// outline and background
-%highlight-bg-on-focus {
+.highlight-bg-on-focus {
   color: $doc-link-color-hover-focus;
   background-color: $doc-form-cntrls-border-color-base-input-focus;
   outline: 0.125rem solid $doc-form-cntrls-border-color-base-input-focus;
   &:hover {
     color: $doc-link-color-hover-focus;
   }
+}
+
+// Legacy placeholder selectors for backward compatibility (deprecated)
+%reset_list_style {
+  @extend .reset-list-style;
+}
+
+%clearfix {
+  @extend .clearfix;
+}
+
+%sr-only {
+  @extend .sr-only;
+}
+
+%highlight-outline-on-focus {
+  @extend .highlight-outline-on-focus;
+}
+
+%highlight-bg-on-focus {
+  @extend .highlight-bg-on-focus;
 }

@@ -1,3 +1,6 @@
+// Import variables for use in this module
+@use '../01-settings/doc-vars' as *;
+
 // Transition
 @mixin transition($transition...) {
   @if $doc-global-enable-transitions-option {

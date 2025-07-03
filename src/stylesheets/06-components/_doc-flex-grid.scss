@@ -1,3 +1,6 @@
+// Import doc-layouts for @extend usage
+@use '../05-objects/doc-layouts' as *;
+
 .doc-flex-grid {
   @extend .doc-layout;
 }

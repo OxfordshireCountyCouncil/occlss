@@ -1,3 +1,6 @@
+// Import placeholder selectors for @extend usage
+@use '../02-tools/placeholder-classes' as *;
+
 // This class will hide object from display
 .occlss-u-hidden {
   display: none;

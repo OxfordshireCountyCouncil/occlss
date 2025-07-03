@@ -1,3 +1,6 @@
+// Import mixins for use in this module
+@use '../02-tools/mixin_transition' as *;
+
 .doc-card-nav {
     @media(min-width: 30rem) {
         margin: 0 -1rem;  

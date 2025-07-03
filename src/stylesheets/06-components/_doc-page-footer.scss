@@ -1,11 +1,11 @@
 .doc-page-footer {
     color: #ffffff;
     background-color: #000000;
-    padding: rem(32px 16px);
+    padding: 2rem 1rem;
 }
 
 .doc-page-footer__heading {
-    font-size: rem(22px);
+    font-size: 1.375rem;
 }
 
 .doc-page-footer__layout {
@@ -31,7 +31,7 @@
     position: relative;
     width: 100%;
     vertical-align: top;
-    padding: rem(10px 27px);
+    padding: 0.625rem 1.6875rem;
 
     @media(max-width: 62rem) {
         padding: 0;

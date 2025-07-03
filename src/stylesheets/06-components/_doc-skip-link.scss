@@ -1,7 +1,7 @@
 .doc-skip-link {
     position: absolute !important;
-    width: rem(1px) !important;
-    height: rem(1px) !important;
+    width: 0.0625rem !important;
+    height: 0.0625rem !important;
     margin: 0 !important;
     overflow: hidden !important;
     clip: rect(0 0 0 0) !important;
@@ -11,7 +11,7 @@
     text-decoration-thickness: max(1px, .0625rem);
     text-underline-offset: .1578rem;
     display: block;
-    padding: rem(10px 15px);
+    padding: 0.625rem 0.9375rem;
 }
 
 .doc-skip-link:active,

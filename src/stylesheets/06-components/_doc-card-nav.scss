@@ -1,9 +1,16 @@
 .doc-card-nav {
-  margin: rem(0 -16px);  
+    @media(min-width: 30rem) {
+        margin: 0 -1rem;  
+    }
 }
 
 .doc-card-nav__card {
-    padding: rem(16px);
+    @media(min-width: 30rem) {
+    padding: 1rem;
+    }
+    @media(max-width: 30rem) {
+        margin-bottom: 1rem;
+    }
 }
 
 .doc-card-nav__card-conteiner {
@@ -15,12 +22,12 @@
     position: relative;
     flex: 1;
     
-    outline: rem(1px) solid var(--doc-occlss-brand-color-nebula);
-    padding: rem(16px);
+    outline: 0.0625rem solid var(--doc-occlss-brand-color-nebula);
+    padding: 1rem;
 
     &:active,
     &:hover {
-        outline: rem(3px) solid var(--doc-occlss-brand-color-ronchi);
+        outline: 0.1875rem solid var(--doc-occlss-brand-color-ronchi);
     }
 }
 

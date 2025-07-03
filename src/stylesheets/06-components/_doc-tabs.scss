@@ -1,9 +1,9 @@
 .doc-tabs {
-    margin: rem(-1px auto);
+    margin: -0.0625rem auto;
     padding: 0;
     overflow: visible;
     list-style-type: none;
-    border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+    border: 0.0625rem solid var(--doc-occlss-brand-color-example-box-border);
     @media(max-width: 75rem) {
       display: none;
     }
@@ -13,10 +13,10 @@
     line-height: 1.25;
     display: inline-block;
     position: relative;
-    padding: rem(20px);
+    padding: 1.25rem;
     margin-bottom: 0;
     @media(min-width: 62rem) {
-      font-size: rem(19px);
+      font-size: 1.1875rem;
       line-height: 1.3157894737;
     }
   }
@@ -42,8 +42,8 @@
   
   
   .doc-tabs__item--current {
-    border-right: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
-    border-left: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+    border-right: 0.0625rem solid var(--doc-occlss-brand-color-example-box-border);
+    border-left: 0.0625rem solid var(--doc-occlss-brand-color-example-box-border);
     background: #fff;
   }
   
@@ -54,8 +54,8 @@
   .doc-tabs__heading {
     display: none;
     position: relative;
-    padding: rem(15px);
-    border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+    padding: 0.9375rem;
+    border: 0.0625rem solid var(--doc-occlss-brand-color-example-box-border);
     border-top: 0;
   }
   
@@ -85,10 +85,10 @@
   }
   
   .doc-tabs__heading .doc-tabs__heading-button:focus {
-    outline: rem(3px) solid #00000000;
+    outline: 0.1875rem solid #00000000;
     color: var(--doc-occlss-brand-color-woodsmoke);
     background-color: var(--doc-occlss-brand-color-ronchi);
-    box-shadow: rem(0 -2px var(--doc-occlss-brand-color-ronchi), 0 4px) var(--doc-occlss-brand-color-woodsmoke);
+    box-shadow: 0 -0.125rem var(--doc-occlss-brand-color-ronchi), 0 4px var(--doc-occlss-brand-color-woodsmoke);
     text-decoration: none;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -97,7 +97,7 @@
 
   @media(min-width: 62rem) {
     .doc-tabs__heading .doc-tabs__heading-button {
-        font-size: rem(19px);
+        font-size: 1.1875rem;
         line-height: 1.3157894737;
     }
   }
@@ -124,15 +124,15 @@
   }
   
   .doc-tabs__container {
-    padding: rem(20px);
-    border: rem(1px) solid var(--doc-occlss-brand-color-example-box-border);
+    padding: 1.25rem;
+    border: 0.0625rem solid var(--doc-occlss-brand-color-example-box-border);
     background-color: #fff;
     @media(min-width: 75rem) {
-      margin-top: rem(-2px);
+      margin-top: -0.125rem;
    }
   }
   
   .doc-tabs__container pre code {
-    outline: rem(1px) solid rgba(0, 0, 0, 0);
+    outline: 0.0625rem solid rgba(0, 0, 0, 0);
     background-color: var(--doc-occlss-brand-color-example-code-bg);
   }

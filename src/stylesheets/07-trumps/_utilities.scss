@@ -22,9 +22,9 @@
         @extend %highlight-bg-on-focus;
     }
     &__icon {
-        width: rem(19px);
-        height: rem(19px);
-        margin-left: rem(10px);
+        width: 1.1875rem;
+        height: 1.1875rem;
+        margin-left: 0.625rem;
         fill: #0B5EB1;
     }
 }
@@ -41,7 +41,7 @@
 .occlss-u-summary-list {
     @extend %reset_list_style;
     li {
-        margin-bottom: rem(12px);
+        margin-bottom: 0.75rem;
     }
 }
 

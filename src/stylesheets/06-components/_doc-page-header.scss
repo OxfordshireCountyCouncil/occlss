@@ -8,7 +8,7 @@
 .doc-header__container {
     position: relative;
     @media(max-width: 62rem) {
-        padding-bottom: rem(12px);
+        padding-bottom: 0.75rem;
     }
 }
 
@@ -27,7 +27,7 @@
 }
 
 .doc-header__link:focus {
-    outline: rem(3px) solid var(--doc-occlss-brand-color-ronchi);
+    outline: 0.1875rem solid var(--doc-occlss-brand-color-ronchi);
     display: inline-block;
 }
 
@@ -35,7 +35,7 @@
 @media(min-width: 62rem) {
     .doc-header__logo {
         width: auto;
-        padding-right: rem(15px);
+        padding-right: 0.9375rem;
         float: left;
         vertical-align: top;
     }
@@ -48,7 +48,7 @@
     display: none;
     position: absolute;
     top: 20%;
-    right: rem(12px);
+    right: 0.75rem;
     margin: 0;
     padding: 0;
     border: 0;
@@ -62,10 +62,10 @@
     }
 
     &:focus {
-        outline: rem(3px) solid #00000000;
+        outline: 0.1875rem solid #00000000;
         color: var(--doc-occlss-brand-color-emperor);
         background-color: var(--doc-occlss-brand-color-ronchi);
-        box-shadow: 0 rem(-2px) var(--doc-occlss-brand-color-ronchi), 0 0 transparent;
+        box-shadow: 0 -0.125rem var(--doc-occlss-brand-color-ronchi), 0 0 transparent;
         text-decoration: none;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
@@ -79,7 +79,7 @@
         border-color: rgba(0, 0, 0, 0);
         -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
         clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-        border-width: rem(8.66px 5px 0 5px);
+        border-width: 0.54125rem 0.3125rem 0 0.3125rem;
         border-top-color: inherit;
         content: "";
         margin-left: 5px;
@@ -93,7 +93,7 @@
         border-color: #00000000;
         -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        border-width: rem(0 5px 8.66px 5px);
+        border-width: 0 0.3125rem 0.54125rem 0.3125rem;
         border-bottom-color: inherit;
     }
     

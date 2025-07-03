@@ -1,37 +1,37 @@
 .doc-subnav {
-    margin-bottom: rem(100px);
-    padding: rem(0 15px 0 0);
+    margin-bottom: 6.25rem;
+    padding: 0 0.9375rem 0 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: rem(14px);
+    font-size: 0.875rem;
     line-height: 1.1428571429;
     @media(min-width: 48rem) {
-        font-size: rem(16px);
+        font-size: 1rem;
         line-height: 1.25;
     }
 }
 
 .doc-subnav__section {
-    margin: rem(0 0 20px);
+    margin: 0 0 1.25rem;
     padding: 0;
     list-style-type: none;
 }
 
 .doc-subnav__link {
-    padding: rem(2px 0);
+    padding: 0.125rem 0;
 }
 
 .doc-subnav__section-item {
-    margin-bottom: rem(5px);
-    padding-top: rem(5px);
-    padding-bottom: rem(5px);
+    margin-bottom: 0.3125rem;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
 }
 
 .doc-subnav__section-item--current {
-    margin-left: rem(-14px);
-    padding-left: rem(10px);
-    border-left: rem(4px) solid var(--doc-occlss-brand-color-venice-denim);
+    margin-left: -0.875rem;
+    padding-left: 0.625rem;
+    border-left: 0.25rem solid var(--doc-occlss-brand-color-venice-denim);
     background-color: #fff;
 }
 
@@ -40,14 +40,14 @@
 }
 
 .doc-subnav__section--nested {
-    margin-top: rem(10px);
+    margin-top: 0.625rem;
     margin-bottom: 0;
-    padding-left: rem(20px);
+    padding-left: 1.25rem;
 }
 
 .doc-subnav__section--nested .doc-subnav__section-item:before {
     content: "—";
-    margin-left: rem(-20px);
+    margin-left: -1.25rem;
     color: #505a5f
 }
 
@@ -62,15 +62,15 @@
 
 .doc-subnav__theme {
     margin: 0;
-    padding: rem(0 15px 10px 0);
+    padding: 0 0.9375rem 0.625rem 0;
     color: var(--doc-occlss-brand-color-emperor);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: rem(16px);
+    font-size: 1rem;
     line-height: 1.25;
     @media(min-width: 48rem) {
-        font-size: rem(19px);
+        font-size: 1.1875rem;
         line-height: 1.3157894737;
     }
 }

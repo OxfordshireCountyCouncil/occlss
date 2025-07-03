@@ -15,7 +15,7 @@
 
     @media(min-width: 62rem) {
         position: relative;
-        left: rem(-15px);
+        left: -0.9375rem;
     }
 }
 
@@ -29,12 +29,12 @@
         font-weight: 700;
         line-height: 3.125;
         box-sizing: border-box;
-        padding: rem(0 15px);
+        padding: 0 0.9375rem;
         float: left;
     }
 
     @media(min-width: 62rem) {
-        font-size: rem(19px);
+        font-size: 1.1875rem;
         line-height: 2.6315789474;
     }
 
@@ -44,7 +44,7 @@
 
 @media(min-width: 62rem) {
     .doc-navigation__list-item--current {
-        border-bottom: rem(4px) solid var(--doc-occlss-brand-color-ronchi);
+        border-bottom: 0.25rem solid var(--doc-occlss-brand-color-ronchi);
     }
 
     .doc-navigation__list-item--current .doc-link,
@@ -59,10 +59,10 @@
 
 .doc-navigation__link,
 .doc-navigation__button {
-    margin: rem(15px 0);
+    margin: 0.9375rem 0;
     padding: 0;
     font-weight: 700;
-    font-size: rem(19px);
+    font-size: 1.1875rem;
 }
 
 .doc-navigation__link:after,
@@ -106,10 +106,10 @@
 }
 
 .doc-navigation__button:focus {
-    outline: rem(3px) solid #00000000;
+    outline: 0.1875rem solid #00000000;
     color: var(--doc-occlss-brand-color-woodsmoke);
     background-color: var(--doc-occlss-brand-color-ronchi);
-    box-shadow: 0 rem(-2px) var(--doc-occlss-brand-color-ronchi), 0 4px var(--doc-occlss-brand-color-woodsmoke);
+    box-shadow: 0 -0.125rem var(--doc-occlss-brand-color-ronchi), 0 4px var(--doc-occlss-brand-color-woodsmoke);
     text-decoration: none;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
@@ -120,8 +120,8 @@
 }
 
 .doc-navigation__subnav {
-    margin: rem(0 -15px);
-    padding: rem(10px 0);
+    margin: 0 -0.9375rem;
+    padding: 0.625rem 0;
     background-color: #fff;
     list-style: none;
 }
@@ -141,13 +141,13 @@
 .doc-navigation__subnav-item {
     display: block;
     position: relative;
-    padding: rem(15px);
+    padding: 0.9375rem;
     margin-bottom: 0;
 }
 
 .doc-navigation__subnav-item--current {
-    padding-left: rem(16px);
-    border-left: rem(4px) solid var(--doc-occlss-brand-color-boston-blue);
+    padding-left: 1rem;
+    border-left: 0.25rem solid var(--doc-occlss-brand-color-boston-blue);
 }
 
 .doc-navigation__theme {
@@ -155,14 +155,14 @@
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     margin: 0;
-    padding: rem(20px 15px 5px);
+    padding: 1.25rem 0.9375rem 0.3125rem;
     color: var(--doc-occlss-brand-color-emperor);
-    font-size: rem(19px);
+    font-size: 1.1875rem;
     font-weight: normal;
 }
 
 .doc-navigation__menu-button {
     top: auto;
-    right: rem(5px);
-    bottom: rem(25px);
+    right: 0.3125rem;
+    bottom: 1.5625rem;
 }

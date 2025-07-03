@@ -1,22 +1,22 @@
 .doc-back-to-top {
-  margin-top: rem(20px);
-  margin-bottom: rem(30px);
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
   position: relative;
   @media(min-width: 48rem) {
     position: absolute;
     bottom: 0;
     left: 0;
     margin-top: auto;
-    margin-bottom: rem(50px);
+    margin-bottom: 3.125rem;
   }
 }
 
 .doc-back-to-top__icon {
   display: inline-block;
-  width: rem(26px);
-  height: rem(30px);
-  margin-top: rem(-14px);
-  margin-right: rem(10px);
+  width: 1.625rem;
+  height: 1.875rem;
+  margin-top: -0.875rem;
+  margin-right: 0.625rem;
   vertical-align: middle;
 }
 

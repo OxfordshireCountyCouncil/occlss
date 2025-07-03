@@ -1,14 +1,13 @@
-
 .doc-sg-colors {
-  margin-bottom: rem(5px);
-  max-width: rem(550px);
+  margin-bottom: 0.3125rem;
+  max-width: 34.375rem;
 }
 
 .doc-sg-colors-desc-title {
-  margin-top: rem(20px);
-  margin-bottom: rem(5px);
+  margin-top: 1.25rem;
+  margin-bottom: 0.3125rem;
   font-weight: 600;
-  font-size: rem(14px);
+  font-size: 0.875rem;
   display: inline-block;
   text-transform: uppercase;
 }
@@ -19,10 +18,10 @@
           flex: auto;
   width: 100%;
   margin: 0 0.5em 0.5em 0;
-  border: rem(1px solid #ddd);
+  border: 0.0625rem solid #ddd;
 
-  -webkit-box-shadow: rem(0 2px 5px 0 #dedede);
-  box-shadow: rem(0 2px 5px 0 #dedede);
+  -webkit-box-shadow: 0 0.125rem 0.3125rem 0 #dedede;
+  box-shadow: 0 0.125rem 0.3125rem 0 #dedede;
 }
 
 .doc-sg-swatch {
@@ -35,7 +34,7 @@
 
 .doc-sg-label {
   line-height: 1;
-  line-height: rem(20px);
+  line-height: 1.25rem;
   display: inline-block;
   vertical-align: middle;
 }

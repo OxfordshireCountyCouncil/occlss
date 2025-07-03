@@ -53,20 +53,20 @@ you write a placeholder:
 // Screen reader only helper
 %sr-only {
   position: fixed;
-  left: -9999em;
+  left: -9999rem;
   outline: none;
 }
 
 // Heighlite on focus outline only
 %highlight-outline-on-focus {
-    outline: 3px solid $doc-form-cntrls-border-color-base-input-focus;
+    outline: 0.188rem solid $doc-form-cntrls-border-color-base-input-focus;
 }
 
 // outline and background
 %highlight-bg-on-focus {
   color: $doc-link-color-hover-focus;
   background-color: $doc-form-cntrls-border-color-base-input-focus;
-  outline: 2px solid $doc-form-cntrls-border-color-base-input-focus;
+  outline: 0.125rem solid $doc-form-cntrls-border-color-base-input-focus;
   &:hover {
     color: $doc-link-color-hover-focus;
   }

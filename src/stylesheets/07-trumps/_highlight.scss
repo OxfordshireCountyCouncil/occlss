@@ -1,5 +1,5 @@
 .js-enabled [data-module=app-copy] pre code {
-    padding-top: rem(45px);
+    padding-top: 2.8125rem;
 }
 
 pre .language-markdown,
@@ -9,9 +9,9 @@ pre .language-plaintext {
 
 // code
 pre code:focus {
-    border: rem(3px) solid var(--doc-occlss-brand-color-woodsmoke);
-    outline: rem(3px) solid var(--doc-occlss-brand-color-ronchi);
-    outline-offset: rem(-2px);
+    border: 0.1875rem solid var(--doc-occlss-brand-color-woodsmoke);
+    outline: 0.1875rem solid var(--doc-occlss-brand-color-ronchi);
+    outline-offset: -0.125rem;
 }
 
 // GitHub code highlight
@@ -104,19 +104,19 @@ color: #990073;
 pre code {
     display: block;
     margin: 0;
-    padding: rem(20px);
+    padding: 1.25rem;
     overflow-x: auto;
-    border: rem(3px) solid rgba(0, 0, 0, 0);
+    border: 0.1875rem solid rgba(0, 0, 0, 0);
     outline: 1px solid #b1b4b6;
     background-color: #f8f8f8;
-    font-size: rem(16px);
-    margin-bottom: rem(15px);
-    outline-offset: rem(-2px);
+    font-size: 1rem;
+    margin-bottom: 0.9375rem;
+    outline-offset: -0.125rem;
 }
 
 pre code:focus {
-    border: rem(3px) solid var(--doc-occlss-brand-color-woodsmoke);
-    outline: rem(3px) solid var(--doc-occlss-brand-color-ronchi);
+    border: 0.1875rem solid var(--doc-occlss-brand-color-woodsmoke);
+    outline: 0.1875rem solid var(--doc-occlss-brand-color-ronchi);
 }
 
 p code, 
@@ -124,5 +124,5 @@ p kbd,
 p pre, 
 p samp {
     background-color: #e9e9e9;
-    padding: rem(1px);
+    padding: 0.0625rem;
 }

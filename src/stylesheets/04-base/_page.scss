@@ -6,32 +6,20 @@ html {
     color: $doc-page-font-color-primary;
     font-weight: $doc-page-font-weight-primary;
     background-color: $doc-page-background-primary;
-
-    /*@include breakpoint(max-width (map-get($reflex-breakpoints, 'xs'))) {
-        font-size: 87.5%;
-    }
-
-    @include breakpoint(min-width (map-get($reflex-breakpoints, 'md'))) {
-        font-size: 100%;
-    }*/
-
     @media(max-width: 30rem) {
         font-size: 87.5%
     }
-
     @media(min-width: 62rem) {
         font-size: 100%
     }
-
-
 }
 
 p {
     line-height: $doc-page-line-height-paragraph-unit;
-    margin-top: rem($doc-page-margin-paragraph-unit-top);
-    margin-bottom: rem($doc-page-margin-paragraph-unit-bottom);
-    margin-left: rem($doc-page-margin-paragraph-unit-left);
-    margin-right: rem($doc-page-margin-paragraph-unit-right);
+    margin-top: $doc-page-margin-paragraph-unit-top;
+    margin-bottom: $doc-page-margin-paragraph-unit-bottom;
+    margin-left: $doc-page-margin-paragraph-unit-left;
+    margin-right: $doc-page-margin-paragraph-unit-right;
 }
 
 p + h2,

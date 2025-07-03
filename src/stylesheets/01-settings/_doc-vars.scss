@@ -1,91 +1,14 @@
-// Doc options
-$doc-prefix: 'doc-';
-$doc-gutter: 1rem;
-/////////////////////////////
-
-/// Breakpoints
-$mobile : screen;
-$tablet : min-width 48rem; // 768px
-$desktop : min-width 1024px;
-$widedesktop : min-width 1400px;
-
-// --------------------------------------------------
-// reflex variables
-// --------------------------------------------------
-
-// Prefix
-// -------------------------
-// You can optionally namespace reflex classes to avoid clashing with other css frameworks
-// e.g. setting $reflex-prefix as "reflex-" here would cause col-sm-6 to become reflex-col-sm-6
-// Example: $reflex-prefix: reflex-;
-// By default this is an empty string
-$reflex-prefix: 'doc-' !default;
-
-// Legacy support
-// -------------------------
-// Reflex adds a lot of css propertie to support older browsers that don't support flexbox layout.
-// If you prefer to use this as a purely flexbox grid without legacy support then set this to false
-$legacy-support: true !default;
-
-// Responsive visibility helpers
-// -------------------------
-// Reflex has some generic visibility classes to hide elements at different breakpoints.
-// If you want to disable these then set this to false
-$visibility-helpers: true !default;
-
-// Grid
-// -------------------------
-$reflex-columns: 12 !default; // number of columns
-
-// Breakpoints
-// -------------------------
-$reflex-xs: 576px !default;
-$reflex-sm: 48rem !default;
-$reflex-md: 62rem !default;
-$reflex-lg: 75rem !default;
-$reflex-xlg: 100rem !default;
-
-$reflex-xxs-max:    ($reflex-xs - 1);
-$reflex-xs-max:     ($reflex-sm - 1);
-$reflex-sm-max:     ($reflex-md - 1);
-$reflex-md-max:     ($reflex-lg - 1);
-$reflex-lg-max:     ($reflex-xlg - 1);
-
-// Spacing
-// -------------------------
-$reflex-grid-spacing:       16px !default;
-//////////////////////////////////////////
-
-// Breakpoints
-// -------------------------
-
-$reflex-breakpoints: (
-  xs: 30rem, // 480px
-  sm: 48rem, // 768px,
-  md: 62rem, // 992px,
-  lg: 75rem, // 1200px,
-  xlg: 100rem // 1600px
-) !default;
-
-$reflex-breakpoints-max: (
-  xxs: (map-get($reflex-breakpoints, 'xs') - 1),
-  xs:  (map-get($reflex-breakpoints, 'sm') - 1),
-  sm:  (map-get($reflex-breakpoints, 'md') - 1),
-  md:  (map-get($reflex-breakpoints, 'lg') - 1),
-  lg:  (map-get($reflex-breakpoints, 'xlg') - 1)
-) !default;
-
 // Font size
 $doc-font-size: (
-    'xxxxx-large': 42px,
-    'xxxx-large':  36px,
-    'xxx-large':   30px,
-    'xx-large':    26px,
-    'x-large':     24px,
-    'large':       22px,
-    'medium':      20px,
-    'regular':     16px,
-    'mall':        14px
+    'xxxxx-large': 2.625rem,
+    'xxxx-large':  2.25rem,
+    'xxx-large':   1.875rem,
+    'xx-large':    1.625rem,
+    'x-large':     1.5rem,
+    'large':       1.375rem,
+    'medium':      1.25rem,
+    'regular':     1rem,
+    'mall':        0.875rem
 );
 
 // Global transition parameters 
@@ -101,9 +24,9 @@ $doc-page-background-primary:   #ffffff !default;
 
 // Paragraph default variables
 $doc-page-line-height-paragraph-unit:    1.5 !default;
-$doc-page-margin-paragraph-unit:         0 0 30px 0 !default;
+$doc-page-margin-paragraph-unit:         0 0 1.875rem 0 !default;
 $doc-page-margin-paragraph-unit-top:     0 !default;
-$doc-page-margin-paragraph-unit-bottom:  30px !default;
+$doc-page-margin-paragraph-unit-bottom:  1.875rem !default;
 $doc-page-margin-paragraph-unit-left:    0 !default;
 $doc-page-margin-paragraph-unit-right:   0 !default;
 
@@ -114,7 +37,7 @@ $doc-form-cntrls-border-color-base-input-focus: #edc856 !default;
 $doc-link-color-primary:            #0B5EB1 !default;
 $doc-link-color-primary-hover:      #edc856 !default;
 $doc-link-bg-color-primary-hover:   #edc856 !default;
-$doc-link-font-size:                20px !default;
+$doc-link-font-size:                1.25rem !default;
 $doc-link-color-hover-focus:        #1a1a1a !default;
 
 // Doc css vars

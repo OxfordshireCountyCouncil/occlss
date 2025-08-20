@@ -146,7 +146,6 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/components/promoted-content-panel/occlss-promoted-content-panel";
 @import "node_modules/occlss/scss/components/cards/occlss-card.scss";
 @import "node_modules/occlss/scss/components/sidebar-item-section/occlss-sidebar-item-section";
-@import "node_modules/occlss/scss/components/version-bar/occlss-version-bar";
 @import "node_modules/occlss/scss/components/pagination/occlss-pagination";
 @import "node_modules/occlss/scss/components/skip-to-content/occlss-skip-to-content";
 @import "node_modules/occlss/scss/components/hero-pane/occlss-hero-pane";

@@ -1,3 +1,4 @@
+/*
 .occlss-pager {
   text-align: center;
   @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
@@ -126,4 +127,170 @@
       }
     }
   }
+}
+*/
+
+/* OCCLSS pager
+ * @version 1.0.0
+ */
+
+.occlss-pager__items:before,
+.occlss-pager__items:after {
+    content: " ";
+    display: table
+}
+
+.occlss-pager__items:after {
+    clear: both
+}
+
+.occlss-pager__link:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+.occlss-pager__link:hover:focus {
+    color: #1a1a1a
+}
+
+
+.occlss-pager {
+    text-align: center
+}
+
+@media(max-width: 768px) {
+    .occlss-pager {
+        padding-top: 2.4rem;
+        padding-bottom: 0
+    }
+}
+
+.occlss-pager__items {
+    clear: inherit;
+    display: inline-block;
+    padding: 0
+}
+
+.occlss-pager__item {
+    border: 1px solid #dbdbdb;
+    background-color: #f9f9f9;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0
+}
+
+@media(max-width: 768px) {
+    .occlss-pager__item {
+        border-radius: 5px;
+        margin: .3rem
+    }
+}
+
+.occlss-pager__item--last {
+    margin-left: .4rem;
+    border-radius: 5px
+}
+
+.occlss-pager__item--first {
+    margin-right: .4rem;
+    border-radius: 5px
+}
+
+.occlss-pager__link,
+.occlss-pager__item--current,
+.occlss-pager__item--ellipsis {
+    display: block;
+    padding: .625rem 1.125rem;
+    text-decoration: none
+}
+
+.occlss-pager__link {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem
+}
+
+.occlss-pager__link {
+    font-weight: normal;
+    color: #000;
+    line-height: 1.4
+}
+
+.occlss-pager__item.is-active:first-child {
+    border-radius: 5px 0 0 5px
+}
+
+.is-active .occlss-pager__link,
+.occlss-pager__item a:hover,
+.occlss-pager__item .occlss-a-to-z--inverse .occlss-a-to-z__letter:hover,
+.occlss-a-to-z--inverse .occlss-pager__item .occlss-a-to-z__letter:hover {
+    border-color: #bbb;
+    background-color: #efefef;
+    color: #000
+}
+
+.occlss-pager__item--current {
+    border-color: #bbb;
+    background-color: #efefef
+}
+
+.occlss-pager__item--ellipsis {
+    border: 1px solid #dbdbdb;
+    border-radius: 0
+}
+
+@media(max-width: 992px) {
+    .occlss-pager__item--ellipsis {
+        display: none
+    }
+}
+
+.occlss-pager__item--previous span[aria-hidden],
+.occlss-pager__item--next span[aria-hidden] {
+    position: relative
+}
+
+@media(min-width: 768px) {
+
+    .occlss-pager__item--previous span[aria-hidden],
+    .occlss-pager__item--next span[aria-hidden] {
+        font-size: 0;
+        overflow: hidden;
+        padding: .625rem .1875rem
+    }
+}
+
+@media(min-width: 768px) {
+    .occlss-pager__item--previous {
+        border-radius: 5px 0 0 5px;
+        text-align: initial
+    }
+
+    .occlss-pager__item--previous span[aria-hidden]:before {
+        content: "";
+        border-style: solid;
+        border-width: .4375rem .4375rem .4375rem 0;
+        border-color: rgba(0, 0, 0, 0) #000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+        position: absolute;
+        top: -0.125rem;
+        left: 0
+    }
+}
+
+@media(min-width: 768px) {
+    .occlss-pager__item--next {
+        border-radius: 0 5px 5px 0;
+        text-align: initial
+    }
+
+    .occlss-pager__item--next span[aria-hidden]:after {
+        content: "";
+        border-style: solid;
+        border-width: .4375rem 0 .4375rem .4375rem;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #000;
+        position: absolute;
+        top: -0.125rem;
+        left: 0
+    }
 }

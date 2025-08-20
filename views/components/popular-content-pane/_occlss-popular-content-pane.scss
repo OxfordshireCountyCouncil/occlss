@@ -1,3 +1,4 @@
+/*
 .occlss-popular-content-pane {
     height: 100%;
     display: block;
@@ -47,7 +48,6 @@
 }
 
 .occlss-popular-content-pane__content {
-    /* flexbox */ 
     -webkit-flex: 1;
     -webkit-box-flex: 1;
     -moz-flex: 1;
@@ -98,4 +98,99 @@
     .occlss-popular-content-pane__heading {
         background: $occlss-popular-content-color-council;
     }
+}
+*/
+
+
+/* OCCLSS Popular content pane
+ * @version 1.0.0
+ */
+
+.occlss-popular-content-pane {
+    height: 100%;
+    display: block;
+    overflow: hidden
+}
+
+.occlss-popular-content-pane:after {
+    content: "";
+    display: block;
+    border-bottom: .25rem solid #00483a
+}
+
+@media(max-width: 992px) {
+    .occlss-popular-content-pane {
+        height: 2.8125rem
+    }
+}
+
+.occlss-popular-content-pane__heading {
+    width: 100%;
+    background: #00483a;
+    color: #fff;
+    font-size: 1.375rem;
+    padding: .5625rem .875rem;
+    margin-bottom: 0;
+    font-weight: 400
+}
+
+@media(max-width: 992px) {
+    .occlss-popular-content-pane__heading {
+        cursor: pointer;
+        position: relative
+    }
+
+    .occlss-popular-content-pane__heading:after {
+        content: "";
+        width: 1.3125rem;
+        height: .8125rem;
+        background-image: url("/assets/images/occlss//icon-angle-arrow-down-white.svg");
+        background-size: cover;
+        display: block;
+        position: absolute;
+        right: .9375rem;
+        top: 1rem
+    }
+}
+
+.occlss-popular-content-pane__content {
+    -moz-flex: 1;
+    flex: 1
+}
+
+.occlss-popular-content-pane.is-active {
+    height: 100%;
+    height: inherit
+}
+
+.is-active .occlss-popular-content-pane__heading:after {
+    transform: rotate(180deg)
+}
+
+.occlss-popular-content-pane--residents.occlss-popular-content-pane:after {
+    border-bottom-color: #00483a
+}
+
+.occlss-popular-content-pane--residents .occlss-popular-content-pane__heading {
+    background: #00483a
+}
+
+.occlss-popular-content-pane--business.occlss-popular-content-pane:after {
+    border-bottom-color: #3a78bb
+}
+
+.occlss-popular-content-pane--business .occlss-popular-content-pane__heading {
+    background: #3a78bb
+}
+
+.occlss-popular-content-pane--council.occlss-popular-content-pane:after {
+    border-bottom-color: #503b76
+}
+
+.occlss-popular-content-pane--council .occlss-popular-content-pane__heading {
+    background: #503b76
+}
+
+.occlss-popular-content-pane:focus {
+    outline: 3px solid #edc856;
 }

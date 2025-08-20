@@ -1,3 +1,4 @@
+/*
 .occlss-social-media-link {
     display: inline-block;
     text-decoration: none;
@@ -12,4 +13,25 @@
 .occlss-social-media-link__icon {
     float: left;
     margin-right: rem(10px);
+}
+*/
+
+/* OCCLSS Social media link
+ * @version 1.0.0
+ */
+
+.occlss-social-media-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #0b0c0c
+}
+
+.occlss-social-media-link__heading {
+    font-weight: 600;
+    vertical-align: sub
+}
+
+.occlss-social-media-link__icon {
+    float: left;
+    margin-right: .625rem
 }

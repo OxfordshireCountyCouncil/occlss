@@ -1,3 +1,4 @@
+/*
 .occlss-summary-list {
     @extend %reset_list_style;
 }
@@ -104,4 +105,117 @@
         text-decoration: none;
         @extend .occlss-g-medium-text;
     }
+}
+*/
+
+/* OCCLSS Summary list
+ * @version 1.0.0
+ */
+
+.occlss-summary-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none
+}
+
+.occlss-summary-list--sidebar-nav .occlss-summary-list__link:focus,
+.occlss-summary-list--popular-content-pane .occlss-summary-list__link:focus:hover,
+.occlss-summary-list--popular-content-pane .occlss-summary-list__link:hover:active,
+.occlss-summary-list--popular-content-pane .occlss-summary-list__link:active,
+.occlss-summary-list--tasks-pane .occlss-summary-list__link:focus,
+.occlss-summary-list--popular-content-pane .occlss-summary-list__link:focus,
+.occlss-summary-list__link:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+.occlss-summary-list--popular-content-pane .occlss-summary-list__link:hover:focus,
+.occlss-summary-list--popular-content-pane .occlss-summary-list__link:hover:active,
+.occlss-summary-list__link:hover:focus {
+    color: #1a1a1a
+}
+
+.occlss-summary-list--indented {
+    padding-left: 1.5rem
+}
+
+.occlss-summary-list__item {
+    margin-bottom: 0;
+    margin-left: 0
+}
+
+.occlss-summary-list__item--underlined {
+    border-bottom: .0625rem solid #d3dfdd
+}
+
+.occlss-summary-list__item--td {
+    padding: .9375rem 1.25rem .625rem 0
+}
+
+.occlss-summary-list__item--td .occlss-summary-list__link {
+    padding: 0
+}
+
+.occlss-summary-list__link {
+    padding: .9375rem .9375rem
+}
+
+.occlss-summary-list--tasks-pane .occlss-summary-list__link,
+.occlss-summary-list--popular-content-pane .occlss-summary-list__link {
+    text-decoration: none;
+    display: block
+}
+
+.occlss-summary-list--tasks-pane .occlss-summary-list__item {
+    border-bottom: none
+}
+
+.occlss-summary-list--tasks-pane .occlss-summary-list__link {
+    padding: .625rem;
+    color: #0b0c0c
+}
+
+.occlss-summary-list--tasks-pane .occlss-summary-list__link:hover {
+    text-decoration: underline
+}
+
+.occlss-summary-list--popular-content-pane .occlss-summary-list__item:last-of-type {
+    border-bottom: none
+}
+
+.occlss-summary-list--popular-content-pane .occlss-summary-list__link {
+    color: #0b0c0c;
+    transition: background-color .1s ease-in-out
+}
+
+.occlss-summary-list--popular-content-pane .occlss-summary-list__link:hover {
+    color: #000;
+    background-color: #e0e2e5
+}
+
+.occlss-summary-list--sidebar-nav .occlss-summary-list__link {
+    display: inline-block;
+    padding: .5rem 0;
+    text-decoration: none
+}
+
+.occlss-summary-list--sidebar-nav .occlss-summary-list__link:hover {
+    text-decoration: underline
+}
+
+.occlss-summary-list--large .occlss-summary-list__item {
+    display: block;
+    margin-bottom: .625rem
+}
+
+.occlss-summary-list--large .occlss-summary-list__link {
+    display: inline-block;
+    padding: 0;
+    text-decoration: none
+}
+
+.occlss-summary-list--large .occlss-summary-list__link {
+    font-size: 1.25rem
 }

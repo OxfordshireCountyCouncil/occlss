@@ -1,4 +1,4 @@
-.occlss-widget-container {
+/*.occlss-widget-container {
     display: inline-block;
     width: 100%;
     padding-left: 0;
@@ -8,15 +8,6 @@
     
     padding-left: rem(24px);
     
-    /*&::before {
-        content: "";
-        position: absolute;
-        background: $occlss-wdget-container-border-color;
-        width: rem(1px);
-        height: 101%;
-        top: 0;
-        left: 0;
-    }*/
 
     &::after {
         content: "";
@@ -39,3 +30,38 @@
 
     }
   }
+  */
+
+/* OCCLSS Widget container
+* @version 1.0.0
+*/
+
+.occlss-widget-container {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+    position: relative
+}
+
+@media(min-width: 992px) {
+    .occlss-widget-container {
+        padding-left: 1.5rem
+    }
+
+    .occlss-widget-container::after {
+        content: "";
+        background: #d3dfdd;
+        width: 100%;
+        height: .0625rem;
+        display: block;
+        margin-bottom: 1.25rem
+    }
+
+    .occlss-widget-container:first-of-type {
+        margin-top: 4.375rem
+    }
+
+    .occlss-widget-container:last-of-type::after {
+        display: none
+    }
+}

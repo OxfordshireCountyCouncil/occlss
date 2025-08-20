@@ -8,7 +8,7 @@ layout: layout-example.njk
 {% from "popular-content-pane/macro.njk" import occlssPopularContentPane %}
 {% from "promoted-content-panel/macro.njk" import occlssPromotedContentPanel %}
 {% from "cards/macro.njk" import occlssCard %}
-{% from "atoz/macro.njk" import occlssAtoZ %}
+{#% from "atoz/macro.njk" import occlssAtoZ %#}
 {% from "page-footer/macro.njk" import occlssPageFooter %}
 {% from "page-head/macro.njk" import occlssPageHead %}
 {% from "breadcrumb/macro.njk" import occlssBreadcrumb %}
@@ -367,7 +367,7 @@ layout: layout-example.njk
   {#{> organisms-find-my-nearest }#}
 </div>
 
-{{ occlssAtoZ({
+{#{ occlssAtoZ({
   items: [
     {
       title: "A",
@@ -450,7 +450,7 @@ layout: layout-example.njk
       url: "https://www.oxfordshire.gov.uk/cms/atoz/Z"
     }
   ]
-}) }}
+}) }#}
 
 {{ occlssPageFooter({
   fRowHeading: "Oxfordshire County Council",

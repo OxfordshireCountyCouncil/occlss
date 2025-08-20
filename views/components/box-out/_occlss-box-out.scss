@@ -1,3 +1,4 @@
+/*
 .occlss-box-out {
     background: $occlss-box-out-bg-color;
     padding: rem($occlss-box-out-padding);
@@ -26,6 +27,50 @@
    p:last-child {
      margin-bottom: 0;
    }
+}  
+*/
 
+/* OCCLSS Box Out
+ * @version 1.0.0
+ */
 
+.occlss-box-out .js .occlss-accordion__panel-title:first-child,
+.js .occlss-box-out .occlss-accordion__panel-title:first-child {
+    margin-top: 0
+}
+
+.occlss-box-out .js .occlss-accordion__panel-title:last-child,
+.js .occlss-box-out .occlss-accordion__panel-title:last-child {
+    margin-bottom: 0
+}
+
+.occlss-box-out {
+    background: #e0e2e5;
+    padding: 1.625rem;
+    margin: 2rem 0
+}
+
+.occlss-box-out .occlss-info-box:first-child {
+    margin: -1.625rem -1.625rem 0 -1.625rem
+}
+
+.occlss-box-out h2:first-child,
+.occlss-box-out h3:first-child,
+.occlss-box-out h4:first-child,
+.occlss-box-out h5:first-child,
+.occlss-box-out h6:first-child,
+.occlss-box-out p:first-child,
+.occlss-box-out p:first-child {
+    margin-top: 0
+}
+
+.occlss-box-out .occlss-info-box:last-child,
+.occlss-box-out h2:last-child,
+.occlss-box-out h3:last-child,
+.occlss-box-out h4:last-child,
+.occlss-box-out h5:last-child,
+.occlss-box-out h6:last-child,
+.occlss-box-out p:last-child,
+.occlss-box-out p:last-child {
+    margin-bottom: 0
 }

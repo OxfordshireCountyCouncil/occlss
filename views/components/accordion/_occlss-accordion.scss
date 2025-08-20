@@ -1,3 +1,4 @@
+/*
 .js .occlss-accordion__panel-title {
   margin: 0;
   padding-top: rem(24px);
@@ -59,8 +60,6 @@
 
 .is-active.occlss-accordion__panel-lnk  {
     &:after {
-        -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
         transform: rotate(180deg);
     }
 }
@@ -122,3 +121,193 @@
     }
 }
 
+
+/*
+* OCCLSS Accordion
+* @version 1.0.0
+*/
+
+.occlss-accordion__panel-lnk:focus {
+    outline: 3px solid #edc856
+}
+
+.is-active.occlss-accordion__panel-lnk {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+.is-active.occlss-accordion__panel-lnk:hover {
+    color: #1a1a1a
+}
+
+.js .occlss-accordion__panel-title {
+    margin-top: 1.5%
+}
+
+
+.js .occlss-accordion__panel-title {
+    margin: 0;
+    padding: 0
+}
+
+.js p+.occlss-accordion__panel-title,
+.js ul+.occlss-accordion__panel-title,
+.js ol+.occlss-accordion__panel-title,
+.js div+.occlss-accordion__panel-title,
+.js table+.occlss-accordion__panel-title {
+    padding-top: 1.25rem
+}
+
+.js .occlss-accordion__panel-title {
+    clear: both;
+    font-family: "Fira Sans", sans-serif;
+    margin: 0 0 1.875rem 0
+}
+
+h3,
+.js .occlss-accordion__panel-title {
+    font-size: 1.375rem;
+    font-weight: 500
+}
+
+.js .occlss-form+.occlss-accordion__panel-title {
+    margin-top: 2.8125rem
+}
+
+.occlss-top-tasks-pane--other .js .occlss-accordion__panel-title:last-child,
+.js .occlss-top-tasks-pane--other .occlss-accordion__panel-title:last-child {
+    margin-bottom: 0
+}
+
+.js .occlss-accordion__panel-title {
+    margin: 0;
+    padding-top: 1.5rem
+}
+
+.js .occlss-accordion__panel-title:first-of-type {
+    padding-top: 0
+}
+
+.js .occlss-accordion {
+    margin: 1.375rem 0;
+    width: 100%
+}
+
+.occlss-accordion__panel-lnk {
+    width: 100%;
+    text-align: left;
+    border: 0;
+    border-bottom: none;
+    display: block;
+    padding: 1.5rem 0;
+    position: relative;
+    text-decoration: none;
+    transition: color 200ms ease 0s;
+    background: #656d80;
+    color: #fff;
+    font-size: 1.375rem;
+    padding: .5625rem 3.125rem .5625rem .875rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative
+}
+
+.occlss-accordion__panel-lnk:after {
+    content: "";
+    width: 1.3125rem;
+    height: .8125rem;
+    background-image: url("/assets/images/occlss//icon-angle-arrow-down-white.svg");
+    background-size: cover;
+    display: block;
+    position: absolute;
+    right: .9375rem;
+    top: 1rem
+}
+
+.occlss-accordion__panel-lnk:hover {
+    color: #1a1a1a;
+    background-color: #d0a116;
+    outline: 2px solid #d0a116
+}
+
+.is-active.occlss-accordion__panel-lnk:after {
+    transform: rotate(180deg)
+}
+
+.occlss-accordion__panel-content {
+    padding: 0
+}
+
+.js .occlss-accordion__panel-content {
+    padding: 1.5rem 1.5rem 0 1.5rem
+}
+
+.js .occlss-accordion__panel-content h2:last-child,
+.js .occlss-accordion__panel-content h3:last-child,
+.js .occlss-accordion__panel-content .occlss-accordion__panel-title:last-child,
+.js .occlss-accordion__panel-content h4:last-child,
+.js .occlss-accordion__panel-content h5:last-child,
+.js .occlss-accordion__panel-content p:last-child,
+.js .occlss-accordion__panel-content table:last-child,
+.js .occlss-accordion__panel-content div:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+.occlss-accordion--residents .occlss-accordion__panel-lnk {
+    background: #656d80
+}
+
+.occlss-accordion--residents .occlss-accordion__panel-lnk.is-active,
+.occlss-accordion--residents .occlss-accordion__panel-lnk:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+.occlss-accordion--business .occlss-accordion__panel-lnk {
+    background: #656d80
+}
+
+.occlss-accordion--business .occlss-accordion__panel-lnk.is-active,
+.occlss-accordion--business .occlss-accordion__panel-lnk:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+.occlss-accordion--council .occlss-accordion__panel-lnk {
+    background: #656d80
+}
+
+.occlss-accordion--council .occlss-accordion__panel-lnk.is-active,
+.occlss-accordion--council .occlss-accordion__panel-lnk:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+.occlss-info-box .js .occlss-accordion__panel-title:first-of-type,
+.js .occlss-info-box .occlss-accordion__panel-title:first-of-type {
+    margin-top: 0
+}
+
+.occlss-box-out .js .occlss-accordion__panel-title:first-child,
+.js .occlss-box-out .occlss-accordion__panel-title:first-child {
+    margin-top: 0
+}
+
+.occlss-box-out .js .occlss-accordion__panel-title:last-child,
+.js .occlss-box-out .occlss-accordion__panel-title:last-child {
+    margin-bottom: 0
+}
+
+.s-cms-content-footer .js .occlss-accordion__panel-title,
+.js .s-cms-content-footer .occlss-accordion__panel-title {
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin: 0 0 .625rem 0
+}

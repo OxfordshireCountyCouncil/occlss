@@ -1,3 +1,4 @@
+/*
 .occlss-summary-card {
     display: block;
 }
@@ -85,4 +86,123 @@
     @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
         padding-left: 0;
     }
+}
+*/
+
+/* OCCLSS summary card
+ * @version 1.0.0
+ */
+
+.occlss-summary-card {
+    display: block
+}
+
+.occlss-summary-card__cont {
+    display: block;
+    padding: 1.5625rem .9375rem;
+    transition: background-color .1s ease-in-out;
+    text-decoration: none
+}
+
+.occlss-summary-card__cont--link:hover {
+    background-color: #e0e2e5
+}
+
+.occlss-summary-card__cont--link:hover .occlss-summary-card__summary-text {
+    color: #000
+}
+
+.occlss-summary-card__cont--link:hover .occlss-summary-card__title {
+    color: #0b5eb1
+}
+
+.occlss-summary-card__title {
+    margin-bottom: 0
+}
+
+.occlss-summary-card__summary-text {
+    margin: 0;
+    color: #0b0c0c
+}
+
+.occlss-summary-card__avatar {
+    width: 100%;
+    box-shadow: 0 .125rem .25rem 0 rgba(26, 26, 26, .2)
+}
+
+@media(max-width: 480px) {
+    .occlss-summary-card__avatar {
+        margin-bottom: 1.25rem
+    }
+}
+
+.occlss-summary-card__img-scope img,
+.occlss-summary-card__imgcont {
+    width: 100%;
+    height: auto
+}
+
+@media(max-width: 480px) {
+
+    .occlss-summary-card__img-scope img,
+    .occlss-summary-card__imgcont {
+        margin-bottom: 1.25rem
+    }
+}
+
+.occlss-summary-card__party-logo {
+    float: right;
+    margin-top: -2.1875rem
+}
+
+@media(max-width: 480px) {
+    .occlss-summary-card__party-logo {
+        float: none;
+        margin-top: 0
+    }
+}
+
+.occlss-summary-card--lined {
+    border-top: .125rem solid #d3dfdd;
+    border-bottom: .125rem solid #d3dfdd
+}
+
+.occlss-summary-card--lined:not(:first-child) {
+    border-top: none
+}
+
+.occlss-summary-card--lined:first-of-type {
+    border-top: .125rem solid #d3dfdd
+}
+
+.occlss-summary-card__list-item {
+    color: #0b0c0c;
+    margin-bottom: .3125rem
+}
+
+.occlss-summary-card__summary-cont {
+    padding-left: 1.25rem
+}
+
+@media(max-width: 480px) {
+    .occlss-summary-card__summary-cont {
+        padding-left: 0
+    }
+}
+
+.occlss-summary-card__cont--link:hover:focus {
+    color: #1a1a1a
+}
+
+.occlss-summary-card__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none
+}
+
+.occlss-summary-card__cont--link:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
 }

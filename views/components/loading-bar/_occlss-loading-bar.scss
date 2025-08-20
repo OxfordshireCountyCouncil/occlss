@@ -1,3 +1,4 @@
+/*
 .occlss-loading-bar {
     text-align: center;
     height: 1rem;
@@ -239,6 +240,98 @@
         -moz-transform: translate(2rem);
         -o-transform: translate(2rem);
         -ms-transform: translate(2rem);
+        transform: translate(2rem);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0)
+    }
+}
+*/
+
+/* OCCLSS loading bar
+ * @version 1.0.0
+ */
+
+ 
+.occlss-loading-bar {
+    text-align: center;
+    height: 1rem;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 2rem;
+    left: 0;
+    margin: auto;
+    opacity: 0
+}
+
+.occlss-loading-bar.is-active {
+    opacity: 1
+}
+
+.occlss-loading-bar__cont {
+    margin-left: -1rem;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    animation: occlss-loading-bar-fadein .5s linear forwards
+}
+
+.occlss-loading-bar__icon {
+    width: .5rem;
+    height: .5rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: #656d80;
+    border-radius: 50%;
+    margin: 0 .125rem;
+    animation: occlss-loading-bar-middle-dots .5s linear infinite
+}
+
+.occlss-loading-bar__content--dark-gray .occlss-loading-bar__icon {
+    background: #656d80
+}
+
+.occlss-loading-bar__icon:first-child {
+    animation: occlss-loading-bar-first-dot .5s linear infinite;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    transform: translate(-1rem)
+}
+
+.occlss-loading-bar__icon:last-child {
+    animation: occlss-loading-bar-last-dot .5s linear infinite
+}
+
+@keyframes occlss-loading-bar-fadein {
+    100% {
+        opacity: 1;
+        -ms-filter: none;
+        -webkit-filter: none;
+        filter: none
+    }
+}
+
+@keyframes occlss-loading-bar-first-dot {
+    100% {
+        transform: translate(1rem);
+        opacity: 1;
+        -ms-filter: none;
+        -webkit-filter: none;
+        filter: none
+    }
+}
+
+@keyframes occlss-loading-bar-middle-dots {
+    100% {
+        transform: translate(1rem)
+    }
+}
+
+@keyframes occlss-loading-bar-last-dot {
+    100% {
         transform: translate(2rem);
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";

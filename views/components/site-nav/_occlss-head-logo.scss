@@ -1,4 +1,4 @@
-.occlss-head-logo {
+/*.occlss-head-logo {
   width: rem(196px); 
   height: rem(66px);
   display: block;
@@ -6,3 +6,20 @@
     fill: $occlss-head-logo-color;
   }
 }
+*/
+
+/* OCCLSS Head logo
+ * @version 1.0.0
+ */
+
+
+.occlss-head-logo {
+    width: 12.25rem;
+    height: 4.125rem;
+    display: block
+}
+
+.occlss-head-logo__path {
+    fill: #fff
+}
+

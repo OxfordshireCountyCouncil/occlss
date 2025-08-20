@@ -80,6 +80,6 @@
 @media(min-width: 48rem) {
     .doc-subnav__section-item .doc-link,
     .doc-subnav__section-item .doc-link--no-visited-state:visited {
-        color: var(--doc-occlss-brand-color-venice-denim);
+        color: currentColor;
     }
 }

@@ -151,7 +151,6 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/components/version-bar/occlss-version-bar";
 @import "node_modules/occlss/scss/components/pagination/occlss-pagination";
 @import "node_modules/occlss/scss/components/skip-to-content/occlss-skip-to-content";
-@import "node_modules/occlss/scss/components/atoz/occlss-a-to-z";
 @import "node_modules/occlss/scss/components/hero-pane/occlss-hero-pane";
 @import "node_modules/occlss/scss/components/find-my-nearest/occlss-find-my-nearest";
 @import "node_modules/occlss/scss/components/short-summary/occlss-short-summary";

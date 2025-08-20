@@ -143,7 +143,6 @@ $occlss-global-image-path:  '../../images/occlss';
 @import "node_modules/occlss/scss/components/alert/occlss-alert";
 @import "node_modules/occlss/scss/components/summary-list/occlss-summary-list";
 @import "node_modules/occlss/scss/components/popular-content-pane/occlss-popular-content-pane";
-@import "node_modules/occlss/scss/components/top-tasks-pane/occlss-top-tasks-pane";
 @import "node_modules/occlss/scss/components/promoted-content-panel/occlss-promoted-content-panel";
 @import "node_modules/occlss/scss/components/cards/occlss-card.scss";
 @import "node_modules/occlss/scss/components/sidebar-item-section/occlss-sidebar-item-section";

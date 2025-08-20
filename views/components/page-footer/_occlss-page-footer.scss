@@ -1,7 +1,18 @@
-.occlss-page-footer {
+/*.occlss-page-footer {
   &__wraper {
     color: #fff;
     background: $occlss-page-footer-background;
     padding-bottom: rem(34px);
   }
+}
+*/
+
+/* OCCLSS Page footer
+* @version 1.0.0
+*/
+
+.occlss-page-footer__wraper {
+    color: #fff;
+    background: #000;
+    padding-bottom: 2.125rem
 }

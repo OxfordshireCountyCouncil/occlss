@@ -1,3 +1,5 @@
+/*
+
 .occlss-footer-feedback__wrapper {
     border-top: 4px solid $footer-feedback-bg-color;
 }
@@ -45,4 +47,62 @@
 
 .occlss-footer-feedback__form-cont.is-active {
     display: block; 
+}
+*/
+
+/* OCCLSS Footer feedback
+* @version 1.0.0
+*/
+
+.occlss-footer-feedback__close-cont a:focus,
+.occlss-footer-feedback__link:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+.occlss-footer-feedback__close-cont a:hover:focus,
+.occlss-footer-feedback__link:hover:focus {
+    color: #1a1a1a
+}
+
+.occlss-footer-feedback__wrapper {
+    border-top: 4px solid #e0e2e5
+}
+
+.occlss-footer-feedback__controls {
+    margin: 0 1.875rem;
+    padding: .875rem 1.875rem .625rem 1.875rem;
+    background: #e0e2e5;
+    text-align: right;
+    display: block
+}
+
+.occlss-footer-feedback__controls.is-active {
+    display: none
+}
+
+.occlss-footer-feedback__controls--submitted {
+    text-align: left
+}
+
+.occlss-footer-feedback__submitted-message {
+    font-weight: 700
+}
+
+.occlss-footer-feedback__link {
+    color: #000
+}
+
+.occlss-footer-feedback__close-cont {
+    float: right
+}
+
+.occlss-footer-feedback__form-cont {
+    display: none;
+    overflow: hidden
+}
+
+.occlss-footer-feedback__form-cont.is-active {
+    display: block
 }

@@ -1,0 +1,53 @@
+/* OCCLSS Content navigation
+ * @version 1.0.0
+ */
+
+
+.occlss-content-navigation__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none
+}
+
+
+.occlss-content-navigation__lnk:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+.occlss-content-navigation__lnk:hover:focus {
+    color: #1a1a1a
+}
+
+.occlss-content-navigation {
+    border-bottom: .0625rem solid #d3dfdd;
+    margin: 2.5rem 0 0 0
+}
+
+.occlss-content-navigation__nav {
+    padding-bottom: 1.25rem
+}
+
+.occlss-content-navigation__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125rem;
+    margin-bottom: .9375rem
+}
+
+@media(min-width: 992px) {
+    .occlss-content-navigation__list {
+        margin-left: 25px;
+        padding-right: 25px
+    }
+}
+
+.occlss-content-navigation__list-item:before {
+    content: "-";
+    padding-right: 5px
+}
+
+.occlss-content-navigation__lnk {
+    text-decoration: none
+}

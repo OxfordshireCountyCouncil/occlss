@@ -1,0 +1,33 @@
+/* OCCLSS Jump links
+ * @version 1.0.0
+ */
+
+.occlss-jump-links__lnk:focus {
+    outline: 3px solid #edc856
+}
+
+.occlss-jump-links {
+    margin-top: 2.5rem
+}
+
+.occlss-jump-links__nav {
+    list-style: none;
+    border-bottom: .0625rem solid #d3dfdd;
+    padding-bottom: 1.875rem
+}
+
+.occlss-jump-links__title {
+    font-size: 1.375rem
+}
+
+.occlss-jump-links__nav-item {
+    margin-bottom: .5rem
+}
+
+.occlss-jump-links__nav-item:before {
+    display: inline-block;
+    content: "—";
+    width: 1.5rem;
+    margin-left: -1rem;
+    color: #0b0c0c
+}

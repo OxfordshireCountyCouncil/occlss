@@ -1,0 +1,14 @@
+/* OCCLSS Head logo
+ * @version 1.0.0
+ */
+
+.occlss-head-logo {
+    width: 12.25rem;
+    height: 4.125rem;
+    display: block
+}
+
+.occlss-head-logo__path {
+    fill: #fff
+}
+

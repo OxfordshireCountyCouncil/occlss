@@ -1,0 +1,26 @@
+/* OCCLSS splitter
+ * @version 1.0.0
+ */
+
+.occlss-splitter::after {
+    content: "";
+    width: 100%;
+    height: .0625rem;
+    background-color: #e0e2e5;
+    display: block
+}
+
+.occlss-splitter--residents::after {
+    content: "";
+    background-color: #00483a
+}
+
+.occlss-splitter--business::after {
+    content: "";
+    background-color: #3a78bb
+}
+
+.occlss-splitter--council::after {
+    content: "";
+    background-color: #503b76
+}

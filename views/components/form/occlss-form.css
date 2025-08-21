@@ -1,0 +1,177 @@
+/* OCCLSS Form
+ * @version 1.0.0
+ */
+ 
+.occlss-form__group-title {
+    font-weight: 500;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 .625rem 0
+}
+
+.occlss-form__listitems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none
+}
+
+.occlss-form__inline-fields:before,
+.occlss-form__inline-fields:after {
+    content: " ";
+    display: table
+}
+
+.occlss-form__inline-fields:after {
+    clear: both
+}
+
+.occlss-form__group {
+    border: none;
+    margin: 0;
+    padding: 0
+}
+
+.occlss-form+h2,
+.occlss-form+h3,
+.occlss-form+h4,
+.occlss-form+h5,
+.occlss-form+p {
+    margin-top: 2.8125rem
+}
+
+.occlss-form__short-search-submit {
+    padding: .5625rem 1.25rem
+}
+
+@media(max-width: 1024px) {
+    .occlss-form__short-search-submit {
+        padding: .5625rem .8125rem
+    }
+}
+
+@media(max-width: 768px) {
+    .occlss-form__short-search-submit {
+        padding: .5625rem .8125rem
+    }
+}
+
+.occlss-form__short-search-group {
+    padding: 0 .625rem 0 0
+}
+
+@media(max-width: 767px) {
+    .occlss-form__short-search-group {
+        padding: 0
+    }
+}
+
+.occlss-form--sign-up {
+    margin: 0;
+    padding: 0
+}
+
+.occlss-form__sign-up-form-controls {
+    display: flex;
+    justify-content: flex-end
+}
+
+@media(min-width: 992px) {
+    .occlss-form__sign-up-form-controls {
+        padding-right: 1.25rem
+    }
+}
+
+.occlss-form__sign-up-form-submit {
+    padding: .5625rem 1.25rem;
+    margin-bottom: 0
+}
+
+.occlss-form__sign-up-form-submit:focus,
+.occlss-form__sign-up-form-submit:active {
+    box-shadow: none
+}
+
+.occlss-form__error-message {
+    color: #ad0505;
+    display: block;
+    padding-bottom: 3px;
+    padding-top: 3px
+}
+
+.occlss-form__group-title--large {
+    font-size: 1.625rem
+}
+
+.occlss-form__group-title--bordered {
+    border-bottom: .0625rem solid #0b0c0c;
+    padding-bottom: .625rem;
+    margin-bottom: 1.375rem;
+    width: 100%
+}
+
+.occlss-form__desc-text {
+    margin-bottom: 1.5625rem;
+    display: inline-block
+}
+
+.occlss-form__hint-text {
+    display: block;
+    color: #525252;
+    margin-bottom: 0
+}
+
+.occlss-form__hint-text--spaced {
+    display: inline-block;
+    margin-bottom: .625rem
+}
+
+.occlss-form__controls {
+    margin-top: 1.5rem
+}
+
+.occlss-form__controls-list-item {
+    display: inline-block
+}
+
+.occlss-form__controls-list-item--spaced {
+    margin-right: 6.25rem
+}
+
+@media(max-width: 768px) {
+    .occlss-form__controls-list-item--spaced {
+        margin-right: 3.125rem
+    }
+}
+
+.occlss-form__controls--inline-horizontal {
+    padding: 0 35%
+}
+
+@media(max-width: 768px) {
+    .occlss-form__controls--inline-horizontal {
+        padding: 0
+    }
+}
+
+.occlss-form__horizontal-cont {
+    padding: 0 10%
+}
+
+@media(max-width: 768px) {
+    .occlss-form__horizontal-cont {
+        padding: 0
+    }
+}
+
+.occlss-form--small .occlss-form__short-search-submit {
+    padding: .375rem .625rem;
+    font-size: 16px;
+    margin-bottom: 0
+}
+
+@media(max-width: 768px) {
+    .occlss-form--small .occlss-form__short-search-submit {
+        padding: .5625rem .8125rem
+    }
+}

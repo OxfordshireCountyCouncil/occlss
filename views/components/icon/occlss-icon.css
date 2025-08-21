@@ -1,0 +1,29 @@
+/* OCCLSS Icon
+* @version 1.0.0
+*/
+
+.occlss-icon {
+    display: inline-block;
+    line-height: initial;
+    transition: all .3s ease
+}
+
+.occlss-icon--rotate-180 {
+    transform: rotate(180deg)
+}
+
+.occlss-icon__container {
+    vertical-align: middle;
+    fill: #222;
+    width: 2rem;
+    height: 2rem
+}
+
+.occlss-icon--error .occlss-icon__container {
+    fill: #ad0505
+}
+
+.occlss-icon--small .occlss-icon__container {
+    width: 1.125rem;
+    height: 1.125rem
+}

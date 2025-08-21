@@ -1,0 +1,9 @@
+/* OCCLSS Page footer
+* @version 1.0.0
+*/
+
+.occlss-page-footer__wraper {
+    color: #fff;
+    background: #000;
+    padding-bottom: 2.125rem
+}

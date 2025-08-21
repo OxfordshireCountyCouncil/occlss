@@ -1,0 +1,21 @@
+
+/* OCCLSS Summary pane
+ * @version 1.0.0
+ */
+
+.occlss-summary-pane {
+    margin-top: 1rem;
+    margin-bottom: 3.75rem;
+    padding-top: 1.25rem;
+    border-top: .125rem solid #00483a
+}
+
+.occlss-summary-pane__title {
+    margin-bottom: .625rem
+}
+
+.occlss-summary-pane__list {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}

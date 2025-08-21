@@ -1,0 +1,84 @@
+/* OCCLSS breadcrumb
+ * @version 1.0.0
+ */
+
+.occlss-breadcrumb {
+    display: block;
+    line-height: normal;
+    margin-bottom: 5.625rem
+}
+
+@media(max-width: 992px) {
+    .occlss-breadcrumb {
+        margin-bottom: 3.75rem
+    }
+}
+
+@media(max-width: 768px) {
+    .occlss-breadcrumb {
+        margin-bottom: 0
+    }
+}
+
+.occlss-breadcrumb__wrapper {
+    padding: 0
+}
+
+@media(max-width: 992px) {
+    .occlss-breadcrumb__wrapper {
+        padding: 0
+    }
+}
+
+@media(max-width: 768px) {
+    .occlss-breadcrumb__wrapper {
+        padding: 0
+    }
+}
+
+.occlss-breadcrumb__container {
+    display: inline-block;
+    margin-left: 0;
+    padding-left: 0
+}
+
+.occlss-breadcrumb__item {
+    float: left;
+    font-size: 1em;
+    margin-bottom: 0
+}
+
+.occlss-breadcrumb__item:first-of-type {
+    font-weight: 900
+}
+
+.occlss-breadcrumb__item:not(:last-child):after {
+    content: ">";
+    color: #0b5eb1;
+    margin: 0 .3125rem
+}
+
+.occlss-breadcrumb__link {
+    text-decoration: none
+}
+
+.occlss-breadcrumb--no-space {
+    margin-bottom: 0
+}
+
+.occlss-breadcrumb__link:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+.occlss-breadcrumb__link:hover:focus {
+    color: #1a1a1a
+}
+
+.occlss-breadcrumb__container{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none
+}

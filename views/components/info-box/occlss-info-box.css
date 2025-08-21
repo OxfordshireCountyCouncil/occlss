@@ -1,0 +1,24 @@
+/* OCCLSS Info box
+ * @version 1.0.0
+ */
+
+.occlss-info-box .js .occlss-accordion__panel-title:first-of-type,
+.js .occlss-info-box .occlss-accordion__panel-title:first-of-type {
+    margin-top: 0
+}
+
+.occlss-info-box {
+    border-left: .625rem solid #656d80;
+    padding: .625rem 1rem;
+    margin: 2rem 0
+}
+
+.occlss-info-box h2:first-of-type,
+.occlss-info-box h3:first-of-type,
+.occlss-info-box h4:first-of-type,
+.occlss-info-box h5:first-of-type,
+.occlss-info-box h6:first-of-type,
+.occlss-info-box p:first-of-type,
+.occlss-info-box div:first-of-type {
+    margin-top: 0
+}

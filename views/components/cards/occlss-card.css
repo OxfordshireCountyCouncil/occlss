@@ -1,0 +1,99 @@
+/* OCCLSS card
+ * @version 1.0.0
+ */
+
+.occlss-card__link:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+
+.occlss-card__link:hover:focus {
+    color: #1a1a1a
+}
+
+
+.occlss-card__image-container {
+    width: 100%;
+    height: 16.0625rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.4375rem;
+    border: 1px solid #000;
+    background-color: #000
+}
+
+@media(max-width: 992px) {
+    .occlss-card__image-container {
+        height: auto;
+        max-height: 25rem
+    }
+}
+
+.occlss-card__image {
+    width: 100%;
+    display: block
+}
+
+@media(min-width: 992px) {
+    .occlss-card__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+}
+
+.occlss-card__header {
+    margin: 0
+}
+
+.occlss-card__title {
+    font-size: 1.25rem;
+    color: #525252;
+    margin: 0
+}
+
+.occlss-card__main {
+    margin-bottom: 0;
+    line-height: 1
+}
+
+.occlss-card__link {
+    width: 100%;
+    text-decoration: none;
+    color: #0b0c0c;
+    display: inline-block
+}
+
+.occlss-card__link:hover {
+    color: #0b0c0c;
+    text-decoration: underline
+}
+
+.occlss-card__link:focus {
+    text-decoration: underline
+}
+
+.occlss-card__paragraph {
+    margin-bottom: 0
+}
+
+.occlss-card__date {
+    font-size: 1.25rem;
+    font-weight: 300
+}
+
+.occlss-card--teaser .occlss-card__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem
+}
+
+.occlss-card--teaser .occlss-card__paragraph {
+    margin-bottom: 1.25rem
+}
+
+.occlss-card--teaser .occlss-card__paragraph:last-child {
+    margin-bottom: 0
+}

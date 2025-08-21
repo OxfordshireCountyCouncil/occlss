@@ -1,0 +1,74 @@
+/* OCCLSS Page head
+ * @version 1.0.0
+ */
+
+.occlss-page-head__wraper--border {
+    border-bottom: 4px solid rgba(0, 0, 0, 0)
+}
+
+.occlss-page-head__wraper--residents {
+    border-bottom-color: #00483a
+}
+
+.occlss-page-head__wraper--business {
+    border-bottom-color: #3a78bb
+}
+
+.occlss-page-head__wraper--council {
+    border-bottom-color: #503b76
+}
+
+.occlss-page-head__wraper--residents .occlss-page-head__cat-nav-container,
+.occlss-page-head__wraper--business .occlss-page-head__cat-nav-container,
+.occlss-page-head__wraper--council .occlss-page-head__cat-nav-container {
+    padding: 4.375rem 0 1.3125rem 0
+}
+
+@media(max-width: 992px) {
+
+    .occlss-page-head__wraper--residents .occlss-page-head__cat-nav-container,
+    .occlss-page-head__wraper--business .occlss-page-head__cat-nav-container,
+    .occlss-page-head__wraper--council .occlss-page-head__cat-nav-container {
+        padding: 1.25rem 0
+    }
+}
+
+@media(max-width: 768px) {
+
+    .occlss-page-head__wraper--residents .occlss-page-head__cat-nav-container,
+    .occlss-page-head__wraper--business .occlss-page-head__cat-nav-container,
+    .occlss-page-head__wraper--council .occlss-page-head__cat-nav-container {
+        padding: .3125rem 0 .6875rem 0
+    }
+}
+
+.occlss-page-head__nav {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.occlss-page-head__cat-nav-container {
+    padding: 4.375rem 0 2.625rem 0
+}
+
+@media(max-width: 992px) {
+    .occlss-page-head__cat-nav-container {
+        padding: 1.25rem 0 2.625rem 0
+    }
+}
+
+@media(max-width: 768px) {
+    .occlss-page-head__cat-nav-container {
+        padding: .3125rem 0 1.25rem 0
+    }
+}
+
+.occlss-page-head__search-container {
+    padding: 1.5rem 0
+}
+
+@media(max-width: 992px) {
+    .occlss-page-head__search-container {
+        padding: 1.25rem 0 0 0
+    }
+}

@@ -1,0 +1,228 @@
+/* OCCLSS calendar date
+ * @version 1.0.0
+ */
+
+.occlss-calendar-date {
+    display: inline-block;
+    display: flex;
+    *display: inline;
+    zoom: 1;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    letter-spacing: -0.31em !important;
+    *letter-spacing: normal !important;
+    word-spacing: -0.43em !important;
+    list-style-type: none
+}
+
+.occlss-calendar-date:before,
+.occlss-calendar-date:after {
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+    max-width: 100%
+}
+
+.occlss-calendar-date *:before,
+.occlss-calendar-date *:after {
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal
+}
+
+.occlss-calendar-date .occlss-layout,
+.occlss-layout .occlss-calendar-date,
+.occlss-calendar-date .occlss-calendar-date,
+.occlss-short-summary .occlss-calendar-date,
+.occlss-calendar-date .occlss-short-summary,
+.occlss-promoted-content-panel--image-left .occlss-calendar-date,
+.occlss-promoted-content-panel--image-top .occlss-calendar-date,
+.occlss-calendar-date .occlss-promoted-content-panel--image-left,
+.occlss-calendar-date .occlss-promoted-content-panel--image-top {
+    flex: 1 1 auto
+}
+
+.occlss-calendar-date * {
+    box-sizing: border-box
+}
+
+.occlss-calendar-date *:before
+.occlss-calendar-date *:after {
+    box-sizing: border-box
+}
+
+.occlss-calendar-date__header,
+.occlss-calendar-date__content,
+.occlss-calendar-date__footer {
+    flex-direction: column;
+    letter-spacing: normal;
+    word-spacing: normal;
+    white-space: normal;
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+    padding: 1rem 1rem
+}
+
+@media(min-width: 480px) {
+
+    .occlss-find-my-nearest--side-bar .occlss-calendar-date__header,
+    .occlss-find-my-nearest--side-bar .occlss-calendar-date__content,
+    .occlss-find-my-nearest--side-bar .occlss-calendar-date__footer {
+        width: 100%;
+        *width: 99.9%
+    }
+}
+
+@media(min-width: 768px) {
+    .occlss-calendar-date__header {
+        width: 33.3333333333%;
+        *width: 33.2333333333%
+    }
+
+    .occlss-calendar-date__footer {
+        width: 25%;
+        *width: 24.9%
+    }
+}
+
+.occlss-calendar-date__content {
+    flex: 1 0 0px;
+    width: auto;
+    max-width: 100%
+}
+
+
+.occlss-calendar-date__header,
+.occlss-calendar-date__content,
+.occlss-calendar-date__footer {
+    text-align: center
+}
+
+.occlss-calendar-date__header,
+.occlss-calendar-date__content,
+.occlss-calendar-date__footer {
+    padding: .375rem;
+    font-size: 1.625rem;
+    font-weight: 700
+}
+
+.occlss-calendar-date__header,
+.occlss-calendar-date__footer {
+    background: #feb603
+}
+
+
+.occlss-layout--bleed .occlss-calendar-date__header,
+.occlss-layout--bleed .occlss-calendar-date__content,
+.occlss-layout--bleed .occlss-calendar-date__footer {
+    padding: 0
+}
+
+
+.occlss-layout--align-end .occlss-calendar-date__header,
+.occlss-layout--align-end .occlss-calendar-date__content,
+.occlss-layout--align-end .occlss-calendar-date__footer {
+    vertical-align: bottom
+}
+
+.occlss-layout--align-center .occlss-calendar-date__header,
+.occlss-layout--align-center .occlss-calendar-date__content,
+.occlss-layout--align-center .occlss-calendar-date__footer {
+    vertical-align: middle
+}
+
+.occlss-layout--align-baseline .occlss-calendar-date__header,
+.occlss-layout--align-baseline .occlss-calendar-date__content,
+.occlss-layout--align-baseline .occlss-calendar-date__footer {
+    vertical-align: baseline
+}
+
+.occlss-layout--align-content-end .occlss-calendar-date__header,
+.occlss-layout--align-content-end .occlss-calendar-date__content,
+.occlss-layout--align-content-end .occlss-calendar-date__footer {
+    vertical-align: bottom
+}
+
+.occlss-layout--justify-end .occlss-calendar-date__header,
+.occlss-layout--justify-end .occlss-calendar-date__content,
+.occlss-layout--justify-end .occlss-calendar-date__footer {
+    text-align: left;
+    text-align: start;
+    text-align: initial;
+    text-align-last: left;
+    text-align-last: start;
+    text-align-last: initial
+}
+
+.occlss-layout--justify-center .occlss-calendar-date__header,
+.occlss-layout--justify-center .occlss-calendar-date__content,
+.occlss-layout--justify-center .occlss-calendar-date__footer {
+    text-align: left;
+    text-align: start;
+    text-align: initial;
+    text-align-last: left;
+    text-align-last: start;
+    text-align-last: initial
+}
+
+.occlss-layout--justify-space-between .occlss-calendar-date__header,
+.occlss-layout--justify-space-between .occlss-calendar-date__content,
+.occlss-layout--justify-space-between .occlss-calendar-date__footer {
+    text-align: left;
+    text-align: start;
+    text-align: initial;
+    text-align-last: left;
+    text-align-last: start;
+    text-align-last: initial
+}
+
+.occlss-layout--justify-space-around .occlss-calendar-date__header,
+.occlss-layout--justify-space-around .occlss-calendar-date__content,
+.occlss-layout--justify-space-around .occlss-calendar-date__footer {
+    text-align: left;
+    text-align: start;
+    text-align: initial;
+    text-align-last: left;
+    text-align-last: start;
+    text-align-last: initial
+}
+
+.occlss-layout__col--parent .occlss-calendar-date__header,
+.occlss-layout__col--parent .occlss-calendar-date__content,
+.occlss-layout__col--parent .occlss-calendar-date__footer {
+    width: 100%
+}
+
+
+.occlss-find-my-nearest__search-form-cont .occlss-calendar-date__header,
+.occlss-find-my-nearest__search-form-cont .occlss-calendar-date__content,
+.occlss-find-my-nearest__search-form-cont .occlss-calendar-date__footer {
+    padding: 0 .625rem 0 0
+}
+
+@media(max-width: 992px) {
+
+    .occlss-find-my-nearest__search-form-cont--postcode .occlss-calendar-date__header,
+    .occlss-find-my-nearest__search-form-cont--postcode .occlss-calendar-date__content,
+    .occlss-find-my-nearest__search-form-cont--postcode .occlss-calendar-date__footer {
+        padding-right: 0
+    }
+}
+
+.occlss-find-my-nearest--short .occlss-find-my-nearest__search-form-cont .occlss-calendar-date__header,
+.occlss-find-my-nearest--short .occlss-find-my-nearest__search-form-cont .occlss-calendar-date__content,
+.occlss-find-my-nearest--short .occlss-find-my-nearest__search-form-cont .occlss-calendar-date__footer {
+    padding: 0
+}
+
+
+.occlss-calendar-date {
+    border: .0625rem solid #feb603
+}
+
+

@@ -1,0 +1,47 @@
+.occlss-info-card__title:focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+.occlss-info-card__title:hover:focus {
+    color: #1a1a1a
+}
+
+.occlss-info-card__title {
+    display: inline-block;
+    margin-bottom: 1.375rem;
+    text-decoration: none
+}
+
+.occlss-info-card__title:hover,
+.occlss-info-card__title:active,
+.occlss-info-card__title:focus {
+    text-decoration: underline
+}
+
+.occlss-info-card__label {
+    font-weight: 700;
+    padding: 0 10px 0 0
+}
+
+@media(max-width: 768px) {
+    .occlss-info-card__label {
+        margin-bottom: .375rem
+    }
+}
+
+.occlss-info-card__content {
+    padding: 0;
+    display: inline-block
+}
+
+.occlss-info-card__cont_row {
+    margin-bottom: .375rem
+}
+
+@media(max-width: 768px) {
+    .occlss-info-card__cont_row {
+        margin-bottom: .75rem
+    }
+}

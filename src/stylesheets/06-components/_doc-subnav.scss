@@ -82,4 +82,7 @@
     .doc-subnav__section-item .doc-link--no-visited-state:visited {
         color: currentColor;
     }
+    .doc-subnav__section-item .doc-link:hover {
+        text-decoration: underline;
+    }
 }

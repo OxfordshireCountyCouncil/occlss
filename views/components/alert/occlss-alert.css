@@ -1,0 +1,90 @@
+
+/* OCCLSS Alert
+ * @version 1.0.0
+ */
+
+ .occlss-alert {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0)
+}
+
+.occlss-alert__sign-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.occlss-alert__sign {
+    width: 3.125rem;
+    height: 3.125rem
+}
+
+.occlss-alert__cont {
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden
+}
+
+.occlss-alert__ex-icon .occlss-icon__container {
+    width: .9375rem;
+    height: .9375rem
+}
+
+.occlss-alert__heading {
+    padding: 0;
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0
+}
+
+.occlss-alert__text {
+    margin: .625rem 0 0 0;
+    color: #1a1a1a;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.2
+}
+
+.occlss-alert__text a,
+.occlss-alert__text .occlss-a-to-z--inverse .occlss-a-to-z__letter,
+.occlss-a-to-z--inverse .occlss-alert__text .occlss-a-to-z__letter {
+    text-decoration: underline
+}
+
+.occlss-alert--warning {
+    border-color: #f3830b;
+    background-color: #feebd8
+}
+
+.occlss-alert--warning .occlss-icon__container {
+    fill: #f3830b
+}
+
+.occlss-alert--error {
+    border-color: #ad0505;
+    background-color: #fee6e6
+}
+
+.occlss-alert--error .occlss-icon__container {
+    fill: #ad0505
+}
+
+.occlss-alert--success {
+    border-color: #50b948;
+    background-color: #d8efd7
+}
+
+.occlss-alert--success .occlss-icon__container {
+    fill: #50b948
+}
+
+.occlss-alert--info {
+    border-color: #0e73d8;
+    background-color: #ecf5fe
+}
+
+.occlss-alert--info .occlss-icon__container {
+    fill: #0e73d8
+}

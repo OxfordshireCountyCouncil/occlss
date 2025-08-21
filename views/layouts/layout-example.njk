@@ -17,6 +17,13 @@
     <link href="{{ getFingerprint(stylesheet) }}" rel="stylesheet" media="all">
   {%- endfor %}
 
+  {#- Dynamically include component CSS discovered under views/components -#}
+  {% if componentStylesheets %}
+    {% for css in componentStylesheets %}
+      <link href="{{ getFingerprint(css) }}" rel="stylesheet" media="all">
+    {% endfor %}
+  {% endif %}
+
     <style>
       @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,900|Open+Sans:300,400,600,700');
     </style>

@@ -1,63 +1,71 @@
 // Breakpoint mixins for responsive design
+// Universal breakpoint mixin that covers ALL possible CSS media query variants
 
-// General breakpoint mixin
-@mixin breakpoint($condition) {
-  @if $condition == 'max-width' {
-    @media (max-width: $condition) {
-      @content;
-    }
-  } @else if $condition == 'min-width' {
-    @media (min-width: $condition) {
-      @content;
-    }
-  } @else {
-    @media #{$condition} {
-      @content;
+// Main universal breakpoint mixin
+// Usage examples:
+// @include occlss-breakpoint('max-width', ('md', $occlss-layout-breakpoints))
+// @include occlss-breakpoint('max-height', '800px')
+// @include occlss-breakpoint('min-width', ('sm', $occlss-layout-breakpoints))
+// @include occlss-breakpoint('orientation', 'landscape')
+// @include occlss-breakpoint('aspect-ratio', '16/9')
+// @include occlss-breakpoint('resolution', '2dppx')
+// @include occlss-breakpoint('color', '8')
+// @include occlss-breakpoint('hover', 'hover')
+// @include occlss-breakpoint('prefers-color-scheme', 'dark')
+// @include occlss-breakpoint('prefers-reduced-motion', 'reduce')
+// @include occlss-breakpoint('supports', '(display: grid)')
+// @include occlss-breakpoint('custom', '(max-width: 1200px) and (min-height: 800px)')
+// @include occlss-breakpoint('range', ('sm', 'lg', $occlss-layout-breakpoints))
+// @include occlss-breakpoint('range', ('768px', '1024px'))
+@mixin occlss-breakpoint($property, $value) {
+  // Handle range queries (min-width to max-width)
+  @if $property == 'range' {
+    @if type-of($value) == 'list' and length($value) == 3 {
+      // Range with breakpoint map: ('sm', 'lg', $occlss-layout-breakpoints)
+      $min-breakpoint: nth($value, 1);
+      $max-breakpoint: nth($value, 2);
+      $breakpoints-map: nth($value, 3);
+      
+      $min-value: map-get($breakpoints-map, $min-breakpoint);
+      $max-value: map-get($breakpoints-map, $max-breakpoint);
+      
+      @if $min-value and $max-value {
+        @media (min-width: #{$min-value}) and (max-width: #{$max-value}) {
+          @content;
+        }
+      } @else {
+        @warn "One or both breakpoints not found in breakpoints map";
+      }
+    } @else if type-of($value) == 'list' and length($value) == 2 {
+      // Range with direct values: ('768px', '1024px')
+      $min: nth($value, 1);
+      $max: nth($value, 2);
+      
+      @media (min-width: #{$min}) and (max-width: #{$max}) {
+        @content;
+      }
+    } @else {
+      @warn "Invalid range format. Use: ('min', 'max', $breakpoints-map) or ('min-px', 'max-px')";
     }
   }
-}
-
-// Specific breakpoint mixins that accept breakpoints map as parameter
-@mixin breakpoint-max-width($breakpoint, $breakpoints-map) {
-  $value: map-get($breakpoints-map, $breakpoint);
-  @if $value {
-    @media (max-width: $value) {
-      @content;
+  // Handle breakpoint map values (e.g., ('md', $occlss-layout-breakpoints))
+  @else if type-of($value) == 'list' and length($value) == 2 {
+    $breakpoint-key: nth($value, 1);
+    $breakpoints-map: nth($value, 2);
+    $breakpoint-value: map-get($breakpoints-map, $breakpoint-key);
+    
+    @if $breakpoint-value {
+      @media (#{$property}: #{$breakpoint-value}) {
+        @content;
+      }
+    } @else {
+      @warn "Breakpoint '#{$breakpoint-key}' not found in breakpoints map";
     }
-  } @else {
-    @warn "Breakpoint '#{$breakpoint}' not found in breakpoints map";
   }
-}
-
-@mixin breakpoint-min-width($breakpoint, $breakpoints-map) {
-  $value: map-get($breakpoints-map, $breakpoint);
-  @if $value {
-    @media (min-width: $value) {
+  // Handle direct values (e.g., '800px', 'landscape', etc.)
+  @else {
+    @media (#{$property}: #{$value}) {
       @content;
     }
-  } @else {
-    @warn "Breakpoint '#{$breakpoint}' not found in breakpoints map";
-  }
-}
-
-@mixin breakpoint-min-height($breakpoint, $breakpoints-map) {
-  $value: map-get($breakpoints-map, $breakpoint);
-  @if $value {
-    @media (min-height: $value) {
-      @content;
-    }
-  } @else {
-    @warn "Breakpoint '#{$breakpoint}' not found in breakpoints map";
-  }
-}
-
-@mixin breakpoint-max-height($breakpoint, $breakpoints-map) {
-  $value: map-get($breakpoints-map, $breakpoint);
-  @if $value {
-    @media (max-height: $value) {
-      @content;
-    }
-  } @else {
-    @warn "Breakpoint '#{$breakpoint}' not found in breakpoints map";
   }
 }

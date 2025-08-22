@@ -5,7 +5,15 @@
 // Close open psnnel
 .occlss-co {
     display: none;
-    @include breakpoint-max-width('md', $occlss-layout-breakpoints) {
+    
+    // OLD WAY (deprecated):
+    // @include breakpoint-max-width('md', $occlss-layout-breakpoints) {
+    //     display: block;
+    //     margin-top: rem(15px);
+    // }
+    
+    // NEW WAY (recommended):
+    @include occlss-breakpoint('max-width', ('md', $occlss-layout-breakpoints)) {
         display: block;
         margin-top: rem(15px);
     }

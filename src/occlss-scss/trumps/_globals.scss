@@ -9,10 +9,10 @@
     font-weight: $occlss-summary-text-font-weight-primary;
     color: $occlss-summary-text-font-color-primary;
     line-height: $occlss-summary-text-line-height-primary;
-    @include breakpoint-min-width('sm', $occlss-layout-breakpoints) {
+    @include occlss-breakpoint('min-width', ('sm', $occlss-layout-breakpoints)) {
         margin: rem($occlss-summary-text-font-margin-primary);
     }
-    @include breakpoint-max-height('800px') {
+    @include occlss-breakpoint('max-height', '800px') {
         margin: rem(0 0 30px 0);
     }
 }

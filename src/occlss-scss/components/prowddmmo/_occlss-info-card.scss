@@ -20,7 +20,7 @@
     &__label {
         font-weight: 700;
         padding: 0 10px 0 0;
-        @include breakpoint-max-width('sm', $occlss-layout-breakpoints) {
+        @include occlss-breakpoint('max-width', ('sm', $occlss-layout-breakpoints)) {
             margin-bottom: rem(6px);
         }
     }
@@ -30,7 +30,7 @@
     }
     &__cont_row {
         margin-bottom: rem(6px);
-        @include breakpoint-max-width('sm', $occlss-layout-breakpoints) {
+        @include occlss-breakpoint('max-width', ('sm', $occlss-layout-breakpoints)) {
             margin-bottom: rem(12px);
         }
     }

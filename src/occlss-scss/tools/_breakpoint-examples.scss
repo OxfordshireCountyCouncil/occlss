@@ -1,0 +1,307 @@
+// Examples of using the new universal occlss-breakpoint mixin
+// This file demonstrates ALL possible usage patterns with ONE function
+
+// Example 1: Using breakpoint map values
+.example-breakpoint-map {
+  // OLD WAY (no longer available):
+  // @include breakpoint-max-width('md', $occlss-layout-breakpoints) { ... }
+  
+  // NEW WAY - ONE FUNCTION FOR ALL:
+  @include occlss-breakpoint('max-width', ('md', $occlss-layout-breakpoints)) {
+    display: block;
+    margin-top: rem(15px);
+  }
+}
+
+// Example 2: Using direct values
+.example-direct-value {
+  @include occlss-breakpoint('max-height', '800px') {
+    overflow: hidden;
+  }
+  
+  @include occlss-breakpoint('min-width', '1200px') {
+    font-size: 1.2em;
+  }
+}
+
+// Example 3: Orientation-based media queries
+.example-orientation {
+  @include occlss-breakpoint('orientation', 'landscape') {
+    flex-direction: row;
+  }
+  
+  @include occlss-breakpoint('orientation', 'portrait') {
+    flex-direction: column;
+  }
+}
+
+// Example 4: Aspect ratio media queries
+.example-aspect-ratio {
+  @include occlss-breakpoint('aspect-ratio', '16/9') {
+    padding-top: 56.25%; // 9/16 = 0.5625
+  }
+  
+  @include occlss-breakpoint('aspect-ratio', '4/3') {
+    padding-top: 75%; // 3/4 = 0.75
+  }
+}
+
+// Example 5: Resolution-based media queries
+.example-resolution {
+  @include occlss-breakpoint('resolution', '2dppx') {
+    background-image: url('image@2x.png');
+  }
+  
+  @include occlss-breakpoint('resolution', '300dpi') {
+    background-image: url('image@300dpi.png');
+  }
+}
+
+// Example 6: Color capability media queries
+.example-color {
+  @include occlss-breakpoint('color', '8') {
+    // For devices with 8-bit color or less
+    filter: grayscale(100%);
+  }
+  
+  @include occlss-breakpoint('color', '12') {
+    // For devices with 12-bit color or more
+    filter: none;
+  }
+}
+
+// Example 7: Hover capability media queries
+.example-hover {
+  @include occlss-breakpoint('hover', 'hover') {
+    // For devices that support hover
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  @include occlss-breakpoint('hover', 'none') {
+    // For touch devices without hover
+    transform: scale(1.05);
+  }
+}
+
+// Example 8: Prefers color scheme media queries
+.example-prefers-color-scheme {
+  @include occlss-breakpoint('prefers-color-scheme', 'dark') {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  @include occlss-breakpoint('prefers-color-scheme', 'light') {
+    background-color: #ffffff;
+    color: #1a1a1a;
+  }
+}
+
+// Example 9: Prefers reduced motion media queries
+.example-prefers-reduced-motion {
+  @include occlss-breakpoint('prefers-reduced-motion', 'reduce') {
+    animation: none;
+    transition: none;
+  }
+  
+  @include occlss-breakpoint('prefers-reduced-motion', 'no-preference') {
+    animation: fadeIn 0.3s ease-in;
+    transition: all 0.3s ease;
+  }
+}
+
+// Example 10: Feature support media queries
+.example-supports {
+  @include occlss-breakpoint('supports', '(display: grid)') {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  @include occlss-breakpoint('supports', '(display: flex)') {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+// Example 11: Custom complex media queries
+.example-custom {
+  @include occlss-breakpoint('custom', '(max-width: 1200px) and (min-height: 800px)') {
+    // Custom complex query
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include occlss-breakpoint('custom', '(max-width: 768px) and (orientation: landscape)') {
+    // Mobile landscape specific styles
+    flex-direction: row;
+  }
+}
+
+// Example 12: Range-based media queries (part of main function!)
+.example-range {
+  // Range with breakpoint map values
+  @include occlss-breakpoint('range', ('sm', 'lg', $occlss-layout-breakpoints)) {
+    // Between sm (768px) and lg (1200px) breakpoints
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  // Range with direct values
+  @include occlss-breakpoint('range', ('768px', '1024px')) {
+    // Between 768px and 1024px
+    font-size: 1.1em;
+  }
+  
+  // Range with different units
+  @include occlss-breakpoint('range', ('50em', '75em')) {
+    // Between 50em and 75em
+    line-height: 1.6;
+  }
+}
+
+// Example 13: Common width and height patterns
+.example-common-patterns {
+  // Max width with breakpoint map
+  @include occlss-breakpoint('max-width', ('sm', $occlss-layout-breakpoints)) {
+    padding: 1rem;
+  }
+  
+  // Min width with breakpoint map
+  @include occlss-breakpoint('min-width', ('md', $occlss-layout-breakpoints)) {
+    padding: 2rem;
+  }
+  
+  // Max height with direct value
+  @include occlss-breakpoint('max-height', '600px') {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+}
+
+// Example 14: Combining multiple breakpoints
+.example-combined {
+  // Mobile first approach
+  @include occlss-breakpoint('min-width', ('sm', $occlss-layout-breakpoints)) {
+    display: flex;
+  }
+  
+  @include occlss-breakpoint('min-width', ('md', $occlss-layout-breakpoints)) {
+    flex-direction: row;
+  }
+  
+  @include occlss-breakpoint('min-width', ('lg', $occlss-layout-breakpoints)) {
+    justify-content: space-between;
+  }
+}
+
+// Example 15: Print media queries
+.example-print {
+  @media print {
+    @include occlss-breakpoint('color', '8') {
+      // Print styles for black and white printing
+      background: white !important;
+      color: black !important;
+    }
+  }
+}
+
+// Example 16: High contrast mode support
+.example-high-contrast {
+  @include occlss-breakpoint('prefers-contrast', 'high') {
+    border: 2px solid;
+    background-color: transparent;
+  }
+}
+
+// Example 17: Dark mode with system preference
+.example-dark-mode {
+  @include occlss-breakpoint('prefers-color-scheme', 'dark') {
+    --primary-color: #4a9eff;
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+  }
+  
+  @include occlss-breakpoint('prefers-color-scheme', 'light') {
+    --primary-color: #0066cc;
+    --background-color: #ffffff;
+    --text-color: #1a1a1a;
+  }
+}
+
+// Example 18: Touch device optimization
+.example-touch-device {
+  @include occlss-breakpoint('hover', 'none') {
+    // Touch device styles
+    .button {
+      min-height: 44px; // Apple's recommended touch target size
+      min-width: 44px;
+    }
+  }
+  
+  @include occlss-breakpoint('hover', 'hover') {
+    // Desktop styles
+    .button {
+      min-height: 32px;
+      min-width: 32px;
+    }
+  }
+}
+
+// Example 19: Advanced range usage
+.example-advanced-range {
+  // Tablet only (between sm and md)
+  @include occlss-breakpoint('range', ('sm', 'md', $occlss-layout-breakpoints)) {
+    .sidebar {
+      width: 250px;
+    }
+  }
+  
+  // Desktop only (between md and lg)
+  @include occlss-breakpoint('range', ('md', 'lg', $occlss-layout-breakpoints)) {
+    .sidebar {
+      width: 300px;
+    }
+  }
+  
+  // Large screens only (lg and up)
+  @include occlss-breakpoint('min-width', ('lg', $occlss-layout-breakpoints)) {
+    .sidebar {
+      width: 350px;
+    }
+  }
+}
+
+// Example 20: All-in-one demonstration
+.example-all-in-one {
+  // This demonstrates how ONE function handles ALL cases
+  
+  // 1. Breakpoint map
+  @include occlss-breakpoint('max-width', ('md', $occlss-layout-breakpoints)) {
+    display: block;
+  }
+  
+  // 2. Direct value
+  @include occlss-breakpoint('max-height', '600px') {
+    overflow: hidden;
+  }
+  
+  // 3. Modern CSS features
+  @include occlss-breakpoint('prefers-color-scheme', 'dark') {
+    background: #1a1a1a;
+  }
+  
+  // 4. Range with breakpoint map
+  @include occlss-breakpoint('range', ('sm', 'lg', $occlss-layout-breakpoints)) {
+    max-width: 960px;
+  }
+  
+  // 5. Range with direct values
+  @include occlss-breakpoint('range', ('768px', '1200px')) {
+    font-size: 1.1em;
+  }
+  
+  // 6. Custom complex query
+  @include occlss-breakpoint('custom', '(max-width: 768px) and (orientation: portrait)') {
+    flex-direction: column;
+  }
+}

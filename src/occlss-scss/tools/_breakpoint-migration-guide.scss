@@ -1,0 +1,346 @@
+// Migration Guide: From Old Breakpoint Mixins to New Universal occlss-breakpoint
+// This file shows how to migrate existing code to use the new mixin
+
+// ============================================================================
+// MIGRATION EXAMPLES
+// ============================================================================
+
+// OLD WAY (no longer available):
+// @include breakpoint-max-width('md', $occlss-layout-breakpoints) { ... }
+// @include breakpoint-min-width('sm', $occlss-layout-breakpoints) { ... }
+// @include breakpoint-max-height('lg', $occlss-layout-breakpoints) { ... }
+// @include occlss-range('768px', '1024px') { ... }
+// @include occlss-range-breakpoints('sm', 'lg', $occlss-layout-breakpoints) { ... }
+
+// NEW WAY - ONE FUNCTION FOR ALL:
+// @include occlss-breakpoint('max-width', ('md', $occlss-layout-breakpoints)) { ... }
+// @include occlss-breakpoint('min-width', ('sm', $occlss-layout-breakpoints)) { ... }
+// @include occlss-breakpoint('max-height', ('lg', $occlss-layout-breakpoints)) { ... }
+// @include occlss-breakpoint('range', ('768px', '1024px')) { ... }
+// @include occlss-breakpoint('range', ('sm', 'lg', $occlss-layout-breakpoints)) { ... }
+
+// ============================================================================
+// COMMON MIGRATION PATTERNS
+// ============================================================================
+
+// Pattern 1: Width-based breakpoints
+.migration-width {
+  // OLD:
+  // @include breakpoint-max-width('md', $occlss-layout-breakpoints) {
+  //   display: none;
+  // }
+  
+  // NEW:
+  @include occlss-breakpoint('max-width', ('md', $occlss-layout-breakpoints)) {
+    display: none;
+  }
+  
+  // OLD:
+  // @include breakpoint-min-width('lg', $occlss-layout-breakpoints) {
+  //   display: flex;
+  // }
+  
+  // NEW:
+  @include occlss-breakpoint('min-width', ('lg', $occlss-layout-breakpoints)) {
+    display: flex;
+  }
+}
+
+// Pattern 2: Height-based breakpoints
+.migration-height {
+  // OLD:
+  // @include breakpoint-max-height('md', $occlss-layout-breakpoints) {
+  //   max-height: 400px;
+  // }
+  
+  // NEW:
+  @include occlss-breakpoint('max-height', ('md', $occlss-layout-breakpoints)) {
+    max-height: 400px;
+  }
+  
+  // OLD:
+  // @include breakpoint-min-height('lg', $occlss-layout-breakpoints) {
+  //   min-height: 600px;
+  // }
+  
+  // NEW:
+  @include occlss-breakpoint('min-height', ('lg', $occlss-layout-breakpoints)) {
+    min-height: 600px;
+  }
+}
+
+// Pattern 3: Range queries migration
+.migration-range {
+  // OLD:
+  // @include occlss-range('768px', '1024px') {
+  //   font-size: 1.1em;
+  // }
+  
+  // NEW:
+  @include occlss-breakpoint('range', ('768px', '1024px')) {
+    font-size: 1.1em;
+  }
+  
+  // OLD:
+  // @include occlss-range-breakpoints('sm', 'lg', $occlss-layout-breakpoints) {
+  //   max-width: 960px;
+  // }
+  
+  // NEW:
+  @include occlss-breakpoint('range', ('sm', 'lg', $occlss-layout-breakpoints)) {
+    max-width: 960px;
+  }
+}
+
+// Pattern 4: Direct values (no change needed, but can use new mixin)
+.migration-direct {
+  // OLD:
+  // @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+  //   padding: 1rem;
+  // }
+  
+  // NEW (more readable):
+  @include occlss-breakpoint('max-width', ('sm', $occlss-layout-breakpoints)) {
+    padding: 1rem;
+  }
+  
+  // Or even simpler for direct values:
+  @include occlss-breakpoint('max-width', '600px') {
+    padding: 0.5rem;
+  }
+}
+
+// Pattern 5: Complex media queries
+.migration-complex {
+  // OLD:
+  // @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+  //   flex-direction: column;
+  // }
+  
+  // NEW:
+  @include occlss-breakpoint('max-width', ('md', $occlss-layout-breakpoints)) {
+    flex-direction: column;
+  }
+  
+  // OLD:
+  // @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+  //   display: grid;
+  // }
+  
+  // NEW:
+  @include occlss-breakpoint('min-width', ('sm', $occlss-layout-breakpoints)) {
+    display: grid;
+  }
+}
+
+// ============================================================================
+// NEW CAPABILITIES (not available in old mixins)
+// ============================================================================
+
+.new-capabilities {
+  // 1. Orientation-based queries
+  @include occlss-breakpoint('orientation', 'landscape') {
+    flex-direction: row;
+  }
+  
+  // 2. Aspect ratio queries
+  @include occlss-breakpoint('aspect-ratio', '16/9') {
+    padding-top: 56.25%;
+  }
+  
+  // 3. Resolution queries
+  @include occlss-breakpoint('resolution', '2dppx') {
+    background-image: url('image@2x.png');
+  }
+  
+  // 4. Color capability queries
+  @include occlss-breakpoint('color', '8') {
+    filter: grayscale(100%);
+  }
+  
+  // 5. Hover capability queries
+  @include occlss-breakpoint('hover', 'none') {
+    .button {
+      min-height: 44px; // Touch-friendly size
+    }
+  }
+  
+  // 6. Dark mode support
+  @include occlss-breakpoint('prefers-color-scheme', 'dark') {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  // 7. Reduced motion support
+  @include occlss-breakpoint('prefers-reduced-motion', 'reduce') {
+    animation: none;
+    transition: none;
+  }
+  
+  // 8. Feature support queries
+  @include occlss-breakpoint('supports', '(display: grid)') {
+    display: grid;
+  }
+  
+  // 9. Custom complex queries
+  @include occlss-breakpoint('custom', '(max-width: 1200px) and (min-height: 800px)') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  // 10. Range queries (now part of main function)
+  @include occlss-breakpoint('range', ('768px', '1024px')) {
+    font-size: 1.1em;
+  }
+  
+  @include occlss-breakpoint('range', ('sm', 'lg', $occlss-layout-breakpoints)) {
+    max-width: 960px;
+  }
+}
+
+// ============================================================================
+// COMMON PATTERNS WITH MAIN MIXIN
+// ============================================================================
+
+.common-patterns {
+  // Width patterns
+  @include occlss-breakpoint('max-width', ('sm', $occlss-layout-breakpoints)) {
+    padding: 1rem;
+  }
+  
+  @include occlss-breakpoint('min-width', ('md', $occlss-layout-breakpoints)) {
+    padding: 2rem;
+  }
+  
+  // Height patterns
+  @include occlss-breakpoint('max-height', '600px') {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  @include occlss-breakpoint('min-height', '800px') {
+    min-height: 700px;
+  }
+  
+  // Orientation patterns
+  @include occlss-breakpoint('orientation', 'landscape') {
+    flex-direction: row;
+  }
+  
+  @include occlss-breakpoint('orientation', 'portrait') {
+    flex-direction: column;
+  }
+  
+  // Color scheme patterns
+  @include occlss-breakpoint('prefers-color-scheme', 'dark') {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+  }
+  
+  @include occlss-breakpoint('prefers-color-scheme', 'light') {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+  }
+  
+  // Range patterns
+  @include occlss-breakpoint('range', ('sm', 'md', $occlss-layout-breakpoints)) {
+    // Tablet only
+    .sidebar { width: 250px; }
+  }
+  
+  @include occlss-breakpoint('range', ('768px', '1200px')) {
+    // Custom range
+    font-size: 1.1em;
+  }
+}
+
+// ============================================================================
+// BEST PRACTICES
+// ============================================================================
+
+.best-practices {
+  // 1. Use mobile-first approach
+  // Base styles (mobile)
+  display: block;
+  
+  // Tablet and up
+  @include occlss-breakpoint('min-width', ('sm', $occlss-layout-breakpoints)) {
+    display: flex;
+  }
+  
+  // Desktop and up
+  @include occlss-breakpoint('min-width', ('md', $occlss-layout-breakpoints)) {
+    flex-direction: row;
+  }
+  
+  // Large desktop and up
+  @include occlss-breakpoint('min-width', ('lg', $occlss-layout-breakpoints)) {
+    justify-content: space-between;
+  }
+  
+  // 2. Use semantic breakpoint names from your map
+  // Good: ('md', $occlss-layout-breakpoints)
+  // Avoid: '992px' (hardcoded values)
+  
+  // 3. Combine with other modern CSS features
+  @include occlss-breakpoint('min-width', ('md', $occlss-layout-breakpoints)) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  // 4. Use for accessibility features
+  @include occlss-breakpoint('prefers-reduced-motion', 'reduce') {
+    animation: none;
+    transition: none;
+  }
+  
+  @include occlss-breakpoint('prefers-contrast', 'high') {
+    border: 2px solid;
+    background-color: transparent;
+  }
+  
+  // 5. Use range for specific device targeting
+  @include occlss-breakpoint('range', ('sm', 'lg', $occlss-layout-breakpoints)) {
+    // Target tablets and small desktops
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+// ============================================================================
+// PERFORMANCE CONSIDERATIONS
+// ============================================================================
+
+.performance-notes {
+  // 1. The new mixin generates the same CSS as the old ones
+  // 2. No additional CSS is generated
+  // 3. All mixins are compiled to standard @media queries
+  // 4. ONE function handles ALL cases efficiently
+  // 5. No function call overhead for different types
+  
+  // Example of efficient usage:
+  @include occlss-breakpoint('max-width', ('sm', $occlss-layout-breakpoints)) {
+    // This generates: @media (max-width: 768px) { ... }
+    padding: 1rem;
+  }
+  
+  @include occlss-breakpoint('range', ('768px', '1024px')) {
+    // This generates: @media (min-width: 768px) and (max-width: 1024px) { ... }
+    padding: 1.5rem;
+  }
+}
+
+// ============================================================================
+// IMPORTANT: LEGACY MIXINS REMOVED
+// ============================================================================
+
+// The following mixins have been completely removed:
+// - breakpoint-max-width()
+// - breakpoint-min-width()
+// - breakpoint-min-height()
+// - breakpoint-max-height()
+// - occlss-range()
+// - occlss-range-breakpoints()
+
+// All functionality is now available through the single occlss-breakpoint() mixin.
+// This provides a cleaner, more maintainable codebase with no legacy code.

@@ -11,11 +11,11 @@ html {
     //font-size: 100%; /* This means 16px */
     //-webkit-text-size-adjust: 100%;  //fix for iOS
       
-    @include breakpoint-max-width('xs', $occlss-layout-breakpoints) {
+    @include occlss-breakpoint('max-width', ('xs', $occlss-layout-breakpoints)) {
         font-size: 87.5%;
     }
 
-    @include breakpoint-min-width('md', $occlss-layout-breakpoints) {
+    @include occlss-breakpoint('min-width', ('md', $occlss-layout-breakpoints)) {
         font-size: 100%;
     }
 }

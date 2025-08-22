@@ -1,0 +1,60 @@
+html {
+    font-family: "Open Sans", sans-serif;
+    color: #0b0c0c;
+    font-weight: 400;
+    background-color: #fff
+}
+
+@media(max-width: 480px) {
+    html {
+        font-size: 87.5%
+    }
+}
+
+@media(min-width: 992px) {
+    html {
+        font-size: 100%
+    }
+}
+
+p {
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 1.875rem;
+    margin-left: 0;
+    margin-right: 0
+}
+
+p+h2,
+p+h3,
+p+h4,
+p+h5,
+ul+h2,
+ul+h3,
+ul+h4,
+ul+h5,
+ol+h2,
+ol+h3,
+ol+h4,
+ol+h5,
+div+h2,
+div+h3,
+div+h4,
+div+h5,
+table+h2,
+table+h3,
+table+h4,
+table+h5 {
+    padding-top: 1.25rem
+}
+
+ol,
+ul {
+    margin: 0 0 1.875rem 0;
+    padding: 0 0 0 2.5rem
+}
+
+ol li,
+ul li {
+    margin-bottom: 1rem
+}

@@ -1,0 +1,87 @@
+.s-cms-content-footer ul,
+.s-cms-content-footer .icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none
+}
+
+.s-cms-content-footer .icon-list:before,
+.s-cms-content-footer .icon-list:after {
+    content: " ";
+    display: table
+}
+
+.s-cms-content-footer .icon-list:after {
+    clear: both
+}
+
+.s-cms-content-footer a.is-active:focus {
+    outline: 3px solid #edc856
+}
+
+.s-cms-content-footer {
+    font-weight: 300
+}
+
+.s-cms-content-footer h2,
+.s-cms-content-footer h3,
+.s-cms-content-footer h4,
+.s-cms-content-footer h5 {
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin: 0 0 .625rem 0
+}
+
+.s-cms-content-footer .icon-list {
+    margin-bottom: 1.25rem
+}
+
+.s-cms-content-footer .icon-list li {
+    float: left;
+    margin-right: .75rem
+}
+
+.s-cms-content-footer li,
+.s-cms-content-footer p {
+    margin: 0 0 .3125rem 0
+}
+
+.s-cms-content-footer li:last-child,
+.s-cms-content-footer p:last-child {
+    margin: 0
+}
+
+.s-cms-content-footer a {
+    color: #fff;
+    font-weight: 400
+}
+
+.s-cms-content-footer a:hover {
+    color: #edc856
+}
+
+.s-cms-content-footer a:focus .occlss-u-more-link__icon {
+    fill: #000
+}
+
+.s-cms-content-footer .occlss-button--primary:hover {
+    color: #073d73
+}
+
+.s-cms-content-footer .occlss-button--primary:focus {
+    color: #fff
+}
+
+.s-cms-content-footer .occlss-u-more-link__icon {
+    fill: #fff
+}
+
+.s-cms-content-footer .icon-list {
+    margin-top: 1.25rem
+}
+
+.s-cms-content-footer .occlss-u-more-link {
+    font-weight: 700
+}

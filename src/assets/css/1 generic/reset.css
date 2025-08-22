@@ -1,0 +1,52 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+figure,
+table,
+th,
+td,
+caption,
+hr {
+    margin: 0;
+    padding: 0
+}
+
+fieldset {
+    border: none
+}
+
+input[type=radio i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: radio;
+    appearance: radio;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial
+}
+
+input[type=checkbox i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: checkbox;
+    appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial
+}

@@ -1,0 +1,23 @@
+.occlss-site-nav__logo-link:focus,
+input:focus,
+textarea:focus,
+keygen:focus,
+select:focus,
+.occlss-button:focus {
+    outline: 3px solid #edc856
+}
+
+a:not([class]):focus {
+    color: #1a1a1a;
+    background-color: #edc856;
+    outline: 2px solid #edc856
+}
+
+a:hover:not([class]):focus {
+    color: #1a1a1a
+}
+
+input[type=checkbox],
+input[type=radio] {
+    outline: none
+}

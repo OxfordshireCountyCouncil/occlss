@@ -6,10 +6,10 @@ Shared...............Sensibly and tersely share global commonalities.
 Reset................A pared back reset to remove margins.
 */
 
-@use "generic/box-sizing";
-@use "generic/normalize";
-@use "generic/shared";
-@use "generic/reset";
+//@use "generic/box-sizing";
+//@use "generic/normalize";
+//@use "generic/shared";
+//@use "generic/reset";
 
 /* BASE(elements)    Unclassed HTML elements (e.g. a {}, blockquote {}, address {}). 
 // ====              ==================================
@@ -26,30 +26,30 @@ Forms................Form element styling (e.g. LEGEND, LABEL).
 Tables...............Basic table styles
 */
 
-@use "base/page";
-@use "base/headings";
-@use "base/links";
+//@use "base/page";
+//@use "base/headings";
+//@use "base/links";
 
 /* OBJECTS              Objects, abstractions, and design patterns (e.g. .o-layout {}). 
 Wrappers.............Wrappers and page constraints.
 Button default (somthing like a mixing etc)
 */
-
+/*
 @use "objects/wrapper";
 @use "objects/occlss-button";
-
+*/
 /* BEM (components)     Discrete, complete chunks of UI (e.g. .c-carousel {}).
 // ==========           =============================
 */
-
+/*
 @use "components/prowddmmo/occlss-fp";
 @use "components/prowddmmo/occlss-facets";
 @use "components/prowddmmo/occlss-co";
 @use "components/prowddmmo/occlss-info-card";
-
-//@use "../../views/components/form/occlss-form";
-//@use "../../views/components/form-controls/occlss-form-cntrls";
+*/
 /*
+@use "../../views/components/form/occlss-form";
+@use "../../views/components/form-controls/occlss-form-cntrls";
 @use "../../views/components/splitter/occlss-splitter";
 @use "../../views/components/loading-bar/occlss-loading-bar";
 @use "../../views/components/pager/occlss-pager";
@@ -89,17 +89,13 @@ Button default (somthing like a mixing etc)
 @use "../../views/components/icon-text/occlss-icon-text";
 */
 
-
-
 /* SCOPES            Scoped specifically
 // ======            =====================
 cms-content-footer...Styles scoped specifically to footer
 Post.................Styles scoped specifically to blog post pages
 */
 
-@use "scopes/cms-content-footer";
-
-
+//@use "scopes/cms-content-footer";
 
 /* TRUMPS            High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {}). 
 // ======            =====================
@@ -112,6 +108,6 @@ Shame................If you unsure where to put CSS please use this file
 Hacks....................CSS Hacks Mixins for Sass
 */
 
-@use "trumps/globals";
-@use "trumps/utilities";
-@use "trumps/shame";
+//@use "trumps/globals";
+//@use "trumps/utilities";
+//@use "trumps/shame";

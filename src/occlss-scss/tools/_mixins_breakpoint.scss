@@ -1,0 +1,63 @@
+// Breakpoint mixins for responsive design
+
+// General breakpoint mixin
+@mixin breakpoint($condition) {
+  @if $condition == 'max-width' {
+    @media (max-width: $condition) {
+      @content;
+    }
+  } @else if $condition == 'min-width' {
+    @media (min-width: $condition) {
+      @content;
+    }
+  } @else {
+    @media #{$condition} {
+      @content;
+    }
+  }
+}
+
+// Specific breakpoint mixins that accept breakpoints map as parameter
+@mixin breakpoint-max-width($breakpoint, $breakpoints-map) {
+  $value: map-get($breakpoints-map, $breakpoint);
+  @if $value {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not found in breakpoints map";
+  }
+}
+
+@mixin breakpoint-min-width($breakpoint, $breakpoints-map) {
+  $value: map-get($breakpoints-map, $breakpoint);
+  @if $value {
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not found in breakpoints map";
+  }
+}
+
+@mixin breakpoint-min-height($breakpoint, $breakpoints-map) {
+  $value: map-get($breakpoints-map, $breakpoint);
+  @if $value {
+    @media (min-height: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not found in breakpoints map";
+  }
+}
+
+@mixin breakpoint-max-height($breakpoint, $breakpoints-map) {
+  $value: map-get($breakpoints-map, $breakpoint);
+  @if $value {
+    @media (max-height: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not found in breakpoints map";
+  }
+}

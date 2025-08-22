@@ -1,7 +1,9 @@
 // Headings styles using modern SASS @use syntax
-// Imports rem mixin from _rem.scss
+// Imports rem mixin from _rem.scss, variables from _vars.scss, and mixins from _mixins.scss
 
+@use 'vars' as *;
 @use 'rem' as *;
+@use 'mixins' as *;
 
 // Heading base styles
 h1, h2, h3, h4, h5, h6 {
@@ -52,4 +54,20 @@ h6 {
   font-weight: 400;
   color: #888;
   margin-bottom: 0.5rem;
+}
+
+
+.cards-title {
+  @include rem(font-size, 24px);
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 1rem;
+  
+  @include breakpoint-max('md', $d-layout-breakpoints) {
+    border: 1px solid #009849;
+  }
+  
+  @include breakpoint-min('sm', $d-layout-breakpoints) {
+    border: 1px solid red;
+  }
 }

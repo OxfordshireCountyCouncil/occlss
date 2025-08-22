@@ -5,7 +5,6 @@
   "nodemodules": "node_modules/",
     "iframeresizer": "node_modules/iframe-resizer/",
     "clipboard": "node_modules/clipboard/dist/",
-    "breakpoint": "node_modules/breakpoint-sass/stylesheets/breakpoint",
     "reflexgrid": "node_modules/reflex-grid/scss/reflex",
     "jquery": "node_modules/jquery/dist/",
   "source": "src/",

@@ -113,5 +113,5 @@ Hacks....................CSS Hacks Mixins for Sass
 */
 
 @use "trumps/globals";
-//@use "trumps/utilities";
-//@use "trumps/shame";
+@use "trumps/utilities";
+@use "trumps/shame";

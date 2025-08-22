@@ -1,7 +1,7 @@
 @use '../../settings/global-variables' as *;
 @use '../../tools/placeholder-classes';
 @use '../../tools/mixins_rem' as *;
-@use '../../tools/mixins_breakpoint' as *;
+@use '../../tools/breakpoint/mixins_breakpoint' as *;
 
 .occlss-info-card {
     &__title {

@@ -1,3 +1,8 @@
+@use '../settings/global-variables' as *;
+@use '../tools/mixins_rem' as *;
+@use '../tools/breakpoint/mixins_breakpoint' as *;
+@use '../tools/placeholder-classes';
+
 //
 //Prefix to denote utilities, overrides, and helper classes. Classes beginning with .u-
 //should never be redefined, bound onto, or modified. These classes appear in the Trumps
@@ -5,7 +10,7 @@
 //
 
 // Create grid utility classes
-@include make_a_grid($make_grid: true);
+//@include make_a_grid($make_grid: true);
 
 
 // This class will hide object from display
@@ -133,7 +138,7 @@ $trim-width:(
 
 @each $key,$val in $trim-width {
     .occlss-u-max-width-#{$key} {
-        @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+        @include occlss-breakpoint('min-width', ('sm', $occlss-layout-breakpoints)) {
             max-width: $val;
         }
     }
@@ -143,26 +148,26 @@ $trim-width:(
 // Hide
 
 .occlss-u-hide-xs {
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    @include occlss-breakpoint('max-width', ('xs', $occlss-layout-breakpoints)) {
         display: none;
     }
 }
 
 .occlss-u-hide-sm {
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    @include occlss-breakpoint('max-width', ('sm', $occlss-layout-breakpoints)) {
         display: none;
     }
 }
 
 .occlss-u-hide-md {
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include occlss-breakpoint('max-width', ('md', $occlss-layout-breakpoints)) {
         display: none;
     }  
 }
 
 
 .occlss-u-hide-lg {
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+    @include occlss-breakpoint('max-width', ('lg', $occlss-layout-breakpoints)) {
         display: none;
     }
 }
@@ -171,28 +176,28 @@ $trim-width:(
 
 .occlss-u-show-xs {
     display: none;
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'xs'))) {
+    @include occlss-breakpoint('max-width', ('xs', $occlss-layout-breakpoints)) {
         display: block;
     }
 }
 
 .occlss-u-show-sm {
     display: none;
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    @include occlss-breakpoint('max-width', ('sm', $occlss-layout-breakpoints)) {
         display: block;
     }
 }
 
 .occlss-u-show-md {
     display: none;
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include occlss-breakpoint('max-width', ('md', $occlss-layout-breakpoints)) {
         display: block;
     }  
 }
 
 .occlss-u-show-lg {
     display: none;
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'lg'))) {
+    @include occlss-breakpoint('max-width', ('lg', $occlss-layout-breakpoints)) {
         display: block;
     }
 }

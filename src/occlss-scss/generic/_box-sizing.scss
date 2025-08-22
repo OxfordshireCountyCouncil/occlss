@@ -1,4 +1,5 @@
 // Reset the box-sizing
+@use '../tools/mixin_box_sizing' as *;
 
 html {
 	@include box-sizing(border-box);

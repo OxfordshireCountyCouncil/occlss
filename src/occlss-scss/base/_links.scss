@@ -1,6 +1,7 @@
+@use '../settings/global-variables' as *;
+@use '../tools/mixin_link-colors' as *;
 // Links
 // @include link-colors(color, hover, active, visited, focus);
-
 a {
   text-decoration: none;
   @include link-colors($occlss-link-color-primary, $occlss-link-color-primary-hover);

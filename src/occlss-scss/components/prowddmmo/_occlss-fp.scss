@@ -1,7 +1,12 @@
+@use '../../settings/global-variables' as *;
+@use '../../tools/mixins_rem' as *;
+@use '../../tools/mixins_breakpoint' as *;
+@use '../../tools/placeholder-classes';
+
 .occlss-fp {
     margin-top: rem(184px);
     transition: left 0.5s ease;
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint-max-width('md', $occlss-layout-breakpoints){
         background: #fff;
         position: fixed;
         z-index: 99999;
@@ -52,7 +57,7 @@
     text-align: right;
     padding: rem(10px 15px 10px 10px);
     display: none;
-    @include breakpoint(max-width (map-get($occlss-layout-breakpoints, 'md'))) {
+    @include breakpoint-max-width('md', $occlss-layout-breakpoints) {
         display: block;
     }
 }

@@ -1,6 +1,6 @@
-/*------------------------------------*\
-    #WRAPPERS
-\*------------------------------------*/
+@use '../settings/global-variables' as *;
+@use "../tools/placeholder-classes";
+@use '../tools/mixins_rem' as *;
 
 .occlss-wrapper {
   max-width: $occlss-wrapper-width-primary;

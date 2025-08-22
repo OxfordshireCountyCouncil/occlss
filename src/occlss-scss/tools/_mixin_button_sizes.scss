@@ -1,3 +1,7 @@
+@use '../settings/global-variables' as *;
+@use '../tools/mixins_rem' as *;
+@use '../tools/mixin_border-radius' as *;
+
 // Button sizes
 @mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
   padding: rem($padding-y $padding-x);

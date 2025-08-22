@@ -1,3 +1,7 @@
+@use '../settings/global-variables' as *;
+@use '../tools/mixins_rem' as *;
+@use '../tools/mixins_breakpoint' as *;
+
 // Global classes Like headings, intro text etc.
 .occlss-g-summary-text {
     font-family: $occlss-summary-text-font-family;
@@ -5,10 +9,10 @@
     font-weight: $occlss-summary-text-font-weight-primary;
     color: $occlss-summary-text-font-color-primary;
     line-height: $occlss-summary-text-line-height-primary;
-    @include breakpoint(min-width (map-get($occlss-layout-breakpoints, 'sm'))) {
+    @include breakpoint-min-width('sm', $occlss-layout-breakpoints) {
         margin: rem($occlss-summary-text-font-margin-primary);
     }
-    @include breakpoint(max-height 800px) {
+    @include breakpoint-max-height('800px') {
         margin: rem(0 0 30px 0);
     }
 }

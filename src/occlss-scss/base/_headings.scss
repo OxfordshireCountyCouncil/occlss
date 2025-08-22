@@ -1,3 +1,6 @@
+@use '../settings/global-variables' as *;
+@use '../tools/mixins_rem' as *;
+
 h1,
 h2,
 h3,
@@ -8,7 +11,6 @@ h6 {
   font-family: $occlss-heading-font-family;
   margin: rem($occlss-heading-margin);
 }
-
 
 h1 {
     font-size: rem($occlss-heading-font-size-h1);

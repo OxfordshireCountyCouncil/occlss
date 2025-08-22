@@ -1,3 +1,7 @@
+@use '../settings/global-variables' as *;
+@use '../tools/mixins_rem' as *;
+@use '../tools/mixin_link-colors' as *;
+@use "../tools/placeholder-classes";
 /*
 Scope Namespaces: s-
 Format:

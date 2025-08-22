@@ -1,3 +1,10 @@
+@use '../settings/global-variables' as *;
+@use '../tools/mixin_button_sizes' as *;
+@use '../tools/mixin_transition' as *;
+@use '../tools/mixin_hover' as *;
+@use '../tools/mixin_box-shadow' as *;
+@use '../tools/mixins_rem' as *;
+
 .occlss-button {
   display: block;
   margin-bottom: rem(12px);
@@ -5,27 +12,19 @@
   font-weight: $occlss-button-font-weight-default;
   line-height: $occlss-button-line-height-default;
   text-align: center;
-
   white-space: normal;
   text-decoration: none;
-
   width: auto;
-
-
   vertical-align: middle;
   background: none;
   user-select: none;
   border: rem($occlss-button-border-size-default solid transparent);
-
   @include button-size($occlss-button-padding-y-default, $occlss-button-padding-x-default, $occlss-button-font-size-default, $occlss-button-radius-default);
-  
   @include transition($occlss-button-transition-default);
-
   // Share hover and focus styles
   @include hover-focus {
     text-decoration: none;
   }
-
   // Disabled comes first so active can properly restyle
   &.is-disabled,
   &:disabled {
@@ -45,8 +44,6 @@
   color: $occlss-button-link-font-color;
   border-radius: 0;
   text-decoration: underline;
-
-
   &,
   &:active,
   &.active,

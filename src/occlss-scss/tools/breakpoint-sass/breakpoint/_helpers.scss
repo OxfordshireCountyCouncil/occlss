@@ -45,7 +45,7 @@
 //////////////////////////////
 // Returns whether the feature can have a min/max pair
 //////////////////////////////
-$breakpoint-min-max-features: 'color',
+$breakpoint-min-width-max-features: 'color',
                               'color-index',
                               'aspect-ratio',
                               'device-aspect-ratio',
@@ -56,8 +56,8 @@ $breakpoint-min-max-features: 'color',
                               'resolution',
                               'width';
 
-@function breakpoint-min-max($feature) {
-  @each $item in $breakpoint-min-max-features {
+@function breakpoint-min-width-max($feature) {
+  @each $item in $breakpoint-min-width-max-features {
     @if $feature == $item {
       @return true;
     }
@@ -78,7 +78,7 @@ $breakpoint-string-features:  'orientation',
 
 @function breakpoint-string-value($feature) {
   @each $item in $breakpoint-string-features {
-    @if breakpoint-min-max($item) {
+    @if breakpoint-min-width-max($item) {
       @if $feature == 'min-#{$item}' or $feature == 'max-#{$item}' {
         @return true;
       }

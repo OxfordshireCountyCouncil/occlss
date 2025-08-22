@@ -1,3 +1,7 @@
+@use '../../settings/global-variables' as *;
+@use '../../tools/placeholder-classes';
+@use '../../tools/mixins_rem' as *;
+
 .occlss-facets {
     @extend %reset_list_style;
     margin-bottom: rem(25px);

@@ -17,6 +17,13 @@
     <link href="{{ getFingerprint(stylesheet) }}" rel="stylesheet" media="all">
   {%- endfor %}
 
+  {#- Dynamically include custom CSS files from src/assets/css -#}
+  {% if customStylesheets %}
+    {% for css in customStylesheets %}
+      <link href="{{ getFingerprint(css) }}" rel="stylesheet" media="all">
+    {% endfor %}
+  {% endif %}
+
   {#- Dynamically include component CSS discovered under views/components -#}
   {% if componentStylesheets %}
     {% for css in componentStylesheets %}

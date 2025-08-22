@@ -91,10 +91,11 @@ Forms................Form element styling (e.g. LEGEND, LABEL).
 Tables...............Basic table styles
 */
 
+/*
 @import "base/page";
 @import "base/headings";
 @import "base/links";
-
+*/
 
 
 
@@ -168,9 +169,9 @@ Button default (somthing like a mixing etc)
 cms-content-footer...Styles scoped specifically to footer
 Post.................Styles scoped specifically to blog post pages
 */
-
+/*
 @import "scopes/cms-content-footer";
-
+*/
 
 
 
@@ -184,7 +185,8 @@ Type.................Utility classes for typography.
 Shame................If you unsure where to put CSS please use this file
 Hacks....................CSS Hacks Mixins for Sass
 */
-
+/*
 @import "trumps/globals";
 @import "trumps/utilities";
 @import "trumps/shame";
+*/

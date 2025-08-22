@@ -1,0 +1,25 @@
+// Modern SASS mixin for converting px to rem
+// Uses @use syntax instead of deprecated @import
+
+$rem-baseline: 16px !default;
+
+@function rem($pixels) {
+  @return ($pixels / $rem-baseline) * 1rem;
+}
+
+@mixin rem($property, $pixels) {
+  #{$property}: $pixels;
+  #{$property}: rem($pixels);
+}
+
+// Mixin for multiple properties with rem conversion
+@mixin rem-multiple($properties) {
+  @each $property, $value in $properties {
+    @if type-of($value) == "number" and unit($value) == "px" {
+      #{$property}: $value;
+      #{$property}: rem($value);
+    } @else {
+      #{$property}: $value;
+    }
+  }
+}

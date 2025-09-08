@@ -187,12 +187,6 @@ input[type=search]::-webkit-search-decoration {
     -webkit-appearance: none
 }
 
-fieldset {
-    border: 1px solid silver;
-    margin: 0 2px;
-    padding: .35em .625em .75em
-}
-
 legend {
     border: 0;
     padding: 0

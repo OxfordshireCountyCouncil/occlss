@@ -36,6 +36,18 @@ The button must never be used to draw attention to any other type of link, for e
 
 {{ example({group: "components", item: "buttons", example: "primary-disabled", html: true }) }}
 
+## Button inline modifire class
+
+{{ example({group: "components", item: "buttons", example: "primary-inline", html: true }) }}
+
+## Button full width modifire class
+
+{{ example({group: "components", item: "buttons", example: "primary-full", html: true }) }}
+
+### Secondary
+
+{{ example({group: "components", item: "buttons", example: "secondary", html: true }) }}
+
 ## Neutral button
 
 The neutral button acts as a secondary call to action on a page. 
@@ -75,11 +87,37 @@ This is a special button style used exclusively for the main website search in t
 
 {{ example({group: "components", item: "buttons", example: "search", html: true }) }}
 
-### Disabled 
 
-{{ example({group: "components", item: "buttons", example: "search-disabled", html: true }) }}
+## Red dotted button
+
+{{ example({group: "components", item: "buttons", example: "red-dotted", html: true }) }}
+
+## Dark button
+
+{{ example({group: "components", item: "buttons", example: "dark", html: true }) }}
+
+## Light button
+
+{{ example({group: "components", item: "buttons", example: "light", html: true }) }}
+
+## Link button
+
+{{ example({group: "components", item: "buttons", example: "link", html: true }) }}
+
+## Topic action button
+
+{{ example({group: "components", item: "buttons", example: "topic-action", html: true }) }}
+
+## Topics card button
+
+{{ example({group: "components", item: "buttons", example: "landing-page-cta", html: true }) }}
+
 
 ## Changelog
+
+### 4.0.0
+
+- Button SCSS varibles changed to CSS varibles
 
 ### 3.0.0
 

@@ -1,0 +1,12 @@
+---
+title: Button red dotted
+layout: layout-example.njk
+stylesheets:
+- ../../../stylesheets/example-gap-dark.css
+---
+{% from "button/macro.njk" import occlssButton %}
+
+{{ occlssButton({
+  text: "Red dotted button",
+  classes: "occlss-button--red-dotted"
+}) }}

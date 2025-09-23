@@ -1,0 +1,12 @@
+---
+title: Link button
+layout: layout-example.njk
+stylesheets:
+- ../../../stylesheets/example-gap.css
+---
+{% from "button/macro.njk" import occlssButton %}
+
+{{ occlssButton({
+  text: "Link button",
+  classes: "occlss-button--link"
+}) }}

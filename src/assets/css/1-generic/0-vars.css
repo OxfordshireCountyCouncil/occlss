@@ -1,0 +1,367 @@
+/*
+  @file This is our file to create the variables that will be used across the theme.
+
+  To override these in your sub-theme, just create a new variables.css file and
+  library, and add that to your theme.info.yml file.
+
+  We are adding these to body instead of :root so we can more easily override
+  them in the future. For example if we create a theme setting to add an inline
+  style for --color-accent: red;, or if we used JS to add it to the body element.
+*/
+:root {
+  /* Global Colours */
+  --occlss-color-black:                #000000;
+  --occlss-color-emperor:              #525252;
+  --occlss-color-cod-gray:             #1a1a1a;
+  --occlss-color-woodsmoke:            #0B0C0C;
+  --occlss-color-alabaster:            #fcfcfc;
+  --occlss-color-venice-denim:         #0B5EB1;
+  --occlss-color-catalina-blue:        #073d73;
+  --occlss-color-denim:                #0e73d8;
+  --occlss-color-selago:               #e5effb;
+  --occlss-color-ronchi:               #edc856;
+  --occlss-color-pizza:                #d0a116;
+  --occlss-color-sahara:               #B48C13;
+  --occlss-color-maize:                #f5de98;
+  --occlss-color-aqua-deep:            #00483a;    
+  --occlss-color-nebula:               #d3dfdd;
+  --occlss-color-boston-blue:          #3a78bb; 
+  --occlss-color-link-water:           #d9ecf6; 
+  --occlss-color-victoria:             #503b76;
+  --occlss-color-snuff:                #dad3e8;
+  --occlss-color-forest-green:         #24b137;
+  --occlss-color-keppel:               #38b1a0;
+  --occlss-color-harp:                 #e2f1e4;
+  --occlss-color-half-colonial-white:  #fdf3da;
+  --occlss-color-iron:                 #e0e2e5;
+  --occlss-color-swans-down:           #dbeeea;
+  --occlss-color-pale-sky:             #656d80;
+  --occlss-color-selective-yellow:     #feb603;
+  --occlss-color-amaranth:             #DA1C5C;
+  --occlss-color-twilight:             #e9d5e1;
+  --occlss-color-swans-down:           #d6ebeb;
+  --occlss-color-royal-heath:          #932d67;
+  --occlss-color-keppel-dark:          #319d99;
+  --occlss-color-milano-red:           #ad0505;
+  --occlss-color-bridesmaid:           #fee6e6;
+  --occlss-color-solitude:             #ecf5fe;
+  --occlss-color-apple:                #50B948;
+  --occlss-color-zanah:                #d8efd7;
+  --occlss-color-tahiti-gold:          #f3830b;
+  --occlss-color-bleach-white:         #feebd8;
+  
+  
+  /* Typography */
+  --occlss-font-family-primary:   'Open Sans', sans-serif;
+  --occlss-font-family-secondary: 'Fira Sans', sans-serif;
+  --occlss-font-family-tertiary:  'Averia Serif Libre';
+  
+  --occlss-font-size-xxxxx-large:  42px;
+  --occlss-font-size-xxxx-large:   36px;
+  --occlss-font-size-xxx-large:    30px; 
+  --occlss-font-size-xx-large:     26px; 
+  --occlss-font-size-x-large:      24px; 
+  --occlss-font-size-large:        22px; 
+  --occlss-font-size-medium:       20px; 
+  --occlss-font-size-regular:      16px; 
+  --occlss-font-size-small:        14px;
+  
+  --occlss-font-weight-light:    300;
+  --occlss-font-weight-regular:  400;
+  --occlss-font-weight-medium:   500;
+  --occlss-font-weight-semibold: 600;
+  --occlss-font-weight-bold:     700;
+  --occlss-font-weight-black:    900;
+  
+  
+  
+  
+  /* Page container size, grid values */
+  --occlss-page-container-width-default: 1200px;
+  --occlss-page-container-width-wide:    1280px;
+  --occlss-gutter-unit-default:          1rem;
+  --occlss-gutter-unit-small:            0.5rem;
+  --occlss-column-amount:                12;
+  
+  
+  /* Z-index */
+  --occlss-zindex-unit-1:  990;
+  --occlss-zindex-unit-2:  1000;
+  --occlss-zindex-unit-3:  1030;
+  --occlss-zindex-unit-4:  1040;
+  --occlss-zindex-unit-5:  1050;
+  --occlss-zindex-unit-6:  1060;
+  --occlss-zindex-unit-7:  1070;
+  --occlss-zindex-unit-8:  1080;
+  --occlss-zindex-unit-9:  1090;
+  --occlss-zindex-unit-10: 1100;
+
+  
+
+  --occlss-transition:      all .2s ease-in-out;
+  --occlss-border:         .0625rem solid rgba(0, 0, 0, 0);
+  
+
+
+
+
+/* DEMO */
+
+  --border: 2px solid blue;
+
+
+  /* Widths and Spacing */
+  --occ-root-width-mega: 90rem; /* 1440px */
+  --occ-root-width-extra-large: 73.75rem; /* 1180px */
+  --occ-root-width-large: 60rem;
+  --occ-root-width-medium: 48rem;
+  --occ-root-width-small: 30rem;
+  --occ-root-width-container: var(--width-extra-large);
+  --occ-root-width-restricted-width-section: var(--width-medium);
+  --occ-root-spacing-smallest: calc(var(--spacing) * 0.25);
+  --occ-root-spacing-smaller: calc(var(--spacing) * 0.5);
+  --occ-root-spacing-small: calc(var(--spacing) * 0.75);
+  --occ-root-spacing: 1rem;
+  --occ-root-spacing-large: calc(var(--spacing) * 1.5);
+  --occ-root-spacing-larger: calc(var(--spacing) * 2);
+  --occ-root-spacing-largest: calc(var(--spacing) * 2.5);
+  --occ-root-spacing-mega: calc(var(--spacing) * 3);
+  --occ-root-spacing-padding-horizontal: var(--spacing);
+  --occ-root-line-height: 1.5;
+
+  /* Colours */
+  /*
+    Colours Defined
+    In this section, we define the colours available in our theme.
+    We should not refer to these directly in our CSS however. Instead,
+    we use the names at our "Colours Applied" section.
+  */
+  --color-accent: #652c95;
+  --color-accent-2: #ffe146;
+  --color-green: #048a04;
+  --color-green: #00483a;
+  --color-red: #e4251b;
+  --color-red: #f3532b;
+  --color-orange: #ed7522;
+  --color-yellow: #ffb60a;
+  --color-blue: #297bbb;
+
+  --clr-yellow-100: #fd0;
+  --clr-blue-100: #297bbb;
+  --clr-green-100: #048a04;
+
+  /*
+    Grey Scale
+    In this section, we define our greys; let's not have 50 shades
+  */
+  --color-white: #fff;
+  --color-grey-lightest: #f9f9f9;
+  --color-grey-lighter: #eaeaea;
+  --color-grey-light: #cecfd0;
+  --color-grey-medium: #b1b4b6;
+  --color-grey-dark: #505a5f;
+  --color-black: #0b0c0c;
+
+
+  /*
+    Colours Applied
+    In this section, we "apply" our colours.
+  */
+  --color-info: var(--color-blue);
+  --color-success: var(--color-green);
+  --color-danger: var(--color-red);
+  --color-warning: var(--color-orange);
+  --color-minor: var(--color-yellow);
+  --color-link: var(--color-accent);
+  --color-focus: var(--color-yellow);
+
+  /* Fonts */
+  /*
+    We choose basic fonts that most people have in browser cache from visiting other websites.
+    This will help with page speed, rather than calling fonts from Google Fonts or somewhere.
+  */
+  --font-primary: roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-secondary: georgia, "Times New Roman", times, serif;
+  --font-heading-1: var(--font-secondary);
+  --font-heading-2: var(--font-secondary);
+  --font-heading-3: var(--font-secondary);
+  --font-heading-4: var(--font-secondary);
+  --font-heading-5: var(--font-secondary);
+  --font-heading-6: var(--font-secondary);
+  /*
+    Font sizes based on vertical rhythm of:
+    - Font size: 16px;
+    - Scale factor: 1.303
+    - Details: https://www.gridlover.net/try
+  */
+  --font-size: 1rem;
+  --font-size-smallest: calc(var(--font-size) * 0.3);
+  --font-size-smaller: calc(var(--font-size) * 0.5);
+  --font-size-small: calc(var(--font-size) * 0.75);
+  --font-size-medium: calc(var(--font-size) * 1);
+  --font-size-large: calc(var(--font-size) * 1.3125);
+  --font-size-larger: calc(var(--font-size) * 1.6875);
+  --font-size-largest: calc(var(--font-size) * 2.875);
+  --font-size-h1: clamp(var(--font-size-larger), 10vw, var(--font-size-largest));
+  --font-size-h2: clamp(var(--font-size-large), 8vw, var(--font-size-larger));
+  --font-size-h3: clamp(var(--font-size-medium), 6vw, var(--font-size-large));
+  --font-size-h4: var(--font-size-medium);
+  --font-size-h5: var(--font-size-medium);
+  --font-size-h6: var(--font-size-medium);
+
+  /* Heading colours */
+  --color-text: var(--color-black);
+  --heading-1-color: var(--color-text);
+  --heading-2-color: var(--color-text);
+  --heading-3-color: var(--color-text);
+  --heading-4-color: var(--color-text);
+  --heading-5-color: var(--color-text);
+  --heading-6-color: var(--color-text);
+
+  /* Heading line-height */
+  --heading-1-line-height: var(--line-height);
+  --heading-2-line-height: var(--line-height);
+  --heading-3-line-height: var(--line-height);
+  --heading-4-line-height: var(--line-height);
+  --heading-5-line-height: var(--line-height);
+  --heading-6-line-height: var(--line-height);
+
+  /* Heading font-weight */
+  --heading-font-weight: bold;
+  --heading-1-font-weight: var(--heading-font-weight);
+  --heading-2-font-weight: var(--heading-font-weight);
+  --heading-3-font-weight: var(--heading-font-weight);
+  --heading-4-font-weight: var(--heading-font-weight);
+  --heading-5-font-weight: var(--heading-font-weight);
+  --heading-6-font-weight: var(--heading-font-weight);
+
+  /* Borders */
+  --border-width: 1px;
+  --border-width-large: 5px;
+  --border-color: var(--color-grey-light);
+  --border-color-dark: var(--color-grey-dark);
+  --border-color-alert: var(--color-black);
+  --border-style: solid;
+  --border-radius: var(--spacing-smallest);
+  --border: var(--border-width) var(--border-style) var(--border-color);
+  --border-large: var(--border-width-large) var(--border-style) var(--border-color);
+  --border-dark: var(--border-width) var(--border-style) var(--border-color-dark);
+  --border-transparent: var(--border-width) var(--border-style) transparent;
+
+  /* Animation */
+  --transition-time: 0.3s;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OCC TailWind varibles */
+    --font-body: 'Open Sans';
+    --font-heading: 'Fira Sans';
+    --font-heading-display: 'Averia Serif Libre';
+    --color-yellow: #ffb60a;
+    --color-red: #f3532b;
+    --color-black: #101218;
+    --color-green: #00483a;
+    --color-green-1: #2e4d38;
+    --color-green-2: #3d664a;
+    --color-green-3: #5c996f;
+    --color-green-4: #80b391;
+    --color-green-5: #8cba9b;
+    --color-green-6: #f2f7f4;
+    --color-brown-1: #544226;
+    --color-brown-2: #7f6339;
+    --color-brown-3: #a9844c;
+    --color-brown-4: #c0a172;
+    --color-brown-5: #c6aa80;
+    --color-brown-6: #f3ede2;
+    --color-yellow-1: #7a5600;
+    --color-yellow-2: #8f6400;
+    --color-yellow-3: #ffc233;
+    --color-yellow-4: #ffd470;
+    --color-yellow-5: #ffda85;
+    --color-yellow-6: #fff9eb;
+    --color-yellow-7: #f5bc41;
+    --color-purple-1: #181c25;
+    --color-purple-2: #202632;
+    --color-purple-3: #282f3e;
+    --color-purple-4: #3a4155;
+    --color-purple-5: #454d66;
+    --color-purple-6: #6d799c;
+    --color-purple-7: #9ea6bd;
+    --color-purple-8: #aab1c5;
+    --color-purple-9: #f3f4f7;
+    --color-red-1: #c1300b;
+    --color-red-2: #d4340c;
+    --color-red-3: #f57251;
+    --color-red-4: #f79178;
+    --color-red-5: #f8a18b;
+    --color-red-6: #feefec;
+    --color-blue-1: #1a4b61;
+    --color-blue-2: #226581;
+    --color-blue-3: #6eb8d8;
+    --color-blue-4: #8ec8e1;
+    --color-blue-5: #9ed0e5;
+    --color-blue-6: #f0f9f7;
+    --color-blue-7: #CCE4F2;
+    --color-blue-8: #F3F3F3;
+    /* landing pages*/
+    /* Green shades already defined elsewhere */
+    --color-lp-aqua: #2D8FB8;
+    --color-lp-aqua-1: #277372;
+    --color-lp-aqua-2: #03937B;
+    --color-lp-aqua-3: #226581;
+    --color-lp-pink: #F1B0B6;
+    --color-lp-pink-1: #DA4D6C;
+    --color-lp-pink-2: #C73963;
+    --color-lp-pink-3: #8B2845;
+    --color-lp-sunset: #F57251;
+    --color-lp-sunset-1: #EF7639;
+    --color-lp-sunset-2: #C1300B;
+    --color-lp-sunset-3: #D62446;
+    --color-lp-violet: #4F64A6;
+    --color-lp-violet-1: #B9AAD3;
+    --color-lp-violet-2: #7757A0;
+    --color-lp-violet-3: #252D5B; 
+
+
+
+
+
+
+}
+
+/*
+  Applying Variables
+
+  By taking this approach of setting variables above, and then applying them here
+  to specific items, we can easily override these in sub-themes to change items
+  one-by-one without the CSS cascade affecting us (unless we want it to - in that case,
+  override the defined variables above instead).
+*/

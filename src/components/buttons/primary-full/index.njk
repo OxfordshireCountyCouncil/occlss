@@ -1,0 +1,12 @@
+---
+title: Button primary full width
+layout: layout-example.njk
+stylesheets:
+- ../../../stylesheets/example-gap.css
+---
+{% from "button/macro.njk" import occlssButton %}
+
+{{ occlssButton({
+  text: "Apply for a Blue Badge",
+  classes: "occlss-button--primary occlss-button--fullwidth"
+}) }}
